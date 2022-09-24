@@ -4,7 +4,7 @@ import * as am5hierarchy from "@amcharts/amcharts5/hierarchy";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 
 
-function HomePage(props: any) {
+function NavHome(props: any) {
   useLayoutEffect(() => {
 
     // Create root and chart
@@ -214,7 +214,7 @@ function HomePage(props: any) {
   }, []);
 
   return (
-    <div id="chartdiv" style={{ width: "100%", height: "500px" }}></div>
+    <div id="chartdiv" style={{ width: "100vw", height: "100vh" }}></div>
   );
 }
-export default HomePage;
+export default NavHome;
