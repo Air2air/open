@@ -1,11 +1,10 @@
 import React, { useLayoutEffect } from 'react';
-import './App.css';
 import * as am5 from "@amcharts/amcharts5";
 import * as am5hierarchy from "@amcharts/amcharts5/hierarchy";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 
 
-function App(props: any) {
+function HomePage(props: any) {
   useLayoutEffect(() => {
 
     // Create root and chart
@@ -218,4 +217,4 @@ function App(props: any) {
     <div id="chartdiv" style={{ width: "100%", height: "500px" }}></div>
   );
 }
-export default App;
+export default HomePage;
