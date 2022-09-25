@@ -2,7 +2,7 @@ import React, { useLayoutEffect } from "react";
 import * as am5 from "@amcharts/amcharts5";
 import * as am5hierarchy from "@amcharts/amcharts5/hierarchy";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
-import { NavData } from "./navData";
+import { NavData } from "../../data/navData";
 
 function NavHome(props: any) {
   useLayoutEffect(() => {
@@ -39,7 +39,7 @@ function NavHome(props: any) {
     });
 
     series.circles.template.setAll({
-      fillOpacity: 1,
+      fillOpacity: 0,
       strokeWidth: 7,
       strokeOpacity: 1,
     });

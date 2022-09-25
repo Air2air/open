@@ -9,9 +9,6 @@ const root = ReactDOM.createRoot(
 );
 
 const Layout = styled.div`
-  padding: 0;
-  margin: 0;
-  background: linear-gradient(to bottom, #003355, #336699);
   height: 100vh;
   width: 100vw;
 `;
