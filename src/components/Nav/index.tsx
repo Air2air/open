@@ -2,11 +2,12 @@ import React, { useLayoutEffect } from "react";
 import * as am5 from "@amcharts/amcharts5";
 import * as am5hierarchy from "@amcharts/amcharts5/hierarchy";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
+import { NavData } from "./navData";
 
 function NavHome(props: any) {
   useLayoutEffect(() => {
     // Create root and chart
-    var root = am5.Root.new("chartdiv");
+    var root = am5.Root.new("navdiv");
 
     root.setThemes([am5themes_Animated.new(root)]);
 
@@ -52,33 +53,7 @@ function NavHome(props: any) {
       strokeOpacity: 0.5,
     });
 
-    series.data.setAll([
-      {
-        name: "Elevens",
-        value: 90,
-        children: [
-          {
-            name: "Consultants",
-            value: 70,
-            children: [
-              {
-                name: "Ben",
-                children: [
-                  {
-                    name: "A0A0A2",
-                    value: 71,
-                  },
-                  {
-                    name: "A0A0C2",
-                    value: 48,
-                  },
-                ],
-              },
-            ],
-          },
-        ],
-      },
-    ]);
+    series.data.setAll(NavData);
     series.set("selectedDataItem", series.dataItems[0]);
 
     return () => {
@@ -86,6 +61,6 @@ function NavHome(props: any) {
     };
   }, []);
 
-  return <div id="chartdiv" style={{ width: "100vw", height: "100vh" }}></div>;
+  return <div id="navdiv" style={{ width: "100vw", height: "100vh" }}></div>;
 }
 export default NavHome;
