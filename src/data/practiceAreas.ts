@@ -1,17 +1,47 @@
 export const PracticeAreas = {
-  name: "Practice Areas",
+  name: "Practice\n Areas ",
   value: 70,
   children: [
     {
-      name: "Machine Learning",
+      name: "Machine\nLearning",
+      value: 50,
       children: [
         {
-          name: "555555",
-          value: 71,
+          name: "NLP",
+          value: 50,
         },
         {
-          name: "A0A0C2",
-          value: 48,
+          name: "AI",
+          value: 50,
+        },
+      ],
+    },
+    {
+      name: "Telemedicine",
+      value: 50,
+      color:"#ffcc00",
+      children: [
+        {
+          name: "NLP",
+          value: 50,
+        },
+        {
+          name: "AI",
+          value: 50,
+        },
+      ],
+    },
+    {
+      name: "Genomics",
+      value: 50,
+      children: [
+        {
+          name: "Characterization",
+          value: 50,
+        },
+        {
+          name: "Profiling",
+          value: 50,
         },
       ],
     },

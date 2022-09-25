@@ -16,6 +16,7 @@ function NavHome(props: any) {
         width: am5.percent(100),
         height: am5.percent(100),
         layout: root.verticalLayout,
+
       })
     );
 
@@ -31,20 +32,24 @@ function NavHome(props: any) {
         nodePadding: 20,
         minRadius: am5.percent(3),
         maxRadius: am5.percent(10),
+
       })
     );
 
+
     series.nodes.template.setAll({
       draggable: false,
+      tooltipText: ""
     });
 
     series.circles.template.setAll({
-      fillOpacity: 0,
+      fillOpacity: 1,
       strokeWidth: 7,
       strokeOpacity: 1,
     });
 
-    series.outerCircles.template.setAll({
+    series.outerCircles.template.setAll({ // The outside ring
+      fill: am5.color("#ffcc00"),
       strokeWidth: 7,
     });
 
