@@ -1,8 +1,14 @@
 import React from "react";
-import NavHome from "../../components/Nav/";
+import { Content } from "../../components/Content";
+import NavBubbles from "../../components/Nav/nav";
 
 const HomePage = (props: any) => {
-  return <NavHome />;
+  return (
+    <>
+      <NavBubbles />
+      <Content />
+    </>
+  );
 };
 
 export default HomePage;

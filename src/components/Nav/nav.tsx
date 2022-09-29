@@ -2,9 +2,13 @@ import React, { useLayoutEffect } from "react";
 import * as am5 from "@amcharts/amcharts5";
 import * as am5hierarchy from "@amcharts/amcharts5/hierarchy";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
-import { NavData } from "../../data/navData";
+//import * as am5src/fonts/robotomedium from "./../fonts/Roboto-Medium.ttf";
 
-function NavHome(props: any) {
+import { navData } from "../../data/navData";
+
+const fillColor = 0x113961;
+
+const  NavBubbles = (props: any) => {
   useLayoutEffect(() => {
     // Create root and chart
     var root = am5.Root.new("navdiv");
@@ -16,7 +20,6 @@ function NavHome(props: any) {
         width: am5.percent(100),
         height: am5.percent(100),
         layout: root.verticalLayout,
-
       })
     );
 
@@ -29,36 +32,39 @@ function NavHome(props: any) {
         categoryField: "name",
         childDataField: "children",
         velocityDecay: 0.9,
-        nodePadding: 20,
+        nodePadding: 40,
         minRadius: am5.percent(3),
-        maxRadius: am5.percent(10),
-
+        maxRadius: am5.percent(7), // Overall size control
       })
     );
 
-
     series.nodes.template.setAll({
       draggable: false,
-      tooltipText: ""
+      tooltipText: "", // Disables tooltips
     });
 
     series.circles.template.setAll({
+      // The inside circle
+      fill: am5.color(fillColor),
       fillOpacity: 1,
-      strokeWidth: 7,
-      strokeOpacity: 1,
+      strokeWidth: 5,
+      strokeOpacity: 0,
     });
 
-    series.outerCircles.template.setAll({ // The outside ring
-      fill: am5.color("#ffcc00"),
-      strokeWidth: 7,
+    series.outerCircles.template.setAll({
+      // The outside ring
+      stroke: am5.color(0xffffff),
+      strokeWidth: 3,
     });
 
     series.links.template.setAll({
-      strokeWidth: 5,
-      strokeOpacity: 0.5,
+      // The connector links
+      stroke: am5.color(0xffffff),
+      strokeWidth: 3,
+      strokeOpacity: 1,
     });
 
-    series.data.setAll(NavData);
+    series.data.setAll(navData);
     series.set("selectedDataItem", series.dataItems[0]);
 
     return () => {
@@ -66,6 +72,6 @@ function NavHome(props: any) {
     };
   }, []);
 
-  return <div id="navdiv" style={{ width: "100vw", height: "100vh" }}></div>;
+  return <div id="navdiv" style={{ width: "100%", height: "100vh" }}></div>;
 }
-export default NavHome;
+export default NavBubbles;

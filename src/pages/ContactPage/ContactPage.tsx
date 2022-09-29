@@ -5,7 +5,7 @@ const ContactPage = (props: any) => {
 
   return (
     <>
-    Contactpage
+    <div style={{height:"100vh", width:"100%" }}>Contactpage</div>
     </>
   );
 }

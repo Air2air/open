@@ -1,0 +1,16 @@
+$base-color: #24584c;
+
+/* ------- Text ---------*/
+
+$text-color: desaturate($base-color, 45%);
+$text-color-light: lighten($text-color, 20%);
+
+/* ------- Links ---------*/
+
+$link-color: darken($base-color, 20%);
+$link-hover-color: darken($base-color, 20%);
+
+/* ------- Icons ---------*/
+
+$icon-color: transparentize($text-color, 0.6);
+$icon-hover-color: transparentize($text-color, 0);

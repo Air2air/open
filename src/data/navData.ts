@@ -1,13 +1,17 @@
-import {Consultants} from './consultants';
-import {PracticeAreas} from './practiceAreas';
+import { Consultants } from "./consultants";
+import { Industries } from "./industries";
+import { Contact } from "./contact";
+import { Services } from "./services";
+import { Stage } from "./stage";
 
-export const NavData = [
+export const parentNodeSize = 90;
+export const firstChildNodeSize = 80;
+export const secondChildNodeSize = 80;
+
+export const navData = [
   {
     name: "Elevens",
-    value: 90,
-    children: [
-      Consultants,
-      PracticeAreas
-    ],
+    value: parentNodeSize,
+    children: [Industries, Stage, Contact, Services],
   },
 ];

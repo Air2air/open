@@ -1,19 +1,46 @@
 export const Consultants = {
   name: "Consultants",
-  color: "#f5f5f5",
-  value: 70,
+  value: 74,
   children: [
     {
-      name: "Ben",
-      color: "#f5f5f5",
+      name: "Ben Fine",
+      value: 60,
       children: [
         {
-          name: "A0A0A2",
-          value: 71,
+          name: "NLP",
+          value: 50,
         },
         {
-          name: "A0A0C2",
-          value: 48,
+          name: "AI",
+          value: 50,
+        },
+      ],
+    },
+    {
+      name: "Jeff Kleck",
+      value: 60,
+      children: [
+        {
+          name: "NLP",
+          value: 50,
+        },
+        {
+          name: "AI",
+          value: 50,
+        },
+      ],
+    },
+    {
+      name: "Genomics",
+      value: 60,
+      children: [
+        {
+          name: "Characterization",
+          value: 50,
+        },
+        {
+          name: "Profiling",
+          value: 50,
         },
       ],
     },
