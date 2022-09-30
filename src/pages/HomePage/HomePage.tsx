@@ -1,11 +1,11 @@
 import React from "react";
 import { Content } from "../../components/Content";
-import NavBubbles from "../../components/Nav/nav";
+import AmChartsWrapper from "../../components/AmCharts/nav";
 
 const HomePage = (props: any) => {
   return (
     <>
-      <NavBubbles />
+      <AmChartsWrapper strength={1} distance={1}/>
       <Content />
     </>
   );

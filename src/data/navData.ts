@@ -1,17 +1,14 @@
-import { Consultants } from "./consultants";
-import { Industries } from "./industries";
-import { Contact } from "./contact";
-import { Services } from "./services";
-import { Stage } from "./stage";
+import { HealthTech } from "./healthTech";
+import { MedTech } from "./medTech";
+import { PharmaTech } from "./pharmaTech";
+import { BioTech } from "./bioTech";
 
-export const parentNodeSize = 90;
-export const firstChildNodeSize = 80;
-export const secondChildNodeSize = 80;
+import { parentNodeSize } from "../components/AmCharts/config";
 
 export const navData = [
   {
     name: "Elevens",
     value: parentNodeSize,
-    children: [Industries, Stage, Contact, Services],
+    children: [BioTech, HealthTech, MedTech, PharmaTech],
   },
 ];
