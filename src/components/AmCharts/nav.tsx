@@ -2,7 +2,8 @@ import React, { useLayoutEffect } from "react";
 import * as am5 from "@amcharts/amcharts5";
 import * as am5hierarchy from "@amcharts/amcharts5/hierarchy";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
-import am5themes_Micro from "@amcharts/amcharts5/themes/Micro";
+import am5themes_Responsive from "@amcharts/amcharts5/themes/Responsive";
+import am5themes_Kelly from "@amcharts/amcharts5/themes/Kelly";
 
 import { navData } from "../../data/navData";
 
@@ -15,7 +16,9 @@ const NavBubbles = (props: any) => {
 
     root.setThemes([
       am5themes_Animated.new(root), 
-      am5themes_Micro.new(root),
+      am5themes_Responsive.newEmpty(root),
+      // am5themes_Dark.new(root),
+      am5themes_Kelly.new(root),
     ]);
 
     var container = root.container.children.push(
