@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/styles/styles.css"],"names":[],"mappings":"AAEA,KACE,SAAU,CACV,QAAS,CACT,kDACF","file":"main.ccd49a83.chunk.css","sourcesContent":["\n\nbody {\n  padding: 0;\n  margin: 0;\n  background: linear-gradient(to bottom, #02111b, #4484c3);\n}\n"]}
