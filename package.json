@@ -1,6 +1,7 @@
 {
   "name": "elevens",
   "version": "0.1.0",
+  "homepage": "https://Air2air.github.io/elevens",
   "private": true,
   "dependencies": {
     "@amcharts/amcharts4": "^4.10.28",
@@ -9,6 +10,7 @@
     "d3-force": "latest",
     "d3-hierarchy": "latest",
     "d3-scale": "latest",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-flow-renderer": "latest",
@@ -19,7 +21,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "eject": "react-scripts eject"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
