@@ -101,8 +101,6 @@ const NavBubbles = (props: any) => {
       strokeOpacity: 1,
     });
 
-
-
     series.data.setAll(navData);
     series.set("selectedDataItem", series.dataItems[0]);
 

@@ -1,12 +1,10 @@
 import React from "react";
-import { Content } from "../../components/Content";
-import AmChartsWrapper from "../../components/AmCharts/nav";
+import AmChartsWrapper from "../../components/AmCharts/chart";
 
 const HomePage = (props: any) => {
   return (
     <>
-      <AmChartsWrapper strength={1} distance={1}/>
-      <Content />
+      <AmChartsWrapper strength={1} distance={1} />
     </>
   );
 };

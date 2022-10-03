@@ -1,76 +1,82 @@
 import {
-  firstChildNodeSize, secondChildNodeSize,
+  firstChildNodeSize,
+  secondChildNodeSize,
 } from "../components/AmCharts/config";
-
-
 
 export const BioTech = {
   name: "Bio Tech",
   value: firstChildNodeSize,
   children: [
     {
+      section: "BioTech",
       name: "Pre Seed",
       value: secondChildNodeSize,
       data: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
-      link: "bio_tech_"
+      link: "bio_tech_",
     },
     {
+      section: "BioTech",
       name: "Seed Stage",
       value: secondChildNodeSize,
       data: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
-      link: "bio_tech_"
+      link: "bio_tech_",
     },
     {
+      section: "BioTech",
       name: "Series A",
       value: secondChildNodeSize,
       data: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
-      link: "bio_tech_"
+      link: "bio_tech_",
     },
-  
+
     {
+      section: "BioTech",
       name: "Series B",
       value: secondChildNodeSize,
       data: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
-      link: "bio_tech_"
+      link: "bio_tech_",
     },
     {
+      section: "BioTech",
       name: "Series C",
       value: secondChildNodeSize,
       data: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
-      link: "bio_tech_"
+      link: "bio_tech_",
     },
     {
+      section: "BioTech",
       name: "Mezzanine",
       value: secondChildNodeSize,
       data: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
-      link: "bio_tech_"
+      link: "bio_tech_",
     },
     {
+      section: "BioTech",
       name: "Public",
       value: secondChildNodeSize,
       data: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
-      link: "bio_tech_"
+      link: "bio_tech_",
     },
-  ]
+  ],
 };

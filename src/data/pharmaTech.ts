@@ -8,6 +8,7 @@ export const PharmaTech = {
   value: firstChildNodeSize,
   children: [
     {
+      section: "PharmaTech",
       name: "Pre Seed",
       value: secondChildNodeSize,
       data: "There are over ABCD ventures in this category",
@@ -17,6 +18,7 @@ export const PharmaTech = {
       link: "pharma_tech_",
     },
     {
+      section: "PharmaTech",
       name: "Seed Stage",
       value: secondChildNodeSize,
       data: "There are over ABCD ventures in this category",
@@ -26,6 +28,7 @@ export const PharmaTech = {
       link: "pharma_tech_",
     },
     {
+      section: "PharmaTech",
       name: "Series A",
       value: secondChildNodeSize,
       data: "There are over ABCD ventures in this category",
@@ -36,6 +39,7 @@ export const PharmaTech = {
     },
 
     {
+      section: "PharmaTech",
       name: "Series B",
       value: secondChildNodeSize,
       data: "There are over ABCD ventures in this category",
@@ -45,6 +49,7 @@ export const PharmaTech = {
       link: "pharma_tech_",
     },
     {
+      section: "PharmaTech",
       name: "Series C",
       value: secondChildNodeSize,
       data: "There are over ABCD ventures in this category",
@@ -54,6 +59,7 @@ export const PharmaTech = {
       link: "pharma_tech_",
     },
     {
+      section: "PharmaTech",
       name: "Mezzanine",
       value: secondChildNodeSize,
       data: "There are over ABCD ventures in this category",
@@ -63,6 +69,7 @@ export const PharmaTech = {
       link: "pharma_tech_",
     },
     {
+      section: "PharmaTech",
       name: "Public",
       value: secondChildNodeSize,
       data: "There are over ABCD ventures in this category",
