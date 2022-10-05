@@ -5,16 +5,20 @@ const ContentDiv = styled.div`
   display: flex;
   flex: 1;
   height: auto;
-  background:red;
+  background: red;
 `;
 
-export const ContentSection = (...props) => {
+export const ContentSection = (props: { data: any[] }) => {
   return (
-    <ContentDiv>
-      <h2>props.section</h2>
-      <h2>props.title</h2>
-      <h3>props.subhead</h3>
-      <p>props.text</p>
-    </ContentDiv>
+    <div>
+      {props.data.map((item: any) => (
+        <>
+          <h2>{item.section}</h2>
+          <h2>{item.title}</h2>
+          <h3>{item.subhead}</h3>
+          <p>{item.text}</p>
+        </>
+      ))}
+    </div>
   );
 };

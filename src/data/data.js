@@ -1,284 +1,321 @@
-
-export const BioTech = [
-    {
-      section: "BioTech",
-      name: "Pre Seed",
-      value: secondChildNodeSize,
-      data: "There are over ABCD ventures in this category",
-      contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
-      content: "content here",
-      link: "bio_tech_",
-    },
-    {
-      section: "BioTech",
-      name: "Seed Stage",
-      value: secondChildNodeSize,
-      data: "There are over ABCD ventures in this category",
-      contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
-      content: "content here",
-      link: "bio_tech_",
-    },
-    {
-      section: "BioTech",
-      name: "Series A",
-      value: secondChildNodeSize,
-      data: "There are over ABCD ventures in this category",
-      contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
-      content: "content here",
-      link: "bio_tech_",
-    },
-    {
-      section: "BioTech",
-      name: "Series B",
-      value: secondChildNodeSize,
-      data: "There are over ABCD ventures in this category",
-      contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
-      content: "content here",
-      link: "bio_tech_",
-    },
-    {
-      section: "BioTech",
-      name: "Series C",
-      value: secondChildNodeSize,
-      data: "There are over ABCD ventures in this category",
-      contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
-      content: "content here",
-      link: "bio_tech_",
-    },
-    {
-      section: "BioTech",
-      name: "Mezzanine",
-      value: secondChildNodeSize,
-      data: "There are over ABCD ventures in this category",
-      contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
-      content: "content here",
-      link: "bio_tech_",
-    },
-    {
-      section: "BioTech",
-      name: "Public",
-      value: secondChildNodeSize,
-      data: "There are over ABCD ventures in this category",
-      contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
-      content: "content here",
-      link: "bio_tech_",
-    },
-    {
-      section: "HealthTech",
-      name: "Pre Seed",
-      value: secondChildNodeSize,
-      data: "There are over ABCD ventures in this category",
-      contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
-      content: "content here",
-      link: "health_tech_",
-    },
-    {
-      section: "HealthTech",
-      name: "Seed Stage",
-      value: secondChildNodeSize,
-      data: "There are over ABCD ventures in this category",
-      contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
-      content: "content here",
-      link: "health_tech_",
-    },
-    {
-      section: "HealthTech",
-      name: "Series A",
-      value: secondChildNodeSize,
-      data: "There are over ABCD ventures in this category",
-      contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
-      content: "content here",
-      link: "health_tech_",
-    },
-    {
-      section: "HealthTech",
-      name: "Series B",
-      value: secondChildNodeSize,
-      data: "There are over ABCD ventures in this category",
-      contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
-      content: "content here",
-      link: "health_tech_",
-    },
-    {
-      section: "HealthTech",
-      name: "Series C",
-      value: secondChildNodeSize,
-      data: "There are over ABCD ventures in this category",
-      contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
-      content: "content here",
-      link: "health_tech_",
-    },
-    {
-      section: "HealthTech",
-      name: "Mezzanine",
-      value: secondChildNodeSize,
-      data: "There are over ABCD ventures in this category",
-      contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
-      content: "content here",
-      link: "health_tech_",
-    },
-    {
-      section: "HealthTech",
-      name: "Public",
-      value: secondChildNodeSize,
-      data: "There are over ABCD ventures in this category",
-      contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
-      content: "content here",
-      link: "health_tech_",
-    },
-    {
-      section: "MedTech",
-      name: "Pre Seed",
-      value: secondChildNodeSize,
-      data: "There are over ABCD ventures in this category",
-      contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
-      content: "content here",
-      link: "med_tech_",
-    },
-    {
-      section: "MedTech",
-      name: "Seed Stage",
-      value: secondChildNodeSize,
-      data: "There are over ABCD ventures in this category",
-      contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
-      content: "content here",
-      link: "med_tech_",
-    },
-    {
-      section: "MedTech",
-      name: "Series A",
-      value: secondChildNodeSize,
-      data: "There are over ABCD ventures in this category",
-      contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
-      content: "content here",
-      link: "med_tech_",
-    },
-    {
-      section: "MedTech",
-      name: "Series B",
-      value: secondChildNodeSize,
-      data: "There are over ABCD ventures in this category",
-      contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
-      content: "content here",
-      link: "med_tech_",
-    },
-    {
-      section: "MedTech",
-      name: "Series C",
-      value: secondChildNodeSize,
-      data: "There are over ABCD ventures in this category",
-      contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
-      content: "content here",
-      link: "med_tech_",
-    },
-    {
-      section: "MedTech",
-      name: "Mezzanine",
-      value: secondChildNodeSize,
-      data: "There are over ABCD ventures in this category",
-      contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
-      content: "content here",
-      link: "med_tech_",
-    },
-    {
-      section: "MedTech",
-      name: "Public",
-      value: secondChildNodeSize,
-      data: "There are over ABCD ventures in this category",
-      contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
-      content: "content here",
-      link: "med_tech_",
-    },
-    {
-      section: "PharmaTech",
-      name: "Pre Seed",
-      value: secondChildNodeSize,
-      data: "There are over ABCD ventures in this category",
-      contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
-      content: "content here",
-      link: "pharma_tech_",
-    },
-    {
-      section: "PharmaTech",
-      name: "Seed Stage",
-      value: secondChildNodeSize,
-      data: "There are over ABCD ventures in this category",
-      contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
-      content: "content here",
-      link: "pharma_tech_",
-    },
-    {
-      section: "PharmaTech",
-      name: "Series A",
-      value: secondChildNodeSize,
-      data: "There are over ABCD ventures in this category",
-      contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
-      content: "content here",
-      link: "pharma_tech_",
-    },
-    {
-      section: "PharmaTech",
-      name: "Series B",
-      value: secondChildNodeSize,
-      data: "There are over ABCD ventures in this category",
-      contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
-      content: "content here",
-      link: "pharma_tech_",
-    },
-    {
-      section: "PharmaTech",
-      name: "Series C",
-      value: secondChildNodeSize,
-      data: "There are over ABCD ventures in this category",
-      contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
-      content: "content here",
-      link: "pharma_tech_",
-    },
-    {
-      section: "PharmaTech",
-      name: "Mezzanine",
-      value: secondChildNodeSize,
-      data: "There are over ABCD ventures in this category",
-      contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
-      content: "content here",
-      link: "pharma_tech_",
-    },
-    {
-      section: "PharmaTech",
-      name: "Public",
-      value: secondChildNodeSize,
-      data: "There are over ABCD ventures in this category",
-      contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
-      content: "content here",
-      link: "pharma_tech_",
-    },
-  ]
-
+export const navData = [
+  {
+    id: "0",
+    section: "Home",
+    title: "Home",
+    subhead: "Home Page",
+    contact:
+      "Home PageHome PageHome PageHome PageHome PageHome Page",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "/",
+    component: "Home",
+  },
+  {
+    id: "bio_1",
+    section: "BioTech",
+    title: "Pre Seed",
+    subhead: "There are over ABCD ventures in this category",
+    contact:
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "bio_tech_pre_seed",
+    component: "BioTechPreSeed",
+  },
+  {
+    id: "bio_2",
+    section: "BioTech",
+    title: "Seed Stage",
+    subhead: "There are over ABCD ventures in this category",
+    contact:
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "bio_tech_seed",
+    component: "BioTechSeed",
+  },
+  {
+    id: "bio_3",
+    section: "BioTech",
+    title: "Series A",
+    subhead: "There are over ABCD ventures in this category",
+    contact:
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "bio_tech_series_a",
+    component: "BioTechSeriesA",
+  },
+  {
+    id: "bio_4",
+    section: "BioTech",
+    title: "Series B",
+    subhead: "There are over ABCD ventures in this category",
+    contact:
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "bio_tech_series_b",
+    component: "BioTechSeriesB",
+  },
+  {
+    id: "bio_5",
+    section: "BioTech",
+    title: "Series C",
+    subhead: "There are over ABCD ventures in this category",
+    contact:
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "bio_tech_series_c",
+    component: "BioTechSeriesC",
+  },
+  {
+    id: "bio_6",
+    section: "BioTech",
+    title: "Mezzanine",
+    subhead: "There are over ABCD ventures in this category",
+    contact:
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "bio_tech_mezzanine",
+    component: "BioTechMezzanine",
+  },
+  {
+    id: "bio_7",
+    section: "BioTech",
+    title: "Public",
+    subhead: "There are over ABCD ventures in this category",
+    contact:
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "bio_tech_public",
+    component: "BioTechPublic",
+  },
+  {
+    id: "health_1",
+    section: "HealthTech",
+    title: "Pre Seed",
+    subhead: "There are over ABCD ventures in this category",
+    contact:
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "health_tech_pre_seed",
+    component: "HealthTechPreSeed",
+  },
+  {
+    id: "health_2",
+    section: "HealthTech",
+    title: "Seed Stage",
+    subhead: "There are over ABCD ventures in this category",
+    contact:
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "health_tech_seed",
+    component: "HealthTechSeed",
+  },
+  {
+    id: "health_3",
+    section: "HealthTech",
+    title: "Series A",
+    subhead: "There are over ABCD ventures in this category",
+    contact:
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "health_tech_series_a",
+    component: "HealthTechSeriesA",
+  },
+  {
+    id: "health_4",
+    section: "HealthTech",
+    title: "Series B",
+    subhead: "There are over ABCD ventures in this category",
+    contact:
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "health_tech_series_b",
+    component: "HealthTechSeriesB",
+  },
+  {
+    id: "health_5",
+    section: "HealthTech",
+    title: "Series C",
+    subhead: "There are over ABCD ventures in this category",
+    contact:
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "health_tech_series_c",
+    component: "HealthTechSeriesC",
+  },
+  {
+    id: "health_6",
+    section: "HealthTech",
+    title: "Mezzanine",
+    subhead: "There are over ABCD ventures in this category",
+    contact:
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "health_tech_mezzanine",
+    component: "HealthTechMezzanine",
+  },
+  {
+    id: "health_7",
+    section: "HealthTech",
+    title: "Public",
+    subhead: "There are over ABCD ventures in this category",
+    contact:
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "health_tech_public",
+    component: "HealthTechPublic",
+  },
+  {
+    id: "med_1",
+    section: "MedTech",
+    title: "Pre Seed",
+    subhead: "There are over ABCD ventures in this category",
+    contact:
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "med_tech_pre_seed",
+    component: "MedTechPreSeed",
+  },
+  {
+    id: "med_2",
+    section: "MedTech",
+    title: "Seed Stage",
+    subhead: "There are over ABCD ventures in this category",
+    contact:
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "med_tech_seed",
+    component: "MedTechSeed",
+  },
+  {
+    id: "med_3",
+    section: "MedTech",
+    title: "Series A",
+    subhead: "There are over ABCD ventures in this category",
+    contact:
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "med_tech_series_a",
+    component: "MedTechSeriesA",
+  },
+  {
+    id: "med_4",
+    section: "MedTech",
+    title: "Series B",
+    subhead: "There are over ABCD ventures in this category",
+    contact:
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "med_tech_series_b",
+    component: "MedTechSeriesB",
+  },
+  {
+    id: "med_5",
+    section: "MedTech",
+    title: "Series C",
+    subhead: "There are over ABCD ventures in this category",
+    contact:
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "med_tech_series_c",
+    component: "MedTechSeriesC",
+  },
+  {
+    id: "med_6",
+    section: "MedTech",
+    title: "Mezzanine",
+    subhead: "There are over ABCD ventures in this category",
+    contact:
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "med_tech_mezzanine",
+    component: "MedTechMezzanine",
+  },
+  {
+    id: "med_7",
+    section: "MedTech",
+    title: "Public",
+    subhead: "There are over ABCD ventures in this category",
+    contact:
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "med_tech_public",
+    component: "MedTechPublic",
+  },
+  {
+    id: "pharma_1",
+    section: "PharmaTech",
+    title: "Pre Seed",
+    subhead: "There are over ABCD ventures in this category",
+    contact:
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "pharma_tech_pre_seed",
+    component: "PharmaTechPreSeed",
+  },
+  {
+    id: "pharma_2",
+    section: "PharmaTech",
+    title: "Seed Stage",
+    subhead: "There are over ABCD ventures in this category",
+    contact:
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "pharma_tech_seed",
+    component: "PharmaTechSeed",
+  },
+  {
+    id: "pharma_3",
+    section: "PharmaTech",
+    title: "Series A",
+    subhead: "There are over ABCD ventures in this category",
+    contact:
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "pharma_tech_series_a",
+    component: "PharmaTechSeriesA",
+  },
+  {
+    id: "1",
+    section: "PharmaTech",
+    title: "Series B",
+    subhead: "There are over ABCD ventures in this category",
+    contact:
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "pharma_tech_series_b",
+    component: "PharmaTechSeriesB",
+  },
+  {
+    id: "pharma_4",
+    section: "PharmaTech",
+    title: "Series C",
+    subhead: "There are over ABCD ventures in this category",
+    contact:
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "pharma_tech_series_c",
+    component: "PharmaTechSeriesC",
+  },
+  {
+    id: "pharma_5",
+    section: "PharmaTech",
+    title: "Mezzanine",
+    subhead: "There are over ABCD ventures in this category",
+    contact:
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "pharma_tech_mezzanine",
+    component: "PharmaTechMezzanine",
+  },
+  {
+    id: "pharma_6",
+    section: "PharmaTech",
+    title: "Public",
+    subhead: "There are over ABCD ventures in this category",
+    contact:
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
+    text: "Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.  Here is the text about this topic.",
+    link: "pharma_tech_public",
+    component: "PharmaTechPublic",
+  },
+];

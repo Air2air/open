@@ -1,35 +1,34 @@
-import React from "react";
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { Link, useRoutes } from "react-router-dom";
 
-import HomePage from "./pages/HomePage/HomePage";
-import ContactPage from "./pages/ContactPage/ContactPage";
-import styled from "styled-components";
-import { ContentSection } from "./components/ContentSection";
+import mainRoutes from "./routes/mainRoutes";
+import Routes from "./Routes";
 
-export default function App() {
+function App() {
+  const routeResult = useRoutes(mainRoutes);
   return (
-    <Container>
-      <BubbleSection></BubbleSection>
-      <ContentSection>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/contact" element={<ContactPage />} />
-          </Routes>
-        </BrowserRouter>
-      </ContentSection>
-    </Container>
+    <>
+      <header>
+        <strong>React Router v6</strong>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/products">Produtos</Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        {/* You can use by useRoutes like this (I prefer it): */}
+        {/* {routeResult} */}
+        {/* Or use by defining it */}
+        <Routes />
+      </main>
+    </>
   );
 }
 
-const Container = styled.div`
-display:flex;
-width:100%;
-height;100vy;
-`;
-
-const BubbleSection = styled.div`
-  display: flex;
-  flex: 1;
-  height: 100vy;
-`;
+export default App;
