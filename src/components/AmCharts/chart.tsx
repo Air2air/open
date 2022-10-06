@@ -3,11 +3,12 @@ import * as am5 from "@amcharts/amcharts5";
 import * as am5hierarchy from "@amcharts/amcharts5/hierarchy";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 import am5themes_Responsive from "@amcharts/amcharts5/themes/Responsive";
-import am5themes_Kelly from "@amcharts/amcharts5/themes/Kelly";
+import { useNavigate } from "react-router-dom";
 import { navData } from "./../../data/navData";
 
-
 const NavBubbles = (props: any) => {
+  const navigate = useNavigate()
+
   useLayoutEffect(() => {
     // Create root and chart
     var root = am5.Root.new("navdiv");
@@ -16,7 +17,7 @@ const NavBubbles = (props: any) => {
       am5themes_Animated.new(root),
       am5themes_Responsive.newEmpty(root),
       // am5themes_Dark.new(root),
-      am5themes_Kelly.new(root),
+      //am5themes_Kelly.new(root),
     ]);
 
     var container = root.container.children.push(
@@ -91,6 +92,12 @@ const NavBubbles = (props: any) => {
 
     series.data.setAll(navData);
     series.set("selectedDataItem", series.dataItems[0]);
+
+    // Routing
+    series.events.on("click", function (ev) {
+      navigate("/home");
+      //alert("Clicked on a node " + ev.target);
+    });
 
     return () => {
       root.dispose();
