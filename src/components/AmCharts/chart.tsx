@@ -1,12 +1,11 @@
-/*
-
 import React, { useLayoutEffect } from "react";
 import * as am5 from "@amcharts/amcharts5";
 import * as am5hierarchy from "@amcharts/amcharts5/hierarchy";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 import am5themes_Responsive from "@amcharts/amcharts5/themes/Responsive";
 import am5themes_Kelly from "@amcharts/amcharts5/themes/Kelly";
-// import data from "./../../data/data";
+import { navData } from "./../../data/navData";
+
 
 const NavBubbles = (props: any) => {
   useLayoutEffect(() => {
@@ -37,21 +36,13 @@ const NavBubbles = (props: any) => {
         categoryField: "name",
         childDataField: "children",
         velocityDecay: 0.9,
-        nodePadding: 30,
-        minRadius: am5.percent(4),
+        nodePadding: 20,
+        minRadius: am5.percent(5.5),
         centerStrength: 2,
         manyBodyStrength: -2,
         //maxRadius: am5.percent(7), // Overall size control
       })
     );
-
-    // root.setThemes.rule("ColorSet").set("colors", [
-    //   am5.color(0x095256),
-    //   am5.color(0x087f8c),
-    //   am5.color(0x5aaa95),
-    //   am5.color(0x86a873),
-    //   am5.color(0xbb9f06)
-    // ]);
 
     series.nodes.template.setAll({
       draggable: false,
@@ -98,7 +89,7 @@ const NavBubbles = (props: any) => {
       strokeOpacity: 1,
     });
 
-    series.data.setAll(data);
+    series.data.setAll(navData);
     series.set("selectedDataItem", series.dataItems[0]);
 
     return () => {
@@ -111,11 +102,10 @@ const NavBubbles = (props: any) => {
       id="navdiv"
       style={{
         width: "90%",
-        height: "100vh",
+        height: "80vh",
         margin: "0 auto",
       }}
-    ></div>
+    />
   );
 };
 export default NavBubbles;
-*/

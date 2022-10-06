@@ -1,34 +1,51 @@
 import { Link, useRoutes } from "react-router-dom";
-
+import styled from "styled-components";
+import NavBubbles from "./components/AmCharts/chart";
+import { Header } from "./components/Header";
 import mainRoutes from "./routes/mainRoutes";
-import Routes from "./Routes";
 
-function App() {
+const App = () => {
   const routeResult = useRoutes(mainRoutes);
   return (
     <>
-      <header>
-        <strong>React Router v6</strong>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/products">Produtos</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      <main>
-        {/* You can use by useRoutes like this (I prefer it): */}
-        {/* {routeResult} */}
-        {/* Or use by defining it */}
-        <Routes />
-      </main>
+      <Header />
+      <Container>
+        <Row>
+          <Col>
+          |<Link to="/">Home</Link> |
+      <Link to="/products">Produtos</Link> |<Link to="/medtech">MedTech</Link>
+            <NavBubbles />
+          </Col>
+          <Col>
+            <main>{routeResult}</main>
+          </Col>
+        </Row>
+      </Container>
     </>
   );
-}
+};
+
+const Container = styled.div`
+  display: flex;
+  height: auto;
+`;
+
+const Row = styled.div`
+  display: flex;
+  align-items:center;
+  flex: 1;
+  height:80vh;
+  // background:blue;
+`;
+
+const Col = styled.div`
+  display: flex;
+  flex-direction:column;
+  flex: 1;
+  height:100%;
+  align-items:flex-start;
+  justify-content:center;
+  //background:blue;
+`;
 
 export default App;
