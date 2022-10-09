@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { navData } from "./../../data/navData";
 
 const NavBubbles = (props: any) => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   useLayoutEffect(() => {
     // Create root and chart
@@ -16,8 +16,6 @@ const NavBubbles = (props: any) => {
     root.setThemes([
       am5themes_Animated.new(root),
       am5themes_Responsive.newEmpty(root),
-      // am5themes_Dark.new(root),
-      //am5themes_Kelly.new(root),
     ]);
 
     var container = root.container.children.push(
@@ -34,7 +32,7 @@ const NavBubbles = (props: any) => {
         initialDepth: 0,
         singleBranchOnly: true,
         valueField: "value",
-        categoryField: "name",
+        categoryField: "title",
         childDataField: "children",
         velocityDecay: 0.9,
         nodePadding: 20,
@@ -94,10 +92,11 @@ const NavBubbles = (props: any) => {
     series.set("selectedDataItem", series.dataItems[0]);
 
     // Routing
-    series.events.on("click", function (ev) {
+    series.events.on("click", (ev) => {
       navigate("/home");
-      //alert("Clicked on a node " + ev.target);
     });
+
+
 
     return () => {
       root.dispose();

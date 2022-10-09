@@ -7,7 +7,7 @@ import { parentNodeSize } from "../components/AmCharts/config";
 
 export const navData = [
   {
-    name: "Elevens",
+    title: "Elevens",
     value: parentNodeSize,
     children: [BioTech, HealthTech, MedTech, PharmaTech],
   },

@@ -5,17 +5,17 @@ import { ReactComponent as LogoWhite } from "./../../images/logo_white.svg";
 export const Header = () => {
   return (
     <HeaderWrapper>
-      <LogoWhite width="60" />
+      <Link to="/">
+        <LogoWhite width="50" />
+      </Link>
     </HeaderWrapper>
   );
 };
 
 const HeaderWrapper = styled.div`
-  position: fixed;
   width: 100vw;
-  height: 80px;
+  height: 90px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  pointer-events: none;
 `;

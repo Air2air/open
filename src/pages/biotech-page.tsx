@@ -1,8 +1,8 @@
 import { useParams, useNavigate } from "react-router";
 import { useSearchParams } from "react-router-dom";
 
-export default function MedTechPage() {
-  const { medtechId } = useParams();
+export default function BioTechPage() {
+  const { biotechId } = useParams();
   const navigate = useNavigate();
   const [queryParams] = useSearchParams();
   const selectedColor = queryParams.get("color");
@@ -20,8 +20,8 @@ export default function MedTechPage() {
   }
 
   return (
-    <div className="medtech">
-      <h2>MedTech {medtechId}</h2>
+    <div className="biotech">
+      <h2>BioTech {biotechId}</h2>
       {selectedColor && (
         <h3 style={{ color: selectedColor }}>
           Cor selecionada: {selectedColor}

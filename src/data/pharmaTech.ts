@@ -4,12 +4,12 @@ import {
 } from "../components/AmCharts/config";
 
 export const PharmaTech = {
-  name: "Pharma Tech",
+  title: "Pharma Tech",
   value: firstChildNodeSize,
   children: [
     {
       section: "PharmaTech",
-      name: "Pre Seed",
+      title: "Pre Seed",
       value: secondChildNodeSize,
       data: "There are over ABCD ventures in this category",
       contact:
@@ -19,7 +19,7 @@ export const PharmaTech = {
     },
     {
       section: "PharmaTech",
-      name: "Seed Stage",
+      title: "Seed Stage",
       value: secondChildNodeSize,
       data: "There are over ABCD ventures in this category",
       contact:
@@ -29,7 +29,7 @@ export const PharmaTech = {
     },
     {
       section: "PharmaTech",
-      name: "Series A",
+      title: "Series A",
       value: secondChildNodeSize,
       data: "There are over ABCD ventures in this category",
       contact:
@@ -40,7 +40,7 @@ export const PharmaTech = {
 
     {
       section: "PharmaTech",
-      name: "Series B",
+      title: "Series B",
       value: secondChildNodeSize,
       data: "There are over ABCD ventures in this category",
       contact:
@@ -50,7 +50,7 @@ export const PharmaTech = {
     },
     {
       section: "PharmaTech",
-      name: "Series C",
+      title: "Series C",
       value: secondChildNodeSize,
       data: "There are over ABCD ventures in this category",
       contact:
@@ -60,7 +60,7 @@ export const PharmaTech = {
     },
     {
       section: "PharmaTech",
-      name: "Mezzanine",
+      title: "Mezzanine",
       value: secondChildNodeSize,
       data: "There are over ABCD ventures in this category",
       contact:
@@ -70,7 +70,7 @@ export const PharmaTech = {
     },
     {
       section: "PharmaTech",
-      name: "Public",
+      title: "Public",
       value: secondChildNodeSize,
       data: "There are over ABCD ventures in this category",
       contact:
