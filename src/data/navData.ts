@@ -3,12 +3,12 @@ import { MedTech } from "./medTech";
 import { PharmaTech } from "./pharmaTech";
 import { BioTech } from "./bioTech";
 
-import { parentNodeSize } from "../components/AmCharts/config";
+
 
 export const navData = [
   {
     title: "Elevens",
-    value: parentNodeSize,
+    value: 90,
     children: [BioTech, HealthTech, MedTech, PharmaTech],
   },
 ];

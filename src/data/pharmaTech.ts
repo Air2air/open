@@ -1,16 +1,12 @@
-import {
-  firstChildNodeSize,
-  secondChildNodeSize,
-} from "../components/AmCharts/config";
 
 export const PharmaTech = {
   title: "Pharma Tech",
-  value: firstChildNodeSize,
+  value: 70,
   children: [
     {
       section: "PharmaTech",
       title: "Pre Seed",
-      value: secondChildNodeSize,
+      value: 70,
       data: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
@@ -20,7 +16,7 @@ export const PharmaTech = {
     {
       section: "PharmaTech",
       title: "Seed Stage",
-      value: secondChildNodeSize,
+      value: 70,
       data: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
@@ -30,7 +26,7 @@ export const PharmaTech = {
     {
       section: "PharmaTech",
       title: "Series A",
-      value: secondChildNodeSize,
+      value: 70,
       data: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
@@ -41,7 +37,7 @@ export const PharmaTech = {
     {
       section: "PharmaTech",
       title: "Series B",
-      value: secondChildNodeSize,
+      value: 70,
       data: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
@@ -51,7 +47,7 @@ export const PharmaTech = {
     {
       section: "PharmaTech",
       title: "Series C",
-      value: secondChildNodeSize,
+      value: 70,
       data: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
@@ -61,7 +57,7 @@ export const PharmaTech = {
     {
       section: "PharmaTech",
       title: "Mezzanine",
-      value: secondChildNodeSize,
+      value: 70,
       data: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
@@ -71,7 +67,7 @@ export const PharmaTech = {
     {
       section: "PharmaTech",
       title: "Public",
-      value: secondChildNodeSize,
+      value: 70,
       data: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",

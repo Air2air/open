@@ -11,17 +11,16 @@ const data = {
     { id: "About", link: "about" },
   ],
   links: [
-    { source: "Home", target: "About", value: 3 },
-    { source: "BioTech", target: "HealthTech", value: 3 },
-    { source: "HealthTech", target: "MedTech", value: 3 },
-    { source: "MedTech", target: "PharmaTech", value: 5 },
+    { source: "Home", target: "About", value: 3, particleColor: 'white' },
+    { source: "BioTech", target: "Home", value: 3 },
+    { source: "HealthTech", target: "Home", value: 3 },
+    { source: "MedTech", target: "Home", value: 5 },
     { source: "PharmaTech", target: "About", value: 5 },
-    { source: "About", target: "Home", value: 5 },
+    { source: "About", target: "Home", value: 5, flow1: 5, flow2: 10 },
   ],
 };
 
-const NODE_SIZE = 8;
-const LINK_WIDTH = 9;
+
 
 const Graph = (props: { link?: string }) => {
   const handleNodeClick = function (node) {
@@ -39,13 +38,13 @@ const Graph = (props: { link?: string }) => {
       enablePointerInteraction={true}
       nodeLabel="id"
       onNodeClick={handleNodeClick}
-      nodeRelSize={NODE_SIZE}
+      nodeRelSize={8}
       linkCurvature="curvature" //linkCurvature={0.5}
-      linkDirectionalParticles="value"
+      linkDirectionalParticles='value'
       linkDirectionalParticleSpeed={(d) => 5 * 0.001}
       linkDirectionalParticleWidth={3}
-      linkDirectionalParticleColor="rgba(255,255,255,1)"
-      linkWidth={LINK_WIDTH}
+
+      linkWidth={9}
       cooldownTime={55000}
       cooldownTicks={10000}
       nodeColor={(_) => "rgba(255,255,255,1)"}
@@ -56,3 +55,7 @@ const Graph = (props: { link?: string }) => {
 };
 
 export default Graph;
+function rgba(arg0: number, arg1: number, arg2: number, arg3: number) {
+    throw new Error("Function not implemented.");
+}
+
