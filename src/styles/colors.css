@@ -2,7 +2,11 @@
 
 body {
   color: #fff;
-  background: linear-gradient(to bottom, #02111b, #4484c3);
+  background: linear-gradient(to bottom, #02111b, #234e79);
+}
+
+.gold {
+  color:rgb(68, 173, 161)
 }
 
 a {

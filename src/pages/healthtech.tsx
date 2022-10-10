@@ -1,16 +1,14 @@
-
-
-import { Link } from "react-router-dom";
-
-export default function HealthTech() {
+const title = `HealthTech Page`;
+const subtitle = `Subtitle about HealthTech`;
+const text = `Mission statement Mission statement Mission statement Mission statement
+        Mission statement Mission statement Mission statement Mission statement`;
+const HealthTechPage = () => {
   return (
-    <ul className="products">
-      <li>
-        <Link to="healthtech-1">healthtech 1</Link>
-      </li>
-      <li>
-        <Link to="healthtech-3?color=green">healthtech 3</Link>
-      </li>
-    </ul>
+    <>
+      <h1>{title}</h1>
+      <h2>{subtitle}</h2>
+      <p>{text}</p>
+    </>
   );
-}
+};
+export default HealthTechPage;

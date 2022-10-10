@@ -2,21 +2,18 @@ import { Route } from "react-router-dom";
 import styled from "styled-components";
 import Graph from "./components/Graph/Graph";
 import { Header } from "./components/Header";
-import mainRoutes from "./routes/mainRoutes";
 import SlideRoutes from "react-slide-routes";
 import AboutPage from "./pages/about";
-import BioTechPage from "./pages/biotech-page";
-import BioTech from "./pages/biotech-page";
-import HealthTechPage from "./pages/healthtech-page";
-import HealthTech from "./pages/healthtech-page";
+import BioTechPage from "./pages/biotech";
+import HealthTechPage from "./pages/healthtech";
+import MedTechPage from "./pages/medtech";
+import PharmaTechPage from "./pages/pharmatech";
 import HomePage from "./pages/home";
-import MedTech from "./pages/medtech";
-import MedTechPage from "./pages/medtech-page";
-import PharmaTech from "./pages/pharmatech";
-import PharmaTechPage from "./pages/pharmatech-page";
+import TeamPage from "./pages/team";
+
+
 
 const App = () => {
-
   return (
     <>
       <Header />
@@ -27,8 +24,13 @@ const App = () => {
         <Col>
           <SlideRoutes>
             <Route path="/" element={<HomePage />} />
+            <Route path="home" element={<HomePage />} />
             <Route path="about" element={<AboutPage />} />
+            <Route path="team" element={<TeamPage />} />
+            <Route path="biotech" element={<BioTechPage />} />
+            <Route path="healthtech" element={<HealthTechPage />} />
             <Route path="medtech" element={<MedTechPage />} />
+            <Route path="pharmatech" element={<PharmaTechPage />} />
           </SlideRoutes>
         </Col>
       </Container>
@@ -42,6 +44,8 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   height: auto;
+  margin:0 80px;
+ //background:red;
 `;
 
 const Col = styled.div`
@@ -50,8 +54,8 @@ const Col = styled.div`
   flex: 1;
   text-align: left;
   align-items: flex-start;
-  justify-content: center;
-  //background: blue;
+  justify-content: flex-start;
+  padding:10% 0 0 0;
 `;
 
 export default App;

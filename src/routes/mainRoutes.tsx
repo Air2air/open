@@ -1,13 +1,9 @@
 import AboutPage from "../pages/about";
-import BioTechPage from "../pages/biotech-page";
-import BioTech from "../pages/biotech-page";
-import HealthTechPage from "../pages/healthtech-page";
-import HealthTech from "../pages/healthtech-page";
+import BioTechPage from "../pages/biotech";
+import HealthTechPage from "../pages/healthtech";
 import HomePage from "../pages/home";
-import MedTech from "../pages/medtech";
-import MedTechPage from "../pages/medtech-page";
-import PharmaTech from "../pages/pharmatech";
-import PharmaTechPage from "../pages/pharmatech-page";
+import MedTechPage from "../pages/medtech";
+import PharmaTechPage from "../pages/pharmatech";
 
 const mainRoutes = [
   {
@@ -27,7 +23,7 @@ const mainRoutes = [
     children: [
       {
         index: true,
-        element: <BioTech />,
+        element: <BioTechPage />,
       },
       {
         path: ":biotechId",
@@ -40,7 +36,7 @@ const mainRoutes = [
     children: [
       {
         index: true,
-        element: <HealthTech />,
+        element: <HealthTechPage />,
       },
       {
         path: ":medtechId",
@@ -53,7 +49,7 @@ const mainRoutes = [
     children: [
       {
         index: true,
-        element: <MedTech />,
+        element: <MedTechPage />,
       },
       {
         path: ":medtechId",
@@ -66,7 +62,7 @@ const mainRoutes = [
     children: [
       {
         index: true,
-        element: <PharmaTech />,
+        element: <PharmaTechPage />,
       },
       {
         path: ":medtechId",
