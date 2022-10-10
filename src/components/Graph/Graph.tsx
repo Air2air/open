@@ -94,6 +94,8 @@ const data = {
       nodeColor: BioColorNode,
     },
 
+
+    
     {
       id: "HealthTech",
       link: "healthtech",
