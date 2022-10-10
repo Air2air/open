@@ -1,16 +1,14 @@
-
-
-import { Link } from "react-router-dom";
-
-export default function PharmaTech() {
+const title = `PharmaTech Page`;
+const subtitle = `Subtitle about PharmaTech`;
+const text = `Mission statement Mission statement Mission statement Mission statement
+        Mission statement Mission statement Mission statement Mission statement`;
+const PharmaTechPage = () => {
   return (
-    <ul className="products">
-      <li>
-        <Link to="pharmatech-1">pharmatech 1</Link>
-      </li>
-      <li>
-        <Link to="pharmatech-3?color=green">pharmatech 3</Link>
-      </li>
-    </ul>
+    <>
+      <h1>{title}</h1>
+      <h2>{subtitle}</h2>
+      <p>{text}</p>
+    </>
   );
-}
+};
+export default PharmaTechPage;

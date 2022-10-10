@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { data } from "./data";
 import { zoomLevel } from "./config";
 
-
 const Graph = () => {
   const navigate = useNavigate();
 
@@ -21,6 +20,7 @@ const Graph = () => {
       enablePointerInteraction={true}
       nodeLabel="id"
       onNodeClick={handleNodeClick}
+      // onNodeHover={handleNodeHover}
       nodeVal="nodeSize"
       // Links
       linkWidth="linkSize"
@@ -28,7 +28,7 @@ const Graph = () => {
       linkDirectionalParticles="particleCount"
       linkDirectionalParticleSpeed={(d) => 5 * 0.001}
       linkDirectionalParticleWidth="particleSize"
-      // Behaviors
+      // Config
       minZoom={zoomLevel}
       maxZoom={zoomLevel}
       cooldownTime={9000}
@@ -36,9 +36,9 @@ const Graph = () => {
       d3AlphaDecay={0.01}
       d3VelocityDecay={0.84}
       // Colors
-      nodeColor="nodeColor"
+      nodeColor="nodeColor" //{hoverNode ? "red" : "nodeColor"}
       linkColor="linkColor"
-      backgroundColor="rgba(0,0,0,0)"
+      backgroundColor="rgba(0, 0, 0, 0)"
     />
   );
 };

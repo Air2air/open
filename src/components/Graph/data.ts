@@ -24,15 +24,10 @@ export const data = {
     {
       id: "About",
       link: "about",
-      nodeSize: LevelTwoNodeSize,
+      nodeSize: LevelOneNodeSize,
       nodeColor: SiteColorNode,
     },
-    {
-      id: "Contact",
-      link: "contact",
-      nodeSize: LevelTwoNodeSize,
-      nodeColor: SiteColorNode,
-    },
+
     {
       id: "Home",
       link: "home",
@@ -42,7 +37,7 @@ export const data = {
     {
       id: "Team",
       link: "team",
-      nodeSize: LevelTwoNodeSize,
+      nodeSize: LevelOneNodeSize,
       nodeColor: SiteColorNode,
     },
     /* --------------- BioTech --------------- */
@@ -50,6 +45,12 @@ export const data = {
       id: "BioTech",
       link: "biotech",
       nodeSize: LevelOneNodeSize,
+      nodeColor: BioColorNode,
+    },
+    {
+      id: "BioTech Contact",
+      link: "contact",
+      nodeSize: LevelTwoNodeSize,
       nodeColor: BioColorNode,
     },
     {
@@ -96,6 +97,12 @@ export const data = {
       nodeColor: HealthColorNode,
     },
     {
+      id: "HealthTech Contact",
+      link: "contact",
+      nodeSize: LevelTwoNodeSize,
+      nodeColor: HealthColorNode,
+    },
+    {
       id: "HealthTech PreSeed",
       link: "healthtech_preseed",
       nodeSize: LevelTwoNodeSize,
@@ -136,6 +143,12 @@ export const data = {
       id: "MedTech",
       link: "medtech",
       nodeSize: LevelOneNodeSize,
+      nodeColor: MedColorNode,
+    },
+    {
+      id: "MedTech Contact",
+      link: "contact",
+      nodeSize: LevelTwoNodeSize,
       nodeColor: MedColorNode,
     },
     {
@@ -182,6 +195,12 @@ export const data = {
       nodeColor: PharmaColorNode,
     },
     {
+      id: "PharmaTech Contact",
+      link: "contact",
+      nodeSize: LevelTwoNodeSize,
+      nodeColor: PharmaColorNode,
+    },
+    {
       id: "PharmaTech PreSeed",
       link: "pharmatech_preseed",
       nodeSize: LevelTwoNodeSize,
@@ -219,7 +238,7 @@ export const data = {
     },
   ],
 
-      /* --------------- Links --------------- */
+  /* --------------- Links --------------- */
 
   links: [
     {
@@ -238,18 +257,19 @@ export const data = {
       linkSize: SiteLinkSize,
       linkColor: SiteColorLink,
     },
-    {
-      source: "Home",
-      target: "Contact",
-      particleCount: particleCount,
-      particleSize: ParticleSize,
-      linkSize: SiteLinkSize,
-      linkColor: SiteColorLink,
-    },
+
     /* --------------- BioTech --------------- */
     {
       source: "BioTech",
       target: "Home",
+      particleCount: particleCount,
+      particleSize: ParticleSize,
+      linkSize: LevelOneLinkSize,
+      linkColor: BioColorLink,
+    },
+    {
+      source: "BioTech Contact",
+      target: "BioTech",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelOneLinkSize,
@@ -313,6 +333,14 @@ export const data = {
       linkColor: HealthColorLink,
     },
     {
+      source: "HealthTech Contact",
+      target: "HealthTech",
+      particleCount: particleCount,
+      particleSize: ParticleSize,
+      linkSize: LevelOneLinkSize,
+      linkColor: HealthColorLink,
+    },
+    {
       source: "HealthTech PreSeed",
       target: "HealthTech",
       particleCount: particleCount,
@@ -370,6 +398,14 @@ export const data = {
       linkColor: MedColorLink,
     },
     {
+      source: "MedTech Contact",
+      target: "MedTech",
+      particleCount: particleCount,
+      particleSize: ParticleSize,
+      linkSize: LevelOneLinkSize,
+      linkColor: MedColorLink,
+    },
+    {
       source: "MedTech PreSeed",
       target: "MedTech",
       particleCount: particleCount,
@@ -421,6 +457,14 @@ export const data = {
     {
       source: "PharmaTech",
       target: "Home",
+      particleCount: particleCount,
+      particleSize: ParticleSize,
+      linkSize: LevelOneLinkSize,
+      linkColor: PharmaColorLink,
+    },
+    {
+      source: "PharmaTech Contact",
+      target: "PharmaTech",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelOneLinkSize,
