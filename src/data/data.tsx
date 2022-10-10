@@ -1,3 +1,38 @@
+import AboutPage from "../pages/about";
+import BioTechPage from "../pages/BioTech/biotech";
+import BioTechContactPage from "../pages/BioTech/biotech_contact";
+import BioTechMezzaninePage from "../pages/BioTech/biotech_mezzanine";
+import BioTechPreSeedPage from "../pages/BioTech/biotech_preseed";
+import BioTechPublicPage from "../pages/BioTech/biotech_public";
+import BioTechSeedPage from "../pages/BioTech/biotech_seed";
+import BioTechSeriesAPage from "../pages/BioTech/biotech_series_a";
+import BioTechSeriesBPage from "../pages/BioTech/biotech_series_b";
+import HealthTechPage from "../pages/HealthTech/healthtech";
+import HealthTechMezzaninePage from "../pages/HealthTech/healthtech_mezzanine";
+import HealthTechPreSeedPage from "../pages/HealthTech/healthtech_preseed";
+import HealthTechPublicPage from "../pages/HealthTech/healthtech_public";
+import HealthTechSeedPage from "../pages/HealthTech/healthtech_seed";
+import HealthTechSeriesAPage from "../pages/HealthTech/healthtech_series_a";
+import HealthTechSeriesBPage from "../pages/HealthTech/healthtech_series_b";
+import HealthTechContactPage from "../pages/HealthTech/healthtech_contact";
+import HomePage from "../pages/home";
+import MedTechPage from "../pages/MedTech/medtech";
+import MedTechContactPage from "../pages/MedTech/medtech_contact";
+import MedTechMezzaninePage from "../pages/MedTech/medtech_mezzanine";
+import MedTechPreSeedPage from "../pages/MedTech/medtech_preseed";
+import MedTechPublicPage from "../pages/MedTech/medtech_public";
+import MedTechSeedPage from "../pages/MedTech/medtech_seed";
+import MedTechSeriesAPage from "../pages/MedTech/medtech_series_a";
+import MedTechSeriesBPage from "../pages/MedTech/medtech_series_b";
+import PharmaTechPage from "../pages/PharmaTech/pharmatech";
+import PharmaTechContactPage from "../pages/PharmaTech/pharmatech_contact";
+import PharmaTechMezzaninePage from "../pages/PharmaTech/pharmatech_mezzanine";
+import PharmaTechPreSeedPage from "../pages/PharmaTech/pharmatech_preseed";
+import PharmaTechPublicPage from "../pages/PharmaTech/pharmatech_public";
+import PharmaTechSeedPage from "../pages/PharmaTech/pharmatech_seed";
+import PharmaTechSeriesAPage from "../pages/PharmaTech/pharmatech_series_a";
+import PharmaTechSeriesBPage from "../pages/PharmaTech/pharmatech_series_b";
+import TeamPage from "../pages/team";
 import {
   LevelTwoNodeSize,
   SiteColorNode,
@@ -17,222 +52,256 @@ import {
   LevelTwoLinkSize,
   HealthColorLink,
   MedColorLink,
-} from "./config";
+} from "../components/Graph/config";
 
 export const data = {
   nodes: [
     {
       id: "About",
-      link: "about",
+      path: "about",
+      element: <AboutPage />,
       nodeSize: LevelOneNodeSize,
       nodeColor: SiteColorNode,
     },
-
     {
       id: "Home",
-      link: "home",
+      path: "home",
+      element: <HomePage />,
       nodeSize: SiteNodeSize,
       nodeColor: SiteColorNode,
     },
     {
       id: "Team",
-      link: "team",
+      path: "team",
+      element: <TeamPage />,
       nodeSize: LevelOneNodeSize,
       nodeColor: SiteColorNode,
     },
     /* --------------- BioTech --------------- */
     {
       id: "BioTech",
-      link: "biotech",
+      path: "biotech",
+      element: <BioTechPage />,
       nodeSize: LevelOneNodeSize,
       nodeColor: BioColorNode,
     },
     {
       id: "BioTech Contact",
-      link: "contact",
+      path: "biotech_contact",
+      element: <BioTechContactPage />,
       nodeSize: LevelTwoNodeSize,
       nodeColor: BioColorNode,
     },
     {
       id: "BioTech PreSeed",
-      link: "biotech_preseed",
+      path: "biotech_preseed",
+      element: <BioTechPreSeedPage />,
       nodeSize: LevelTwoNodeSize,
       nodeColor: BioColorNode,
     },
     {
       id: "BioTech Seed",
-      link: "biotech_seed",
+      path: "biotech_seed",
+      element: <BioTechSeedPage />,
       nodeSize: LevelTwoNodeSize,
       nodeColor: BioColorNode,
     },
     {
       id: "BioTech Series A",
-      link: "biotech_series_a",
+      path: "biotech_series_a",
+      element: <BioTechSeriesAPage />,
       nodeSize: LevelTwoNodeSize,
       nodeColor: BioColorNode,
     },
     {
       id: "BioTech Series B",
-      link: "biotech_series_b",
+      path: "biotech_series_b",
+      element: <BioTechSeriesBPage />,
       nodeSize: LevelTwoNodeSize,
       nodeColor: BioColorNode,
     },
     {
       id: "BioTech Mezzanine",
-      link: "biotech_mezzanine",
+      path: "biotech_mezzanine",
+      element: <BioTechMezzaninePage />,
       nodeSize: LevelTwoNodeSize,
       nodeColor: BioColorNode,
     },
     {
       id: "BioTech Public",
-      link: "biotech_public",
+      path: "biotech_public",
+      element: <BioTechPublicPage />,
       nodeSize: LevelTwoNodeSize,
       nodeColor: BioColorNode,
     },
     /* --------------- HealthTech --------------- */
     {
       id: "HealthTech",
-      link: "healthtech",
+      path: "healthtech",
+      element: <HealthTechPage />,
       nodeSize: LevelOneNodeSize,
       nodeColor: HealthColorNode,
     },
     {
       id: "HealthTech Contact",
-      link: "contact",
+      path: "healthtech_contact",
+      element: <HealthTechContactPage />,
       nodeSize: LevelTwoNodeSize,
       nodeColor: HealthColorNode,
     },
     {
       id: "HealthTech PreSeed",
-      link: "healthtech_preseed",
+      path: "healthtech_preseed",
+      element: <HealthTechPreSeedPage />,
       nodeSize: LevelTwoNodeSize,
       nodeColor: HealthColorNode,
     },
     {
       id: "HealthTech Seed",
-      link: "healthtech_seed",
+      path: "healthtech_seed",
+      element: <HealthTechSeedPage />,
       nodeSize: LevelTwoNodeSize,
       nodeColor: HealthColorNode,
     },
     {
       id: "HealthTech Series A",
-      link: "healthtech_series_a",
+      path: "healthtech_series_a",
+      element: <HealthTechSeriesAPage />,
       nodeSize: LevelTwoNodeSize,
       nodeColor: HealthColorNode,
     },
     {
       id: "HealthTech Series B",
-      link: "healthtech_series_b",
+      path: "healthtech_series_b",
+      element: <HealthTechSeriesBPage />,
       nodeSize: LevelTwoNodeSize,
       nodeColor: HealthColorNode,
     },
     {
       id: "HealthTech Mezzanine",
-      link: "healthtech_mezzanine",
+      path: "healthtech_mezzanine",
+      element: <HealthTechMezzaninePage />,
       nodeSize: LevelTwoNodeSize,
       nodeColor: HealthColorNode,
     },
     {
       id: "HealthTech Public",
-      link: "healthtech_public",
+      path: "healthtech_public",
+      element: <HealthTechPublicPage />,
       nodeSize: LevelTwoNodeSize,
       nodeColor: HealthColorNode,
     },
     /* --------------- MedTech --------------- */
     {
       id: "MedTech",
-      link: "medtech",
+      path: "medtech",
+      element: <MedTechPage />,
       nodeSize: LevelOneNodeSize,
       nodeColor: MedColorNode,
     },
     {
       id: "MedTech Contact",
-      link: "contact",
+      path: "medtech_contact",
+      element: <MedTechContactPage />,
       nodeSize: LevelTwoNodeSize,
       nodeColor: MedColorNode,
     },
     {
       id: "MedTech PreSeed",
-      link: "medtech_preseed",
+      path: "medtech_preseed",
+      element: <MedTechPreSeedPage />,
       nodeSize: LevelTwoNodeSize,
       nodeColor: MedColorNode,
     },
     {
       id: "MedTech Seed",
-      link: "medtech_seed",
+      path: "medtech_seed",
+      element: <MedTechSeedPage />,
       nodeSize: LevelTwoNodeSize,
       nodeColor: MedColorNode,
     },
     {
       id: "MedTech Series A",
-      link: "medtech_series_a",
+      path: "medtech_series_a",
+      element: <MedTechSeriesAPage />,
       nodeSize: LevelTwoNodeSize,
       nodeColor: MedColorNode,
     },
     {
       id: "MedTech Series B",
-      link: "medtech_series_b",
+      path: "medtech_series_b",
+      element: <MedTechSeriesBPage />,
       nodeSize: LevelTwoNodeSize,
       nodeColor: MedColorNode,
     },
     {
       id: "MedTech Mezzanine",
-      link: "medtech_mezzanine",
+      path: "medtech_mezzanine",
+      element: <MedTechMezzaninePage />,
       nodeSize: LevelTwoNodeSize,
       nodeColor: MedColorNode,
     },
     {
       id: "MedTech Public",
-      link: "medtech_public",
+      path: "medtech_public",
+      element: <MedTechPublicPage />,
       nodeSize: LevelTwoNodeSize,
       nodeColor: MedColorNode,
     },
     /* --------------- PharmaTech --------------- */
     {
       id: "PharmaTech",
-      link: "pharmatech",
+      path: "pharmatech",
+      element: <PharmaTechPage />,
       nodeSize: LevelOneNodeSize,
       nodeColor: PharmaColorNode,
     },
     {
       id: "PharmaTech Contact",
-      link: "contact",
+      path: "pharmatech_contact",
+      element: <PharmaTechContactPage />,
       nodeSize: LevelTwoNodeSize,
       nodeColor: PharmaColorNode,
     },
     {
       id: "PharmaTech PreSeed",
-      link: "pharmatech_preseed",
+      path: "pharmatech_preseed",
+      element: <PharmaTechPreSeedPage />,
       nodeSize: LevelTwoNodeSize,
       nodeColor: PharmaColorNode,
     },
     {
       id: "PharmaTech Seed",
-      link: "pharmatech_seed",
+      path: "pharmatech_seed",
+      element: <PharmaTechSeedPage />,
       nodeSize: LevelTwoNodeSize,
       nodeColor: PharmaColorNode,
     },
     {
       id: "PharmaTech Series A",
-      link: "pharmatech_series_a",
+      path: "pharmatech_series_a",
+      element: <PharmaTechSeriesAPage />,
       nodeSize: LevelTwoNodeSize,
       nodeColor: PharmaColorNode,
     },
     {
       id: "PharmaTech Series B",
-      link: "pharmatech_series_b",
+      path: "pharmatech_series_b",
+      element: <PharmaTechSeriesBPage />,
       nodeSize: LevelTwoNodeSize,
       nodeColor: PharmaColorNode,
     },
     {
       id: "PharmaTech Mezzanine",
-      link: "pharmatech_mezzanine",
+      path: "pharmatech_mezzanine",
+      element: <PharmaTechMezzaninePage />,
       nodeSize: LevelTwoNodeSize,
       nodeColor: PharmaColorNode,
     },
     {
       id: "PharmaTech Public",
-      link: "pharmatech_public",
+      path: "pharmatech_public",
+      element: <PharmaTechPublicPage />,
       nodeSize: LevelTwoNodeSize,
       nodeColor: PharmaColorNode,
     },

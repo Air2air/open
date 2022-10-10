@@ -1,8 +1,8 @@
-const title = `PharmaTech Page`;
-const subtitle = `Subtitle about PharmaTech`;
+const title = `BioTech Seed Page`;
+const subtitle = `Subtitle about BioTech`;
 const text = `Mission statement Mission statement Mission statement Mission statement
         Mission statement Mission statement Mission statement Mission statement`;
-const PharmaTechPage = () => {
+const BioTechSeedPage = () => {
   return (
     <>
       <h1>{title}</h1>
@@ -11,4 +11,4 @@ const PharmaTechPage = () => {
     </>
   );
 };
-export default PharmaTechPage;
+export default BioTechSeedPage;

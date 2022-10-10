@@ -1,9 +1,9 @@
 import AboutPage from "../pages/about";
-import BioTechPage from "../pages/biotech";
-import HealthTechPage from "../pages/healthtech";
+import BioTechPage from "../pages/BioTech/biotech";
+import HealthTechPage from "../pages/HealthTech/healthtech";
 import HomePage from "../pages/home";
-import MedTechPage from "../pages/medtech";
-import PharmaTechPage from "../pages/pharmatech";
+import MedTechPage from "../pages/MedTech/medtech";
+import PharmaTechPage from "../pages/PharmaTech/pharmatech";
 
 const mainRoutes = [
   {
@@ -20,55 +20,38 @@ const mainRoutes = [
   },
   {
     path: "biotech",
-    children: [
-      {
-        index: true,
-        element: <BioTechPage />,
-      },
-      {
-        path: ":biotechId",
-        element: <BioTechPage />,
-      },
-    ],
+    element: <BioTechPage />,
   },
+  {
+    path: ":biotechId",
+    element: <BioTechPage />,
+  },
+
   {
     path: "healthtech",
-    children: [
-      {
-        index: true,
-        element: <HealthTechPage />,
-      },
-      {
-        path: ":medtechId",
-        element: <HealthTechPage />,
-      },
-    ],
+    element: <HealthTechPage />,
   },
+  {
+    path: ":medtechId",
+    element: <HealthTechPage />,
+  },
+
   {
     path: "medtech",
-    children: [
-      {
-        index: true,
-        element: <MedTechPage />,
-      },
-      {
-        path: ":medtechId",
-        element: <MedTechPage />,
-      },
-    ],
+    element: <MedTechPage />,
   },
   {
+    path: ":medtechId",
+    element: <MedTechPage />,
+  },
+
+  {
     path: "pharmatech",
-    children: [
-      {
-        index: true,
-        element: <PharmaTechPage />,
-      },
-      {
-        path: ":medtechId",
-        element: <PharmaTechPage />,
-      },
-    ],
+    element: <PharmaTechPage />,
+  },
+  {
+    path: ":medtechId",
+    element: <PharmaTechPage />,
   },
 ];
 

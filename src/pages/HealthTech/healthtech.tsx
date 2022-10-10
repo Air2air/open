@@ -1,8 +1,8 @@
-const title = `MedTech Page`;
-const subtitle = `Subtitle about MedTech`;
+const title = `HealthTech  Page`;
+const subtitle = `Subtitle about HealthTech`;
 const text = `Mission statement Mission statement Mission statement Mission statement
         Mission statement Mission statement Mission statement Mission statement`;
-const MedTechPage = () => {
+const HealthTechPage = () => {
   return (
     <>
       <h1>{title}</h1>
@@ -11,4 +11,4 @@ const MedTechPage = () => {
     </>
   );
 };
-export default MedTechPage;
+export default HealthTechPage;

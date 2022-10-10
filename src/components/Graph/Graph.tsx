@@ -1,13 +1,13 @@
 import { ForceGraph2D } from "react-force-graph";
 import { useNavigate } from "react-router-dom";
-import { data } from "./data";
+import { data } from "../../data/data";
 import { zoomLevel } from "./config";
 
 const Graph = () => {
   const navigate = useNavigate();
 
   const handleNodeClick = function (node) {
-    const newPageUrl = node.link;
+    const newPageUrl = node.path;
     navigate(newPageUrl);
   };
 

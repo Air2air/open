@@ -1,8 +1,8 @@
-const title = `Eleven Team Page`;
-const subtitle = `Subtitle about Eleven`;
+const title = `HealthTech PreSeed Page`;
+const subtitle = `Subtitle about HealthTech`;
 const text = `Mission statement Mission statement Mission statement Mission statement
         Mission statement Mission statement Mission statement Mission statement`;
-const TeamPage = () => {
+const HealthTechPreSeedPage = () => {
   return (
     <>
       <h1>{title}</h1>
@@ -11,4 +11,4 @@ const TeamPage = () => {
     </>
   );
 };
-export default TeamPage;
+export default HealthTechPreSeedPage;
