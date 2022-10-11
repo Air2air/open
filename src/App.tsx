@@ -14,7 +14,7 @@ const App = () => {
         <Col>
           <Graph />
         </Col>
-        <Col>
+        <Col style={{width:'50%'}}>
           <SlideRoutes>
             {data.nodes.map(({ path, element }) => (
               <Route key={path} path={path} element={element} />
@@ -32,7 +32,9 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   height: 80vh;
-  margin: 0 80px;
+  margin: 0 auto;
+  width:80vw;
+  justify-content:space-around;
 `;
 
 const Col = styled.div`
