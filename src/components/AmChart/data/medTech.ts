@@ -1,12 +1,12 @@
 
 
 export const MedTech = {
-  title: "Med Tech",
+  name: "Med Tech",
   value: 70,
   children: [
     {
       section: "MedTech",
-      title: "Pre Seed",
+      name: "Pre Seed",
       value: 70,
       data: "There are over ABCD ventures in this category",
       contact:
@@ -16,7 +16,7 @@ export const MedTech = {
     },
     {
       section: "MedTech",
-      title: "Seed Stage",
+      name: "Seed Stage",
       value: 70,
       data: "There are over ABCD ventures in this category",
       contact:
@@ -26,7 +26,7 @@ export const MedTech = {
     },
     {
       section: "MedTech",
-      title: "Series A",
+      name: "Series A",
       value: 70,
       data: "There are over ABCD ventures in this category",
       contact:
@@ -37,7 +37,7 @@ export const MedTech = {
 
     {
       section: "MedTech",
-      title: "Series B",
+      name: "Series B",
       value: 70,
       data: "There are over ABCD ventures in this category",
       contact:
@@ -47,7 +47,7 @@ export const MedTech = {
     },
     {
       section: "MedTech",
-      title: "Series C",
+      name: "Series C",
       value: 70,
       data: "There are over ABCD ventures in this category",
       contact:
@@ -57,7 +57,7 @@ export const MedTech = {
     },
     {
       section: "MedTech",
-      title: "Mezzanine",
+      name: "Mezzanine",
       value: 70,
       data: "There are over ABCD ventures in this category",
       contact:
@@ -67,7 +67,7 @@ export const MedTech = {
     },
     {
       section: "MedTech",
-      title: "Public",
+      name: "Public",
       value: 70,
       data: "There are over ABCD ventures in this category",
       contact:

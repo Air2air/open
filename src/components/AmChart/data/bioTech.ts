@@ -1,78 +1,79 @@
 
-export const PharmaTech = {
-  title: "Pharma Tech",
+
+export const BioTech = {
+  name: "Bio Tech",
   value: 70,
   children: [
     {
-      section: "PharmaTech",
-      title: "Pre Seed",
+      section: "BioTech",
+      name: "Pre Seed",
       value: 70,
       data: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
-      link: "pharma_tech_",
+      link: "bio_tech_",
     },
     {
-      section: "PharmaTech",
-      title: "Seed Stage",
+      section: "BioTech",
+      name: "Seed Stage",
       value: 70,
       data: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
-      link: "pharma_tech_",
+      link: "bio_tech_",
     },
     {
-      section: "PharmaTech",
-      title: "Series A",
+      section: "BioTech",
+      name: "Series A",
       value: 70,
       data: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
-      link: "pharma_tech_",
+      link: "bio_tech_",
     },
 
     {
-      section: "PharmaTech",
-      title: "Series B",
+      section: "BioTech",
+      name: "Series B",
       value: 70,
       data: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
-      link: "pharma_tech_",
+      link: "bio_tech_",
     },
     {
-      section: "PharmaTech",
-      title: "Series C",
+      section: "BioTech",
+      name: "Series C",
       value: 70,
       data: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
-      link: "pharma_tech_",
+      link: "bio_tech_",
     },
     {
-      section: "PharmaTech",
-      title: "Mezzanine",
+      section: "BioTech",
+      name: "Mezzanine",
       value: 70,
       data: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
-      link: "pharma_tech_",
+      link: "bio_tech_",
     },
     {
-      section: "PharmaTech",
-      title: "Public",
+      section: "BioTech",
+      name: "Public",
       value: 70,
       data: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
-      link: "pharma_tech_",
+      link: "bio_tech_",
     },
   ],
 };
