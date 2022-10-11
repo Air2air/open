@@ -33,19 +33,18 @@ const App = () => {
 const Container = styled.div`
   display: flex;
   flex-direction: row;
-  height: auto;
+  height: 80vh;
   margin: 0 80px;
-  //background:red;
 `;
 
 const Col = styled.div`
   display: flex;
   flex-direction: column;
-  flex: 1;
   text-align: left;
   align-items: flex-start;
   justify-content: flex-start;
   padding: 10% 0 0 0;
+  //background:red;
 `;
 
 export default App;

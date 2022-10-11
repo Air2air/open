@@ -3,10 +3,11 @@ const title = `How much is Eleven?`;
 const subtitle = `Subtitle about Eleven`;
 const text = `Mission statement Mission statement Mission statement Mission statement
         Mission statement Mission statement Mission statement Mission statement`;
-const AboutPage = ({ nextPath, nextName }) => {
+const AboutPage = ({ nextPath, nextName, section }) => {
   return (
     <>
 <div className="wrapper">
+<div className="chip elevens">{section}</div>
 <div className="content">
       <h1>{title}</h1>
       <h2>{subtitle}</h2>

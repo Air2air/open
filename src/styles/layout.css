@@ -5,16 +5,24 @@ body {
   width: 100vw;
 }
 
-
 .wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
+  /* background: blue; */
+}
+
+.chip {
+  /* display:flex; */
+  font-size: .9em;
+  padding: 3px 9px;
+  width: fit-content;
+  text-transform: uppercase;
 }
 
 .content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }

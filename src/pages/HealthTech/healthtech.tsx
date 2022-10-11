@@ -3,10 +3,11 @@ const title = `HealthTech  Expertise`;
 const subtitle = `Subtitle about HealthTech`;
 const text = `Mission statement Mission statement Mission statement Mission statement
         Mission statement Mission statement Mission statement Mission statement`;
-const HealthTechPage = ({ nextPath, nextName }) => {
+const HealthTechPage = ({ nextPath, nextName, section }) => {
   return (
     <>
 <div className="wrapper">
+<div className="chip health">{section}</div>
 <div className="content">
       <h1>{title}</h1>
       <h2>{subtitle}</h2>

@@ -3,10 +3,11 @@ const title = `MedTech Series B Stage`;
 const subtitle = `Subtitle about MedTech`;
 const text = `Mission statement Mission statement Mission statement Mission statement
         Mission statement Mission statement Mission statement Mission statement`;
-const MedTechSeriesBPage = ({ nextPath, nextName }) => {
+const MedTechSeriesBPage = ({ nextPath, nextName, section }) => {
   return (
     <>
 <div className="wrapper">
+<div className="chip med">{section}</div>
 <div className="content">
       <h1>{title}</h1>
       <h2>{subtitle}</h2>
