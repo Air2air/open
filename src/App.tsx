@@ -19,14 +19,14 @@ const App = () => {
         <Col>
           <SlideRoutes>
              {data.nodes.map(({ path, element }) => (
-              <Route key={path} path={path} element={element} /> // Type '() => JSX.Element' is not assignable to type 'ReactNode'.
+              <Route key={path} path={path} element={element} /> 
             ))} 
           </SlideRoutes>
         </Col>
       </Container>
     </>
   );
-};
+}
 
 /* {routeResult} */
 

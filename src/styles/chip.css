@@ -1,0 +1,28 @@
+.chip {
+  /* display:flex; */
+  font-size: 0.85em;
+  padding: 3px 9px;
+  width: fit-content;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+
+.bio {
+  background: rgba(255, 123, 0, 1);
+}
+
+.health {
+  background: rgba(71, 145, 214, 1);
+}
+
+.med {
+  background: rgba(68, 173, 161, 0.3);
+}
+
+.pharma {
+  background: rgba(240, 53, 2, 1);
+}
+
+.elevens {
+  background: #234e79;
+}
