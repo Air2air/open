@@ -68,7 +68,7 @@ export const data = {
     },
     {
       id: "Home",
-      path: "home",
+      path: "/",
       section: "Elevens",
       element: <HomePage />,
       nodeSize: SiteNodeSize,

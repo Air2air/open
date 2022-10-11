@@ -4,11 +4,9 @@ import Graph from "./components/Graph/Graph";
 import { Header } from "./components/Header";
 import SlideRoutes from "react-slide-routes";
 
-import {data} from "./data/data"
-
+import { data } from "./data/data";
 
 const App = () => {
-
   return (
     <>
       <Header />
@@ -18,15 +16,15 @@ const App = () => {
         </Col>
         <Col>
           <SlideRoutes>
-             {data.nodes.map(({ path, element }) => (
-              <Route key={path} path={path} element={element} /> 
-            ))} 
+            {data.nodes.map(({ path, element }) => (
+              <Route key={path} path={path} element={element} />
+            ))}
           </SlideRoutes>
         </Col>
       </Container>
     </>
   );
-}
+};
 
 /* {routeResult} */
 
