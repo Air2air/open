@@ -21,15 +21,6 @@ const App = () => {
              {data.nodes.map(({ path, element }) => (
               <Route key={path} path={path} element={element} /> // Type '() => JSX.Element' is not assignable to type 'ReactNode'.
             ))} 
-
-            {/* <Route path="/" element={<HomePage />} />
-            <Route path="home" element={<HomePage />} />
-            <Route path="about" element={<AboutPage />} />
-            <Route path="team" element={<TeamPage />} />
-            <Route path="biotech" element={<BioTechPage />} />
-            <Route path="healthtech" element={<HealthTechPage />} />
-            <Route path="medtech" element={<MedTechPage />} />
-            <Route path="pharmatech" element={<PharmaTechPage />} /> */}
           </SlideRoutes>
         </Col>
       </Container>

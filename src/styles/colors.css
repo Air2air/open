@@ -1,15 +1,25 @@
-
-
 body {
   color: #fff;
   background: linear-gradient(to bottom, #02111b, #234e79);
 }
 
-.gold {
-  color:rgb(71, 145, 214)
-}
-
 a {
   color: #fff;
   text-decoration: none;
+}
+
+.bio {
+  background: rgba(255, 123, 0, 1);
+}
+
+.health {
+  background: rgba(71, 145, 214, 1);
+}
+
+.med {
+  background: rgba(68, 173, 161, .3);
+}
+
+.pharma {
+  background: rgba(240, 53, 2, 1);
 }
