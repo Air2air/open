@@ -70,7 +70,8 @@ export const data = {
       id: "Home",
       path: "/",
       section: "Elevens",
-      element: <HomePage />,
+      element: (<HomePage nextPath="/team" nextName="Elevens Team" section={undefined} />
+      ),
       nodeSize: SiteNodeSize,
       nodeColor: SiteColorNode,
     },

@@ -5,6 +5,7 @@
   width: fit-content;
   text-transform: uppercase;
   border-radius: 2px;
+  opacity:.9;
 }
 
 .bio {
@@ -25,4 +26,8 @@
 
 .elevens {
   background: #234e79;
+}
+
+.chip img {
+  width:10px;
 }
