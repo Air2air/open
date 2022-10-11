@@ -11,10 +11,10 @@ const App = () => {
     <>
       <Header />
       <Container>
-        <Col>
+      <Col>
           <AmChart />
         </Col>
-        <Col style={{ width: "50%" }}>
+        <Col>
           <SlideRoutes>
             {data.nodes.map(({ path, element }) => (
               <Route key={path} path={path} element={element} />
@@ -44,6 +44,7 @@ const Col = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
   padding: 10% 0 0 0;
+  width:50%;
   //background:red;
 `;
 

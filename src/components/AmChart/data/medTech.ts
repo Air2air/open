@@ -1,79 +1,111 @@
-
+import { ColorMedTech, NodeFirstChildSize, NodeSecondChildSize } from "../config";
 
 export const MedTech = {
   name: "Med Tech",
-  value: 70,
+  value: NodeFirstChildSize,
+  nodeTheme: {
+    fill: ColorMedTech,
+    stroke: ColorMedTech,
+  },
   children: [
     {
       section: "MedTech",
       name: "Pre Seed",
-      value: 70,
+      value: NodeSecondChildSize,
       data: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "med_tech_",
+      nodeTheme: {
+        fill: ColorMedTech,
+        stroke: ColorMedTech,
+      },
     },
     {
       section: "MedTech",
       name: "Seed Stage",
-      value: 70,
+      value: NodeSecondChildSize,
       data: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "med_tech_",
+      nodeTheme: {
+        fill: ColorMedTech,
+        stroke: ColorMedTech,
+      },
     },
     {
       section: "MedTech",
       name: "Series A",
-      value: 70,
+      value: NodeSecondChildSize,
       data: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "med_tech_",
+      nodeTheme: {
+        fill: ColorMedTech,
+        stroke: ColorMedTech,
+      },
     },
 
     {
       section: "MedTech",
       name: "Series B",
-      value: 70,
+      value: NodeSecondChildSize,
       data: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "med_tech_",
+      nodeTheme: {
+        fill: ColorMedTech,
+        stroke: ColorMedTech,
+      },
     },
     {
       section: "MedTech",
       name: "Series C",
-      value: 70,
+      value: NodeSecondChildSize,
       data: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "med_tech_",
+      nodeTheme: {
+        fill: ColorMedTech,
+        stroke: ColorMedTech,
+      },
     },
     {
       section: "MedTech",
       name: "Mezzanine",
-      value: 70,
+      value: NodeSecondChildSize,
       data: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "med_tech_",
+      nodeTheme: {
+        fill: ColorMedTech,
+        stroke: ColorMedTech,
+      },
     },
     {
       section: "MedTech",
       name: "Public",
-      value: 70,
+      value: NodeSecondChildSize,
       data: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "med_tech_",
+      nodeTheme: {
+        fill: ColorMedTech,
+        stroke: ColorMedTech,
+      },
     },
   ],
 };

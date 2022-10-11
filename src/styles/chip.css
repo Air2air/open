@@ -5,23 +5,23 @@
   width: fit-content;
   text-transform: uppercase;
   border-radius: 2px;
-  opacity:.9;
+  opacity: 0.9;
 }
 
 .bio {
-  background: rgba(255, 123, 0, 1);
+  background: #caa572;
 }
 
 .health {
-  background: rgba(71, 145, 214, 1);
+  background: #5aa098;
 }
 
 .med {
-  background: rgba(68, 173, 161, 0.3);
+  background: #d36e4f;
 }
 
 .pharma {
-  background: rgba(240, 53, 2, 1);
+  background: #5278a3;
 }
 
 .elevens {
@@ -29,5 +29,5 @@
 }
 
 .chip img {
-  width:10px;
+  width: 10px;
 }
