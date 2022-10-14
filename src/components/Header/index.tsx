@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { ReactComponent as LogoBlack } from "./../../images/logo_black.svg";
+import { ReactComponent as LogoBlue } from "./../../images/logo_blue.svg";
 
 export const Header = () => {
   return (
     <HeaderWrapper>
       <Link to="/">
-        <LogoBlack width="50" />
+        <LogoBlue width="50" />
       </Link>
     </HeaderWrapper>
   );
@@ -16,6 +16,7 @@ const HeaderWrapper = styled.div`
   width: 100vw;
   height: 90px;
   display: flex;
+  padding:0 50px;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: flex-start;
 `;

@@ -8,3 +8,22 @@ a {
   text-decoration: none;
 }
 
+.bio {
+  background: #ff9a0e;
+}
+
+.health {
+  background: #39b3a5;
+}
+
+.med {
+  background: #bf3e16;
+}
+
+.pharma {
+  background: #5278a3;
+}
+
+.elevens {
+  background: #4371a0;
+}
