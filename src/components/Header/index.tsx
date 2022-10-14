@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { ReactComponent as LogoWhite } from "./../../images/logo_white.svg";
+import { ReactComponent as LogoBlack } from "./../../images/logo_black.svg";
 
 export const Header = () => {
   return (
     <HeaderWrapper>
       <Link to="/">
-        <LogoWhite width="50" />
+        <LogoBlack width="50" />
       </Link>
     </HeaderWrapper>
   );
