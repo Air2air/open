@@ -35,8 +35,8 @@ export const AmChart = (props: any) => {
         minRadius: am5.percent(5),
         maxRadius: am5.percent(10),
         // Force
-        centerStrength: 4, //	0.5 Strength all nodes are attracted (or pushed back) to the center of the chart.
-        manyBodyStrength: -30, //	-15 Strength all nodes are attracted (or pushed back) to each other.
+        centerStrength: 1, //	0.5 Strength all nodes are attracted (or pushed back) to the center of the chart.
+        manyBodyStrength: -10, //	-15 Strength all nodes are attracted (or pushed back) to each other.
         linkWithStrength: 0.5,
         //Animation
         initialFrames: 500, //500 the length of initial force simulation in frames
