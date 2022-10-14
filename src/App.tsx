@@ -11,7 +11,7 @@ const App = () => {
     <>
       <Header />
       <Container>
-      <Col>
+        <Col>
           <AmChart />
         </Col>
         <Col>
@@ -44,7 +44,7 @@ const Col = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
   padding: 10% 0 0 0;
-  width:50%;
+  width: 50%;
   //background:red;
 `;
 

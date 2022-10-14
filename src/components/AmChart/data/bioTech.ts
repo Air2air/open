@@ -7,6 +7,10 @@ export const BioTech = {
     fill: ColorBioTech,
     stroke: ColorBioTech,
   },
+  linkTheme: {
+    fill: ColorBioTech,
+    stroke: ColorBioTech,
+  },
   children: [
     {
       section: "BioTech",

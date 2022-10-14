@@ -24,45 +24,71 @@ export const AmChart = (props: any) => {
 
     const series = container.children.push(
       am5hierarchy.ForceDirected.new(root, {
-        downDepth: 1,
-        initialDepth: 0,
+        downDepth: 2,
+        initialDepth: 1,
         singleBranchOnly: true,
         valueField: "value",
         categoryField: "name",
         childDataField: "children",
-        velocityDecay: 0.9,
         nodePadding: 20,
+        // Size
         minRadius: am5.percent(5),
         maxRadius: am5.percent(10),
+        // Force
+        centerStrength: 4, //	0.5 Strength all nodes are attracted (or pushed back) to the center of the chart.
+        manyBodyStrength: -30, //	-15 Strength all nodes are attracted (or pushed back) to each other.
+        linkWithStrength: 0.5,
+        //Animation
+        initialFrames: 500, //500 the length of initial force simulation in frames
+        velocityDecay: 0.9, //0.5 the resistance acting against movement of nodes, making it stop eventually.
       })
     );
-
-
 
     series.nodes.template.setAll({
       draggable: false,
       tooltipText: "",
     });
 
+    /* ------ Inner Circles ------ */
+
     series.circles.template.setAll({
       fillOpacity: 1,
       strokeWidth: 7,
       strokeOpacity: 1,
-      templateField: "nodeTheme"
+      templateField: "nodeTheme",
     });
 
+    /* ------ Outer Circles ------ */
+
     series.outerCircles.template.setAll({
-      strokeWidth: 7,
-      templateField: "nodeTheme"
+      strokeWidth: 0,
+      templateField: "nodeTheme",
     });
+
+    series.outerCircles.template.states.create("disabled", {
+      fillOpacity: 0.5,
+      strokeOpacity: 0,
+      strokeDasharray: 0,
+    });
+
+    series.outerCircles.template.states.create("hoverDisabled", {
+      fillOpacity: 0.5,
+      strokeOpacity: 0,
+      strokeDasharray: 0,
+    });
+
+    /* ------ Links ------ */
 
     series.links.template.setAll({
       strokeWidth: 5,
       strokeOpacity: 0.5,
+      templateField: "linkTheme",
     });
 
+    /* ------ Init ------ */
+
     series.data.setAll(chartData);
-    series.set("selectedDataItem", series.dataItems[0]);
+    series.set("selectedDataItem", series.dataItems[0]); // Active item, not node
 
     return () => {
       root.dispose();
