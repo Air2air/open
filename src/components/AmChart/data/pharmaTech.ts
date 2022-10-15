@@ -1,7 +1,7 @@
 import { ColorPharmaTech, NodeFirstChildSize, NodeSecondChildSize } from "../config";
 
 export const PharmaTech = {
-  name: "Pharma Tech",
+  name: "Pharma ",
   value: NodeFirstChildSize,
   nodeTheme: {
     fill: ColorPharmaTech,
@@ -9,7 +9,7 @@ export const PharmaTech = {
   },
   children: [
     {
-      section: "PharmaTech",
+      section: "Pharma",
       name: "Pre Seed",
       value: NodeSecondChildSize,
       data: "There are over ABCD ventures in this category",
@@ -23,7 +23,7 @@ export const PharmaTech = {
       },
     },
     {
-      section: "PharmaTech",
+      section: "Pharma",
       name: "Seed Stage",
       value: NodeSecondChildSize,
       data: "There are over ABCD ventures in this category",
@@ -37,7 +37,7 @@ export const PharmaTech = {
       },
     },
     {
-      section: "PharmaTech",
+      section: "Pharma",
       name: "Series A",
       value: NodeSecondChildSize,
       data: "There are over ABCD ventures in this category",
@@ -52,7 +52,7 @@ export const PharmaTech = {
     },
 
     {
-      section: "PharmaTech",
+      section: "Pharma",
       name: "Series B",
       value: NodeSecondChildSize,
       data: "There are over ABCD ventures in this category",
@@ -66,7 +66,7 @@ export const PharmaTech = {
       },
     },
     {
-      section: "PharmaTech",
+      section: "Pharma",
       name: "Series C",
       value: NodeSecondChildSize,
       data: "There are over ABCD ventures in this category",
@@ -80,7 +80,7 @@ export const PharmaTech = {
       },
     },
     {
-      section: "PharmaTech",
+      section: "Pharma",
       name: "Mezzanine",
       value: NodeSecondChildSize,
       data: "There are over ABCD ventures in this category",
@@ -94,7 +94,7 @@ export const PharmaTech = {
       },
     },
     {
-      section: "PharmaTech",
+      section: "Pharma",
       name: "Public",
       value: NodeSecondChildSize,
       data: "There are over ABCD ventures in this category",

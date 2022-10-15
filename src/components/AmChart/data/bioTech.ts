@@ -1,7 +1,7 @@
 import { ColorBioTech, NodeFirstChildSize, NodeSecondChildSize } from "../config";
 
 export const BioTech = {
-  name: "Bio Tech",
+  name: "Bio",
   value: NodeFirstChildSize,
   nodeTheme: {
     fill: ColorBioTech,
@@ -13,7 +13,7 @@ export const BioTech = {
   },
   children: [
     {
-      section: "BioTech",
+      section: "Bio",
       name: "Pre Seed",
       value: NodeSecondChildSize,
       data: "There are over ABCD ventures in this category",
@@ -27,7 +27,7 @@ export const BioTech = {
       },
     },
     {
-      section: "BioTech",
+      section: "Bio",
       name: "Seed Stage",
       value: NodeSecondChildSize,
       data: "There are over ABCD ventures in this category",
@@ -41,7 +41,7 @@ export const BioTech = {
       },
     },
     {
-      section: "BioTech",
+      section: "Bio",
       name: "Series A",
       value: NodeSecondChildSize,
       data: "There are over ABCD ventures in this category",
@@ -56,7 +56,7 @@ export const BioTech = {
     },
 
     {
-      section: "BioTech",
+      section: "Bio",
       name: "Series B",
       value: NodeSecondChildSize,
       data: "There are over ABCD ventures in this category",
@@ -70,7 +70,7 @@ export const BioTech = {
       },
     },
     {
-      section: "BioTech",
+      section: "Bio",
       name: "Series C",
       value: NodeSecondChildSize,
       data: "There are over ABCD ventures in this category",
@@ -84,7 +84,7 @@ export const BioTech = {
       },
     },
     {
-      section: "BioTech",
+      section: "Bio",
       name: "Mezzanine",
       value: NodeSecondChildSize,
       data: "There are over ABCD ventures in this category",
@@ -98,7 +98,7 @@ export const BioTech = {
       },
     },
     {
-      section: "BioTech",
+      section: "Bio",
       name: "Public",
       value: NodeSecondChildSize,
       data: "There are over ABCD ventures in this category",

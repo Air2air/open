@@ -1,7 +1,7 @@
 import { ColorHealthTech, NodeFirstChildSize, NodeSecondChildSize } from "../config";
 
 export const HealthTech = {
-  name: "Health Tech",
+  name: "Health ",
   value: NodeFirstChildSize,
   nodeTheme: {
     fill: ColorHealthTech,
@@ -9,7 +9,7 @@ export const HealthTech = {
   },
   children: [
     {
-      section: "HealthTech",
+      section: "Health",
       name: "Pre Seed",
       value: NodeSecondChildSize,
       data: "There are over ABCD ventures in this category",
@@ -23,7 +23,7 @@ export const HealthTech = {
       },
     },
     {
-      section: "HealthTech",
+      section: "Health",
       name: "Seed Stage",
       value: NodeSecondChildSize,
       data: "There are over ABCD ventures in this category",
@@ -37,7 +37,7 @@ export const HealthTech = {
       },
     },
     {
-      section: "HealthTech",
+      section: "Health",
       name: "Series A",
       value: NodeSecondChildSize,
       data: "There are over ABCD ventures in this category",
@@ -52,7 +52,7 @@ export const HealthTech = {
     },
 
     {
-      section: "HealthTech",
+      section: "Health",
       name: "Series B",
       value: NodeSecondChildSize,
       data: "There are over ABCD ventures in this category",
@@ -66,7 +66,7 @@ export const HealthTech = {
       },
     },
     {
-      section: "HealthTech",
+      section: "Health",
       name: "Series C",
       value: NodeSecondChildSize,
       data: "There are over ABCD ventures in this category",
@@ -80,7 +80,7 @@ export const HealthTech = {
       },
     },
     {
-      section: "HealthTech",
+      section: "Health",
       name: "Mezzanine",
       value: NodeSecondChildSize,
       data: "There are over ABCD ventures in this category",
@@ -94,7 +94,7 @@ export const HealthTech = {
       },
     },
     {
-      section: "HealthTech",
+      section: "Health",
       name: "Public",
       value: NodeSecondChildSize,
       data: "There are over ABCD ventures in this category",

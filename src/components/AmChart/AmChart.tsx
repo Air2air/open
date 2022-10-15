@@ -4,6 +4,8 @@ import * as am5hierarchy from "@amcharts/amcharts5/hierarchy";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 import am5themes_Responsive from "@amcharts/amcharts5/themes/Responsive";
 import { chartData } from "./data/chartData";
+import { HEADER_HEIGHT } from "../../styles/Constants";
+import styled from "styled-components";
 
 export const AmChart = (props: any) => {
   useLayoutEffect(() => {
@@ -30,13 +32,13 @@ export const AmChart = (props: any) => {
         valueField: "value",
         categoryField: "name",
         childDataField: "children",
-        nodePadding: 20,
+        nodePadding: 10,
         // Size
         minRadius: am5.percent(5),
         maxRadius: am5.percent(10),
         // Force
         centerStrength: 1, //	0.5 Strength all nodes are attracted (or pushed back) to the center of the chart.
-        manyBodyStrength: -10, //	-15 Strength all nodes are attracted (or pushed back) to each other.
+        manyBodyStrength: -20, //	-15 Strength all nodes are attracted (or pushed back) to each other.
         linkWithStrength: 0.5,
         //Animation
         initialFrames: 500, //500 the length of initial force simulation in frames
@@ -95,7 +97,13 @@ export const AmChart = (props: any) => {
     };
   }, []);
 
-  return <div id="chartdiv" style={{ width: "100%", height: "500px" }}></div>;
+  return <ChartDiv id="chartdiv"/>;
 };
 
 export default AmChart;
+
+const ChartDiv = styled.div`
+  height: ${HEADER_HEIGHT};
+  width: 50%;
+  //background:gray;
+`;

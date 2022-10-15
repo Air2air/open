@@ -80,490 +80,490 @@ export const data = {
       path: "team",
       section: "Elevens",
       element: (
-        <TeamPage section="Elevens" nextPath="/biotech" nextName="BioTech" />
+        <TeamPage section="Elevens" nextPath="/biotech" nextName="Bio" />
       ),
       nodeSize: LevelOneNodeSize,
       nodeColor: SiteColorNode,
     },
-    /* --------------- BioTech --------------- */
+    /* --------------- Bio --------------- */
     {
-      id: "BioTech",
+      id: "Bio",
       path: "biotech",
-      section: "BioTech",
+      section: "Bio",
       nextPath: "biotech_preseed",
       element: (
         <BioTechPage
-          section="BioTech"
+          section="Bio"
           nextPath="/biotech_preseed"
-          nextName="BioTech PreSeed Stage"
+          nextName="Bio PreSeed Stage"
         />
       ),
       nodeSize: LevelOneNodeSize,
       nodeColor: BioColorNode,
     },
     {
-      id: "BioTech PreSeed Stage",
+      id: "Bio PreSeed Stage",
       path: "biotech_preseed",
-      section: "BioTech",
+      section: "Bio",
       nextPath: "biotech_seed",
       element: (
         <BioTechPreSeedPage
-          section="BioTech"
+          section="Bio"
           nextPath="/biotech_seed"
-          nextName="BioTech Seed Stage"
+          nextName="Bio Seed Stage"
         />
       ),
       nodeSize: LevelTwoNodeSize,
       nodeColor: BioColorNode,
     },
     {
-      id: "BioTech Seed Stage",
+      id: "Bio Seed Stage",
       path: "biotech_seed",
-      section: "BioTech",
+      section: "Bio",
       nextPath: "biotech_series_a",
       element: (
         <BioTechSeedPage
-          section="BioTech"
+          section="Bio"
           nextPath="/biotech_series_a"
-          nextName="BioTech Series A Stage"
+          nextName="Bio Series A Stage"
         />
       ),
       nodeSize: LevelTwoNodeSize,
       nodeColor: BioColorNode,
     },
     {
-      id: "BioTech Series A",
+      id: "Bio Series A",
       path: "biotech_series_a",
-      section: "BioTech",
+      section: "Bio",
       nextPath: "biotech_series_b",
       element: (
         <BioTechSeriesAPage
-          section="BioTech"
+          section="Bio"
           nextPath="/biotech_series_b"
-          nextName="BioTech Series B Stage"
+          nextName="Bio Series B Stage"
         />
       ),
       nodeSize: LevelTwoNodeSize,
       nodeColor: BioColorNode,
     },
     {
-      id: "BioTech Series B",
+      id: "Bio Series B",
       path: "biotech_series_b",
-      section: "BioTech",
+      section: "Bio",
       nextPath: "biotech_mezzanine",
       element: (
         <BioTechSeriesBPage
-          section="BioTech"
+          section="Bio"
           nextPath="/biotech_mezzanine"
-          nextName="BioTech Mezzanine Stage"
+          nextName="Bio Mezzanine Stage"
         />
       ),
       nodeSize: LevelTwoNodeSize,
       nodeColor: BioColorNode,
     },
     {
-      id: "BioTech Mezzanine",
+      id: "Bio Mezzanine",
       path: "biotech_mezzanine",
-      section: "BioTech",
+      section: "Bio",
       nextPath: "biotech_public",
       element: (
         <BioTechMezzaninePage
-          section="BioTech"
+          section="Bio"
           nextPath="/biotech_public"
-          nextName="BioTech Public Company Stage"
+          nextName="Bio Public Company Stage"
         />
       ),
       nodeSize: LevelTwoNodeSize,
       nodeColor: BioColorNode,
     },
     {
-      id: "BioTech Public",
+      id: "Bio Public",
       path: "biotech_public",
-      section: "BioTech",
+      section: "Bio",
       nextPath: "biotech_contact",
       element: (
         <BioTechPublicPage
-          section="BioTech"
+          section="Bio"
           nextPath="/biotech_contact"
-          nextName="BioTech Group Contact"
+          nextName="Bio Group Contact"
         />
       ),
       nodeSize: LevelTwoNodeSize,
       nodeColor: BioColorNode,
     },
     {
-      id: "BioTech Contact",
+      id: "Bio Contact",
       path: "biotech_contact",
-      section: "BioTech",
+      section: "Bio",
       nextPath: "biotech",
       element: (
         <BioTechContactPage
-          section="BioTech"
+          section="Bio"
           nextPath="/biotech"
-          nextName="BioTech Expertise"
+          nextName="Bio Expertise"
         />
       ),
       nodeSize: LevelTwoNodeSize,
       nodeColor: BioColorNode,
     },
-    /* --------------- HealthTech --------------- */
+    /* --------------- Health --------------- */
     {
-      id: "HealthTech",
+      id: "Health",
       path: "healthtech",
-      section: "HeathTech",
+      section: "Health",
       nextPath: "healthtech_preseed",
       element: (
         <HealthTechPage
-          section="HealthTech"
+          section="Health"
           nextPath="/healthtech_preseed"
-          nextName="HealthTech PreSeed Stage"
+          nextName="Health PreSeed Stage"
         />
       ),
       nodeSize: LevelOneNodeSize,
       nodeColor: HealthColorNode,
     },
     {
-      id: "HealthTech PreSeed Stage",
+      id: "Health PreSeed Stage",
       path: "healthtech_preseed",
-      section: "HeathTech",
+      section: "Health",
       nextPath: "healthtech_seed",
       element: (
         <HealthTechPreSeedPage
-          section="HealthTech"
+          section="Health"
           nextPath="/healthtech_seed"
-          nextName="HealthTech Seed Stage"
+          nextName="Health Seed Stage"
         />
       ),
       nodeSize: LevelTwoNodeSize,
       nodeColor: HealthColorNode,
     },
     {
-      id: "HealthTech Seed Stage",
+      id: "Health Seed Stage",
       path: "healthtech_seed",
-      section: "HeathTech",
+      section: "Health",
       nextPath: "healthtech_series_a",
       element: (
         <HealthTechSeedPage
-          section="HealthTech"
+          section="Health"
           nextPath="/healthtech_series_a"
-          nextName="HealthTech Series A Stage"
+          nextName="Health Series A Stage"
         />
       ),
       nodeSize: LevelTwoNodeSize,
       nodeColor: HealthColorNode,
     },
     {
-      id: "HealthTech Series A",
+      id: "Health Series A",
       path: "healthtech_series_a",
-      section: "HeathTech",
+      section: "Health",
       nextPath: "healthtech_series_b",
       element: (
         <HealthTechSeriesAPage
-          section="HealthTech"
+          section="Health"
           nextPath="/healthtech_series_b"
-          nextName="HealthTech Series B Stage"
+          nextName="Health Series B Stage"
         />
       ),
       nodeSize: LevelTwoNodeSize,
       nodeColor: HealthColorNode,
     },
     {
-      id: "HealthTech Series B",
+      id: "Health Series B",
       path: "healthtech_series_b",
-      section: "HeathTech",
+      section: "Health",
       nextPath: "healthtech_mezzanine",
       element: (
         <HealthTechSeriesBPage
-          section="HealthTech"
+          section="Health"
           nextPath="/healthtech_mezzanine"
-          nextName="HealthTech Mezzanine Stage"
+          nextName="Health Mezzanine Stage"
         />
       ),
       nodeSize: LevelTwoNodeSize,
       nodeColor: HealthColorNode,
     },
     {
-      id: "HealthTech Mezzanine",
+      id: "Health Mezzanine",
       path: "healthtech_mezzanine",
-      section: "HeathTech",
+      section: "Health",
       nextPath: "healthtech_public",
       element: (
         <HealthTechMezzaninePage
-          section="HealthTech"
+          section="Health"
           nextPath="/healthtech_public"
-          nextName="HealthTech Public Company Stage"
+          nextName="Health Public Company Stage"
         />
       ),
       nodeSize: LevelTwoNodeSize,
       nodeColor: HealthColorNode,
     },
     {
-      id: "HealthTech Public",
+      id: "Health Public",
       path: "healthtech_public",
-      section: "HeathTech",
+      section: "Health",
       nextPath: "healthtech_contact",
       element: (
         <HealthTechPublicPage
-          section="HealthTech"
+          section="Health"
           nextPath="/healthtech_contact"
-          nextName="HealthTech Group Contact"
+          nextName="Health Group Contact"
         />
       ),
       nodeSize: LevelTwoNodeSize,
       nodeColor: HealthColorNode,
     },
     {
-      id: "HealthTech Contact",
+      id: "Health Contact",
       path: "healthtech_contact",
-      section: "HeathTech",
+      section: "Health",
       nextPath: "healthtech",
       element: (
         <HealthTechContactPage
-          section="HealthTech"
+          section="Health"
           nextPath="/healthtech"
-          nextName="HealthTech Expertise"
+          nextName="Health Expertise"
         />
       ),
       nodeSize: LevelTwoNodeSize,
       nodeColor: HealthColorNode,
     },
-    /* --------------- MedTech --------------- */
+    /* --------------- Med --------------- */
     {
-      id: "MedTech",
+      id: "Med",
       path: "medtech",
-      section: "MedTech",
+      section: "Med",
       nextPath: "medtech_preseed",
       element: (
         <MedTechPage
-          section="MedTech"
+          section="Med"
           nextPath="/medtech_preseed"
-          nextName="MedTech PreSeed Stage"
+          nextName="Med PreSeed Stage"
         />
       ),
       nodeSize: LevelOneNodeSize,
       nodeColor: MedColorNode,
     },
     {
-      id: "MedTech PreSeed Stage",
+      id: "Med PreSeed Stage",
       path: "medtech_preseed",
-      section: "MedTech",
+      section: "Med",
       nextPath: "medtech_seed",
       element: (
         <MedTechPreSeedPage
-          section="MedTech"
+          section="Med"
           nextPath="/medtech_seed"
-          nextName="MedTech Seed Stage"
+          nextName="Med Seed Stage"
         />
       ),
       nodeSize: LevelTwoNodeSize,
       nodeColor: MedColorNode,
     },
     {
-      id: "MedTech Seed Stage",
+      id: "Med Seed Stage",
       path: "medtech_seed",
-      section: "MedTech",
+      section: "Med",
       nextPath: "medtech_series_a",
       element: (
         <MedTechSeedPage
-          section="MedTech"
+          section="Med"
           nextPath="/medtech_series_a"
-          nextName="MedTech Series A Stage"
+          nextName="Med Series A Stage"
         />
       ),
       nodeSize: LevelTwoNodeSize,
       nodeColor: MedColorNode,
     },
     {
-      id: "MedTech Series A",
+      id: "Med Series A",
       path: "medtech_series_a",
-      section: "MedTech",
+      section: "Med",
       nextPath: "medtech_series_b",
       element: (
         <MedTechSeriesAPage
-          section="MedTech"
+          section="Med"
           nextPath="/medtech_series_b"
-          nextName="MedTech Series B Stage"
+          nextName="Med Series B Stage"
         />
       ),
       nodeSize: LevelTwoNodeSize,
       nodeColor: MedColorNode,
     },
     {
-      id: "MedTech Series B",
+      id: "Med Series B",
       path: "medtech_series_b",
-      section: "MedTech",
+      section: "Med",
       nextPath: "medtech_mezzanine",
       element: (
         <MedTechSeriesBPage
-          section="MedTech"
+          section="Med"
           nextPath="/medtech_mezzanine"
-          nextName="MedTech Mezzanine Stage"
+          nextName="Med Mezzanine Stage"
         />
       ),
       nodeSize: LevelTwoNodeSize,
       nodeColor: MedColorNode,
     },
     {
-      id: "MedTech Mezzanine",
+      id: "Med Mezzanine",
       path: "medtech_mezzanine",
-      section: "MedTech",
+      section: "Med",
       nextPath: "medtech_public",
       element: (
         <MedTechMezzaninePage
-          section="MedTech"
+          section="Med"
           nextPath="/medtech_public"
-          nextName="MedTech Public Company Stage"
+          nextName="Med Public Company Stage"
         />
       ),
       nodeSize: LevelTwoNodeSize,
       nodeColor: MedColorNode,
     },
     {
-      id: "MedTech Public",
+      id: "Med Public",
       path: "medtech_public",
-      section: "MedTech",
+      section: "Med",
       nextPath: "medtech_contact",
       element: (
         <MedTechPublicPage
-          section="MedTech"
+          section="Med"
           nextPath="/medtech_contact"
-          nextName="MedTech Group Contact"
+          nextName="Med Group Contact"
         />
       ),
       nodeSize: LevelTwoNodeSize,
       nodeColor: MedColorNode,
     },
     {
-      id: "MedTech Contact",
+      id: "Med Contact",
       path: "medtech_contact",
-      section: "MedTech",
+      section: "Med",
       nextPath: "medtech",
       element: (
         <MedTechContactPage
-          section="MedTech"
+          section="Med"
           nextPath="/medtech"
-          nextName="MedTech Expertise"
+          nextName="Med Expertise"
         />
       ),
       nodeSize: LevelTwoNodeSize,
       nodeColor: MedColorNode,
     },
-    /* --------------- PharmaTech --------------- */
+    /* --------------- Pharma --------------- */
     {
-      id: "PharmaTech",
+      id: "Pharma",
       path: "pharmatech",
-      section: "PharmaTech",
+      section: "Pharma",
       nextPath: "pharmatech_preseed",
       element: (
         <PharmaTechPage
-          section="PharmaTech"
+          section="Pharma"
           nextPath="/pharmatech_preseed"
-          nextName="PharmaTech PreSeed Stage"
+          nextName="Pharma PreSeed Stage"
         />
       ),
       nodeSize: LevelOneNodeSize,
       nodeColor: PharmaColorNode,
     },
     {
-      id: "PharmaTech PreSeed Stage",
+      id: "Pharma PreSeed Stage",
       path: "pharmatech_preseed",
-      section: "PharmaTech",
+      section: "Pharma",
       nextPath: "pharmatech_seed",
       element: (
         <PharmaTechPreSeedPage
-          section="PharmaTech"
+          section="Pharma"
           nextPath="/pharmatech_seed"
-          nextName="PharmaTech Seed Stage"
+          nextName="Pharma Seed Stage"
         />
       ),
       nodeSize: LevelTwoNodeSize,
       nodeColor: PharmaColorNode,
     },
     {
-      id: "PharmaTech Seed Stage",
+      id: "Pharma Seed Stage",
       path: "pharmatech_seed",
-      section: "PharmaTech",
+      section: "Pharma",
       nextPath: "pharmatech_series_a",
       element: (
         <PharmaTechSeedPage
-          section="PharmaTech"
+          section="Pharma"
           nextPath="/pharmatech_series_a"
-          nextName="PharmaTech Series A Stage"
+          nextName="Pharma Series A Stage"
         />
       ),
       nodeSize: LevelTwoNodeSize,
       nodeColor: PharmaColorNode,
     },
     {
-      id: "PharmaTech Series A",
+      id: "Pharma Series A",
       path: "pharmatech_series_a",
-      section: "PharmaTech",
+      section: "Pharma",
       nextPath: "pharmatech_series_b",
       element: (
         <PharmaTechSeriesAPage
-          section="PharmaTech"
+          section="Pharma"
           nextPath="/pharmatech_series_b"
-          nextName="PharmaTech Series B Stage"
+          nextName="Pharma Series B Stage"
         />
       ),
       nodeSize: LevelTwoNodeSize,
       nodeColor: PharmaColorNode,
     },
     {
-      id: "PharmaTech Series B",
+      id: "Pharma Series B",
       path: "pharmatech_series_b",
-      section: "PharmaTech",
+      section: "Pharma",
       nextPath: "pharmatech_mezzanine",
       element: (
         <PharmaTechSeriesBPage
-          section="PharmaTech"
+          section="Pharma"
           nextPath="/pharmatech_mezzanine"
-          nextName="PharmaTech Mezzanine Stage"
+          nextName="Pharma Mezzanine Stage"
         />
       ),
       nodeSize: LevelTwoNodeSize,
       nodeColor: PharmaColorNode,
     },
     {
-      id: "PharmaTech Mezzanine",
+      id: "Pharma Mezzanine",
       path: "pharmatech_mezzanine",
-      section: "PharmaTech",
+      section: "Pharma",
       nextPath: "pharmatech_public",
       element: (
         <PharmaTechMezzaninePage
-          section="PharmaTech"
+          section="Pharma"
           nextPath="/pharmatech_public"
-          nextName="PharmaTech Public Company Stage"
+          nextName="Pharma Public Company Stage"
         />
       ),
       nodeSize: LevelTwoNodeSize,
       nodeColor: PharmaColorNode,
     },
     {
-      id: "PharmaTech Public",
+      id: "Pharma Public",
       path: "pharmatech_public",
-      section: "PharmaTech",
+      section: "Pharma",
       nextPath: "pharmatech_contact",
       element: (
         <PharmaTechPublicPage
-          section="PharmaTech"
+          section="Pharma"
           nextPath="/pharmatech_contact"
-          nextName="PharmaTech Group Contact"
+          nextName="Pharma Group Contact"
         />
       ),
       nodeSize: LevelTwoNodeSize,
       nodeColor: PharmaColorNode,
     },
     {
-      id: "PharmaTech Contact",
+      id: "Pharma Contact",
       path: "pharmatech_contact",
-      section: "PharmaTech",
+      section: "Pharma",
       nextPath: "pharmatech",
       element: (
         <PharmaTechContactPage
-          section="PharmaTech"
+          section="Pharma"
           nextPath="/pharmatech"
-          nextName="PharmaTech Expertise"
+          nextName="Pharma Expertise"
         />
       ),
       nodeSize: LevelTwoNodeSize,
@@ -591,9 +591,9 @@ export const data = {
       linkColor: SiteColorLink,
     },
 
-    /* --------------- BioTech --------------- */
+    /* --------------- Bio --------------- */
     {
-      source: "BioTech",
+      source: "Bio",
       target: "Home",
       particleCount: particleCount,
       particleSize: ParticleSize,
@@ -601,64 +601,64 @@ export const data = {
       linkColor: BioColorLink,
     },
     {
-      source: "BioTech Contact",
-      target: "BioTech",
+      source: "Bio Contact",
+      target: "Bio",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelOneLinkSize,
       linkColor: BioColorLink,
     },
     {
-      source: "BioTech PreSeed Stage",
-      target: "BioTech",
+      source: "Bio PreSeed Stage",
+      target: "Bio",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelTwoLinkSize,
       linkColor: BioColorLink,
     },
     {
-      source: "BioTech Seed Stage",
-      target: "BioTech",
+      source: "Bio Seed Stage",
+      target: "Bio",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelTwoLinkSize,
       linkColor: BioColorLink,
     },
     {
-      source: "BioTech Series A",
-      target: "BioTech",
+      source: "Bio Series A",
+      target: "Bio",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelTwoLinkSize,
       linkColor: BioColorLink,
     },
     {
-      source: "BioTech Series B",
-      target: "BioTech",
+      source: "Bio Series B",
+      target: "Bio",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelTwoLinkSize,
       linkColor: BioColorLink,
     },
     {
-      source: "BioTech Mezzanine",
-      target: "BioTech",
+      source: "Bio Mezzanine",
+      target: "Bio",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelTwoLinkSize,
       linkColor: BioColorLink,
     },
     {
-      source: "BioTech Public",
-      target: "BioTech",
+      source: "Bio Public",
+      target: "Bio",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelTwoLinkSize,
       linkColor: BioColorLink,
     },
-    /* --------------- HealthTech --------------- */
+    /* --------------- Health --------------- */
     {
-      source: "HealthTech",
+      source: "Health",
       target: "Home",
       particleCount: particleCount,
       particleSize: ParticleSize,
@@ -666,64 +666,64 @@ export const data = {
       linkColor: HealthColorLink,
     },
     {
-      source: "HealthTech Contact",
-      target: "HealthTech",
+      source: "Health Contact",
+      target: "Health",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelOneLinkSize,
       linkColor: HealthColorLink,
     },
     {
-      source: "HealthTech PreSeed Stage",
-      target: "HealthTech",
+      source: "Health PreSeed Stage",
+      target: "Health",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelTwoLinkSize,
       linkColor: HealthColorLink,
     },
     {
-      source: "HealthTech Seed Stage",
-      target: "HealthTech",
+      source: "Health Seed Stage",
+      target: "Health",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelTwoLinkSize,
       linkColor: HealthColorLink,
     },
     {
-      source: "HealthTech Series A",
-      target: "HealthTech",
+      source: "Health Series A",
+      target: "Health",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelTwoLinkSize,
       linkColor: HealthColorLink,
     },
     {
-      source: "HealthTech Series B",
-      target: "HealthTech",
+      source: "Health Series B",
+      target: "Health",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelTwoLinkSize,
       linkColor: HealthColorLink,
     },
     {
-      source: "HealthTech Mezzanine",
-      target: "HealthTech",
+      source: "Health Mezzanine",
+      target: "Health",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelTwoLinkSize,
       linkColor: HealthColorLink,
     },
     {
-      source: "HealthTech Public",
-      target: "HealthTech",
+      source: "Health Public",
+      target: "Health",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelTwoLinkSize,
       linkColor: HealthColorLink,
     },
-    /* --------------- MedTech --------------- */
+    /* --------------- Med --------------- */
     {
-      source: "MedTech",
+      source: "Med",
       target: "Home",
       particleCount: particleCount,
       particleSize: ParticleSize,
@@ -731,64 +731,64 @@ export const data = {
       linkColor: MedColorLink,
     },
     {
-      source: "MedTech Contact",
-      target: "MedTech",
+      source: "Med Contact",
+      target: "Med",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelOneLinkSize,
       linkColor: MedColorLink,
     },
     {
-      source: "MedTech PreSeed Stage",
-      target: "MedTech",
+      source: "Med PreSeed Stage",
+      target: "Med",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelTwoLinkSize,
       linkColor: MedColorLink,
     },
     {
-      source: "MedTech Seed Stage",
-      target: "MedTech",
+      source: "Med Seed Stage",
+      target: "Med",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelTwoLinkSize,
       linkColor: MedColorLink,
     },
     {
-      source: "MedTech Series A",
-      target: "MedTech",
+      source: "Med Series A",
+      target: "Med",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelTwoLinkSize,
       linkColor: MedColorLink,
     },
     {
-      source: "MedTech Series B",
-      target: "MedTech",
+      source: "Med Series B",
+      target: "Med",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelTwoLinkSize,
       linkColor: MedColorLink,
     },
     {
-      source: "MedTech Mezzanine",
-      target: "MedTech",
+      source: "Med Mezzanine",
+      target: "Med",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelTwoLinkSize,
       linkColor: MedColorLink,
     },
     {
-      source: "MedTech Public",
-      target: "MedTech",
+      source: "Med Public",
+      target: "Med",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelTwoLinkSize,
       linkColor: MedColorLink,
     },
-    /* --------------- PharmaTech --------------- */
+    /* --------------- Pharma --------------- */
     {
-      source: "PharmaTech",
+      source: "Pharma",
       target: "Home",
       particleCount: particleCount,
       particleSize: ParticleSize,
@@ -796,56 +796,56 @@ export const data = {
       linkColor: PharmaColorLink,
     },
     {
-      source: "PharmaTech Contact",
-      target: "PharmaTech",
+      source: "Pharma Contact",
+      target: "Pharma",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelOneLinkSize,
       linkColor: PharmaColorLink,
     },
     {
-      source: "PharmaTech PreSeed Stage",
-      target: "PharmaTech",
+      source: "Pharma PreSeed Stage",
+      target: "Pharma",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelOneLinkSize,
       linkColor: PharmaColorLink,
     },
     {
-      source: "PharmaTech Seed Stage",
-      target: "PharmaTech",
+      source: "Pharma Seed Stage",
+      target: "Pharma",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelTwoLinkSize,
       linkColor: PharmaColorLink,
     },
     {
-      source: "PharmaTech Series A",
-      target: "PharmaTech",
+      source: "Pharma Series A",
+      target: "Pharma",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelTwoLinkSize,
       linkColor: PharmaColorLink,
     },
     {
-      source: "PharmaTech Series B",
-      target: "PharmaTech",
+      source: "Pharma Series B",
+      target: "Pharma",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelTwoLinkSize,
       linkColor: PharmaColorLink,
     },
     {
-      source: "PharmaTech Mezzanine",
-      target: "PharmaTech",
+      source: "Pharma Mezzanine",
+      target: "Pharma",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelTwoLinkSize,
       linkColor: PharmaColorLink,
     },
     {
-      source: "PharmaTech Public",
-      target: "PharmaTech",
+      source: "Pharma Public",
+      target: "Pharma",
       particleCount: particleCount,
       particleSize: ParticleSize,
       linkSize: LevelTwoLinkSize,

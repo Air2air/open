@@ -1,9 +1,7 @@
 import { Route } from "react-router-dom";
 import styled from "styled-components";
-import { AmChart } from "./components/AmChart/AmChart";
 import { Header } from "./components/Header";
 import SlideRoutes from "react-slide-routes";
-
 import { data } from "./data/data";
 
 const App = () => {
@@ -11,16 +9,11 @@ const App = () => {
     <>
       <Header />
       <Container>
-        <Col>
-          <AmChart />
-        </Col>
-        <Col>
-          <SlideRoutes>
-            {data.nodes.map(({ path, element }) => (
-              <Route key={path} path={path} element={element} />
-            ))}
-          </SlideRoutes>
-        </Col>
+        <SlideRoutes>
+          {data.nodes.map(({ path, element }) => (
+            <Route key={path} path={path} element={element} />
+          ))}
+        </SlideRoutes>
       </Container>
     </>
   );
@@ -31,10 +24,10 @@ const App = () => {
 const Container = styled.div`
   display: flex;
   flex-direction: row;
-  height: 80vh;
+  height: auto;
   margin: 0 auto;
   width: 80vw;
-  justify-content: space-around;
+  // justify-content: space-around;
 `;
 
 const Col = styled.div`
