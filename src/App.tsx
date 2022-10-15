@@ -1,6 +1,6 @@
 import { Route } from "react-router-dom";
 import styled from "styled-components";
-import { Header } from "./components/Header";
+import { Header } from "./components/Header/header";
 import SlideRoutes from "react-slide-routes";
 import { data } from "./data/data";
 
@@ -26,7 +26,7 @@ const Container = styled.div`
   flex-direction: row;
   height: auto;
   margin: 0 auto;
-  width: 80vw;
+  width: 60vw;
   // justify-content: space-around;
 `;
 

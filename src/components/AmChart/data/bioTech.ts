@@ -1,114 +1,112 @@
-import { ColorBioTech, NodeFirstChildSize, NodeSecondChildSize } from "../config";
+import { COLOR_BIO } from "../../../styles/Constants";
+import { NodeFirstChildSize} from "../config";
 
 export const BioTech = {
   name: "Bio",
   value: NodeFirstChildSize,
   nodeTheme: {
-    fill: ColorBioTech,
-    stroke: ColorBioTech,
+    fill: COLOR_BIO,
+    stroke: COLOR_BIO,
   },
   linkTheme: {
-    fill: ColorBioTech,
-    stroke: ColorBioTech,
+    fill: COLOR_BIO,
+    stroke: COLOR_BIO,
   },
   children: [
     {
       section: "Bio",
       name: "Pre Seed",
-      value: NodeSecondChildSize,
-      data: "There are over ABCD ventures in this category",
+      subhead: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "bio_tech_",
       nodeTheme: {
-        fill: ColorBioTech,
-        stroke: ColorBioTech,
+        fill: COLOR_BIO,
+        stroke: COLOR_BIO,
+      },
+      linkTheme: {
+        fill: COLOR_BIO,
+        stroke: COLOR_BIO,
       },
     },
     {
       section: "Bio",
       name: "Seed Stage",
-      value: NodeSecondChildSize,
-      data: "There are over ABCD ventures in this category",
+      subhead: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "bio_tech_",
       nodeTheme: {
-        fill: ColorBioTech,
-        stroke: ColorBioTech,
+        fill: COLOR_BIO,
+        stroke: COLOR_BIO,
       },
     },
     {
       section: "Bio",
       name: "Series A",
-      value: NodeSecondChildSize,
-      data: "There are over ABCD ventures in this category",
+      subhead: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "bio_tech_",
       nodeTheme: {
-        fill: ColorBioTech,
-        stroke: ColorBioTech,
+        fill: COLOR_BIO,
+        stroke: COLOR_BIO,
       },
     },
 
     {
       section: "Bio",
       name: "Series B",
-      value: NodeSecondChildSize,
-      data: "There are over ABCD ventures in this category",
+      subhead: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "bio_tech_",
       nodeTheme: {
-        fill: ColorBioTech,
-        stroke: ColorBioTech,
+        fill: COLOR_BIO,
+        stroke: COLOR_BIO,
       },
     },
     {
       section: "Bio",
       name: "Series C",
-      value: NodeSecondChildSize,
-      data: "There are over ABCD ventures in this category",
+      subhead: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "bio_tech_",
       nodeTheme: {
-        fill: ColorBioTech,
-        stroke: ColorBioTech,
+        fill: COLOR_BIO,
+        stroke: COLOR_BIO,
       },
     },
     {
       section: "Bio",
       name: "Mezzanine",
-      value: NodeSecondChildSize,
-      data: "There are over ABCD ventures in this category",
+      subhead: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "bio_tech_",
       nodeTheme: {
-        fill: ColorBioTech,
-        stroke: ColorBioTech,
+        fill: COLOR_BIO,
+        stroke: COLOR_BIO,
       },
     },
     {
       section: "Bio",
       name: "Public",
-      value: NodeSecondChildSize,
-      data: "There are over ABCD ventures in this category",
+      subhead: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "bio_tech_",
       nodeTheme: {
-        fill: ColorBioTech,
-        stroke: ColorBioTech,
+        fill: COLOR_BIO,
+        stroke: COLOR_BIO,
       },
     },
   ],

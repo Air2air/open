@@ -7,7 +7,7 @@ import { chartData } from "./data/chartData";
 import { HEADER_HEIGHT } from "../../styles/Constants";
 import styled from "styled-components";
 
-export const AmChart = (props: any) => {
+const AmChart = (props: any) => {
   useLayoutEffect(() => {
     let root = am5.Root.new("chartdiv");
 
@@ -35,7 +35,7 @@ export const AmChart = (props: any) => {
         nodePadding: 10,
         // Size
         minRadius: am5.percent(5),
-        maxRadius: am5.percent(10),
+        maxRadius: am5.percent(5),
         // Force
         centerStrength: 1, //	0.5 Strength all nodes are attracted (or pushed back) to the center of the chart.
         manyBodyStrength: -20, //	-15 Strength all nodes are attracted (or pushed back) to each other.
@@ -64,7 +64,7 @@ export const AmChart = (props: any) => {
 
     series.outerCircles.template.setAll({
       strokeWidth: 0,
-      templateField: "nodeTheme",
+      /* templateField: "nodeTheme", */
     });
 
     series.outerCircles.template.states.create("disabled", {
@@ -84,8 +84,10 @@ export const AmChart = (props: any) => {
     series.links.template.setAll({
       strokeWidth: 5,
       strokeOpacity: 0.5,
-      templateField: "linkTheme",
+      /* templateField: "linkTheme",*/
     });
+
+
 
     /* ------ Init ------ */
 
@@ -107,3 +109,4 @@ const ChartDiv = styled.div`
   width: 50%;
   //background:gray;
 `;
+

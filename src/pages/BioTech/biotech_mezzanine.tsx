@@ -12,6 +12,8 @@ const BioTechMezzaninePage = ({ nextPath, nextName, section }) => {
 <LogoChip width="10" style={{paddingRight:8, opacity:.4}} />{section}</div>}
 
 <div className="content">
+
+  
       <h1>{title}</h1>
       <h2>{subtitle}</h2>
       <p>{text}</p>

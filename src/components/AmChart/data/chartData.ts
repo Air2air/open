@@ -1,9 +1,8 @@
+import { BioTech } from "./bioTech";
 import { HealthTech } from "./healthTech";
 import { MedTech } from "./medTech";
 import { PharmaTech } from "./pharmaTech";
-import { BioTech } from "./bioTech";
 import { NodeBaseSize } from "../config";
-
 
 export const chartData = [
   {
@@ -12,4 +11,3 @@ export const chartData = [
     children: [BioTech, HealthTech, MedTech, PharmaTech],
   },
 ];
-

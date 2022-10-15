@@ -1,110 +1,104 @@
-import { ColorPharmaTech, NodeFirstChildSize, NodeSecondChildSize } from "../config";
+import { COLOR_PHARMA } from "../../../styles/Constants";
+import { NodeFirstChildSize} from "../config";
 
 export const PharmaTech = {
   name: "Pharma ",
   value: NodeFirstChildSize,
   nodeTheme: {
-    fill: ColorPharmaTech,
-    stroke: ColorPharmaTech,
+    fill: COLOR_PHARMA,
+    stroke: COLOR_PHARMA,
   },
   children: [
     {
       section: "Pharma",
       name: "Pre Seed",
-      value: NodeSecondChildSize,
-      data: "There are over ABCD ventures in this category",
+      subhead: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "pharma_tech_",
       nodeTheme: {
-        fill: ColorPharmaTech,
-        stroke: ColorPharmaTech,
+        fill: COLOR_PHARMA,
+        stroke: COLOR_PHARMA,
       },
     },
     {
       section: "Pharma",
       name: "Seed Stage",
-      value: NodeSecondChildSize,
-      data: "There are over ABCD ventures in this category",
+      subhead: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "pharma_tech_",
       nodeTheme: {
-        fill: ColorPharmaTech,
-        stroke: ColorPharmaTech,
+        fill: COLOR_PHARMA,
+        stroke: COLOR_PHARMA,
       },
     },
     {
       section: "Pharma",
       name: "Series A",
-      value: NodeSecondChildSize,
-      data: "There are over ABCD ventures in this category",
+      subhead: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "pharma_tech_",
       nodeTheme: {
-        fill: ColorPharmaTech,
-        stroke: ColorPharmaTech,
+        fill: COLOR_PHARMA,
+        stroke: COLOR_PHARMA,
       },
     },
 
     {
       section: "Pharma",
       name: "Series B",
-      value: NodeSecondChildSize,
-      data: "There are over ABCD ventures in this category",
+      subhead: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "pharma_tech_",
       nodeTheme: {
-        fill: ColorPharmaTech,
-        stroke: ColorPharmaTech,
+        fill: COLOR_PHARMA,
+        stroke: COLOR_PHARMA,
       },
     },
     {
       section: "Pharma",
       name: "Series C",
-      value: NodeSecondChildSize,
-      data: "There are over ABCD ventures in this category",
+      subhead: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "pharma_tech_",
       nodeTheme: {
-        fill: ColorPharmaTech,
-        stroke: ColorPharmaTech,
+        fill: COLOR_PHARMA,
+        stroke: COLOR_PHARMA,
       },
     },
     {
       section: "Pharma",
       name: "Mezzanine",
-      value: NodeSecondChildSize,
-      data: "There are over ABCD ventures in this category",
+      subhead: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "pharma_tech_",
       nodeTheme: {
-        fill: ColorPharmaTech,
-        stroke: ColorPharmaTech,
+        fill: COLOR_PHARMA,
+        stroke: COLOR_PHARMA,
       },
     },
     {
       section: "Pharma",
       name: "Public",
-      value: NodeSecondChildSize,
-      data: "There are over ABCD ventures in this category",
+      subhead: "There are over ABCD ventures in this category",
       contact:
         "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "pharma_tech_",
       nodeTheme: {
-        fill: ColorPharmaTech,
-        stroke: ColorPharmaTech,
+        fill: COLOR_PHARMA,
+        stroke: COLOR_PHARMA,
       },
     },
   ],
