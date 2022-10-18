@@ -1,17 +1,28 @@
 import React, { useLayoutEffect } from "react";
+import {Route, Link, Routes, useLocation} from 'react-router-dom';
+
+
 import * as am4core from "@amcharts/amcharts4/core";
-import * as am4charts from "@amcharts/amcharts4/charts";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 import * as am4plugins_forceDirected from "@amcharts/amcharts4/plugins/forceDirected";
-import am4themes_Responsive from "@amcharts/amcharts5/themes/Responsive";
 import { chartData } from "./data/chartData";
-import { HEADER_HEIGHT } from "../../styles/Constants";
+import {
+  COLOR_BIO,
+  COLOR_ELEVENS,
+  COLOR_HEALTH,
+  COLOR_MED,
+  COLOR_PHARMA,
+  HEADER_HEIGHT,
+} from "../../styles/Constants";
 import styled from "styled-components";
 
 const AmChart4 = (props: any) => {
-  // Themes begin
+
+    const location = useLocation();
+
+
+
   am4core.useTheme(am4themes_animated);
-  // Themes end
 
   let chart = am4core.create(
     "chartdiv",
@@ -21,39 +32,82 @@ const AmChart4 = (props: any) => {
     new am4plugins_forceDirected.ForceDirectedSeries()
   );
 
-  chart.data = chartData
-
+  chart.data = chartData;
+  chart.responsive.enabled = true;
 
   networkSeries.dataFields.value = "value";
   networkSeries.dataFields.name = "name";
   networkSeries.dataFields.children = "children";
-  networkSeries.nodes.template.tooltipText = "{name}:{value}";
+  networkSeries.nodes.template.tooltipText = "";
   networkSeries.nodes.template.fillOpacity = 1;
-  networkSeries.nodes.template.togglable = false;
+  networkSeries.nodes.template.togglable = true;
 
+  networkSeries.maxLevels = 2;
   networkSeries.manyBodyStrength = -20;
-  networkSeries.links.template.strength = 0.8;
-  networkSeries.minRadius = am4core.percent(2);
+
+//   networkSeries.velocityDecay = 0.9, 
+  networkSeries.minRadius = am4core.percent(5);
+  networkSeries.maxRadius = am4core.percent(7);
 
   networkSeries.nodes.template.label.text = "{name}";
-  networkSeries.fontSize = 10;
+  networkSeries.fontSize = 14;
 
-  let hl = networkSeries.nodes.template.states.create("selected");
-  hl.properties.fill = am4core.color("#c55");
+  networkSeries.links.template.strength = 0.8;
 
-  let selectedNode;
-  networkSeries.nodes.template.events.on("hit", function (ev) {
-    if (selectedNode === ev.target) {
-      selectedNode.fill = selectedNode.defaultState.properties.fill;
-      selectedNode = undefined;
-    } else {
-      if (selectedNode) {
+    networkSeries.colors.list = [
+      am4core.color(`${COLOR_ELEVENS}`),
+      am4core.color(`${COLOR_BIO}`),
+      am4core.color(`${COLOR_HEALTH}`),
+      am4core.color(`${COLOR_MED}`),
+      am4core.color(`${COLOR_PHARMA}`),
+    ];
+
+
+  /* Click Selection */
+//   let clicked = networkSeries.nodes.template.states.create("selected");
+//   clicked.properties.fill = am4core.color("#333");
+
+//   let selectedNode: am4plugins_forceDirected.ForceDirectedNode | undefined;
+//   networkSeries.nodes.template.events.on("hit", function (ev) {
+//     if (selectedNode === ev.target) {
+//       selectedNode.fill = selectedNode.defaultState.properties.fill;
+//       selectedNode = undefined;
+//     } else {
+//       if (selectedNode) {
+//         selectedNode.fill = selectedNode.defaultState.properties.fill;
+//       }
+//       selectedNode = ev.target;
+//       selectedNode.setState("selected");
+//     }
+//   });
+
+
+
+
+    /* Route Selection */
+    let clicked = networkSeries.nodes.template.states.create("selected");
+    clicked.properties.fill = am4core.color("#333");
+
+    let active = networkSeries.nodes.template.states.create("selected");
+    active.properties.fill = am4core.color("#333");
+  
+    let selectedNode: am4plugins_forceDirected.ForceDirectedNode | undefined;
+    
+    networkSeries.nodes.template.events.on("hit", function (ev) {
+      if (selectedNode === ev.target) {
         selectedNode.fill = selectedNode.defaultState.properties.fill;
+        selectedNode = undefined;
+      } else {
+        if (selectedNode) {
+          selectedNode.fill = selectedNode.defaultState.properties.fill;
+        }
+        selectedNode = ev.target;
+        selectedNode.setState("selected");
       }
-      selectedNode = ev.target;
-      selectedNode.setState("selected");
-    }
-  });
+    });
+  
+
+
   return <ChartDiv id="chartdiv" />;
 };
 
@@ -62,5 +116,6 @@ export default AmChart4;
 const ChartDiv = styled.div`
   height: ${HEADER_HEIGHT};
   width: 50%;
+  overflow:hidden;
   //background:gray;
 `;

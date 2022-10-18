@@ -1,5 +1,5 @@
 import { COLOR_BIO } from "../../../styles/Constants";
-import { NodeFirstChildSize} from "../config";
+import { NodeFirstChildSize } from "../config";
 
 export const BioTech = {
   name: "Bio",
