@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { useSpring, animated, config } from "react-spring";
 import styled from "styled-components";
@@ -13,9 +12,7 @@ import {
 } from "../../styles/Constants";
 import "./keyframes.css";
 
-
 const Button = (props: { nextPath; nextName; section }) => {
-
   const [show, setShow] = useState(false);
   useEffect(() => setShow(true), []);
 
@@ -30,32 +27,52 @@ const Button = (props: { nextPath; nextName; section }) => {
   return (
     <>
       {props.section === "Bio" ? (
-        <ButtonWrapper to={props.nextPath} style={animatedButtonStyle} className="bio">
-          <ButtonText>{props.section}</ButtonText>
+        <ButtonWrapper
+          to={props.nextPath}
+          style={animatedButtonStyle}
+          className="bio"
+        >
+          <ButtonText>{props.nextName}</ButtonText>
         </ButtonWrapper>
       ) : null}
 
       {props.section === "Health" ? (
-        <ButtonWrapper to={props.nextPath} style={animatedButtonStyle} className="health">
-          <ButtonText>{props.section}</ButtonText>
+        <ButtonWrapper
+          to={props.nextPath}
+          style={animatedButtonStyle}
+          className="health"
+        >
+          <ButtonText>{props.nextName}</ButtonText>
         </ButtonWrapper>
       ) : null}
 
       {props.section === "Med" ? (
-        <ButtonWrapper to={props.nextPath} style={animatedButtonStyle} className="med">
-          <ButtonText>{props.section}</ButtonText>
+        <ButtonWrapper
+          to={props.nextPath}
+          style={animatedButtonStyle}
+          className="med"
+        >
+          <ButtonText>{props.nextName}</ButtonText>
         </ButtonWrapper>
       ) : null}
 
       {props.section === "Pharma" ? (
-        <ButtonWrapper to={props.nextPath} style={animatedButtonStyle} className="pharma">
-          <ButtonText>{props.section}</ButtonText>
+        <ButtonWrapper
+          to={props.nextPath}
+          style={animatedButtonStyle}
+          className="pharma"
+        >
+          <ButtonText>{props.nextName}</ButtonText>
         </ButtonWrapper>
       ) : null}
 
       {props.section === "Elevens" ? (
-        <ButtonWrapper to={props.nextPath} style={animatedButtonStyle} className="elevens">
-          <ButtonText>{props.section}</ButtonText>
+        <ButtonWrapper
+          to={props.nextPath}
+          style={animatedButtonStyle}
+          className="elevens"
+        >
+          <ButtonText>{props.nextName}</ButtonText>
           <span>&gt;</span>
         </ButtonWrapper>
       ) : null}
@@ -66,9 +83,11 @@ const Button = (props: { nextPath; nextName; section }) => {
 const ButtonWrapper = styled(animated(Link))`
   display: flex;
   align-items: center;
-  width: 150px;
+  justify-content: center;
+  min-width: 150px;
   height: 60px;
-  padding: 0 6px;
+  padding: 0 14px;
+  align-self: flex-end;
   &.bio {
     background: ${COLOR_BIO};
   }
@@ -89,7 +108,7 @@ const ButtonWrapper = styled(animated(Link))`
 const ButtonText = styled.span`
   text-transform: uppercase;
   color: #fff;
-  margin-left: 8px;
+  // margin-left: 8px;
 `;
 
 export default Button;

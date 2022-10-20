@@ -34,8 +34,8 @@ const AmChart5 = (props: any) => {
         childDataField: "children",
         nodePadding: 10,
         // Size
-        minRadius: am5.percent(5),
-        maxRadius: am5.percent(5),
+        minRadius: am5.percent(6),
+        maxRadius: am5.percent(7),
         // Force
         centerStrength: 1, //	0.5 Strength all nodes are attracted (or pushed back) to the center of the chart.
         manyBodyStrength: -20, //	-15 Strength all nodes are attracted (or pushed back) to each other.

@@ -1,6 +1,6 @@
 
 // Dimensions
-export const HEADER_HEIGHT = "300px";
+export const HEADER_HEIGHT = "260px";
 export const TITLE_HEIGHT = "120px";
 
 // Colors

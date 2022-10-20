@@ -77,24 +77,24 @@ export const data = {
         <BioTechPage
           section="Bio"
           nextPath="/biotech_preseed"
-          nextName="Bio PreSeed Stage"
+          nextName="BioTech PreSeed Stage"
         />
       ),
     },
     {
-      id: "Bio PreSeed Stage",
+      id: "BioTech PreSeed Stage",
       path: "biotech_preseed",
       section: "Bio",
       element: (
         <BioTechPreSeedPage
           section="Bio"
           nextPath="/biotech_seed"
-          nextName="Bio Seed Stage"
+          nextName="BioTech Seed Stage"
         />
       ),
     },
     {
-      id: "Bio Seed Stage",
+      id: "BioTech Seed Stage",
       path: "biotech_seed",
       section: "Bio",
       element: (
@@ -106,7 +106,7 @@ export const data = {
       ),
     },
     {
-      id: "Bio Series A",
+      id: "BioTech Series A",
       path: "biotech_series_a",
       section: "Bio",
       element: (
@@ -118,7 +118,7 @@ export const data = {
       ),
     },
     {
-      id: "Bio Series B",
+      id: "BioTech Series B",
       path: "biotech_series_b",
       section: "Bio",
       element: (
@@ -130,31 +130,31 @@ export const data = {
       ),
     },
     {
-      id: "Bio Mezzanine",
+      id: "BioTech Mezzanine",
       path: "biotech_mezzanine",
       section: "Bio",
       element: (
         <BioTechMezzaninePage
           section="Bio"
           nextPath="/biotech_public"
-          nextName="Bio Public Company Stage"
+          nextName="BioTech Public Company Stage"
         />
       ),
     },
     {
-      id: "Bio Public",
+      id: "BioTech Public",
       path: "biotech_public",
       section: "Bio",
       element: (
         <BioTechPublicPage
           section="Bio"
           nextPath="/biotech_contact"
-          nextName="Bio Group Contact"
+          nextName="BioTech Group Contact"
         />
       ),
     },
     {
-      id: "Bio Contact",
+      id: "BioTech Group Contact",
       path: "biotech_contact",
       section: "Bio",
       element: (
@@ -174,24 +174,24 @@ export const data = {
         <HealthTechPage
           section="Health"
           nextPath="/healthtech_preseed"
-          nextName="Health PreSeed Stage"
+          nextName="HealthTech PreSeed Stage"
         />
       ),
     },
     {
-      id: "Health PreSeed Stage",
+      id: "HealthTech PreSeed Stage",
       path: "healthtech_preseed",
       section: "Health",
       element: (
         <HealthTechPreSeedPage
           section="Health"
           nextPath="/healthtech_seed"
-          nextName="Health Seed Stage"
+          nextName="HealthTech Seed Stage"
         />
       ),
     },
     {
-      id: "Health Seed Stage",
+      id: "HealthTech Seed Stage",
       path: "healthtech_seed",
       section: "Health",
       element: (
@@ -203,7 +203,7 @@ export const data = {
       ),
     },
     {
-      id: "Health Series A",
+      id: "HealthTech Series A",
       path: "healthtech_series_a",
       section: "Health",
       element: (
@@ -215,7 +215,7 @@ export const data = {
       ),
     },
     {
-      id: "Health Series B",
+      id: "HealthTech Series B",
       path: "healthtech_series_b",
       section: "Health",
       element: (
@@ -227,38 +227,38 @@ export const data = {
       ),
     },
     {
-      id: "Health Mezzanine",
+      id: "HealthTech Mezzanine",
       path: "healthtech_mezzanine",
       section: "Health",
       element: (
         <HealthTechMezzaninePage
           section="Health"
           nextPath="/healthtech_public"
-          nextName="Health Public Company Stage"
+          nextName="HealthTech Public Company Stage"
         />
       ),
     },
     {
-      id: "Health Public",
+      id: "HealthTech Public",
       path: "healthtech_public",
       section: "Health",
       element: (
         <HealthTechPublicPage
           section="Health"
           nextPath="/healthtech_contact"
-          nextName="Health Group Contact"
+          nextName="HealthTech Group Contact"
         />
       ),
     },
     {
-      id: "Health Contact",
+      id: "HealthTech Group Contact",
       path: "healthtech_contact",
       section: "Health",
       element: (
         <HealthTechContactPage
           section="Health"
           nextPath="/medtech"
-          nextName="MedTech Expertise"
+          nextName="MedTech Group Expertise"
         />
       ),
     },
@@ -272,24 +272,24 @@ export const data = {
         <MedTechPage
           section="Med"
           nextPath="/medtech_preseed"
-          nextName="Med PreSeed Stage"
+          nextName="MedTech PreSeed Stage"
         />
       ),
     },
     {
-      id: "Med PreSeed Stage",
+      id: "MedTech PreSeed Stage",
       path: "medtech_preseed",
       section: "Med",
       element: (
         <MedTechPreSeedPage
           section="Med"
           nextPath="/medtech_seed"
-          nextName="Med Seed Stage"
+          nextName="MedTech Seed Stage"
         />
       ),
     },
     {
-      id: "Med Seed Stage",
+      id: "MedTech Seed Stage",
       path: "medtech_seed",
       section: "Med",
       element: (
@@ -301,7 +301,7 @@ export const data = {
       ),
     },
     {
-      id: "Med Series A",
+      id: "MedTech Series A",
       path: "medtech_series_a",
       section: "Med",
       element: (
@@ -313,7 +313,7 @@ export const data = {
       ),
     },
     {
-      id: "Med Series B",
+      id: "MedTech Series B",
       path: "medtech_series_b",
       section: "Med",
       element: (
@@ -325,38 +325,38 @@ export const data = {
       ),
     },
     {
-      id: "Med Mezzanine",
+      id: "MedTech Mezzanine",
       path: "medtech_mezzanine",
       section: "Med",
       element: (
         <MedTechMezzaninePage
           section="Med"
           nextPath="/medtech_public"
-          nextName="Med Public Company Stage"
+          nextName="MedTech Public Company Stage"
         />
       ),
     },
     {
-      id: "Med Public",
+      id: "MedTech Public",
       path: "medtech_public",
       section: "Med",
       element: (
         <MedTechPublicPage
           section="Med"
           nextPath="/medtech_contact"
-          nextName="Med Group Contact"
+          nextName="MedTech Group Contact"
         />
       ),
     },
     {
-      id: "Med Contact",
+      id: "MedTech Group Contact",
       path: "medtech_contact",
       section: "Med",
       element: (
         <MedTechContactPage
           section="Med"
           nextPath="/pharmatech"
-          nextName="Pharma Tech Expertise"
+          nextName="PharmaTech Group Expertise"
         />
       ),
     },
@@ -369,24 +369,24 @@ export const data = {
         <PharmaTechPage
           section="Pharma"
           nextPath="/pharmatech_preseed"
-          nextName="Pharma PreSeed Stage"
+          nextName="PharmaTech PreSeed Stage"
         />
       ),
     },
     {
-      id: "Pharma PreSeed Stage",
+      id: "PharmaTech PreSeed Stage",
       path: "pharmatech_preseed",
       section: "Pharma",
       element: (
         <PharmaTechPreSeedPage
           section="Pharma"
           nextPath="/pharmatech_seed"
-          nextName="Pharma Seed Stage"
+          nextName="PharmaTech Seed Stage"
         />
       ),
     },
     {
-      id: "Pharma Seed Stage",
+      id: "PharmaTech Seed Stage",
       path: "pharmatech_seed",
       section: "Pharma",
       element: (
@@ -398,7 +398,7 @@ export const data = {
       ),
     },
     {
-      id: "Pharma Series A",
+      id: "PharmaTech Series A",
       path: "pharmatech_series_a",
       section: "Pharma",
       element: (
@@ -410,7 +410,7 @@ export const data = {
       ),
     },
     {
-      id: "Pharma Series B",
+      id: "PharmaTech Series B",
       path: "pharmatech_series_b",
       section: "Pharma",
       element: (
@@ -422,31 +422,31 @@ export const data = {
       ),
     },
     {
-      id: "Pharma Mezzanine",
+      id: "PharmaTech Mezzanine",
       path: "pharmatech_mezzanine",
       section: "Pharma",
       element: (
         <PharmaTechMezzaninePage
           section="Pharma"
           nextPath="/pharmatech_public"
-          nextName="Pharma Public Company Stage"
+          nextName="PharmaTech Public Company Stage"
         />
       ),
     },
     {
-      id: "Pharma Public",
+      id: "PharmaTech Public",
       path: "pharmatech_public",
       section: "Pharma",
       element: (
         <PharmaTechPublicPage
           section="Pharma"
           nextPath="/pharmatech_contact"
-          nextName="Pharma Group Contact"
+          nextName="PharmaTech Group Contact"
         />
       ),
     },
     {
-      id: "Pharma Contact",
+      id: "PharmaTech Group Contact",
       path: "pharmatech_contact",
       section: "Pharma",
       element: (
