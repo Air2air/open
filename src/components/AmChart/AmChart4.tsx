@@ -42,6 +42,7 @@ const AmChart4 = (props: any) => {
   networkSeries.links.template.strength = 0.8;
 
 
+
   // networkSeries.colors.list = [
   //   am4core.color(`${COLOR_ELEVENS}`),
   //   am4core.color(`${COLOR_HEALTH}`),

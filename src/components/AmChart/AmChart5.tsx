@@ -7,7 +7,7 @@ import { chartData } from "./data/chartData";
 import { HEADER_HEIGHT } from "../../styles/Constants";
 import styled from "styled-components";
 
-const AmChart = (props: any) => {
+const AmChart5 = (props: any) => {
   useLayoutEffect(() => {
     let root = am5.Root.new("chartdiv");
 
@@ -26,7 +26,7 @@ const AmChart = (props: any) => {
 
     const series = container.children.push(
       am5hierarchy.ForceDirected.new(root, {
-        downDepth: 2,
+        downDepth: 1,
         initialDepth: 1,
         singleBranchOnly: true,
         valueField: "value",
@@ -102,7 +102,7 @@ const AmChart = (props: any) => {
   return <ChartDiv id="chartdiv"/>;
 };
 
-export default AmChart;
+export default AmChart5;
 
 const ChartDiv = styled.div`
   height: ${HEADER_HEIGHT};

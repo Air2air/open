@@ -1,11 +1,8 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-
+import AmChart from "../AmChart/AmChart5";
 import { ReactComponent as LogoBlue } from "./../../images/logo_blue.svg";
-import { HEADER_HEIGHT } from "../../styles/Constants";
-import AmChart5 from "../AmChart/AmChart5";
-
-
+import { HEADER_HEIGHT } from "./../../styles/Constants";
 
 export const Header = () => {
   return (
@@ -13,16 +10,17 @@ export const Header = () => {
       <Link to="/">
         <LogoBlue width="50" />
       </Link>
-      <AmChart5 />
+      <AmChart/>
     </HeaderWrapper>
   );
 };
 
 const HeaderWrapper = styled.div`
+  width: '99vw';
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 99vw;
+  width: 100vw;
   height: ${HEADER_HEIGHT};
 //background:red;
 `;

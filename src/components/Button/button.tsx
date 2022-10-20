@@ -21,9 +21,9 @@ const Button = (props: { nextPath; nextName; section }) => {
 
   const animatedButtonStyle = useSpring({
     config: config.slow,
-    from: { opacity: 0, transform: "translateX(30px)" },
+    from: { opacity: 0, transform: "translateX(-30px)" },
     opacity: show ? 1 : 0,
-    transform: show ? "translateY(0)" : "translateX(300px)",
+    transform: show ? "translateY(0)" : "translateX(-30px)",
     delay: 1300,
   });
 

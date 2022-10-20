@@ -17,11 +17,20 @@ const Chip = (props: { section: string }) => {
   const [show, setShow] = useState(false);
   useEffect(() => setShow(true), []);
 
+  // const animatedChipStyle = useSpring({
+  //   config: config.molasses,
+  //   from: { opacity: 0, transform: "translateY(-30px)" },
+  //   opacity: show ? 1 : 0,
+  //   transform: show ? "translateY(0)" : "translateY(-30px)",
+  //   delay: 600,
+  //   duration: 1000,
+  // });
+
   const animatedChipStyle = useSpring({
     config: config.molasses,
-    from: { opacity: 0, transform: "translateY(-30px)" },
+    from: { opacity: 0 },
     opacity: show ? 1 : 0,
-    transform: show ? "translateY(0)" : "translateY(-30px)",
+    //transform: show ? "translateY(0)" : "translateY(-30px)",
     delay: 600,
     duration: 1000,
   });
