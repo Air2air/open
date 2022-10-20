@@ -2,8 +2,7 @@ import Button from "../../components/Button/button";
 import Chip from "../../components/Chip/chip";
 const title = `PharmaTech Series A Stage`;
 const subtitle = `optional Subtitle about PharmaTech`;
-const text = `Mission statement Mission statement Mission statement Mission statement
-        Mission statement Mission statement Mission statement Mission statement`;
+const text = `Series A typically is the first round of venture capital financing. At this stage, your company has usually completed its business plan and has a pitch deck emphasizing product-market fit. You are honing the product and establishing a customer base, ramping up marketing and advertising, and you can demonstrate consistent revenue flow. `;
 const PharmaTechSeriesAPage = ({ nextPath, nextName, section }) => {
   return (
     <>

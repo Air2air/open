@@ -2,8 +2,7 @@ import Button from "../../components/Button/button";
 import Chip from "../../components/Chip/chip";
 const title = `MedTech PreSeed Stage`;
 const subtitle = `optional Subtitle about MedTech`;
-const text = `Mission statement Mission statement Mission statement Mission statement
-        Mission statement Mission statement Mission statement Mission statement`;
+const text = `Before accessing VC capital, there is the pre-seed or bootstrapping stage. This is the time you spend getting your operations off the ground, and when you begin to build your product or service prototype to assess the viability of your idea. At this point it is unlikely that VCs will provide funding in exchange for equity, so you need to depend on your personal resources and contacts to launch your startup.`;
 const MedTechPreSeedPage = ({ nextPath, nextName, section }) => {
   return (
     <>

@@ -1,6 +1,6 @@
 import Button from "../../components/Button/button";
 import Chip from "../../components/Chip/chip";
-const title = `MedTech Contact`;
+const title = `MedTech Group Contact`;
 const subtitle = `optional Subtitle about MedTech`;
 const text = `To learn more about how we help these ventures email us or visit us on LinkedIn`;
 const MedTechContactPage = ({ nextPath, nextName, section }) => {

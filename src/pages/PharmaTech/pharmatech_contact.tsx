@@ -1,6 +1,6 @@
 import Button from "../../components/Button/button";
 import Chip from "../../components/Chip/chip";
-const title = `PharmaTech Contact`;
+const title = `PharmaTech Group Contact`;
 const subtitle = `optional Subtitle about PharmaTech`;
 const text = `To learn more about how we help these ventures email us or visit us on LinkedIn`;
 const PharmaTechContactPage = ({ nextPath, nextName, section }) => {

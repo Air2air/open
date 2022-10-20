@@ -1,9 +1,8 @@
 import Button from "../../components/Button/button";
 import Chip from "../../components/Chip/chip";
-const title = `PharmaTech  Expertise`;
+const title = `PharmaTech  Group Expertise`;
 const subtitle = `optional Subtitle about PharmaTech`;
-const text = `Mission statement Mission statement Mission statement Mission statement
-        Mission statement Mission statement Mission statement Mission statement`;
+const text = `Innovative technologies, such as AI, blockchain, cloud computing, and machine learning can be applied across the healthcare product lifecycle. PharmaTech may be best explained as encompassing the various ways these new technologies can be leveraged to help companies complete different aspects of the work required within the pharma R&D space.`;
 const PharmaTechPage = ({ nextPath, nextName, section }) => {
   return (
     <>

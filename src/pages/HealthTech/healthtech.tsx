@@ -1,9 +1,8 @@
 import Button from "../../components/Button/button";
 import Chip from "../../components/Chip/chip";
-const title = `HealthTech  Expertise`;
+const title = `HealthTech  Group Expertise`;
 const subtitle = `optional Subtitle about HealthTech`;
-const text = `Mission statement Mission statement Mission statement Mission statement
-        Mission statement Mission statement Mission statement Mission statement`;
+const text = `Healthtech (oftentimes referred to as digital health) is a technology for better delivery, payment, and/or consumption of care. It is mostly about personal health, meaning patients engage with their personal health, and everything that happens outside of the hospital, like telehealth and remote monitoring. Healthtech is about prevention and monitoring rather than treatment. `;
 const HealthTechPage = ({ nextPath, nextName, section }) => {
   return (
     <>

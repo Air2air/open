@@ -1,6 +1,6 @@
 import Button from "../components/Button/button";
 import Chip from "../components/Chip/chip";
-const title = `Elevens Team Expertise`;
+const title = `Elevens Team Group Expertise`;
 const subtitle = `optional Subtitle about Eleven`;
 const text = `Mission statement Mission statement Mission statement Mission statement
         Mission statement Mission statement Mission statement Mission statement`;

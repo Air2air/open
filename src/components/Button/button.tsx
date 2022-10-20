@@ -73,7 +73,6 @@ const Button = (props: { nextPath; nextName; section }) => {
           className="elevens"
         >
           <ButtonText>{props.nextName}</ButtonText>
-          <span>&gt;</span>
         </ButtonWrapper>
       ) : null}
     </>
@@ -86,7 +85,7 @@ const ButtonWrapper = styled(animated(Link))`
   justify-content: center;
   min-width: 150px;
   height: 60px;
-  padding: 0 14px;
+  padding: 0 30px;
   align-self: flex-end;
   &.bio {
     background: ${COLOR_BIO};
