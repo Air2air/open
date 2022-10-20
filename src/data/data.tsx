@@ -42,19 +42,23 @@ export const data = {
       section: "Elevens",
       element: (
         <AboutPage section="Elevens" nextPath="/team" nextName="Elevens Team" />
-      )
+      ),
     },
     {
       id: "Home",
       path: "/",
       section: "Elevens",
       element: (
-        <HomePage
-          nextPath="/team"
-          nextName="Elevens Team"
-          section={undefined}
-        />
-      )
+        <HomePage section="Elevens" nextPath="/team" nextName="Elevens Team" />
+      ),
+    },
+    {
+      id: "Home2",
+      path: "home",
+      section: "Elevens",
+      element: (
+        <HomePage section="Elevens" nextPath="/team" nextName="Elevens Team" />
+      ),
     },
     {
       id: "Elevens Team",
@@ -75,7 +79,7 @@ export const data = {
           nextPath="/biotech_preseed"
           nextName="Bio PreSeed Stage"
         />
-      )
+      ),
     },
     {
       id: "Bio PreSeed Stage",
@@ -87,7 +91,7 @@ export const data = {
           nextPath="/biotech_seed"
           nextName="Bio Seed Stage"
         />
-      )
+      ),
     },
     {
       id: "Bio Seed Stage",
@@ -99,7 +103,7 @@ export const data = {
           nextPath="/biotech_series_a"
           nextName="Bio Series A Stage"
         />
-      )
+      ),
     },
     {
       id: "Bio Series A",
@@ -111,7 +115,7 @@ export const data = {
           nextPath="/biotech_series_b"
           nextName="Bio Series B Stage"
         />
-      )
+      ),
     },
     {
       id: "Bio Series B",
@@ -123,7 +127,7 @@ export const data = {
           nextPath="/biotech_mezzanine"
           nextName="Bio Mezzanine Stage"
         />
-      )
+      ),
     },
     {
       id: "Bio Mezzanine",
@@ -135,7 +139,7 @@ export const data = {
           nextPath="/biotech_public"
           nextName="Bio Public Company Stage"
         />
-      )
+      ),
     },
     {
       id: "Bio Public",
@@ -147,7 +151,7 @@ export const data = {
           nextPath="/biotech_contact"
           nextName="Bio Group Contact"
         />
-      )
+      ),
     },
     {
       id: "Bio Contact",
@@ -172,7 +176,7 @@ export const data = {
           nextPath="/healthtech_preseed"
           nextName="Health PreSeed Stage"
         />
-      )
+      ),
     },
     {
       id: "Health PreSeed Stage",
@@ -184,7 +188,7 @@ export const data = {
           nextPath="/healthtech_seed"
           nextName="Health Seed Stage"
         />
-      )
+      ),
     },
     {
       id: "Health Seed Stage",
@@ -196,7 +200,7 @@ export const data = {
           nextPath="/healthtech_series_a"
           nextName="Health Series A Stage"
         />
-      )
+      ),
     },
     {
       id: "Health Series A",
@@ -208,7 +212,7 @@ export const data = {
           nextPath="/healthtech_series_b"
           nextName="Health Series B Stage"
         />
-      )
+      ),
     },
     {
       id: "Health Series B",
@@ -220,7 +224,7 @@ export const data = {
           nextPath="/healthtech_mezzanine"
           nextName="Health Mezzanine Stage"
         />
-      )
+      ),
     },
     {
       id: "Health Mezzanine",
@@ -232,7 +236,7 @@ export const data = {
           nextPath="/healthtech_public"
           nextName="Health Public Company Stage"
         />
-      )
+      ),
     },
     {
       id: "Health Public",
@@ -244,7 +248,7 @@ export const data = {
           nextPath="/healthtech_contact"
           nextName="Health Group Contact"
         />
-      )
+      ),
     },
     {
       id: "Health Contact",
@@ -270,7 +274,7 @@ export const data = {
           nextPath="/medtech_preseed"
           nextName="Med PreSeed Stage"
         />
-      )
+      ),
     },
     {
       id: "Med PreSeed Stage",
@@ -282,7 +286,7 @@ export const data = {
           nextPath="/medtech_seed"
           nextName="Med Seed Stage"
         />
-      )
+      ),
     },
     {
       id: "Med Seed Stage",
@@ -294,7 +298,7 @@ export const data = {
           nextPath="/medtech_series_a"
           nextName="Med Series A Stage"
         />
-      )
+      ),
     },
     {
       id: "Med Series A",
@@ -306,7 +310,7 @@ export const data = {
           nextPath="/medtech_series_b"
           nextName="Med Series B Stage"
         />
-      )
+      ),
     },
     {
       id: "Med Series B",
@@ -318,7 +322,7 @@ export const data = {
           nextPath="/medtech_mezzanine"
           nextName="Med Mezzanine Stage"
         />
-      )
+      ),
     },
     {
       id: "Med Mezzanine",
@@ -330,7 +334,7 @@ export const data = {
           nextPath="/medtech_public"
           nextName="Med Public Company Stage"
         />
-      )
+      ),
     },
     {
       id: "Med Public",
@@ -342,7 +346,7 @@ export const data = {
           nextPath="/medtech_contact"
           nextName="Med Group Contact"
         />
-      )
+      ),
     },
     {
       id: "Med Contact",
@@ -367,7 +371,7 @@ export const data = {
           nextPath="/pharmatech_preseed"
           nextName="Pharma PreSeed Stage"
         />
-      )
+      ),
     },
     {
       id: "Pharma PreSeed Stage",
@@ -379,7 +383,7 @@ export const data = {
           nextPath="/pharmatech_seed"
           nextName="Pharma Seed Stage"
         />
-      )
+      ),
     },
     {
       id: "Pharma Seed Stage",
@@ -391,7 +395,7 @@ export const data = {
           nextPath="/pharmatech_series_a"
           nextName="Pharma Series A Stage"
         />
-      )
+      ),
     },
     {
       id: "Pharma Series A",
@@ -403,7 +407,7 @@ export const data = {
           nextPath="/pharmatech_series_b"
           nextName="Pharma Series B Stage"
         />
-      )
+      ),
     },
     {
       id: "Pharma Series B",
@@ -415,7 +419,7 @@ export const data = {
           nextPath="/pharmatech_mezzanine"
           nextName="Pharma Mezzanine Stage"
         />
-      )
+      ),
     },
     {
       id: "Pharma Mezzanine",
@@ -427,7 +431,7 @@ export const data = {
           nextPath="/pharmatech_public"
           nextName="Pharma Public Company Stage"
         />
-      )
+      ),
     },
     {
       id: "Pharma Public",
@@ -439,7 +443,7 @@ export const data = {
           nextPath="/pharmatech_contact"
           nextName="Pharma Group Contact"
         />
-      )
+      ),
     },
     {
       id: "Pharma Contact",
@@ -448,8 +452,8 @@ export const data = {
       element: (
         <PharmaTechContactPage
           section="Pharma"
-          nextPath="/pharmatech"
-          nextName="Pharma Expertise"
+          nextPath="/home"
+          nextName="Elevens"
         />
       ),
     },

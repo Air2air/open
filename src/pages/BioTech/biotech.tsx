@@ -1,25 +1,23 @@
-import { Link } from "react-router-dom";
+import Button from "../../components/Button/button";
 import Chip from "../../components/Chip/chip";
 const title = `BioTech  Expertise`;
 const subtitle = `optional Subtitle about BioTech`;
 const text = `Mission statement Mission statement Mission statement Mission statement
         Mission statement Mission statement Mission statement Mission statement`;
-        
+
 const BioTechPage = ({ nextPath, nextName, section }) => {
   return (
     <>
-      <div className="wrapper">
-        {section ? <Chip section='Bio' /> : ""}
+      {section ? <Chip section={section} /> : ""}
+<div className="wrapper">
 
         <div className="content">
           <h1>{title}</h1>
           <h2>{subtitle}</h2>
           <p>{text}</p>
         </div>
-        <Link className="btn" to={nextPath}>
-          {nextName} <span>&gt;</span>
-        </Link>
-      </div>
+
+        <Button section={section} nextPath={nextPath} nextName={nextName} />      </div>
     </>
   );
 };

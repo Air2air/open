@@ -23,22 +23,11 @@ const App = () => {
 
 const Container = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: auto;
   margin: 0 auto;
   width: 60vw;
   // justify-content: space-around;
-`;
-
-const Col = styled.div`
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 10% 0 0 0;
-  width: 50%;
-  //background:red;
 `;
 
 export default App;

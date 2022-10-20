@@ -12,6 +12,14 @@ export const BioTech = {
     fill: COLOR_BIO,
     stroke: COLOR_BIO,
   },
+  config: {
+    isActive: true,
+    fill: COLOR_BIO,
+    stroke: COLOR_BIO,
+    filters: [{
+      type: "DropShadowFilter"
+    }]
+  },
   children: [
     {
       section: "Bio",

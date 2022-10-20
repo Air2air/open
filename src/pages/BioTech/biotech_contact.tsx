@@ -1,28 +1,21 @@
-import { Link } from "react-router-dom";
-import { ReactComponent as LogoChip } from "./../../images/logo_white.svg";
+import Button from "../../components/Button/button";
+import Chip from "../../components/Chip/chip";
 const title = `BioTech Contact`;
 const subtitle = `optional Subtitle about BioTech`;
 const text = `To learn more about how we help these ventures email us or visit us on LinkedIn`;
 const BioTechContactPage = ({ nextPath, nextName, section }) => {
   return (
     <>
-      <div className="wrapper">
-        {section && (
-          <div className="chip bio">
-            <LogoChip width="10" style={{ paddingRight: 8, opacity: 0.4 }} />
-            {section}
-          </div>
-        )}
+      {section ? <Chip section={section} /> : ""}
+<div className="wrapper">
 
         <div className="content">
           <h1>{title}</h1>
           <h2>{subtitle}</h2>
           <p>{text}</p>
         </div>
-        <Link className="btn" to={nextPath}>
-          {nextName} <span>&gt;</span>
-        </Link>
-      </div>
+
+        <Button section={section} nextPath={nextPath} nextName={nextName} />      </div>
     </>
   );
 };
