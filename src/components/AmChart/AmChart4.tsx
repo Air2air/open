@@ -1,6 +1,3 @@
-
-import { useLocation } from "react-router-dom";
-
 import * as am4core from "@amcharts/amcharts4/core";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 import * as am4plugins_forceDirected from "@amcharts/amcharts4/plugins/forceDirected";
@@ -11,7 +8,6 @@ import {
 import styled from "styled-components";
 
 const AmChart4 = (props: any) => {
-
 
   am4core.useTheme(am4themes_animated);
 
