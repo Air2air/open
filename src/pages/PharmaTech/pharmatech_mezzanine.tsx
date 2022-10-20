@@ -2,8 +2,7 @@ import Button from "../../components/Button/button";
 import Chip from "../../components/Chip/chip";
 const title = `PharmaTech Mezzanine Stage`;
 const subtitle = `optional Subtitle about PharmaTech`;
-const text = `Mission statement Mission statement Mission statement Mission statement
-        Mission statement Mission statement Mission statement Mission statement`;
+const text = `The final stage of venture capital marks your transition to a liquidity event, either an exit via going public or M&A. You've reached maturity and now need financing to support major events.`;
 const PharmaTechMezzaninePage = ({ nextPath, nextName, section }) => {
   return (
     <>

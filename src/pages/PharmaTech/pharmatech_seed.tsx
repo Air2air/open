@@ -2,8 +2,11 @@ import Button from "../../components/Button/button";
 import Chip from "../../components/Chip/chip";
 const title = `PharmaTech Seed Stage`;
 const subtitle = `optional Subtitle about PharmaTech`;
-const text = `Mission statement Mission statement Mission statement Mission statement
-        Mission statement Mission statement Mission statement Mission statement`;
+const text = `Your company now has a degree of experience and can demonstrate potential to develop into a vibrant company. You now need a pitch deck to demonstrate to VCs that your idea is a viable investment opportunity. Most of the modest sums you raise in the seed stage are for specific activities like: 
+▪	Market research 
+▪	Business plan development 
+▪	Setting up a management team  
+▪	Product development `;
 const PharmaTechSeedPage = ({ nextPath, nextName, section }) => {
   return (
     <>
