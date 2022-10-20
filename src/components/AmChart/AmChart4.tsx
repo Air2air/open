@@ -6,17 +6,12 @@ import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 import * as am4plugins_forceDirected from "@amcharts/amcharts4/plugins/forceDirected";
 import { chartData } from "./data/chartData";
 import {
-  COLOR_BIO,
-  COLOR_ELEVENS,
-  COLOR_HEALTH,
-  COLOR_MED,
-  COLOR_PHARMA,
   HEADER_HEIGHT,
 } from "../../styles/Constants";
 import styled from "styled-components";
 
 const AmChart4 = (props: any) => {
-  const location = useLocation();
+
 
   am4core.useTheme(am4themes_animated);
 
