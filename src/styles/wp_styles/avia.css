@@ -1,0 +1,21 @@
+.avia-section-huge .content {
+    padding-top: 130px;
+    padding-bottom: 130px
+}
+
+.avia-full-stretch {
+    background-size: cover !important
+}
+
+.avia-section {
+    clear: both;
+    width: 100%;
+    float: left;
+    min-height: 100px;
+    position: static
+}
+
+.avia_textblock {
+    clear: both;
+    line-height: inherit
+}

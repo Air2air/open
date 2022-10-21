@@ -26,7 +26,7 @@ export const BioTech = {
       name: "Pre Seed",
       subhead: "There are over ABCD ventures in this category",
       contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "bio_tech_",
       nodeTheme: {
@@ -43,7 +43,7 @@ export const BioTech = {
       name: "Seed Stage",
       subhead: "There are over ABCD ventures in this category",
       contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "bio_tech_",
       nodeTheme: {
@@ -56,7 +56,7 @@ export const BioTech = {
       name: "Series A",
       subhead: "There are over ABCD ventures in this category",
       contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "bio_tech_",
       nodeTheme: {
@@ -70,7 +70,7 @@ export const BioTech = {
       name: "Series B",
       subhead: "There are over ABCD ventures in this category",
       contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "bio_tech_",
       nodeTheme: {
@@ -83,7 +83,7 @@ export const BioTech = {
       name: "Series C",
       subhead: "There are over ABCD ventures in this category",
       contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "bio_tech_",
       nodeTheme: {
@@ -96,7 +96,7 @@ export const BioTech = {
       name: "Mezzanine",
       subhead: "There are over ABCD ventures in this category",
       contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "bio_tech_",
       nodeTheme: {
@@ -109,7 +109,7 @@ export const BioTech = {
       name: "Public",
       subhead: "There are over ABCD ventures in this category",
       contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "bio_tech_",
       nodeTheme: {

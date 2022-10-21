@@ -14,7 +14,7 @@ const BioTechPage = ({ nextPath, nextName, section }) => {
           <h2>{subtitle}</h2>
           <p>{text}</p>
         </div>
-        <Button section={section} nextPath={nextPath} nextName={nextName} />{" "}
+        <Button section={section} nextPath={nextPath} nextName={nextName} />
       </div>
     </>
   );

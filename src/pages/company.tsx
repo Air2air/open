@@ -9,7 +9,7 @@ const title = `Home Tagline`;
 const subtitle = `optional Subtitle about Eleven`;
 const text = `Mission statement Mission statement Mission statement Mission statement
  Mission statement Mission statement Mission statement Mission statement`;
-const HomePage = ({ nextPath, nextName, section }) => {
+const CompanyPage = ({ nextPath, nextName, section }) => {
   return (
     <>
       <div id="main" className="all_colors" data-scroll-offset="88">
@@ -23,4 +23,4 @@ const HomePage = ({ nextPath, nextName, section }) => {
     </>
   );
 };
-export default HomePage;
+export default CompanyPage;

@@ -5,6 +5,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 
 import "./styles/styles.css";
+import "./styles/wp_styles/styles.css";
 import App from "./App";
 
 ReactDOM.render(

@@ -14,7 +14,7 @@ export const MedTech = {
       name: "Pre Seed",
       subhead: "There are over ABCD ventures in this category",
       contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "med_tech_",
       nodeTheme: {
@@ -27,7 +27,7 @@ export const MedTech = {
       name: "Seed Stage",
       subhead: "There are over ABCD ventures in this category",
       contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "med_tech_",
       nodeTheme: {
@@ -40,7 +40,7 @@ export const MedTech = {
       name: "Series A",
       subhead: "There are over ABCD ventures in this category",
       contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "med_tech_",
       nodeTheme: {
@@ -54,7 +54,7 @@ export const MedTech = {
       name: "Series B",
       subhead: "There are over ABCD ventures in this category",
       contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "med_tech_",
       nodeTheme: {
@@ -67,7 +67,7 @@ export const MedTech = {
       name: "Series C",
       subhead: "There are over ABCD ventures in this category",
       contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "med_tech_",
       nodeTheme: {
@@ -80,7 +80,7 @@ export const MedTech = {
       name: "Mezzanine",
       subhead: "There are over ABCD ventures in this category",
       contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "med_tech_",
       nodeTheme: {
@@ -93,7 +93,7 @@ export const MedTech = {
       name: "Public",
       subhead: "There are over ABCD ventures in this category",
       contact:
-        "To learn more about how we help these ventures email us or visit us on LinkedIn",
+      "To learn more about how we help these ventures email us or visit us on LinkedIn",
       content: "content here",
       link: "med_tech_",
       nodeTheme: {
