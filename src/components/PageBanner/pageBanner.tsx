@@ -7,7 +7,6 @@ export const PageBanner = ({ pageTitle, pageSubTitle, video, overlayOpacity, ove
     <>
       <PageBannerWrapper>
         {video ? <VideoCallout video={video} overlayOpacity={overlayOpacity} overlayColor={overlayColor} /> : ""}
-
         <TextWrapper>
           <PageTitle>{pageTitle}</PageTitle>
           <PageSubTitle>{pageSubTitle}</PageSubTitle>
@@ -26,6 +25,7 @@ const PageBannerWrapper = styled.div`
   height: ${BANNER_HEIGHT};
   width: 100vw;
   overflow: hidden;
+  align-items: center;
 `;
 
 const TextWrapper = styled.div`

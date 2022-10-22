@@ -1,0 +1,35 @@
+
+
+/* Fade, Flip, Zoom, SlideIn aos */
+.aos__fade,
+.aos__flip,
+.aos__zoom,
+.aos__slidein {
+  transition: 2s;
+  padding: 50px 0;
+  border: 1px solid #fc3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.aos__fade h1,
+.aos__flip h1,
+.aos__zoom h1,
+.aos__slidein h1 {
+  margin: 25px auto;
+}
+.aos__fade-box,
+.aos__flip-box,
+.aos__zoom-box,
+.aos__slidein-box {
+  width: 300px;
+  height: 150px;
+  background: #161e54;
+  /* margin: 80px 0; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #fbf3e4;
+  border-radius: 4px;
+}

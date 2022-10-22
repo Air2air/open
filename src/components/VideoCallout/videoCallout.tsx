@@ -32,9 +32,10 @@ const PageBannerOpacityOverlay = ({ overlayOpacity, overlayColor }) => {
 const VideoWrapper = styled.div`
   position: absolute;
   top: 0;
-  left: 0;
+  margin: 0 auto;
   height: ${BANNER_HEIGHT};
   width: 100%;
+  overflow: hidden;
 `;
 
 const Overlay = styled.div`
@@ -42,7 +43,7 @@ const Overlay = styled.div`
   top: 0;
   left: 0;
   height: ${BANNER_HEIGHT};
-  width: 100vw;
+  width: 100%;
 `;
 
 export default VideoCallout;
