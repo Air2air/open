@@ -1,4 +1,4 @@
-import { BANNER_HEIGHT, HEADER_HEIGHT } from "../../styles/Constants";
+import { BANNER_HEIGHT } from "../../styles/Constants";
 import styled from "styled-components";
 import VideoCallout from "../VideoCallout/videoCallout";
 
