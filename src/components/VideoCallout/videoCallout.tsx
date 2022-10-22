@@ -2,7 +2,7 @@ import VideoPlayer from "react-background-video-player";
 import styled from "styled-components";
 import { BANNER_HEIGHT } from "../../styles/Constants";
 
-const VideoCallout = ({ video, videoOpacity }) => {
+const VideoCallout = ({ video, overlayOpacity, overlayColor }) => {
   return (
     <>
       <VideoWrapper>
@@ -13,11 +13,21 @@ const VideoCallout = ({ video, videoOpacity }) => {
           muted={true}
         />
       </VideoWrapper>
-      <PageBannerOpacityOverlay />
+      <PageBannerOpacityOverlay
+        overlayOpacity={overlayOpacity}
+        overlayColor={overlayColor}
+      />
     </>
   );
 };
-export default VideoCallout;
+
+const PageBannerOpacityOverlay = ({ overlayOpacity, overlayColor }) => {
+  return (
+    <>
+      <Overlay style={{ opacity: overlayOpacity, background: overlayColor }} />
+    </>
+  );
+};
 
 const VideoWrapper = styled.div`
   position: absolute;
@@ -27,12 +37,12 @@ const VideoWrapper = styled.div`
   width: 100%;
 `;
 
-const PageBannerOpacityOverlay = styled.div`
-
+const Overlay = styled.div`
   position: absolute;
   top: 0;
   left: 0;
   height: ${BANNER_HEIGHT};
   width: 100vw;
-  background-color: rgba(0, 20, 60, .6);
 `;
+
+export default VideoCallout;

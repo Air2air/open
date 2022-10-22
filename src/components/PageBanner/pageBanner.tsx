@@ -2,11 +2,11 @@ import { BANNER_HEIGHT } from "../../styles/Constants";
 import styled from "styled-components";
 import VideoCallout from "../VideoCallout/videoCallout";
 
-export const PageBanner = ({ pageTitle, pageSubTitle, video, videoOpacity }) => {
+export const PageBanner = ({ pageTitle, pageSubTitle, video, overlayOpacity, overlayColor }) => {
   return (
     <>
       <PageBannerWrapper>
-        {video ? <VideoCallout video={video} videoOpacity={videoOpacity} /> : ""}
+        {video ? <VideoCallout video={video} overlayOpacity={overlayOpacity} overlayColor={overlayColor} /> : ""}
 
         <TextWrapper>
           <PageTitle>{pageTitle}</PageTitle>
@@ -28,8 +28,6 @@ const PageBannerWrapper = styled.div`
   overflow: hidden;
 `;
 
-
-
 const TextWrapper = styled.div`
   margin: 0 auto;
   z-index: +1;
@@ -42,7 +40,7 @@ const PageTitle = styled.div`
   color: red;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight:100;
-  font-size: 3em;
+  font-size: 2.7em;
   margin-bottom:.8em;
   height: auto;
   text-align: left;
