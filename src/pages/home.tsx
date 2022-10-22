@@ -1,13 +1,41 @@
+import styled from "styled-components";
+import PageBanner from "../components/PageBanner/pageBanner";
+import { dataTeam } from "./../data/team";
 
+const pageTitle = "Elevens Team";
+const pageSubTitle =
+  "We're a team of seasoned cyber entrepreneurs, operators and investors offering first-hand experience, global perspective and rare connections for transformative cybersecurity companies.";
+const video =
+  "https://res.cloudinary.com/dv7ollzw5/video/upload/v1619209051/Bloom_Alpha.webm";
 
-
-const HomePage = ({ nextPath, nextName, section }) => {
- return (
-  <>
-   <div id="main" className="all_colors" data-scroll-offset="88">
-
-   </div>
-  </>
- );
+const HomePage = (section) => {
+  return (
+    <>
+      <PageBanner
+        pageTitle={pageTitle}
+        pageSubTitle={pageSubTitle}
+        video={video}
+      />
+      <TeamGrid>
+        {dataTeam.map((props) => (
+          <TeamMember key={props.id} />
+        ))}
+      </TeamGrid>
+    </>
+  );
 };
+
 export default HomePage;
+
+const TeamGrid = styled.div`
+  display: grid;
+  height: 200px;
+  width: "100%";
+  background: red;
+`;
+
+const TeamMember = styled.div`
+  height: 200px;
+  width: "100%";
+  background: gold;
+`;
