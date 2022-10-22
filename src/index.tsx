@@ -1,17 +1,16 @@
-
-
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 
-import "./styles/styles.css";
-import "./styles/wp_styles/styles.css";
+import "./styles/styles.scss";
 import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <div className="App">
+        <App />
+      </div>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")

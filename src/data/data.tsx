@@ -34,7 +34,7 @@ import PharmaTechSeriesAPage from "../pages/PharmaTech/pharmatech_series_a";
 import PharmaTechSeriesBPage from "../pages/PharmaTech/pharmatech_series_b";
 import TeamPage from "../pages/team";
 
-export const data = {
+export const dataRoutes = {
   nodes: [
     {
       id: "About",

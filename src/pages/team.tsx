@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import PageBanner from "../components/PageBanner/pageBanner";
-import { dataTeam } from "./../data/team";
+import { dataTeam } from "../data/team";
 
 const pageTitle = "Elevens Team";
 const pageSubTitle =
   "We're a team of seasoned cyber entrepreneurs, operators and investors offering first-hand experience, global perspective and rare connections for transformative cybersecurity companies.";
 const video =
-  "https://res.cloudinary.com/dv7ollzw5/video/upload/v1619209051/Bloom_Alpha.webm";
+"https://player.vimeo.com/external/435674703.sd.mp4?s=01ad1ba21dc72c1d34728e1b77983805b34daad7&profile_id=165&oauth2_token_id=57447761";
 
 const TeamPage = (section) => {
   return (
