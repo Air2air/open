@@ -8,27 +8,16 @@ const App = () => {
   return (
     <>
       <Header />
-      <Container>
-        <Routes>
-          {data.nodes.map(({ path, element }) => (
-            <Route key={path} path={path} element={element} />
-          ))}
-        </Routes>
-      </Container>
+      <Routes>
+        {data.nodes.map(({ path, element }) => (
+          <Route key={path} path={path} element={element} />
+        ))}
+      </Routes>
       <Footer />
     </>
   );
 };
 
 /* {routeResult} */
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  margin: 0 auto;
-  width: 60vw;
-  // justify-content: space-around;
-`;
 
 export default App;
