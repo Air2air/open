@@ -319,7 +319,7 @@ export const Header = () => (
                 <div className="menu-event-learn-more">
                   <a
                     href="https://www.1011vc.com/events/evanta-executive-ciso-summit/"
-                    className="avia-button   avia-icon_select-no avia-color-primary avia-size-medium avia-position-no-align"
+                    className="avia-button  avia-icon_select-no avia-color-primary avia-size-medium avia-position-no-align"
                   >
                     <span className="avia_iconbox_title">Learn more</span>
                   </a>

@@ -8,19 +8,19 @@ const text = `Your company now has a degree of experience and can demonstrate po
 ▪	Setting up a management team  
 ▪	Product development `;
 const HealthTechSeedPage = ({ nextPath, nextName, section }) => {
-  return (
-    <>
+ return (
+  <>
 {section ? <Chip section={section} /> : ""}
 <div className="wrapper">
 
 <div className="content">
-      <h1>{title}</h1>
-      <h2>{subtitle}</h2>
-      <p>{text}</p>
-      </div>
+   <h1>{title}</h1>
+   <h2>{subtitle}</h2>
+   <p>{text}</p>
+   </div>
 
-        <Button section={section} nextPath={nextPath} nextName={nextName} />      </div>
-    </>
-  );
+    <Button section={section} nextPath={nextPath} nextName={nextName} />   </div>
+  </>
+ );
 };
 export default HealthTechSeedPage;

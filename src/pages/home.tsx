@@ -3,24 +3,23 @@ import Contact from "../components/Contact/contact";
 import HomeBanner from "../components/HomeBanner/homeBanner";
 import Investments from "../components/Investments/investments";
 import Portfolio from "../components/Portfolio/portfolio";
+import VideoCallout from "../components/VideoCallout/videoCallout";
 import Vision from "../components/Vision/vision";
 
-const title = `Home Tagline`;
-const subtitle = `optional Subtitle about Eleven`;
-const text = `Mission statement Mission statement Mission statement Mission statement
- Mission statement Mission statement Mission statement Mission statement`;
+
 const HomePage = ({ nextPath, nextName, section }) => {
-  return (
-    <>
-      <div id="main" className="all_colors" data-scroll-offset="88">
-        <HomeBanner />
-        <Vision />
-        <Investments />
-        <Portfolio />
-        <CaseStudies />
-        <Contact />
-      </div>
-    </>
-  );
+ return (
+  <>
+   <div id="main" className="all_colors" data-scroll-offset="88">
+    <VideoCallout />
+    <HomeBanner />
+    <Vision />
+    <Investments />
+    <Portfolio />
+    <CaseStudies />
+    <Contact />
+   </div>
+  </>
+ );
 };
 export default HomePage;

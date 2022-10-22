@@ -13,6 +13,7 @@
     "gh-pages": "^4.0.0",
     "neo4j-driver": "^5.1.0",
     "react": "^18.2.0",
+    "react-background-video-player": "^1.1.8",
     "react-dom": "^18.2.0",
     "react-flow-renderer": "latest",
     "react-resize-detector": "^7.1.2",

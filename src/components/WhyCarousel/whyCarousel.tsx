@@ -5,10 +5,9 @@ const text = `Mission statement Mission statement Mission statement Mission stat
 const WhyCarousel = () => {
   return (
     <>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-10846 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-10846 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfolioeclypsium/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -43,10 +42,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-10071 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-10071 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfoliohiddenlayer/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -81,10 +79,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-363 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-363 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfolioimmuta/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -112,10 +109,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-3714 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-3714 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfoliored-access/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -143,10 +139,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-3737 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-3737 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfoliosemperis/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -174,10 +169,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-1563 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-1563 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfoliocorsha/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -205,10 +199,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-391 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-391 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfolioordr/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -236,10 +229,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-3782 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-3782 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfoliofeedzai/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -267,10 +259,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-3743 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-3743 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfolioaura/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -298,10 +289,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-3739 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-3739 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfolioredacted/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -329,13 +319,12 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-2005 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-2005 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a
             className="noHover ep-link-wrapper"
             href="portfolioanchorage-digital/"
           >
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -363,10 +352,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-428 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-428 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfoliovulcan-cyber/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -394,10 +382,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-425 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-425 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfolioverodin/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -425,10 +412,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-422 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-422 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfoliovaultree/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -456,10 +442,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-419 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-419 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfoliovalid-network/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -487,10 +472,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-416 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-416 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfoliotwistlock/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -518,10 +502,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-413 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-413 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfoliostrivacity/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -549,13 +532,12 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-410 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-410 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a
             className="noHover ep-link-wrapper"
             href="portfoliosonrai-security/"
           >
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -583,10 +565,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-405 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-405 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfoliorevelock/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -614,10 +595,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-400 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-400 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfolioreliaquest/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -645,10 +625,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-394 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-394 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfolioping-identity/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -676,10 +655,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-388 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-388 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfoliooptiv-inc/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -707,13 +685,12 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-385 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-385 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a
             className="noHover ep-link-wrapper"
             href="portfoliooffensive-security/"
           >
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -741,10 +718,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-382 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-382 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfolionoetic/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -772,10 +748,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-378 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-378 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfolionetspi/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -803,10 +778,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-375 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-375 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfolioknowbe4/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -834,10 +808,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-372 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-372 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfoliokasada/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -865,10 +838,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-369 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-369 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfoliojask/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -896,13 +868,12 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-366 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-366 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a
             className="noHover ep-link-wrapper"
             href="portfolioionic-security/"
           >
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -930,10 +901,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-360 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-360 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfoliohexadite/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -961,10 +931,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-354 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-354 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfoliocountertack/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -992,13 +961,12 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-351 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-351 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a
             className="noHover ep-link-wrapper"
             href="portfoliodigital-shadows/"
           >
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -1026,10 +994,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-346 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-346 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfoliodarktrace/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -1057,10 +1024,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-343 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-343 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfoliocyware/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -1088,10 +1054,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-335 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-335 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfoliocylance/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -1119,10 +1084,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-332 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-332 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfoliocybergrx/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -1150,10 +1114,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-329 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-329 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfoliocado-security/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -1181,10 +1144,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-326 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-326 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfolioblumira/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -1212,10 +1174,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-322 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-322 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfolioblackhorse/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">
@@ -1243,10 +1204,9 @@ const WhyCarousel = () => {
           </a>
         </div>
       </div>
-      <div className="ep-item-grid-item ep-posts-grid-item  ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop  ep-flickity-slide entry entry-299 entry-portfolio_item">
-        <div className="ep-item-grid-item-inner  column-inner">
+      <div className="ep-item-grid-item ep-posts-grid-item ep-post-grid-item column is-full-mobile is-full-tablet is-one-quarter-desktop ep-flickity-slide entry entry-299 entry-portfolio_item">
+        <div className="ep-item-grid-item-inner column-inner">
           <a className="noHover ep-link-wrapper" href="portfolioaxis-security/">
-            
             <div className="ep-item-grid-item-media">
               <div className="ep-item-grid-image">
                 <div className="company-logo">

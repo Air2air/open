@@ -73,7 +73,7 @@ const Vision = () => {
                         life.
                       </span>
                       It is essential for global commerce. The lights simply
-                      don't turn on without it. At Ten Eleven, we empower
+                      don't turn on without it. At Elevens, we empower
                       founders to create cybersecurity technologies that make
                       our world more secure.
                     </p>

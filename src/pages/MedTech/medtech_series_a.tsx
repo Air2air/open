@@ -4,19 +4,19 @@ const title = `MedTech Series A Stage`;
 const subtitle = `optional Subtitle about MedTech`;
 const text = `Series A typically is the first round of venture capital financing. At this stage, your company has usually completed its business plan and has a pitch deck emphasizing product-market fit. You are honing the product and establishing a customer base, ramping up marketing and advertising, and you can demonstrate consistent revenue flow. `;
 const MedTechSeriesAPage = ({ nextPath, nextName, section }) => {
-  return (
-    <>
+ return (
+  <>
 {section ? <Chip section={section} /> : ""}
 <div className="wrapper">
 
 <div className="content">
-      <h1>{title}</h1>
-      <h2>{subtitle}</h2>
-      <p>{text}</p>
-      </div>
+   <h1>{title}</h1>
+   <h2>{subtitle}</h2>
+   <p>{text}</p>
+   </div>
 
-        <Button section={section} nextPath={nextPath} nextName={nextName} />      </div>
-    </>
-  );
+    <Button section={section} nextPath={nextPath} nextName={nextName} />   </div>
+  </>
+ );
 };
 export default MedTechSeriesAPage;
