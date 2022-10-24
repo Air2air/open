@@ -1,65 +1,60 @@
-import { BANNER_HEIGHT_PX } from "../../styles/Constants";
+import { CALLOUT_HEIGHT_PX } from "../../styles/Constants";
 import styled from "styled-components";
-import VideoCallout from "../VideoCallout/videoCallout";
+import Button from "../Button/button";
 import TypeWriterEffect from "react-typewriter-effect";
 
-// const myRef = document.querySelector(".scrollable-div");
-
-export const PageBanner = ({
-  pageTitle,
-  pageSubTitle,
-  pageVideo,
-  overlayOpacity,
-  overlayColor,
-  typing
+export const CalloutText = ({
+  calloutTitle,
+  calloutText,
+  backgroundColor,
+  buttonText,
+  buttonTo,
+  typing,
 }) => {
   return (
     <>
-      <PageBannerWrapper>
-        {pageVideo ? (
-          <VideoCallout
-            pageVideo={pageVideo}
-            overlayOpacity={overlayOpacity}
-            overlayColor={overlayColor}
-          />
-        ) : (
-          ""
-        )}
+      <CalloutTextWrapper
+        style={{ background: backgroundColor && backgroundColor }}
+      >
         <TextWrapper>
-          <PageTitle>{pageTitle}</PageTitle>
+          <CalloutTitle>{calloutTitle}</CalloutTitle>
           {typing ? (
             <TypeWriterParagraph
               textStyle={{
                 fontFamily: "Roboto, sans-serif",
                 fontWeight: 300,
-                fontSize: "1.5em",
+                fontSize: "1.2em",
                 lineHeight: "1.5em",
                 color: "white",
               }}
               startDelay={10}
               cursorColor="white"
-              text={pageSubTitle}
+              text={calloutText}
               typeSpeed={1}
             />
           ) : (
-            <PageSubTitle>{pageSubTitle}</PageSubTitle>
+            <CalloutParagraph>{calloutText}</CalloutParagraph>
           )}
+
+          {buttonText ? <Button to={buttonTo} text={buttonText} /> : ""}
         </TextWrapper>
-      </PageBannerWrapper>
+      </CalloutTextWrapper>
     </>
   );
 };
 
-const PageBannerWrapper = styled.div`
+const CalloutTextWrapper = styled.div`
   position: relative;
   top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: ${BANNER_HEIGHT_PX};
   width: 100vw;
+  padding:20px;
   overflow: hidden;
   align-items: center;
+  height:auto;
+  min-height: ${CALLOUT_HEIGHT_PX};
 `;
 
 const TextWrapper = styled.div`
@@ -70,21 +65,21 @@ const TextWrapper = styled.div`
   text-align: left;
 `;
 
-const PageTitle = styled.div`
+const CalloutTitle = styled.div`
   color: red;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 100;
-  font-size: 2.7em;
+  font-size: 2em;
   margin-bottom: 0.8em;
   height: auto;
   text-align: left;
 `;
 
-const PageSubTitle = styled.div`
+const CalloutParagraph = styled.div`
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 1.2em;
   line-height: 1.3em;
   height: auto;
   text-align: left;
@@ -94,10 +89,10 @@ const TypeWriterParagraph = styled(TypeWriterEffect)`
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 1.2em;
   line-height: 1.3em;
   height: auto;
   text-align: left;
 `;
 
-export default PageBanner;
+export default CalloutText;

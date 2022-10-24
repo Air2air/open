@@ -1,14 +1,14 @@
 import VideoPlayer from "react-background-video-player";
 import styled from "styled-components";
-import { BANNER_HEIGHT } from "../../styles/Constants";
+import { BANNER_HEIGHT_PX } from "../../styles/Constants";
 
-const VideoCallout = ({ video, overlayOpacity, overlayColor }) => {
+const VideoCallout = ({ pageVideo, overlayOpacity, overlayColor }) => {
   return (
     <>
       <VideoWrapper>
         <VideoPlayer
           className="video"
-          src={video}
+          src={pageVideo}
           autoPlay={true}
           muted={true}
         />
@@ -33,7 +33,7 @@ const VideoWrapper = styled.div`
   position: absolute;
   top: 0;
   margin: 0 auto;
-  height: ${BANNER_HEIGHT};
+  height: ${BANNER_HEIGHT_PX};
   width: 100%;
   overflow: hidden;
 `;
@@ -42,7 +42,7 @@ const Overlay = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  height: ${BANNER_HEIGHT};
+  height: ${BANNER_HEIGHT_PX};
   width: 100%;
 `;
 

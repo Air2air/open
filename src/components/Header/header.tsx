@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { ReactComponent as LogoWhite } from "./../../images/logo_white.svg";
-import { HEADER_HEIGHT } from "../../styles/Constants";
+import { HEADER_HEIGHT_PX } from "../../styles/Constants";
+import Button from "../Button/button";
 
 export const Header = () => {
   return (
@@ -11,8 +12,9 @@ export const Header = () => {
           <LogoWhite width="46" />
         </Link>
         <HeaderButtonWrapper>
-        <HeaderLinkButton to="/team">Contact</HeaderLinkButton>
+          <Button to="/team" text="Contact" />
           <HeaderLink to="/">Home</HeaderLink>
+          <HeaderLink to="/approach">Approach</HeaderLink>
           <HeaderLink to="/team">Team</HeaderLink>
         </HeaderButtonWrapper>
       </HeaderWrapperInner>
@@ -20,8 +22,6 @@ export const Header = () => {
   );
 };
 
-const HEADER_HEIGHT_PX = HEADER_HEIGHT + 'px'
-const HEADER_BUTTON_HEIGHT_PX = (HEADER_HEIGHT * .5) + 'px'
 
 const HeaderWrapperOuter = styled.div`
   z-index: +1;
@@ -50,7 +50,7 @@ const HeaderButtonWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: ${HEADER_HEIGHT} + 'px';
+  height: ${HEADER_HEIGHT_PX};
   /* background: red; */
 `;
 
@@ -62,12 +62,3 @@ const HeaderLink = styled(Link)`
   height: ${HEADER_HEIGHT_PX};
 `;
 
-
-const HeaderLinkButton = styled(Link)`
-  font-size: 1.2em;
-  padding: 0 30px;
-  display: flex;
-  align-items: center;
-  height: ${HEADER_BUTTON_HEIGHT_PX};
-  background:red;
-`;

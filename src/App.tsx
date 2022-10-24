@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { Header } from "./components/Header/header";
-import { dataRoutes } from "./data/data";
+import { dataRoutes } from "./data/routes";
 
 const App = () => {
   return (
