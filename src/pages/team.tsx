@@ -1,6 +1,6 @@
-import styled from "styled-components";
+
 import PageBanner from "../components/PageBanner/pageBanner";
-import { dataTeam } from "../data/team";
+import Team from "../components/Team/team";
 
 const pageTitle = "Elevens Team";
 const pageSubTitle =
@@ -8,7 +8,7 @@ const pageSubTitle =
 const video =
 "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/rsUQQw39cl52esufb/videoblocks-abstract-dna-pack-2021-09-08-19-33-23-utc-3_sfgtv1cpc__a58044aee90f7390d9e398a567ab69e8__P360.mp4";
 const overlayOpacity = 0.7
-const overlayColor = 'red'
+const overlayColor = 'blue'
 
 const TeamPage = (section) => {
   return (
@@ -20,26 +20,11 @@ const TeamPage = (section) => {
         overlayOpacity={overlayOpacity}
         overlayColor={overlayColor}
       />
-      <TeamGrid>
-        {dataTeam.map((props) => (
-          <TeamMember key={props.id} />
-        ))}
-      </TeamGrid>
+      <Team />
+
     </>
   );
 };
 
 export default TeamPage;
 
-const TeamGrid = styled.div`
-  display: grid;
-  height: 200px;
-  width: "100%";
-  background: red;
-`;
-
-const TeamMember = styled.div`
-  height: 200px;
-  width: "100%";
-  background: gold;
-`;

@@ -1,6 +1,6 @@
 
 // Dimensions
-export const HEADER_HEIGHT = "360px";
+export const HEADER_HEIGHT = 90;
 export const BANNER_HEIGHT = "500px";
 export const TITLE_HEIGHT = "120px";
 
