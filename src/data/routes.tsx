@@ -1,14 +1,20 @@
 
 import ApproachPage from "../pages/approach";
+import BioTechPage from "../pages/biotech";
+import HealthTechPage from "../pages/healthtech";
 import HomePage from "../pages/home";
+import MarketsPage from "../pages/markets";
+import MedTechPage from "../pages/medtech";
+import PharmaTechPage from "../pages/pharmatech";
 import TeamPage from "../pages/team";
+import VisionPage from "../pages/vision";
 
 export const dataRoutes = {
   nodes: [
     {
       id: "Approach",
       path: "approach",
-      section: "Elevens",
+      section: "Approach",
       element: (
         <ApproachPage  />
       ),
@@ -16,7 +22,7 @@ export const dataRoutes = {
     {
       id: "Home",
       path: "/",
-      section: "Elevens",
+      section: "Home",
       element: (
         <HomePage />
       ),
@@ -24,17 +30,65 @@ export const dataRoutes = {
     {
       id: "Home2",
       path: "home",
-      section: "Elevens",
+      section: "Home",
       element: (
         <HomePage />
       ),
     },
     {
-      id: "Elevens Team",
+      id: "Markets",
+      path: "markets",
+      section: "Markets",
+      element: (
+        <MarketsPage />
+      ),
+    },
+    {
+      id: "Vision",
+      path: "vision",
+      section: "Vision",
+      element: (
+        <VisionPage />
+      ),
+    },
+    {
+      id: "Team",
       path: "team",
-      section: "Elevens",
+      section: "Team",
       element: (
         <TeamPage />
+      ),
+    },
+    {
+      id: "Biotech",
+      path: "biotech",
+      section: "Biotech",
+      element: (
+        <BioTechPage />
+      ),
+    },
+    {
+      id: "Healthtech",
+      path: "healthtech",
+      section: "Healthtech",
+      element: (
+        <HealthTechPage />
+      ),
+    },
+    {
+      id: "Medtech",
+      path: "medtech",
+      section: "Medtech",
+      element: (
+        <MedTechPage />
+      ),
+    },
+    {
+      id: "Pharmatech",
+      path: "Pharmatech",
+      section: "Pharmatech",
+      element: (
+        <PharmaTechPage />
       ),
     },
   ],

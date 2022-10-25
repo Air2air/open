@@ -14,6 +14,7 @@ export const CALLOUT_HEIGHT_PX = CALLOUT_HEIGHT + "px";
 export const BUTTON_HEIGHT = 40;
 export const BUTTON_HEIGHT_PX = BUTTON_HEIGHT + "px";
 export const BUTTON_COLOR = "hsl(0, 86%, 36%)";
+export const BUTTON_TEXT_COLOR = "hsl(0, 0%, 80%)";
 export const BUTTON_COLOR_HOVER = "hsl(0, 86%, 46%)";
 
 export const TEAM_MEMBER_HEIGHT = 320;
@@ -37,6 +38,10 @@ export const TEXT_OPACITY = 0.8;
 export const COLOR_BASE = "hsl(0, 0%, 11%)";
 export const COLOR_BASE_1 = "hsl(0, 0%, 13%)";
 export const COLOR_BASE_2 = "hsl(0, 0%, 15%)";
+export const COLOR_BASE_3 = "hsl(0, 0%, 17%)";
+export const COLOR_BASE_4 = "hsl(0, 0%, 19%)";
+export const COLOR_BASE_5 = "hsl(0, 0%, 21%)";
+export const COLOR_BASE_6 = "hsl(0, 0%, 23%)";
 export const COLOR_BASE_TEXT = "hsl(0, 80%, 50%)";
 
 export const COLOR_BLUE = "hsl(213, 64%, 11%)";

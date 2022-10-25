@@ -20,10 +20,11 @@ export const Header = () => {
         </LogoWrapper>
         <HeaderButtonWrapper>
           <Link to="/contact">
-            <HeaderButton>Contact</HeaderButton>
+            <HeaderButton>Contact Us</HeaderButton>
           </Link>
-          <HeaderLink to="/">Home</HeaderLink>
-          <HeaderLink to="/approach">Approach</HeaderLink>
+          <HeaderLink to="/">Elevens</HeaderLink>
+          <HeaderLink to="/markets">Markets</HeaderLink>
+          <HeaderLink to="/vision">Vision</HeaderLink>
           <HeaderLink to="/team">Team</HeaderLink>
         </HeaderButtonWrapper>
       </HeaderWrapperInner>

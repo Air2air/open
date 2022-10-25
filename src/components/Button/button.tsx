@@ -2,6 +2,7 @@ import {
   BUTTON_COLOR,
   BUTTON_COLOR_HOVER,
   BUTTON_HEIGHT_PX,
+  BUTTON_TEXT_COLOR,
 } from "../../styles/Constants";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
@@ -33,7 +34,7 @@ const ButtonPositioner = styled.div`
 const ButtonWrapper = styled.div`
   font-size: 1.1em;
   font-family: "Roboto Condensed", sans-serif;
-  color: #fff;
+  color: ${BUTTON_TEXT_COLOR};
   padding: 0 24px;
   display: inline-flex;
   align-items: center;
