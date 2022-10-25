@@ -1,4 +1,4 @@
-import { CALLOUT_HEIGHT_PX } from "../../styles/Constants";
+import { CALLOUT_HEIGHT_PX, COLOR_TEXT, TEXT_OPACITY } from "../../styles/Constants";
 import styled from "styled-components";
 import Button from "../Button/button";
 import TypeWriterEffect from "react-typewriter-effect";
@@ -15,12 +15,16 @@ export const CalloutText = ({
 }) => {
   return (
     <>
-    <AnimationOnScroll animateIn="animate__fadeInUp">
       <CalloutTextWrapper
         style={{ background: backgroundColor && backgroundColor }}
       >
         <TextWrapper>
-            <CalloutTitle style={{ color: textColor && textColor }}>{calloutTitle}</CalloutTitle>
+          <AnimationOnScroll animateIn="animate__fadeIn">
+            <CalloutTitle style={{ color: textColor && textColor }}>
+              {calloutTitle}
+            </CalloutTitle>
+          </AnimationOnScroll>
+
           {typing ? (
             <TypeWriterParagraph
               textStyle={{
@@ -28,10 +32,11 @@ export const CalloutText = ({
                 fontWeight: 300,
                 fontSize: "1.2em",
                 lineHeight: "1.7em",
-                color: "white",
+                color: COLOR_TEXT,
+                opacity:TEXT_OPACITY
               }}
               startDelay={10}
-              cursorColor="white"
+              cursorColor={COLOR_TEXT}
               text={calloutText}
               typeSpeed={1}
             />
@@ -39,10 +44,11 @@ export const CalloutText = ({
             <CalloutParagraph>{calloutText}</CalloutParagraph>
           )}
 
-          {buttonText ? <Button to={buttonTo} text={buttonText} /> : ""}
+          <AnimationOnScroll animateIn="animate__fadeInUp" delay={2000}>
+            {buttonText ? <Button to={buttonTo} text={buttonText} /> : ""}
+          </AnimationOnScroll>
         </TextWrapper>
-      </CalloutTextWrapper>          
-      </AnimationOnScroll>
+      </CalloutTextWrapper>
     </>
   );
 };
@@ -79,23 +85,25 @@ const CalloutTitle = styled.div`
 `;
 
 const CalloutParagraph = styled.div`
-  color: white;
+  color: ${COLOR_TEXT};
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.2em;
   line-height: 1.7em;
   height: auto;
   text-align: left;
+  opacity:${TEXT_OPACITY}
 `;
 
 const TypeWriterParagraph = styled(TypeWriterEffect)`
-  color: white;
+  color: ${COLOR_TEXT};
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.2em;
   line-height: 1.3em;
   height: auto;
   text-align: left;
+  opacity:${TEXT_OPACITY}
 `;
 
 export default CalloutText;

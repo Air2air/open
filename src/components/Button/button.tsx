@@ -1,4 +1,4 @@
-import { BUTTON_COLOR, BUTTON_HEIGHT_PX } from "../../styles/Constants";
+import { BUTTON_COLOR, BUTTON_COLOR_HOVER, BUTTON_HEIGHT_PX } from "../../styles/Constants";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
@@ -18,12 +18,13 @@ const ButtonPositioner = styled.div`
   height: ${BUTTON_HEIGHT_PX};
   text-align: right;
   margin-left: auto;
-  margin-top:10px;
+  margin-top:20px;
 `;
 
 const ButtonWrapper = styled.div`
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-family: 'Roboto Condensed', sans-serif;
+  color:#fff;
   padding: 0 24px;
   display: inline-flex;
   align-items: center;
@@ -31,6 +32,9 @@ const ButtonWrapper = styled.div`
   transition: all 300ms;
   text-transform: uppercase;
   background: ${BUTTON_COLOR}; 
+  &:hover {
+    background: ${BUTTON_COLOR_HOVER}; 
+  }
 `;
 
 export default Button;

@@ -22,7 +22,7 @@ const TeamPage = () => {
         pageTitle={pageTitle}
         pageSubTitle={pageSubTitle}
         pageVideo={pageVideo}
-        overlayOpacity={0.8}
+        overlayOpacity={0.75}
         overlayColor={COLOR_RED}
         textColor={COLOR_RED_TEXT}
         typing={true}

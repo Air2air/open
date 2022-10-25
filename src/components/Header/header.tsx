@@ -1,18 +1,26 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { ReactComponent as LogoWhite } from "./../../images/logo_white.svg";
-import { HEADER_HEIGHT_PX } from "../../styles/Constants";
-import Button from "../Button/button";
+import {
+  BUTTON_COLOR,
+  BUTTON_COLOR_HOVER,
+  BUTTON_HEIGHT_PX,
+  HEADER_HEIGHT_PX,
+} from "../../styles/Constants";
 
 export const Header = () => {
   return (
     <HeaderWrapperOuter>
       <HeaderWrapperInner>
-        <Link to="/home">
-          <LogoWhite width="46" />
-        </Link>
+        <LogoWrapper>
+          <Link to="/home">
+            <LogoWhite width="46" />
+          </Link>
+        </LogoWrapper>
         <HeaderButtonWrapper>
-          <Button to="/contact" text="Contact" />
+          <Link to="/contact">
+            <HeaderButton>Contact</HeaderButton>
+          </Link>
           <HeaderLink to="/">Home</HeaderLink>
           <HeaderLink to="/approach">Approach</HeaderLink>
           <HeaderLink to="/team">Team</HeaderLink>
@@ -22,7 +30,6 @@ export const Header = () => {
   );
 };
 
-
 const HeaderWrapperOuter = styled.div`
   z-index: +2;
   position: fixed;
@@ -31,7 +38,24 @@ const HeaderWrapperOuter = styled.div`
   align-items: center;
   justify-content: center;
   width: 100vw;
+  padding: 0;
   height: ${HEADER_HEIGHT_PX};
+`;
+
+const LogoWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: ${HEADER_HEIGHT_PX};
+  padding: 0;
+  opacity: 0.7;
+  transform: scale(1);
+  transition: all 300ms;
+  &:hover {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+  /* background-color: blue; */
 `;
 
 const HeaderWrapperInner = styled.div`
@@ -41,23 +65,41 @@ const HeaderWrapperInner = styled.div`
   width: 80vw;
   height: ${HEADER_HEIGHT_PX};
   margin: 0 auto;
-  /* background-color:blue; */
+  padding: 0;
+  /* background-color: blue; */
 `;
 
 const HeaderButtonWrapper = styled.div`
-  /* flex-grow: 1; */
   display: flex;
   align-items: center;
-  justify-content: space-around;
   height: ${HEADER_HEIGHT_PX};
-  /* background: red; */
+  padding: 0;
+  /* background: gold; */
+`;
+
+const HeaderButton = styled.div`
+  font-size: 1.1em;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+  padding: 0 24px;
+  display: inline-flex;
+  align-items: center;
+  height: ${BUTTON_HEIGHT_PX};
+  transition: all 300ms;
+  text-transform: uppercase;
+  background: ${BUTTON_COLOR};
+  &:hover {
+    background: ${BUTTON_COLOR_HOVER};
+  }
 `;
 
 const HeaderLink = styled(Link)`
-  font-size: 1.2em;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+  font-size: 1.1em;
   padding: 0 30px;
   display: flex;
   align-items: center;
+  text-transform: uppercase;
   height: ${HEADER_HEIGHT_PX};
 `;
-

@@ -32,6 +32,7 @@ const PageBannerOpacityOverlay = ({ overlayOpacity, overlayColor }) => {
 const VideoWrapper = styled.div`
   position: absolute;
   top: 0;
+  left:0;
   margin: 0 auto;
   height: ${BANNER_HEIGHT_PX};
   width: 100%;

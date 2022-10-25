@@ -1,7 +1,8 @@
-import { BANNER_HEIGHT_PX } from "../../styles/Constants";
+import { BANNER_HEIGHT_PX, COLOR_TEXT, TEXT_OPACITY } from "../../styles/Constants";
 import styled from "styled-components";
 import VideoCallout from "../VideoCallout/videoCallout";
 import TypeWriterEffect from "react-typewriter-effect";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 // const myRef = document.querySelector(".scrollable-div");
 
@@ -17,6 +18,7 @@ export const PageBanner = ({
   return (
     <>
       <PageBannerWrapper>
+      <AnimationOnScroll animateIn="animate__fadeIn" delay={1000}>
         {pageVideo ? (
           <VideoCallout
             pageVideo={pageVideo}
@@ -26,7 +28,9 @@ export const PageBanner = ({
         ) : (
           ""
         )}
+        </AnimationOnScroll>
         <TextWrapper>
+        <AnimationOnScroll animateIn="animate__fadeIn" delay={400}>
           <PageTitle style={{ color: textColor && textColor }}>{pageTitle}</PageTitle>
           {typing ? (
             <TypeWriterParagraph
@@ -35,16 +39,18 @@ export const PageBanner = ({
                 fontWeight: 300,
                 fontSize: "1.5em",
                 lineHeight: "1.5em",
-                color: "white",
+                color: COLOR_TEXT,
+                opacity:TEXT_OPACITY
               }}
-              startDelay={10}
-              cursorColor="white"
+              startDelay={1000}
+              cursorColor={COLOR_TEXT}
               text={pageSubTitle}
               typeSpeed={1}
             />
           ) : (
             <PageSubTitle>{pageSubTitle}</PageSubTitle>
           )}
+          </AnimationOnScroll>
         </TextWrapper>
       </PageBannerWrapper>
     </>
@@ -64,7 +70,7 @@ const PageBannerWrapper = styled.div`
 `;
 
 const TextWrapper = styled.div`
-  margin: 0 auto;
+  margin: 80px auto 0 auto;
   z-index: +1;
   height: auto;
   width: 60%;
@@ -81,23 +87,26 @@ const PageTitle = styled.div`
 `;
 
 const PageSubTitle = styled.div`
-  color: white;
+  color: ${COLOR_TEXT};
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.5em;
   line-height: 1.3em;
   height: auto;
   text-align: left;
+  opacity:${TEXT_OPACITY}
 `;
 
+
 const TypeWriterParagraph = styled(TypeWriterEffect)`
-  color: white;
+  color: ${COLOR_TEXT};
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.5em;
   line-height: 1.3em;
   height: auto;
   text-align: left;
+  opacity:${TEXT_OPACITY}
 `;
 
 export default PageBanner;
