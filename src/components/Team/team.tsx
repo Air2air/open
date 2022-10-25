@@ -13,6 +13,7 @@ const Team = () => {
         nameLast={props.nameLast}
         apellation={props.appellation}
         role={props.role}
+        photo={props.photo}
       />
     </>
   ));
@@ -32,12 +33,11 @@ const TeamGrid = styled.div`
   margin: 0 auto;
   display: grid;
   gap: 1rem;
+  padding-top:50px;
   max-width: 1000px;
 
-  @media (min-width: 901px) {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  @media (min-width: 701px) and (max-width: 900px) {
+
+  @media (min-width: 701px)  {
     grid-template-columns: repeat(3, 1fr);
   }
   @media (min-width: 501px) and (max-width: 700px) {
