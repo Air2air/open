@@ -2,29 +2,32 @@ import { CALLOUT_HEIGHT_PX } from "../../styles/Constants";
 import styled from "styled-components";
 import Button from "../Button/button";
 import TypeWriterEffect from "react-typewriter-effect";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export const CalloutText = ({
   calloutTitle,
   calloutText,
   backgroundColor,
+  textColor,
   buttonText,
   buttonTo,
   typing,
 }) => {
   return (
     <>
+    <AnimationOnScroll animateIn="animate__fadeInUp">
       <CalloutTextWrapper
         style={{ background: backgroundColor && backgroundColor }}
       >
         <TextWrapper>
-          <CalloutTitle>{calloutTitle}</CalloutTitle>
+            <CalloutTitle style={{ color: textColor && textColor }}>{calloutTitle}</CalloutTitle>
           {typing ? (
             <TypeWriterParagraph
               textStyle={{
                 fontFamily: "Roboto, sans-serif",
                 fontWeight: 300,
                 fontSize: "1.2em",
-                lineHeight: "1.5em",
+                lineHeight: "1.7em",
                 color: "white",
               }}
               startDelay={10}
@@ -38,7 +41,8 @@ export const CalloutText = ({
 
           {buttonText ? <Button to={buttonTo} text={buttonText} /> : ""}
         </TextWrapper>
-      </CalloutTextWrapper>
+      </CalloutTextWrapper>          
+      </AnimationOnScroll>
     </>
   );
 };
@@ -50,15 +54,15 @@ const CalloutTextWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 100vw;
-  padding:20px;
   overflow: hidden;
   align-items: center;
-  height:auto;
+  height: auto;
   min-height: ${CALLOUT_HEIGHT_PX};
 `;
 
 const TextWrapper = styled.div`
   margin: 0 auto;
+  padding: 50px 0;
   z-index: +1;
   height: auto;
   width: 60%;
@@ -66,7 +70,6 @@ const TextWrapper = styled.div`
 `;
 
 const CalloutTitle = styled.div`
-  color: red;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 100;
   font-size: 2em;
@@ -80,7 +83,7 @@ const CalloutParagraph = styled.div`
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.2em;
-  line-height: 1.3em;
+  line-height: 1.7em;
   height: auto;
   text-align: left;
 `;

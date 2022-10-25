@@ -11,6 +11,7 @@ export const PageBanner = ({
   pageVideo,
   overlayOpacity,
   overlayColor,
+  textColor,
   typing
 }) => {
   return (
@@ -26,7 +27,7 @@ export const PageBanner = ({
           ""
         )}
         <TextWrapper>
-          <PageTitle>{pageTitle}</PageTitle>
+          <PageTitle style={{ color: textColor && textColor }}>{pageTitle}</PageTitle>
           {typing ? (
             <TypeWriterParagraph
               textStyle={{
@@ -71,7 +72,6 @@ const TextWrapper = styled.div`
 `;
 
 const PageTitle = styled.div`
-  color: red;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 100;
   font-size: 2.7em;

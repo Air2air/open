@@ -1,4 +1,4 @@
-import AboutPage from "../pages/about";
+
 import ApproachPage from "../pages/approach";
 import HomePage from "../pages/home";
 import TeamPage from "../pages/team";

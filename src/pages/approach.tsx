@@ -1,7 +1,7 @@
-import CalloutText from "../components/CalloutText/calloutText";
+import setBodyColor from '../utils/setBodyColor'
+import Callout from "./../components/Callout/callOut";
 import PageBanner from "../components/PageBanner/pageBanner";
-import ScrollBox from "../components/ScrollBox/scrollBox";
-import { COLOR_RED, COLOR_RED_1, COLOR_RED_2 } from "../styles/Constants";
+import { COLOR_GREEN, COLOR_GREEN_1, COLOR_GREEN_2, COLOR_GREEN_TEXT } from "../styles/Constants";
 
 const pageTitle = "Our Approach";
 const pageSubTitle =
@@ -10,6 +10,7 @@ const pageVideo =
   "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/Vyh-jcp/videoblocks-realistic-medical-animation-of-several-coronavirus-cells-covid-19-flying-in-the-air_s_zc2y7du__371df1132bebc61a702365a54ae84d5c__P360.mp4";
 
 const ApproachPage = () => {
+  setBodyColor({color: COLOR_GREEN})
   return (
     <>
       <PageBanner
@@ -17,34 +18,37 @@ const ApproachPage = () => {
         pageSubTitle={pageSubTitle}
         pageVideo={pageVideo}
         overlayOpacity={0.9}
-        overlayColor={COLOR_RED}
+        overlayColor={COLOR_GREEN}
+        textColor={COLOR_GREEN_TEXT}
         typing={true}
       />
-      <CalloutText
+      <Callout
         calloutTitle="Kickoff Meeting"
         calloutText="Kickoff Meeting Text Kickoff Meeting Text Kickoff Meeting Text Kickoff Meeting Text Kickoff Meeting Text Kickoff Meeting Text Kickoff Meeting Text "
-        backgroundColor={COLOR_RED}
+        backgroundColor={COLOR_GREEN}
+        textColor={COLOR_GREEN_TEXT}
         buttonText=""
         buttonTo=""
-        typing={true}
+        typing={false}
       />
-      <CalloutText
+      <Callout
         calloutTitle="Research for Proposal"
         calloutText="Research for Proposal Text Research for Proposal TextResearch for Proposal TextResearch for Proposal TextResearch for Proposal TextResearch for Proposal TextResearch for Proposal TextResearch for Proposal TextResearch for Proposal TextResearch for Proposal TextResearch for Proposal TextResearch for Proposal TextResearch for Proposal Text"
-        backgroundColor={COLOR_RED_1}
+        backgroundColor={COLOR_GREEN_1}
         buttonText=""
+        textColor={COLOR_GREEN_TEXT}
         buttonTo=""
-        typing={true}
+        typing={false}
       />
-      <CalloutText
+      <Callout
         calloutTitle="Team and Scope Recommendations "
         calloutText="Team and Scope Recommendations Text Team and Scope Recommendations Text Team and Scope Recommendations Text Team and Scope Recommendations Text Team and Scope Recommendations Text Team and Scope Recommendations Text Team and Scope Recommendations Text Team and Scope Recommendations Text Team and Scope Recommendations Text"
-        backgroundColor={COLOR_RED_2}
+        backgroundColor={COLOR_GREEN_2}
+        textColor={COLOR_GREEN_TEXT}
         buttonText=""
         buttonTo=""
-        typing={true}
+        typing={false}
       />
-      <ScrollBox />
     </>
   );
 };
