@@ -4,8 +4,7 @@ import PageBanner from "../components/PageBanner/pageBanner";
 import { COLOR_BASE, COLOR_BASE_1, COLOR_BASE_TEXT } from "../styles/Constants";
 
 const pageTitle = "Elevens Vision";
-const pageSubTitle =
-  "Cybersecurity is fundamental to maintaining our way of life. It is essential for global commerce. The lights simply don't turn on without it. At Elevens, we empower founders to create cybersecurity technologies that make our world more secure.";
+
 const pageVideo =
   "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/NIHmZbghlilb1qj7b/videoblocks-bacteria-virus-or-germs-microorganism-cells-under-microscope-with-depth_huxxzteyi__85fcc74c9b372b7e15a77bcaa433e568__P360.mp4";
 
@@ -16,7 +15,7 @@ const HomePage = () => {
     <>
       <PageBanner
         pageTitle={pageTitle}
-        pageSubTitle={pageSubTitle}
+        pageDescription="Our text here about what we do, benefits and markets served. Our text here about what we do, benefits and markets served.  Our text here about what we do, benefits and markets served.   "
         pageVideo={pageVideo}
         overlayOpacity={0.84}
         overlayColor={COLOR_BASE}

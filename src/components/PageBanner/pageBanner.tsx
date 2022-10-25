@@ -8,7 +8,7 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export const PageBanner = ({
   pageTitle,
-  pageSubTitle,
+  pageDescription,
   pageVideo,
   overlayOpacity,
   overlayColor,
@@ -44,11 +44,11 @@ export const PageBanner = ({
               }}
               startDelay={1000}
               cursorColor={COLOR_TEXT}
-              text={pageSubTitle}
+              text={pageDescription}
               typeSpeed={1}
             />
           ) : (
-            <PageSubTitle>{pageSubTitle}</PageSubTitle>
+            <PageDescription>{pageDescription}</PageDescription>
           )}
           </AnimationOnScroll>
         </TextWrapper>
@@ -86,7 +86,7 @@ const PageTitle = styled.div`
   text-align: left;
 `;
 
-const PageSubTitle = styled.div`
+const PageDescription = styled.div`
   color: ${COLOR_TEXT};
   font-family: "Roboto", sans-serif;
   font-weight: 300;

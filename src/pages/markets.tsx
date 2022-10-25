@@ -4,8 +4,7 @@ import PageBanner from "../components/PageBanner/pageBanner";
 import { COLOR_BASE, COLOR_BASE_1, COLOR_BASE_2, COLOR_BASE_3, COLOR_BASE_TEXT } from "../styles/Constants";
 
 const pageTitle = "Our Markets";
-const pageSubTitle =
-  "Cybersecurity is fundamental to maintaining our way of life. It is essential for global commerce. The lights simply don't turn on without it. At Elevens, we empower founders to create cybersecurity technologies that make our world more secure.";
+
 const pageVideo =
   "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/Vyh-jcp/videoblocks-realistic-medical-animation-of-several-coronavirus-cells-covid-19-flying-in-the-air_s_zc2y7du__371df1132bebc61a702365a54ae84d5c__P360.mp4";
 
@@ -15,7 +14,7 @@ const MarketsPage = () => {
     <>
       <PageBanner
         pageTitle={pageTitle}
-        pageSubTitle={pageSubTitle}
+        pageDescription="Our text about our Markets here. Our text about our Markets here. Our text about our Markets here. Our text about our Markets here. Our text about our Markets here. Our text about our Markets here. "
         pageVideo={pageVideo}
         overlayOpacity={0.8}
         overlayColor={COLOR_BASE}
