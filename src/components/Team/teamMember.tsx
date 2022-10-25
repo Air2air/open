@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import {
+  COLOR_BASE_2,
+  COLOR_BASE_TEXT,
   COLOR_TEXT,
   TEAM_MEMBER_HEIGHT_PX,
   TEAM_MEMBER_PHOTO_PX,
@@ -33,7 +35,7 @@ const TeamMemberPhoto = styled.div`
   height: ${TEAM_MEMBER_PHOTO_PX};
   width: ${TEAM_MEMBER_PHOTO_PX};
   border-radius: 50%;
-  background: gray;
+  background: ${COLOR_BASE_2}
 `;
 
 const TeamMemberName = styled.div`

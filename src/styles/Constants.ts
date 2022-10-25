@@ -34,17 +34,22 @@ export const COLOR_TEXT = "#FFF";
 export const TEXT_OPACITY = 0.8;
 
 // Themes
-export const COLOR_BLUE = "hsl(213, 64%,11%)";
-export const COLOR_BLUE_1 = "hsl(213, 64%,13%)";
-export const COLOR_BLUE_2 = "hsl(213, 64%,15%)";
-export const COLOR_BLUE_TEXT = "hsl(213, 64%,80%)";
+export const COLOR_BASE = "hsl(0, 0%, 11%)";
+export const COLOR_BASE_1 = "hsl(0, 0%, 13%)";
+export const COLOR_BASE_2 = "hsl(0, 0%, 15%)";
+export const COLOR_BASE_TEXT = "hsl(0, 80%, 50%)";
 
-export const COLOR_GREEN = "hsl(174, 64%,11%)";
-export const COLOR_GREEN_1 = "hsl(174, 64%,13%)";
-export const COLOR_GREEN_2 = "hsl(174, 64%,15%)";
-export const COLOR_GREEN_TEXT = "hsl(174, 64%,80%)";
+export const COLOR_BLUE = "hsl(213, 64%, 11%)";
+export const COLOR_BLUE_1 = "hsl(213, 64%, 13%)";
+export const COLOR_BLUE_2 = "hsl(213, 64%, 15%)";
+export const COLOR_BLUE_TEXT = "hsl(213, 64%, 80%)";
 
-export const COLOR_RED = "hsl(0, 79%, 8%)";
+export const COLOR_GREEN = "hsl(174, 64%, 11%)";
+export const COLOR_GREEN_1 = "hsl(174, 64%, 13%)";
+export const COLOR_GREEN_2 = "hsl(174, 64%, 15%)";
+export const COLOR_GREEN_TEXT = "hsl(174, 64%, 80%)";
+
+export const COLOR_RED = "hsl(0, 80%, 8%)";
 export const COLOR_RED_1 = "hsl(0, 79%, 10%)";
 export const COLOR_RED_2 = "hsl(0, 79%, 12%)";
-export const COLOR_RED_TEXT = "hsl(35, 100%,80%)";
+export const COLOR_RED_TEXT = "hsl(35, 100%, 80%)";

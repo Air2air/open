@@ -1,7 +1,7 @@
 import setBodyColor from '../utils/setBodyColor'
 import Callout from "./../components/Callout/callOut";
 import PageBanner from "../components/PageBanner/pageBanner";
-import { COLOR_BLUE, COLOR_BLUE_1, COLOR_BLUE_TEXT } from "../styles/Constants";
+import { COLOR_BASE, COLOR_BASE_1, COLOR_BASE_TEXT } from "../styles/Constants";
 
 const pageTitle = "Elevens Vision";
 const pageSubTitle =
@@ -11,7 +11,7 @@ const pageVideo =
 
 
 const HomePage = () => {
-  setBodyColor({color: COLOR_BLUE})
+  setBodyColor({color: COLOR_BASE})
   return (
     <>
       <PageBanner
@@ -19,15 +19,15 @@ const HomePage = () => {
         pageSubTitle={pageSubTitle}
         pageVideo={pageVideo}
         overlayOpacity={0.84}
-        overlayColor={COLOR_BLUE}
-        textColor={COLOR_BLUE_TEXT}
+        overlayColor={COLOR_BASE}
+        textColor={COLOR_BASE_TEXT}
         typing={true}
       />
       <Callout
         calloutTitle="Our Approach"
         calloutText="This is our Approach. This is our Approach.  This is our Approach.  This is our Approach.  This is our Approach.  This is our Approach.  This is our Approach.  This is our Approach.  This is our Approach.   "
-        backgroundColor={COLOR_BLUE_1}
-        textColor={COLOR_BLUE_TEXT}
+        backgroundColor={COLOR_BASE_1}
+        textColor={COLOR_BASE_TEXT}
         buttonText="Our Approach"
         buttonTo="/approach"
         typing={true}

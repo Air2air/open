@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { ReactComponent as LogoWhite } from "./../../images/logo_white.svg";
+import { ReactComponent as LogoWhite } from "./../../images/logo_text_white.svg";
 import {
   BUTTON_COLOR,
   BUTTON_COLOR_HOVER,
@@ -15,7 +15,7 @@ export const Header = () => {
       <HeaderWrapperInner>
         <LogoWrapper>
           <Link to="/home">
-            <LogoWhite width="46" />
+            <LogoWhite width="150" />
           </Link>
         </LogoWrapper>
         <HeaderButtonWrapper>
