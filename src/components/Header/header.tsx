@@ -18,7 +18,6 @@ export const Header = () => {
             <LogoWhite width="46" />
           </Link>
         </LogoWrapper>
-
         <HeaderButtonWrapper>
           <Link to="/contact">
             <HeaderButton>Contact</HeaderButton>
@@ -104,7 +103,7 @@ const HeaderLink = styled(Link)`
   align-items: center;
   text-transform: uppercase;
   height: ${HEADER_HEIGHT_PX};
-  &:hover {
+  /* &:hover {
     background: ${BUTTON_COLOR_HOVER};
-  }
+  } */
 `;
