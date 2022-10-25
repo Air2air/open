@@ -44,7 +44,7 @@ export const CalloutText = ({
             <CalloutParagraph>{calloutText}</CalloutParagraph>
           )}
 
-          <AnimationOnScroll animateIn="animate__fadeInUp" delay={2000}>
+          <AnimationOnScroll animateIn="animate__fadeInUp" delay={500}>
             {buttonText ? <Button to={buttonTo} text={buttonText} /> : ""}
           </AnimationOnScroll>
         </TextWrapper>
