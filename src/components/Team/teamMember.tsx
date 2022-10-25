@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import {
   COLOR_BASE_2,
-  COLOR_BASE_TEXT,
   COLOR_TEXT,
   TEAM_MEMBER_HEIGHT_PX,
   TEAM_MEMBER_PHOTO_PX,
