@@ -5,6 +5,7 @@ import {
   BUTTON_COLOR,
   BUTTON_COLOR_HOVER,
   BUTTON_HEIGHT_PX,
+  COLOR_TEXT,
   HEADER_HEIGHT_PX,
 } from "../../styles/Constants";
 
@@ -17,6 +18,7 @@ export const Header = () => {
             <LogoWhite width="46" />
           </Link>
         </LogoWrapper>
+
         <HeaderButtonWrapper>
           <Link to="/contact">
             <HeaderButton>Contact</HeaderButton>
@@ -80,7 +82,7 @@ const HeaderButtonWrapper = styled.div`
 const HeaderButton = styled.div`
   font-size: 1.1em;
   font-family: "Roboto Condensed", sans-serif;
-  color: #fff;
+  color: ${COLOR_TEXT};
   padding: 0 24px;
   display: inline-flex;
   align-items: center;
@@ -95,11 +97,14 @@ const HeaderButton = styled.div`
 
 const HeaderLink = styled(Link)`
   font-family: "Roboto Condensed", sans-serif;
-  color: #fff;
+  color: ${COLOR_TEXT};
   font-size: 1.1em;
   padding: 0 30px;
   display: flex;
   align-items: center;
   text-transform: uppercase;
   height: ${HEADER_HEIGHT_PX};
+  &:hover {
+    background: ${BUTTON_COLOR_HOVER};
+  }
 `;

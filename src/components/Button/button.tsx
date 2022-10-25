@@ -1,13 +1,22 @@
-import { BUTTON_COLOR, BUTTON_COLOR_HOVER, BUTTON_HEIGHT_PX } from "../../styles/Constants";
+import {
+  BUTTON_COLOR,
+  BUTTON_COLOR_HOVER,
+  BUTTON_HEIGHT_PX,
+} from "../../styles/Constants";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 export const Button = (props: { to: string; text: string }) => {
   return (
     <>
       <ButtonPositioner>
         <Link to={props.to}>
-          <ButtonWrapper> {props.text}</ButtonWrapper>
+          <ButtonWrapper>
+            <span>{props.text}</span>
+            <FontAwesomeIcon icon={faChevronRight} size="xs" />
+          </ButtonWrapper>
         </Link>
       </ButtonPositioner>
     </>
@@ -18,22 +27,25 @@ const ButtonPositioner = styled.div`
   height: ${BUTTON_HEIGHT_PX};
   text-align: right;
   margin-left: auto;
-  margin-top:20px;
+  margin-top: 20px;
 `;
 
 const ButtonWrapper = styled.div`
   font-size: 1.1em;
-  font-family: 'Roboto Condensed', sans-serif;
-  color:#fff;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
   padding: 0 24px;
   display: inline-flex;
   align-items: center;
   height: ${BUTTON_HEIGHT_PX};
   transition: all 300ms;
   text-transform: uppercase;
-  background: ${BUTTON_COLOR}; 
+  background: ${BUTTON_COLOR};
   &:hover {
-    background: ${BUTTON_COLOR_HOVER}; 
+    background: ${BUTTON_COLOR_HOVER};
+  }
+  span {
+    margin-right: 10px;
   }
 `;
 

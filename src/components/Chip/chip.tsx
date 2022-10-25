@@ -8,65 +8,46 @@ import {
  COLOR_HEALTH,
  COLOR_MED,
  COLOR_PHARMA,
+ COLOR_TEXT,
 } from "./../../styles/Constants";
 import "./keyframes.css";
 
 const ChipLogoSize = 12;
 
 const Chip = (props: { section: string }) => {
- const [show, setShow] = useState(false);
- useEffect(() => setShow(true), []);
-
- // const animatedChipStyle = useSpring({
- //  config: config.molasses,
- //  from: { opacity: 0, transform: "translateY(-30px)" },
- //  opacity: show ? 1 : 0,
- //  transform: show ? "translateY(0)" : "translateY(-30px)",
- //  delay: 600,
- //  duration: 1000,
- // });
-
- const animatedChipStyle = useSpring({
-  config: config.molasses,
-  from: { opacity: 0 },
-  opacity: show ? 1 : 0,
-  //transform: show ? "translateY(0)" : "translateY(-30px)",
-  delay: 600,
-  duration: 1000,
- });
 
  return (
   <>
    {props.section === "Bio" ? (
-    <ChipWrapper style={animatedChipStyle} className="bio">
+    <ChipWrapper className="bio">
      <LogoWhite size={ChipLogoSize} />
      <ChipText>{props.section}</ChipText>
     </ChipWrapper>
    ) : null}
 
    {props.section === "Health" ? (
-    <ChipWrapper style={animatedChipStyle} className="health">
+    <ChipWrapper className="health">
      <LogoWhite size={ChipLogoSize} />
      <ChipText>{props.section}</ChipText>
     </ChipWrapper>
    ) : null}
 
    {props.section === "Med" ? (
-    <ChipWrapper style={animatedChipStyle} className="med">
+    <ChipWrapper className="med">
      <LogoWhite size={ChipLogoSize} />
      <ChipText>{props.section}</ChipText>
     </ChipWrapper>
    ) : null}
 
    {props.section === "Pharma" ? (
-    <ChipWrapper style={animatedChipStyle} className="pharma">
+    <ChipWrapper className="pharma">
      <LogoWhite size={ChipLogoSize} />
      <ChipText>{props.section}</ChipText>
     </ChipWrapper>
    ) : null}
 
    {props.section === "Elevens" ? (
-    <ChipWrapper style={animatedChipStyle} className="elevens">
+    <ChipWrapper className="elevens">
      <LogoWhite size={ChipLogoSize} />
      <ChipText>{props.section}</ChipText>
     </ChipWrapper>
@@ -99,7 +80,7 @@ const ChipWrapper = styled(animated.div)`
 
 const ChipText = styled.span`
  text-transform: uppercase;
- color: #fff;
+ color: ${COLOR_TEXT};
  margin-left: 8px;
 `;
 

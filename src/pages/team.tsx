@@ -2,7 +2,7 @@ import setBodyColor from '../utils/setBodyColor'
 import Callout from "../components/Callout/callOut";
 import PageBanner from "../components/PageBanner/pageBanner";
 import Team from "../components/Team/team";
-import { COLOR_RED, COLOR_RED_1, COLOR_RED_TEXT } from "../styles/Constants";
+import { COLOR_BLUE, COLOR_BLUE_1, COLOR_BLUE_TEXT } from "../styles/Constants";
 
 const pageTitle = "Elevens Team";
 const pageSubTitle =
@@ -15,7 +15,7 @@ const calloutText =
   "This is the Text Callout Text. This is the Text Callout Text. This is the Text Callout Text. This is the Text Callout Text. This is the Text Callout Text. ";
 
 const TeamPage = () => {
-  setBodyColor({color: COLOR_RED})
+  setBodyColor({color: COLOR_BLUE})
   return (
     <>
       <PageBanner
@@ -23,15 +23,15 @@ const TeamPage = () => {
         pageSubTitle={pageSubTitle}
         pageVideo={pageVideo}
         overlayOpacity={0.75}
-        overlayColor={COLOR_RED}
-        textColor={COLOR_RED_TEXT}
+        overlayColor={COLOR_BLUE}
+        textColor={COLOR_BLUE_TEXT}
         typing={true}
       />
       <Callout
         calloutTitle={calloutTitle}
         calloutText={calloutText}
-        backgroundColor={COLOR_RED_1}
-        textColor={COLOR_RED_TEXT}
+        backgroundColor={COLOR_BLUE_1}
+        textColor={COLOR_BLUE_TEXT}
         buttonText="Callout Button Text"
         buttonTo="/teams"
         typing={true}
