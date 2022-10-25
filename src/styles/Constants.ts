@@ -16,7 +16,12 @@ export const BUTTON_HEIGHT_PX = BUTTON_HEIGHT + "px";
 export const BUTTON_COLOR = "hsl(0, 86%, 36%)";
 export const BUTTON_COLOR_HOVER = "hsl(0, 86%, 46%)";
 
-;
+export const TEAM_MEMBER_HEIGHT = 320;
+export const TEAM_MEMBER_HEIGHT_PX = TEAM_MEMBER_HEIGHT + "px";
+export const TEAM_MEMBER_WIDTH = 240;
+export const TEAM_MEMBER_WIDTH_PX = TEAM_MEMBER_WIDTH + "px";
+export const TEAM_MEMBER_PHOTO = 160;
+export const TEAM_MEMBER_PHOTO_PX = TEAM_MEMBER_PHOTO + "px";
 
 // Colors
 export const COLOR_BIO = "#ff9a0e";
@@ -25,7 +30,7 @@ export const COLOR_MED = "#bf3e16";
 export const COLOR_PHARMA = "#5278a3";
 export const COLOR_ELEVENS = "#4371a0";
 
-export const COLOR_TEXT = '#FFF';
+export const COLOR_TEXT = "#FFF";
 export const TEXT_OPACITY = 0.8;
 
 // Themes

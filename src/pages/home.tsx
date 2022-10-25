@@ -18,7 +18,7 @@ const HomePage = () => {
         pageTitle={pageTitle}
         pageSubTitle={pageSubTitle}
         pageVideo={pageVideo}
-        overlayOpacity={0.9}
+        overlayOpacity={0.84}
         overlayColor={COLOR_BLUE}
         textColor={COLOR_BLUE_TEXT}
         typing={true}
