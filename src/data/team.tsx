@@ -13,7 +13,7 @@ export const dataTeam = [
     id: 2,
     order: 2,
     nameLast: "Fine",
-    nameFirst: "Ben",
+    nameFirst: "Benjamin",
     appellation: "Ph.D",
     role: "My Role/Title",
     desc: "Description here. Description here. Description here. Description here.  Description here. Description here. ",

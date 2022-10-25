@@ -8,15 +8,12 @@ import {
   TEAM_MEMBER_WIDTH_PX,
 } from "../../styles/Constants";
 
-
 const TeamMember = ({ id, nameFirst, nameLast, apellation, role, photo }) => {
-
-
-  const imgsrc = '/images/team/' + photo
+  const imgsrc = "/images/team/" + photo;
 
   return (
     <TeamMemberWrapper key={id}>
-      <TeamMemberPhoto src={imgsrc}/>
+      <TeamMemberPhoto src={imgsrc} />
       <TeamMemberName>
         {nameFirst} {nameLast}, {apellation}
       </TeamMemberName>
@@ -37,15 +34,15 @@ const TeamMemberWrapper = styled.div`
 `;
 
 const TeamMemberPhoto = styled.img`
-filter: grayscale(100%);
+  filter: grayscale(100%);
   height: ${TEAM_MEMBER_PHOTO_PX};
   width: ${TEAM_MEMBER_PHOTO_PX};
   border-radius: 50%;
-  background: ${COLOR_BASE_2}
+  background: ${COLOR_BASE_2};
 `;
 
 const TeamMemberName = styled.div`
-margin-top:12px;
+  margin-top: 12px;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.3em;
   color: ${COLOR_BASE_TEXT};
@@ -58,7 +55,7 @@ margin-top:12px;
 const TeamMemberRole = styled.div`
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  font-size: .9em;
+  font-size: 0.9em;
   color: ${COLOR_TEXT};
   display: flex;
   align-items: center;
