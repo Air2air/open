@@ -1,6 +1,6 @@
 import setBodyColor from"../utils/setBodyColor";
 import Callout from"../components/Callout/callOut";
-import PageBanner from"../components/PageBanner/pageBanner";
+import BannerVideo from"../components/BannerVideo/bannerVideo";
 import {
   BANNER_HEIGHT_STANDARD_PX,
   COLOR_BASE,
@@ -22,7 +22,7 @@ const HealthTechPage = () => {
   setBodyColor({ color: COLOR_BASE });
   return (
     <>
-      <PageBanner
+      <BannerVideo
         pageTitle={pageTitle}
         pageDescription="Our tagline here about our Healthtech market service offering and benefits.  Our tagline here about our Healthtech market service offering and benefits. Our tagline here about our Healthtech market service offering and benefits."
         pageVideo={pageVideo}

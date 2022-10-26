@@ -1,49 +1,33 @@
-import setBodyColor from '../utils/setBodyColor'
+import setBodyColor from "../utils/setBodyColor";
 import Callout from "./../components/Callout/callOut";
-import PageBanner from "../components/PageBanner/pageBanner";
-import { BANNER_HEIGHT_STANDARD_PX, COLOR_BASE, COLOR_BASE_1, COLOR_BASE_2, COLOR_BASE_TEXT } from "../styles/Constants";
+import BannerImage from "../components/BannerImage/bannerImage";
+import {
+  BANNER_HEIGHT_STANDARD_PX,
+  COLOR_BASE,
+  COLOR_BASE_1,
+  COLOR_BASE_TEXT,
+} from "../styles/Constants";
 
-const pageTitle = "Our Vision";
-
-const pageVideo =
-  "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/D8qa-2E/videoblocks-animation-particles-background47_sn-pqybzmo__491d7c8234d33aa73cf2dec16e4d381d__P360.mp4";
+const pageImage = "dartmouth.jpeg";
 
 const VisionPage = () => {
-  setBodyColor({color: COLOR_BASE})
+  setBodyColor({ color: COLOR_BASE });
   return (
     <>
-      <PageBanner
-        pageTitle={pageTitle}
-        pageDescription="Our text here about our vision and values, and how they contribute to your success. Our text here about our vision and values, and how they contribute to your success."
-        pageVideo={pageVideo}
-        overlayOpacity={0.8}
+      <BannerImage
+        pageTitle="Our Vision"
+        pageDescription="In 1956, 11 experts from multiple scientific disciplines traveled around the world to meet at Dartmouth College.  Their purpose?"
+        pageImage={pageImage}
+        overlayOpacity={0.7}
         overlayColor={COLOR_BASE}
         textColor={COLOR_BASE_TEXT}
         typing={true}
         height={BANNER_HEIGHT_STANDARD_PX}
       />
       <Callout
-        calloutTitle="Kickoff Meeting"
-        calloutText="Kickoff Meeting Text Kickoff Meeting Text Kickoff Meeting Text Kickoff Meeting Text Kickoff Meeting Text Kickoff Meeting Text Kickoff Meeting Text "
-        backgroundColor={COLOR_BASE}
-        textColor={COLOR_BASE_TEXT}
-        buttonText=""
-        buttonTo=""
-        typing={false}
-      />
-      <Callout
-        calloutTitle="Research for Proposal"
-        calloutText="Research for Proposal Text Research for Proposal TextResearch for Proposal TextResearch for Proposal TextResearch for Proposal TextResearch for Proposal TextResearch for Proposal TextResearch for Proposal TextResearch for Proposal TextResearch for Proposal TextResearch for Proposal TextResearch for Proposal TextResearch for Proposal Text"
+        calloutTitle="Machine Intelligence"
+        calloutText="Over several days they combined their collective experience to build the foundational principles for what we know today as Artificial Intelligence.  Eleven was designed with this historical perspective in mind, founded by a multidisciplinary team of physicians, scientists, and engineers who combine their experience to define a path forward for today’s leading companies building the future of digital health and clinical machine learning. "
         backgroundColor={COLOR_BASE_1}
-        buttonText=""
-        textColor={COLOR_BASE_TEXT}
-        buttonTo=""
-        typing={false}
-      />
-      <Callout
-        calloutTitle="Team and Scope Recommendations "
-        calloutText="Team and Scope Recommendations Text Team and Scope Recommendations Text Team and Scope Recommendations Text Team and Scope Recommendations Text Team and Scope Recommendations Text Team and Scope Recommendations Text Team and Scope Recommendations Text Team and Scope Recommendations Text Team and Scope Recommendations Text"
-        backgroundColor={COLOR_BASE_2}
         textColor={COLOR_BASE_TEXT}
         buttonText=""
         buttonTo=""

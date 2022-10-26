@@ -9,7 +9,7 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 
 // const myRef = document.querySelector(".scrollable-div");
 
-export const PageBanner = ({
+export const BannerVideo = ({
   pageTitle,
   pageDescription,
   pageVideo,
@@ -21,7 +21,7 @@ export const PageBanner = ({
 }) => {
   return (
     <>
-      <PageBannerWrapper style={{ height: height }}>
+      <BannerVideoWrapper style={{ height: height }}>
         {pageVideo ? (
           <VideoCallout
             pageVideo={pageVideo}
@@ -57,12 +57,12 @@ export const PageBanner = ({
             )}
           </AnimationOnScroll>
         </TextWrapper>
-      </PageBannerWrapper>
+      </BannerVideoWrapper>
     </>
   );
 };
 
-const PageBannerWrapper = styled.div`
+const BannerVideoWrapper = styled.div`
   position: relative;
   top: 0;
   display: flex;
@@ -112,4 +112,4 @@ const TypeWriterParagraph = styled(TypeWriterEffect)`
   opacity: ${TEXT_OPACITY};
 `;
 
-export default PageBanner;
+export default BannerVideo;

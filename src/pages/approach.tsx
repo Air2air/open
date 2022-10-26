@@ -1,6 +1,6 @@
 import setBodyColor from '../utils/setBodyColor'
 import Callout from "./../components/Callout/callOut";
-import PageBanner from "../components/PageBanner/pageBanner";
+import BannerVideo from "../components/BannerVideo/bannerVideo";
 import { BANNER_HEIGHT_STANDARD_PX, COLOR_BASE, COLOR_BASE_1, COLOR_BASE_2, COLOR_BASE_TEXT } from "../styles/Constants";
 
 
@@ -11,7 +11,7 @@ const ApproachPage = () => {
   setBodyColor({color: COLOR_BASE})
   return (
     <>
-      <PageBanner
+      <BannerVideo
         pageTitle="How we work together"
         pageDescription="With over 100 years of combined real-world experience, Eleven leverages a large multi-disciplinary team of industry-leading specialists to deliver across your healthcare AI needs."
         pageVideo={pageVideo}

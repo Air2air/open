@@ -1,5 +1,5 @@
 import setBodyColor from "../utils/setBodyColor";
-import PageBanner from "../components/PageBanner/pageBanner";
+import BannerVideo from "../components/BannerVideo/bannerVideo";
 import Team from "../components/Team/team";
 import {
   BANNER_HEIGHT_SHORT_PX,
@@ -16,7 +16,7 @@ const TeamPage = () => {
   setBodyColor({ color: COLOR_BASE });
   return (
     <>
-      <PageBanner
+      <BannerVideo
         pageTitle={pageTitle}
         pageDescription="Our text here about our team, accomplishments, credentials and values.  "
         pageVideo={pageVideo}

@@ -2,7 +2,7 @@
 
 import setBodyColor from "../utils/setBodyColor";
 // import Callout from "../components/Callout/callOut";
-import PageBanner from "../components/PageBanner/pageBanner";
+import BannerVideo from "../components/BannerVideo/bannerVideo";
 import { BANNER_HEIGHT_STANDARD_PX, COLOR_BASE, COLOR_BASE_TEXT } from "../styles/Constants";
 
 const pageTitle = "Thank you for contacting us.";
@@ -17,7 +17,7 @@ const ContactSuccessPage = () => {
 
   return (
     <>
-      <PageBanner
+      <BannerVideo
         pageTitle={pageTitle}
         pageDescription="Contact page description"
         pageVideo={pageVideo}
