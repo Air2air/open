@@ -5,13 +5,8 @@ import setBodyColor from "../utils/setBodyColor";
 import BannerVideo from "../components/BannerVideo/bannerVideo";
 import { BANNER_HEIGHT_STANDARD_PX, COLOR_BASE, COLOR_BASE_TEXT } from "../styles/Constants";
 
-const pageTitle = "Contact Eleven.ai";
-
 const pageVideo =
   "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/NIHmZbghlilb1qj7b/videoblocks-bacteria-virus-or-germs-microorganism-cells-under-microscope-with-depth_huxxzteyi__85fcc74c9b372b7e15a77bcaa433e568__P360.mp4";
-
-const pageDescription =
-  "Still completing the contact form validation, filtering and success state";
 
 const ContactPage = () => {
   setBodyColor({ color: COLOR_BASE });
@@ -104,8 +99,8 @@ const ContactPage = () => {
   return (
     <>
       <BannerVideo
-        pageTitle={pageTitle}
-        pageDescription={pageDescription}
+        pageTitle="Contact Eleven.ai"
+        pageDescription="Still completing the contact form validation, filtering and success state"
         pageVideo={pageVideo}
         overlayOpacity={0.8}
         overlayColor={COLOR_BASE}
