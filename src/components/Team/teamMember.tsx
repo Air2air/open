@@ -8,14 +8,14 @@ import {
   TEAM_MEMBER_WIDTH_PX,
 } from "../../styles/Constants";
 
-const TeamMember = ({ id, nameFirst, nameLast, apellation, role, photo }) => {
+const TeamMember = ({ id, nameFirst, nameLast, apellation, role, photo, photoScale, photoY }) => {
   const imgsrc = "/images/team/" + photo;
 
   return (
     <TeamMemberWrapper key={id}>
-      <TeamMemberPhoto src={imgsrc} />
+      <TeamMemberPhoto src={imgsrc} style={{transform: `scale(${photoScale})`}} />
       <TeamMemberName>
-        {nameFirst} {nameLast}, {apellation}
+        {nameFirst} {nameLast}
       </TeamMemberName>
       <TeamMemberRole>{role}</TeamMemberRole>
     </TeamMemberWrapper>
@@ -36,9 +36,12 @@ const TeamMemberWrapper = styled.div`
 const TeamMemberPhoto = styled.img`
   filter: grayscale(100%);
   height: ${TEAM_MEMBER_PHOTO_PX};
-  width: ${TEAM_MEMBER_PHOTO_PX};
+  width: auto;
   border-radius: 50%;
+  object-fit: cover;
+  clip-path: circle(70px at center);
   background: ${COLOR_BASE_2};
+  transform:translateY(0px);
 `;
 
 const TeamMemberName = styled.div`

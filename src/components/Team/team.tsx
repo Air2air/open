@@ -2,7 +2,7 @@ import styled from "styled-components";
 import TeamMember from "./teamMember";
 import { dataTeam } from "../../data/team";
 
-const sortedDataTeam = dataTeam.sort((a, b) => (a.order > b.order ? 1 : -1));
+const sortedDataTeam = dataTeam.sort((a, b) => (a.nameFirst > b.nameFirst ? 1 : -1));
 
 const Team = () => {
   const teamMap = sortedDataTeam.map((props) => (
@@ -14,6 +14,8 @@ const Team = () => {
         apellation={props.appellation}
         role={props.role}
         photo={props.photo}
+        photoScale={props.photoScale}
+        photoY={props.photoY}
       />
     </>
   ));
@@ -35,8 +37,6 @@ const TeamGrid = styled.div`
   gap: 1rem;
   padding-top:50px;
   max-width: 1000px;
-
-
   @media (min-width: 701px)  {
     grid-template-columns: repeat(3, 1fr);
   }
