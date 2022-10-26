@@ -29,7 +29,7 @@ const HomePage = () => {
         textColor={COLOR_BASE_TEXT}
         buttonText="Our Approach"
         buttonTo="/approach"
-        typing={true}
+        typing={false}
       />
     </>
   );

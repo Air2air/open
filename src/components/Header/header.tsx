@@ -5,30 +5,56 @@ import {
   BUTTON_COLOR,
   BUTTON_COLOR_HOVER,
   BUTTON_HEIGHT_PX,
+  COLOR_BASE,
   COLOR_TEXT,
   HEADER_HEIGHT_PX,
 } from "../../styles/Constants";
+import { useState, useEffect } from "react";
 
 export const Header = () => {
+  const [isVisible, setIsVisible] = useState(true);
+  const [height, setHeight] = useState(0);
+
+  const listenToScroll = () => {
+    let heightToHideFrom = 100;
+    const winScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
+    setHeight(winScroll);
+
+    if (winScroll > heightToHideFrom) {
+      isVisible && setIsVisible(true);
+    } else {
+      setIsVisible(false); //(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", listenToScroll);
+    return () => window.removeEventListener("scroll", listenToScroll);
+  }, []);
+
   return (
-    <HeaderWrapperOuter>
-      <HeaderWrapperInner>
-        <LogoWrapper>
-          <Link to="/home">
-            <LogoWhite width="150" />
-          </Link>
-        </LogoWrapper>
-        <HeaderButtonWrapper>
-          <Link to="/contact">
-            <HeaderButton>Contact Us</HeaderButton>
-          </Link>
-          <HeaderLink to="/">Elevens</HeaderLink>
-          <HeaderLink to="/markets">Markets</HeaderLink>
-          <HeaderLink to="/vision">Vision</HeaderLink>
-          <HeaderLink to="/team">Team</HeaderLink>
-        </HeaderButtonWrapper>
-      </HeaderWrapperInner>
-    </HeaderWrapperOuter>
+    <>
+      <HeaderWrapperOuter>
+        {isVisible && <HeaderOverlay />}
+        <HeaderWrapperInner>
+          <LogoWrapper>
+            <Link to="/home">
+              <LogoWhite width="150" />
+            </Link>
+          </LogoWrapper>
+          <HeaderButtonWrapper>
+            <Link to="/contact">
+              <HeaderButton>Contact Us</HeaderButton>
+            </Link>
+            <HeaderLink to="/">Elevens</HeaderLink>
+            <HeaderLink to="/markets">Markets</HeaderLink>
+            <HeaderLink to="/vision">Vision</HeaderLink>
+            <HeaderLink to="/team">Team</HeaderLink>
+          </HeaderButtonWrapper>
+        </HeaderWrapperInner>
+      </HeaderWrapperOuter>
+    </>
   );
 };
 
@@ -42,6 +68,15 @@ const HeaderWrapperOuter = styled.div`
   width: 100vw;
   padding: 0;
   height: ${HEADER_HEIGHT_PX};
+`;
+
+const HeaderOverlay = styled.div`
+  z-index: -1;
+  position: absolute;
+  width: 100vw;
+  height: ${HEADER_HEIGHT_PX};
+  background: ${COLOR_BASE};
+  transition: all 2000ms;
 `;
 
 const LogoWrapper = styled.div`

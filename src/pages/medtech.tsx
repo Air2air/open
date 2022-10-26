@@ -13,10 +13,9 @@ import {
 } from"../styles/Constants";
 
 const pageTitle ="MedTech Market";
-const pageDescription =
-"Our tagline here about our Medtech market service offering and benefits.  Our tagline here about our Medtech market service offering and benefits. Our tagline here about our Medtech market service offering and benefits.";
+
 const pageVideo =
-"https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/Vyh-jcp/videoblocks-realistic-medical-animation-of-several-coronavirus-cells-covid-19-flying-in-the-air_s_zc2y7du__371df1132bebc61a702365a54ae84d5c__P360.mp4";
+"https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/NrM0QFs3gilniuv44/videoblocks-mri-scan-of-a-human-brain-in-motion-scanning-of-brain-magnetic-resonance-image-diagnostic-medical-tool_hss8usofo__99653a64ded0a267edaae5c772f44c83__P360.mp4";
 
 const MedTechPage = () => {
   setBodyColor({ color: COLOR_BASE });
@@ -24,7 +23,7 @@ const MedTechPage = () => {
     <>
       <PageBanner
         pageTitle={pageTitle}
-        pageDescription={pageDescription}
+        pageDescription="Our tagline here about our Medtech market service offering and benefits.  Our tagline here about our Medtech market service offering and benefits. Our tagline here about our Medtech market service offering and benefits."
         pageVideo={pageVideo}
         overlayOpacity={0.8}
         overlayColor={COLOR_BASE}

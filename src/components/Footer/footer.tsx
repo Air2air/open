@@ -2,26 +2,27 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { ReactComponent as LogoWhite } from "./../../images/logo_white.svg";
 import { FOOTER_HEIGHT_PX } from "../../styles/Constants";
-import Button from "../Button/button";
 
 export const Footer = () => {
   return (
     <FooterWrapperOuter>
       <FooterWrapperInner>
-        <Link to="/home">
-          <LogoWhite width="46" />
-        </Link>
         <FooterButtonWrapper>
-          <Button to="/contact" text="Contact" />
           <FooterLink to="/">Home</FooterLink>
           <FooterLink to="/approach">Approach</FooterLink>
           <FooterLink to="/team">Team</FooterLink>
         </FooterButtonWrapper>
+        <FooterCopyright>
+          <div>&copy; Eleven Group Inc.</div>
+          <Link to="/home">
+            <LogoWhite width="30" />
+          </Link>
+          <div>All rights reserved.</div>
+        </FooterCopyright>
       </FooterWrapperInner>
     </FooterWrapperOuter>
   );
 };
-
 
 const FooterWrapperOuter = styled.div`
   z-index: +1;
@@ -30,25 +31,23 @@ const FooterWrapperOuter = styled.div`
   justify-content: center;
   width: 100vw;
   height: ${FOOTER_HEIGHT_PX};
-  /* background-color:blue; */
+  /* background-color: blue; */
 `;
 
 const FooterWrapperInner = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
   width: 80vw;
+  justify-content: space-around;
   height: ${FOOTER_HEIGHT_PX};
   margin: 0 auto;
-  /* background-color:blue; */
+  /* background-color: lightblue; */
 `;
 
 const FooterButtonWrapper = styled.div`
-  /* flex-grow: 1; */
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: ${FOOTER_HEIGHT_PX};
   /* background: red; */
 `;
 
@@ -57,6 +56,15 @@ const FooterLink = styled(Link)`
   padding: 0 30px;
   display: flex;
   align-items: center;
-  height: ${FOOTER_HEIGHT_PX};
 `;
 
+const FooterCopyright = styled.div`
+  font-size: 0.9em;
+  /* padding: 0 30px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 40px;
+  /* background: red; */
+`;

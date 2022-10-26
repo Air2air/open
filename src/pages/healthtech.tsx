@@ -13,10 +13,9 @@ import {
 } from"../styles/Constants";
 
 const pageTitle ="HealthTech Market";
-const pageDescription =
-"Our tagline here about our Healthtech market service offering and benefits.  Our tagline here about our Healthtech market service offering and benefits. Our tagline here about our Healthtech market service offering and benefits.";
+
 const pageVideo =
-"https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/Vyh-jcp/videoblocks-realistic-medical-animation-of-several-coronavirus-cells-covid-19-flying-in-the-air_s_zc2y7du__371df1132bebc61a702365a54ae84d5c__P360.mp4";
+"https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/BKaAXTX/hospital-ekg-traces-1733_xkdnkn6b__702aa6225048bedb5953f32d585f47ce__P360.mp4";
 
 const HealthTechPage = () => {
   setBodyColor({ color: COLOR_BASE });
@@ -24,7 +23,7 @@ const HealthTechPage = () => {
     <>
       <PageBanner
         pageTitle={pageTitle}
-        pageDescription={pageDescription}
+        pageDescription="Our tagline here about our Healthtech market service offering and benefits.  Our tagline here about our Healthtech market service offering and benefits. Our tagline here about our Healthtech market service offering and benefits."
         pageVideo={pageVideo}
         overlayOpacity={0.8}
         overlayColor={COLOR_BASE}

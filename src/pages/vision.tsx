@@ -6,7 +6,7 @@ import { COLOR_BASE, COLOR_BASE_1, COLOR_BASE_2, COLOR_BASE_TEXT } from "../styl
 const pageTitle = "Our Vision";
 
 const pageVideo =
-  "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/Vyh-jcp/videoblocks-realistic-medical-animation-of-several-coronavirus-cells-covid-19-flying-in-the-air_s_zc2y7du__371df1132bebc61a702365a54ae84d5c__P360.mp4";
+  "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/D8qa-2E/videoblocks-animation-particles-background47_sn-pqybzmo__491d7c8234d33aa73cf2dec16e4d381d__P360.mp4";
 
 const VisionPage = () => {
   setBodyColor({color: COLOR_BASE})
