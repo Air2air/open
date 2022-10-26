@@ -1,6 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import { Footer } from "./components/Footer/footer";
 import { Header } from "./components/Header/header";
+
+ 
 import { dataRoutes } from "./data/routes";
 
 const App = () => {

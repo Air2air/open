@@ -4,6 +4,7 @@ import styled from "styled-components";
 import TypeWriterEffect from "react-typewriter-effect";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import ImageCallout from "../ImageCallout/imageCallout";
+import parse from "html-react-parser";
 
 export const BannerImage = ({
   pageTitle,
@@ -15,6 +16,10 @@ export const BannerImage = ({
   typing,
   height,
 }) => {
+  
+  const pageTitleParsed = parse(pageTitle);
+  const pageDescriptionParsed = parse(pageDescription);
+
   return (
     <>
       <BannerImageWrapper style={{ height: height }}>
@@ -31,7 +36,7 @@ export const BannerImage = ({
         <TextWrapper>
           <AnimationOnScroll animateIn="animate__fadeIn" delay={400}>
             <PageTitle style={{ color: textColor && textColor }}>
-              {pageTitle}
+              {pageTitleParsed}
             </PageTitle>
             {typing ? (
               <TypeWriterParagraph
@@ -49,7 +54,7 @@ export const BannerImage = ({
                 typeSpeed={1}
               />
             ) : (
-              <PageDescription>{pageDescription}</PageDescription>
+              <PageDescription>{pageDescriptionParsed}</PageDescription>
             )}
           </AnimationOnScroll>
         </TextWrapper>

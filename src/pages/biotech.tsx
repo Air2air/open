@@ -13,9 +13,7 @@ import {
   COLOR_BASE_TEXT,
 } from"../styles/Constants";
 
-const pageTitle ="BioTech Market";
-const pageDescription =
-"Our tagline here about our Biotech market service offering and benefits.  Our tagline here about our Biotech market service offering and benefits. Our tagline here about our Biotech market service offering and benefits.";
+
 const pageVideo =
 "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/Vyh-jcp/videoblocks-realistic-medical-animation-of-several-coronavirus-cells-covid-19-flying-in-the-air_s_zc2y7du__371df1132bebc61a702365a54ae84d5c__P360.mp4";
 
@@ -24,8 +22,8 @@ const BioTechPage = () => {
   return (
     <>
       <BannerVideo
-        pageTitle={pageTitle}
-        pageDescription={pageDescription}
+        pageTitle="BioTech Market"
+        pageDescription="Biotechnology companies are increasingly taking the lead in new drug development, unlike Pharma companies who are pulling back from expensive basic research, increasingly becoming massive marketing vehicles for the biotech world."
         pageVideo={pageVideo}
         overlayOpacity={0.8}
         overlayColor={COLOR_BASE}
@@ -46,10 +44,12 @@ const BioTechPage = () => {
         calloutTitle="Seed Stage"
         calloutText="
         Your company now has a degree of experience and can demonstrate potential to develop into a vibrant company. You now need a pitch deck to demonstrate to VCs that your idea is a viable investment opportunity. Most of the modest sums you raise in the seed stage are for specific activities like: 
-          ▪	Market research 
-          ▪	Business plan development 
-          ▪	Setting up a management team  
-          ▪	Product development"
+        <ul>
+          <li>Market research </li>
+          <li>Business plan development</li> 
+          <li>Setting up a management team</li>
+          <li>Product development</li>
+          </ul>"
         backgroundColor={COLOR_BASE_1}
         buttonText=""
         textColor={COLOR_BASE_TEXT}

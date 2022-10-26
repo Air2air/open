@@ -12,6 +12,7 @@ const pageImage = "dartmouth.jpeg";
 
 const VisionPage = () => {
   setBodyColor({ color: COLOR_BASE });
+
   return (
     <>
       <BannerImage
@@ -26,7 +27,7 @@ const VisionPage = () => {
       />
       <Callout
         calloutTitle="Machine Intelligence"
-        calloutText="Over several days they combined their collective experience to build the foundational principles for what we know today as Artificial Intelligence.  Eleven was designed with this historical perspective in mind, founded by a multidisciplinary team of physicians, scientists, and engineers who combine their experience to define a path forward for today’s leading companies building the future of digital health and clinical machine learning. "
+        calloutText="<p>Over several days they combined their collective experience to build the foundational principles for what we know today as Artificial Intelligence.</p><p>Eleven was designed with this historical perspective in mind, founded by a multidisciplinary team of physicians, scientists, and engineers who combine their experience to define a path forward for today's leading companies building the future of digital health and clinical machine learning.</p>"
         backgroundColor={COLOR_BASE_1}
         textColor={COLOR_BASE_TEXT}
         buttonText=""

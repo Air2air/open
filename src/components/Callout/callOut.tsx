@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Button from "../Button/button";
 import TypeWriterEffect from "react-typewriter-effect";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import parse from 'html-react-parser';
 
 export const CalloutText = ({
   calloutTitle,
@@ -13,15 +14,19 @@ export const CalloutText = ({
   buttonTo,
   typing,
 }) => {
+
+const calloutTitleParsed = parse(calloutTitle)
+const calloutTextParsed = parse(calloutText)
+
   return (
     <>
       <CalloutTextWrapper
         style={{ background: backgroundColor && backgroundColor }}
       >
         <TextWrapper>
-          <AnimationOnScroll animateIn="animate__fadeIn">
+          <AnimationOnScroll animateIn="animate__fadeIn" delay={0}>
             <CalloutTitle style={{ color: textColor && textColor }}>
-              {calloutTitle}
+              {calloutTitleParsed}
             </CalloutTitle>
           </AnimationOnScroll>
 
@@ -37,14 +42,16 @@ export const CalloutText = ({
               }}
               startDelay={10}
               cursorColor={COLOR_TEXT}
-              text={calloutText}
+              text={calloutTextParsed}
               typeSpeed={1}
             />
           ) : (
-            <CalloutParagraph>{calloutText}</CalloutParagraph>
+            <AnimationOnScroll animateIn="animate__fadeIn" delay={200}>
+            <CalloutParagraph>{calloutTextParsed}</CalloutParagraph>
+            </AnimationOnScroll>
           )}
 
-          <AnimationOnScroll animateIn="animate__fadeInUp" delay={500}>
+          <AnimationOnScroll animateIn="animate__fadeInUp" delay={400}>
             {buttonText ? <Button to={buttonTo} text={buttonText} /> : ""}
           </AnimationOnScroll>
         </TextWrapper>

@@ -45,10 +45,12 @@ const HealthTechPage = () => {
         calloutTitle="Seed Stage"
         calloutText="
         Your company now has a degree of experience and can demonstrate potential to develop into a vibrant company. You now need a pitch deck to demonstrate to VCs that your idea is a viable investment opportunity. Most of the modest sums you raise in the seed stage are for specific activities like: 
-          ▪	Market research 
-          ▪	Business plan development 
-          ▪	Setting up a management team  
-          ▪	Product development"
+        <ul>
+          <li>Market research </li>
+          <li>Business plan development</li> 
+          <li>Setting up a management team</li>
+          <li>Product development</li>
+          </ul>"
         backgroundColor={COLOR_BASE_1}
         buttonText=""
         textColor={COLOR_BASE_TEXT}

@@ -13,7 +13,6 @@ import {
   COLOR_BASE_TEXT,
 } from"../styles/Constants";
 
-const pageTitle ="MedTech Market";
 
 const pageVideo =
 "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/NrM0QFs3gilniuv44/videoblocks-mri-scan-of-a-human-brain-in-motion-scanning-of-brain-magnetic-resonance-image-diagnostic-medical-tool_hss8usofo__99653a64ded0a267edaae5c772f44c83__P360.mp4";
@@ -23,8 +22,8 @@ const MedTechPage = () => {
   return (
     <>
       <BannerVideo
-        pageTitle={pageTitle}
-        pageDescription="Our tagline here about our Medtech market service offering and benefits.  Our tagline here about our Medtech market service offering and benefits. Our tagline here about our Medtech market service offering and benefits."
+        pageTitle="MedTech Market"
+        pageDescription="Medtech Startups often face years of losses and cash outflows as management tries to lead new products through clinical trials, through regulators and onto the market. We help you through."
         pageVideo={pageVideo}
         overlayOpacity={0.8}
         overlayColor={COLOR_BASE}
@@ -45,10 +44,12 @@ const MedTechPage = () => {
         calloutTitle="Seed Stage"
         calloutText="
         Your company now has a degree of experience and can demonstrate potential to develop into a vibrant company. You now need a pitch deck to demonstrate to VCs that your idea is a viable investment opportunity. Most of the modest sums you raise in the seed stage are for specific activities like: 
-          ▪	Market research 
-          ▪	Business plan development 
-          ▪	Setting up a management team  
-          ▪	Product development"
+        <ul>
+          <li>Market research </li>
+          <li>Business plan development</li> 
+          <li>Setting up a management team</li>
+          <li>Product development</li>
+          </ul>"
         backgroundColor={COLOR_BASE_1}
         buttonText=""
         textColor={COLOR_BASE_TEXT}

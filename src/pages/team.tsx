@@ -7,7 +7,6 @@ import {
   COLOR_BASE_TEXT,
 } from "../styles/Constants";
 
-const pageTitle = "Elevens";
 
 const pageVideo =
   "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/rsUQQw39cl52esufb/videoblocks-abstract-dna-pack-2021-09-08-19-33-23-utc-3_sfgtv1cpc__a58044aee90f7390d9e398a567ab69e8__P360.mp4";
@@ -17,10 +16,10 @@ const TeamPage = () => {
   return (
     <>
       <BannerVideo
-        pageTitle={pageTitle}
-        pageDescription="Our text here about our team, accomplishments, credentials and values.  "
+        pageTitle="Elevens"
+        pageDescription="Our team, accomplishments, credentials and values.  "
         pageVideo={pageVideo}
-        overlayOpacity={0.7}
+        overlayOpacity={0.6}
         overlayColor={COLOR_BASE}
         textColor={COLOR_BASE_TEXT}
         typing={true}

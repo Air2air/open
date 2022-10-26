@@ -6,6 +6,7 @@ import styled from "styled-components";
 import VideoCallout from "../VideoCallout/videoCallout";
 import TypeWriterEffect from "react-typewriter-effect";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import parse from "html-react-parser";
 
 // const myRef = document.querySelector(".scrollable-div");
 
@@ -19,6 +20,10 @@ export const BannerVideo = ({
   typing,
   height,
 }) => {
+
+  const pageTitleParsed = parse(pageTitle);
+  const pageDescriptionParsed = parse(pageDescription);
+
   return (
     <>
       <BannerVideoWrapper style={{ height: height }}>
@@ -35,7 +40,7 @@ export const BannerVideo = ({
         <TextWrapper>
           <AnimationOnScroll animateIn="animate__fadeIn" delay={400}>
             <PageTitle style={{ color: textColor && textColor }}>
-              {pageTitle}
+              {pageTitleParsed}
             </PageTitle>
             {typing ? (
               <TypeWriterParagraph
@@ -53,7 +58,7 @@ export const BannerVideo = ({
                 typeSpeed={1}
               />
             ) : (
-              <PageDescription>{pageDescription}</PageDescription>
+              <PageDescription>{pageDescriptionParsed}</PageDescription>
             )}
           </AnimationOnScroll>
         </TextWrapper>

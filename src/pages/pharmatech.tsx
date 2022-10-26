@@ -13,7 +13,7 @@ import {
   COLOR_BASE_TEXT,
 } from"../styles/Constants";
 
-const pageTitle ="PharmaTech Market";
+
 
 const pageVideo =
 "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/YqGSkmb/videoblocks-051_bkqzf7sec__ef7f4ded1f549dccc9f364428adbee1e__P360.mp4";
@@ -23,8 +23,8 @@ const PharmaTechPage = () => {
   return (
     <>
       <BannerVideo
-        pageTitle={pageTitle}
-        pageDescription="Our tagline here about our Pharmatech market service offering and benefits.  Our tagline here about our Pharmatech market service offering and benefits. Our tagline here about our Pharmatech market service offering and benefits."
+        pageTitle="PharmaTech Market"
+        pageDescription="Elevens brings proven expertise in AI relating to drug discovery, virtual clinical trials and digital twins, patient engagement and medication adherence, and more."
         pageVideo={pageVideo}
         overlayOpacity={0.8}
         overlayColor={COLOR_BASE}
@@ -45,10 +45,12 @@ const PharmaTechPage = () => {
         calloutTitle="Seed Stage"
         calloutText="
         Your company now has a degree of experience and can demonstrate potential to develop into a vibrant company. You now need a pitch deck to demonstrate to VCs that your idea is a viable investment opportunity. Most of the modest sums you raise in the seed stage are for specific activities like: 
-          ▪	Market research 
-          ▪	Business plan development 
-          ▪	Setting up a management team  
-          ▪	Product development"
+        <ul>
+          <li>Market research </li>
+          <li>Business plan development</li> 
+          <li>Setting up a management team</li>
+          <li>Product development</li>
+          </ul>"
         backgroundColor={COLOR_BASE_1}
         buttonText=""
         textColor={COLOR_BASE_TEXT}
