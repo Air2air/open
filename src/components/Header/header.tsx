@@ -12,7 +12,7 @@ import {
 import { useState, useEffect } from "react";
 
 export const Header = () => {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
   const [height, setHeight] = useState(0);
 
   const listenToScroll = () => {
@@ -21,11 +21,10 @@ export const Header = () => {
       document.body.scrollTop || document.documentElement.scrollTop;
     setHeight(winScroll);
 
-
     if (winScroll > heightToHideFrom) {
-      isVisible && setIsVisible(true);
+      isVisible && setIsVisible(false);
     } else {
-      setIsVisible(false); //(true);
+      setIsVisible(true); //(true);
       return height
     }
   };
@@ -39,7 +38,7 @@ export const Header = () => {
   return (
     <>
       <HeaderWrapperOuter>
-        {isVisible && <HeaderOverlay/>}
+        {!isVisible && <HeaderOverlay/>}
         <HeaderWrapperInner>
           <LogoWrapper>
             <Link to="/home">
