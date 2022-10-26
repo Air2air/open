@@ -1,7 +1,11 @@
 import setBodyColor from "../utils/setBodyColor";
 import PageBanner from "../components/PageBanner/pageBanner";
 import Team from "../components/Team/team";
-import { BANNER_HEIGHT_SHORT_PX, COLOR_BASE, COLOR_BASE_TEXT } from "../styles/Constants";
+import {
+  BANNER_HEIGHT_SHORT_PX,
+  COLOR_BASE,
+  COLOR_BASE_TEXT,
+} from "../styles/Constants";
 
 const pageTitle = "Elevens";
 
@@ -14,7 +18,7 @@ const TeamPage = () => {
     <>
       <PageBanner
         pageTitle={pageTitle}
-        pageDescription="Our text here about our team, accomplishments, credentials and values.  Our text here about our team, accomplishments, credentials and values. Our text here about our team, accomplishments, credentials and values. "
+        pageDescription="Our text here about our team, accomplishments, credentials and values.  "
         pageVideo={pageVideo}
         overlayOpacity={0.7}
         overlayColor={COLOR_BASE}
@@ -22,7 +26,6 @@ const TeamPage = () => {
         typing={true}
         height={BANNER_HEIGHT_SHORT_PX}
       />
-
       <Team />
     </>
   );

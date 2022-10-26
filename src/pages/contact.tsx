@@ -1,4 +1,4 @@
-import React, { useReducer } from "react";
+
 
 import setBodyColor from "../utils/setBodyColor";
 // import Callout from "../components/Callout/callOut";
@@ -16,90 +16,90 @@ const pageDescription =
 const ContactPage = () => {
   setBodyColor({ color: COLOR_BASE });
 
-  const initialValues = {
-    name: "",
-    email: "",
-    message: "",
-  };
+  // const initialValues = {
+  //   name: "",
+  //   email: "",
+  //   message: "",
+  // };
 
-  const initialErrors = {
-    name: false,
-    email: false,
-    message: false,
-  };
+  // const initialErrors = {
+  //   name: false,
+  //   email: false,
+  //   message: false,
+  // };
 
-  /**
-   * Reducer function to useReducer hook
-   * @param {name, email, message} currentState
-   * @param {name, email, message} nextState
-   * @returns next state of values,
-   */
-  const reducer = (currentState, nextState) => ({
-    ...currentState,
-    ...nextState,
-  });
+  // /**
+  //  * Reducer function to useReducer hook
+  //  * @param {name, email, message} currentState
+  //  * @param {name, email, message} nextState
+  //  * @returns next state of values,
+  //  */
+  // const reducer = (currentState, nextState) => ({
+  //   ...currentState,
+  //   ...nextState,
+  // });
 
-  const [values, setValues] = useReducer(reducer, initialValues);
-  const [errors, setErrors] = useReducer(reducer, initialErrors);
+  // const [values, setValues] = useReducer(reducer, initialValues);
+  // const [errors, setErrors] = useReducer(reducer, initialErrors);
 
-  /**
-   * onChange handler
-   * @param element
-   *
-   */
-  const onChange = (e) => {
-    setValues({ [e.target.id]: e.target.value });
-  };
+  // /**
+  //  * onChange handler
+  //  * @param element
+  //  *
+  //  */
+  // const onChange = (e) => {
+  //   setValues({ [e.target.id]: e.target.value });
+  // };
 
-  /**
-   * focus handler
-   * @param element
-   */
-  const onFocus = (e) => {
-    setErrors({ [e.target.id]: false });
-  };
+  // /**
+  //  * focus handler
+  //  * @param element
+  //  */
+  // const onFocus = (e) => {
+  //   setErrors({ [e.target.id]: false });
+  // };
 
-  /**
-   *
-   * @param data
-   * @returns URI string encoded
-   */
-  const encode = (data) => {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  };
+  // /**
+  //  *
+  //  * @param data
+  //  * @returns URI string encoded
+  //  */
+  // const encode = (data) => {
+  //   return Object.keys(data)
+  //     .map(
+  //       (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+  //     )
+  //     .join("&");
+  // };
 
-  /**
-   * onSubmit handler
-   * @param element
-   */
-  const onSubmit = (e) => {
-    e.preventDefault();
-    /**
-     * Validation
-     */
-    for (const key in values) {
-      if (!values[key]) {
-        setErrors({ [key]: true });
-        return;
-      }
-      setErrors({ [key]: false });
-    }
+  // /**
+  //  * onSubmit handler
+  //  * @param element
+  //  */
+  // const onSubmit = (e) => {
+  //   e.preventDefault();
+  //   /**
+  //    * Validation
+  //    */
+  //   for (const key in values) {
+  //     if (!values[key]) {
+  //       setErrors({ [key]: true });
+  //       return;
+  //     }
+  //     setErrors({ [key]: false });
+  //   }
 
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": e.target.getAttribute("name"),
-        ...values,
-      }),
-    })
-      .then(() => console.log("success"))
-      .catch((e) => console.log("Error :", e));
-  };
+  //   fetch("/", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: encode({
+  //       "form-name": e.target.getAttribute("name"),
+  //       ...values,
+  //     }),
+  //   })
+  //     .then(() => console.log("success"))
+  //     .catch((e) => console.log("Error :", e));
+  // };
 
   return (
     <>
@@ -113,7 +113,7 @@ const ContactPage = () => {
         typing={true}
         height={BANNER_HEIGHT_SHORT_PX}
       />
-
+{/* 
       <form
         onSubmit={onSubmit}
         name="contact"
@@ -153,7 +153,7 @@ const ContactPage = () => {
         <button type="submit" color="primary">
           Send
         </button>
-      </form>
+      </form> */}
     </>
   );
 };
