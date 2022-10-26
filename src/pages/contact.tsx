@@ -3,7 +3,7 @@
 import setBodyColor from "../utils/setBodyColor";
 // import Callout from "../components/Callout/callOut";
 import BannerVideo from "../components/BannerVideo/bannerVideo";
-import { BANNER_HEIGHT_SHORT_PX, COLOR_BASE, COLOR_BASE_TEXT } from "../styles/Constants";
+import { BANNER_HEIGHT_STANDARD_PX, COLOR_BASE, COLOR_BASE_TEXT } from "../styles/Constants";
 
 const pageTitle = "Contact Eleven.ai";
 
@@ -111,7 +111,7 @@ const ContactPage = () => {
         overlayColor={COLOR_BASE}
         textColor={COLOR_BASE_TEXT}
         typing={true}
-        height={BANNER_HEIGHT_SHORT_PX}
+        height={BANNER_HEIGHT_STANDARD_PX}
       />
 {/* 
       <form
