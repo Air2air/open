@@ -39,19 +39,21 @@ export const Header = () => {
       <HeaderWrapperOuter>
         {!isVisible && <HeaderOverlay />}
         <HeaderWrapperInner>
+        <HeaderLeft>
           <LogoWrapper>
             <Link to="/home">
               <LogoWhite width="150" />
             </Link>
           </LogoWrapper>
-          <HeaderButtonWrapper>
-            <Link to="/contact">
-              <HeaderButton>Contact Us</HeaderButton>
-            </Link>
+          <Link to="/contact">
+            <HeaderButton>Contact Us</HeaderButton>
+          </Link>
+          </HeaderLeft>
+          <HeaderRight>
             <HeaderLink to="/vision">Vision</HeaderLink>
             <HeaderLink to="/markets">Markets</HeaderLink>
             <HeaderLink to="/team">Team</HeaderLink>
-          </HeaderButtonWrapper>
+          </HeaderRight>
         </HeaderWrapperInner>
       </HeaderWrapperOuter>
     </>
@@ -106,12 +108,23 @@ const HeaderWrapperInner = styled.div`
   /* background-color: blue; */
 `;
 
-const HeaderButtonWrapper = styled.div`
+const HeaderLeft= styled.div`
+  display: flex;
+  align-items: center;
+  width:50%;
+  justify-content: space-between;
+  height: ${HEADER_HEIGHT_PX};
+  padding: 0;
+  /* background: #000; */
+`;
+
+
+const HeaderRight = styled.div`
   display: flex;
   align-items: center;
   height: ${HEADER_HEIGHT_PX};
   padding: 0;
-  /* background: gold; */
+  background: #000;
 `;
 
 const HeaderButton = styled.div`
