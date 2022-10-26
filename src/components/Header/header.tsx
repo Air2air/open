@@ -80,7 +80,7 @@ const HeaderButtonWrapper = styled.div`
 `;
 
 const HeaderButton = styled.div`
-  font-size: 1.1em;
+  font-size: 1em;
   font-family: "Roboto Condensed", sans-serif;
   color: ${COLOR_TEXT};
   padding: 0 24px;
@@ -98,8 +98,8 @@ const HeaderButton = styled.div`
 const HeaderLink = styled(Link)`
   font-family: "Roboto Condensed", sans-serif;
   color: ${COLOR_TEXT};
-  font-size: 1.1em;
-  padding: 0 30px;
+  font-size: 1em;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   text-transform: uppercase;

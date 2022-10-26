@@ -1,4 +1,8 @@
-import { BANNER_HEIGHT_PX, COLOR_TEXT, TEXT_OPACITY } from "../../styles/Constants";
+import {
+  BANNER_HEIGHT_PX,
+  COLOR_TEXT,
+  TEXT_OPACITY,
+} from "../../styles/Constants";
 import styled from "styled-components";
 import VideoCallout from "../VideoCallout/videoCallout";
 import TypeWriterEffect from "react-typewriter-effect";
@@ -13,12 +17,11 @@ export const PageBanner = ({
   overlayOpacity,
   overlayColor,
   textColor,
-  typing
+  typing,
 }) => {
   return (
     <>
       <PageBannerWrapper>
-      <AnimationOnScroll animateIn="animate__fadeIn" delay={1000}>
         {pageVideo ? (
           <VideoCallout
             pageVideo={pageVideo}
@@ -28,28 +31,29 @@ export const PageBanner = ({
         ) : (
           ""
         )}
-        </AnimationOnScroll>
         <TextWrapper>
-        <AnimationOnScroll animateIn="animate__fadeIn" delay={400}>
-          <PageTitle style={{ color: textColor && textColor }}>{pageTitle}</PageTitle>
-          {typing ? (
-            <TypeWriterParagraph
-              textStyle={{
-                fontFamily: "Roboto, sans-serif",
-                fontWeight: 300,
-                fontSize: "1.5em",
-                lineHeight: "1.5em",
-                color: COLOR_TEXT,
-                opacity:TEXT_OPACITY
-              }}
-              startDelay={1000}
-              cursorColor={COLOR_TEXT}
-              text={pageDescription}
-              typeSpeed={1}
-            />
-          ) : (
-            <PageDescription>{pageDescription}</PageDescription>
-          )}
+          <AnimationOnScroll animateIn="animate__fadeIn" delay={400}>
+            <PageTitle style={{ color: textColor && textColor }}>
+              {pageTitle}
+            </PageTitle>
+            {typing ? (
+              <TypeWriterParagraph
+                textStyle={{
+                  fontFamily: "Roboto, sans-serif",
+                  fontWeight: 300,
+                  fontSize: "1.5em",
+                  lineHeight: "1.5em",
+                  color: COLOR_TEXT,
+                  opacity: TEXT_OPACITY,
+                }}
+                startDelay={1000}
+                cursorColor={COLOR_TEXT}
+                text={pageDescription}
+                typeSpeed={1}
+              />
+            ) : (
+              <PageDescription>{pageDescription}</PageDescription>
+            )}
           </AnimationOnScroll>
         </TextWrapper>
       </PageBannerWrapper>
@@ -94,9 +98,8 @@ const PageDescription = styled.div`
   line-height: 1.3em;
   height: auto;
   text-align: left;
-  opacity:${TEXT_OPACITY}
+  opacity: ${TEXT_OPACITY};
 `;
-
 
 const TypeWriterParagraph = styled(TypeWriterEffect)`
   color: ${COLOR_TEXT};
@@ -106,7 +109,7 @@ const TypeWriterParagraph = styled(TypeWriterEffect)`
   line-height: 1.3em;
   height: auto;
   text-align: left;
-  opacity:${TEXT_OPACITY}
+  opacity: ${TEXT_OPACITY};
 `;
 
 export default PageBanner;
