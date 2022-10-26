@@ -21,22 +21,25 @@ export const Header = () => {
       document.body.scrollTop || document.documentElement.scrollTop;
     setHeight(winScroll);
 
+
     if (winScroll > heightToHideFrom) {
       isVisible && setIsVisible(true);
     } else {
       setIsVisible(false); //(true);
+      return height
     }
   };
 
   useEffect(() => {
     window.addEventListener("scroll", listenToScroll);
     return () => window.removeEventListener("scroll", listenToScroll);
-  }, []);
+    
+  });
 
   return (
     <>
       <HeaderWrapperOuter>
-        {isVisible && <HeaderOverlay />}
+        {isVisible && <HeaderOverlay/>}
         <HeaderWrapperInner>
           <LogoWrapper>
             <Link to="/home">
