@@ -15,7 +15,7 @@ import {
 
 
 const pageVideo =
-"https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/Vyh-jcp/videoblocks-realistic-medical-animation-of-several-coronavirus-cells-covid-19-flying-in-the-air_s_zc2y7du__371df1132bebc61a702365a54ae84d5c__P360.mp4";
+"https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/cq8l59W/videoblocks-abstract-dna-double-helix-with-depth-of-field-rotating_bwvuhuvwu__e0e0c7137fc604d291ce0add7aa6df8c__P360.mp4";
 
 const BioTechPage = () => {
   setBodyColor({ color: COLOR_BASE });
@@ -25,7 +25,7 @@ const BioTechPage = () => {
         pageTitle="BioTech Market"
         pageDescription="Biotechnology companies are increasingly taking the lead in new drug development, unlike Pharma companies who are pulling back from expensive basic research, increasingly becoming massive marketing vehicles for the biotech world."
         pageVideo={pageVideo}
-        overlayOpacity={0.8}
+        overlayOpacity={0.1}
         overlayColor={COLOR_BASE}
         textColor={COLOR_BASE_TEXT}
         typing={true}

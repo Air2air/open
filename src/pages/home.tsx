@@ -4,7 +4,7 @@ import BannerVideo from "../components/BannerVideo/bannerVideo";
 import { BANNER_HEIGHT_STANDARD_PX, COLOR_BASE, COLOR_BASE_1, COLOR_BASE_TEXT } from "../styles/Constants";
 
 const pageVideo =
-  "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/cq8l59W/videoblocks-abstract-dna-double-helix-with-depth-of-field-rotating_swl3slvvu__50289549fe2f14530b4e0bc181fec7ff__P360.mp4";
+  "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/cW5lDBG/videoblocks-20201228_plexus_cover_vk_02_rexgdivld__12c5a1f1e37898acd6e23f1653665c77__P360.mp4";
 
 
 const HomePage = () => {
@@ -15,7 +15,7 @@ const HomePage = () => {
         pageTitle="Just the outcomes you want."
         pageDescription="Derisk your health AI investments with 100+ years of combined real-world experience in healthcare AI."
         pageVideo={pageVideo}
-        overlayOpacity={0.00}
+        overlayOpacity={0.6}
         overlayColor={COLOR_BASE}
         textColor={COLOR_BASE_TEXT}
         typing={true}

@@ -111,7 +111,7 @@ const HeaderWrapperInner = styled.div`
 const HeaderLeft= styled.div`
   display: flex;
   align-items: center;
-  width:50%;
+  width:55%;
   justify-content: space-between;
   height: ${HEADER_HEIGHT_PX};
   padding: 0;
@@ -123,7 +123,7 @@ const HeaderRight = styled.div`
   display: flex;
   align-items: center;
   height: ${HEADER_HEIGHT_PX};
-  padding: 0;
+  padding: 0 14px;
   background: #000;
 `;
 
