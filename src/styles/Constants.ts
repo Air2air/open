@@ -2,8 +2,10 @@
 export const HEADER_HEIGHT = 90;
 export const HEADER_HEIGHT_PX = HEADER_HEIGHT + "px";
 
-export const BANNER_HEIGHT = 600;
-export const BANNER_HEIGHT_PX = BANNER_HEIGHT + "px";
+export const BANNER_HEIGHT_STANDARD = 600;
+export const BANNER_HEIGHT_STANDARD_PX = BANNER_HEIGHT_STANDARD + "px";
+export const BANNER_HEIGHT_SHORT = 400;
+export const BANNER_HEIGHT_SHORT_PX = BANNER_HEIGHT_SHORT + "px";
 
 export const FOOTER_HEIGHT = 500;
 export const FOOTER_HEIGHT_PX = FOOTER_HEIGHT + "px";
@@ -42,6 +44,7 @@ export const COLOR_BASE_3 = "hsl(0, 0%, 17%)";
 export const COLOR_BASE_4 = "hsl(0, 0%, 19%)";
 export const COLOR_BASE_5 = "hsl(0, 0%, 21%)";
 export const COLOR_BASE_6 = "hsl(0, 0%, 23%)";
+export const COLOR_BASE_LIGHT = "hsl(0, 0%, 43%)";
 export const COLOR_BASE_TEXT = "hsl(0, 80%, 50%)";
 
 export const COLOR_BLUE = "hsl(213, 64%, 11%)";

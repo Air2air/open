@@ -1,12 +1,23 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { ReactComponent as LogoWhite } from "./../../images/logo_white.svg";
-import { FOOTER_HEIGHT_PX } from "../../styles/Constants";
+import {
+
+  COLOR_BASE_6,
+  COLOR_BASE_LIGHT,
+
+  FOOTER_HEIGHT_PX,
+} from "../../styles/Constants";
 
 export const Footer = () => {
   return (
     <FooterWrapperOuter>
       <FooterWrapperInner>
+        <FooterButtonWrapper>
+          <FooterLink to="/">Home</FooterLink>
+          <FooterLink to="/approach">Approach</FooterLink>
+          <FooterLink to="/team">Team</FooterLink>
+        </FooterButtonWrapper>
         <FooterButtonWrapper>
           <FooterLink to="/">Home</FooterLink>
           <FooterLink to="/approach">Approach</FooterLink>
@@ -60,11 +71,14 @@ const FooterLink = styled(Link)`
 
 const FooterCopyright = styled.div`
   font-size: 0.9em;
-  /* padding: 0 30px; */
+  color: ${COLOR_BASE_6};
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   height: 40px;
+  div {
+    color: ${COLOR_BASE_LIGHT};
+  }
   /* background: red; */
 `;

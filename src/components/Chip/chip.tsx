@@ -46,8 +46,8 @@ const Chip = (props: { section: string }) => {
     </ChipWrapper>
    ) : null}
 
-   {props.section === "Elevens" ? (
-    <ChipWrapper className="elevens">
+   {props.section === "Eleven" ? (
+    <ChipWrapper className="eleven">
      <LogoWhite size={ChipLogoSize} />
      <ChipText>{props.section}</ChipText>
     </ChipWrapper>
@@ -73,7 +73,7 @@ const ChipWrapper = styled(animated.div)`
  &.pharma {
   background: ${COLOR_PHARMA};
  }
- &.elevens {
+ &.eleven {
   background: ${COLOR_ELEVENS};
  }
 `;

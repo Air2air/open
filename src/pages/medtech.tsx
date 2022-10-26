@@ -2,6 +2,7 @@ import setBodyColor from"../utils/setBodyColor";
 import Callout from"../components/Callout/callOut";
 import PageBanner from"../components/PageBanner/pageBanner";
 import {
+  BANNER_HEIGHT_STANDARD_PX,
   COLOR_BASE,
   COLOR_BASE_1,
   COLOR_BASE_2,
@@ -29,6 +30,7 @@ const MedTechPage = () => {
         overlayColor={COLOR_BASE}
         textColor={COLOR_BASE_TEXT}
         typing={true}
+        height={BANNER_HEIGHT_STANDARD_PX}
       />
       <Callout
         calloutTitle="Pre-Seed Stage"

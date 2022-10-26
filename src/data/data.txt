@@ -39,33 +39,33 @@ export const dataRoutes = {
     {
       id: "About",
       path: "about",
-      section: "Elevens",
+      section: "Eleven",
       element: (
-        <AboutPage section="Elevens" nextPath="/team" nextName="Elevens Team" />
+        <AboutPage section="Eleven" nextPath="/team" nextName="Eleven Team" />
       ),
     },
     {
       id: "Home",
       path: "/",
-      section: "Elevens",
+      section: "Eleven",
       element: (
-        <HomePage section="Elevens" nextPath="/team" nextName="Elevens Team" />
+        <HomePage section="Eleven" nextPath="/team" nextName="Eleven Team" />
       ),
     },
     {
       id: "Home2",
       path: "home",
-      section: "Elevens",
+      section: "Eleven",
       element: (
-        <HomePage section="Elevens" nextPath="/team" nextName="Elevens Team" />
+        <HomePage section="Eleven" nextPath="/team" nextName="Eleven Team" />
       ),
     },
     {
-      id: "Elevens Team",
+      id: "Eleven Team",
       path: "team",
-      section: "Elevens",
+      section: "Eleven",
       element: (
-        <TeamPage section="Elevens" nextPath="/biotech" nextName="Bio" />
+        <TeamPage section="Eleven" nextPath="/biotech" nextName="Bio" />
       ),
     },
     /* --------------- Bio --------------- */
@@ -453,7 +453,7 @@ export const dataRoutes = {
         <PharmaTechContactPage
           section="Pharma"
           nextPath="/home"
-          nextName="Elevens"
+          nextName="Eleven"
         />
       ),
     },

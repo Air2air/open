@@ -1,9 +1,9 @@
 import setBodyColor from "../utils/setBodyColor";
 import PageBanner from "../components/PageBanner/pageBanner";
 import Team from "../components/Team/team";
-import { COLOR_BASE, COLOR_BASE_TEXT } from "../styles/Constants";
+import { BANNER_HEIGHT_SHORT_PX, COLOR_BASE, COLOR_BASE_TEXT } from "../styles/Constants";
 
-const pageTitle = "Elevens Team";
+const pageTitle = "Elevens";
 
 const pageVideo =
   "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/rsUQQw39cl52esufb/videoblocks-abstract-dna-pack-2021-09-08-19-33-23-utc-3_sfgtv1cpc__a58044aee90f7390d9e398a567ab69e8__P360.mp4";
@@ -20,6 +20,7 @@ const TeamPage = () => {
         overlayColor={COLOR_BASE}
         textColor={COLOR_BASE_TEXT}
         typing={true}
+        height={BANNER_HEIGHT_SHORT_PX}
       />
 
       <Team />

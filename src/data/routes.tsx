@@ -1,6 +1,8 @@
 
 import ApproachPage from "../pages/approach";
 import BioTechPage from "../pages/biotech";
+import ContactPage from "../pages/contact";
+import ContactSuccessPage from "../pages/contactSuccess";
 import HealthTechPage from "../pages/healthtech";
 import HomePage from "../pages/home";
 import MarketsPage from "../pages/markets";
@@ -17,6 +19,22 @@ export const dataRoutes = {
       section: "Approach",
       element: (
         <ApproachPage  />
+      ),
+    },
+    {
+      id: "Contact",
+      path: "contact",
+      section: "Contact",
+      element: (
+        <ContactPage  />
+      ),
+    },
+    {
+      id: "ContactSuccess",
+      path: "contactSuccess",
+      section: "ContactSuccess",
+      element: (
+        <ContactSuccessPage  />
       ),
     },
     {

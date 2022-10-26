@@ -25,20 +25,19 @@ export const Header = () => {
       isVisible && setIsVisible(false);
     } else {
       setIsVisible(true); //(true);
-      return height
+      return height;
     }
   };
 
   useEffect(() => {
     window.addEventListener("scroll", listenToScroll);
     return () => window.removeEventListener("scroll", listenToScroll);
-    
   });
 
   return (
     <>
       <HeaderWrapperOuter>
-        {!isVisible && <HeaderOverlay/>}
+        {!isVisible && <HeaderOverlay />}
         <HeaderWrapperInner>
           <LogoWrapper>
             <Link to="/home">
@@ -49,7 +48,7 @@ export const Header = () => {
             <Link to="/contact">
               <HeaderButton>Contact Us</HeaderButton>
             </Link>
-            <HeaderLink to="/">Elevens</HeaderLink>
+            <HeaderLink to="/">Eleven</HeaderLink>
             <HeaderLink to="/markets">Markets</HeaderLink>
             <HeaderLink to="/vision">Vision</HeaderLink>
             <HeaderLink to="/team">Team</HeaderLink>

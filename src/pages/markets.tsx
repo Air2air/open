@@ -1,7 +1,14 @@
-import setBodyColor from '../utils/setBodyColor'
+import setBodyColor from "../utils/setBodyColor";
 import Callout from "../components/Callout/callOut";
 import PageBanner from "../components/PageBanner/pageBanner";
-import { COLOR_BASE, COLOR_BASE_1, COLOR_BASE_2, COLOR_BASE_3, COLOR_BASE_TEXT } from "../styles/Constants";
+import {
+  BANNER_HEIGHT_STANDARD_PX,
+  COLOR_BASE,
+  COLOR_BASE_1,
+  COLOR_BASE_2,
+  COLOR_BASE_3,
+  COLOR_BASE_TEXT,
+} from "../styles/Constants";
 
 const pageTitle = "Our Markets";
 
@@ -9,7 +16,7 @@ const pageVideo =
   "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/Vyh-jcp/videoblocks-realistic-medical-animation-of-several-coronavirus-cells-covid-19-flying-in-the-air_s_zc2y7du__371df1132bebc61a702365a54ae84d5c__P360.mp4";
 
 const MarketsPage = () => {
-  setBodyColor({color: COLOR_BASE})
+  setBodyColor({ color: COLOR_BASE });
   return (
     <>
       <PageBanner
@@ -20,6 +27,7 @@ const MarketsPage = () => {
         overlayColor={COLOR_BASE}
         textColor={COLOR_BASE_TEXT}
         typing={true}
+        height={BANNER_HEIGHT_STANDARD_PX}
       />
       <Callout
         calloutTitle="Biotech"
@@ -30,7 +38,7 @@ const MarketsPage = () => {
         buttonTo="/biotech"
         typing={false}
       />
-            <Callout
+      <Callout
         calloutTitle="Healthtech"
         calloutText="Our description here about our Healthtech service offerings and benefits.  Our description here about our Healthtech service offerings and benefits.  "
         backgroundColor={COLOR_BASE_1}

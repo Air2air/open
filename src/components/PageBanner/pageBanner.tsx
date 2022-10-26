@@ -1,5 +1,4 @@
 import {
-  BANNER_HEIGHT_PX,
   COLOR_TEXT,
   TEXT_OPACITY,
 } from "../../styles/Constants";
@@ -18,15 +17,17 @@ export const PageBanner = ({
   overlayColor,
   textColor,
   typing,
+  height,
 }) => {
   return (
     <>
-      <PageBannerWrapper>
+      <PageBannerWrapper style={{ height: height }}>
         {pageVideo ? (
           <VideoCallout
             pageVideo={pageVideo}
             overlayOpacity={overlayOpacity}
             overlayColor={overlayColor}
+            height={height}
           />
         ) : (
           ""
@@ -67,7 +68,6 @@ const PageBannerWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: ${BANNER_HEIGHT_PX};
   width: 100vw;
   overflow: hidden;
   align-items: center;
