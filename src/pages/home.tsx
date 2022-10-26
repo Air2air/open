@@ -4,7 +4,7 @@ import BannerVideo from "../components/BannerVideo/bannerVideo";
 import { BANNER_HEIGHT_STANDARD_PX, COLOR_BASE, COLOR_BASE_1, COLOR_BASE_TEXT } from "../styles/Constants";
 
 const pageVideo =
-  "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/NIHmZbghlilb1qj7b/videoblocks-bacteria-virus-or-germs-microorganism-cells-under-microscope-with-depth_huxxzteyi__85fcc74c9b372b7e15a77bcaa433e568__P360.mp4";
+  "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/cq8l59W/videoblocks-abstract-dna-double-helix-with-depth-of-field-rotating_swl3slvvu__50289549fe2f14530b4e0bc181fec7ff__P360.mp4";
 
 
 const HomePage = () => {

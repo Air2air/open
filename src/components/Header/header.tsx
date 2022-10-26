@@ -48,9 +48,8 @@ export const Header = () => {
             <Link to="/contact">
               <HeaderButton>Contact Us</HeaderButton>
             </Link>
-            <HeaderLink to="/">Eleven</HeaderLink>
-            <HeaderLink to="/markets">Markets</HeaderLink>
             <HeaderLink to="/vision">Vision</HeaderLink>
+            <HeaderLink to="/markets">Markets</HeaderLink>
             <HeaderLink to="/team">Team</HeaderLink>
           </HeaderButtonWrapper>
         </HeaderWrapperInner>

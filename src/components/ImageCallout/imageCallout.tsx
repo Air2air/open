@@ -8,8 +8,7 @@ const backgroundImage = "url(/images/content/" + pageImage + ")"
 
   return (
     <>
-      <ImageWrapper style={{ height: height, backgroundImage: backgroundImage}}>
-      </ImageWrapper>
+      <ImageWrapper style={{ height: height, backgroundImage: backgroundImage}} />
       <BannerImageOpacityOverlay
         overlayOpacity={overlayOpacity}
         overlayColor={overlayColor}
