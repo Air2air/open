@@ -18,7 +18,7 @@ const TeamPage = () => {
     <>
       <BannerVideo
         pageTitle="Elevens"
-        pageDescription="Our team, accomplishments, credentials and values.  "
+        pageDescription="If you know your industry, then you already know the Elevens."
         pageVideo={pageVideo}
         overlayOpacity={0.2}
         overlayColor={COLOR_BASE}
@@ -28,7 +28,9 @@ const TeamPage = () => {
       />
       <Callout
         calloutTitle=""
-        calloutText="Eleven was created when several of the foremost AI and medical minds on the planet came together to accelerate breakthrough ventures in health-tech, med-tech, bio-tech, and pharma-tech. These experts are leaders in AI technologies and business in medicine, healthcare, pharmaceutical sciences, and biosciences."
+        calloutText="<p>Eleven was created when three fold eleven of the foremost AI and medical minds on the planet came together to accelerate breakthrough ventures in health-tech, med-tech, bio-tech, and pharma-tech. These experts are the leaders in AI technologies and business in medicine, healthcare, bioscience, and pharmaceutical science, and all share a mission to deliver the most fundamental advancements in the Modern Age.</p>
+        <p>
+        As individuals these “Elevens” have mastered the premier institutions of learning and are each accomplished in their fields, and together the “Eleven” is the world’s superior resource in the category. The landmark social good Elevens are doing to improve industry's chances for success are admirable, and while their ranks will grow and transform they will always remain the very best.</p>"
         backgroundColor={COLOR_BASE}
         textColor={COLOR_BASE_TEXT}
         buttonText=""
