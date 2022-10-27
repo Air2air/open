@@ -16,12 +16,12 @@ export const Footer = () => {
         <FooterButtonWrapper>
           <FooterLink to="/">Home</FooterLink>
           <FooterLink to="/approach">Approach</FooterLink>
-          <FooterLink to="/team">Team</FooterLink>
+          <FooterLink to="/about">Team</FooterLink>
         </FooterButtonWrapper>
         <FooterButtonWrapper>
           <FooterLink to="/">Home</FooterLink>
           <FooterLink to="/approach">Approach</FooterLink>
-          <FooterLink to="/team">Team</FooterLink>
+          <FooterLink to="/about">Team</FooterLink>
         </FooterButtonWrapper>
         <FooterCopyright>
           <div>&copy; Eleven Group Inc.</div>

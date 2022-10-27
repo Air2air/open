@@ -1,14 +1,18 @@
-import setBodyColor from '../utils/setBodyColor'
+import setBodyColor from "../utils/setBodyColor";
 import Callout from "../components/Callout/callOut";
 import BannerVideo from "../components/BannerVideo/bannerVideo";
-import { BANNER_HEIGHT_STANDARD_PX, COLOR_BASE, COLOR_BASE_1, COLOR_BASE_TEXT } from "../styles/Constants";
+import {
+  BANNER_HEIGHT_STANDARD_PX,
+  COLOR_BASE,
+  COLOR_BASE_1,
+  COLOR_BASE_TEXT,
+} from "../styles/Constants";
 
 const pageVideo =
   "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/PDaTSuJ/plexus-abstract-network-titles-cinematic-background-11_sw_9z9b0__ffac24ba90312a2727157d246ace9773__P720.mp4";
 
-
 const HomePage = () => {
-  setBodyColor({color: COLOR_BASE})
+  setBodyColor({ color: COLOR_BASE });
   return (
     <>
       <BannerVideo
@@ -28,6 +32,14 @@ const HomePage = () => {
         textColor={COLOR_BASE_TEXT}
         buttonText="How we work together"
         buttonTo="/approach"
+      />
+      <Callout
+        calloutTitle="Your company stages"
+        calloutText="text about the timeline"
+        backgroundColor={COLOR_BASE_1}
+        textColor={COLOR_BASE_TEXT}
+        buttonText="Company stages"
+        buttonTo="/timeline"
       />
     </>
   );

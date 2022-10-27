@@ -67,7 +67,7 @@ export const Header = () => {
               <HeaderRight>
                 <HeaderLink to="/vision">Vision</HeaderLink>
                 <HeaderLink to="/markets">Markets</HeaderLink>
-                <HeaderLink to="/team">Team</HeaderLink>
+                <HeaderLink to="/about">About</HeaderLink>
               </HeaderRight>
             </HeaderWrapperInner>
           </>

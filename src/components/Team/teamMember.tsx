@@ -9,7 +9,7 @@ import {
 } from "../../styles/Constants";
 
 const TeamMember = ({ id, nameFirst, nameLast, apellation, role, photo, photoScale, photoY }) => {
-  const imgsrc = "/images/team/" + photo;
+  const imgsrc = "/images/about/" + photo;
 
   return (
     <TeamMemberWrapper key={id}>

@@ -1,3 +1,4 @@
+import AboutPage from "../pages/about";
 import ApproachPage from "../pages/approach";
 import BioTechPage from "../pages/biotech";
 import ContactPage from "../pages/contact";
@@ -7,10 +8,17 @@ import HomePage from "../pages/home";
 import MarketsPage from "../pages/markets";
 import MedTechPage from "../pages/medtech";
 import PharmaTechPage from "../pages/pharmatech";
-import TeamPage from "../pages/team";
+import TimeLinePage from "../pages/timeLine";
 import VisionPage from "../pages/vision";
 
+
 export const dataRoutes = [
+  {
+    id: "About",
+    path: "about",
+    section: "About",
+    element: <AboutPage />,
+  },
   {
     id: "Approach",
     path: "approach",
@@ -48,17 +56,18 @@ export const dataRoutes = [
     element: <MarketsPage />,
   },
   {
+    id: "TimeLine",
+    path: "timeline",
+    section: "TimeLine",
+    element: <TimeLinePage />,
+  },
+  {
     id: "Vision",
     path: "vision",
     section: "Vision",
     element: <VisionPage />,
   },
-  {
-    id: "Team",
-    path: "team",
-    section: "Team",
-    element: <TeamPage />,
-  },
+
   {
     id: "Biotech",
     path: "biotech",

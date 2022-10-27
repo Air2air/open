@@ -1,6 +1,6 @@
 import setBodyColor from "../utils/setBodyColor";
 import BannerVideo from "../components/BannerVideo/bannerVideo";
-// import Team from "../components/Team/team";
+// import About from "../components/About/about";
 import {
   BANNER_HEIGHT_STANDARD_PX,
   COLOR_BASE,
@@ -8,11 +8,10 @@ import {
 } from "../styles/Constants";
 import { Callout } from "../components/Callout/callOut";
 
-
 const pageVideo =
   "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/YqGSkmb/videoblocks-0001_b968rdswd__7c3bff625f26e0abd93eaf6b0611910b__P720.mp4";
 
-const TeamPage = () => {
+const AboutPage = () => {
   setBodyColor({ color: COLOR_BASE });
   return (
     <>
@@ -40,4 +39,4 @@ const TeamPage = () => {
   );
 };
 
-export default TeamPage;
+export default AboutPage;
