@@ -3,7 +3,6 @@ import { TimeLineItemLeft, TimeLineItemRight } from "./timeLineItem";
 import { dataTimeLine } from "../../data/timeLine";
 import {
   COLOR_BASE_LIGHT,
-  COLOR_BASE_TEXT,
   CONTENT_WIDTH,
 } from "../../styles/Constants";
 

@@ -7,6 +7,8 @@ import {
   BUTTON_COLOR_HOVER,
   BUTTON_HEIGHT_PX,
   COLOR_BASE,
+  COLOR_BASE_1,
+  COLOR_BASE_2,
   COLOR_TEXT,
   HEADER_HEIGHT_PX,
 } from "../../styles/Constants";
@@ -139,8 +141,7 @@ const HeaderRight = styled.div`
   display: flex;
   align-items: center;
   height: ${HEADER_HEIGHT_PX};
-  padding: 0 14px;
-  background: #000;
+  background: ${COLOR_BASE};
 `;
 
 const HeaderButton = styled.div`
@@ -163,12 +164,13 @@ const HeaderLink = styled(Link)`
   font-family: "Roboto Condensed", sans-serif;
   color: ${COLOR_TEXT};
   font-size: 1em;
-  padding: 0 20px;
+  padding: 0 30px;
   display: flex;
   align-items: center;
   text-transform: uppercase;
   height: ${HEADER_HEIGHT_PX};
-  /* &:hover {
-    background: ${BUTTON_COLOR_HOVER};
-  } */
+  background: ${COLOR_BASE};
+  &:hover {
+    background: ${COLOR_BASE_2};
+  }
 `;

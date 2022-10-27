@@ -48,7 +48,7 @@ export const Callout = (props: ICalloutTextProps) => {
             <CalloutParagraph>{calloutTextParsed}</CalloutParagraph>
           </AnimationOnScroll>
 
-          <AnimationOnScroll animateIn="animate__fadeInUp" delay={400}>
+          <AnimationOnScroll animateIn="animate__fadeInUp" delay={0}>
             {buttonText ? <Button to={buttonTo} text={buttonText} /> : ""}
           </AnimationOnScroll>
         </TextWrapper>

@@ -20,7 +20,7 @@ const HomePage = () => {
         pageTitle="Just the outcomes you want."
         pageDescription="Derisk your health AI investments with 100+ years of combined real-world experience in healthcare AI."
         pageVideo={pageVideo}
-        overlayOpacity={0.2}
+        overlayOpacity={0.1}
         overlayColor={COLOR_BASE}
         textColor={COLOR_BASE_TEXT}
         typing={true}
