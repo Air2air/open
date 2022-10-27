@@ -26,6 +26,9 @@ export const TEAM_MEMBER_WIDTH_PX = TEAM_MEMBER_WIDTH + "px";
 export const TEAM_MEMBER_PHOTO = 160;
 export const TEAM_MEMBER_PHOTO_PX = TEAM_MEMBER_PHOTO + "px";
 
+// Breakpoint
+export const BREAKPOINT = 700;
+
 // Colors
 export const COLOR_BIO = "#ff9a0e";
 export const COLOR_HEALTH = "#39b3a5";

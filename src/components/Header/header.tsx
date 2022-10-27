@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { ReactComponent as LogoWhite } from "./../../images/logo_text_white.svg";
 import {
+  BREAKPOINT,
   BUTTON_COLOR,
   BUTTON_COLOR_HOVER,
   BUTTON_HEIGHT_PX,
@@ -12,6 +13,7 @@ import {
 import { useState, useEffect } from "react";
 
 export const Header = () => {
+  /*------ Scrolling -------*/
   const [isVisible, setIsVisible] = useState(false);
   const [height, setHeight] = useState(0);
 
@@ -34,27 +36,42 @@ export const Header = () => {
     return () => window.removeEventListener("scroll", listenToScroll);
   });
 
+  /*------ Responsive -------*/
+
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
+
   return (
     <>
       <HeaderWrapperOuter>
-        {!isVisible && <HeaderOverlay />}
-        <HeaderWrapperInner>
-        <HeaderLeft>
-          <LogoWrapper>
-            <Link to="/home">
-              <LogoWhite width="150" />
-            </Link>
-          </LogoWrapper>
-          <Link to="/contact">
-            <HeaderButton>Contact Us</HeaderButton>
-          </Link>
-          </HeaderLeft>
-          <HeaderRight>
-            <HeaderLink to="/vision">Vision</HeaderLink>
-            <HeaderLink to="/markets">Markets</HeaderLink>
-            <HeaderLink to="/team">Team</HeaderLink>
-          </HeaderRight>
-        </HeaderWrapperInner>
+        {width > BREAKPOINT ? (
+          <>
+            {!isVisible && <HeaderOverlay />}
+            <HeaderWrapperInner>
+              <HeaderLeft>
+                <LogoWrapper>
+                  <Link to="/home">
+                    <LogoWhite width="150" />
+                  </Link>
+                </LogoWrapper>
+                <Link to="/contact">
+                  <HeaderButton>Contact Us</HeaderButton>
+                </Link>
+              </HeaderLeft>
+              <HeaderRight>
+                <HeaderLink to="/vision">Vision</HeaderLink>
+                <HeaderLink to="/markets">Markets</HeaderLink>
+                <HeaderLink to="/team">Team</HeaderLink>
+              </HeaderRight>
+            </HeaderWrapperInner>
+          </>
+        ) : null}
       </HeaderWrapperOuter>
     </>
   );
@@ -78,7 +95,7 @@ const HeaderOverlay = styled.div`
   width: 100vw;
   height: ${HEADER_HEIGHT_PX};
   background: ${COLOR_BASE};
-  transition: all 2000ms;
+  /* transition: all 2000ms; */
 `;
 
 const LogoWrapper = styled.div`
@@ -108,16 +125,15 @@ const HeaderWrapperInner = styled.div`
   /* background-color: blue; */
 `;
 
-const HeaderLeft= styled.div`
+const HeaderLeft = styled.div`
   display: flex;
   align-items: center;
-  width:55%;
+  width: 55%;
   justify-content: space-between;
   height: ${HEADER_HEIGHT_PX};
   padding: 0;
   /* background: #000; */
 `;
-
 
 const HeaderRight = styled.div`
   display: flex;

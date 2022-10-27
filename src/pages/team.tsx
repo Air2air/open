@@ -6,6 +6,7 @@ import {
   COLOR_BASE,
   COLOR_BASE_TEXT,
 } from "../styles/Constants";
+import { Callout } from "../components/Callout/callOut";
 
 
 const pageVideo =
@@ -25,7 +26,14 @@ const TeamPage = () => {
         typing={true}
         height={BANNER_HEIGHT_STANDARD_PX}
       />
-      {/* <Team /> */}
+      <Callout
+        calloutTitle="Pre-Seed Stage"
+        calloutText="Eleven was created when several of the foremost AI and medical minds on the planet came together to accelerate breakthrough ventures in health-tech, med-tech, bio-tech, and pharma-tech. These experts are leaders in AI technologies and business in medicine, healthcare, pharmaceutical sciences, and biosciences."
+        backgroundColor={COLOR_BASE}
+        textColor={COLOR_BASE_TEXT}
+        buttonText=""
+        buttonTo=""
+      />
     </>
   );
 };

@@ -1,6 +1,5 @@
 import { COLOR_TEXT, TEXT_OPACITY } from "../../styles/Constants";
 import styled from "styled-components";
-// import ImageCallout from "../ImageCallout/videoCallout";
 import TypeWriterEffect from "react-typewriter-effect";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import ImageCallout from "../ImageCallout/imageCallout";
