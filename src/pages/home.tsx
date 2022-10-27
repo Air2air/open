@@ -5,6 +5,7 @@ import {
   BANNER_HEIGHT_STANDARD_PX,
   COLOR_BASE,
   COLOR_BASE_1,
+  COLOR_BASE_2,
   COLOR_BASE_TEXT,
 } from "../styles/Constants";
 
@@ -36,7 +37,7 @@ const HomePage = () => {
       <Callout
         calloutTitle="Your company stages"
         calloutText="text about the timeline"
-        backgroundColor={COLOR_BASE_1}
+        backgroundColor={COLOR_BASE_2}
         textColor={COLOR_BASE_TEXT}
         buttonText="Company stages"
         buttonTo="/timeline"

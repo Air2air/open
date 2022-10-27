@@ -1,18 +1,18 @@
 import styled from "styled-components";
-import TimeLineItem from "./timeLineItem";
+import { TimeLineItemLeft, TimeLineItemRight } from "./timeLineItem";
 import { dataTimeLine } from "../../data/timeLine";
+import { COLOR_BASE_LIGHT, CONTENT_WIDTH } from "../../styles/Constants";
+
 
 const TimeLineLeft = () => {
   const timeLineMap = dataTimeLine
-    .filter((u) => u.side == "left")
+    .filter((u) => u.side === "left")
     .map((props) => (
-      <TimeLineItem
+      <TimeLineItemLeft
         key={props.id}
         id={props.id}
-        order={props.order}
         title={props.title}
         desc={props.desc}
-        side={props.side}
       />
     ));
   return <>{timeLineMap}</>;
@@ -22,23 +22,43 @@ const TimeLineRight = () => {
   const timeLineMap = dataTimeLine
     .filter((u) => u.side !== "left")
     .map((props) => (
-      <TimeLineItem
+      <TimeLineItemRight
         key={props.id}
         id={props.id}
-        order={props.order}
         title={props.title}
         desc={props.desc}
-        side={props.side}
       />
     ));
-  return (<>{timeLineMap}</>);
+  return <>{timeLineMap}</>;
 };
 
 const TimeLine = () => (
   <>
-    <TimeLineLeft />
-    <TimeLineRight />
+    <TimeLineWrapper>
+      <TimeLineItemColumn style={{borderRight:`2px solid ${COLOR_BASE_LIGHT}` }}>
+        <TimeLineLeft />
+      </TimeLineItemColumn>
+      <TimeLineItemColumn>
+        <TimeLineRight />
+      </TimeLineItemColumn>
+    </TimeLineWrapper>
   </>
 );
 
 export default TimeLine;
+
+const TimeLineWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: ${CONTENT_WIDTH};
+  margin: 0 auto;
+`;
+
+const TimeLineItemColumn = styled.div`
+  display: flex;
+  flex: 4;
+  flex-direction: column;
+  justify-content: space-around;
+`;
+
+

@@ -1,4 +1,4 @@
-// Dimensions
+// HEIGHT
 export const HEADER_HEIGHT = 90;
 export const HEADER_HEIGHT_PX = HEADER_HEIGHT + "px";
 
@@ -25,6 +25,9 @@ export const TEAM_MEMBER_WIDTH = 240;
 export const TEAM_MEMBER_WIDTH_PX = TEAM_MEMBER_WIDTH + "px";
 export const TEAM_MEMBER_PHOTO = 160;
 export const TEAM_MEMBER_PHOTO_PX = TEAM_MEMBER_PHOTO + "px";
+
+// WIDTH
+export const CONTENT_WIDTH = "70%";
 
 // Breakpoint
 export const BREAKPOINT = 700;

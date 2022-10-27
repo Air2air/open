@@ -1,5 +1,6 @@
 import {
   COLOR_TEXT,
+  CONTENT_WIDTH, 
   TEXT_OPACITY,
 } from "../../styles/Constants";
 import styled from "styled-components";
@@ -79,7 +80,7 @@ const TextWrapper = styled.div`
   margin: 80px auto 0 auto;
   z-index: +1;
   height: auto;
-  width: 60%;
+  width: ${CONTENT_WIDTH};
   text-align: left;
 `;
 
