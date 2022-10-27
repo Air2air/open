@@ -36,7 +36,7 @@ const HomePage = () => {
       />
       <Callout
         calloutTitle="Your company stages"
-        calloutText="text about the timeline"
+        calloutText="Eleven advises health-tech startups through every investment phase.  We save you costly time, money and equity."
         backgroundColor={COLOR_BASE_2}
         textColor={COLOR_BASE_TEXT}
         buttonText="Company stages"
