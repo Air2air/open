@@ -6,21 +6,27 @@ import {
   COLOR_TEXT,
 } from "../../styles/Constants";
 import parse from "html-react-parser";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export const TimeLineItemLeft = ({ id, title, desc }) => {
   const descParsed = parse(desc);
   // const side  = ''
 
   return (
-    <TimeLineItemWrapper key={id}>
-      <TimeLineContent>
-        <TimeLineItemTitle>{title}</TimeLineItemTitle>
-        <TimeLineItemDesc>{descParsed}</TimeLineItemDesc>
-      </TimeLineContent>
-      <TimeLineItemLineBox>
-        <div className="line"></div>
-      </TimeLineItemLineBox>
-    </TimeLineItemWrapper>
+    <AnimationOnScroll key={id} animateIn="animate__fadeInLeft" delay={0}>
+      <TimeLineItemWrapper>
+        <TimeLineContent>
+          <TimeLineItemTitle>{title}</TimeLineItemTitle>
+          <TimeLineItemDesc>{descParsed}</TimeLineItemDesc>
+        </TimeLineContent>
+        <TimeLineItemLineBox>
+          <div
+            id={id}
+            className="line animate__animated animate__slideInLeft animate__delay-1s"
+          ></div>
+        </TimeLineItemLineBox>
+      </TimeLineItemWrapper>
+    </AnimationOnScroll>
   );
 };
 
@@ -29,15 +35,20 @@ export const TimeLineItemRight = ({ id, title, desc }) => {
   // const side  = ''
 
   return (
-    <TimeLineItemWrapper key={id}>
-      <TimeLineItemLineBox>
-        <div className="line"></div>
-      </TimeLineItemLineBox>
-      <TimeLineContent>
-        <TimeLineItemTitle>{title}</TimeLineItemTitle>
-        <TimeLineItemDesc>{descParsed}</TimeLineItemDesc>
-      </TimeLineContent>
-    </TimeLineItemWrapper>
+    <AnimationOnScroll key={id} animateIn="animate__fadeInRight" delay={0}>
+      <TimeLineItemWrapper>
+        <TimeLineItemLineBox>
+          <div
+            id={id}
+            className="line animate__animated animate__slideInRight animate__delay-1s"
+          ></div>
+        </TimeLineItemLineBox>
+        <TimeLineContent>
+          <TimeLineItemTitle>{title}</TimeLineItemTitle>
+          <TimeLineItemDesc>{descParsed}</TimeLineItemDesc>
+        </TimeLineContent>
+      </TimeLineItemWrapper>
+    </AnimationOnScroll>
   );
 };
 
@@ -50,6 +61,7 @@ const TimeLineItemWrapper = styled.div`
 `;
 
 const TimeLineContent = styled.div`
+  z-index: +1;
   display: flex;
   flex-direction: column;
   height: auto;
@@ -69,6 +81,7 @@ const TimeLineItemLineBox = styled.div`
     height: 50%;
     width: 100%;
     border-top: 2px solid ${COLOR_BASE_LIGHT};
+    /* opacity: 0; */
   }
 `;
 

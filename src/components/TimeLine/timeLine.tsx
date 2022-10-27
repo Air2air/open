@@ -1,8 +1,11 @@
 import styled from "styled-components";
 import { TimeLineItemLeft, TimeLineItemRight } from "./timeLineItem";
 import { dataTimeLine } from "../../data/timeLine";
-import { COLOR_BASE_LIGHT, CONTENT_WIDTH } from "../../styles/Constants";
-
+import {
+  COLOR_BASE_LIGHT,
+  COLOR_BASE_TEXT,
+  CONTENT_WIDTH,
+} from "../../styles/Constants";
 
 const TimeLineLeft = () => {
   const timeLineMap = dataTimeLine
@@ -35,10 +38,12 @@ const TimeLineRight = () => {
 const TimeLine = () => (
   <>
     <TimeLineWrapper>
-      <TimeLineItemColumn style={{borderRight:`2px solid ${COLOR_BASE_LIGHT}` }}>
+      <TimeLineItemColumn
+        style={{ borderRight: `2px solid ${COLOR_BASE_LIGHT}` }}
+      >
         <TimeLineLeft />
       </TimeLineItemColumn>
-      <TimeLineItemColumn>
+      <TimeLineItemColumn style={{ marginTop: "40px" }}>
         <TimeLineRight />
       </TimeLineItemColumn>
     </TimeLineWrapper>
@@ -60,5 +65,3 @@ const TimeLineItemColumn = styled.div`
   flex-direction: column;
   justify-content: space-around;
 `;
-
-
