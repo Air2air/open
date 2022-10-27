@@ -1,5 +1,5 @@
 import setBodyColor from"../utils/setBodyColor";
-import Callout from"../components/Callout/callOut";
+import Callout from"../components/Callout/callout";
 import BannerVideo from"../components/BannerVideo/bannerVideo";
 import {
   BANNER_HEIGHT_STANDARD_PX,
@@ -38,7 +38,6 @@ const BioTechPage = () => {
         textColor={COLOR_BASE_TEXT}
         buttonText=""
         buttonTo=""
-        typing={false}
       />
       <Callout
         calloutTitle="Seed Stage"
@@ -51,10 +50,9 @@ const BioTechPage = () => {
           <li>Product development</li>
           </ul>"
         backgroundColor={COLOR_BASE_1}
-        buttonText=""
         textColor={COLOR_BASE_TEXT}
+        buttonText=""
         buttonTo=""
-        typing={false}
       />
       <Callout
         calloutTitle="Series A Stage"
@@ -63,7 +61,6 @@ const BioTechPage = () => {
         textColor={COLOR_BASE_TEXT}
         buttonText=""
         buttonTo=""
-        typing={false}
       />
       <Callout
         calloutTitle="Series B Stage"
@@ -72,7 +69,6 @@ const BioTechPage = () => {
         textColor={COLOR_BASE_TEXT}
         buttonText=""
         buttonTo=""
-        typing={false}
       />
       <Callout
         calloutTitle="Series C Stage"
@@ -81,7 +77,6 @@ const BioTechPage = () => {
         textColor={COLOR_BASE_TEXT}
         buttonText=""
         buttonTo=""
-        typing={false}
       />
       <Callout
         calloutTitle="Mezzanine"
@@ -90,7 +85,6 @@ const BioTechPage = () => {
         textColor={COLOR_BASE_TEXT}
         buttonText=""
         buttonTo=""
-        typing={false}
       />
       <Callout
         calloutTitle="Public Stage"
@@ -99,7 +93,6 @@ const BioTechPage = () => {
         textColor={COLOR_BASE_TEXT}
         buttonText=""
         buttonTo=""
-        typing={false}
       />
     </>
   );

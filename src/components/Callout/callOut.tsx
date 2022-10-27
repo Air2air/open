@@ -1,22 +1,35 @@
-import { CALLOUT_HEIGHT_PX, COLOR_TEXT, TEXT_OPACITY } from "../../styles/Constants";
+import {
+  CALLOUT_HEIGHT_PX,
+  COLOR_TEXT,
+  TEXT_OPACITY,
+} from "../../styles/Constants";
 import styled from "styled-components";
 import Button from "../Button/button";
-import TypeWriterEffect from "react-typewriter-effect";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import parse from 'html-react-parser';
+import parse from "html-react-parser";
 
-export const CalloutText = ({
-  calloutTitle,
-  calloutText,
-  backgroundColor,
-  textColor,
-  buttonText,
-  buttonTo,
-  typing,
-}) => {
+interface ICalloutTextProps {
+  calloutTitle: string;
+  calloutText: string;
+  calloutVideo?: string;
+  backgroundColor: string;
+  textColor: string;
+  buttonText: string;
+  buttonTo: string;
+}
 
-const calloutTitleParsed = parse(calloutTitle)
-const calloutTextParsed = parse(calloutText)
+export const CalloutText = (props: ICalloutTextProps) => {
+  const {
+    calloutTitle,
+    calloutText,
+    backgroundColor,
+    textColor,
+    buttonText,
+    buttonTo,
+  } = props;
+
+  const calloutTitleParsed = parse(calloutTitle);
+  const calloutTextParsed = parse(calloutText);
 
   return (
     <>
@@ -30,26 +43,9 @@ const calloutTextParsed = parse(calloutText)
             </CalloutTitle>
           </AnimationOnScroll>
 
-          {typing ? (
-            <TypeWriterParagraph
-              textStyle={{
-                fontFamily: "Roboto, sans-serif",
-                fontWeight: 300,
-                fontSize: "1.2em",
-                lineHeight: "1.7em",
-                color: COLOR_TEXT,
-                opacity:TEXT_OPACITY
-              }}
-              startDelay={10}
-              cursorColor={COLOR_TEXT}
-              text={calloutTextParsed}
-              typeSpeed={1}
-            />
-          ) : (
-            <AnimationOnScroll animateIn="animate__fadeIn" delay={200}>
+          <AnimationOnScroll animateIn="animate__fadeIn" delay={200}>
             <CalloutParagraph>{calloutTextParsed}</CalloutParagraph>
-            </AnimationOnScroll>
-          )}
+          </AnimationOnScroll>
 
           <AnimationOnScroll animateIn="animate__fadeInUp" delay={400}>
             {buttonText ? <Button to={buttonTo} text={buttonText} /> : ""}
@@ -99,18 +95,7 @@ const CalloutParagraph = styled.div`
   line-height: 1.7em;
   height: auto;
   text-align: left;
-  opacity:${TEXT_OPACITY}
-`;
-
-const TypeWriterParagraph = styled(TypeWriterEffect)`
-  color: ${COLOR_TEXT};
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1.2em;
-  line-height: 1.3em;
-  height: auto;
-  text-align: left;
-  opacity:${TEXT_OPACITY}
+  opacity: ${TEXT_OPACITY};
 `;
 
 export default CalloutText;

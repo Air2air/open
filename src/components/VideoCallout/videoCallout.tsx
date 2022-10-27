@@ -1,7 +1,29 @@
+import { useEffect, useState } from "react";
 import VideoPlayer from "react-background-video-player";
 import styled from "styled-components";
 
 const VideoCallout = ({ pageVideo, overlayOpacity, overlayColor, height }) => {
+  const [dimensions, setDimensions] = useState({
+    height: window.innerHeight,
+    width: window.innerWidth,
+  });
+
+  useEffect(() => {
+    function handleResize() {
+      setDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth,
+      });
+    }
+
+    window.addEventListener("resize", handleResize);
+
+//     return _ => {
+//       window.removeEventListener('resize', handleResize)
+// }
+
+  });
+
   return (
     <>
       <VideoWrapper style={{ height: height }}>
@@ -10,6 +32,7 @@ const VideoCallout = ({ pageVideo, overlayOpacity, overlayColor, height }) => {
           src={pageVideo}
           autoPlay={true}
           muted={true}
+          containerWidth={dimensions.width}
         />
       </VideoWrapper>
       <BannerVideoOpacityOverlay
@@ -21,7 +44,11 @@ const VideoCallout = ({ pageVideo, overlayOpacity, overlayColor, height }) => {
   );
 };
 
-const BannerVideoOpacityOverlay = ({ overlayOpacity, overlayColor, height }) => {
+const BannerVideoOpacityOverlay = ({
+  overlayOpacity,
+  overlayColor,
+  height,
+}) => {
   return (
     <>
       <Overlay
@@ -37,10 +64,12 @@ const BannerVideoOpacityOverlay = ({ overlayOpacity, overlayColor, height }) => 
 
 const VideoWrapper = styled.div`
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
   margin: 0 auto;
-  width: 100%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: auto;
   overflow: hidden;
 `;
 

@@ -1,5 +1,5 @@
 import setBodyColor from "../utils/setBodyColor";
-import Callout from "./../components/Callout/callOut";
+import Callout from "./../components/Callout/callout";
 import BannerImage from "../components/BannerImage/bannerImage";
 import {
   BANNER_HEIGHT_STANDARD_PX,
@@ -32,7 +32,6 @@ const VisionPage = () => {
         textColor={COLOR_BASE_TEXT}
         buttonText=""
         buttonTo=""
-        typing={false}
       />
     </>
   );

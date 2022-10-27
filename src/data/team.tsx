@@ -6,7 +6,7 @@ export const dataTeam = [
     nameFirst: "Todd",
     appellation: "",
     role: "My Role/Title",
-    desc: "Description here. Description here. Description here. Description here.  Description here. Description here. ",
+    desc: "Description here. Description here. Description here. Description here.  Description here. Description here.",
     photo: "dunning.jpeg",
     photoScale:1,
     photoY:'0px'
@@ -18,7 +18,7 @@ export const dataTeam = [
     nameFirst: "Benjamin",
     appellation: "Ph.D",
     role: "My Role/Title",
-    desc: "Description here. Description here. Description here. Description here.  Description here. Description here. ",
+    desc: "Description here. Description here. Description here. Description here.  Description here. Description here.",
     photo: "fine.jpeg",
     photoScale:1,
     photoY:'0px'
@@ -30,7 +30,7 @@ export const dataTeam = [
     nameFirst: "Jeff",
     appellation: "Ph.D",
     role: "My Role/Title",
-    desc: "Description here. Description here. Description here. Description here.  Description here. Description here. ",
+    desc: "Description here. Description here. Description here. Description here.  Description here. Description here.",
     photo: "kleck.jpeg",
     photoScale:1,
     photoY:'0px'

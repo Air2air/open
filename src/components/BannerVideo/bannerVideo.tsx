@@ -69,13 +69,10 @@ export const BannerVideo = ({
 
 const BannerVideoWrapper = styled.div`
   position: relative;
-  top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100vw;
-  overflow: hidden;
-  align-items: center;
 `;
 
 const TextWrapper = styled.div`

@@ -1,5 +1,5 @@
 import setBodyColor from "../utils/setBodyColor";
-import Callout from "../components/Callout/callOut";
+import Callout from "../components/Callout/callout";
 import BannerVideo from "../components/BannerVideo/bannerVideo";
 import {
   BANNER_HEIGHT_STANDARD_PX,
@@ -10,19 +10,15 @@ import {
   COLOR_BASE_TEXT,
 } from "../styles/Constants";
 
-const pageTitle = "Our Markets";
-
-const pageVideo =
-  "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/cq8l59W/videoblocks-abstract-dna-double-helix-with-depth-of-field-rotating_swl3slvvu__50289549fe2f14530b4e0bc181fec7ff__P360.mp4";
 
 const MarketsPage = () => {
   setBodyColor({ color: COLOR_BASE });
   return (
     <>
       <BannerVideo
-        pageTitle={pageTitle}
-        pageDescription="Our text about our Markets here. Our text about our Markets here. Our text about our Markets here. Our text about our Markets here. Our text about our Markets here. Our text about our Markets here. "
-        pageVideo={pageVideo}
+        pageTitle="Our Markets"
+        pageDescription="Our text about our Markets here. Our text about our Markets here. Our text about our Markets here. Our text about our Markets here. Our text about our Markets here. Our text about our Markets here."
+        pageVideo="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/cq8l59W/videoblocks-abstract-dna-double-helix-with-depth-of-field-rotating_swl3slvvu__50289549fe2f14530b4e0bc181fec7ff__P360.mp4" 
         overlayOpacity={0.2}
         overlayColor={COLOR_BASE}
         textColor={COLOR_BASE_TEXT}
@@ -31,12 +27,12 @@ const MarketsPage = () => {
       />
       <Callout
         calloutTitle="Biotech"
-        calloutText="Our description here about our Biotech service offerings and benefits.  Our description here about our Biotech service offerings and benefits.  "
+        calloutText="Our description here about our Biotech service offerings and benefits.  Our description here about our Biotech service offerings and benefits."
+        calloutVideo="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/cq8l59W/videoblocks-abstract-dna-double-helix-with-depth-of-field-rotating_swl3slvvu__50289549fe2f14530b4e0bc181fec7ff__P360.mp4"
         backgroundColor={COLOR_BASE}
         textColor={COLOR_BASE_TEXT}
         buttonText="Biotech"
         buttonTo="/biotech"
-        typing={false}
       />
       <Callout
         calloutTitle="Healthtech"
@@ -45,7 +41,6 @@ const MarketsPage = () => {
         textColor={COLOR_BASE_TEXT}
         buttonText="Healthtech"
         buttonTo="/healthtech"
-        typing={false}
       />
       <Callout
         calloutTitle="Medtech"
@@ -54,7 +49,6 @@ const MarketsPage = () => {
         textColor={COLOR_BASE_TEXT}
         buttonText="Medtech"
         buttonTo="/medtech"
-        typing={false}
       />
       <Callout
         calloutTitle="Pharmatech"
@@ -63,7 +57,6 @@ const MarketsPage = () => {
         textColor={COLOR_BASE_TEXT}
         buttonText="Pharmatech"
         buttonTo="/pharmatech"
-        typing={false}
       />
     </>
   );

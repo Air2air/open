@@ -1,14 +1,19 @@
-import setBodyColor from '../utils/setBodyColor'
-import Callout from "./../components/Callout/callOut";
+import setBodyColor from "../utils/setBodyColor";
+import Callout from"../components/Callout/callout";
 import BannerVideo from "../components/BannerVideo/bannerVideo";
-import { BANNER_HEIGHT_STANDARD_PX, COLOR_BASE, COLOR_BASE_1, COLOR_BASE_2, COLOR_BASE_TEXT } from "../styles/Constants";
-
+import {
+  BANNER_HEIGHT_STANDARD_PX,
+  COLOR_BASE,
+  COLOR_BASE_1,
+  COLOR_BASE_2,
+  COLOR_BASE_TEXT,
+} from "../styles/Constants";
 
 const pageVideo =
   "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/D8qa-2E/videoblocks-animation-particles-background47_sn-pqybzmo__491d7c8234d33aa73cf2dec16e4d381d__P360.mp4";
 
 const ApproachPage = () => {
-  setBodyColor({color: COLOR_BASE})
+  setBodyColor({ color: COLOR_BASE });
   return (
     <>
       <BannerVideo
@@ -28,16 +33,14 @@ const ApproachPage = () => {
         textColor={COLOR_BASE_TEXT}
         buttonText=""
         buttonTo=""
-        typing={false}
       />
       <Callout
         calloutTitle="2. Research for Proposal"
         calloutText="Research for Proposal Text Research for Proposal TextResearch for Proposal TextResearch for Proposal TextResearch for Proposal TextResearch for Proposal TextResearch for Proposal TextResearch for Proposal TextResearch for Proposal TextResearch for Proposal TextResearch for Proposal TextResearch for Proposal TextResearch for Proposal Text"
         backgroundColor={COLOR_BASE_1}
-        buttonText=""
         textColor={COLOR_BASE_TEXT}
+        buttonText=""
         buttonTo=""
-        typing={false}
       />
       <Callout
         calloutTitle="3. Team and Scope Recommendations "
@@ -46,7 +49,6 @@ const ApproachPage = () => {
         textColor={COLOR_BASE_TEXT}
         buttonText=""
         buttonTo=""
-        typing={false}
       />
     </>
   );

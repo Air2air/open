@@ -1,5 +1,5 @@
 import setBodyColor from '../utils/setBodyColor'
-import Callout from "./../components/Callout/callOut";
+import Callout from "../components/Callout/callout";
 import BannerVideo from "../components/BannerVideo/bannerVideo";
 import { BANNER_HEIGHT_STANDARD_PX, COLOR_BASE, COLOR_BASE_1, COLOR_BASE_TEXT } from "../styles/Constants";
 
@@ -15,7 +15,7 @@ const HomePage = () => {
         pageTitle="Just the outcomes you want."
         pageDescription="Derisk your health AI investments with 100+ years of combined real-world experience in healthcare AI."
         pageVideo={pageVideo}
-        overlayOpacity={0.3}
+        overlayOpacity={0.2}
         overlayColor={COLOR_BASE}
         textColor={COLOR_BASE_TEXT}
         typing={true}
@@ -23,12 +23,11 @@ const HomePage = () => {
       />
       <Callout
         calloutTitle="Proven leaders for your initiatives"
-        calloutText="Consult the most experienced healthcare and clinical machine learning leaders from leading academic medical centers, venture capital, large technology companies, and successful digital health startups. "
+        calloutText="Consult the most experienced healthcare and clinical machine learning leaders from leading academic medical centers, venture capital, large technology companies, and successful digital health startups."
         backgroundColor={COLOR_BASE_1}
         textColor={COLOR_BASE_TEXT}
         buttonText="How we work together"
         buttonTo="/approach"
-        typing={false}
       />
     </>
   );
