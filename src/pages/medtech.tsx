@@ -25,7 +25,7 @@ const MedTechPage = () => {
         pageTitle="MedTech Market"
         pageDescription="Medtech Startups often face years of losses and cash outflows as management tries to lead new products through clinical trials, through regulators and onto the market. We help you through."
         pageVideo={pageVideo}
-        overlayOpacity={0.8}
+        overlayOpacity={0.5}
         overlayColor={COLOR_BASE}
         textColor={COLOR_BASE_TEXT}
         typing={true}

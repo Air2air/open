@@ -26,7 +26,7 @@ const PharmaTechPage = () => {
         pageTitle="PharmaTech Market"
         pageDescription="Elevens brings proven expertise in AI relating to drug discovery, virtual clinical trials and digital twins, patient engagement and medication adherence, and more."
         pageVideo={pageVideo}
-        overlayOpacity={0.8}
+        overlayOpacity={0.6}
         overlayColor={COLOR_BASE}
         textColor={COLOR_BASE_TEXT}
         typing={true}

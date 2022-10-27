@@ -36,10 +36,10 @@ const HomePage = () => {
       />
       <Callout
         calloutTitle="Your company stages"
-        calloutText="Eleven advises health-tech startups through every investment phase.  We save you costly time, money and equity."
+        calloutText="Eleven advises health-tech startups through every investment stage.  We save you costly time, money and equity."
         backgroundColor={COLOR_BASE_2}
         textColor={COLOR_BASE_TEXT}
-        buttonText="Company stages"
+        buttonText="Startup funding stages"
         buttonTo="/timeline"
       />
     </>

@@ -2,14 +2,12 @@ import { useEffect, useState } from "react";
 import VideoPlayer from "react-background-video-player";
 import styled from "styled-components";
 
-
 function getWindowSize() {
-  const {innerWidth, innerHeight} = window;
-  return {innerWidth, innerHeight};
+  const { innerWidth, innerHeight } = window;
+  return { innerWidth, innerHeight };
 }
 
 const VideoCallout = ({ pageVideo, overlayOpacity, overlayColor, height }) => {
-
   const [windowSize, setWindowSize] = useState(getWindowSize());
 
   useEffect(() => {
@@ -17,24 +15,26 @@ const VideoCallout = ({ pageVideo, overlayOpacity, overlayColor, height }) => {
       setWindowSize(getWindowSize());
     }
 
-    window.addEventListener('resize', handleWindowResize);
+    window.addEventListener("resize", handleWindowResize);
 
     return () => {
-      window.removeEventListener('resize', handleWindowResize);
+      window.removeEventListener("resize", handleWindowResize);
     };
   }, []);
 
   return (
     <>
-      <VideoWrapper style={{ height: height }}>
-        <VideoPlayer
-          className="video"
-          src={pageVideo}
-          autoPlay={true}
-          muted={true}
-          containerWidth={windowSize.innerWidth}
-        />
-      </VideoWrapper>
+      <div className="animate__animated animate__fadeIn animate__delay-0s animate__slower">
+        <VideoWrapper style={{ height: height }}>
+          <VideoPlayer
+            className="video"
+            src={pageVideo}
+            autoPlay={true}
+            muted={true}
+            containerWidth={windowSize.innerWidth}
+          />
+        </VideoWrapper>{" "}
+      </div>
       <BannerVideoOpacityOverlay
         overlayOpacity={overlayOpacity}
         overlayColor={overlayColor}
