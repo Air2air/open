@@ -4,7 +4,7 @@ import BannerVideo from "../components/BannerVideo/bannerVideo";
 import { BANNER_HEIGHT_STANDARD_PX, COLOR_BASE, COLOR_BASE_1, COLOR_BASE_TEXT } from "../styles/Constants";
 
 const pageVideo =
-  "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/YqGSkmb/videoblocks-elegant-fantasy-abstract-technology-science-and-engineering-motion-background-with-plexus-lines-in-organic-motion-flickering-light-depth-of-field-settings-3d-rendering_rwkin3nri__4ddca8828e527f2ecb5067c35006b07c__P720.mp4";
+  "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/PDaTSuJ/plexus-abstract-network-titles-cinematic-background-11_sw_9z9b0__ffac24ba90312a2727157d246ace9773__P720.mp4";
 
 
 const HomePage = () => {
@@ -15,7 +15,7 @@ const HomePage = () => {
         pageTitle="Just the outcomes you want."
         pageDescription="Derisk your health AI investments with 100+ years of combined real-world experience in healthcare AI."
         pageVideo={pageVideo}
-        overlayOpacity={0.6}
+        overlayOpacity={0.3}
         overlayColor={COLOR_BASE}
         textColor={COLOR_BASE_TEXT}
         typing={true}
