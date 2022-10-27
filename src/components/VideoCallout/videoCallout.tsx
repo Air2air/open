@@ -2,27 +2,27 @@ import { useEffect, useState } from "react";
 import VideoPlayer from "react-background-video-player";
 import styled from "styled-components";
 
+
+function getWindowSize() {
+  const {innerWidth, innerHeight} = window;
+  return {innerWidth, innerHeight};
+}
+
 const VideoCallout = ({ pageVideo, overlayOpacity, overlayColor, height }) => {
-  const [dimensions, setDimensions] = useState({
-    height: window.innerHeight,
-    width: window.innerWidth,
-  });
+
+  const [windowSize, setWindowSize] = useState(getWindowSize());
 
   useEffect(() => {
-    function handleResize() {
-      setDimensions({
-        height: window.innerHeight,
-        width: window.innerWidth,
-      });
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
     }
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleWindowResize);
 
-//     return _ => {
-//       window.removeEventListener('resize', handleResize)
-// }
-
-  });
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  }, []);
 
   return (
     <>
@@ -32,7 +32,7 @@ const VideoCallout = ({ pageVideo, overlayOpacity, overlayColor, height }) => {
           src={pageVideo}
           autoPlay={true}
           muted={true}
-          containerWidth={dimensions.width}
+          containerWidth={windowSize.innerWidth}
         />
       </VideoWrapper>
       <BannerVideoOpacityOverlay
