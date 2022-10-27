@@ -18,7 +18,7 @@ interface ICalloutTextProps {
   buttonTo: string;
 }
 
-export const CalloutText = (props: ICalloutTextProps) => {
+export const Callout = (props: ICalloutTextProps) => {
   const {
     calloutTitle,
     calloutText,
@@ -98,4 +98,4 @@ const CalloutParagraph = styled.div`
   opacity: ${TEXT_OPACITY};
 `;
 
-export default CalloutText;
+export default Callout;
