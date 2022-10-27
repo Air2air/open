@@ -95,6 +95,7 @@ const TimeLineItemTitle = styled.div`
 
 const TimeLineItemDesc = styled.div`
   font-family: "Roboto", sans-serif;
-  line-height: 1.5em;
+  font-weight:300;
+  line-height: 1.6em;
   color: ${COLOR_TEXT};
 `;
