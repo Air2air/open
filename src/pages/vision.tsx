@@ -1,5 +1,5 @@
 import setBodyColor from "../utils/setBodyColor";
-import Callout from "./../components/Callout/callout";
+import Callout from "../components/Callout/callout";
 import BannerImage from "../components/BannerImage/bannerImage";
 import {
   BANNER_HEIGHT_STANDARD_PX,
