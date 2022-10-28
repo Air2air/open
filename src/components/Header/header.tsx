@@ -96,7 +96,7 @@ const HeaderOverlay = styled.div`
   width: 100vw;
   height: ${HEADER_HEIGHT_PX};
   background: ${COLOR_BASE};
-  /* transition: all 2000ms; */
+
 `;
 
 const LogoWrapper = styled.div`

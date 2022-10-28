@@ -10,7 +10,7 @@ import {
   COLOR_BASE_TEXT,
 } from "../styles/Constants";
 
-const vimeoVideo = 765130146;
+const vimeoVideo = 765132534;
 
 
 const MarketsPage = () => {

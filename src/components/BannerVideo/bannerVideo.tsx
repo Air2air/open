@@ -9,7 +9,16 @@ import TypeWriterEffect from "react-typewriter-effect";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import parse from "html-react-parser";
 
-// const myRef = document.querySelector(".scrollable-div");
+
+
+/* Videos 
+Blurry AI = 765127386
+Crisp AI = 765122469
+Blue DNA on right = 765132534
+Blue DNA in foreground = 765130146
+Green DNA = 765129157
+*/
+
 
 export const BannerVideo = ({
   pageTitle,
