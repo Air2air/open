@@ -17,7 +17,7 @@ const MarketsPage = () => {
     <>
       <BannerVideo
         pageTitle="Our Markets"
-        pageDescription="Our text about our Markets here. Our text about our Markets here. Our text about our Markets here. Our text about our Markets here. Our text about our Markets here. Our text about our Markets here."
+        pageDescription="Eleven accelerates breakthrough ventures in Biotech, Healthtech, Medtech, and Pharmatech. These sectors collectively comprise one of the largest markets in the world, and the health of these sectors controls the health of our society."
         pageVideo="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/cq8l59W/videoblocks-abstract-dna-double-helix-with-depth-of-field-rotating_swl3slvvu__50289549fe2f14530b4e0bc181fec7ff__P360.mp4" 
         overlayOpacity={0.2}
         overlayColor={COLOR_BASE}
@@ -27,7 +27,7 @@ const MarketsPage = () => {
       />
       <Callout
         calloutTitle="Biotech"
-        calloutText="Our description here about our Biotech service offerings and benefits.  Our description here about our Biotech service offerings and benefits."
+        calloutText="Eleven estimates the Biotech sector to surpass $800 Billion in market value by 2025. Eleven supports Biotech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners. "
         calloutVideo="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/cq8l59W/videoblocks-abstract-dna-double-helix-with-depth-of-field-rotating_swl3slvvu__50289549fe2f14530b4e0bc181fec7ff__P360.mp4"
         backgroundColor={COLOR_BASE}
         textColor={COLOR_BASE_TEXT}
@@ -36,7 +36,7 @@ const MarketsPage = () => {
       />
       <Callout
         calloutTitle="Healthtech"
-        calloutText="Our description here about our Healthtech service offerings and benefits.  Our description here about our Healthtech service offerings and benefits.  "
+        calloutText="Eleven estimates the Healthtech sector to surpass $500 Billion in market value by 2025. Eleven supports Healthtech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners."
         backgroundColor={COLOR_BASE_1}
         textColor={COLOR_BASE_TEXT}
         buttonText="Healthtech"
@@ -44,7 +44,7 @@ const MarketsPage = () => {
       />
       <Callout
         calloutTitle="Medtech"
-        calloutText="Our description here about our Medtech service offerings and benefits.  Our description here about our Medtech service offerings and benefits.  "
+        calloutText="Eleven estimates the Medtech sector to surpass $600 Billion in market value by 2025. Eleven supports Medtech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners. "
         backgroundColor={COLOR_BASE_2}
         textColor={COLOR_BASE_TEXT}
         buttonText="Medtech"
@@ -52,7 +52,7 @@ const MarketsPage = () => {
       />
       <Callout
         calloutTitle="Pharmatech"
-        calloutText="Our description here about our Pharmatech service offerings and benefits.  Our description here about our Pharmatech service offerings and benefits.  "
+        calloutText="Eleven estimates the Pharmatech sector to surpass $1.3 Trillion in market value by 2025. Eleven supports Pharmatech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners. Our description here about our Pharmatech service offerings and benefits.  "
         backgroundColor={COLOR_BASE_3}
         textColor={COLOR_BASE_TEXT}
         buttonText="Pharmatech"

@@ -91,9 +91,10 @@ const FooterLinkColumn = styled.div`
 
 const FooterLink = styled(Link)`
   font-size: 1.1em;
-  padding: 5px 0;
+  padding: 8px 0;
   text-align: left;
   color:${COLOR_TITLE_TEXT};
+  transition:all 200ms;
   &:hover {
     color:${COLOR_TITLE_TEXT_HOVER}
   }
