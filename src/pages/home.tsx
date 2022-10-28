@@ -45,7 +45,7 @@ const HomePage = () => {
         buttonText="Startup funding stages"
         buttonTo="/timeline"
       />
-      <OrgsCallout backgroundColor={COLOR_BASE_LIGHT}/>
+      {/* <OrgsCallout backgroundColor={COLOR_BASE_LIGHT}/> */}
     </>
   );
 };
