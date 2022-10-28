@@ -3,6 +3,8 @@ import styled from "styled-components";
 import { ReactComponent as LogoWhite } from "./../../images/logo_white.svg";
 import {
 
+  COLOR_BASE_2,
+  COLOR_BASE_3,
   COLOR_BASE_6,
   COLOR_BASE_LIGHT,
 
@@ -42,6 +44,7 @@ const FooterWrapperOuter = styled.div`
   justify-content: center;
   width: 100vw;
   height: ${FOOTER_HEIGHT_PX};
+  background:${COLOR_BASE_2}
   /* background-color: blue; */
 `;
 

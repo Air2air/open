@@ -27,9 +27,21 @@ const AboutPage = () => {
       />
       <Callout
         calloutTitle=""
-        calloutText="<p>Eleven was created when three fold eleven of the foremost AI and medical minds on the planet came together to accelerate breakthrough ventures in health-tech, med-tech, bio-tech, and pharma-tech. These experts are the leaders in AI technologies and business in medicine, healthcare, bioscience, and pharmaceutical science, and all share a mission to deliver the most fundamental advancements in the Modern Age.</p>
-        <p>
-        As individuals these “Elevens” have mastered the premier institutions of learning and are each accomplished in their fields, and together the “Eleven” is the world’s superior resource in the category. The landmark social good Elevens are doing to improve industry's chances for success are admirable, and while their ranks will grow and transform they will always remain the very best.</p>"
+        calloutText="<p>Eleven was created when three fold eleven of the foremost AI and medical minds on the planet came together to accelerate breakthrough ventures in health-tech, med-tech, bio-tech, and pharma-tech. These experts are the leaders in AI technologies and business in medicine, healthcare, bioscience, and pharmaceutical science, and all share a mission to deliver the most fundamental advancements in the Modern Age.</p><p> 
+Eleven is a team of experienced healthcare and clinical machine learning leaders from leading academic medical centers, venture capital, large technology companies, and successful digital health startups. With over 100 years of combined real-world experience, Eleven leverages a large multi-disciplinary team of industry-leading specialists to deliver across a wide range of customer needs in areas such as:
+</p>
+<ul>
+<li>Understanding the healthcare customer (payers, providers, pharma, etc) landscape, needs, and priorities to drive adoption</li>
+<li>Strategic investments and structuring corporate vehicles (e.g., corporate venture capital, or CVC).</li>
+<li>Go-to-market, product positioning, price point for clinical machine learning and digital health solutions.</li> 
+<li>Commercial due diligence, including market assessment, evaluation of the competitive landscape, and analysis of the target’s value proposition and post-acquisition growth strategy.</li>
+<li>Multidisciplinary fundraising positioning vision, strategy and business model for digital health and digital medicine. </li>
+<li>Support for academic initiatives and activities including grants, publications, and collaborations.</li>
+<li>Deep technical and clinical support for broader consumer health sector landscape (e.g., patient engagement, wearables, digital health and wellness)</li>
+<li>Strategic growth guidance including market segment, therapeutic area or disease category from competitive, partnering or investment perspectives.</li>
+</ul>
+
+        "
         backgroundColor={COLOR_BASE}
         textColor={COLOR_BASE_TEXT}
         buttonText=""
