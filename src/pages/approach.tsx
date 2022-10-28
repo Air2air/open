@@ -9,8 +9,7 @@ import {
   COLOR_BASE_TEXT,
 } from "../styles/Constants";
 
-const pageVideo =
-  "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/D8qa-2E/videoblocks-animation-particles-background47_sn-pqybzmo__491d7c8234d33aa73cf2dec16e4d381d__P360.mp4";
+const pageVideo = 765127386;
 
 const ApproachPage = () => {
   setBodyColor({ color: COLOR_BASE });

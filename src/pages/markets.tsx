@@ -10,6 +10,8 @@ import {
   COLOR_BASE_TEXT,
 } from "../styles/Constants";
 
+const vimeoVideo = 765130146;
+
 
 const MarketsPage = () => {
   setBodyColor({ color: COLOR_BASE });
@@ -18,7 +20,7 @@ const MarketsPage = () => {
       <BannerVideo
         pageTitle="Our Markets"
         pageDescription="Eleven accelerates breakthrough ventures in Biotech, Healthtech, Medtech, and Pharmatech. These sectors collectively comprise one of the largest markets in the world, and the health of these sectors controls the health of our society."
-        pageVideo="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/cq8l59W/videoblocks-abstract-dna-double-helix-with-depth-of-field-rotating_swl3slvvu__50289549fe2f14530b4e0bc181fec7ff__P360.mp4" 
+        pageVideo={vimeoVideo}
         overlayOpacity={0.2}
         overlayColor={COLOR_BASE}
         textColor={COLOR_BASE_TEXT}

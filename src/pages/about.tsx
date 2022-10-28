@@ -8,8 +8,7 @@ import {
 } from "../styles/Constants";
 import { Callout } from "../components/Callout/callOut";
 
-const pageVideo =
-  "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/YqGSkmb/videoblocks-0001_b968rdswd__7c3bff625f26e0abd93eaf6b0611910b__P720.mp4";
+const pageVideo = 765129157;
 
 const AboutPage = () => {
   setBodyColor({ color: COLOR_BASE });

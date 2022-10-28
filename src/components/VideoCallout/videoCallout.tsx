@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import VideoPlayer from "react-background-video-player";
+// import VideoPlayer from "react-background-video-player";
+import VimeoPlayer from "./vimeoPlayer"
 import styled from "styled-components";
 
 function getWindowSize() {
@@ -25,15 +26,9 @@ const VideoCallout = ({ pageVideo, overlayOpacity, overlayColor, height }) => {
   return (
     <>
       <div className="animate__animated animate__fadeIn animate__delay-0s animate__slower">
-        <VideoWrapper style={{ height: height }}>
-          <VideoPlayer
-            className="video"
-            src={pageVideo}
-            autoPlay={true}
-            muted={true}
-            containerWidth={windowSize.innerWidth}
-          />
-        </VideoWrapper>{" "}
+        <VideoWrapper style={{ height: height}} >
+          <VimeoPlayer videoID={pageVideo}/>
+        </VideoWrapper>
       </div>
       <BannerVideoOpacityOverlay
         overlayOpacity={overlayOpacity}
