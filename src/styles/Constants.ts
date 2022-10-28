@@ -40,6 +40,8 @@ export const COLOR_PHARMA = "#5278a3";
 export const COLOR_ELEVENS = "#4371a0";
 
 export const COLOR_TEXT = "#FFF";
+export const COLOR_TITLE_TEXT = "hsl(0, 80%, 50%)";
+export const COLOR_TITLE_TEXT_HOVER = "hsl(20, 100%, 70%)";
 export const TEXT_OPACITY = 0.8;
 
 // Themes
