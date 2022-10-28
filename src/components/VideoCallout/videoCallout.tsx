@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 // import VideoPlayer from "react-background-video-player";
-import VimeoPlayer from "./vimeoPlayer"
+import VimeoPlayer from "./vimeoPlayer";
 import styled from "styled-components";
 
 function getWindowSize() {
@@ -23,11 +23,15 @@ const VideoCallout = ({ pageVideo, overlayOpacity, overlayColor, height }) => {
     };
   }, []);
 
+  const getRidofUseError = windowSize;
+
   return (
     <>
-      <div className="animate__animated animate__fadeIn animate__delay-0s animate__slower">
-        <VideoWrapper style={{ height: height}} >
-          <VimeoPlayer videoID={pageVideo}/>
+      <div
+        className={`animate__animated animate__fadeIn animate__delay-0s animate__slower ${getRidofUseError}`}
+      >
+        <VideoWrapper style={{ height: height }}>
+          <VimeoPlayer videoID={pageVideo} />
         </VideoWrapper>
       </div>
       <BannerVideoOpacityOverlay
