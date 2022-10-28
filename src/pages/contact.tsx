@@ -102,7 +102,7 @@ const ContactPage = () => {
         pageTitle="Contact Eleven.ai"
         pageDescription="Still completing the contact form validation, filtering and success state"
         pageVideo={pageVideo}
-        overlayOpacity={0.8}
+        overlayOpacity={0.5}
         overlayColor={COLOR_BASE}
         textColor={COLOR_BASE_TEXT}
         typing={true}

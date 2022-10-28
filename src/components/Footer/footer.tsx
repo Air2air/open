@@ -15,16 +15,13 @@ export const Footer = () => {
   return (
     <FooterWrapperOuter>
       <FooterWrapperInner>
-        <FooterButtonWrapper>
+        <FooterLinkRow>
           <FooterLink to="/">Home</FooterLink>
           <FooterLink to="/approach">Approach</FooterLink>
-          <FooterLink to="/about">Team</FooterLink>
-        </FooterButtonWrapper>
-        <FooterButtonWrapper>
-          <FooterLink to="/">Home</FooterLink>
-          <FooterLink to="/approach">Approach</FooterLink>
-          <FooterLink to="/about">Team</FooterLink>
-        </FooterButtonWrapper>
+          <FooterLink to="/markets">Markets</FooterLink>
+          <FooterLink to="/timeline">Funding Stages</FooterLink>
+          <FooterLink to="/vision">Vision</FooterLink>
+          <FooterLink to="/about">About</FooterLink></FooterLinkRow>
         <FooterCopyright>
           <div>&copy; Eleven Group Inc.</div>
           <Link to="/home">
@@ -58,7 +55,7 @@ const FooterWrapperInner = styled.div`
   /* background-color: lightblue; */
 `;
 
-const FooterButtonWrapper = styled.div`
+const FooterLinkRow = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
