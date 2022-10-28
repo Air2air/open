@@ -32,9 +32,9 @@ export const Footer = () => {
           <FooterLinkColumn>
             <FooterLink to="/timeline">Funding Stages</FooterLink>
             <FooterLink to="/biotech">BioTech</FooterLink>
-            <FooterLink to="/biotech">HealthTech</FooterLink>
-            <FooterLink to="/biotech">MedTech</FooterLink>
-            <FooterLink to="/biotech">PharmaTech</FooterLink>
+            <FooterLink to="/healthtech">HealthTech</FooterLink>
+            <FooterLink to="/medtech">MedTech</FooterLink>
+            <FooterLink to="/pharmatech">PharmaTech</FooterLink>
           </FooterLinkColumn>
         </FooterColumn>
       </FooterWrapperInner>
