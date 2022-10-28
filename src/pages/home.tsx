@@ -6,11 +6,9 @@ import {
   COLOR_BASE,
   COLOR_BASE_1,
   COLOR_BASE_2,
-  COLOR_BASE_4,
-  COLOR_BASE_LIGHT,
   COLOR_BASE_TEXT,
 } from "../styles/Constants";
-import OrgsCallout from "../components/OrgsCallout/orgsCallOut";
+
 
 const pageVideo =
   "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/PDaTSuJ/plexus-abstract-network-titles-cinematic-background-11_sw_9z9b0__ffac24ba90312a2727157d246ace9773__P720.mp4";
@@ -45,7 +43,6 @@ const HomePage = () => {
         buttonText="Startup funding stages"
         buttonTo="/timeline"
       />
-      {/* <OrgsCallout backgroundColor={COLOR_BASE_LIGHT}/> */}
     </>
   );
 };
