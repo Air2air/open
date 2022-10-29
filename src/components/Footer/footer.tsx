@@ -39,9 +39,9 @@ export const Footer = () => {
         </FooterColumn>
       </FooterWrapperInner>
       <FooterCopyright>
-        <div>&copy; Eleven Group Inc.</div>
+        <div>&copy; Eleven of Ten LLP</div>
         <Link to="/home">
-          <LogoWhite width="30" />
+          <LogoWhite width="30" style={{opacity:.3}}/>
         </Link>
         <div>All rights reserved.</div>
       </FooterCopyright>
@@ -77,7 +77,7 @@ const FooterColumn = styled.div`
   flex: 1;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   /* background: red; */
 `;
 
