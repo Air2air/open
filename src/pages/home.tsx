@@ -28,7 +28,7 @@ const HomePage = () => {
       />
       <Callout
         calloutTitle="We know what you need."
-        calloutText="The most experienced healthcare and clinical machine learning leaders from leading academic medical centers, venture capital, large technology companies, and successful digital health startups."
+        calloutText="The most <b>experienced</b> healthcare and clinical machine learning leaders from leading academic medical centers, venture capital, large technology companies, and successful digital health startups."
         backgroundColor={COLOR_BASE_1}
         textColor={COLOR_BASE_TEXT}
         buttonText="What we do for you"

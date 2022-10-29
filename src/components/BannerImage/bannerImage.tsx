@@ -34,15 +34,15 @@ export const BannerImage = ({
         )}
         <TextWrapper>
           <AnimationOnScroll animateIn="animate__fadeIn" delay={400}>
-            <PageTitle style={{ color: textColor && textColor }}>
+            <h1 style={{ color: textColor && textColor }}>
               {pageTitleParsed}
-            </PageTitle>
+            </h1>
             {typing ? (
               <TypeWriterParagraph
                 textStyle={{
                   fontFamily: "Roboto, sans-serif",
                   fontWeight: 300,
-                  fontSize: "1.5em",
+                  fontSize: "1.7em",
                   lineHeight: "1.5em",
                   color: COLOR_TEXT,
                   opacity: TEXT_OPACITY,
@@ -81,21 +81,12 @@ const TextWrapper = styled.div`
   text-align: left;
 `;
 
-const PageTitle = styled.div`
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 100;
-  font-size: 2.7em;
-  margin-bottom: 0.8em;
-  height: auto;
-  text-align: left;
-`;
 
 const PageDescription = styled.div`
   color: ${COLOR_TEXT};
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1.5em;
-  line-height: 1.3em;
+  font-size: 1.7em;
+  line-height: 1.5em;
   height: auto;
   text-align: left;
   opacity: ${TEXT_OPACITY};
@@ -104,9 +95,8 @@ const PageDescription = styled.div`
 const TypeWriterParagraph = styled(TypeWriterEffect)`
   color: ${COLOR_TEXT};
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1.5em;
-  line-height: 1.3em;
+  font-size: 1.7em;
+  line-height: 1.5em;
   height: auto;
   text-align: left;
   opacity: ${TEXT_OPACITY};

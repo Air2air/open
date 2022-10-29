@@ -39,9 +39,9 @@ export const Callout = (props: ICalloutTextProps) => {
       >
         <TextWrapper>
           <AnimationOnScroll animateIn="animate__fadeIn" delay={0}>
-            <CalloutTitle style={{ color: textColor && textColor }}>
+            <h2 style={{ color: textColor && textColor }}>
               {calloutTitleParsed}
-            </CalloutTitle>
+            </h2>
           </AnimationOnScroll>
 
           <AnimationOnScroll animateIn="animate__fadeIn" delay={200}>
@@ -79,14 +79,6 @@ const TextWrapper = styled.div`
   text-align: left;
 `;
 
-const CalloutTitle = styled.div`
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 100;
-  font-size: 2em;
-  margin-bottom: 0.8em;
-  height: auto;
-  text-align: left;
-`;
 
 const CalloutParagraph = styled.div`
   color: ${COLOR_TEXT};

@@ -33,6 +33,7 @@ const ButtonPositioner = styled.div`
 
 const ButtonWrapper = styled.div`
   font-size: 1.1em;
+  font-weight: 500;
   font-family: "Roboto Condensed", sans-serif;
   color: ${BUTTON_TEXT_COLOR};
   padding: 0 24px;

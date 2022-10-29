@@ -163,6 +163,7 @@ const HeaderLink = styled(Link)`
   font-family: "Roboto Condensed", sans-serif;
   color: ${COLOR_TEXT};
   font-size: 1em;
+  font-weight: 500;
   padding: 0 30px;
   display: flex;
   align-items: center;
