@@ -6,9 +6,9 @@ import {
   COLOR_BASE,
   COLOR_BASE_1,
   COLOR_BASE_2,
+  COLOR_BASE_3,
   COLOR_BASE_TEXT,
 } from "../styles/Constants";
-
 
 const pageVideo = 765122469;
 
@@ -17,8 +17,8 @@ const HomePage = () => {
   return (
     <>
       <BannerVideo
-        pageTitle="Just the outcomes you want."
-        pageDescription="Derisk your health AI investments with 100+ years of combined real-world experience in healthcare AI."
+        pageTitle="Drive your Health AI portfolio success."
+        pageDescription="Derisk your health AI investments with the top healthcare machine learning leaders. "
         pageVideo={pageVideo}
         overlayOpacity={0}
         overlayColor={COLOR_BASE}
@@ -27,17 +27,25 @@ const HomePage = () => {
         height={BANNER_HEIGHT_STANDARD_PX}
       />
       <Callout
-        calloutTitle="Proven leaders for your initiatives"
-        calloutText="Consult the most experienced healthcare and clinical machine learning leaders from leading academic medical centers, venture capital, large technology companies, and successful digital health startups."
+        calloutTitle="We know what you need."
+        calloutText="The most experienced healthcare and clinical machine learning leaders from leading academic medical centers, venture capital, large technology companies, and successful digital health startups."
         backgroundColor={COLOR_BASE_1}
         textColor={COLOR_BASE_TEXT}
-        buttonText="How we work together"
+        buttonText="What we do for you"
         buttonTo="/approach"
       />
       <Callout
-        calloutTitle="Your company stages"
-        calloutText="Eleven advises health-tech startups through every investment stage.  We save you costly time, money and equity."
+        calloutTitle="Health AI Markets"
+        calloutText="Over 100 years combined experience in Bio, Health, Med and Pharma AI."
         backgroundColor={COLOR_BASE_2}
+        textColor={COLOR_BASE_TEXT}
+        buttonText="Health AI Markets"
+        buttonTo="/markets"
+      />
+      <Callout
+        calloutTitle="Health AI startup stages"
+        calloutText="Eleven advises health-tech startups through every investment stage.  We save you costly time, money and equity."
+        backgroundColor={COLOR_BASE_3}
         textColor={COLOR_BASE_TEXT}
         buttonText="Startup funding stages"
         buttonTo="/timeline"

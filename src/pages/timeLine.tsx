@@ -8,7 +8,7 @@ const TimeLinePage = () => {
   return (
     <>
       <SpacerDiv />
-      <TimeLineTitle>Startup Funding Stages</TimeLineTitle>
+      <TimeLineTitle>Health AI startup stages</TimeLineTitle>
       <TimeLine />
     </>
   );
