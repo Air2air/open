@@ -11,15 +11,18 @@ import {
   FOOTER_HEIGHT,
   FOOTER_HEIGHT_PX,
 } from "../../styles/Constants";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export const Footer = () => {
   return (
     <FooterWrapperOuter>
       <FooterWrapperInner>
         <FooterColumn>
-          <Link className="link" to="/home">
-            <LogoTextWhite width="150" />
-          </Link>
+          <AnimationOnScroll animateIn="animate__fadeInLeft" delay={0}>
+            <Link className="link" to="/home">
+              <LogoTextWhite width="150" style={{opacity:.4}} />
+            </Link>
+          </AnimationOnScroll>
         </FooterColumn>
         <FooterColumn>
           <FooterLinkColumn>
@@ -41,7 +44,7 @@ export const Footer = () => {
       <FooterCopyright>
         <div>&copy; Eleven of Ten LLP</div>
         <Link to="/home">
-          <LogoWhite width="30" style={{opacity:.3}}/>
+          <LogoWhite width="30" style={{ opacity: 0.3 }} />
         </Link>
         <div>All rights reserved.</div>
       </FooterCopyright>
@@ -91,13 +94,13 @@ const FooterLinkColumn = styled.div`
 
 const FooterLink = styled(Link)`
   font-size: 1.1em;
-  font-weight:400;
+  font-weight: 400;
   padding: 8px 0;
   text-align: left;
-  color:${COLOR_TITLE_TEXT};
-  transition:all 200ms;
+  color: ${COLOR_TITLE_TEXT};
+  transition: all 200ms;
   &:hover {
-    color:${COLOR_TITLE_TEXT_HOVER}
+    color: ${COLOR_TITLE_TEXT_HOVER};
   }
 `;
 

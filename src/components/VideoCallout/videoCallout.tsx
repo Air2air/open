@@ -28,7 +28,7 @@ const VideoCallout = ({ pageVideo, overlayOpacity, overlayColor, height }) => {
   return (
     <>
       <div
-        className={`animate__animated animate__fadeIn animate__delay-0s animate__slower ${getRidofUseError}`}
+        className={`animate__animated animate__fadeIn animate__delay-1s animate__slower ${getRidofUseError}`}
       >
         <VideoWrapper style={{ height: height }}>
           <VimeoPlayer videoID={pageVideo} />
