@@ -28,7 +28,7 @@ const ButtonPositioner = styled.div`
   height: ${BUTTON_HEIGHT_PX};
   text-align: right;
   margin-left: auto;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 `;
 
 const ButtonWrapper = styled.div`

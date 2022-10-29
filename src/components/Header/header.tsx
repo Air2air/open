@@ -12,6 +12,7 @@ import {
   HEADER_HEIGHT_PX,
 } from "../../styles/Constants";
 import { useState, useEffect } from "react";
+import Button from "../Button/button";
 
 export const Header = () => {
   /*------ Scrolling -------*/
@@ -61,9 +62,11 @@ export const Header = () => {
                     <LogoWhite width="150" />
                   </Link>
                 </LogoWrapper>
-                <Link to="/contact">
-                  <HeaderButton>Contact Us</HeaderButton>
-                </Link>
+                {/* <Link to="/contact"> */}
+                  {/* <HeaderButton>Contact Us</HeaderButton> */}
+                  {/* <HeaderButton>Contact Us</HeaderButton> */}
+                  <Button to="/contact" text="Contact Us" />
+                {/* </Link> */}
               </HeaderLeft>
               <HeaderRight>
                 <HeaderLink to="/vision">Vision</HeaderLink>

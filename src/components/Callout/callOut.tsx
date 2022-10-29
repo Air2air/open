@@ -72,13 +72,12 @@ const CalloutTextWrapper = styled.div`
 
 const TextWrapper = styled.div`
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 70px 0;
   z-index: +1;
   height: auto;
   width: ${CONTENT_WIDTH};
   text-align: left;
 `;
-
 
 const CalloutParagraph = styled.div`
   color: ${COLOR_TEXT};
