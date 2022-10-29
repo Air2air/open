@@ -1,5 +1,5 @@
 import setBodyColor from "../utils/setBodyColor";
-import Callout from "../components/Callout/callOut"
+import Callout from "../components/Callout/callOut";
 import BannerVideo from "../components/BannerVideo/bannerVideo";
 import {
   BANNER_HEIGHT_STANDARD_PX,
@@ -23,7 +23,6 @@ const pageVideo = 765129157;
 
 
 */
-
 
 const ApproachPage = () => {
   setBodyColor({ color: COLOR_BASE });

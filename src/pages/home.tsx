@@ -43,12 +43,12 @@ const HomePage = () => {
         buttonTo="/markets"
       />
       <Callout
-        calloutTitle="Health AI startup stages"
-        calloutText="Eleven advises health-tech startups through every investment stage.  We save you costly time, money and equity."
+        calloutTitle="Our Vision"
+        calloutText="In 1956, 11 experts from multiple scientific disciplines traveled around the world to meet at Dartmouth College. Their purpose?"
         backgroundColor={COLOR_BASE_3}
         textColor={COLOR_BASE_TEXT}
-        buttonText="Startup funding stages"
-        buttonTo="/timeline"
+        buttonText="Our Vision"
+        buttonTo="/vision"
       />
     </>
   );
