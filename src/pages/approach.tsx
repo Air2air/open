@@ -40,7 +40,7 @@ const ApproachPage = () => {
       />
       <Callout
         calloutTitle="Product/Market fit"
-        calloutText="We understand your healthcare customer - from payers and providers to academia and pharma.  We'll advise you on:
+        calloutText="We understand your <b>healthcare customer</b> - from payers and providers to academia and pharma.  We'll <b>advise</b> you on:
         <ul>
         <li>Segment landscape, needs, and priorities to drive adoption</li>
         <li>Go-to-market, product positioning, price point for clinical machine learning and digital health solutions. </li>
@@ -55,10 +55,10 @@ const ApproachPage = () => {
       <Callout
         calloutTitle="Financial"
         calloutText="
-        From Seed to IPO Eleven shepherds your portfolio companies through the challenging health vertical.  
+        From Seed to IPO Eleven shepherds your <b>portfolio companies</b> through the challenging health vertical.  
         <ul>
         <li>Strategic investments and structuring corporate vehicles (e.g., corporate venture capital, or CVC).</li>
-        <li>Growth guidance including market segment, therapeutic area or disease category from competitive, partnering or investment perspectives.</li>  <li>Multidisciplinary fundraising positioning vision, strategy and business model for digital health and digital medicine.</li>
+        <li>Growth guidance including market segment, therapeutic area or disease category from competitive, partnering or investment perspectives.</li>  <li>Multidisciplinary fundraising, positioning vision, strategy and business model for digital health and digital medicine.</li>
         <li>M &amp; A commercial due diligence, including market assessment, evaluation of the competitive landscape, and analysis of the target's value proposition and post-acquisition growth strategy.</li>
         </ul>
         "

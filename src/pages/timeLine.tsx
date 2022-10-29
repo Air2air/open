@@ -1,5 +1,5 @@
 import setBodyColor from "../utils/setBodyColor";
-import { COLOR_BASE, COLOR_BASE_TEXT } from "../styles/Constants";
+import { COLOR_BASE} from "../styles/Constants";
 import TimeLine from "../components/TimeLine/timeLine";
 import styled from "styled-components";
 
@@ -21,13 +21,7 @@ const SpacerDiv = styled.div`
   width: 100vw;
 `;
 
-const TimeLineTitle = styled.div`
-  font-family: "Roboto Condensed", sans-serif;
-  color: ${COLOR_BASE_TEXT};
-  font-weight: 100;
-  font-size: 2em;
-  height: 40px;
-  width: 100%;
+const TimeLineTitle = styled.h2`
   margin-bottom: 0.8em;
   text-align: center;
 `;

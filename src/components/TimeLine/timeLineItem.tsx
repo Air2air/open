@@ -16,7 +16,7 @@ export const TimeLineItemLeft = ({ id, title, desc }) => {
     <AnimationOnScroll key={id} animateIn="animate__fadeInLeft" delay={0}>
       <TimeLineItemWrapper>
         <TimeLineContent>
-          <TimeLineItemTitle>{title}</TimeLineItemTitle>
+          <h3>{title}</h3>
           <TimeLineItemDesc>{descParsed}</TimeLineItemDesc>
         </TimeLineContent>
         <TimeLineItemLineBox>
@@ -44,7 +44,7 @@ export const TimeLineItemRight = ({ id, title, desc }) => {
           ></div>
         </TimeLineItemLineBox>
         <TimeLineContent>
-          <TimeLineItemTitle>{title}</TimeLineItemTitle>
+        <h3>{title}</h3>
           <TimeLineItemDesc>{descParsed}</TimeLineItemDesc>
         </TimeLineContent>
       </TimeLineItemWrapper>
@@ -85,13 +85,6 @@ const TimeLineItemLineBox = styled.div`
   }
 `;
 
-const TimeLineItemTitle = styled.div`
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 1.3em;
-  color: ${COLOR_BASE_TEXT};
-  margin-bottom: 1.2em;
-  /* background: red; */
-`;
 
 const TimeLineItemDesc = styled.div`
   font-family: "Roboto", sans-serif;

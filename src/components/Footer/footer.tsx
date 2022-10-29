@@ -30,7 +30,7 @@ export const Footer = () => {
             <FooterLink to="/about">About</FooterLink>
           </FooterLinkColumn>
           <FooterLinkColumn>
-            <FooterLink to="/timeline">Funding Stages</FooterLink>
+            <FooterLink to="/timeline">Health AI startup stages</FooterLink>
             <FooterLink to="/biotech">BioTech</FooterLink>
             <FooterLink to="/healthtech">HealthTech</FooterLink>
             <FooterLink to="/medtech">MedTech</FooterLink>
