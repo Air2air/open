@@ -18,7 +18,7 @@ export const Footer = () => {
     <FooterWrapperOuter>
       <FooterWrapperInner>
         <FooterColumn>
-          <AnimationOnScroll animateIn="animate__fadeInLeft" delay={0}>
+          <AnimationOnScroll animateIn="animate__fadeInLeft" delay={0} offset={0}>
             <Link className="link" to="/home">
               <LogoTextWhite width="150" style={{opacity:.4}} />
             </Link>
