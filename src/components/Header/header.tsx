@@ -62,8 +62,9 @@ export const Header = () => {
                   <Button to="/contact" text="Contact Us" />
               </HeaderLeft>
               <HeaderRight>
-                <HeaderLink to="/vision">Vision</HeaderLink>
+              <HeaderLink to="/approach">What we do</HeaderLink>
                 <HeaderLink to="/markets">Markets</HeaderLink>
+                <HeaderLink to="/vision">Vision</HeaderLink>
                 <HeaderLink to="/about">About</HeaderLink>
               </HeaderRight>
             </HeaderWrapperInner>
@@ -145,7 +146,7 @@ const HeaderLink = styled(Link)`
   color: ${COLOR_TEXT};
   font-size: 1em;
   font-weight: 500;
-  padding: 0 30px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   text-transform: uppercase;

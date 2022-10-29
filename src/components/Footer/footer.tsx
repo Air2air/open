@@ -17,7 +17,7 @@ export const Footer = () => {
     <FooterWrapperOuter>
       <FooterWrapperInner>
         <FooterColumn>
-          <Link to="/home">
+          <Link className="link" to="/home">
             <LogoTextWhite width="150" />
           </Link>
         </FooterColumn>
@@ -91,6 +91,7 @@ const FooterLinkColumn = styled.div`
 
 const FooterLink = styled(Link)`
   font-size: 1.1em;
+  font-weight:400;
   padding: 8px 0;
   text-align: left;
   color:${COLOR_TITLE_TEXT};
