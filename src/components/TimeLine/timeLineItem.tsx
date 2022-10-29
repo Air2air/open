@@ -2,7 +2,6 @@ import styled from "styled-components";
 import {
   COLOR_BASE_3,
   COLOR_BASE_LIGHT,
-  COLOR_BASE_TEXT,
   COLOR_TEXT,
 } from "../../styles/Constants";
 import parse from "html-react-parser";
