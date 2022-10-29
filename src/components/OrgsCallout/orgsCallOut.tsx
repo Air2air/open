@@ -1,16 +1,16 @@
-import {
-  CALLOUT_HEIGHT_PX,
-  CONTENT_WIDTH,
-} from "../../styles/Constants";
+import { CALLOUT_HEIGHT_PX, CONTENT_WIDTH } from "../../styles/Constants";
 import styled from "styled-components";
 import { dataOrgs } from "./../../data/orgs";
 
 const OrgsItems = () => {
   const orgsMap = dataOrgs.map((props) => (
-    <OrgImage
-      src={`${process.env.PUBLIC_URL}/images/content/${props.image}`}
-      alt={props.title}
-    />
+    <OrgMapImageWrapper key={props.id}>
+      <OrgMapImage
+        src={`${process.env.PUBLIC_URL}/images/content/${props.image}`}
+        alt={props.title}
+        width={props.width}
+      />
+    </OrgMapImageWrapper>
   ));
   return <>{orgsMap}</>;
 };
@@ -18,10 +18,14 @@ const OrgsItems = () => {
 const OrgsCallout = (props) => (
   <OrgsWrapper style={{ background: props.backgroundColor }}>
     <OrgInnerWrapper>
-      <OrgsItems />
+      <OrgMapImageRow>
+        <OrgsItems />
+      </OrgMapImageRow>
     </OrgInnerWrapper>
   </OrgsWrapper>
 );
+
+const orgImageHeight = "100px";
 
 const OrgsWrapper = styled.div`
   position: relative;
@@ -45,7 +49,23 @@ const OrgInnerWrapper = styled.div`
   text-align: left;
 `;
 
-const OrgImage = styled.img`
+const OrgMapImageRow = styled.div`
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: repeat(auto-fill, 210px);
+  opacity: 0.5;
+`;
+
+const OrgMapImageWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: ${orgImageHeight};
+  /* background: gold; */
+`;
+
+const OrgMapImage = styled.img`
   height: auto;
 `;
 

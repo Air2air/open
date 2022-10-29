@@ -1,13 +1,14 @@
 export const dataTimeLine = [
   {
-    id: 1,
+    id: 2,
     order: 1,
     title: "Pre-Seed Stage",
     desc: "Text about the Pre-Seed Stage. Text about the Pre-Seed Stage. Text about the Pre-Seed Stage. Text about the Pre-Seed Stage. Text about the Pre-Seed Stage. Text about the Pre-Seed Stage. Text about the Pre-Seed Stage. Text about the Pre-Seed Stage. Text about the Pre-Seed Stage. Text about the Pre-Seed Stage.",
     side: "left"
   },
+
   {
-    id: 2,
+    id: 1,
     order: 2,
     title: "Seed Stage",
     desc: "Your company now has a degree of experience and can demonstrate potential to develop into a vibrant company. You now need a pitch deck to demonstrate to VCs that your idea is a viable investment opportunity. Most of the modest sums you raise in the seed stage are for specific activities like:<ul><li>Market research </li><li>Business plan development</li><li>Setting up a management team</li><li>Product development</li></ul>",
