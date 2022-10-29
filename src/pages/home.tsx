@@ -17,7 +17,7 @@ const HomePage = () => {
   return (
     <>
       <BannerVideo
-        pageTitle="Drive your Health AI portfolio success."
+        pageTitle="Drive Health AI portfolio success."
         pageDescription="Derisk your health AI investments with the top healthcare machine learning leaders. "
         pageVideo={pageVideo}
         overlayOpacity={0}
