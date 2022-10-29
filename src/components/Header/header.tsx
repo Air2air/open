@@ -62,11 +62,7 @@ export const Header = () => {
                     <LogoWhite width="150" />
                   </Link>
                 </LogoWrapper>
-                {/* <Link to="/contact"> */}
-                  {/* <HeaderButton>Contact Us</HeaderButton> */}
-                  {/* <HeaderButton>Contact Us</HeaderButton> */}
                   <Button to="/contact" text="Contact Us" />
-                {/* </Link> */}
               </HeaderLeft>
               <HeaderRight>
                 <HeaderLink to="/vision">Vision</HeaderLink>
@@ -146,21 +142,6 @@ const HeaderRight = styled.div`
   background: ${COLOR_BASE};
 `;
 
-const HeaderButton = styled.div`
-  font-size: 1em;
-  font-family: "Roboto Condensed", sans-serif;
-  color: ${COLOR_TEXT};
-  padding: 0 24px;
-  display: inline-flex;
-  align-items: center;
-  height: ${BUTTON_HEIGHT_PX};
-  transition: all 300ms;
-  text-transform: uppercase;
-  background: ${BUTTON_COLOR};
-  &:hover {
-    background: ${BUTTON_COLOR_HOVER};
-  }
-`;
 
 const HeaderLink = styled(Link)`
   font-family: "Roboto Condensed", sans-serif;
