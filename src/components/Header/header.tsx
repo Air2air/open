@@ -3,9 +3,6 @@ import styled from "styled-components";
 import { ReactComponent as LogoWhite } from "./../../images/logo_text_white.svg";
 import {
   BREAKPOINT,
-  BUTTON_COLOR,
-  BUTTON_COLOR_HOVER,
-  BUTTON_HEIGHT_PX,
   COLOR_BASE,
   COLOR_BASE_2,
   COLOR_TEXT,
