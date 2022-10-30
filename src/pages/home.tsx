@@ -5,8 +5,6 @@ import {
   BANNER_HEIGHT_STANDARD_PX,
   COLOR_BASE,
   COLOR_BASE_1,
-  COLOR_BASE_2,
-  COLOR_BASE_3,
   COLOR_BASE_TEXT,
 } from "../styles/Constants";
 
