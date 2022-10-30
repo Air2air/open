@@ -7,12 +7,15 @@ import {
   COLOR_TITLE_TEXT,
   CONTENT_WIDTH,
 } from "../../styles/Constants";
+import Button from "../Button/button";
 
 interface IGraphProps {
   graphHeight?: number;
   graphTitle?: string;
   graphText?: string;
   backgroundColor: string;
+  buttonText: string;
+  buttonTo: string;
 }
 
 interface IGraphColumnProps {
@@ -61,6 +64,13 @@ export const Graph = (props: IGraphProps) => {
             <div style={{ height: 10 }}>&nbsp;</div>
           </GraphLegend>
         </GraphWrapper>
+        <AnimationOnScroll animateIn="animate__fadeInUp" delay={0}>
+          {props.buttonText ? (
+            <Button to={props.buttonTo} text={props.buttonText} />
+          ) : (
+            ""
+          )}
+        </AnimationOnScroll>
       </GraphInner>
     </GraphContainer>
   );
@@ -103,7 +113,7 @@ const GraphContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  font-size: 1.3em;
+
 `;
 
 const Column = styled.div`
@@ -113,6 +123,7 @@ const Column = styled.div`
   height: 100%;
   min-width: 110px;
   margin: 0 10px;
+  font-size: 1.3em;
   .display {
     color: ${COLOR_TEXT};
     transition: all 300ms;
@@ -137,7 +148,7 @@ const GraphLegend = styled.div`
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-
+  font-size: 1.3em;
   color: ${COLOR_CAPTION};
   text-align: right;
   min-width: 120px;
