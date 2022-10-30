@@ -24,7 +24,7 @@ const MarketsPage = () => {
         typing={true}
         height={BANNER_HEIGHT_STANDARD_PX}
       />
-      <Graph backgroundColor={COLOR_BASE_1} graphTitle="" graphText="" graphHeight={300} />
+      <Graph backgroundColor={COLOR_BASE_1} graphTitle="2022 Markets" graphHeight={400} />
     </>
   );
 };
