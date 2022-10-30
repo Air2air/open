@@ -24,7 +24,7 @@ const pageVideo = 765129157;
 
 */
 
-const ApproachPage = () => {
+const WhatWeDoPage = () => {
   setBodyColor({ color: COLOR_BASE });
   return (
     <>
@@ -71,4 +71,4 @@ const ApproachPage = () => {
   );
 };
 
-export default ApproachPage;
+export default WhatWeDoPage;

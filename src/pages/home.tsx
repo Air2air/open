@@ -32,7 +32,7 @@ const HomePage = () => {
         backgroundColor={COLOR_BASE_1}
         textColor={COLOR_BASE_TEXT}
         buttonText="What we do for you"
-        buttonTo="/approach"
+        buttonTo="/what_we_do"
       />
       <Callout
         calloutTitle="Health AI Markets"

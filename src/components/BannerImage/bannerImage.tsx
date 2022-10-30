@@ -48,6 +48,7 @@ export const BannerImage = ({
                   opacity: TEXT_OPACITY,
                 }}
                 startDelay={1000}
+                cursor=""
                 cursorColor={COLOR_TEXT}
                 text={pageDescription}
                 typeSpeed={1}

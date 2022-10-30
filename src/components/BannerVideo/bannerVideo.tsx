@@ -62,8 +62,10 @@ export const BannerVideo = ({
                   lineHeight: "1.5em",
                   color: COLOR_TEXT,
                   opacity: TEXT_OPACITY,
+                  cursor:""
                 }}
                 startDelay={1000}
+
                 cursorColor={COLOR_TEXT}
                 text={pageDescription}
                 typeSpeed={1}

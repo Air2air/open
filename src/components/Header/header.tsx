@@ -62,7 +62,7 @@ export const Header = () => {
                   <Button to="/contact" text="Contact Us" />
               </HeaderLeft>
               <HeaderRight>
-              <HeaderLink to="/approach">What we do</HeaderLink>
+              <HeaderLink to="/what_we_do">What we do</HeaderLink>
                 <HeaderLink to="/markets">Markets</HeaderLink>
                 <HeaderLink to="/vision">Vision</HeaderLink>
                 <HeaderLink to="/about">About</HeaderLink>

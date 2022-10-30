@@ -1,5 +1,4 @@
 import AboutPage from "../pages/about";
-import ApproachPage from "../pages/approach";
 import BioTechPage from "../pages/biotech";
 import ContactPage from "../pages/contact";
 import ContactSuccessPage from "../pages/contactSuccess";
@@ -10,6 +9,7 @@ import MedTechPage from "../pages/medtech";
 import PharmaTechPage from "../pages/pharmatech";
 import TimeLinePage from "../pages/timeLine";
 import VisionPage from "../pages/vision";
+import WhatWeDoPage from "../pages/what_we_do";
 
 
 export const dataRoutes = [
@@ -20,10 +20,10 @@ export const dataRoutes = [
     element: <AboutPage />,
   },
   {
-    id: "Approach",
-    path: "approach",
-    section: "Approach",
-    element: <ApproachPage />,
+    id: "WhatWeDo",
+    path: "what_we_do",
+    section: "WhatWeDo",
+    element: <WhatWeDoPage />,
   },
   {
     id: "Contact",
