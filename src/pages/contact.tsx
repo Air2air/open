@@ -4,6 +4,7 @@ import setBodyColor from "../utils/setBodyColor";
 // import Callout from "../components/Callout/callOut";
 import BannerVideo from "../components/BannerVideo/bannerVideo";
 import { BANNER_HEIGHT_STANDARD_PX, COLOR_BASE, COLOR_BASE_TEXT } from "../styles/Constants";
+import Callout from "../components/Callout/callOut";
 
 const pageVideo =
   "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/SLbc-UQ7tktpq62bt/videoblocks-motionflow10860_rtil0cnes__9e8374df63b3218366e8471bb5117fc7__P360.mp4";
@@ -11,90 +12,7 @@ const pageVideo =
 const ContactPage = () => {
   setBodyColor({ color: COLOR_BASE });
 
-  // const initialValues = {
-  //   name: "",
-  //   email: "",
-  //   message: "",
-  // };
 
-  // const initialErrors = {
-  //   name: false,
-  //   email: false,
-  //   message: false,
-  // };
-
-  // /**
-  //  * Reducer function to useReducer hook
-  //  * @param {name, email, message} currentState
-  //  * @param {name, email, message} nextState
-  //  * @returns next state of values,
-  //  */
-  // const reducer = (currentState, nextState) => ({
-  //   ...currentState,
-  //   ...nextState,
-  // });
-
-  // const [values, setValues] = useReducer(reducer, initialValues);
-  // const [errors, setErrors] = useReducer(reducer, initialErrors);
-
-  // /**
-  //  * onChange handler
-  //  * @param element
-  //  *
-  //  */
-  // const onChange = (e) => {
-  //   setValues({ [e.target.id]: e.target.value });
-  // };
-
-  // /**
-  //  * focus handler
-  //  * @param element
-  //  */
-  // const onFocus = (e) => {
-  //   setErrors({ [e.target.id]: false });
-  // };
-
-  // /**
-  //  *
-  //  * @param data
-  //  * @returns URI string encoded
-  //  */
-  // const encode = (data) => {
-  //   return Object.keys(data)
-  //     .map(
-  //       (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-  //     )
-  //     .join("&");
-  // };
-
-  // /**
-  //  * onSubmit handler
-  //  * @param element
-  //  */
-  // const onSubmit = (e) => {
-  //   e.preventDefault();
-  //   /**
-  //    * Validation
-  //    */
-  //   for (const key in values) {
-  //     if (!values[key]) {
-  //       setErrors({ [key]: true });
-  //       return;
-  //     }
-  //     setErrors({ [key]: false });
-  //   }
-
-  //   fetch("/", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  //     body: encode({
-  //       "form-name": e.target.getAttribute("name"),
-  //       ...values,
-  //     }),
-  //   })
-  //     .then(() => console.log("success"))
-  //     .catch((e) => console.log("Error :", e));
-  // };
 
   return (
     <>
@@ -108,47 +26,45 @@ const ContactPage = () => {
         typing={true}
         height={BANNER_HEIGHT_STANDARD_PX}
       />
-{/* 
-      <form
-        onSubmit={onSubmit}
-        name="contact"
-        action="/contactSuccess"
-        method="POST"
-        data-netlify="true"
-      >
-        <input type="hidden" name="form-name" value="contact" />
-        <label>Name</label>
-        <input
-          type="text"
-          id="name"
-          onChange={onChange}
-          onFocus={onFocus}
-          // error={errors.name}
-          value={values.name}
-        />
-        <label>Email</label>
-        <input
-          type="text"
-          id="email"
-          onChange={onChange}
-          onFocus={onFocus}
-          // error={errors.email}
-          value={values.email}
-        />
-        <label>Message</label>
-        <input
-          type="text"
-          id="message"
-          onChange={onChange}
-          onFocus={onFocus}
-          // error={errors.message}
-          value={values.message}
-        />
-        <br />
-        <button type="submit" color="primary">
-          Send
-        </button>
-      </form> */}
+      <Callout
+        calloutTitle="What we do in BioTech"
+        calloutText="<p>Silicon Valley</p>
+
+        <p>Stanford, California, United States</p>
+        
+        
+        
+        <p>Silicon Valley North</p>
+        
+        <p>Toronto, Ontario, Canada</p>
+        
+        
+        
+        <p>Silicon Hills</p>
+        
+        <p>Austin, Texas, United States</p>
+        
+        
+        
+        
+        Email Address<br />
+        
+        Full Name<br />
+        
+        Company<br />
+        
+        Title<br />
+        
+        Who referred you or How you discovered us<br />
+        
+        Message<br />
+        
+        Submit Button</p>"
+        backgroundColor={COLOR_BASE}
+        textColor={COLOR_BASE_TEXT}
+        buttonText=""
+        buttonTo=""
+      />
     </>
   );
 };
