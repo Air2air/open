@@ -46,10 +46,11 @@ export const BannerImage = ({
                   lineHeight: "1.5em",
                   color: COLOR_TEXT,
                   opacity: TEXT_OPACITY,
+
                 }}
                 startDelay={1000}
                 cursor=""
-                cursorColor={COLOR_TEXT}
+                cursorColor="rgba(0,0,0,0)"
                 text={pageDescription}
                 typeSpeed={1}
               />

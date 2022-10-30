@@ -1,6 +1,6 @@
 import {
   COLOR_TEXT,
-  CONTENT_WIDTH, 
+  CONTENT_WIDTH,
   TEXT_OPACITY,
 } from "../../styles/Constants";
 import styled from "styled-components";
@@ -9,8 +9,6 @@ import TypeWriterEffect from "react-typewriter-effect";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import parse from "html-react-parser";
 
-
-
 /* Videos 
 Blurry AI = 765127386
 Crisp AI = 765122469
@@ -18,7 +16,6 @@ Blue DNA on right = 765132534
 Blue DNA in foreground = 765130146
 Green DNA = 765129157
 */
-
 
 export const BannerVideo = ({
   pageTitle,
@@ -30,10 +27,8 @@ export const BannerVideo = ({
   typing,
   height,
 }) => {
-
   const pageTitleParsed = parse(pageTitle);
   const pageDescriptionParsed = parse(pageDescription);
-
 
   return (
     <>
@@ -50,9 +45,7 @@ export const BannerVideo = ({
         )}
         <TextWrapper>
           <AnimationOnScroll animateIn="animate__fadeIn" delay={400}>
-            <h1 style={{ color: textColor && textColor }}>
-              {pageTitleParsed}
-            </h1>
+            <h1 style={{ color: textColor && textColor }}>{pageTitleParsed}</h1>
             {typing ? (
               <TypeWriterParagraph
                 textStyle={{
@@ -62,11 +55,11 @@ export const BannerVideo = ({
                   lineHeight: "1.5em",
                   color: COLOR_TEXT,
                   opacity: TEXT_OPACITY,
-                  cursor:""
+                  cursor: "",
                 }}
                 startDelay={1000}
-
-                cursorColor={COLOR_TEXT}
+                cursor=""
+                cursorColor="rgba(0,0,0,0)"
                 text={pageDescription}
                 typeSpeed={1}
               />
@@ -95,7 +88,6 @@ const TextWrapper = styled.div`
   width: ${CONTENT_WIDTH};
   text-align: left;
 `;
-
 
 const PageDescription = styled.div`
   color: ${COLOR_TEXT};
