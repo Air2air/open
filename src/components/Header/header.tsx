@@ -6,6 +6,7 @@ import {
   COLOR_BASE,
   COLOR_BASE_2,
   COLOR_TEXT,
+  CONTENT_WIDTH,
   HEADER_HEIGHT_PX,
 } from "../../styles/Constants";
 import { useState, useEffect } from "react";
@@ -59,10 +60,10 @@ export const Header = () => {
                     <LogoWhite width="150" />
                   </Link>
                 </LogoWrapper>
-                  <Button to="/contact" text="Contact Us" />
+                <Button to="/contact" text="Contact Us" />
               </HeaderLeft>
               <HeaderRight>
-              <HeaderLink to="/what_we_do">What we do</HeaderLink>
+                <HeaderLink to="/what_we_do">What we do</HeaderLink>
                 <HeaderLink to="/markets">Markets</HeaderLink>
                 <HeaderLink to="/vision">Vision</HeaderLink>
                 <HeaderLink to="/about">About</HeaderLink>
@@ -93,7 +94,6 @@ const HeaderOverlay = styled.div`
   width: 100vw;
   height: ${HEADER_HEIGHT_PX};
   background: ${COLOR_BASE};
-
 `;
 
 const LogoWrapper = styled.div`
@@ -116,7 +116,7 @@ const HeaderWrapperInner = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80vw;
+  width: ${CONTENT_WIDTH};
   height: ${HEADER_HEIGHT_PX};
   margin: 0 auto;
   padding: 0;
@@ -126,7 +126,7 @@ const HeaderWrapperInner = styled.div`
 const HeaderLeft = styled.div`
   display: flex;
   align-items: center;
-  width: 55%;
+  flex: 1;
   justify-content: space-between;
   height: ${HEADER_HEIGHT_PX};
   padding: 0;
@@ -136,10 +136,11 @@ const HeaderLeft = styled.div`
 const HeaderRight = styled.div`
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  flex: 1;
   height: ${HEADER_HEIGHT_PX};
-  background: ${COLOR_BASE};
+  /* background: ${COLOR_BASE}; */
 `;
-
 
 const HeaderLink = styled(Link)`
   font-family: "Roboto Condensed", sans-serif;

@@ -64,8 +64,8 @@ const WhatWeDoPage = () => {
         "
         backgroundColor={COLOR_BASE_2}
         textColor={COLOR_BASE_TEXT}
-        buttonText=""
-        buttonTo=""
+        buttonText="Markets"
+        buttonTo="/markets"
       />
     </>
   );
