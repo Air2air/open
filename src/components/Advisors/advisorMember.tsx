@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {
-  COLOR_BASE_2,
+  COLOR_BASE_4,
   COLOR_BASE_TEXT,
   COLOR_TEXT,
   TEAM_MEMBER_HEIGHT_PX,
@@ -8,21 +8,22 @@ import {
   TEAM_MEMBER_WIDTH_PX,
 } from "../../styles/Constants";
 
-const TeamMember = ({ id, nameFirst, nameLast, apellation, role, photo, photoScale, photoY }) => {
-  const imgsrc = "/images/about/" + photo;
+const AdvisorMember = ({ id, nameFirst, nameLast, role, photo }) => {
+  // const imgsrc = "/images/about/" + photo;
 
   return (
-    <TeamMemberWrapper key={id}>
-      <TeamMemberPhoto src={imgsrc} style={{transform: `scale(${photoScale})`}} />
-      <TeamMemberName>
+    <AdvisorMemberWrapper key={id}>
+      {/* <AdvisorMemberPhoto src={imgsrc} style={{transform: `scale(${photoScale})`}} /> */}
+      <AdvisorMemberSquare />
+      <AdvisorMemberName>
         {nameFirst} {nameLast}
-      </TeamMemberName>
-      <TeamMemberRole>{role}</TeamMemberRole>
-    </TeamMemberWrapper>
+      </AdvisorMemberName>
+      <AdvisorMemberRole>{role}</AdvisorMemberRole>
+    </AdvisorMemberWrapper>
   );
 };
 
-const TeamMemberWrapper = styled.div`
+const AdvisorMemberWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,18 +34,28 @@ const TeamMemberWrapper = styled.div`
   /* background: gold; */
 `;
 
-const TeamMemberPhoto = styled.img`
+/*
+const AdvisorMemberPhoto = styled.img`
   filter: grayscale(100%);
   height: ${TEAM_MEMBER_PHOTO_PX};
-  width: auto;
+  width: ${TEAM_MEMBER_PHOTO_PX};
   border-radius: 50%;
   object-fit: cover;
   clip-path: circle(70px at center);
   background: ${COLOR_BASE_2};
   transform:translateY(0px);
 `;
+*/
 
-const TeamMemberName = styled.div`
+const AdvisorMemberSquare = styled.img`
+  height: ${TEAM_MEMBER_PHOTO_PX};
+  width: ${TEAM_MEMBER_PHOTO_PX};
+  background: ${COLOR_BASE_4};
+  transform: translateY(0px);
+  border: none;
+`;
+
+const AdvisorMemberName = styled.div`
   margin-top: 12px;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.3em;
@@ -55,7 +66,7 @@ const TeamMemberName = styled.div`
   /* background: red; */
 `;
 
-const TeamMemberRole = styled.div`
+const AdvisorMemberRole = styled.div`
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-size: 0.9em;
@@ -66,4 +77,4 @@ const TeamMemberRole = styled.div`
   /* background: blue; */
 `;
 
-export default TeamMember;
+export default AdvisorMember;

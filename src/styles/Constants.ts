@@ -19,11 +19,11 @@ export const BUTTON_COLOR = "hsl(0, 86%, 36%)";
 export const BUTTON_TEXT_COLOR = "hsl(0, 0%, 80%)";
 export const BUTTON_COLOR_HOVER = "hsl(0, 86%, 46%)";
 
-export const TEAM_MEMBER_HEIGHT = 320;
+export const TEAM_MEMBER_HEIGHT = 220;
 export const TEAM_MEMBER_HEIGHT_PX = TEAM_MEMBER_HEIGHT + "px";
-export const TEAM_MEMBER_WIDTH = 240;
+export const TEAM_MEMBER_WIDTH = 120;
 export const TEAM_MEMBER_WIDTH_PX = TEAM_MEMBER_WIDTH + "px";
-export const TEAM_MEMBER_PHOTO = 160;
+export const TEAM_MEMBER_PHOTO = 140;
 export const TEAM_MEMBER_PHOTO_PX = TEAM_MEMBER_PHOTO + "px";
 
 // WIDTH

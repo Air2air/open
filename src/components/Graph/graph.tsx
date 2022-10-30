@@ -58,7 +58,7 @@ export const Graph = (props: IGraphProps) => {
             <div>$1.2 Trillion</div>
             <div>$800 Billion</div>
             <div>$400 Billion</div>
-            <div>&nbsp;</div>
+            <div style={{ height: 10 }}>&nbsp;</div>
           </GraphLegend>
         </GraphWrapper>
       </GraphInner>
@@ -101,7 +101,6 @@ const GraphColumn = (props: IGraphColumnProps) => {
 const GraphContainer = styled.div`
   display: flex;
   flex-direction: column;
-
   justify-content: center;
   width: 100%;
   font-size: 1.3em;
@@ -115,7 +114,7 @@ const Column = styled.div`
   min-width: 110px;
   margin: 0 10px;
   .display {
-    color: ${COLOR_CAPTION};
+    color: ${COLOR_TEXT};
     transition: all 300ms;
     text-align: center;
     margin-top: 5px;
@@ -138,9 +137,10 @@ const GraphLegend = styled.div`
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  color: ${COLOR_TEXT};
+
+  color: ${COLOR_CAPTION};
   text-align: right;
-  min-width: 100px;
+  min-width: 120px;
   margin-left: 30px;
   /* background: blue; */
 `;
