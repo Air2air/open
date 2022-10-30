@@ -1,123 +1,110 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { ReactComponent as LogoWhite } from "./../../images/logo_white.svg";
-import { ReactComponent as LogoTextWhite } from "./../../images/logo_text_white.svg";
-import {
-  COLOR_BASE_4,
-  COLOR_BASE_6,
-  COLOR_BASE_LIGHT,
-  COLOR_TITLE_TEXT,
-  COLOR_TITLE_TEXT_HOVER,
-  FOOTER_HEIGHT,
-  FOOTER_HEIGHT_PX,
-} from "../../styles/Constants";
-import { AnimationOnScroll } from "react-animation-on-scroll";
+import { COLOR_TEXT } from "../../styles/Constants";
 
-export const Footer = () => {
+interface IGraphProps {
+  graphHeight?: number;
+  graphTitle?: string;
+  graphText?: string;
+  backgroundColor: string;
+}
+
+interface IGraphColumnProps {
+  label?: string;
+  size?: number;
+  color?: string;
+}
+
+export const Graph = (props: IGraphProps) => {
+  const { graphTitle, graphText, backgroundColor, graphHeight } = props;
+
+  const outerHeight = graphHeight + "px";
+  const innerHeight = graphHeight! * 0.7 + "px";
+
   return (
-    <FooterWrapperOuter>
-      <FooterWrapperInner>
-        <FooterColumn>
-          <AnimationOnScroll animateIn="animate__fadeInLeft" delay={0} offset={0}>
-            <Link className="link" to="/home">
-              <LogoTextWhite width="150" style={{opacity:.4}} />
-            </Link>
-          </AnimationOnScroll>
-        </FooterColumn>
-        <FooterColumn>
-          <FooterLinkColumn>
-            <FooterLink to="/">Home</FooterLink>
-            <FooterLink to="/what_we_do">Approach</FooterLink>
-            <FooterLink to="/markets">Markets</FooterLink>
-
-          </FooterLinkColumn>
-          <FooterLinkColumn>
-          <FooterLink to="/vision">Vision</FooterLink>
-            <FooterLink to="/about">About</FooterLink>
-            <FooterLink to="/timeline">Startup stages</FooterLink>
-            {/* <FooterLink to="/biotech">BioTech</FooterLink>
-            <FooterLink to="/healthtech">HealthTech</FooterLink>
-            <FooterLink to="/medtech">MedTech</FooterLink>
-            <FooterLink to="/pharmatech">PharmaTech</FooterLink> */}
-          </FooterLinkColumn>
-        </FooterColumn>
-      </FooterWrapperInner>
-      <FooterCopyright>
-        <div>&copy; Eleven of Ten LLP</div>
-        <Link to="/home">
-          <LogoWhite width="30" style={{ opacity: 0.3 }} />
-        </Link>
-        <div>All rights reserved.</div>
-      </FooterCopyright>
-    </FooterWrapperOuter>
+    <GraphContainer
+      style={{
+        background: backgroundColor && backgroundColor,
+        height: outerHeight,
+      }}
+    >
+      {graphTitle ? graphTitle : null}
+      {graphText ? graphText : null}
+      <GraphWrapper
+        style={{
+          height: innerHeight,
+        }}
+      >
+        <GraphColumn label="Healthtech" size={20} color="red"></GraphColumn>
+        <GraphColumn label="Medtech" size={30} color="gold"></GraphColumn>
+        <GraphColumn label="Biotech" size={50} color="green"></GraphColumn>
+        <GraphColumn label="Pharmatech" size={100} color="blue"></GraphColumn>
+        <GraphLegend>
+          <div>$1.2 Trillion</div>
+          <div>$800 Billion</div>
+          <div>$400 Billion</div>
+        </GraphLegend>
+      </GraphWrapper>
+    </GraphContainer>
   );
 };
 
-const FOOTER_INNER_HEIGHT_PX = FOOTER_HEIGHT * 0.8 + "px";
-
-const FooterWrapperOuter = styled.div`
-  z-index: +1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  /* justify-content: center; */
-  width: 100vw;
-  height: ${FOOTER_HEIGHT_PX};
-  background: ${COLOR_BASE_4};
-  /* background-color: blue; */
-`;
-
-const FooterWrapperInner = styled.div`
-  display: flex;
-  flex-direction: row;
-  width: 80vw;
-  height: ${FOOTER_INNER_HEIGHT_PX};
+const GraphWrapper = styled.div`
   margin: 0 auto;
-  /* background-color: lightblue; */
-`;
-
-const FooterColumn = styled.div`
   display: flex;
-  flex: 1;
-  flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  /* background: red; */
-`;
-
-const FooterLinkColumn = styled.div`
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  text-align: left;
+  justify-content: center;
+  width: 100%;
   /* background: gold; */
 `;
 
-const FooterLink = styled(Link)`
-  font-size: 1.1em;
-  font-weight: 400;
-  padding: 8px 0;
-  text-align: left;
-  color: ${COLOR_TITLE_TEXT};
-  transition: all 200ms;
-  &:hover {
-    color: ${COLOR_TITLE_TEXT_HOVER};
-  }
+const GraphColumn = (props: IGraphColumnProps) => {
+  const heightPx = props.size + "%";
+  return (
+    <>
+      <Column>
+        <div
+          className="display"
+          style={{ height: heightPx, background: props.color }}
+        >
+          {heightPx}
+        </div>
+        <div className="label">{props.label}</div>
+      </Column>
+    </>
+  );
+};
+
+const GraphContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
 `;
 
-const FooterCopyright = styled.div`
-  font-size: 0.9em;
-  width: 80vw;
-  color: ${COLOR_BASE_6};
+const Column = styled.div`
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
-  justify-content: space-around;
-  height: 40px;
-  margin: 0 auto;
-  div {
-    color: ${COLOR_BASE_LIGHT};
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  margin:10px 0;
+  .display {
+    width: 70%;
+    text-align: center;
   }
-  /* background: red; */
+  .label {
+    color: ${COLOR_TEXT};
+  }
+  background: red;
 `;
+
+const GraphLegend = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  color: ${COLOR_TEXT};
+  /* background: blue; */
+`;
+
+export default Graph;
