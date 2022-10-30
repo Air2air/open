@@ -18,7 +18,7 @@ const HomePage = () => {
     <>
       <BannerVideo
         pageTitle="Drive Health AI portfolio success."
-        pageDescription="Derisk your health AI investments with the leaders in healthcare machine learning"
+        pageDescription="Derisk your health AI investments with the leaders in healthcare"
         pageVideo={pageVideo}
         overlayOpacity={0}
         overlayColor={COLOR_BASE}
@@ -28,13 +28,13 @@ const HomePage = () => {
       />
       <Callout
         calloutTitle="We know what you need."
-        calloutText="The most <b>experienced</b> healthcare and clinical machine learning leaders from leading academic medical centers, venture capital, large technology companies, and successful digital health startups."
+        calloutText="The most <b>experienced</b> healthcare and clinical machine learning and business leaders from leading academic medical centers, venture capital, large technology companies, and successful digital health startups."
         backgroundColor={COLOR_BASE_1}
         textColor={COLOR_BASE_TEXT}
-        buttonText="What we do for you"
+        buttonText="What we do"
         buttonTo="/what_we_do"
       />
-      <Callout
+      {/* <Callout
         calloutTitle="Health AI Markets"
         calloutText="Over 100 years combined experience in Bio, Health, Med and Pharma AI."
         backgroundColor={COLOR_BASE_2}
@@ -49,7 +49,7 @@ const HomePage = () => {
         textColor={COLOR_BASE_TEXT}
         buttonText="Our Vision"
         buttonTo="/vision"
-      />
+      /> */}
     </>
   );
 };
