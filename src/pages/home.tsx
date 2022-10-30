@@ -11,14 +11,14 @@ import {
 } from "../styles/Constants";
 
 const pageVideo = 765122469;
-
+ 
 const HomePage = () => {
   setBodyColor({ color: COLOR_BASE });
   return (
     <>
       <BannerVideo
         pageTitle="Drive Health AI portfolio success."
-        pageDescription="Derisk your health AI investments with the top healthcare machine learning leaders. "
+        pageDescription="Derisk your health AI investments with the leaders in healthcare machine learning"
         pageVideo={pageVideo}
         overlayOpacity={0}
         overlayColor={COLOR_BASE}
