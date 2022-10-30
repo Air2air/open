@@ -19,7 +19,7 @@ const AboutPage = () => {
     <>
       <BannerVideo
         pageTitle="About Elevens"
-        pageDescription="If you know healthcare AI, then you already know us."
+        pageDescription="If you know healthcare AI, you already know us."
         pageVideo={pageVideo}
         overlayOpacity={0.2}
         overlayColor={COLOR_BASE}

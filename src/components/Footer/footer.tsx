@@ -34,10 +34,10 @@ export const Footer = () => {
           </FooterLinkColumn>
           <FooterLinkColumn>
             <FooterLink to="/timeline">Health AI startup stages</FooterLink>
-            <FooterLink to="/biotech">BioTech</FooterLink>
+            {/* <FooterLink to="/biotech">BioTech</FooterLink>
             <FooterLink to="/healthtech">HealthTech</FooterLink>
             <FooterLink to="/medtech">MedTech</FooterLink>
-            <FooterLink to="/pharmatech">PharmaTech</FooterLink>
+            <FooterLink to="/pharmatech">PharmaTech</FooterLink> */}
           </FooterLinkColumn>
         </FooterColumn>
       </FooterWrapperInner>

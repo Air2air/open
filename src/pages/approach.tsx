@@ -40,17 +40,17 @@ const ApproachPage = () => {
       />
       <Callout
         calloutTitle="Product/Market fit"
-        calloutText="We understand your <b>healthcare customer</b> - from payers and providers to academia and pharma.  We'll <b>advise</b> you on:
+        calloutText="Eleven understands your healthcare customer - from payers to providers to insurers, from academia to clinical practice, across bio to med to health to pharma. We'll enable you with:
         <ul>
         <li>Segment landscape, needs, and priorities to drive adoption</li>
-        <li>Go-to-market, product positioning, price point for clinical machine learning and digital health solutions. </li>
-        <li>Support for academic initiatives and activities including grants, publications, and collaborations.</li>
+        <li> Go-to-market, product positioning, price point for clinical machine learning and digital health solutions. </li>
+        <li>Support for early adoption academic initiatives and activities including grants, publications, and collaborations.</li>
         </li>
         <li>Deep technical and clinical support for broader consumer health sector landscape (e.g., patient engagement, wearables, digital health and wellness)</li></ul>"
         backgroundColor={COLOR_BASE_1}
         textColor={COLOR_BASE_TEXT}
-        buttonText="Health AI Markets"
-        buttonTo="/markets"
+        buttonText=""
+        buttonTo=""
       />
       <Callout
         calloutTitle="Financial"
@@ -59,13 +59,13 @@ const ApproachPage = () => {
         <ul>
         <li>Strategic investments and structuring corporate vehicles (e.g., corporate venture capital, or CVC).</li>
         <li>Growth guidance including market segment, therapeutic area or disease category from competitive, partnering or investment perspectives.</li>  <li>Multidisciplinary fundraising, positioning vision, strategy and business model for digital health and digital medicine.</li>
-        <li>M &amp; A commercial due diligence, including market assessment, evaluation of the competitive landscape, and analysis of the target's value proposition and post-acquisition growth strategy.</li>
+        <li>M &amp; A ccommercial due diligence, including market assessment, evaluation of the competitive landscape, and analysis of the target's value proposition and post-acquisition growth strategy.</li>
         </ul>
         "
         backgroundColor={COLOR_BASE_2}
         textColor={COLOR_BASE_TEXT}
-        buttonText="Health AI startup stages"
-        buttonTo="/timeline"
+        buttonText=""
+        buttonTo=""
       />
     </>
   );
