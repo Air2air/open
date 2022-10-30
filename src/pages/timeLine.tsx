@@ -9,7 +9,7 @@ const TimeLinePage = () => {
   return (
     <>
       <BannerSpacer />
-      <TimeLineTitle>Health AI startup timeline</TimeLineTitle>
+      <TimeLineTitle>Health AI Venture stages</TimeLineTitle>
       <TimeLine />
     </>
   );

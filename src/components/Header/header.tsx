@@ -6,7 +6,6 @@ import {
   COLOR_BASE,
   COLOR_BASE_2,
   COLOR_TEXT,
-  CONTENT_WIDTH,
   HEADER_HEIGHT_PX,
 } from "../../styles/Constants";
 import { useState, useEffect } from "react";
@@ -96,6 +95,19 @@ const HeaderOverlay = styled.div`
   background: ${COLOR_BASE};
 `;
 
+
+
+const HeaderWrapperInner = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  height: ${HEADER_HEIGHT_PX};
+  margin: 0 auto;
+  padding: 0;
+  /* background-color: blue; */
+`;
+
 const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -109,17 +121,6 @@ const LogoWrapper = styled.div`
     opacity: 1;
     transform: scale(1.03);
   }
-  /* background-color: blue; */
-`;
-
-const HeaderWrapperInner = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: ${CONTENT_WIDTH};
-  height: ${HEADER_HEIGHT_PX};
-  margin: 0 auto;
-  padding: 0;
   /* background-color: blue; */
 `;
 

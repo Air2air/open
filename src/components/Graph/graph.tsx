@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import styled from "styled-components";
 import {
@@ -25,6 +26,43 @@ interface IGraphColumnProps {
 }
 
 export const Graph = (props: IGraphProps) => {
+  const [isHovering1, setIsHovering1] = useState(false);
+  const [isHovering2, setIsHovering2] = useState(false);
+  const [isHovering3, setIsHovering3] = useState(false);
+  const [isHovering4, setIsHovering4] = useState(false);
+
+  const handleMouseOver1 = () => {
+    setIsHovering1(true);
+  };
+
+  const handleMouseOut1 = () => {
+    setIsHovering1(false);
+  };
+
+  const handleMouseOver2 = () => {
+    setIsHovering2(true);
+  };
+
+  const handleMouseOut2 = () => {
+    setIsHovering2(false);
+  };
+
+  const handleMouseOver3 = () => {
+    setIsHovering3(true);
+  };
+
+  const handleMouseOut3 = () => {
+    setIsHovering3(false);
+  };
+
+  const handleMouseOver4 = () => {
+    setIsHovering4(true);
+  };
+
+  const handleMouseOut4 = () => {
+    setIsHovering4(false);
+  };
+
   const { graphTitle, backgroundColor, graphHeight } = props;
 
   const outerHeight = graphHeight + "px";
@@ -49,14 +87,45 @@ export const Graph = (props: IGraphProps) => {
             height: innerHeight,
           }}
         >
-          <GraphColumn label="Healthtech" size={30} value="$400B"></GraphColumn>
-          <GraphColumn label="Medtech" size={40} value="$500B"></GraphColumn>
-          <GraphColumn label="Biotech" size={54} value="$700B"></GraphColumn>
-          <GraphColumn
-            label="Pharmatech"
-            size={100}
-            value="$1.2T"
-          ></GraphColumn>
+          <div
+            className="column"
+            onMouseOver={handleMouseOver1}
+            onMouseOut={handleMouseOut1}
+          >
+            <GraphColumn
+              label="Healthtech"
+              size={30}
+              value="$400B"
+            ></GraphColumn>
+          </div>
+
+          <div
+            className="column"
+            onMouseOver={handleMouseOver2}
+            onMouseOut={handleMouseOut2}
+          >
+            <GraphColumn label="Medtech" size={40} value="$500B"></GraphColumn>
+          </div>
+
+          <div
+            className="column"
+            onMouseOver={handleMouseOver3}
+            onMouseOut={handleMouseOut3}
+          >
+            <GraphColumn label="Biotech" size={54} value="$700B"></GraphColumn>
+          </div>
+
+          <div
+            className="column"
+            onMouseOver={handleMouseOver4}
+            onMouseOut={handleMouseOut4}
+          >
+            <GraphColumn
+              label="Pharmatech"
+              size={100}
+              value="$1.2T"
+            ></GraphColumn>
+          </div>
           <GraphLegend>
             <div>$1.2 Trillion</div>
             <div>$800 Billion</div>
@@ -64,6 +133,20 @@ export const Graph = (props: IGraphProps) => {
             <div style={{ height: 10 }}>&nbsp;</div>
           </GraphLegend>
         </GraphWrapper>
+        <div className="content">
+          {isHovering1
+            ? "Eleven supports Healthtech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners."
+            : null}
+          {isHovering2
+            ? "Eleven supports Medtech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners."
+            : null}
+          {isHovering3
+            ? "Eleven supports Biotech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners."
+            : null}
+          {isHovering4
+            ? "Eleven supports Pharmatech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners."
+            : null}
+        </div>
         <AnimationOnScroll animateIn="animate__fadeInUp" delay={0}>
           {props.buttonText ? (
             <Button to={props.buttonTo} text={props.buttonText} />
@@ -83,6 +166,9 @@ const GraphWrapper = styled.div`
   justify-content: center;
   width: ${CONTENT_WIDTH};
   /* background: gold; */
+  .column {
+    height: 100%;
+  }
 `;
 
 const GraphInner = styled.div`
@@ -92,6 +178,15 @@ const GraphInner = styled.div`
   height: auto;
   width: ${CONTENT_WIDTH};
   text-align: left;
+  .content {
+    height: auto;
+    color: ${COLOR_TEXT};
+    transition: all 300ms;
+    text-align: left;
+    margin: 12px 0;
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
 `;
 
 const GraphColumn = (props: IGraphColumnProps) => {
@@ -113,7 +208,6 @@ const GraphContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 100%;
-
 `;
 
 const Column = styled.div`
