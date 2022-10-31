@@ -45,7 +45,7 @@ const AboutPage = () => {
         buttonText="Contact Us"
         buttonTo="/contact"
       /> */}
-      <Advisors advisorsTitle="Advisors" backgroundColor={COLOR_BASE_2} />
+      <Advisors advisorsTitle="Advisory Board" backgroundColor={COLOR_BASE_2} />
     </>
   );
 };

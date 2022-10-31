@@ -1,57 +1,31 @@
 import setBodyColor from "../utils/setBodyColor";
 import {
+  BANNER_HEIGHT_STANDARD_PX,
   COLOR_BASE,
+  COLOR_BASE_1,
   COLOR_BASE_TEXT,
 } from "../styles/Constants";
-import Callout from "../components/Callout/callOut";
-import BannerSpacer from "../components/BannerSpacer/bannerSpacer";
+import BannerVideo from "../components/BannerVideo/bannerVideo";
+import { ContactCallout } from "../components/ContactCallout/contactCallOut";
 
+const pageVideo = 765127386;
 
 const ContactPage = () => {
   setBodyColor({ color: COLOR_BASE });
-
   return (
     <>
-    <BannerSpacer />
-      <Callout
-        calloutTitle="Contact page, incomplete"
-        calloutText="<p>Silicon Valley</p>
-
-        <p>Stanford, California, United States</p>
-        
-        
-        
-        <p>Silicon Valley North</p>
-        
-        <p>Toronto, Ontario, Canada</p>
-        
-        
-        
-        <p>Silicon Hills</p>
-        
-        <p>Austin, Texas, United States</p>
-        
-        
-        
-        
-        Email Address<br />
-        
-        Full Name<br />
-        
-        Company<br />
-        
-        Title<br />
-        
-        Who referred you or How you discovered us<br />
-        
-        Message<br />
-        
-        Submit Button</p>"
-        backgroundColor={COLOR_BASE}
+      <BannerVideo
+        pageTitle="Contact Elevens.ai"
+        pageDescription="Please email or LinkedIn below."
+        pageVideo={pageVideo}
+        overlayOpacity={0.1}
+        overlayColor={COLOR_BASE}
         textColor={COLOR_BASE_TEXT}
-        buttonText=""
-        buttonTo=""
+        typing={true}
+        height={BANNER_HEIGHT_STANDARD_PX}
       />
+
+      <ContactCallout/>
     </>
   );
 };

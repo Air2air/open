@@ -16,8 +16,13 @@ export const CALLOUT_HEIGHT_PX = CALLOUT_HEIGHT + "px";
 export const BUTTON_HEIGHT = 40;
 export const BUTTON_HEIGHT_PX = BUTTON_HEIGHT + "px";
 export const BUTTON_COLOR = "hsl(0, 86%, 36%)";
-export const BUTTON_TEXT_COLOR = "hsl(0, 0%, 80%)";
+export const BUTTON_TEXT_COLOR = "hsl(0, 0%, 90%)";
 export const BUTTON_COLOR_HOVER = "hsl(0, 86%, 46%)";
+
+export const BUTTON_HEIGHT_LINKEDIN = 60;
+export const BUTTON_HEIGHT_LINKEDIN_PX = BUTTON_HEIGHT_LINKEDIN + "px";
+export const BUTTON_COLOR_LINKEDIN = "hsl(205, 90%, 28%)";
+export const BUTTON_COLOR_LINKEDIN_HOVER = "hsl(205, 73%, 52%)";
 
 export const TEAM_MEMBER_HEIGHT = 220;
 export const TEAM_MEMBER_HEIGHT_PX = TEAM_MEMBER_HEIGHT + "px";

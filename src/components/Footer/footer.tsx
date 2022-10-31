@@ -27,7 +27,7 @@ export const Footer = () => {
         <FooterColumn>
           <FooterLinkColumn>
             <FooterLink to="/">Home</FooterLink>
-            <FooterLink to="/what_we_do">Approach</FooterLink>
+            <FooterLink to="/what_we_do">What We Do</FooterLink>
             <FooterLink to="/markets">Markets</FooterLink>
 
           </FooterLinkColumn>
