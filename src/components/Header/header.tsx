@@ -4,13 +4,11 @@ import { ReactComponent as LogoWhite } from "./../../images/logo_text_white.svg"
 import {
   BREAKPOINT,
   COLOR_BASE,
-  COLOR_BASE_2,
   COLOR_BLACK,
   COLOR_TEXT,
   HEADER_HEIGHT_PX,
 } from "../../styles/Constants";
 import { useState, useEffect } from "react";
-import Button from "../Button/button";
 
 export const Header = () => {
   /*------ Scrolling -------*/
