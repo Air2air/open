@@ -5,6 +5,7 @@ import {
   BREAKPOINT,
   COLOR_BASE,
   COLOR_BASE_2,
+  COLOR_BLACK,
   COLOR_TEXT,
   HEADER_HEIGHT_PX,
 } from "../../styles/Constants";
@@ -48,34 +49,51 @@ export const Header = () => {
 
   return (
     <>
-      <HeaderWrapperOuter>
+      <HeaderOuter>
         {width > BREAKPOINT ? (
           <>
             {!isVisible && <HeaderOverlay />}
-            <HeaderWrapperInner>
+            <HeaderInner>
               <HeaderLeft>
                 <LogoWrapper>
                   <Link to="/home">
                     <LogoWhite width="150" />
                   </Link>
                 </LogoWrapper>
-                <Button to="/contact" text="Contact Us" />
+                {/* <Button to="/contact" text="Contact Us" /> */}
               </HeaderLeft>
               <HeaderRight>
                 <HeaderLink to="/what_we_do">What we do</HeaderLink>
                 <HeaderLink to="/markets">Markets</HeaderLink>
                 <HeaderLink to="/vision">Vision</HeaderLink>
                 <HeaderLink to="/about">About</HeaderLink>
+                <HeaderLink to="/contact">Contact</HeaderLink>
               </HeaderRight>
-            </HeaderWrapperInner>
+            </HeaderInner>
           </>
-        ) : null}
-      </HeaderWrapperOuter>
+        ) : (
+          <>
+            {!isVisible && <HeaderOverlay />}
+            <HeaderMobile>
+              <LogoWrapper>
+                <Link to="/home">
+                  <LogoWhite width={width > BREAKPOINT ? "150px" : "100px"} />
+                </Link>
+              </LogoWrapper>
+              <HeaderLink to="/what_we_do">What we do</HeaderLink>
+              <HeaderLink to="/markets">Markets</HeaderLink>
+              <HeaderLink to="/vision">Vision</HeaderLink>
+              <HeaderLink to="/about">About</HeaderLink>
+              <HeaderLink to="/contact">Contact</HeaderLink>
+            </HeaderMobile>
+          </>
+        )}
+      </HeaderOuter>
     </>
   );
 };
 
-const HeaderWrapperOuter = styled.div`
+const HeaderOuter = styled.div`
   z-index: +2;
   position: fixed;
   top: 0;
@@ -92,20 +110,28 @@ const HeaderOverlay = styled.div`
   position: absolute;
   width: 100vw;
   height: ${HEADER_HEIGHT_PX};
-  background: ${COLOR_BASE};
+  background: ${COLOR_BLACK};
 `;
 
-
-
-const HeaderWrapperInner = styled.div`
+const HeaderInner = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
+  width: 90%;
   height: ${HEADER_HEIGHT_PX};
   margin: 0 auto;
   padding: 0;
   /* background-color: blue; */
+`;
+
+const HeaderMobile = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: ${HEADER_HEIGHT_PX};
+  margin: 0 auto;
+  padding: 0;
+  background-color: blue;
 `;
 
 const LogoWrapper = styled.div`
@@ -138,9 +164,8 @@ const HeaderRight = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  flex: 1;
   height: ${HEADER_HEIGHT_PX};
-  /* background: ${COLOR_BASE}; */
+  /* background: ${COLOR_BLACK}; */
 `;
 
 const HeaderLink = styled(Link)`
@@ -153,8 +178,8 @@ const HeaderLink = styled(Link)`
   align-items: center;
   text-transform: uppercase;
   height: ${HEADER_HEIGHT_PX};
-  background: ${COLOR_BASE};
+  background: ${COLOR_BLACK};
   &:hover {
-    background: ${COLOR_BASE_2};
+    background: ${COLOR_BASE};
   }
 `;

@@ -54,6 +54,7 @@ export const COLOR_TITLE_TEXT_HOVER = "hsl(0, 10%, 70%)";
 export const TEXT_OPACITY = 0.8;
 
 // Themes
+export const COLOR_BLACK = "hsl(0, 0%, 0%)";
 export const COLOR_BASE = "hsl(0, 0%, 11%)";
 export const COLOR_BASE_1 = "hsl(0, 0%, 13%)";
 export const COLOR_BASE_2 = "hsl(0, 0%, 15%)";
