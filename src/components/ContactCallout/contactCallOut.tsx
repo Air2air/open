@@ -2,7 +2,6 @@ import {
   CALLOUT_HEIGHT_PX,
   COLOR_BASE_2,
   COLOR_BASE_3,
-  COLOR_BASE_6,
   COLOR_TEXT,
   CONTENT_WIDTH,
 } from "../../styles/Constants";
