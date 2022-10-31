@@ -57,7 +57,7 @@ const ContactItemWrapper = styled.div`
     }
   }
   .bgImage {
-    opacity: 0.7;
+    opacity: 0.8;
     filter: grayscale(100%);
   }
 `;

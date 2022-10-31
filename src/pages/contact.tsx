@@ -15,7 +15,7 @@ const ContactPage = () => {
     <>
       <BannerVideo
         pageTitle="Contact Elevens.ai"
-        pageDescription="Please email or LinkedIn below."
+        pageDescription=""
         pageVideo={pageVideo}
         overlayOpacity={0.1}
         overlayColor={COLOR_BASE}
