@@ -5,7 +5,7 @@ import {
   COLOR_BASE_TEXT,
 } from "../styles/Constants";
 import BannerVideo from "../components/BannerVideo/bannerVideo";
-import { ContactCallout } from "../components/ContactCallout/contactCallOut";
+import ContactCallout from "../components/ContactCallout/contactCallOut";
 
 const pageVideo = 765127386;
 
@@ -23,8 +23,7 @@ const ContactPage = () => {
         typing={true}
         height={BANNER_HEIGHT_STANDARD_PX}
       />
-
-      <ContactCallout/>
+      <ContactCallout />
     </>
   );
 };

@@ -31,7 +31,7 @@ const ButtonWrapper = styled.div`
   font-weight: 500;
   font-family: "Roboto Condensed", sans-serif;
   color: ${BUTTON_TEXT_COLOR};
-  padding: 0 18px;
+  padding: 0 16px;
   display: inline-flex;
   align-items: center;
   height: ${BUTTON_HEIGHT_LINKEDIN_PX};
@@ -42,10 +42,10 @@ const ButtonWrapper = styled.div`
     background: ${BUTTON_COLOR_LINKEDIN_HOVER};
   }
   span {
-    margin-right: 10px;
+    margin-left: 8px;
   }
   .icon {
-    height: 40px;
+    height: 24px;
   }
 `;
 
