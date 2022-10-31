@@ -2,7 +2,6 @@ import setBodyColor from "../utils/setBodyColor";
 import {
   BANNER_HEIGHT_STANDARD_PX,
   COLOR_BASE,
-  COLOR_BASE_1,
   COLOR_BASE_TEXT,
 } from "../styles/Constants";
 import BannerVideo from "../components/BannerVideo/bannerVideo";
