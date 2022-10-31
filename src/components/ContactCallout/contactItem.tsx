@@ -1,5 +1,9 @@
 import styled from "styled-components";
-import { COLOR_TEXT, CONTACT_ITEM_HEIGHT_PX } from "../../styles/Constants";
+import {
+  COLOR_BASE_2,
+  COLOR_TEXT,
+  CONTACT_ITEM_HEIGHT_PX,
+} from "../../styles/Constants";
 
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import ButtonLinkedIn from "../Button/buttonLinkedIn";
@@ -29,7 +33,10 @@ export const ContactItem = (props: {
             info@elevens.ai
           </ContactItemLink>
         </ContactContent>
-        <ImageWrapper style={{ backgroundImage: backgroundImage }} />
+        <ImageWrapper
+          className="bgImage"
+          style={{ backgroundImage: backgroundImage }}
+        />
       </ContactItemWrapper>
     </AnimationOnScroll>
   );
@@ -40,6 +47,19 @@ const ContactItemWrapper = styled.div`
   flex-direction: row;
   height: ${CONTACT_ITEM_HEIGHT_PX};
   margin: 24px 0;
+  transition: all 500ms;
+  background: none;
+  &:hover {
+    background: ${COLOR_BASE_2};
+    .bgImage {
+      opacity: 1;
+      filter: none;
+    }
+  }
+  .bgImage {
+    opacity: 0.7;
+    filter: grayscale(100%);
+  }
 `;
 
 const ContactContent = styled.div`
@@ -49,7 +69,7 @@ const ContactContent = styled.div`
   justify-content: center;
   align-items: flex-start;
   flex: 1;
-  /* padding: 20px; */
+  padding-left: 30px;
 `;
 
 const ImageWrapper = styled.div`
@@ -57,6 +77,7 @@ const ImageWrapper = styled.div`
   width: 100%;
   height: ${CONTACT_ITEM_HEIGHT_PX};
   background-size: cover;
+  transition: all 500ms;
 `;
 
 const ContactItemDesc = styled.div`
@@ -74,7 +95,7 @@ const ContactItemLink = styled.a`
   color: ${COLOR_TEXT};
   transition: all 300ms;
   transform: scale(1);
-  transform-origin:center center;
+  transform-origin: center center;
   &:hover {
     transform: scale(1.04);
   }

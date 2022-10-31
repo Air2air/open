@@ -28,6 +28,6 @@ const ContactWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: ${CONTENT_WIDTH};
-  margin: 0 auto;
+  margin: 30px auto;
 `;
 
