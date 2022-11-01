@@ -3,6 +3,7 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 import styled from "styled-components";
 import {
   COLOR_BASE_3,
+  COLOR_BASE_5,
   COLOR_CAPTION,
   COLOR_TEXT,
   COLOR_TITLE_TEXT,
@@ -164,8 +165,9 @@ const GraphWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: ${CONTENT_WIDTH};
-  /* background: gold; */
+  width: 100%;
+  border-bottom:2px solid ${COLOR_BASE_5};
+
   .column {
     height: 100%;
   }
@@ -178,6 +180,7 @@ const GraphInner = styled.div`
   height: auto;
   width: ${CONTENT_WIDTH};
   text-align: left;
+
   .content {
     height: auto;
     color: ${COLOR_TEXT};
@@ -196,7 +199,7 @@ const GraphColumn = (props: IGraphColumnProps) => {
       <Column>
         <div className="label">{props.label}</div>
         <div className="display" style={{ height: heightPx }}>
-          {props.value}
+          {/* {props.value} */}
         </div>
       </Column>
     </>
@@ -208,6 +211,7 @@ const GraphContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 100%;
+
 `;
 
 const Column = styled.div`
@@ -247,6 +251,7 @@ const GraphLegend = styled.div`
   text-align: right;
   min-width: 120px;
   margin-left: 30px;
+
   /* background: blue; */
 `;
 
