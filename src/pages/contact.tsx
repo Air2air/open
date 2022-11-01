@@ -1,6 +1,6 @@
 import setBodyColor from "../utils/setBodyColor";
 import {
-  BANNER_HEIGHT_STANDARD_PX,
+
   COLOR_BASE,
   COLOR_BASE_TEXT,
 } from "../styles/Constants";
@@ -21,7 +21,6 @@ const ContactPage = () => {
         overlayColor={COLOR_BASE}
         textColor={COLOR_BASE_TEXT}
         typing={true}
-        height={BANNER_HEIGHT_STANDARD_PX}
       />
       <ContactCallout />
     </>

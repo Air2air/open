@@ -1,13 +1,14 @@
 import {
-  COLOR_TEXT,
+  BANNER_HEIGHT_DESKTOP_PX,
+  BANNER_HEIGHT_MOBILE_PX,
+  BREAKPOINT_PX,
   CONTENT_WIDTH,
-  TEXT_OPACITY,
 } from "../../styles/Constants";
 import styled from "styled-components";
 import VideoCallout from "../VideoCallout/videoCallout";
-import TypeWriterEffect from "react-typewriter-effect";
-import { AnimationOnScroll } from "react-animation-on-scroll";
 import parse from "html-react-parser";
+import { Title } from "../Title/title";
+import { BannerText } from "../BannerText/bannerText";
 
 /* Videos 
 Blurry AI = 765127386
@@ -25,48 +26,25 @@ export const BannerVideo = ({
   overlayColor,
   textColor,
   typing,
-  height,
 }) => {
   const pageTitleParsed = parse(pageTitle);
   const pageDescriptionParsed = parse(pageDescription);
 
   return (
     <>
-      <BannerVideoWrapper style={{ height: height }}>
+      <BannerVideoWrapper>
         {pageVideo ? (
           <VideoCallout
             pageVideo={pageVideo}
             overlayOpacity={overlayOpacity}
             overlayColor={overlayColor}
-            height={height}
           />
         ) : (
           ""
         )}
         <TextWrapper>
-          <AnimationOnScroll animateIn="animate__fadeIn" delay={400}>
-            <h1 style={{ color: textColor && textColor }}>{pageTitleParsed}</h1>
-            {typing ? (
-              <TypeWriterParagraph
-                textStyle={{
-                  fontFamily: "Roboto, sans-serif",
-                  fontWeight: 300,
-                  fontSize: "1.7em",
-                  lineHeight: "1.5em",
-                  color: COLOR_TEXT,
-                  opacity: TEXT_OPACITY,
-                  cursor: "",
-                }}
-                startDelay={1000}
-                cursor=""
-                cursorColor="rgba(0,0,0,0)"
-                text={pageDescription}
-                typeSpeed={1}
-              />
-            ) : (
-              <PageDescription>{pageDescriptionParsed}</PageDescription>
-            )}
-          </AnimationOnScroll>
+          <Title titleText={pageTitleParsed} />
+          <BannerText typing={typing} bannerText={pageDescriptionParsed} />
         </TextWrapper>
       </BannerVideoWrapper>
     </>
@@ -79,6 +57,12 @@ const BannerVideoWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 100vw;
+  @media (min-width: ${BREAKPOINT_PX}) {
+    height: ${BANNER_HEIGHT_DESKTOP_PX};
+  }
+  @media (max-width: ${BREAKPOINT_PX}) {
+    height: ${BANNER_HEIGHT_MOBILE_PX};
+  }
 `;
 
 const TextWrapper = styled.div`
@@ -87,28 +71,6 @@ const TextWrapper = styled.div`
   height: auto;
   width: ${CONTENT_WIDTH};
   text-align: left;
-`;
-
-const PageDescription = styled.div`
-  color: ${COLOR_TEXT};
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1.7em;
-  line-height: 1.5em;
-  height: auto;
-  text-align: left;
-  opacity: ${TEXT_OPACITY};
-`;
-
-const TypeWriterParagraph = styled(TypeWriterEffect)`
-  color: ${COLOR_TEXT};
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1.7em;
-  line-height: 1.5em;
-  height: auto;
-  text-align: left;
-  opacity: ${TEXT_OPACITY};
 `;
 
 export default BannerVideo;

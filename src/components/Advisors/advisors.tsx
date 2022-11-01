@@ -10,18 +10,16 @@ const sortedDataAdvisors = dataAdvisors.sort((a, b) =>
 
 const Advisors = (props) => {
   const advisorsMap = sortedDataAdvisors.map((props) => (
-    <>
-      <AdvisorMember
-        id={props.id}
-        nameFirst={props.nameFirst}
-        nameLast={props.nameLast}
-        role={props.role}
-        photo={props.photo}
-      />
-    </>
+    <AdvisorMember
+      key={props.id}
+      id={props.id}
+      nameFirst={props.nameFirst}
+      nameLast={props.nameLast}
+      role={props.role}
+      photo={props.photo}
+    />
   ));
 
-  console.log(advisorsMap);
 
   return (
     <>
@@ -33,9 +31,9 @@ const Advisors = (props) => {
             <h2>{props.advisorsTitle}</h2>
           </AnimationOnScroll>
           <AnimationOnScroll animateIn="animate__fadeIn" delay={0} offset={30}>
-          <AdvisorsGrid style={{ background: props.backgroundColor }}>
-            {advisorsMap}
-          </AdvisorsGrid>
+            <AdvisorsGrid style={{ background: props.backgroundColor }}>
+              {advisorsMap}
+            </AdvisorsGrid>
           </AnimationOnScroll>
         </AdvisorsInner>
       </AdvisorsContainer>

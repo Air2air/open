@@ -4,10 +4,10 @@ export const HEADER_HEIGHT_PX = HEADER_HEIGHT + "px";
 export const HEADER_MOBILE_HEIGHT = 130;
 export const HEADER_MOBILE_HEIGHT_PX = HEADER_MOBILE_HEIGHT + "px";
 
-export const BANNER_HEIGHT_STANDARD = 600;
-export const BANNER_HEIGHT_STANDARD_PX = BANNER_HEIGHT_STANDARD + "px";
-export const BANNER_HEIGHT_SHORT = 400;
-export const BANNER_HEIGHT_SHORT_PX = BANNER_HEIGHT_SHORT + "px";
+export const BANNER_HEIGHT_DESKTOP = 600;
+export const BANNER_HEIGHT_DESKTOP_PX = BANNER_HEIGHT_DESKTOP + "px";
+export const BANNER_HEIGHT_MOBILE = 400;
+export const BANNER_HEIGHT_MOBILE_PX = BANNER_HEIGHT_MOBILE + "px";
 
 export const FOOTER_HEIGHT = 500;
 export const FOOTER_HEIGHT_PX = FOOTER_HEIGHT + "px";
@@ -41,6 +41,15 @@ export const CONTENT_WIDTH = "70%";
 
 // Breakpoint
 export const BREAKPOINT = 700;
+export const BREAKPOINT_PX = BREAKPOINT + "px";
+
+// Text 
+export const TEXT_TITLE_DESKTOP = "2.6em"
+export const TEXT_TITLE_MOBILE = "1.2em"
+export const TEXT_BANNER_DESKTOP = "2.6em"
+export const TEXT_BANNER_MOBILE = "2em"
+export const TEXT_CONTENT_DESKTOP = "2.6em"
+export const TEXT_CONTENT_MOBILE = "2em"
 
 // Colors
 export const COLOR_BIO = "#ff9a0e";

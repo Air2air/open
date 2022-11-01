@@ -2,7 +2,7 @@ import setBodyColor from "../utils/setBodyColor";
 import BannerVideo from "../components/BannerVideo/bannerVideo";
 // import About from "../components/About/about";
 import {
-  BANNER_HEIGHT_STANDARD_PX,
+
   COLOR_BASE,
   COLOR_BASE_1,
   COLOR_BASE_2,
@@ -25,7 +25,6 @@ const AboutPage = () => {
         overlayColor={COLOR_BASE}
         textColor={COLOR_BASE_TEXT}
         typing={true}
-        height={BANNER_HEIGHT_STANDARD_PX}
       />
       <Callout
         calloutTitle=""

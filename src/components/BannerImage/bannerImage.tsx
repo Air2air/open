@@ -1,9 +1,15 @@
-import { COLOR_TEXT, CONTENT_WIDTH, TEXT_OPACITY } from "../../styles/Constants";
+import {
+  BANNER_HEIGHT_DESKTOP_PX,
+  BANNER_HEIGHT_MOBILE_PX,
+  BREAKPOINT_PX,
+  CONTENT_WIDTH,
+} from "../../styles/Constants";
 import styled from "styled-components";
-import TypeWriterEffect from "react-typewriter-effect";
-import { AnimationOnScroll } from "react-animation-on-scroll";
+
 import ImageCallout from "../ImageCallout/imageCallout";
 import parse from "html-react-parser";
+import { Title } from "../Title/title";
+import { BannerText } from "../BannerText/bannerText";
 
 export const BannerImage = ({
   pageTitle,
@@ -11,53 +17,26 @@ export const BannerImage = ({
   pageImage,
   overlayOpacity,
   overlayColor,
-  textColor,
   typing,
-  height,
 }) => {
-  
   const pageTitleParsed = parse(pageTitle);
   const pageDescriptionParsed = parse(pageDescription);
 
   return (
     <>
-      <BannerImageWrapper style={{ height: height }}>
+      <BannerImageWrapper>
         {pageImage ? (
           <ImageCallout
             pageImage={pageImage}
             overlayOpacity={overlayOpacity}
             overlayColor={overlayColor}
-            height={height}
           />
         ) : (
           ""
         )}
         <TextWrapper>
-          <AnimationOnScroll animateIn="animate__fadeIn" delay={400}>
-            <h1 style={{ color: textColor && textColor }}>
-              {pageTitleParsed}
-            </h1>
-            {typing ? (
-              <TypeWriterParagraph
-                textStyle={{
-                  fontFamily: "Roboto, sans-serif",
-                  fontWeight: 300,
-                  fontSize: "1.7em",
-                  lineHeight: "1.5em",
-                  color: COLOR_TEXT,
-                  opacity: TEXT_OPACITY,
-
-                }}
-                startDelay={1000}
-                cursor=""
-                cursorColor="rgba(0,0,0,0)"
-                text={pageDescription}
-                typeSpeed={1}
-              />
-            ) : (
-              <PageDescription>{pageDescriptionParsed}</PageDescription>
-            )}
-          </AnimationOnScroll>
+          <Title titleText={pageTitleParsed} />
+          <BannerText typing={typing} bannerText={pageDescriptionParsed} />
         </TextWrapper>
       </BannerImageWrapper>
     </>
@@ -73,6 +52,12 @@ const BannerImageWrapper = styled.div`
   width: 100vw;
   overflow: hidden;
   align-items: center;
+  @media (min-width: ${BREAKPOINT_PX}) {
+    height: ${BANNER_HEIGHT_DESKTOP_PX};
+  }
+  @media (max-width: ${BREAKPOINT_PX}) {
+    height: ${BANNER_HEIGHT_MOBILE_PX};
+  }
 `;
 
 const TextWrapper = styled.div`
@@ -81,27 +66,6 @@ const TextWrapper = styled.div`
   height: auto;
   width: ${CONTENT_WIDTH};
   text-align: left;
-`;
-
-
-const PageDescription = styled.div`
-  color: ${COLOR_TEXT};
-  font-family: "Roboto", sans-serif;
-  font-size: 1.7em;
-  line-height: 1.5em;
-  height: auto;
-  text-align: left;
-  opacity: ${TEXT_OPACITY};
-`;
-
-const TypeWriterParagraph = styled(TypeWriterEffect)`
-  color: ${COLOR_TEXT};
-  font-family: "Roboto", sans-serif;
-  font-size: 1.7em;
-  line-height: 1.5em;
-  height: auto;
-  text-align: left;
-  opacity: ${TEXT_OPACITY};
 `;
 
 export default BannerImage;

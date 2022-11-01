@@ -2,7 +2,7 @@ import setBodyColor from "../utils/setBodyColor";
 import Callout from "../components/Callout/callOut";
 import BannerImage from "../components/BannerImage/bannerImage";
 import {
-  BANNER_HEIGHT_STANDARD_PX,
+
   COLOR_BASE,
   COLOR_BASE_1,
   COLOR_BASE_TEXT,
@@ -21,9 +21,7 @@ const VisionPage = () => {
         pageImage={pageImage}
         overlayOpacity={0.7}
         overlayColor={COLOR_BASE}
-        textColor={COLOR_BASE_TEXT}
         typing={true}
-        height={BANNER_HEIGHT_STANDARD_PX}
       />
       <Callout
         calloutTitle="The birth of machine intelligence"

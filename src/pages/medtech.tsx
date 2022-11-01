@@ -2,7 +2,7 @@ import setBodyColor from"../utils/setBodyColor";
 import Callout from "../components/Callout/callOut";
 import BannerVideo from"../components/BannerVideo/bannerVideo";
 import {
-  BANNER_HEIGHT_STANDARD_PX,
+
   COLOR_BASE,
   COLOR_BASE_TEXT,
 } from"../styles/Constants";
@@ -23,7 +23,6 @@ const MedTechPage = () => {
         overlayColor={COLOR_BASE}
         textColor={COLOR_BASE_TEXT}
         typing={true}
-        height={BANNER_HEIGHT_STANDARD_PX}
       />
        <Callout
         calloutTitle="What we do in MedTech"

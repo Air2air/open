@@ -1,60 +1,37 @@
-import { useEffect, useState } from "react";
-// import VideoPlayer from "react-background-video-player";
+
 import VimeoPlayer from "./vimeoPlayer";
 import styled from "styled-components";
+import {
+  BANNER_HEIGHT_DESKTOP_PX,
+  BANNER_HEIGHT_MOBILE_PX,
+  BREAKPOINT_PX,
+} from "../../styles/Constants";
 
-function getWindowSize() {
-  const { innerWidth, innerHeight } = window;
-  return { innerWidth, innerHeight };
-}
-
-const VideoCallout = ({ pageVideo, overlayOpacity, overlayColor, height }) => {
-  const [windowSize, setWindowSize] = useState(getWindowSize());
-
-  useEffect(() => {
-    function handleWindowResize() {
-      setWindowSize(getWindowSize());
-    }
-
-    window.addEventListener("resize", handleWindowResize);
-
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
-
-  const getRidofUseError = windowSize;
-
+const VideoCallout = ({ pageVideo, overlayOpacity, overlayColor }) => {
   return (
     <>
       <div
-        className={`animate__animated animate__fadeIn animate__delay-1s animate__slower ${getRidofUseError}`}
+        className={`animate__animated animate__fadeIn animate__delay-1s animate__slower `}
       >
-        <VideoWrapper style={{ height: height }}>
+        <VideoWrapper>
           <VimeoPlayer videoID={pageVideo} />
         </VideoWrapper>
       </div>
       <BannerVideoOpacityOverlay
         overlayOpacity={overlayOpacity}
         overlayColor={overlayColor}
-        height={height}
       />
     </>
   );
 };
 
-const BannerVideoOpacityOverlay = ({
-  overlayOpacity,
-  overlayColor,
-  height,
-}) => {
+const BannerVideoOpacityOverlay = ({ overlayOpacity, overlayColor }) => {
   return (
     <>
       <Overlay
         style={{
           opacity: overlayOpacity,
           background: overlayColor,
-          height: height,
         }}
       />
     </>
@@ -68,8 +45,13 @@ const VideoWrapper = styled.div`
   margin: 0 auto;
   transform: translate(-50%, -50%);
   width: 100vw;
-  height: auto;
   overflow: hidden;
+  @media (min-width: ${BREAKPOINT_PX}) {
+    height: ${BANNER_HEIGHT_DESKTOP_PX};
+  }
+  @media (max-width: ${BREAKPOINT_PX}) {
+    height: ${BANNER_HEIGHT_MOBILE_PX};
+  }
 `;
 
 const Overlay = styled.div`
@@ -77,6 +59,12 @@ const Overlay = styled.div`
   top: 0;
   left: 0;
   width: 100%;
+  @media (min-width: ${BREAKPOINT_PX}) {
+    height: ${BANNER_HEIGHT_DESKTOP_PX};
+  }
+  @media (max-width: ${BREAKPOINT_PX}) {
+    height: ${BANNER_HEIGHT_MOBILE_PX};
+  }
 `;
 
 export default VideoCallout;
