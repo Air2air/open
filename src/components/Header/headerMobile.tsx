@@ -88,14 +88,15 @@ const HeaderLink = styled(Link)`
   font-family: "Roboto Condensed", sans-serif;
   flex-wrap: nowrap;
   color: ${COLOR_TEXT};
-  font-size: 1em;
+  font-size: .95em;
   font-weight: 500;
-  padding: 0 20px;
+  padding: 0 10px;
   display: flex;
   align-items: center;
   text-transform: uppercase;
   height: ${headerButtonHeightPx};
   background: ${COLOR_BLACK};
+  transition: all 300ms;
   &:hover {
     background: ${COLOR_BASE};
   }
