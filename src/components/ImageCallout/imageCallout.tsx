@@ -44,7 +44,7 @@ const ImageWrapper = styled.div`
   background-size: cover;
   overflow: hidden;
   @media (min-width: ${BREAKPOINT_PX}) {
-  height: ${BANNER_HEIGHT_DESKTOP_PX};
+    height: ${BANNER_HEIGHT_DESKTOP_PX};
   }
   @media (max-width: ${BREAKPOINT_PX}) {
     height: ${BANNER_HEIGHT_MOBILE_PX};
@@ -57,7 +57,7 @@ const Overlay = styled.div`
   left: 0;
   width: 100%;
   @media (min-width: ${BREAKPOINT_PX}) {
-  height: ${BANNER_HEIGHT_DESKTOP_PX};
+    height: ${BANNER_HEIGHT_DESKTOP_PX};
   }
   @media (max-width: ${BREAKPOINT_PX}) {
     height: ${BANNER_HEIGHT_MOBILE_PX};

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import AdvisorMember from "./advisorMember";
 import { dataAdvisors } from "../../data/advisors";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import { CONTENT_WIDTH } from "../../styles/Constants";
+import { CONTENT_WIDTH_DESKTOP } from "../../styles/Constants";
 
 const sortedDataAdvisors = dataAdvisors.sort((a, b) =>
   a.nameFirst > b.nameFirst ? 1 : -1
@@ -58,7 +58,7 @@ const AdvisorsInner = styled.div`
   padding: 70px 0;
   z-index: +1;
   height: auto;
-  width: ${CONTENT_WIDTH};
+  width: ${CONTENT_WIDTH_DESKTOP};
   text-align: left;
 `;
 

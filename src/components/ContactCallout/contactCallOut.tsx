@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { ContactItem } from "./contactItem";
 import { dataContact } from "../../data/contact";
-import { CONTENT_WIDTH } from "../../styles/Constants";
+import { BREAKPOINT_PX, CONTENT_WIDTH_DESKTOP, CONTENT_WIDTH_MOBILE } from "../../styles/Constants";
 
 const ContactCallOut = () => (
   <>
@@ -22,12 +22,18 @@ const ContactCallOut = () => (
   </>
 );
 
-export default ContactCallOut ;
+export default ContactCallOut;
 
 const ContactWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  width: ${CONTENT_WIDTH};
-  margin: 30px auto;
+  margin: 0px auto;
+  @media (min-width: ${BREAKPOINT_PX}) {
+    padding: 70px 0;
+    width: ${CONTENT_WIDTH_DESKTOP};
+  }
+  @media (max-width: ${BREAKPOINT_PX}) {
+    padding: 40px 0;
+    width: ${CONTENT_WIDTH_MOBILE};
+  }
 `;
-

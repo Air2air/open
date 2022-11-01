@@ -1,7 +1,9 @@
 import {
+  BREAKPOINT_PX,
   CALLOUT_HEIGHT_PX,
   COLOR_TEXT,
-  CONTENT_WIDTH,
+  CONTENT_WIDTH_DESKTOP,
+  CONTENT_WIDTH_MOBILE,
   TEXT_OPACITY,
 } from "../../styles/Constants";
 import styled from "styled-components";
@@ -72,11 +74,18 @@ const CalloutTextWrapper = styled.div`
 
 const TextWrapper = styled.div`
   margin: 0 auto;
-  padding: 70px 0;
+
   z-index: +1;
   height: auto;
-  width: ${CONTENT_WIDTH};
   text-align: left;
+  @media (min-width: ${BREAKPOINT_PX}) {
+    padding: 70px 0;
+    width: ${CONTENT_WIDTH_DESKTOP};
+  }
+  @media (max-width: ${BREAKPOINT_PX}) {
+    padding: 40px 0;
+    width: ${CONTENT_WIDTH_MOBILE};
+  }
 `;
 
 const CalloutParagraph = styled.div`

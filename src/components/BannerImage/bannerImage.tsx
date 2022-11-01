@@ -2,7 +2,8 @@ import {
   BANNER_HEIGHT_DESKTOP_PX,
   BANNER_HEIGHT_MOBILE_PX,
   BREAKPOINT_PX,
-  CONTENT_WIDTH,
+  CONTENT_WIDTH_DESKTOP,
+  CONTENT_WIDTH_MOBILE,
 } from "../../styles/Constants";
 import styled from "styled-components";
 
@@ -20,7 +21,7 @@ export const BannerImage = ({
   typing,
 }) => {
   const pageTitleParsed = parse(pageTitle);
-  const pageDescriptionParsed = parse(pageDescription);
+
 
   return (
     <>
@@ -36,7 +37,7 @@ export const BannerImage = ({
         )}
         <TextWrapper>
           <Title titleText={pageTitleParsed} />
-          <BannerText typing={typing} bannerText={pageDescriptionParsed} />
+          <BannerText typing={typing} bannerText={pageDescription} />
         </TextWrapper>
       </BannerImageWrapper>
     </>
@@ -64,8 +65,13 @@ const TextWrapper = styled.div`
   margin: 80px auto 0 auto;
   z-index: +1;
   height: auto;
-  width: ${CONTENT_WIDTH};
   text-align: left;
+  @media (min-width: ${BREAKPOINT_PX}) {
+    width: ${CONTENT_WIDTH_DESKTOP};
+  }
+  @media (max-width: ${BREAKPOINT_PX}) {
+    width: ${CONTENT_WIDTH_MOBILE};
+  }
 `;
 
 export default BannerImage;

@@ -6,7 +6,7 @@ export const HEADER_MOBILE_HEIGHT_PX = HEADER_MOBILE_HEIGHT + "px";
 
 export const BANNER_HEIGHT_DESKTOP = 600;
 export const BANNER_HEIGHT_DESKTOP_PX = BANNER_HEIGHT_DESKTOP + "px";
-export const BANNER_HEIGHT_MOBILE = 400;
+export const BANNER_HEIGHT_MOBILE = 440;
 export const BANNER_HEIGHT_MOBILE_PX = BANNER_HEIGHT_MOBILE + "px";
 
 export const FOOTER_HEIGHT = 500;
@@ -18,6 +18,14 @@ export const CALLOUT_HEIGHT_PX = CALLOUT_HEIGHT + "px";
 export const CONTACT_ITEM_HEIGHT = 250;
 export const CONTACT_ITEM_HEIGHT_PX = CONTACT_ITEM_HEIGHT + "px";
 
+export const TEAM_MEMBER_HEIGHT = 220;
+export const TEAM_MEMBER_HEIGHT_PX = TEAM_MEMBER_HEIGHT + "px";
+export const TEAM_MEMBER_WIDTH = 120;
+export const TEAM_MEMBER_WIDTH_PX = TEAM_MEMBER_WIDTH + "px";
+export const TEAM_MEMBER_PHOTO = 140;
+export const TEAM_MEMBER_PHOTO_PX = TEAM_MEMBER_PHOTO + "px";
+
+// BUTTONS
 export const BUTTON_HEIGHT = 40;
 export const BUTTON_HEIGHT_PX = BUTTON_HEIGHT + "px";
 export const BUTTON_COLOR = "hsl(0, 86%, 36%)";
@@ -29,15 +37,11 @@ export const BUTTON_HEIGHT_LINKEDIN_PX = BUTTON_HEIGHT_LINKEDIN + "px";
 export const BUTTON_COLOR_LINKEDIN = "hsl(0, 86%, 36%)";//"hsl(205, 90%, 28%)";
 export const BUTTON_COLOR_LINKEDIN_HOVER = "hsl(0, 86%, 46%)"//"hsl(205, 73%, 52%)";
 
-export const TEAM_MEMBER_HEIGHT = 220;
-export const TEAM_MEMBER_HEIGHT_PX = TEAM_MEMBER_HEIGHT + "px";
-export const TEAM_MEMBER_WIDTH = 120;
-export const TEAM_MEMBER_WIDTH_PX = TEAM_MEMBER_WIDTH + "px";
-export const TEAM_MEMBER_PHOTO = 140;
-export const TEAM_MEMBER_PHOTO_PX = TEAM_MEMBER_PHOTO + "px";
+
 
 // WIDTH
-export const CONTENT_WIDTH = "70%";
+export const CONTENT_WIDTH_DESKTOP = "70%";
+export const CONTENT_WIDTH_MOBILE = "84%";
 
 // Breakpoint
 export const BREAKPOINT = 700;

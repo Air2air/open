@@ -7,7 +7,7 @@ import {
   COLOR_CAPTION,
   COLOR_TEXT,
   COLOR_TITLE_TEXT,
-  CONTENT_WIDTH,
+  CONTENT_WIDTH_DESKTOP,
 } from "../../styles/Constants";
 import Button from "../Button/button";
 
@@ -178,7 +178,7 @@ const GraphInner = styled.div`
   padding: 70px 0;
   z-index: +1;
   height: auto;
-  width: ${CONTENT_WIDTH};
+  width: ${CONTENT_WIDTH_DESKTOP};
   text-align: left;
 
   .content {

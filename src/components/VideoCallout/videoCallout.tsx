@@ -1,4 +1,3 @@
-
 import VimeoPlayer from "./vimeoPlayer";
 import styled from "styled-components";
 import {

@@ -3,7 +3,7 @@ import { TimeLineItemLeft, TimeLineItemRight } from "./timeLineItem";
 import { dataTimeLine } from "../../data/timeLine";
 import {
   COLOR_BASE_LIGHT,
-  CONTENT_WIDTH,
+  CONTENT_WIDTH_DESKTOP,
 } from "../../styles/Constants";
 
 const TimeLineLeft = () => {
@@ -54,7 +54,7 @@ export default TimeLine;
 const TimeLineWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  width: ${CONTENT_WIDTH};
+  width: ${CONTENT_WIDTH_DESKTOP};
   margin: 0 auto;
 `;
 

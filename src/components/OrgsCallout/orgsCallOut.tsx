@@ -1,4 +1,4 @@
-import { CALLOUT_HEIGHT_PX, CONTENT_WIDTH } from "../../styles/Constants";
+import { CALLOUT_HEIGHT_PX, CONTENT_WIDTH_DESKTOP } from "../../styles/Constants";
 import styled from "styled-components";
 import { dataOrgs } from "./../../data/orgs";
 
@@ -45,7 +45,7 @@ const OrgInnerWrapper = styled.div`
   padding: 50px 0;
   z-index: +1;
   height: auto;
-  width: ${CONTENT_WIDTH};
+  width: ${CONTENT_WIDTH_DESKTOP};
   text-align: left;
 `;
 
