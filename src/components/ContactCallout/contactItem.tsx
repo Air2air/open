@@ -25,7 +25,7 @@ export const ContactItem = (props: {
           <br />
           <ButtonLinkedIn
             to="https://www.linkedin.com/company/eleven-health"
-            text="Eleven Health"
+            text="Elevens.ai"
           />
           <br />
 
