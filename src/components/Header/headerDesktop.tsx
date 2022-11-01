@@ -119,7 +119,6 @@ const HeaderRight = styled.div`
   align-items: center;
   justify-content: flex-end;
   height: ${HEADER_HEIGHT_PX};
-  /* background: ${HEADER_COLOR}; */
 `;
 
 const HeaderLink = styled(Link)`

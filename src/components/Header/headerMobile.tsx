@@ -57,6 +57,7 @@ const HeaderTop = styled.div`
   width: 100vw;
   padding: 0;
   height: ${headerTopHeightPx};
+  background: ${HEADER_COLOR};
 `;
 
 const LogoWrapper = styled.div`
@@ -83,7 +84,7 @@ const HeaderBottom = styled.div`
   width: 100vw;
   height: ${headerButtonHeightPx};
   padding: 0;
-  background: ${HEADER_COLOR};
+
 `;
 
 const HeaderLink = styled(Link)`
