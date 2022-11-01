@@ -94,7 +94,7 @@ export const Graph = (props: IGraphProps) => {
           >
             <GraphColumn
               label="Healthtech"
-              size={30}
+              size={20}
               value="$400B"
             ></GraphColumn>
           </div>
@@ -104,7 +104,7 @@ export const Graph = (props: IGraphProps) => {
             onMouseOver={handleMouseOver2}
             onMouseOut={handleMouseOut2}
           >
-            <GraphColumn label="Medtech" size={40} value="$500B"></GraphColumn>
+            <GraphColumn label="Medtech" size={30} value="$500B"></GraphColumn>
           </div>
 
           <div

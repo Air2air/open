@@ -29,16 +29,12 @@ export const Footer = () => {
             <FooterLink to="/">Home</FooterLink>
             <FooterLink to="/what_we_do">What We Do</FooterLink>
             <FooterLink to="/markets">Markets</FooterLink>
-
+            <FooterLink to="/vision">Vision</FooterLink>
           </FooterLinkColumn>
           <FooterLinkColumn>
-          <FooterLink to="/vision">Vision</FooterLink>
             <FooterLink to="/about">About</FooterLink>
             <FooterLink to="/timeline">Venture stages</FooterLink>
-            {/* <FooterLink to="/biotech">BioTech</FooterLink>
-            <FooterLink to="/healthtech">HealthTech</FooterLink>
-            <FooterLink to="/medtech">MedTech</FooterLink>
-            <FooterLink to="/pharmatech">PharmaTech</FooterLink> */}
+            <FooterLink to="/contact">Contact</FooterLink>
           </FooterLinkColumn>
         </FooterColumn>
       </FooterWrapperInner>
