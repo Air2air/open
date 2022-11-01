@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { ReactComponent as LogoWhite } from "./../../images/logo_text_white.svg";
 import {
-  COLOR_BASE,
-  COLOR_BLACK,
+  HEADER_COLOR,
   COLOR_TEXT,
   HEADER_HEIGHT_PX,
+  HEADER_COLOR_HOVER,
 } from "../../styles/Constants";
 import { useState, useEffect } from "react";
 
@@ -74,7 +74,7 @@ const HeaderOverlay = styled.div`
   position: absolute;
   width: 100vw;
   height: ${HEADER_HEIGHT_PX};
-  background: ${COLOR_BLACK};
+  background: ${HEADER_COLOR};
 `;
 
 const HeaderInner = styled.div`
@@ -119,7 +119,7 @@ const HeaderRight = styled.div`
   align-items: center;
   justify-content: flex-end;
   height: ${HEADER_HEIGHT_PX};
-  /* background: ${COLOR_BLACK}; */
+  /* background: ${HEADER_COLOR}; */
 `;
 
 const HeaderLink = styled(Link)`
@@ -130,10 +130,11 @@ const HeaderLink = styled(Link)`
   padding: 0 20px;
   display: flex;
   align-items: center;
+  flex-wrap:nowrap;
   text-transform: uppercase;
   height: ${HEADER_HEIGHT_PX};
-  background: ${COLOR_BLACK};
+  background: ${HEADER_COLOR};
   &:hover {
-    background: ${COLOR_BASE};
+    background: ${HEADER_COLOR_HOVER};
   }
 `;
