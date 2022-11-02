@@ -8,8 +8,8 @@ import {
 import styled from "styled-components";
 import VideoCallout from "../VideoCallout/videoCallout";
 import parse from "html-react-parser";
-import { Title } from "../Title/title";
 import { BannerText } from "../BannerText/bannerText";
+import { TitleBanner } from "../Title/titleBanner";
 
 /* Videos 
 Blurry AI = 765127386
@@ -25,7 +25,6 @@ export const BannerVideo = ({
   pageVideo,
   overlayOpacity,
   overlayColor,
-  textColor,
   typing,
 }) => {
   const pageTitleParsed = parse(pageTitle);
@@ -43,7 +42,7 @@ export const BannerVideo = ({
           ""
         )}
         <TextWrapper>
-          <Title titleText={pageTitleParsed} />
+          <TitleBanner titleText={pageTitleParsed} />
           <BannerText typing={typing} bannerText={pageDescription} />
         </TextWrapper>
       </BannerVideoWrapper>

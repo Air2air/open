@@ -1,9 +1,5 @@
 import setBodyColor from "../utils/setBodyColor";
-import {
-
-  COLOR_BASE,
-  COLOR_BASE_TEXT,
-} from "../styles/Constants";
+import { COLOR_BASE } from "../styles/Constants";
 import BannerVideo from "../components/BannerVideo/bannerVideo";
 import ContactCallout from "../components/ContactCallout/contactCallOut";
 
@@ -19,7 +15,6 @@ const ContactPage = () => {
         pageVideo={pageVideo}
         overlayOpacity={0.1}
         overlayColor={COLOR_BASE}
-        textColor={COLOR_BASE_TEXT}
         typing={true}
       />
       <ContactCallout />

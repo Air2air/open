@@ -10,56 +10,48 @@ import styled from "styled-components";
 import Button from "../Button/button";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import parse from "html-react-parser";
+import { TitleCallout } from "../Title/titleCallout";
 
-interface ICalloutTextProps {
+interface ITextSectionProps {
   calloutTitle: string;
   calloutText: string;
   calloutVideo?: string;
   backgroundColor: string;
-  textColor: string;
   buttonText: string;
   buttonTo: string;
 }
 
-export const Callout = (props: ICalloutTextProps) => {
-  const {
-    calloutTitle,
-    calloutText,
-    backgroundColor,
-    textColor,
-    buttonText,
-    buttonTo,
-  } = props;
+export const Callout = (props: ITextSectionProps) => {
+  const { calloutTitle, calloutText, backgroundColor, buttonText, buttonTo } =
+    props;
 
   const calloutTitleParsed = parse(calloutTitle);
   const calloutTextParsed = parse(calloutText);
 
   return (
     <>
-      <CalloutTextWrapper
+      <CalloutContainer
         style={{ background: backgroundColor && backgroundColor }}
       >
-        <TextWrapper>
-          <AnimationOnScroll animateIn="animate__fadeIn" delay={0} offset={30}>
-            <h2 style={{ color: textColor && textColor }}>
-              {calloutTitleParsed}
-            </h2>
-          </AnimationOnScroll>
+        <TextSection>
+          <TitleCallout titleText={calloutTitleParsed} />
 
-          <AnimationOnScroll animateIn="animate__fadeIn" delay={200} offset={60}>
+          <AnimationOnScroll
+            animateIn="animate__fadeIn"
+            delay={200}
+            offset={60}
+          >
             <CalloutParagraph>{calloutTextParsed}</CalloutParagraph>
           </AnimationOnScroll>
 
-          <AnimationOnScroll animateIn="animate__fadeInUp" delay={0}>
-            {buttonText ? <Button to={buttonTo} text={buttonText} /> : ""}
-          </AnimationOnScroll>
-        </TextWrapper>
-      </CalloutTextWrapper>
+          {buttonText ? <Button to={buttonTo} text={buttonText} /> : ""}
+        </TextSection>
+      </CalloutContainer>
     </>
   );
 };
 
-const CalloutTextWrapper = styled.div`
+const CalloutContainer = styled.div`
   position: relative;
   top: 0;
   display: flex;
@@ -72,9 +64,8 @@ const CalloutTextWrapper = styled.div`
   min-height: ${CALLOUT_HEIGHT_PX};
 `;
 
-const TextWrapper = styled.div`
+const TextSection = styled.div`
   margin: 0 auto;
-
   z-index: +1;
   height: auto;
   text-align: left;
@@ -92,12 +83,18 @@ const CalloutParagraph = styled.div`
   color: ${COLOR_TEXT};
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 1.2em;
-  line-height: 1.7em;
   height: auto;
   text-align: left;
   opacity: ${TEXT_OPACITY};
-  padding-bottom: 14px;
+  padding-bottom: 20px;
+  @media (min-width: ${BREAKPOINT_PX}) {
+    font-size: 1.3em;
+    line-height: 1.7em;
+  }
+  @media (max-width: ${BREAKPOINT_PX}) {
+    font-size: 1.1em;
+    line-height: 1.7em;
+  }
 `;
 
 export default Callout;

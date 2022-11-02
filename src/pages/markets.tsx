@@ -1,11 +1,6 @@
 import setBodyColor from "../utils/setBodyColor";
 import BannerVideo from "../components/BannerVideo/bannerVideo";
-import {
-
-  COLOR_BASE,
-  COLOR_BASE_1,
-  COLOR_BASE_TEXT,
-} from "../styles/Constants";
+import { COLOR_BASE, COLOR_BASE_1 } from "../styles/Constants";
 import Graph from "../components/Graph/graph";
 
 const vimeoVideo = 765122469;
@@ -20,10 +15,15 @@ const MarketsPage = () => {
         pageVideo={vimeoVideo}
         overlayOpacity={0.2}
         overlayColor={COLOR_BASE}
-        textColor={COLOR_BASE_TEXT}
         typing={true}
       />
-      <Graph backgroundColor={COLOR_BASE_1} graphTitle="2022 Markets" graphHeight={400} buttonText="Vision" buttonTo="/vision" />
+      <Graph
+        backgroundColor={COLOR_BASE_1}
+        graphTitle="2022 Markets"
+        graphHeight={400}
+        buttonText="Vision"
+        buttonTo="/vision"
+      />
     </>
   );
 };

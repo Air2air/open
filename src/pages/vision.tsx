@@ -2,10 +2,8 @@ import setBodyColor from "../utils/setBodyColor";
 import Callout from "../components/Callout/callOut";
 import BannerImage from "../components/BannerImage/bannerImage";
 import {
-
   COLOR_BASE,
   COLOR_BASE_1,
-  COLOR_BASE_TEXT,
 } from "../styles/Constants";
 
 const pageImage = "dartmouth.jpeg";
@@ -32,7 +30,6 @@ const VisionPage = () => {
         <p>The workshop is widely considered to be the founding event of artificial intelligence as a field.</p>
        </p>'
         backgroundColor={COLOR_BASE_1}
-        textColor={COLOR_BASE_TEXT}
         buttonText="About Eleven"
         buttonTo="/about"
       />

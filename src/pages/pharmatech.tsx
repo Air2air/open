@@ -4,7 +4,6 @@ import BannerVideo from "../components/BannerVideo/bannerVideo";
 import {
 
   COLOR_BASE,
-  COLOR_BASE_TEXT,
 } from "../styles/Constants";
 
 const pageVideo =
@@ -20,14 +19,12 @@ const PharmaTechPage = () => {
         pageVideo={pageVideo}
         overlayOpacity={0.6}
         overlayColor={COLOR_BASE}
-        textColor={COLOR_BASE_TEXT}
         typing={true}
       />
       <Callout
         calloutTitle="What we do in PharmaTech"
         calloutText="<p>Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below. Here's everything we do in PharmaTech. There may be other sections below.</p><p>Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below. Here's everything we do in PharmaTech. There may be other sections below.</p>"
         backgroundColor={COLOR_BASE}
-        textColor={COLOR_BASE_TEXT}
         buttonText=""
         buttonTo=""
       />

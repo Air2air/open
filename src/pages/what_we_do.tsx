@@ -1,16 +1,9 @@
 import setBodyColor from "../utils/setBodyColor";
 import Callout from "../components/Callout/callOut";
 import BannerVideo from "../components/BannerVideo/bannerVideo";
-import {
-
-  COLOR_BASE,
-  COLOR_BASE_1,
-  COLOR_BASE_2,
-  COLOR_BASE_TEXT,
-} from "../styles/Constants";
+import { COLOR_BASE, COLOR_BASE_1, COLOR_BASE_2 } from "../styles/Constants";
 
 const pageVideo = 765122469;
-
 
 const WhatWeDoPage = () => {
   setBodyColor({ color: COLOR_BASE });
@@ -22,7 +15,6 @@ const WhatWeDoPage = () => {
         pageVideo={pageVideo}
         overlayOpacity={0.3}
         overlayColor={COLOR_BASE}
-        textColor={COLOR_BASE_TEXT}
         typing={true}
       />
       <Callout
@@ -35,7 +27,6 @@ const WhatWeDoPage = () => {
         </li>
         <li>Deep technical and clinical support for broader consumer health sector landscape (e.g., patient engagement, wearables, digital health and wellness)</li></ul>"
         backgroundColor={COLOR_BASE_1}
-        textColor={COLOR_BASE_TEXT}
         buttonText=""
         buttonTo=""
       />
@@ -50,7 +41,6 @@ const WhatWeDoPage = () => {
         </ul>
         "
         backgroundColor={COLOR_BASE_2}
-        textColor={COLOR_BASE_TEXT}
         buttonText="Markets"
         buttonTo="/markets"
       />

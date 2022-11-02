@@ -9,8 +9,8 @@ import styled from "styled-components";
 
 import ImageCallout from "../ImageCallout/imageCallout";
 import parse from "html-react-parser";
-import { Title } from "../Title/title";
 import { BannerText } from "../BannerText/bannerText";
+import { TitleBanner } from "../Title/titleBanner";
 
 export const BannerImage = ({
   pageTitle,
@@ -36,7 +36,7 @@ export const BannerImage = ({
           ""
         )}
         <TextWrapper>
-          <Title titleText={pageTitleParsed} />
+          <TitleBanner titleText={pageTitleParsed} />
           <BannerText typing={typing} bannerText={pageDescription} />
         </TextWrapper>
       </BannerImageWrapper>

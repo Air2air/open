@@ -7,7 +7,7 @@ type TitleProps = {
   titleText?: any;
 };
 
-export const Title: FC<TitleProps> = ({ titleText }) => (
+export const TitleCallout: FC<TitleProps> = ({ titleText }) => (
   <AnimationOnScroll animateIn="animate__fadeIn" delay={400}>
     <TitleStyled>{titleText}</TitleStyled>
   </AnimationOnScroll>
@@ -15,9 +15,9 @@ export const Title: FC<TitleProps> = ({ titleText }) => (
 
 export const TitleStyled = styled.h1`
   @media (min-width: ${BREAKPOINT_PX}) {
-    font-size: 2.6em;
+    font-size: 2.1em;
   }
   @media (max-width: ${BREAKPOINT_PX}) {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 `;
