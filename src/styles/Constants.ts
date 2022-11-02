@@ -9,8 +9,8 @@ export const BANNER_HEIGHT_DESKTOP_PX = BANNER_HEIGHT_DESKTOP + "px";
 export const BANNER_HEIGHT_MOBILE = 440;
 export const BANNER_HEIGHT_MOBILE_PX = BANNER_HEIGHT_MOBILE + "px";
 
-export const FOOTER_HEIGHT = 500;
-export const FOOTER_HEIGHT_PX = FOOTER_HEIGHT + "px";
+export const FOOTER_HEIGHT_DESKTOP = 400;
+export const FOOTER_HEIGHT_MOBILE = 400;
 
 export const CALLOUT_HEIGHT = 250;
 export const CALLOUT_HEIGHT_PX = CALLOUT_HEIGHT + "px";
