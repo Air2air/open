@@ -8,7 +8,7 @@ import {
 
 const TimeLineLeft = () => {
   const timeLineMap = dataTimeLine
-    .filter((u) => u.side !== "left")
+    .filter((u) => u.side === "left")
     .map((props) => (
       <TimeLineItemLeft
         key={props.id}
@@ -22,7 +22,7 @@ const TimeLineLeft = () => {
 
 const TimeLineRight = () => {
   const timeLineMap = dataTimeLine
-    .filter((u) => u.side === "left")
+    .filter((u) => u.side !== "left")
     .map((props) => (
       <TimeLineItemRight
         key={props.id}

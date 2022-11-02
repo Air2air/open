@@ -1,4 +1,6 @@
 export const dataTimeLine = [
+
+
   {
     id: 2,
     order: 1,
@@ -6,7 +8,6 @@ export const dataTimeLine = [
     desc: "Pre-seed, or 'friends and family' funding, is the initial step toward getting enough capital to develop a product. Since pre-seed money is the earliest part of the fundraising journey, few startups manage to secure capital at this stage. Most entrepreneurs in this situation have yet to get a product to market and may not have anything more than a prototype, which makes it difficult to convince pre-seed investors to bet their hard-earned money on an idea that hasn't been fully completed yet. In most cases, pre-seed capital  comes in the form of convertible security. It begins as a loan, and when certain growth conditions are met, the loan turns into a certain amount of equity.",
     side: "left"
   },
-
   {
     id: 1,
     order: 2,
@@ -40,13 +41,13 @@ export const dataTimeLine = [
     order: 6,
     title: "Mezzanine Stage",
     desc: "The final stage of venture capital marks your transition to a liquidity event, either an exit via going public or M&amp;A. You've reached maturity and now need financing to support major events.",
-    side: "right"
+    side: "left"
   },
   {
     id: 7,
     order: 7,
     title: "Public Stage",
     desc: "An IPO or initial public offering is the natural progression of funding beyond VCs. It's the process of taking your private company public by offering corporate shares on the open market. This can be a very effective way for a growing startup with proven potential or a long-established company to generate funds and reward earlier investors, including the founder and advisors.",
-    side: "left"
+    side: "right"
   },
 ];
