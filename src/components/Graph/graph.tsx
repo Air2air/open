@@ -2,7 +2,6 @@ import { useState } from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import styled from "styled-components";
 import {
-  COLOR_BASE_3,
   COLOR_BASE_5,
   COLOR_CAPTION,
   COLOR_TEXT,
