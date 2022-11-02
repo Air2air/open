@@ -26,7 +26,7 @@ const Advisors = (props) => {
       <Container>
         <TitleCallout titleText={props.advisorsTitle} />
         <AnimationOnScroll animateIn="animate__fadeIn" delay={0} offset={30}>
-          <AdvisorsGrid style={{ background: props.backgroundColor }}>
+          <AdvisorsGrid>
             {advisorsMap}
           </AdvisorsGrid>
         </AnimationOnScroll>
@@ -39,8 +39,9 @@ const AdvisorsGrid = styled.div`
   margin: 0 auto;
   display: grid;
   gap: 2rem;
-  padding-top: 50px;
-  max-width: 1000px;
+  padding: 40px 0;
+  /* max-width: 1000px; */
+  width:100%;
   @media (min-width: 701px) {
     grid-template-columns: repeat(4, 1fr);
   }

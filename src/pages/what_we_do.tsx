@@ -11,7 +11,7 @@ const WhatWeDoPage = () => {
     <>
       <BannerVideo
         pageTitle="What we do for you"
-        pageDescription="With over 100 years of combined real-world experience, Eleven leverages a large multi-disciplinary advisors of industry-leading specialists to deliver across your healthcare AI needs."
+        pageDescription="Eleven leverages a large multi-disciplinary advisors of industry-leading specialists to deliver across your healthcare AI needs."
         pageVideo={pageVideo}
         overlayOpacity={0.3}
         overlayColor={COLOR_BASE}
@@ -31,13 +31,13 @@ const WhatWeDoPage = () => {
         buttonTo=""
       />
       <Callout
-        calloutTitle="Financial"
+        calloutTitle="Growth and Acquisitions"
         calloutText="
         From Seed to IPO Eleven shepherds your <b>portfolio companies</b> through the challenging health vertical.  
         <ul>
         <li>Strategic investments and structuring corporate vehicles (e.g., corporate venture capital, or CVC).</li>
         <li>Growth guidance including market segment, therapeutic area or disease category from competitive, partnering or investment perspectives.</li>  <li>Multidisciplinary fundraising, positioning vision, strategy and business model for digital health and digital medicine.</li>
-        <li>M &amp; A ccommercial due diligence, including market assessment, evaluation of the competitive landscape, and analysis of the target's value proposition and post-acquisition growth strategy.</li>
+        <li>M &amp; A commercial due diligence including market assessment, evaluation of the competitive landscape, and analysis of the target's value proposition and post-acquisition growth strategy.</li>
         </ul>
         "
         backgroundColor={COLOR_BASE_2}
