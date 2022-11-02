@@ -41,13 +41,13 @@ export const dataTimeLine = [
     order: 6,
     title: "Mezzanine Stage",
     desc: "The final stage of venture capital marks your transition to a liquidity event, either an exit via going public or M&amp;A. You've reached maturity and now need financing to support major events.",
-    side: "left"
+    side: "right"
   },
   {
     id: 7,
     order: 7,
     title: "Public Stage",
     desc: "An IPO or initial public offering is the natural progression of funding beyond VCs. It's the process of taking your private company public by offering corporate shares on the open market. This can be a very effective way for a growing startup with proven potential or a long-established company to generate funds and reward earlier investors, including the founder and advisors.",
-    side: "right"
+    side: "left"
   },
 ];

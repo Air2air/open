@@ -62,5 +62,5 @@ const TimeLineItemColumn = styled.div`
   display: flex;
   flex: 4;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 `;
