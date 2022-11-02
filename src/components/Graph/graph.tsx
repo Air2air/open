@@ -10,6 +10,7 @@ import {
   CONTENT_WIDTH_DESKTOP,
 } from "../../styles/Constants";
 import Button from "../Button/button";
+import { TitleBanner } from "../Title/titleBanner";
 
 interface IGraphProps {
   graphHeight?: number;
@@ -80,9 +81,7 @@ export const Graph = (props: IGraphProps) => {
           height: outerHeight,
         }}
       >
-        <AnimationOnScroll animateIn="animate__fadeIn" delay={0} offset={30}>
-          <h2>{graphTitle}</h2>
-        </AnimationOnScroll>
+        <TitleBanner titleText={graphTitle} />
         <GraphWrapper
           style={{
             height: innerHeight,
@@ -166,8 +165,7 @@ const GraphWrapper = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  border-bottom:2px solid ${COLOR_BASE_5};
-
+  border-bottom: 2px solid ${COLOR_BASE_5};
   .column {
     height: 100%;
   }
@@ -211,7 +209,6 @@ const GraphContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 100%;
-
 `;
 
 const Column = styled.div`
@@ -235,7 +232,7 @@ const Column = styled.div`
   }
   &:hover {
     .display {
-      background: ${COLOR_BASE_3};
+      background: ${COLOR_BASE_5};
     }
   }
   /* background: red; */
