@@ -77,6 +77,7 @@ const ImageWrapper = styled.div`
   width: 100%;
   height: ${CONTACT_ITEM_HEIGHT_PX};
   background-size: cover;
+  background-position: center;
   transition: all 500ms;
 `;
 
