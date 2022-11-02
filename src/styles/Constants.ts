@@ -69,7 +69,7 @@ export const COLOR_TITLE_TEXT_HOVER = "hsl(0, 10%, 70%)";
 export const TEXT_OPACITY = 0.8;
 
 export const HEADER_COLOR = "rgba(0, 0, 0, 0.5)";
-export const HEADER_COLOR_HOVER = "rgba(0, 0, 0, 0.1)";
+export const HEADER_COLOR_HOVER = "rgba(150, 150, 150, 0.5)";
 
 // Themes
 export const COLOR_BLACK = "hsl(0, 0%, 0%)";

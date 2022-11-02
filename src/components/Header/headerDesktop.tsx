@@ -43,7 +43,6 @@ export const HeaderDesktop = () => {
               <LogoWhite width="150" />
             </Link>
           </LogoWrapper>
-          {/* <Button to="/contact" text="Contact Us" /> */}
         </HeaderLeft>
         <HeaderRight>
           <HeaderLink to="/what_we_do">What we do</HeaderLink>
@@ -133,6 +132,7 @@ const HeaderLink = styled(Link)`
   text-transform: uppercase;
   height: ${HEADER_HEIGHT_PX};
   background: ${HEADER_COLOR};
+  transition: all 300ms;
   &:hover {
     background: ${HEADER_COLOR_HOVER};
   }
