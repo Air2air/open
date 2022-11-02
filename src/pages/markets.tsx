@@ -8,7 +8,7 @@ import {
 } from "../styles/Constants";
 import Graph from "../components/Graph/graph";
 
-const vimeoVideo = 765132534;
+const vimeoVideo = 765122469;
 
 const MarketsPage = () => {
   setBodyColor({ color: COLOR_BASE });

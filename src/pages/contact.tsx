@@ -7,7 +7,7 @@ import {
 import BannerVideo from "../components/BannerVideo/bannerVideo";
 import ContactCallout from "../components/ContactCallout/contactCallOut";
 
-const pageVideo = 765127386;
+const pageVideo = 765122469;
 
 const ContactPage = () => {
   setBodyColor({ color: COLOR_BASE });
