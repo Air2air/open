@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {
-  COLOR_BASE_4,
+  COLOR_BASE_LIGHT,
   COLOR_BASE_TEXT,
   COLOR_TEXT,
   TEAM_MEMBER_HEIGHT_PX,
@@ -9,12 +9,10 @@ import {
 } from "../../styles/Constants";
 
 const AdvisorMember = ({ id, nameFirst, nameLast, role, photo }) => {
-  // const imgsrc = "/images/about/" + photo;
-
+  const backgroundImage = "url(/images/team/man_icon.png)";
   return (
     <AdvisorMemberWrapper key={id}>
-      {/* <AdvisorMemberPhoto src={imgsrc} style={{transform: `scale(${photoScale})`}} /> */}
-      <AdvisorMemberSquare />
+        <ImageWrapper style={{ backgroundImage: backgroundImage }} />
       <AdvisorMemberName>
         {nameFirst} {nameLast}
       </AdvisorMemberName>
@@ -34,26 +32,15 @@ const AdvisorMemberWrapper = styled.div`
   /* background: gold; */
 `;
 
-/*
-const AdvisorMemberPhoto = styled.img`
-  filter: grayscale(100%);
-  height: ${TEAM_MEMBER_PHOTO_PX};
-  width: ${TEAM_MEMBER_PHOTO_PX};
-  border-radius: 50%;
-  object-fit: cover;
-  clip-path: circle(70px at center);
-  background: ${COLOR_BASE_2};
-  transform:translateY(0px);
-`;
-*/
 
-const AdvisorMemberSquare = styled.img`
-  height: ${TEAM_MEMBER_PHOTO_PX};
+const ImageWrapper = styled.div`
   width: ${TEAM_MEMBER_PHOTO_PX};
-  background: ${COLOR_BASE_4};
-  transform: translateY(0px);
-  border: none;
+  height:${TEAM_MEMBER_PHOTO_PX};
+  background-size: cover;
+  background-color: ${COLOR_BASE_LIGHT}
 `;
+
+
 
 const AdvisorMemberName = styled.div`
   margin-top: 12px;
