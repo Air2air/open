@@ -11,7 +11,7 @@ import {
 import { Callout } from "../components/Callout/callOut";
 import Advisors from "../components/Advisors/advisors";
 
-const pageVideo = 765129157;
+const pageVideo = 765122469;
 
 const AboutPage = () => {
   setBodyColor({ color: COLOR_BASE });
