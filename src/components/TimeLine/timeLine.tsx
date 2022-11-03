@@ -10,35 +10,7 @@ import {
 } from "../../styles/Constants";
 import { useState, useEffect } from "react";
 
-const TimeLineDesktop = () => (
-  <>
-    <TimeLineWrapper>
-      <TimeLineItemColumn
-        style={{ borderRight: `2px solid ${COLOR_BASE_LIGHT}` }}
-      >
-        <TimeLineLeft />
-      </TimeLineItemColumn>
-      <TimeLineItemColumn style={{ marginTop: "40px" }}>
-        <TimeLineRight />
-      </TimeLineItemColumn>
-    </TimeLineWrapper>
-  </>
-);
 
-const TimeLineMobile = () => (
-  <>
-    <TimeLineWrapper>
-      <TimeLineItemColumn
-        style={{ borderRight: `2px solid ${COLOR_BASE_LIGHT}` }}
-      >
-        <TimeLineLeft />
-        {/* </TimeLineItemColumn>
-      <TimeLineItemColumn style={{ marginTop: "40px" }}>
-        <TimeLineRight />*/}
-      </TimeLineItemColumn>
-    </TimeLineWrapper>
-  </>
-);
 
 const TimeLine = () => {
   /*------ Responsive -------*/
@@ -67,7 +39,18 @@ const TimeLine = () => {
           </TimeLineWrapper>
         </>
       ) : (
-        TimeLineMobile
+        <>
+          <TimeLineWrapper>
+            <TimeLineItemColumn
+              style={{ borderRight: `2px solid ${COLOR_BASE_LIGHT}` }}
+            >
+              <TimeLineLeft />
+            </TimeLineItemColumn>
+            <TimeLineItemColumn style={{ marginTop: "40px" }}>
+              <TimeLineRight />
+            </TimeLineItemColumn>
+          </TimeLineWrapper>
+        </>
       )}
     </>
   );
