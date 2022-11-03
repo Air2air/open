@@ -80,7 +80,7 @@ export const COLOR_BASE_3 = "hsl(0, 0%, 17%)";
 export const COLOR_BASE_4 = "hsl(0, 0%, 19%)";
 export const COLOR_BASE_5 = "hsl(0, 0%, 21%)";
 export const COLOR_BASE_6 = "hsl(0, 0%, 23%)";
-export const COLOR_BASE_LIGHT = "hsl(0, 0%, 43%)";
+export const COLOR_BASE_LIGHT = "hsl(0, 0%, 53%)";
 export const COLOR_BASE_TEXT = "hsl(0, 80%, 50%)";
 
 export const COLOR_BLUE = "hsl(213, 64%, 11%)";

@@ -1,21 +1,23 @@
 import styled from "styled-components";
 import { ContactItem } from "./contactItem";
 import { dataContact } from "../../data/contact";
-import { BREAKPOINT_PX, CONTENT_WIDTH_DESKTOP, CONTENT_WIDTH_MOBILE } from "../../styles/Constants";
+import {
+  BREAKPOINT_PX,
+  CONTENT_WIDTH_DESKTOP,
+  CONTENT_WIDTH_MOBILE,
+} from "../../styles/Constants";
 
 const ContactCallOut = () => (
   <>
     <ContactWrapper>
       {dataContact.map((props) => (
-        <>
-          <ContactItem
-            key={props.id}
-            id={props.id}
-            shortName={props.shortName}
-            address={props.address}
-            photo={props.photo}
-          />
-        </>
+        <ContactItem
+          key={props.id}
+          id={props.id}
+          shortName={props.shortName}
+          address={props.address}
+          photo={props.photo}
+        />
       ))}
       ;
     </ContactWrapper>

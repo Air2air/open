@@ -35,7 +35,7 @@ export const Footer = () => {
               offset={0}
             >
               <Link className="link" to="/home">
-                <LogoTextWhite width="150" style={{ opacity: 0.4 }} />
+                <LogoTextWhite width="150" style={{ opacity: 0.6 }} />
               </Link>
             </AnimationOnScroll>
           </FooterColumn>
