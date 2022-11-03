@@ -1,4 +1,4 @@
-import React from "react";
+
 import styled from "styled-components";
 import Vimeo from "@u-wave/react-vimeo";
 import {
@@ -17,7 +17,6 @@ export default function VimeoPlayer({ videoID }) {
           responsive
           video={videoID}
           autoplay
-          // height={800}
         />
       </VideoContainer>
     </>
