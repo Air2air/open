@@ -13,14 +13,18 @@ import {
 } from "../../styles/Constants";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import VideoCallout from "../VideoCallout/videoCallout";
+import { FC } from "react";
 
-const pageVideo = 766733147;
+type FooterProps = {
+  footerVideo: number
+};
 
-export const FooterDesktop = () => {
+export const FooterDesktop: FC<FooterProps> = ( footerVideo) => {
+
   return (
     <FooterWrapper>
       <VideoCallout
-        pageVideo={pageVideo}
+        pageVideo={footerVideo}
         overlayOpacity={0.9}
         overlayColor={COLOR_BASE}
       />

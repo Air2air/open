@@ -13,43 +13,39 @@ import {
 } from "../../styles/Constants";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import VideoCallout from "../VideoCallout/videoCallout";
+import { FC } from "react";
 
-const pageVideo = 766733147;
+type FooterProps = {
+  footerVideo: number;
+};
 
-export const FooterMobile = () => {
+export const FooterMobile: FC<FooterProps> = (footerVideo) => {
   return (
     <FooterWrapper>
       <VideoCallout
-        pageVideo={pageVideo}
+        pageVideo={footerVideo}
         overlayOpacity={0.9}
         overlayColor={COLOR_BASE}
       />
       <FooterContainer>
+        <FooterLogoRow animateIn="animate__fadeInUp" delay={0} offset={0}>
+          <Link className="link" to="/home">
+            <LogoTextWhite width="150" />
+          </Link>
+        </FooterLogoRow>
+
         <FooterContentRow>
-          <FooterColumn>
-            <AnimationOnScroll
-              animateIn="animate__fadeInLeft"
-              delay={0}
-              offset={0}
-            >
-              <Link className="link" to="/home">
-                <LogoTextWhite width="150" style={{ opacity: 0.6 }} />
-              </Link>
-            </AnimationOnScroll>
-          </FooterColumn>
-          <FooterColumn>
-            <FooterLinkColumn>
-              <FooterLink to="/">Home</FooterLink>
-              <FooterLink to="/what_we_do">What We Do</FooterLink>
-              <FooterLink to="/markets">Markets</FooterLink>
-            </FooterLinkColumn>
-            <FooterLinkColumn>
-              <FooterLink to="/vision">Vision</FooterLink>
-              <FooterLink to="/about">About</FooterLink>
-              {/* <FooterLink to="/timeline">Venture stage</FooterLink> */}
-              <FooterLink to="/contact">Contact</FooterLink>
-            </FooterLinkColumn>
-          </FooterColumn>
+          <FooterLinkColumn>
+            <FooterLink to="/">Home</FooterLink>
+            <FooterLink to="/what_we_do">What We Do</FooterLink>
+            <FooterLink to="/markets">Markets</FooterLink>
+          </FooterLinkColumn>
+          <FooterLinkColumn>
+            <FooterLink to="/vision">Vision</FooterLink>
+            <FooterLink to="/about">About</FooterLink>
+            {/* <FooterLink to="/timeline">Venture stage</FooterLink> */}
+            <FooterLink to="/contact">Contact</FooterLink>
+          </FooterLinkColumn>
         </FooterContentRow>
 
         <FooterCopyright>
@@ -65,11 +61,13 @@ export const FooterMobile = () => {
 };
 
 //Mobile
-const FOOTER_HEIGHT_MOBILE_PX = FOOTER_HEIGHT_MOBILE * 0.7;
-const FOOTER_CONTAINER_HEIGHT_MOBILE = FOOTER_HEIGHT_MOBILE * 0.7;
+const FOOTER_HEIGHT_MOBILE_PX = FOOTER_HEIGHT_MOBILE + "px";
+const FOOTER_CONTAINER_HEIGHT_MOBILE = FOOTER_HEIGHT_MOBILE * 0.8;
 const FOOTER_CONTAINER_HEIGHT_MOBILE_PX = FOOTER_CONTAINER_HEIGHT_MOBILE + "px";
+const FOOTER_LOGO_HEIGHT_MOBILE_PX =
+  FOOTER_CONTAINER_HEIGHT_MOBILE * 0.2 + "px";
 const FOOTER_CONTENT_HEIGHT_MOBILE_PX =
-  FOOTER_CONTAINER_HEIGHT_MOBILE * 0.7 + "px";
+  FOOTER_CONTAINER_HEIGHT_MOBILE * 0.5 + "px";
 const FOOTER_COPYRIGHT_HEIGHT_MOBILE_PX =
   FOOTER_CONTAINER_HEIGHT_MOBILE * 0.3 + "px";
 
@@ -91,10 +89,30 @@ const FooterContainer = styled.div`
   display: flex;
   z-index: +1;
   flex-direction: column;
+  text-align: center;
   width: ${CONTENT_WIDTH_MOBILE};
   margin: 0 auto;
   height: ${FOOTER_CONTAINER_HEIGHT_MOBILE_PX};
   /* background-color: lightblue; */
+`;
+
+const FooterLogoRow = styled(AnimationOnScroll)`
+  display: flex;
+  /* z-index: +1; */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: ${FOOTER_LOGO_HEIGHT_MOBILE_PX};
+  /* background-color: green; */
+  a.link {
+    opacity: 0.4;
+  }
+  &:hover {
+    a.link {
+      opacity: 1;
+    }
+  }
 `;
 
 const FooterContentRow = styled.div`
@@ -105,21 +123,11 @@ const FooterContentRow = styled.div`
   /* background-color: gold; */
 `;
 
-const FooterColumn = styled.div`
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  height: ${FOOTER_CONTENT_HEIGHT_MOBILE_PX};
-  /* background: red; */
-`;
-
 const FooterLinkColumn = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
-  text-align: left;
+  text-align: center;
   justify-content: center;
   height: ${FOOTER_CONTENT_HEIGHT_MOBILE_PX};
   /* background: green; */
@@ -129,7 +137,7 @@ const FooterLink = styled(Link)`
   font-size: 1.1em;
   font-weight: 400;
   padding: 8px 0;
-  text-align: left;
+  text-align: center;
   color: ${COLOR_TITLE_TEXT};
   transition: all 200ms;
   &:hover {
