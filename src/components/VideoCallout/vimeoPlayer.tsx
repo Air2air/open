@@ -1,8 +1,13 @@
-import React from "react"
-import styled from "styled-components"
-import Vimeo from "@u-wave/react-vimeo"
+import React from "react";
+import styled from "styled-components";
+import Vimeo from "@u-wave/react-vimeo";
+import {
+  BANNER_HEIGHT_DESKTOP_PX,
+  BANNER_HEIGHT_MOBILE_PX,
+  BREAKPOINT_PX,
+} from "../../styles/Constants";
 
-export default function VimeoPlayer({videoID}) {
+export default function VimeoPlayer({ videoID }) {
   return (
     <>
       <VideoContainer>
@@ -12,11 +17,11 @@ export default function VimeoPlayer({videoID}) {
           responsive
           video={videoID}
           autoplay
-          height={800}
+          // height={800}
         />
       </VideoContainer>
     </>
-  )
+  );
 }
 
 const VideoContainer = styled.div`
@@ -30,15 +35,33 @@ const VideoContainer = styled.div`
   right: 0;
   top: 0;
   z-index: -1;
-`
+`;
 
-const Video = styled(props => <Vimeo {...props} />)`
+const Video = styled((props) => <Vimeo {...props} />)`
   height: 56.25vw; // for a 16:9 aspect ratio, 9/16*100 = 56.25
   left: 50%;
-  min-height: 100vh;
+
   min-width: 177.77vh; // for a 16:9 aspect ratio, 16/9*100 = 177.77
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 100vw;
-`
+  /* width: 100vw; */
+  /* min-height: 100vh; */
+  @media (min-width: ${BREAKPOINT_PX}) {
+    height: ${BANNER_HEIGHT_DESKTOP_PX};
+  }
+  @media (max-width: ${BREAKPOINT_PX}) {
+    height: ${BANNER_HEIGHT_MOBILE_PX};
+  }
+`;
+
+// const Video = styled(props => <Vimeo {...props} />)`
+//   height: 56.25vw; // for a 16:9 aspect ratio, 9/16*100 = 56.25
+//   left: 50%;
+//   min-height: 100vh;
+//   min-width: 177.77vh; // for a 16:9 aspect ratio, 16/9*100 = 177.77
+//   position: absolute;
+//   top: 50%;
+//   transform: translate(-50%, -50%);
+//   width: 100vw;
+// `

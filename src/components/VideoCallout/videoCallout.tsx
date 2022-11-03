@@ -43,7 +43,8 @@ const VideoWrapper = styled.div`
   left: 50%;
   margin: 0 auto;
   transform: translate(-50%, -50%);
-  width: 100vw;
+  min-width: 100vw;
+  max-width: 100vw;
   overflow: hidden;
   @media (min-width: ${BREAKPOINT_PX}) {
     height: ${BANNER_HEIGHT_DESKTOP_PX};
