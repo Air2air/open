@@ -44,11 +44,12 @@ export const Footer = () => {
               <FooterLink to="/">Home</FooterLink>
               <FooterLink to="/what_we_do">What We Do</FooterLink>
               <FooterLink to="/markets">Markets</FooterLink>
-              <FooterLink to="/vision">Vision</FooterLink>
+
             </FooterLinkColumn>
             <FooterLinkColumn>
+            <FooterLink to="/vision">Vision</FooterLink>
               <FooterLink to="/about">About</FooterLink>
-              <FooterLink to="/timeline">Venture stages</FooterLink>
+              {/* <FooterLink to="/timeline">Venture stage</FooterLink> */}
               <FooterLink to="/contact">Contact</FooterLink>
             </FooterLinkColumn>
           </FooterColumn>

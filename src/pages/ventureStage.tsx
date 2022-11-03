@@ -1,23 +1,23 @@
 import setBodyColor from "../utils/setBodyColor";
 import { COLOR_BASE } from "../styles/Constants";
-import TimeLine from "../components/TimeLine/timeLine";
+import VentureStage from "../components/VentureStage/ventureStage";
 import styled from "styled-components";
 import BannerSpacer from "../components/BannerSpacer/bannerSpacer";
 
-const TimeLinePage = () => {
+const VentureStagePage = () => {
   setBodyColor({ color: COLOR_BASE });
   return (
     <>
       <BannerSpacer />
-      <TimeLineTitle>Health AI Venture stages</TimeLineTitle>
-      <TimeLine />
+      <VentureStageTitle>Health AI Venture stage</VentureStageTitle>
+      <VentureStage />
     </>
   );
 };
 
-export default TimeLinePage;
+export default VentureStagePage;
 
-const TimeLineTitle = styled.h2`
+const VentureStageTitle = styled.h2`
   margin-bottom: 0.8em;
   text-align: center;
 `;

@@ -1,6 +1,6 @@
 import { CALLOUT_HEIGHT_PX, CONTENT_WIDTH_DESKTOP } from "../../styles/Constants";
 import styled from "styled-components";
-import { dataOrgs } from "./../../data/orgs";
+import { dataOrgs } from "./dataOrgs";
 
 const OrgsItems = () => {
   const orgsMap = dataOrgs.map((props) => (

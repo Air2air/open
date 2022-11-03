@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import AdvisorMember from "./advisorMember";
-import { dataAdvisors } from "../../data/advisors";
+import { dataAdvisors } from "./dataAdvisors";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { TitleCallout } from "../Title/titleCallout";
 import Container from "../Container/container";

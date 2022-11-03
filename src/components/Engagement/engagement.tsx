@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { TimeLineItemCombined, TimeLineItemLeft, TimeLineItemRight } from "./timeLineItem";
-import { dataTimeLine } from "../../data/timeLine";
+import { EngagementItemCombined, EngagementItemLeft, EngagementItemRight } from "./engagementItem";
+import { dataEngagement } from "./dataEngagement";
 import {
   BREAKPOINT,
   COLOR_BASE_LIGHT,
@@ -9,7 +9,7 @@ import {
 } from "../../styles/Constants";
 import { useState, useEffect } from "react";
 
-const TimeLine = () => {
+const Engagement = () => {
   /*------ Responsive -------*/
   const [width, setWidth] = useState(window.innerWidth);
 
@@ -24,88 +24,88 @@ const TimeLine = () => {
     <>
       {width > BREAKPOINT ? (
         <>
-          <TimeLineContainerDesktop>
-            <TimeLineItemColumn
+          <EngagementContainerDesktop>
+            <EngagementItemColumn
               style={{ borderRight: `2px solid ${COLOR_BASE_LIGHT}` }}
             >
-              <TimeLineLeft />
-            </TimeLineItemColumn>
-            <TimeLineItemColumn style={{ marginTop: "40px" }}>
-              <TimeLineRight />
-            </TimeLineItemColumn>
-          </TimeLineContainerDesktop>
+              <EngagementLeft />
+            </EngagementItemColumn>
+            <EngagementItemColumn style={{ marginTop: "40px" }}>
+              <EngagementRight />
+            </EngagementItemColumn>
+          </EngagementContainerDesktop>
         </>
       ) : (
         <>
-          <TimeLineContainerMobile>
-            <TimeLineCombined />
-          </TimeLineContainerMobile>
+          <EngagementContainerMobile>
+            <EngagementCombined />
+          </EngagementContainerMobile>
         </>
       )}
     </>
   );
 };
 
-const TimeLineLeft = () => {
-  const timeLineMap = dataTimeLine
+const EngagementLeft = () => {
+  const engagementMap = dataEngagement
     .filter((u) => u.side === "left")
     .map((props) => (
-      <TimeLineItemLeft
+      <EngagementItemLeft
         key={props.id}
         id={props.id}
         title={props.title}
         desc={props.desc}
       />
     ));
-  return <>{timeLineMap}</>;
+  return <>{engagementMap}</>;
 };
 
-const TimeLineRight = () => {
-  const timeLineMap = dataTimeLine
+const EngagementRight = () => {
+  const engagementMap = dataEngagement
     .filter((u) => u.side !== "left")
     .map((props) => (
-      <TimeLineItemRight
+      <EngagementItemRight
         key={props.id}
         id={props.id}
         title={props.title}
         desc={props.desc}
       />
     ));
-  return <>{timeLineMap}</>;
+  return <>{engagementMap}</>;
 };
 
-const TimeLineCombined = () => {
-  const timeLineMap = dataTimeLine
+const EngagementCombined = () => {
+  const engagementMap = dataEngagement
     .map((props) => (
-      <TimeLineItemCombined
+      <EngagementItemCombined
         key={props.id}
         id={props.id}
         title={props.title}
         desc={props.desc}
       />
     ));
-  return <>{timeLineMap}</>;
+  return <>{engagementMap}</>;
 };
 
-const TimeLineContainerDesktop = styled.div`
+const EngagementContainerDesktop = styled.div`
   display: flex;
   flex-direction: row;
   margin: 0 auto;
   width: ${CONTENT_WIDTH_DESKTOP};
 `;
 
-const TimeLineContainerMobile = styled.div`
+const EngagementContainerMobile = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   width: ${CONTENT_WIDTH_MOBILE};
 `;
 
-const TimeLineItemColumn = styled.div`
+const EngagementItemColumn = styled.div`
   display: flex;
   flex: 4;
   flex-direction: column;
   justify-content: space-evenly;
 `;
 
-export default TimeLine;
+export default Engagement;

@@ -6,7 +6,9 @@ import HomePage from "../pages/home";
 import MarketsPage from "../pages/markets";
 import MedTechPage from "../pages/medtech";
 import PharmaTechPage from "../pages/pharmatech";
-import TimeLinePage from "../pages/timeLine";
+import ServicePage from "../pages/service";
+import EngagementPage from "../pages/engagement";
+import VentureStagePage from "../pages/ventureStage";
 import VisionPage from "../pages/vision";
 import WhatWeDoPage from "../pages/what_we_do";
 
@@ -30,6 +32,12 @@ export const dataRoutes = [
     element: <ContactPage />,
   },
   {
+    id: "Engagement",
+    path: "engagement",
+    section: "Engagement",
+    element: <EngagementPage />,
+  },
+  {
     id: "Home",
     path: "/",
     section: "Home",
@@ -48,10 +56,16 @@ export const dataRoutes = [
     element: <MarketsPage />,
   },
   {
-    id: "TimeLine",
+    id: "Service",
+    path: "service",
+    section: "Service",
+    element: <ServicePage />,
+  },
+  {
+    id: "VentureStage",
     path: "timeline",
-    section: "TimeLine",
-    element: <TimeLinePage />,
+    section: "VentureStage",
+    element: <VentureStagePage />,
   },
   {
     id: "Vision",

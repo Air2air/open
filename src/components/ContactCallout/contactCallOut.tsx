@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { ContactItem } from "./contactItem";
-import { dataContact } from "../../data/contact";
+import { dataContact } from "./dataContact";
 import {
   BREAKPOINT_PX,
   CONTENT_WIDTH_DESKTOP,

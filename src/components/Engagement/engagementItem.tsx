@@ -8,65 +8,65 @@ import {
 import parse from "html-react-parser";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
-export const TimeLineItemLeft = ({ id, title, desc }) => {
+export const EngagementItemLeft = ({ id, title, desc }) => {
   const descParsed = parse(desc);
   // const side  = ''
 
   return (
     <AnimationOnScroll key={id} animateIn="animate__fadeInLeft" delay={0}>
-      <TimeLineItemWrapper>
-        <TimeLineContent>
+      <EngagementItemWrapper>
+        <EngagementContent>
           <h3>{title}</h3>
-          <TimeLineItemDesc>{descParsed}</TimeLineItemDesc>
-        </TimeLineContent>
-        <TimeLineItemLineBox>
+          <EngagementItemDesc>{descParsed}</EngagementItemDesc>
+        </EngagementContent>
+        <EngagementItemLineBox>
           <div
             id={id}
             className="line animate__animated animate__slideInLeft animate__delay-1s"
           ></div>
-        </TimeLineItemLineBox>
-      </TimeLineItemWrapper>
+        </EngagementItemLineBox>
+      </EngagementItemWrapper>
     </AnimationOnScroll>
   );
 };
 
-export const TimeLineItemRight = ({ id, title, desc }) => {
+export const EngagementItemRight = ({ id, title, desc }) => {
   const descParsed = parse(desc);
   // const side  = ''
 
   return (
     <AnimationOnScroll key={id} animateIn="animate__fadeInRight" delay={0}>
-      <TimeLineItemWrapper>
-        <TimeLineItemLineBox>
+      <EngagementItemWrapper>
+        <EngagementItemLineBox>
           <div
             id={id}
             className="line animate__animated animate__slideInRight animate__delay-1s"
           ></div>
-        </TimeLineItemLineBox>
-        <TimeLineContent>
+        </EngagementItemLineBox>
+        <EngagementContent>
           <h3>{title}</h3>
-          <TimeLineItemDesc>{descParsed}</TimeLineItemDesc>
-        </TimeLineContent>
-      </TimeLineItemWrapper>
+          <EngagementItemDesc>{descParsed}</EngagementItemDesc>
+        </EngagementContent>
+      </EngagementItemWrapper>
     </AnimationOnScroll>
   );
 };
 
-export const TimeLineItemCombined = ({ id, title, desc }) => {
+export const EngagementItemCombined = ({ id, title, desc }) => {
   const descParsed = parse(desc);
   return (
     <AnimationOnScroll key={id} animateIn="animate__fadeInUp" offset={150}>
-      <TimeLineItemWrapper>
-        <TimeLineContent>
+      <EngagementItemWrapper>
+        <EngagementContent>
           <h3>{title}</h3>
-          <TimeLineItemDesc>{descParsed}</TimeLineItemDesc>
-        </TimeLineContent>
-      </TimeLineItemWrapper>
+          <EngagementItemDesc>{descParsed}</EngagementItemDesc>
+        </EngagementContent>
+      </EngagementItemWrapper>
     </AnimationOnScroll>
   );
 };
 
-const TimeLineItemWrapper = styled.div`
+const EngagementItemWrapper = styled.div`
   display: flex;
   flex-direction: row;
   height: auto;
@@ -74,7 +74,7 @@ const TimeLineItemWrapper = styled.div`
   margin-bottom: 14px;
 `;
 
-const TimeLineContent = styled.div`
+const EngagementContent = styled.div`
   z-index: +1;
   display: flex;
   flex-direction: column;
@@ -90,7 +90,7 @@ const TimeLineContent = styled.div`
   }
 `;
 
-const TimeLineItemLineBox = styled.div`
+const EngagementItemLineBox = styled.div`
   height: auto;
   width: 10%;
   display: flex;
@@ -103,7 +103,7 @@ const TimeLineItemLineBox = styled.div`
   }
 `;
 
-const TimeLineItemDesc = styled.div`
+const EngagementItemDesc = styled.div`
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   line-height: 1.6em;
