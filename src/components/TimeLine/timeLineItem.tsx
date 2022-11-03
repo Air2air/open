@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {
+  BREAKPOINT_PX,
   COLOR_BASE_3,
   COLOR_BASE_LIGHT,
   COLOR_TEXT,
@@ -43,7 +44,21 @@ export const TimeLineItemRight = ({ id, title, desc }) => {
           ></div>
         </TimeLineItemLineBox>
         <TimeLineContent>
-        <h3>{title}</h3>
+          <h3>{title}</h3>
+          <TimeLineItemDesc>{descParsed}</TimeLineItemDesc>
+        </TimeLineContent>
+      </TimeLineItemWrapper>
+    </AnimationOnScroll>
+  );
+};
+
+export const TimeLineItemCombined = ({ id, title, desc }) => {
+  const descParsed = parse(desc);
+  return (
+    <AnimationOnScroll key={id} animateIn="animate__fadeInUp" offset={150}>
+      <TimeLineItemWrapper>
+        <TimeLineContent>
+          <h3>{title}</h3>
           <TimeLineItemDesc>{descParsed}</TimeLineItemDesc>
         </TimeLineContent>
       </TimeLineItemWrapper>
@@ -64,11 +79,15 @@ const TimeLineContent = styled.div`
   display: flex;
   flex-direction: column;
   height: auto;
-  /* border: 2px solid ${COLOR_BASE_LIGHT}; */
   border-radius: 6px;
   width: 90%;
-  padding: 32px;
   background: ${COLOR_BASE_3};
+  @media (min-width: ${BREAKPOINT_PX}) {
+    padding: 32px;
+  }
+  @media (max-width: ${BREAKPOINT_PX}) {
+    padding: 28px 14px;
+  }
 `;
 
 const TimeLineItemLineBox = styled.div`
@@ -84,10 +103,9 @@ const TimeLineItemLineBox = styled.div`
   }
 `;
 
-
 const TimeLineItemDesc = styled.div`
   font-family: "Roboto", sans-serif;
-  font-weight:300;
+  font-weight: 300;
   line-height: 1.6em;
   color: ${COLOR_TEXT};
 `;

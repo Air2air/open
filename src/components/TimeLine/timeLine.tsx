@@ -1,16 +1,13 @@
 import styled from "styled-components";
-import { TimeLineItemLeft, TimeLineItemRight } from "./timeLineItem";
+import { TimeLineItemCombined, TimeLineItemLeft, TimeLineItemRight } from "./timeLineItem";
 import { dataTimeLine } from "../../data/timeLine";
 import {
   BREAKPOINT,
-  BREAKPOINT_PX,
   COLOR_BASE_LIGHT,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
 } from "../../styles/Constants";
 import { useState, useEffect } from "react";
-
-
 
 const TimeLine = () => {
   /*------ Responsive -------*/
@@ -27,7 +24,7 @@ const TimeLine = () => {
     <>
       {width > BREAKPOINT ? (
         <>
-          <TimeLineWrapper>
+          <TimeLineContainerDesktop>
             <TimeLineItemColumn
               style={{ borderRight: `2px solid ${COLOR_BASE_LIGHT}` }}
             >
@@ -36,20 +33,13 @@ const TimeLine = () => {
             <TimeLineItemColumn style={{ marginTop: "40px" }}>
               <TimeLineRight />
             </TimeLineItemColumn>
-          </TimeLineWrapper>
+          </TimeLineContainerDesktop>
         </>
       ) : (
         <>
-          <TimeLineWrapper>
-            <TimeLineItemColumn
-              style={{ borderRight: `2px solid ${COLOR_BASE_LIGHT}` }}
-            >
-              <TimeLineLeft />
-            </TimeLineItemColumn>
-            <TimeLineItemColumn style={{ marginTop: "40px" }}>
-              <TimeLineRight />
-            </TimeLineItemColumn>
-          </TimeLineWrapper>
+          <TimeLineContainerMobile>
+            <TimeLineCombined />
+          </TimeLineContainerMobile>
         </>
       )}
     </>
@@ -84,16 +74,31 @@ const TimeLineRight = () => {
   return <>{timeLineMap}</>;
 };
 
-const TimeLineWrapper = styled.div`
+const TimeLineCombined = () => {
+  const timeLineMap = dataTimeLine
+    .map((props) => (
+      <TimeLineItemCombined
+        key={props.id}
+        id={props.id}
+        title={props.title}
+        desc={props.desc}
+      />
+    ));
+  return <>{timeLineMap}</>;
+};
+
+const TimeLineContainerDesktop = styled.div`
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-  @media (min-width: ${BREAKPOINT_PX}) {
-    width: ${CONTENT_WIDTH_DESKTOP};
-  }
-  @media (max-width: ${BREAKPOINT_PX}) {
-    width: ${CONTENT_WIDTH_MOBILE};
-  }
+  width: ${CONTENT_WIDTH_DESKTOP};
+`;
+
+const TimeLineContainerMobile = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: ${CONTENT_WIDTH_MOBILE};
 `;
 
 const TimeLineItemColumn = styled.div`
