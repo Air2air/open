@@ -11,7 +11,7 @@ import {
 } from "../../styles/Constants";
 import Button from "../Button/button";
 import Container from "../Container/container";
-import { TitleBanner } from "../Title/titleBanner";
+import { TitleCallout } from "../Title/titleCallout";
 
 interface IGraphProps {
   graphHeight?: number;
@@ -148,7 +148,7 @@ export const Graph = (props: IGraphProps) => {
   const { graphTitle } = props;
   return (
     <Container>
-      <TitleBanner titleText={graphTitle} />
+      <TitleCallout titleText={graphTitle} />
       <GraphMap />
       <Button to="/vision" text="Vision" />
     </Container>
