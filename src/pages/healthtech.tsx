@@ -14,7 +14,7 @@ const HealthTechPage = () => {
     <>
       <BannerVideo
         pageTitle={pageTitle}
-        pageDescription="Our tagline here about our Healthtech market service offering and benefits.  Our tagline here about our Healthtech market service offering and benefits. Our tagline here about our Healthtech market service offering and benefits."
+        pageDescription="Our tagline here about our Healthtech market service offering and benefits.  Our tagline here about our Healthtech market service offering and benefits. Our tagline here about our Healthtech market service offering and benefits"
         pageVideo={pageVideo}
         overlayOpacity={0.3}
         overlayColor={COLOR_BASE}

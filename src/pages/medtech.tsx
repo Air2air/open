@@ -12,7 +12,7 @@ const MedTechPage = () => {
     <>
       <BannerVideo
         pageTitle="MedTech Market"
-        pageDescription="Medtech Startups often face years of losses and cash outflows as management tries to lead new products through clinical trials, through regulators and onto the market. We help you through."
+        pageDescription="Medtech Startups often face years of losses and cash outflows as management tries to lead new products through clinical trials, through regulators and onto the market. We help you through"
         pageVideo={pageVideo}
         overlayOpacity={0.5}
         overlayColor={COLOR_BASE}

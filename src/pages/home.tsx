@@ -11,7 +11,7 @@ const HomePage = () => {
     <>
       <BannerVideo
         pageTitle="Drive Health AI portfolio success."
-        pageDescription="Derisk your health AI investments with over 100 years of combined expertise."
+        pageDescription="Derisk your health AI investments with over 100 years of combined expertise"
         pageVideo={pageVideo}
         overlayOpacity={0}
         overlayColor={COLOR_BASE}

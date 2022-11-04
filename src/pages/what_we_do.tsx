@@ -11,7 +11,7 @@ const WhatWeDoPage = () => {
     <>
       <BannerVideo
         pageTitle="What we do for you"
-        pageDescription="Eleven leverages a large multi-disciplinary advisory of industry-leading specialists to deliver across your healthcare AI needs."
+        pageDescription="Eleven leverages a large multi-disciplinary advisory of industry-leading specialists to deliver across your healthcare AI needs"
         pageVideo={pageVideo}
         overlayOpacity={0.3}
         overlayColor={COLOR_BASE}

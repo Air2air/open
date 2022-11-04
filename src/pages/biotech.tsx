@@ -12,7 +12,7 @@ const BioTechPage = () => {
     <>
       <BannerVideo
         pageTitle="BioTech Market"
-        pageDescription="Biotechnology companies are increasingly taking the lead in new drug development, unlike Pharma companies who are pulling back from expensive basic research, becoming massive marketing vehicles for the biotech world."
+        pageDescription="Biotechnology companies are increasingly taking the lead in new drug development, unlike Pharma companies who are pulling back from expensive basic research, becoming massive marketing vehicles for the biotech world"
         pageVideo={pageVideo}
         overlayOpacity={0.1}
         overlayColor={COLOR_BASE}
