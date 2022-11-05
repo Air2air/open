@@ -19,7 +19,7 @@ type FooterProps = {
   footerVideo: number;
 };
 
-export const FooterMobile: FC<FooterProps> = (footerVideo) => {
+export const FooterMobile: FC<FooterProps> = ({footerVideo}) => {
   return (
     <FooterWrapper>
       <VideoCallout

@@ -2,7 +2,11 @@ import { useState } from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import styled from "styled-components";
 import {
+  BREAKPOINT_PX,
+  COLOR_BASE_1,
+  COLOR_BASE_2,
   COLOR_BASE_3,
+  COLOR_BASE_4,
   COLOR_BASE_5,
   COLOR_BASE_6,
   COLOR_CAPTION,
@@ -67,6 +71,7 @@ const GraphMap = (index) => {
         >
           <SeriesLabel>Health</SeriesLabel>
           <SeriesBar
+            className="bar"
             animateIn="animate__fadeInUp"
             delay={0}
             style={{ height: "20%" }}
@@ -79,8 +84,9 @@ const GraphMap = (index) => {
           onMouseEnter={() => setIsHovering2(true)}
           onMouseLeave={() => setIsHovering2(false)}
         >
-          <SeriesLabel>Medtech</SeriesLabel>
+          <SeriesLabel>Med</SeriesLabel>
           <SeriesBar
+            className="bar"
             animateIn="animate__fadeInUp"
             delay={0}
             style={{ height: "30%" }}
@@ -93,8 +99,9 @@ const GraphMap = (index) => {
           onMouseEnter={() => setIsHovering3(true)}
           onMouseLeave={() => setIsHovering3(false)}
         >
-          <SeriesLabel>Biotech</SeriesLabel>
+          <SeriesLabel>Bio</SeriesLabel>
           <SeriesBar
+            className="bar"
             animateIn="animate__fadeInUp"
             delay={0}
             style={{ height: "50%" }}
@@ -109,6 +116,7 @@ const GraphMap = (index) => {
         >
           <SeriesLabel>Pharma</SeriesLabel>
           <SeriesBar
+            className="bar"
             animateIn="animate__fadeInUp"
             delay={0}
             style={{ height: "100%" }}
@@ -159,10 +167,15 @@ const GraphSeriesWrapper = styled.div`
   height: ${graphHeight};
   margin: 0 auto;
   display: grid;
-  gap: 30px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   width: 100%;
   border-bottom: 2px solid ${COLOR_BASE_6};
+  @media (min-width: ${BREAKPOINT_PX}) {
+    gap: 40px;
+  }
+  @media (max-width: ${BREAKPOINT_PX}) {
+    gap: 5px;
+  }
 `;
 
 const SeriesColumn = styled.div`
@@ -170,8 +183,23 @@ const SeriesColumn = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   height: ${graphHeight};
-  font-size: 1.3em;
-  background: ${COLOR_BASE_3};
+  transition: all 300ms;
+  @media (min-width: ${BREAKPOINT_PX}) {
+    font-size: 1.3em;
+  }
+  @media (max-width: ${BREAKPOINT_PX}) {
+    font-size: 1em;
+  }
+  background: ${COLOR_BASE_1};
+  &:hover {
+    background: ${COLOR_BASE_3};
+    .bar {
+      background: ${COLOR_BASE_6};
+    }
+  }
+  .bar {
+    background: ${COLOR_BASE_4};
+  }
 `;
 
 const SeriesBar = styled(AnimationOnScroll)`
@@ -180,10 +208,6 @@ const SeriesBar = styled(AnimationOnScroll)`
   text-align: center;
   margin-top: 5px;
   padding-top: 5px;
-  background: ${COLOR_BASE_6};
-  &:hover {
-    background: ${COLOR_BASE_5};
-  }
 `;
 
 const SeriesLabel = styled.div`
@@ -199,6 +223,12 @@ const GraphLegend = styled.div`
   height: ${graphHeight};
   font-size: 1.3em;
   color: ${COLOR_CAPTION};
+  @media (min-width: ${BREAKPOINT_PX}) {
+    font-size: 1.3em;
+  }
+  @media (max-width: ${BREAKPOINT_PX}) {
+    font-size: 1em;
+  }
 `;
 
 const GraphContent = styled.div`
@@ -210,6 +240,12 @@ const GraphContent = styled.div`
   font-size: 1.2em;
   line-height: 1.5em;
   transition: all 300ms;
+  @media (min-width: ${BREAKPOINT_PX}) {
+    font-size: 1.2em;
+  }
+  @media (max-width: ${BREAKPOINT_PX}) {
+    font-size: 1em;
+  }
 `;
 
 export default Graph;

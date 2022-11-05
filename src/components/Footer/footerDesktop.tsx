@@ -16,11 +16,10 @@ import VideoCallout from "../VideoCallout/videoCallout";
 import { FC } from "react";
 
 type FooterProps = {
-  footerVideo: number
+  footerVideo: number;
 };
 
-export const FooterDesktop: FC<FooterProps> = ( footerVideo) => {
-
+export const FooterDesktop: FC<FooterProps> = ({footerVideo}) => {
   return (
     <FooterWrapper>
       <VideoCallout
