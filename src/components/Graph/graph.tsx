@@ -4,10 +4,8 @@ import styled from "styled-components";
 import {
   BREAKPOINT_PX,
   COLOR_BASE_1,
-  COLOR_BASE_2,
   COLOR_BASE_3,
   COLOR_BASE_4,
-  COLOR_BASE_5,
   COLOR_BASE_6,
   COLOR_CAPTION,
   COLOR_TEXT,
