@@ -5,7 +5,7 @@ import { TitleCallout } from "../../Title/titleCallout";
 import { ReactComponent as MapSvg } from "./world_map.svg";
 import "./keyframes.scss";
 import { dataMap } from "./dataMap";
-import { COLOR_BASE_3, COLOR_TITLE_TEXT } from "../../../styles/Constants";
+import { COLOR_TITLE_TEXT } from "../../../styles/Constants";
 
 
 
@@ -49,7 +49,7 @@ const Map = (props) => (
 );
 
 const dotSize = "20px";
-const toolTipWidth = "200px";
+/* const toolTipWidth = "200px"; */
 const animationBaseTime = "3s";
 
 const SVGContainer = styled.div`
