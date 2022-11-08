@@ -117,7 +117,7 @@ const FooterColumn = styled.div`
   align-items: center;
   justify-content: flex-start;
   height: ${FOOTER_CONTENT_HEIGHT_DESKTOP_PX};
-  /* background: red; */
+  /* background: ${COLOR_TITLE_TEXT}; */
 `;
 
 const FooterLinkColumn = styled.div`
@@ -155,5 +155,5 @@ const FooterCopyright = styled.div`
   div {
     color: ${COLOR_BASE_LIGHT};
   }
-  /* background: red; */
+  /* background: ${COLOR_TITLE_TEXT}; */
 `;

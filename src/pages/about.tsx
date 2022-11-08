@@ -1,13 +1,10 @@
 import setBodyColor from "../utils/setBodyColor";
 import BannerVideo from "../components/BannerVideo/bannerVideo";
 // import About from "../components/About/about";
-import {
-  COLOR_BASE,
-  COLOR_BASE_1,
-  COLOR_BASE_2,
-} from "../styles/Constants";
+import { COLOR_BASE, COLOR_BASE_1, COLOR_BASE_2 } from "../styles/Constants";
 import { Callout } from "../components/Callout/callOut";
 import Advisors from "../components/Advisors/advisors";
+import Map from "../components/Map/World/map";
 
 const pageVideo = 766647825;
 
@@ -30,7 +27,7 @@ const AboutPage = () => {
         buttonText=""
         buttonTo=""
       />
-
+      <Map mapTitle="Regions" backgroundColor={COLOR_BASE_2} />
       <Advisors advisorsTitle="Advisory Board" backgroundColor={COLOR_BASE_2} />
     </>
   );

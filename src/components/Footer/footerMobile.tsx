@@ -157,5 +157,5 @@ const FooterCopyright = styled.div`
   div {
     color: ${COLOR_BASE_LIGHT};
   }
-  /* background: red; */
+  /* background: ${COLOR_TITLE_TEXT}; */
 `;
