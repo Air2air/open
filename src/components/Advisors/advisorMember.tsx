@@ -16,7 +16,7 @@ const AdvisorMember = ({ id, nameFirst, nameLast, role, photo }) => {
       <AdvisorMemberName>
         {nameFirst} {nameLast}
       </AdvisorMemberName>
-      <AdvisorMemberRole>{role}</AdvisorMemberRole>
+      {/* <AdvisorMemberRole>{role}</AdvisorMemberRole> */}
     </AdvisorMemberWrapper>
   );
 };
