@@ -7,7 +7,7 @@ import "./keyframes.scss";
 import { dataMap } from "./dataMap";
 import { COLOR_BASE_3, COLOR_TITLE_TEXT } from "../../../styles/Constants";
 
-const mapHeight = "200px";
+
 
 const Map = (props) => (
   <>
@@ -61,13 +61,13 @@ const SVGContainer = styled.div`
   vertical-align: middle;
   /* overflow: hidden; */
 `;
-
+/*
 const MapPinTooltip = styled.div`
-  /* position: absolute;
+ position: absolute;
   top: 50%;
-  left: 50%; */
+  left: 50%; 
   transform-origin: center; 
-  /* transform: translate(-50%, -50%); */
+
   width: ${toolTipWidth};
   height: auto;
   display: flex;
@@ -85,6 +85,7 @@ const MapPinTooltip = styled.div`
     opacity: 1;
   }
 `;
+*/
 
 const MapPin = styled.div`
   position: absolute;
