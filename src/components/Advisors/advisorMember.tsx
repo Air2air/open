@@ -53,7 +53,7 @@ const AdvisorMemberName = styled.div`
   /* background: red; */
 `;
 
-const AdvisorMemberRole = styled.div`
+/* const AdvisorMemberRole = styled.div`
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-size: 0.9em;
@@ -61,7 +61,7 @@ const AdvisorMemberRole = styled.div`
   display: flex;
   align-items: center;
   height: 24px;
-  /* background: blue; */
-`;
+
+`; */
 
 export default AdvisorMember;
