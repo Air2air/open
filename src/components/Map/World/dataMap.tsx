@@ -113,8 +113,8 @@ export const dataMap = [
   },
   {
     location: "London, England, UK",
-    left: "76%",
-    top: "23%",
+    left: "72%",
+    top: "29%",
     member: [
       {
         role: "Senior Advisor",
