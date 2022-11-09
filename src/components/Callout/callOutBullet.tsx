@@ -27,7 +27,7 @@ interface IInnerSectionProps {
 }
 
 export const CalloutBullet = (props: IInnerSectionProps) => {
-  const { calloutTitle, calloutText, backgroundColor } = props;
+  const { calloutTitle, calloutText } = props;
 
   const calloutTitleParsed = parse(calloutTitle);
   const calloutTextParsed = parse(calloutText);
