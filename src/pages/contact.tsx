@@ -3,7 +3,7 @@ import { COLOR_BASE } from "../styles/Constants";
 import BannerVideo from "../components/BannerVideo/bannerVideo";
 import ContactCallout from "../components/ContactCallout/contactCallOut";
 
-const pageVideo = 766655363;
+const pageVideo = 769224041;
 
 const ContactPage = () => {
   setBodyColor({ color: COLOR_BASE });
