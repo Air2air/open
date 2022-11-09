@@ -2,15 +2,14 @@ export const dataEngagement = [
   {
     id: 1,
     title: "Assessment",
-    desc: "Once you establish a solid partnership, you're ready to do the work. Success in this part of the cycle is all about taking an independent perspective on the organization you're serving, which is the only way to be a true instrument of change. It all starts with",
-
+    desc: "Elevens first establishes a framework to measure the success of the AI project, program or venture. Pain points, problems and inefficiencies are understood so that we can determine success.  Our process of continuous communication and measurement throughout the project keeps stakeholders updated on the project status and any changes that might be required to the budget or schedule.",
     backgroundColor: 1,
   },
 
   {
     id: 2,
-    title: "project requirements",
-    desc: "What are the main foundational requirements of the project? Referring back to the mission, what problem should the deliverable solve for the end-user? And, how? Make sure you understand each other, and make a list of each requirement. This list is used later in the process to setup the actual tasks, i.e., the scoping process.Key takeaway: Specify the project requirements based on the mission defined earlier. List the requirements, and save them for scoping.",
+    title: "Requirements",
+    desc: "From the assessment, specific requirements are crystalized so that a scope and schedule can proceed.  Example uses cases can help clarify the expected outcomes and requirements for the project.",
 
     backgroundColor: 2,
   },
@@ -18,15 +17,14 @@ export const dataEngagement = [
   {
     id: 3,
     title: "Scope",
-    desc: "After defining the vision and project requirements, the next priority is defining the scope. What is within the scope? What is outside of the scope? These two questions are vital points to agree upon, define, and setup for the project. This is the foundation for the rest of the planning process. It's essentially when the milestones are scoped out for the project. Not necessarily on a task level yet, but enough to align goals and expectations between the agency and the client. Key takeaway: Set up the scope based on previously defined project requirements. What is in, and what is out of scope? Specify milestones and align with the client.",
-
+    desc: "After defining the vision and project requirements, the next priority is defining the scope. What is within the scope? What is outside of the scope? In a healthcare AI project, scoping defines the milestones for the project. Not necessarily on a task level yet, but enough to align goals and expectations. Elevens successfully scopes based on previously defined project milestones and requirements..",
     backgroundColor: 3,
   },
 
   {
     id: 4,
     title: "Estimation",
-    desc: "Text about Estimation. Text about Estimation. Text about Estimation. Text about Estimation. Text about Estimation. Text about Estimation.  ",
+    desc: "Estimation of the project may or may not include internal resources you need, including:<ul><li>Computing power – normally using a cloud-based environment</li><li>Data analysts</li><li>Data modellers</li><li>Engineers/developers – who can piece your AI tool together</li></ul>",
 
     backgroundColor: 4,
   },

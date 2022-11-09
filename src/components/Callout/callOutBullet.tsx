@@ -53,26 +53,6 @@ export const CalloutBullet = (props: IInnerSectionProps) => {
       <CalloutContainer style={{ background: assignBackgroundColor(props) }}>
         {props.id % 2 === 0 ? (
           <InnerSection>
-            <AnimationOnScroll
-              animateIn="animate__fadeInLeft"
-              delay={0}
-              offset={60}
-            >
-              <CalloutNumber className="left">{props.id}</CalloutNumber>
-            </AnimationOnScroll>
-            <TextRow>
-              <TitleCallout titleText={calloutTitleParsed} />
-              <AnimationOnScroll
-                animateIn="animate__fadeInUp"
-                delay={100}
-                offset={60}
-              >
-                <CalloutParagraph>{calloutTextParsed}</CalloutParagraph>
-              </AnimationOnScroll>
-            </TextRow>
-          </InnerSection>
-        ) : (
-          <InnerSection>
             <TextRow>
               <TitleCallout titleText={calloutTitleParsed} />
               <AnimationOnScroll
@@ -90,6 +70,26 @@ export const CalloutBullet = (props: IInnerSectionProps) => {
             >
               <CalloutNumber className="right">{props.id}</CalloutNumber>
             </AnimationOnScroll>
+          </InnerSection>
+        ) : (
+          <InnerSection>
+            <AnimationOnScroll
+              animateIn="animate__fadeInLeft"
+              delay={0}
+              offset={60}
+            >
+              <CalloutNumber className="left">{props.id}</CalloutNumber>
+            </AnimationOnScroll>
+            <TextRow>
+              <TitleCallout titleText={calloutTitleParsed} />
+              <AnimationOnScroll
+                animateIn="animate__fadeInUp"
+                delay={100}
+                offset={60}
+              >
+                <CalloutParagraph>{calloutTextParsed}</CalloutParagraph>
+              </AnimationOnScroll>
+            </TextRow>
           </InnerSection>
         )}
       </CalloutContainer>
@@ -120,7 +120,7 @@ const InnerSection = styled.div`
     width: ${CONTENT_WIDTH_DESKTOP};
   }
   @media (max-width: ${BREAKPOINT_PX}) {
-    padding: 20px 0;
+    padding: 30px 0;
     width: ${CONTENT_WIDTH_MOBILE};
   }
 `;
@@ -133,10 +133,11 @@ const TextRow = styled.div`
 `;
 
 const CalloutNumber = styled.div`
-  color: ${COLOR_BASE_LIGHT};
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-weight: 600;
   height: auto;
+  letter-spacing: -0.06em;
+  color: rgba(255, 255, 255, 0.15);
   /* background: red; */
   &.right {
     text-align: right;
@@ -149,7 +150,7 @@ const CalloutNumber = styled.div`
     min-width: 140px;
   }
   @media (max-width: ${BREAKPOINT_PX}) {
-    font-size: 3rem;
+    font-size: 4rem;
     min-width: 80px;
   }
 `;
