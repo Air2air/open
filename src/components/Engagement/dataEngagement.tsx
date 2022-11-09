@@ -12,7 +12,7 @@ export const dataEngagement = [
     order: 1,
     title: "project requirements",
     desc: "What are the main foundational requirements of the project? Referring back to the mission, what problem should the deliverable solve for the end-user? And, how? Make sure you understand each other, and make a list of each requirement. This list is used later in the process to setup the actual tasks, i.e., the scoping process.Key takeaway: Specify the project requirements based on the mission defined earlier. List the requirements, and save them for scoping.",
-    side: "left",
+    side: "right",
   },
 
   {
@@ -28,7 +28,7 @@ export const dataEngagement = [
     order: 1,
     title: "Estimation",
     desc: "Text about Estimation. Text about Estimation. Text about Estimation. Text about Estimation. Text about Estimation. Text about Estimation.  ",
-    side: "left",
+    side: "right",
   },
 
   {
@@ -66,7 +66,7 @@ export const dataEngagement = [
     order: 4,
     title: "    Project objectives.",
     desc: " Most of the time, this section is a purpose statement that answers a set of very specific, big questions. What is the purpose and mission of the project? Why have you initiated it in the first place? How will both parties benefit from the project? ",
-    side: "right",
+    side: "left",
   },
 
   {

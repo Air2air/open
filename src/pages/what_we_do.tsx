@@ -21,11 +21,11 @@ const WhatWeDoPage = () => {
         calloutTitle="Product/Market fit"
         calloutText="Eleven understands your healthcare customer - from payers to providers to insurers, from academia to clinical practice, across bio to med to health to pharma. We'll enable you with:
         <ul>
-        <li>Segment landscape, needs, and priorities to drive adoption</li>
+        <li>Segment landscape, needs, and priorities to drive adoptio.</li>
         <li> Go-to-market, product positioning, price point for clinical machine learning and digital health solutions. </li>
         <li>Support for early adoption academic initiatives and activities including grants, publications, and collaborations.</li>
         </li>
-        <li>Deep technical and clinical support for broader consumer health sector landscape (e.g., patient engagement, wearables, digital health and wellness)</li></ul>"
+        <li>Deep technical and clinical support for broader consumer health sector landscape (e.g., patient engagement, wearables, digital health and wellness).</li></ul>"
         backgroundColor={COLOR_BASE_1}
         buttonText=""
         buttonTo=""

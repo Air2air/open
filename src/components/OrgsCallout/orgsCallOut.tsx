@@ -30,6 +30,7 @@ const orgImageHeight = "100px";
 const OrgsWrapper = styled.div`
   position: relative;
   top: 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;

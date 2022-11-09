@@ -11,13 +11,6 @@ import parse from "html-react-parser";
 import { BannerText } from "../BannerText/bannerText";
 import { TitleBanner } from "../Title/titleBanner";
 
-/* Videos 
-Blurry AI = 765127386
-Crisp AI = 765122469
-Blue DNA on right = 765132534
-Blue DNA in foreground = 765130146
-Green DNA = 765129157
-*/
 
 export const BannerVideo = ({
   pageTitle,
