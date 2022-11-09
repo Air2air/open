@@ -92,7 +92,7 @@ const MapPin = styled.div`
   width: ${dotSize};
   height: ${dotSize};
   /* transform-origin: center; */
-  background-color: ${COLOR_TITLE_TEXT};
+  /* background-color: ${COLOR_TITLE_TEXT}; */
   border-radius: 50%;
   cursor: pointer;
   /* transition: all 0.3s ease-in-out; */

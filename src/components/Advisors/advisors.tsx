@@ -16,7 +16,6 @@ const Advisors = (props) => {
       id={props.id}
       nameFirst={props.nameFirst}
       nameLast={props.nameLast}
-      role={props.role}
       photo={props.photo}
     />
   ));

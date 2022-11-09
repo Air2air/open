@@ -7,7 +7,7 @@ import {
   TEAM_MEMBER_WIDTH_PX,
 } from "../../styles/Constants";
 
-const AdvisorMember = ({ id, nameFirst, nameLast, role, photo }) => {
+const AdvisorMember = ({ id, nameFirst, nameLast, photo }) => {
   const backgroundImage = "url(/images/team/man_icon.png)";
   return (
     <AdvisorMemberWrapper key={id}>

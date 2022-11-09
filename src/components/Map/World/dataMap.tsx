@@ -42,7 +42,7 @@ export const dataMap = [
   },
   {
     location: "Jerusalem, Israel",
-    left: "91%",
+    left: "92%",
     top: "55%",
     member: [
       {
