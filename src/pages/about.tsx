@@ -4,7 +4,7 @@ import BannerVideo from "../components/BannerVideo/bannerVideo";
 import { COLOR_BASE, COLOR_BASE_1, COLOR_BASE_2 } from "../styles/Constants";
 import { Callout } from "../components/Callout/callOut";
 import Advisors from "../components/Advisors/advisors";
-import Map from "../components/Map/World/map";
+import Map from "../components/Map/map";
 
 const pageVideo = 766647825;
 

@@ -24,25 +24,29 @@ const Advisors = (props) => {
     <>
       <Container>
         <TitleCallout titleText={props.advisorsTitle} />
-        <AnimationOnScroll animateIn="animate__fadeIn" delay={0} offset={30}>
-          <AdvisorsGrid>
-            {advisorsMap}
-          </AdvisorsGrid>
-        </AnimationOnScroll>
+        <AdvisorsContainer animateIn="animate__fadeIn" delay={0} offset={30}>
+          <AdvisorsGrid>{advisorsMap}</AdvisorsGrid>
+        </AdvisorsContainer>
       </Container>
     </>
   );
 };
 
+const AdvisorsContainer = styled(AnimationOnScroll)`
+  display: flex;
+  width: 100%;
+  height: auto;
+`;
+
 const AdvisorsGrid = styled.div`
   margin: 0 auto;
   display: grid;
+  flex: 0 0 100%;
   gap: 2rem;
-  padding: 40px 0;
-  /* max-width: 1000px; */
-  width:100%;
+  padding: 40px 0 0 0;
+  width: 100%;
   @media (min-width: 701px) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   @media (min-width: 501px) and (max-width: 700px) {
     grid-template-columns: repeat(3, 1fr);
@@ -51,7 +55,6 @@ const AdvisorsGrid = styled.div`
     grid-template-columns: repeat(2, 1fr);
   }
   height: auto;
-  /* background: red; */
 `;
 
 export default Advisors;
