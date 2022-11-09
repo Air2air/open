@@ -14,7 +14,6 @@ import {
   TEXT_OPACITY,
 } from "../../styles/Constants";
 import styled from "styled-components";
-import Button from "../Button/button";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import parse from "html-react-parser";
 import { TitleCallout } from "../Title/titleCallout";
@@ -44,7 +43,7 @@ export const CalloutBullet = (props: IInnerSectionProps) => {
       return COLOR_BASE_4;
     } else if (props.backgroundColor === 5) {
       return COLOR_BASE_5;
-    } else {  
+    } else {
       return COLOR_BASE_6;
     }
   };
