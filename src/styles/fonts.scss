@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 body {
   font-family: "Roboto", sans-serif;
@@ -30,6 +32,13 @@ h3 {
   font-size: 1.5rem;
   text-transform: uppercase;
   margin-bottom: 0.6em;
+}
+
+.calloutBullet {
+  font-family: "Audiowide", cursive;
+  font-size: 1.5rem;
+  color: hsl(0, 80%, 50%);
+  margin-right: 0.5em;
 }
 
 b {

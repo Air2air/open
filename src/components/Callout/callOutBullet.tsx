@@ -133,8 +133,9 @@ const TextRow = styled.div`
 `;
 
 const CalloutNumber = styled.div`
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
+  font-family: "Audiowide", cursive;
+  line-height:1em;
+  /* font-weight: 600; */
   height: auto;
   letter-spacing: -0.06em;
   color: rgba(255, 255, 255, 0.15);
