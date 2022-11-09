@@ -30,16 +30,8 @@ const Map = (props) => (
               key={index}
               className="sonar"
               style={{ left: item.left, top: item.top }}
+              animationTime={getRndInteger(2000,3000) + "ms"}
             >
-              {/* <MapPinTooltip>
-                <div className="location">{item.location}</div>
-                {item.member.map((member, index) => (
-                  <div key={index}>
-                    <div className="role">{member.role}</div>
-                    <div className="vertical">{member.vertical}</div>
-                  </div>
-                ))}
-              </MapPinTooltip> */}
             </MapPin>
           ))}
         </AnimationOnScroll>
@@ -48,9 +40,12 @@ const Map = (props) => (
   </>
 );
 
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
 const dotSize = "20px";
-/* const toolTipWidth = "200px"; */
-const animationBaseTime = "3s";
+
 
 const SVGContainer = styled.div`
   display: inline-block;
@@ -87,19 +82,13 @@ const MapPinTooltip = styled.div`
 `;
 */
 
-const MapPin = styled.div`
+
+
+const MapPin = styled.div.attrs((props: {animationTime: string}) => props)`
   position: absolute;
   width: ${dotSize};
   height: ${dotSize};
-  /* transform-origin: center; */
-  /* background-color: ${COLOR_TITLE_TEXT}; */
   border-radius: 50%;
-  cursor: pointer;
-  /* transition: all 0.3s ease-in-out; */
-  &:hover {
-    transform: scale(1.2);
-    /* transform-origin: center; */
-  }
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%, 0);
@@ -115,15 +104,13 @@ const MapPin = styled.div`
     background: transparent;
     box-sizing: border-box;
     border: ${COLOR_TITLE_TEXT} 2px solid;
-    /* z-index: 1; */
   }
-
   &:before {
-    animation: smallPulse ${animationBaseTime} ease-out infinite;
+    animation: smallPulse ${(props) => props.animationTime} ease-out infinite;
   }
 
   &:after {
-    animation: largePulse ${animationBaseTime} ease-out infinite;
+    animation: largePulse ${(props) => props.animationTime} ease-out infinite;
   }
 `;
 

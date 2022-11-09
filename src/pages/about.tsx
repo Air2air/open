@@ -27,7 +27,7 @@ const AboutPage = () => {
         buttonText=""
         buttonTo=""
       />
-      <Map mapTitle="Regions" backgroundColor={COLOR_BASE_2} />
+      <Map mapTitle="Elevens Worldwide" backgroundColor={COLOR_BASE_2} />
       <Advisors advisorsTitle="Advisory Board" backgroundColor={COLOR_BASE_2} />
     </>
   );
