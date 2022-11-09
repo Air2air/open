@@ -16,7 +16,7 @@ interface ITextSectionProps {
   calloutTitle: string;
   calloutText: string;
   calloutVideo?: string;
-  backgroundColor: string;
+  backgroundColor: any;
   buttonText: string;
   buttonTo: string;
 }
