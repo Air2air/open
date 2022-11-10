@@ -3,8 +3,8 @@ import BannerVideo from "../components/BannerVideo/bannerVideo";
 import { COLOR_BASE, COLOR_BASE_1 } from "../styles/Constants";
 import Graph from "../components/Graph/graph";
 
+const pageVideo = 769143399;
 
-const pageVideo = 769227014;
 
 const MarketsPage = () => {
   setBodyColor({ color: COLOR_BASE });
@@ -20,7 +20,7 @@ const MarketsPage = () => {
       />
       <Graph
         backgroundColor={COLOR_BASE_1}
-        graphTitle="2022 Markets"
+        graphTitle="Mid Decade Market Projections"
         graphHeight={500}
         buttonText="Vision"
         buttonTo="/vision"
