@@ -4,6 +4,8 @@ import { dataAdvisors } from "./dataAdvisors";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { TitleCallout } from "../Title/titleCallout";
 import Container from "../Container/container";
+import setBodyColor from "../../utils/setBodyColor";
+import { COLOR_BASE_2 } from "../../styles/Constants";
 
 const sortedDataAdvisors = dataAdvisors.sort((a, b) =>
   a.nameFirst > b.nameFirst ? 1 : -1
@@ -20,9 +22,11 @@ const Advisors = (props) => {
     />
   ));
 
+  setBodyColor({ color: COLOR_BASE_2 });
+
   return (
     <>
-      <Container>
+      <Container >
         <TitleCallout titleText={props.advisorsTitle} />
         <AdvisorsContainer animateIn="animate__fadeIn" delay={0} offset={30}>
           <AdvisorsGrid>{advisorsMap}</AdvisorsGrid>

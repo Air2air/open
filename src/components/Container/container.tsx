@@ -5,16 +5,15 @@ import {
   CONTENT_WIDTH_MOBILE,
 } from "../../styles/Constants";
 
-interface ContainerProps {
+type ContainerProps = {
   backgroundColor?: string;
 }
 
 const Container = ({ children }, props: ContainerProps) => {
+
   return (
     <>
-      <ContainerDiv
-        style={{ background: props.backgroundColor && props.backgroundColor }}
-      >
+      <ContainerDiv>
         {children}
       </ContainerDiv>
     </>

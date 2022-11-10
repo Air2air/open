@@ -1,4 +1,9 @@
-import { CALLOUT_HEIGHT_PX, CONTENT_WIDTH_DESKTOP } from "../../styles/Constants";
+import {
+  BREAKPOINT_PX,
+  CALLOUT_HEIGHT_PX,
+  CONTENT_WIDTH_DESKTOP,
+  CONTENT_WIDTH_MOBILE,
+} from "../../styles/Constants";
 import styled from "styled-components";
 import { dataOrgs } from "./dataOrgs";
 
@@ -46,16 +51,26 @@ const OrgInnerWrapper = styled.div`
   padding: 50px 0;
   z-index: +1;
   height: auto;
-  width: ${CONTENT_WIDTH_DESKTOP};
-  text-align: left;
+  @media (min-width: ${BREAKPOINT_PX}) {
+    width: ${CONTENT_WIDTH_DESKTOP};
+  }
+  @media (max-width: ${BREAKPOINT_PX}) {
+    width: ${CONTENT_WIDTH_MOBILE};
+  }
 `;
 
 const OrgMapImageRow = styled.div`
   margin: 0 auto;
   display: grid;
   grid-gap: 0px;
-  grid-template-columns: repeat(auto-fill, 210px);
   opacity: 0.5;
+  /* background: red; */
+  @media (min-width: ${BREAKPOINT_PX}) {
+    grid-template-columns: auto auto auto auto;
+  }
+  @media (max-width: ${BREAKPOINT_PX}) {
+    grid-template-columns: auto auto;
+  }
 `;
 
 const OrgMapImageWrapper = styled.div`

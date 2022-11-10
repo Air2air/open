@@ -1,20 +1,24 @@
-// import { AnimationOnScroll } from "react-animation-on-scroll";
 import styled from "styled-components";
 import Container from "../Container/container";
 import { TitleCallout } from "../Title/titleCallout";
 import { ReactComponent as MapSvg } from "./world_map.svg";
 import "./keyframes.scss";
 import { dataMap } from "./dataMap";
-import { COLOR_TITLE_TEXT } from "../../styles/Constants";
+import {
+  BREAKPOINT_PX,
+  COLOR_BASE_1,
+  COLOR_TEXT,
+  COLOR_TITLE_TEXT,
+} from "../../styles/Constants";
+import setBodyColor from "../../utils/setBodyColor";
 
-
-
-const Map = (props) => (
-  <>
-    <Container>
-      <TitleCallout titleText={props.mapTitle} />
-      <SVGContainer>
-        {/* <AnimationOnScroll animateIn="animate__fadeIn" delay={0} offset={0}> */}
+const Map = (props) => {
+  setBodyColor({ color: COLOR_BASE_1 });
+  return (
+    <>
+      <Container>
+        <TitleCallout titleText={props.mapTitle} />
+        <SVGContainer>
           <MapSvg
             style={{
               width: "100%",
@@ -30,22 +34,25 @@ const Map = (props) => (
               key={index}
               className="sonar"
               style={{ left: item.left, top: item.top }}
-              animationTime={getRndInteger(2000,3000) + "ms"}
-            >
-            </MapPin>
+              animationTime={getRndInteger(2000, 3000) + "ms"}
+            ></MapPin>
           ))}
-        {/* </AnimationOnScroll> */}
-      </SVGContainer>
-    </Container>
-  </>
-);
+        </SVGContainer>
+        <LocationGrid>
+          {dataMap.map((item, index) => (
+            <div>{item.location}</div>
+          ))}
+        </LocationGrid>
+      </Container>
+    </>
+  );
+};
 
 function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
 const dotSize = "20px";
-
 
 const SVGContainer = styled.div`
   display: inline-block;
@@ -82,9 +89,7 @@ const MapPinTooltip = styled.div`
 `;
 */
 
-
-
-const MapPin = styled.div.attrs((props: {animationTime: string}) => props)`
+const MapPin = styled.div.attrs((props: { animationTime: string }) => props)`
   position: absolute;
   width: ${dotSize};
   height: ${dotSize};
@@ -111,6 +116,22 @@ const MapPin = styled.div.attrs((props: {animationTime: string}) => props)`
 
   &:after {
     animation: largePulse ${(props) => props.animationTime} ease-out infinite;
+  }
+`;
+
+const LocationGrid = styled.div`
+  padding-top: 32px;
+  display: grid;
+  grid-gap: 12px;
+  width: 100%;
+  color: ${COLOR_TEXT};
+  /* background: red; */
+
+  @media (min-width: ${BREAKPOINT_PX}) {
+    grid-template-columns: auto auto auto auto;
+  }
+  @media (max-width: ${BREAKPOINT_PX}) {
+    grid-template-columns: auto auto;
   }
 `;
 
