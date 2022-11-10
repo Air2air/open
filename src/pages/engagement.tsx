@@ -11,7 +11,7 @@ const EngagementPage = () => {
   return (
     <>
       <BannerVideo
-        pageTitle="Solid process "
+        pageTitle="Solid process"
         pageDescription="Scope, deliver and measure.  Our healthcare AI workflow gets you to the right outcome."
         pageVideo={pageVideo}
         overlayOpacity={0}

@@ -133,7 +133,7 @@ const TextRow = styled.div`
 `;
 
 const CalloutNumber = styled.div`
-  font-family: "Audiowide", cursive;
+  font-family: "Calistoga", cursive;
   line-height:1em;
   /* font-weight: 600; */
   height: auto;

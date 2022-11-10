@@ -19,10 +19,12 @@ const TitleContainer = styled(AnimationOnScroll)`
 `;
 
 const TitleStyled = styled.h1`
+text-transform: uppercase;
+font-weight: 300;
   @media (min-width: ${BREAKPOINT_PX}) {
-    font-size: 2.1em;
+    font-size: 1.6em;
   }
   @media (max-width: ${BREAKPOINT_PX}) {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 `;

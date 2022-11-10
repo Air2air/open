@@ -39,7 +39,7 @@ const WhatWeDoPage = () => {
         <li>Growth guidance including market segment, therapeutic area or disease category from competitive, partnering or investment perspectives.</li>  <li>Multidisciplinary fundraising, positioning vision, strategy and business model for digital health and digital medicine.</li>
         <li>M &amp; A commercial due diligence including market assessment, evaluation of the competitive landscape, and analysis of the target's value proposition and post-acquisition growth strategy.</li>
         </ul>
-        "
+       "
         backgroundColor={COLOR_BASE_2}
         buttonText="Markets"
         buttonTo="/markets"
