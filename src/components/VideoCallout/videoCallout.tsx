@@ -47,7 +47,8 @@ const VideoWrapper = styled.div`
   max-width: 100vw;
   overflow: hidden;
   @media (min-width: ${BREAKPOINT_PX}) {
-    height: ${BANNER_HEIGHT_DESKTOP_PX};
+
+    min-height: ${BANNER_HEIGHT_DESKTOP_PX};
   }
   @media (max-width: ${BREAKPOINT_PX}) {
     height: ${BANNER_HEIGHT_MOBILE_PX};

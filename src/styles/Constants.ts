@@ -46,6 +46,8 @@ export const CONTENT_WIDTH_MOBILE = "84%";
 // Breakpoint
 export const BREAKPOINT = 700;
 export const BREAKPOINT_PX = BREAKPOINT + "px";
+export const BREAKPOINT_MID = 900;
+export const BREAKPOINT_MID_PX = BREAKPOINT_MID + "px";
 
 // Text 
 export const TEXT_TITLE_DESKTOP = "2.6em"
