@@ -1,10 +1,5 @@
 import { useState, useEffect } from "react";
 import styled from "styled-components";
-import {
-  BREAKPOINT_PX,
-  COLOR_BASE,
-  COLOR_BASE_5,
-} from "../../styles/Constants";
 
 const ProgressBar = (): JSX.Element => {
   const [scrolled, setScrolled] = useState("");
@@ -14,7 +9,7 @@ const ProgressBar = (): JSX.Element => {
     setVisible(true);
     setTimeout(() => {
       setVisible(false);
-    }, 500);
+    }, 1400);
   };
 
   useEffect(() => {
@@ -35,40 +30,128 @@ const ProgressBar = (): JSX.Element => {
   };
 
   return (
-    <ProgressContainer
-      style={{
-        backgroundColor: visible ? COLOR_BASE : "transparent",
-      }}
-    >
-      <Indicator
-        style={{
-          height: scrolled,
-          width: "5px",
-          backgroundColor: visible ? COLOR_BASE_5 : "transparent",
-        }}
-      >
-        &nbsp;
-      </Indicator>
+    <ProgressContainer>
+      <ProgressInner>
+        <Indicator
+          style={{
+            height: "100%",
+          }}
+        >
+          <IndicatorBackGrounds>
+            <IndicatorLeftBackGround
+              style={{
+                backgroundColor: visible
+                  ? "rgba(0,0,0,0.3)"
+                  : "transparent",
+              }}
+            />
+            <IndicatorRightBackGround>
+              <div
+                style={{
+                  borderTop: visible ? "1px solid gray" : "transparent",
+                }}
+              />
+              <div
+                style={{
+                  borderTop: visible ? "1px solid gray" : "transparent",
+                }}
+              />
+              <div
+                style={{
+                  borderTop: visible ? "1px solid gray" : "transparent",
+                  borderBottom: visible ? "1px solid gray" : "transparent",
+                }}
+              />
+            </IndicatorRightBackGround>
+          </IndicatorBackGrounds>
+          <IndicatorLeft
+            style={{
+              height: scrolled,
+              backgroundColor: visible
+                ? "rgba(255,255,255,0.2)"
+                : "transparent",
+              borderBottom: visible ? "1px solid gray" : "transparent",
+            }}
+          />
+
+          <IndicatorRight
+            style={{
+              height: scrolled,
+              borderBottom: visible ? "1px solid gray" : "transparent",
+            }}
+          ></IndicatorRight>
+        </Indicator>
+      </ProgressInner>
     </ProgressContainer>
   );
 };
 
+const transition = `all 0.4s`;
+const columnWidth = 8;
+
 const ProgressContainer = styled.div`
   position: fixed;
   height: 120px;
-  width: 5px;
-  margin-left: 10px;
-  transition: all 0.7s;
-  @media (min-width: ${BREAKPOINT_PX}) {
-    top: 50%;
-  }
-  @media (max-width: ${BREAKPOINT_PX}) {
-    top: 50%;
-  }
+  width: ${columnWidth * 2}px;
+  padding-left: ${columnWidth}px;
+  top: 50%;
+  /* background: red; */
+`;
+
+const ProgressInner = styled.div`
+  position: absolute;
+  top: 0;
+  height: 120px;
+  width: ${columnWidth * 2}px;
+  transition: ${transition};
 `;
 
 const Indicator = styled.div`
-  /* margin-left: 10px; */
+  display: flex;
+  width: ${columnWidth * 2}px;
+  transition: ${transition};
+  /* background: gold; */
+`;
+
+const IndicatorBackGrounds = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  width: ${columnWidth * 2}px;
+  transition: ${transition};
+`;
+
+const IndicatorLeftBackGround = styled.div`
+  height: 100%;
+  width: ${columnWidth}px;
+  transition: ${transition};
+`;
+
+const IndicatorRightBackGround = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: ${columnWidth}px;
+  transition: ${transition};
+  /* background: red; */
+  div {
+    flex: 1;
+  }
+`;
+
+const IndicatorLeft = styled.div`
+  width: ${columnWidth}px;
+  transition: ${transition};
+`;
+
+const IndicatorRight = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: ${columnWidth}px;
+  transition: ${transition};
+  border-bottom: 1px solid gray;
 `;
 
 export default ProgressBar;
