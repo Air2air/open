@@ -121,20 +121,20 @@ const MapPin = styled.div.attrs((props: { animationTime: string }) => props)`
   }
 `;
 
-const LocationGrid = styled.div`
-  padding-top: 32px;
-  display: grid;
-  grid-gap: 12px;
-  width: 100%;
-  color: ${COLOR_TEXT};
-  /* background: red; */
+// const LocationGrid = styled.div`
+//   padding-top: 32px;
+//   display: grid;
+//   grid-gap: 12px;
+//   width: 100%;
+//   color: ${COLOR_TEXT};
+//   /* background: red; */
 
-  @media (min-width: ${BREAKPOINT_PX}) {
-    grid-template-columns: auto auto auto auto;
-  }
-  @media (max-width: ${BREAKPOINT_PX}) {
-    grid-template-columns: auto auto;
-  }
-`;
+//   @media (min-width: ${BREAKPOINT_PX}) {
+//     grid-template-columns: auto auto auto auto;
+//   }
+//   @media (max-width: ${BREAKPOINT_PX}) {
+//     grid-template-columns: auto auto;
+//   }
+// `;
 
 export default Map;
