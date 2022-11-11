@@ -38,13 +38,13 @@ const Map = (props) => {
             ></MapPin>
           ))}
         </SVGContainer>
-        <LocationGrid>
+        {/* <LocationGrid>
           {dataMap
             .sort((a, b) => a.location.localeCompare(b.location))
             .map((item, index) => (
               <div>{item.location}</div>
             ))}
-        </LocationGrid>
+        </LocationGrid> */}
       </Container>
     </>
   );
