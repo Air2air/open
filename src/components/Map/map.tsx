@@ -5,9 +5,7 @@ import { ReactComponent as MapSvg } from "./world_map.svg";
 import "./keyframes.scss";
 import { dataMap } from "./dataMap";
 import {
-  BREAKPOINT_PX,
   COLOR_BASE_1,
-  COLOR_TEXT,
   COLOR_RED,
 } from "../../styles/Constants";
 import setBodyColor from "../../utils/setBodyColor";
