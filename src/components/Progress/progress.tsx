@@ -21,7 +21,7 @@ const ProgressBar = (): JSX.Element => {
     window.addEventListener("scroll", onScroll);
 
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  });
 
   const onScroll = () => {
     const viewportHeight =
