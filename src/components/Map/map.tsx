@@ -8,7 +8,7 @@ import {
   BREAKPOINT_PX,
   COLOR_BASE_1,
   COLOR_TEXT,
-  COLOR_TITLE_TEXT,
+  COLOR_RED,
 } from "../../styles/Constants";
 import setBodyColor from "../../utils/setBodyColor";
 
@@ -39,9 +39,11 @@ const Map = (props) => {
           ))}
         </SVGContainer>
         <LocationGrid>
-          {dataMap.map((item, index) => (
-            <div>{item.location}</div>
-          ))}
+          {dataMap
+            .sort((a, b) => a.location.localeCompare(b.location))
+            .map((item, index) => (
+              <div>{item.location}</div>
+            ))}
         </LocationGrid>
       </Container>
     </>
@@ -108,7 +110,7 @@ const MapPin = styled.div.attrs((props: { animationTime: string }) => props)`
     border-radius: 50%;
     background: transparent;
     box-sizing: border-box;
-    border: ${COLOR_TITLE_TEXT} 2px solid;
+    border: ${COLOR_RED} 2px solid;
   }
   &:before {
     animation: smallPulse ${(props) => props.animationTime} ease-out infinite;

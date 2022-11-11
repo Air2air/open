@@ -9,7 +9,7 @@ import {
   COLOR_BASE_6,
   COLOR_CAPTION,
   COLOR_TEXT,
-  COLOR_TITLE_TEXT,
+  COLOR_RED,
 } from "../../styles/Constants";
 import Button from "../Button/button";
 import Container from "../Container/container";
@@ -209,7 +209,7 @@ const SeriesBar = styled(AnimationOnScroll)`
 `;
 
 const SeriesLabel = styled.div`
-  color: ${COLOR_TITLE_TEXT};
+  color: ${COLOR_RED};
   text-align: center;
 `;
 

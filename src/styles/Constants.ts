@@ -66,8 +66,8 @@ export const COLOR_ELEVENS = "#4371a0";
 
 export const COLOR_TEXT = "#FFF";
 export const COLOR_CAPTION = "hsl(0, 0%, 70%)";
-export const COLOR_TITLE_TEXT = "hsl(0, 80%, 50%)";
-export const COLOR_TITLE_TEXT_HOVER = "hsl(0, 10%, 70%)";
+export const COLOR_RED = "hsl(0, 80%, 50%)";
+export const COLOR_RED_HOVER = "hsl(0, 10%, 70%)";
 export const TEXT_OPACITY = 0.8;
 
 export const HEADER_COLOR = "rgba(0, 0, 0, 0.5)";
@@ -95,7 +95,6 @@ export const COLOR_GREEN_1 = "hsl(174, 64%, 13%)";
 export const COLOR_GREEN_2 = "hsl(174, 64%, 15%)";
 export const COLOR_GREEN_TEXT = "hsl(174, 64%, 80%)";
 
-export const COLOR_RED = "hsl(0, 80%, 8%)";
 export const COLOR_RED_1 = "hsl(0, 79%, 10%)";
 export const COLOR_RED_2 = "hsl(0, 79%, 12%)";
 export const COLOR_RED_TEXT = "hsl(35, 100%, 80%)";

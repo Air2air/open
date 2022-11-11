@@ -6,8 +6,8 @@ import {
   COLOR_BASE,
   COLOR_BASE_4,
   COLOR_BASE_LIGHT,
-  COLOR_TITLE_TEXT,
-  COLOR_TITLE_TEXT_HOVER,
+  COLOR_RED,
+  COLOR_RED_HOVER,
   CONTENT_WIDTH_DESKTOP,
   FOOTER_HEIGHT_DESKTOP,
 } from "../../styles/Constants";
@@ -117,7 +117,7 @@ const FooterColumn = styled.div`
   align-items: center;
   justify-content: flex-start;
   height: ${FOOTER_CONTENT_HEIGHT_DESKTOP_PX};
-  /* background: ${COLOR_TITLE_TEXT}; */
+  /* background: ${COLOR_RED}; */
 `;
 
 const FooterLinkColumn = styled.div`
@@ -135,10 +135,10 @@ const FooterLink = styled(Link)`
   font-weight: 400;
   padding: 8px 0;
   text-align: left;
-  color: ${COLOR_TITLE_TEXT};
+  color: ${COLOR_RED};
   transition: all 200ms;
   &:hover {
-    color: ${COLOR_TITLE_TEXT_HOVER};
+    color: ${COLOR_RED_HOVER};
   }
 `;
 
@@ -155,5 +155,5 @@ const FooterCopyright = styled.div`
   div {
     color: ${COLOR_BASE_LIGHT};
   }
-  /* background: ${COLOR_TITLE_TEXT}; */
+  /* background: ${COLOR_RED}; */
 `;

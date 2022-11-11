@@ -6,8 +6,8 @@ import {
   COLOR_BASE,
   COLOR_BASE_4,
   COLOR_BASE_LIGHT,
-  COLOR_TITLE_TEXT,
-  COLOR_TITLE_TEXT_HOVER,
+  COLOR_RED,
+  COLOR_RED_HOVER,
   CONTENT_WIDTH_MOBILE,
   FOOTER_HEIGHT_MOBILE,
 } from "../../styles/Constants";
@@ -138,10 +138,10 @@ const FooterLink = styled(Link)`
   font-weight: 400;
   padding: 8px 0;
   text-align: center;
-  color: ${COLOR_TITLE_TEXT};
+  color: ${COLOR_RED};
   transition: all 200ms;
   &:hover {
-    color: ${COLOR_TITLE_TEXT_HOVER};
+    color: ${COLOR_RED_HOVER};
   }
 `;
 
@@ -157,5 +157,5 @@ const FooterCopyright = styled.div`
   div {
     color: ${COLOR_BASE_LIGHT};
   }
-  /* background: ${COLOR_TITLE_TEXT}; */
+  /* background: ${COLOR_RED}; */
 `;
