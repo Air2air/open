@@ -19,6 +19,7 @@ const Advisors = (props) => {
       nameFirst={props.nameFirst}
       nameLast={props.nameLast}
       photo={props.photo}
+      linkedin={props.linkedin}
     />
   ));
 

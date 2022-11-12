@@ -16,6 +16,7 @@ export const dataAdvisors = [
     role: "Advisor",
     desc: "Description here. Description here. Description here. Description here.  Description here. Description here.",
     photo: "fine.jpeg",
+    linkedin:"https://www.linkedin.com/in/benfine"
   },
   {
     id: 3,
@@ -25,6 +26,7 @@ export const dataAdvisors = [
     role: "Advisor",
     desc: "Description here. Description here. Description here. Description here.  Description here. Description here.",
     photo: "kleck.jpeg",
+    linkedin:"https://www.linkedin.com/in/jeff-kleck-a000299/"
   },
   {
     id: 4,
@@ -34,5 +36,6 @@ export const dataAdvisors = [
     role: "Advisor",
     desc: "Matt Bio",
     photo: "lungren.jpeg",
+    linkedin:"https://www.linkedin.com/in/mattlungrenmd/"
   },
 ];

@@ -18,7 +18,7 @@ export const CALLOUT_HEIGHT_PX = CALLOUT_HEIGHT + "px";
 export const CONTACT_ITEM_HEIGHT = 250;
 export const CONTACT_ITEM_HEIGHT_PX = CONTACT_ITEM_HEIGHT + "px";
 
-export const TEAM_MEMBER_HEIGHT = 220;
+export const TEAM_MEMBER_HEIGHT = 280;
 export const TEAM_MEMBER_HEIGHT_PX = TEAM_MEMBER_HEIGHT + "px";
 export const TEAM_MEMBER_WIDTH = 100;
 export const TEAM_MEMBER_WIDTH_PX = TEAM_MEMBER_WIDTH + "px";

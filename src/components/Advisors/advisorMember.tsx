@@ -6,8 +6,9 @@ import {
   TEAM_MEMBER_PHOTO_PX,
   TEAM_MEMBER_WIDTH_PX,
 } from "../../styles/Constants";
+import ButtonLinkedIn from "../Button/buttonLinkedIn";
 
-const AdvisorMember = ({ id, nameFirst, nameLast, photo }) => {
+const AdvisorMember = ({ id, nameFirst, nameLast, photo, linkedin }) => {
   const backgroundImage = "url(/images/team/man_icon.png)";
   return (
     <AdvisorMemberWrapper key={id}>
@@ -16,6 +17,10 @@ const AdvisorMember = ({ id, nameFirst, nameLast, photo }) => {
         {nameFirst} {nameLast}
       </AdvisorMemberName>
       {/* <AdvisorMemberRole>{role}</AdvisorMemberRole> */}
+      <ButtonLinkedIn
+            to={linkedin}
+            text="Elevens.ai"
+          />
     </AdvisorMemberWrapper>
   );
 };
@@ -48,7 +53,7 @@ const AdvisorMemberName = styled.div`
   color: ${COLOR_BASE_TEXT};
   display: flex;
   align-items: center;
-  height: 40px;
+  height: 80px;
   /* background: red; */
 `;
 
