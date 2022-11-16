@@ -6,6 +6,7 @@ import HomePage from "../pages/home";
 import MarketsPage from "../pages/markets";
 import MedTechPage from "../pages/medtech";
 import PharmaTechPage from "../pages/pharmatech";
+import ProcessPage from "../pages/process";
 import ServicePage from "../pages/service";
 import EngagementPage from "../pages/engagement";
 import VentureStagePage from "../pages/ventureStage";
@@ -54,6 +55,12 @@ export const dataRoutes = [
     path: "markets",
     section: "Markets",
     element: <MarketsPage />,
+  },
+  {
+    id: "Process",
+    path: "process",
+    section: "Process",
+    element: <ProcessPage />,
   },
   {
     id: "Service",
