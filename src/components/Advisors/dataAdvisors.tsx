@@ -1,13 +1,4 @@
 export const dataAdvisors = [
-  // {
-  //   id: 1,
-  //   order: 4,
-  //   nameLast: "Dunning",
-  //   nameFirst: "Todd",
-  //   role: "Advisor",
-  //   desc: "Description here. Description here. Description here. Description here.  Description here. Description here.",
-  //   photo: "dunning.jpeg",
-  // },
   {
     id: 2,
     order: 2,

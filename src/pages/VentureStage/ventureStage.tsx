@@ -1,8 +1,9 @@
-import setBodyColor from "../utils/setBodyColor";
-import { COLOR_BASE } from "../styles/Constants";
-import VentureStage from "../components/VentureStage/ventureStage";
+import setBodyColor from "../../utils/setBodyColor";
+import { COLOR_BASE } from "../../styles/Constants";
+import TimeLine from "../../components/TimeLine/timeLine";
 import styled from "styled-components";
-import BannerSpacer from "../components/BannerSpacer/bannerSpacer";
+import BannerSpacer from "../../components/BannerSpacer/bannerSpacer";
+import { dataVentureStage } from "./dataVentureStage";
 
 const VentureStagePage = () => {
   setBodyColor({ color: COLOR_BASE });
@@ -10,7 +11,7 @@ const VentureStagePage = () => {
     <>
       <BannerSpacer />
       <VentureStageTitle>Health AI Venture stage</VentureStageTitle>
-      <VentureStage />
+      <TimeLine data={dataVentureStage} />
     </>
   );
 };

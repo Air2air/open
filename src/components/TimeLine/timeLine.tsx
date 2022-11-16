@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { ServiceItemCombined, ServiceItemLeft, ServiceItemRight } from "./serviceItem";
-import { dataService } from "./dataService";
+import { TimeLineItemCombined, TimeLineItemLeft, TimeLineItemRight } from "./timeLineItem";
+
 import {
   BREAKPOINT,
   COLOR_BASE_LIGHT,
@@ -9,7 +9,7 @@ import {
 } from "../../styles/Constants";
 import { useState, useEffect } from "react";
 
-const Service = () => {
+const TimeLine = (props: { data: any[]; }) => {
   /*------ Responsive -------*/
   const [width, setWidth] = useState(window.innerWidth);
 
@@ -24,88 +24,88 @@ const Service = () => {
     <>
       {width > BREAKPOINT ? (
         <>
-          <ServiceContainerDesktop>
-            <ServiceItemColumn
+          <TimeLineContainerDesktop>
+            <TimeLineItemColumn
               style={{ borderRight: `2px solid ${COLOR_BASE_LIGHT}` }}
             >
-              <ServiceLeft />
-            </ServiceItemColumn>
-            <ServiceItemColumn style={{ marginTop: "40px" }}>
-              <ServiceRight />
-            </ServiceItemColumn>
-          </ServiceContainerDesktop>
+              <TimeLineLeft data={props.data}/>
+            </TimeLineItemColumn>
+            <TimeLineItemColumn style={{ marginTop: "40px" }}>
+              <TimeLineRight data={props.data}/>
+            </TimeLineItemColumn>
+          </TimeLineContainerDesktop>
         </>
       ) : (
         <>
-          <ServiceContainerMobile>
-            <ServiceCombined />
-          </ServiceContainerMobile>
+          <TimeLineContainerMobile>
+            <TimeLineCombined data={props.data}/>
+          </TimeLineContainerMobile>
         </>
       )}
     </>
   );
 };
 
-const ServiceLeft = () => {
-  const serviceMap = dataService
+const TimeLineLeft = (props: { data: any[]; }) => {
+  const timeLineMap = props.data
     .filter((u) => u.side === "left")
     .map((props) => (
-      <ServiceItemLeft
+      <TimeLineItemLeft
         key={props.id}
         id={props.id}
         title={props.title}
         desc={props.desc}
       />
     ));
-  return <>{serviceMap}</>;
+  return <>{timeLineMap}</>;
 };
 
-const ServiceRight = () => {
-  const serviceMap = dataService
+const TimeLineRight = (props: { data: any[]; }) => {
+  const timeLineMap = props.data
     .filter((u) => u.side !== "left")
     .map((props) => (
-      <ServiceItemRight
+      <TimeLineItemRight
         key={props.id}
         id={props.id}
         title={props.title}
         desc={props.desc}
       />
     ));
-  return <>{serviceMap}</>;
+  return <>{timeLineMap}</>;
 };
 
-const ServiceCombined = () => {
-  const serviceMap = dataService
+const TimeLineCombined = (props: { data: any[]; }) => {
+  const timeLineMap = props.data
     .map((props) => (
-      <ServiceItemCombined
+      <TimeLineItemCombined
         key={props.id}
         id={props.id}
         title={props.title}
         desc={props.desc}
       />
     ));
-  return <>{serviceMap}</>;
+  return <>{timeLineMap}</>;
 };
 
-const ServiceContainerDesktop = styled.div`
+const TimeLineContainerDesktop = styled.div`
   display: flex;
   flex-direction: row;
   margin: 0 auto;
   width: ${CONTENT_WIDTH_DESKTOP};
 `;
 
-const ServiceContainerMobile = styled.div`
+const TimeLineContainerMobile = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   width: ${CONTENT_WIDTH_MOBILE};
 `;
 
-const ServiceItemColumn = styled.div`
+const TimeLineItemColumn = styled.div`
   display: flex;
   flex: 4;
   flex-direction: column;
   justify-content: space-evenly;
 `;
 
-export default Service;
+export default TimeLine;

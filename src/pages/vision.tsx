@@ -1,10 +1,7 @@
 import setBodyColor from "../utils/setBodyColor";
 import Callout from "../components/Callout/callOut";
 import BannerImage from "../components/BannerImage/bannerImage";
-import {
-  COLOR_BASE,
-  COLOR_BASE_1,
-} from "../styles/Constants";
+import { COLOR_BASE, COLOR_BASE_1 } from "../styles/Constants";
 
 const pageImage = "dartmouth.jpeg";
 
@@ -22,6 +19,7 @@ const VisionPage = () => {
         typing={true}
       />
       <Callout
+        id={0}
         calloutTitle="The birth of machine intelligence"
         calloutText='<p>In 1956, 11 experts from multiple scientific disciplines traveled around the world to meet at Dartmouth College. Over several days the <b>Dartmouth Workshop</b> combined their collective experience to build the foundational principles for what we know today as Artificial Intelligence. The proposal states:</p>
         <blockquote><i>

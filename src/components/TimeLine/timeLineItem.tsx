@@ -8,65 +8,65 @@ import {
 import parse from "html-react-parser";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
-export const ServiceItemLeft = ({ id, title, desc }) => {
+export const TimeLineItemLeft = ({ id, title, desc }) => {
   const descParsed = parse(desc);
   // const side  = ''
 
   return (
     <AnimationOnScroll key={id} animateIn="animate__fadeInLeft" delay={0}>
-      <ServiceItemWrapper>
-        <ServiceContent>
+      <TimeLineItemWrapper>
+        <TimeLineContent>
           <h3>{title}</h3>
-          <ServiceItemDesc>{descParsed}</ServiceItemDesc>
-        </ServiceContent>
-        <ServiceItemLineBox>
+          <TimeLineItemDesc>{descParsed}</TimeLineItemDesc>
+        </TimeLineContent>
+        <TimeLineItemLineBox>
           <div
             id={id}
             className="line animate__animated animate__slideInLeft animate__delay-1s"
           ></div>
-        </ServiceItemLineBox>
-      </ServiceItemWrapper>
+        </TimeLineItemLineBox>
+      </TimeLineItemWrapper>
     </AnimationOnScroll>
   );
 };
 
-export const ServiceItemRight = ({ id, title, desc }) => {
+export const TimeLineItemRight = ({ id, title, desc }) => {
   const descParsed = parse(desc);
   // const side  = ''
 
   return (
     <AnimationOnScroll key={id} animateIn="animate__fadeInRight" delay={0}>
-      <ServiceItemWrapper>
-        <ServiceItemLineBox>
+      <TimeLineItemWrapper>
+        <TimeLineItemLineBox>
           <div
             id={id}
             className="line animate__animated animate__slideInRight animate__delay-1s"
           ></div>
-        </ServiceItemLineBox>
-        <ServiceContent>
+        </TimeLineItemLineBox>
+        <TimeLineContent>
           <h3>{title}</h3>
-          <ServiceItemDesc>{descParsed}</ServiceItemDesc>
-        </ServiceContent>
-      </ServiceItemWrapper>
+          <TimeLineItemDesc>{descParsed}</TimeLineItemDesc>
+        </TimeLineContent>
+      </TimeLineItemWrapper>
     </AnimationOnScroll>
   );
 };
 
-export const ServiceItemCombined = ({ id, title, desc }) => {
+export const TimeLineItemCombined = ({ id, title, desc }) => {
   const descParsed = parse(desc);
   return (
     <AnimationOnScroll key={id} animateIn="animate__fadeInUp" offset={150}>
-      <ServiceItemWrapper>
-        <ServiceContent>
+      <TimeLineItemWrapper>
+        <TimeLineContent>
           <h3>{title}</h3>
-          <ServiceItemDesc>{descParsed}</ServiceItemDesc>
-        </ServiceContent>
-      </ServiceItemWrapper>
+          <TimeLineItemDesc>{descParsed}</TimeLineItemDesc>
+        </TimeLineContent>
+      </TimeLineItemWrapper>
     </AnimationOnScroll>
   );
 };
 
-const ServiceItemWrapper = styled.div`
+const TimeLineItemWrapper = styled.div`
   display: flex;
   flex-direction: row;
   height: auto;
@@ -74,7 +74,7 @@ const ServiceItemWrapper = styled.div`
   margin-bottom: 14px;
 `;
 
-const ServiceContent = styled.div`
+const TimeLineContent = styled.div`
   z-index: +1;
   display: flex;
   flex-direction: column;
@@ -90,7 +90,7 @@ const ServiceContent = styled.div`
   }
 `;
 
-const ServiceItemLineBox = styled.div`
+const TimeLineItemLineBox = styled.div`
   height: auto;
   width: 10%;
   display: flex;
@@ -103,7 +103,7 @@ const ServiceItemLineBox = styled.div`
   }
 `;
 
-const ServiceItemDesc = styled.div`
+const TimeLineItemDesc = styled.div`
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   line-height: 1.6em;

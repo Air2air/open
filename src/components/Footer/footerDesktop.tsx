@@ -36,7 +36,7 @@ export const FooterDesktop: FC<FooterProps> = ({footerVideo}) => {
               offset={0}
             >
               <Link className="link" to="/home">
-                <LogoTextWhite width="150" style={{ opacity: 0.6 }} />
+                <LogoTextWhite width="120" style={{ opacity: 0.6 }} />
               </Link>
             </AnimationOnScroll>
           </FooterColumn>

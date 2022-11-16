@@ -1,6 +1,5 @@
 export const dataVentureStage = [
 
-
   {
     id: 2,
     order: 1,

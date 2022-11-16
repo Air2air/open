@@ -17,16 +17,19 @@ import styled from "styled-components";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import parse from "html-react-parser";
 import { TitleCallout } from "../Title/titleCallout";
+import Button from "../Button/button";
 
-interface IInnerSectionProps {
+interface ICalloutBulletProps {
   id: number;
   calloutTitle: string;
   calloutText: string;
   side?: string;
   backgroundColor?: any;
+  buttonText?: string;
+  buttonTo?: string;
 }
 
-export const CalloutBullet = (props: IInnerSectionProps) => {
+export const CalloutBullet = (props: ICalloutBulletProps) => {
   const { calloutTitle, calloutText } = props;
 
   const calloutTitleParsed = parse(calloutTitle);
@@ -61,6 +64,7 @@ export const CalloutBullet = (props: IInnerSectionProps) => {
                 offset={60}
               >
                 <CalloutParagraph>{calloutTextParsed}</CalloutParagraph>
+                {/* {props.buttonText ? <Button to={props.buttonTo} text={props.buttonText} /> : ""} */}
               </AnimationOnScroll>
             </TextRow>
             <AnimationOnScroll
@@ -88,6 +92,7 @@ export const CalloutBullet = (props: IInnerSectionProps) => {
                 offset={60}
               >
                 <CalloutParagraph>{calloutTextParsed}</CalloutParagraph>
+                {/* {props.buttonText ? <Button to={props.buttonTo} text={props.buttonText} /> : ""} */}
               </AnimationOnScroll>
             </TextRow>
           </InnerSection>
@@ -134,7 +139,7 @@ const TextRow = styled.div`
 
 const CalloutNumber = styled.div`
   font-family: "Calistoga", cursive;
-  line-height:1em;
+  line-height: 1em;
   /* font-weight: 600; */
   height: auto;
   letter-spacing: -0.06em;

@@ -1,6 +1,12 @@
 import {
   BREAKPOINT_PX,
   CALLOUT_HEIGHT_PX,
+  COLOR_BASE_1,
+  COLOR_BASE_2,
+  COLOR_BASE_3,
+  COLOR_BASE_4,
+  COLOR_BASE_5,
+  COLOR_BASE_6,
   COLOR_TEXT,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
@@ -12,7 +18,8 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 import parse from "html-react-parser";
 import { TitleCallout } from "../Title/titleCallout";
 
-interface ITextSectionProps {
+interface CalloutProps {
+  id?: number;
   calloutTitle: string;
   calloutText: string;
   calloutVideo?: string;
@@ -21,18 +28,30 @@ interface ITextSectionProps {
   buttonTo: string;
 }
 
-export const Callout = (props: ITextSectionProps) => {
-  const { calloutTitle, calloutText, backgroundColor, buttonText, buttonTo } =
-    props;
+export const Callout = (props: CalloutProps) => {
 
-  const calloutTitleParsed = parse(calloutTitle);
-  const calloutTextParsed = parse(calloutText);
+  const calloutTitleParsed = parse(props.calloutTitle);
+  const calloutTextParsed = parse(props.calloutText);
+
+  const assignBackgroundColor = (props: CalloutProps) => {
+    if (props.backgroundColor === 1) {
+      return COLOR_BASE_1;
+    } else if (props.backgroundColor === 2) {
+      return COLOR_BASE_2;
+    } else if (props.backgroundColor === 3) {
+      return COLOR_BASE_3;
+    } else if (props.backgroundColor === 4) {
+      return COLOR_BASE_4;
+    } else if (props.backgroundColor === 5) {
+      return COLOR_BASE_5;
+    } else {
+      return COLOR_BASE_6;
+    }
+  };
 
   return (
     <>
-      <CalloutContainer
-        style={{ background: backgroundColor && backgroundColor }}
-      >
+      <CalloutContainer style={{ background: assignBackgroundColor(props) }}>
         <TextSection>
           <TitleCallout titleText={calloutTitleParsed} />
 
@@ -44,7 +63,7 @@ export const Callout = (props: ITextSectionProps) => {
             <CalloutParagraph>{calloutTextParsed}</CalloutParagraph>
           </AnimationOnScroll>
 
-          {buttonText ? <Button to={buttonTo} text={buttonText} /> : ""}
+          {props.buttonText ? <Button to={props.buttonTo} text={props.buttonText} /> : ""}
         </TextSection>
       </CalloutContainer>
     </>

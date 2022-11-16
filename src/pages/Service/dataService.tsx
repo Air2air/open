@@ -1,17 +1,19 @@
 export const dataService = [
   {
-    id: 2,
+    id: 1,
     order: 1,
     title: "Product/Market fit",
     desc: "Segment landscape, needs, and priorities to drive adoption",
     side: "left",
+    backgroundColor: 1,
   },
   {
-    id: 1,
+    id: 2,
     order: 2,
     title: "Product/Market fit",
     desc: "Go-to-market, product positioning, price point for clinical machine learning and digital health solutions.",
-    side: "left",
+    side: "right",
+    backgroundColor: 2,
   },
   {
     id: 3,
@@ -19,20 +21,23 @@ export const dataService = [
     title: "Product/Market fit",
     desc: "Support for early adoption academic initiatives and activities including grants, publications, and collaborations.",
     side: "left",
+    backgroundColor: 3,
   },
   {
     id: 4,
     order: 4,
     title: "Product/Market fit",
     desc: "Deep technical and clinical support for broader consumer health sector landscape (e.g., patient engagement, wearables, digital health and wellness)",
-    side: "left",
+    side: "right",
+    backgroundColor: 4,
   },
   {
     id: 5,
     order: 5,
     title: "Growth and Acquisitions",
     desc: "Strategic investments and structuring corporate vehicles (e.g., corporate venture capital, or CVC).",
-    side: "right",
+    side: "left",
+    backgroundColor: 5,
   },
   {
     id: 6,
@@ -40,13 +45,15 @@ export const dataService = [
     title: "Growth and Acquisitions",
     desc: "Growth guidance including market segment, therapeutic area or disease category from competitive, partnering or investment perspectives.",
     side: "right",
+    backgroundColor: 6,
   },
   {
     id: 7,
     order: 7,
     title: "Growth and Acquisitions",
     desc: "Multidisciplinary fundraising, positioning vision, strategy and business model for digital health and digital medicine.",
-    side: "right",
+    side: "left",
+    backgroundColor: 1,
   },
   {
     id: 8,
@@ -54,5 +61,6 @@ export const dataService = [
     title: "Growth and Acquisitions",
     desc: "M & A commercial due diligence including market assessment, evaluation of the competitive landscape, and analysis of the target's value proposition and post-acquisition growth strategy.",
     side: "right",
+    backgroundColor: 2,
   },
 ];

@@ -6,12 +6,12 @@ import HomePage from "../pages/home";
 import MarketsPage from "../pages/markets";
 import MedTechPage from "../pages/medtech";
 import PharmaTechPage from "../pages/pharmatech";
-import ProcessPage from "../pages/process";
-import ServicePage from "../pages/service";
-import EngagementPage from "../pages/engagement";
-import VentureStagePage from "../pages/ventureStage";
+import ProcessPage from "../pages/Process/process";
+import ServicePage from "../pages/Service/service";
+import EngagementPage from "../pages/Engagement/engagement";
+import VentureStagePage from "../pages/VentureStage/ventureStage";
 import VisionPage from "../pages/vision";
-import WhatWeDoPage from "../pages/what_we_do";
+import WhatWeDoPage from "../pages/WhatWeDo/what_we_do";
 
 export const dataRoutes = [
   {
@@ -70,7 +70,7 @@ export const dataRoutes = [
   },
   {
     id: "VentureStage",
-    path: "timeline",
+    path: "venturestage",
     section: "VentureStage",
     element: <VentureStagePage />,
   },

@@ -21,6 +21,7 @@ const AboutPage = () => {
         typing={true}
       />
       <Callout
+            id={1}
         calloutTitle=""
         calloutText="<p>Eleven was created when some of the foremost AI and medical minds on the planet came together to accelerate breakthrough ventures in health-tech, med-tech, bio-tech, and pharma-tech. These experts (Elevens) are the leaders in AI technologies and business in medicine, healthcare, bioscience, and pharmaceutical science, and all share a mission to deliver today's most fundamental healthcare <b>AI advancements</b>.</p><p>Our advisors are healthcare and clinical machine learning leaders from top academic medical centers, venture capital, large technology companies, and successful digital health startups.</p>"
         backgroundColor={COLOR_BASE_1}
