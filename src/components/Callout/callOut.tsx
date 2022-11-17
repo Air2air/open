@@ -21,8 +21,8 @@ import { TitleCallout } from "./../Title/titleCallout";
 
 const Callout = (props: {
   id?: number;
-  text: string;
-  title: string;
+  text: any;
+  title: any;
   backgroundColor?: number;
   buttonText?: string;
   buttonTo?: any;
