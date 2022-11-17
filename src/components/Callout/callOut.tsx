@@ -27,7 +27,7 @@ const Callout = (props: {
   buttonText?: string;
   buttonTo?: any;
 }) => {
-  const textParsed = parse(props.text);
+  // const textParsed = parse(props.text);
 
   // const assignBackgroundColor = (props: { backgroundColor: number }) => {
   //   if (props.backgroundColor === 1) {
@@ -56,7 +56,7 @@ const Callout = (props: {
             delay={200}
             offset={60}
           >
-            <CalloutParagraph>{textParsed}</CalloutParagraph>
+            <CalloutParagraph>{props.text}</CalloutParagraph>
           </AnimationOnScroll>
 
           {props.buttonText ? (
