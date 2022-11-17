@@ -19,7 +19,7 @@ import parse from "html-react-parser";
 import { TitleCallout } from "../Title/titleCallout";
 import { ICalloutProps } from "../../api/interfaces";
 
-export const Callout = (props) => {
+export const Callout = (props: ICalloutProps) => {
   const textParsed = parse(props.text);
 
   const assignBackgroundColor = (props: ICalloutProps) => {
