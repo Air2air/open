@@ -11,7 +11,7 @@ import ServicePage from "./../pages/Service/service";
 import EngagementPage from "./../pages/Engagement/engagement";
 import VentureStagePage from "./../pages/VentureStage/ventureStage";
 import VisionPage from "./../pages/vision";
-import WhatWeDoPage from "../pages/WhatWeDo/what_we_do_new";
+import WhatWeDoPage from "../pages/WhatWeDo/what_we_do";
 import WhatWeDoNewPage from "../pages/WhatWeDo/what_we_do_new";
 
 export const dataRoutes = [

@@ -5,7 +5,6 @@ import { dataWhatWeDo } from "./dataWhatWeDo";
 
 const pageVideo = 766731362;
 
-
 const WhatWeDoNewPage = () => {
 
   return (
