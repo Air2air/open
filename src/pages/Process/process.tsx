@@ -9,7 +9,7 @@ const ProcessPage = () => {
   return (
     <>
       <BannerVideo
-        pageTitle="Solid process"
+        pageTitle="Process workflow"
         pageDescription="Scope, deliver and measure.  Our healthcare AI workflow gets you to the right outcome."
         pageVideo={pageVideo}
         overlayOpacity={0}
