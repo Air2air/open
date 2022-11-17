@@ -16,7 +16,7 @@ import styled from "styled-components";
 import Button from "../Button/button";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import parse from "html-react-parser";
-// import { TitleCallout } from "../Title/titleCallout";
+import { TitleCallout } from "../Title/titleCallout";
 
 interface CalloutProps {
   id?: number;
@@ -53,7 +53,7 @@ export const Callout = (props: CalloutProps) => {
     <>
       <CalloutContainer style={{ background: assignBackgroundColor(props) }}>
         <TextSection>
-          {/* <TitleCallout text={titleParsed} /> */}
+          <TitleCallout title={props.title} />
 
           <AnimationOnScroll
             animateIn="animate__fadeIn"
