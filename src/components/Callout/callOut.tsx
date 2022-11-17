@@ -1,70 +1,70 @@
 import {
   BREAKPOINT_PX,
   CALLOUT_HEIGHT_PX,
-  // COLOR_BASE_1,
-  // COLOR_BASE_2,
-  // COLOR_BASE_3,
-  // COLOR_BASE_4,
-  // COLOR_BASE_5,
-  // COLOR_BASE_6,
+  COLOR_BASE_1,
+  COLOR_BASE_2,
+  COLOR_BASE_3,
+  COLOR_BASE_4,
+  COLOR_BASE_5,
+  COLOR_BASE_6,
   COLOR_TEXT,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
   TEXT_OPACITY,
-} from "./../../styles/Constants";
+} from "../../styles/Constants";
 import styled from "styled-components";
-// import Button from "./../Button/button";
-// import { AnimationOnScroll } from "react-animation-on-scroll";
-// import parse from "html-react-parser";
-// import { TitleCallout } from "./../Title/titleCallout";
-// import { ICalloutProps } from "./../../api/interfaces";
+import Button from "../Button/button";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import parse from "html-react-parser";
+// import { TitleCallout } from "../Title/titleCallout";
 
-const Callout = (props: {
+interface CalloutProps {
   id?: number;
-  text: any;
-  title: any;
-  backgroundColor?: number;
-  buttonText?: string;
-  buttonTo?: any;
-}) => {
-  // const textParsed = parse(props.text);
+  calloutTitle: string;
+  calloutText: string;
+  calloutVideo?: string;
+  backgroundColor: any;
+  buttonText: string;
+  buttonTo: string;
+}
 
-  // const assignBackgroundColor = (props: { backgroundColor: number }) => {
-  //   if (props.backgroundColor === 1) {
-  //     return COLOR_BASE_1;
-  //   } else if (props.backgroundColor === 2) {
-  //     return COLOR_BASE_2;
-  //   } else if (props.backgroundColor === 3) {
-  //     return COLOR_BASE_3;
-  //   } else if (props.backgroundColor === 4) {
-  //     return COLOR_BASE_4;
-  //   } else if (props.backgroundColor === 5) {
-  //     return COLOR_BASE_5;
-  //   } else {
-  //     return COLOR_BASE_6;
-  //   }
-  // };
+export const Callout = (props: CalloutProps) => {
+
+  // const calloutTitleParsed = parse(props.calloutTitle);
+  const calloutTextParsed = parse(props.calloutText);
+
+  const assignBackgroundColor = (props: CalloutProps) => {
+    if (props.backgroundColor === 1) {
+      return COLOR_BASE_1;
+    } else if (props.backgroundColor === 2) {
+      return COLOR_BASE_2;
+    } else if (props.backgroundColor === 3) {
+      return COLOR_BASE_3;
+    } else if (props.backgroundColor === 4) {
+      return COLOR_BASE_4;
+    } else if (props.backgroundColor === 5) {
+      return COLOR_BASE_5;
+    } else {
+      return COLOR_BASE_6;
+    }
+  };
 
   return (
     <>
-      <CalloutContainer >
-        {/* <TextSection>
-          <TitleCallout title={props.title} />
+      <CalloutContainer style={{ background: assignBackgroundColor(props) }}>
+        <TextSection>
+          {/* <TitleCallout text={calloutTitleParsed} /> */}
 
           <AnimationOnScroll
             animateIn="animate__fadeIn"
             delay={200}
             offset={60}
           >
-            <CalloutParagraph>{props.text}</CalloutParagraph>
+            <CalloutParagraph>{calloutTextParsed}</CalloutParagraph>
           </AnimationOnScroll>
 
-          {props.buttonText ? (
-            <Button to={props.buttonTo} text={props.buttonText} />
-          ) : (
-            ""
-          )}
-        </TextSection> */}
+          {props.buttonText ? <Button to={props.buttonTo} text={props.buttonText} /> : ""}
+        </TextSection>
       </CalloutContainer>
     </>
   );
