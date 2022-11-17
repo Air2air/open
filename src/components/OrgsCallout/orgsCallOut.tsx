@@ -3,7 +3,7 @@ import {
   CALLOUT_HEIGHT_PX,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
-} from "./../../styles/Constants";
+} from "../../styles/Constants";
 import styled from "styled-components";
 import { dataOrgs } from "./dataOrgs";
 
