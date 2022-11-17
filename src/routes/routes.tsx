@@ -12,7 +12,7 @@ import EngagementPage from "./../pages/Engagement/engagement";
 import VentureStagePage from "./../pages/VentureStage/ventureStage";
 import VisionPage from "./../pages/vision";
 import WhatWeDoPage from "../pages/WhatWeDo/what_we_do";
-import WhatWeDoNewPage from "../pages/WhatWeDo/what_we_do_new";
+import WhatWeDoNewPage from "../pages/WhatWeDo/new";
 
 export const dataRoutes = [
   {
@@ -108,7 +108,7 @@ export const dataRoutes = [
   },
   {
     id: "WhatWeDoNew",
-    path: "what_we_do_new",
+    path: "new",
     section: "WhatWeDoNew",
     element: <WhatWeDoNewPage />,
   },
