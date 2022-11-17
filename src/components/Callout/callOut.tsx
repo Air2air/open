@@ -29,7 +29,7 @@ const Callout = (props: {
 }) => {
   const textParsed = parse(props.text);
 
-  const assignBackgroundColor = (props) => {
+  const assignBackgroundColor = (props: { backgroundColor: number }) => {
     if (props.backgroundColor === 1) {
       return COLOR_BASE_1;
     } else if (props.backgroundColor === 2) {
@@ -47,7 +47,7 @@ const Callout = (props: {
 
   return (
     <>
-      <CalloutContainer style={{ background: assignBackgroundColor(props) }}>
+      <CalloutContainer >
         <TextSection>
           <TitleCallout title={props.title} />
 
