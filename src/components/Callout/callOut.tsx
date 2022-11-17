@@ -19,7 +19,7 @@ import parse from "html-react-parser";
 import { TitleCallout } from "./../Title/titleCallout";
 // import { ICalloutProps } from "./../../api/interfaces";
 
-export const Callout = (props: {
+const Callout = (props: {
   id: number;
   text: string;
   title: string;
