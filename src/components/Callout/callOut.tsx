@@ -1,12 +1,12 @@
 import {
   BREAKPOINT_PX,
   CALLOUT_HEIGHT_PX,
-  COLOR_BASE_1,
-  COLOR_BASE_2,
-  COLOR_BASE_3,
-  COLOR_BASE_4,
-  COLOR_BASE_5,
-  COLOR_BASE_6,
+  // COLOR_BASE_1,
+  // COLOR_BASE_2,
+  // COLOR_BASE_3,
+  // COLOR_BASE_4,
+  // COLOR_BASE_5,
+  // COLOR_BASE_6,
   COLOR_TEXT,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
@@ -29,21 +29,21 @@ const Callout = (props: {
 }) => {
   const textParsed = parse(props.text);
 
-  const assignBackgroundColor = (props: { backgroundColor: number }) => {
-    if (props.backgroundColor === 1) {
-      return COLOR_BASE_1;
-    } else if (props.backgroundColor === 2) {
-      return COLOR_BASE_2;
-    } else if (props.backgroundColor === 3) {
-      return COLOR_BASE_3;
-    } else if (props.backgroundColor === 4) {
-      return COLOR_BASE_4;
-    } else if (props.backgroundColor === 5) {
-      return COLOR_BASE_5;
-    } else {
-      return COLOR_BASE_6;
-    }
-  };
+  // const assignBackgroundColor = (props: { backgroundColor: number }) => {
+  //   if (props.backgroundColor === 1) {
+  //     return COLOR_BASE_1;
+  //   } else if (props.backgroundColor === 2) {
+  //     return COLOR_BASE_2;
+  //   } else if (props.backgroundColor === 3) {
+  //     return COLOR_BASE_3;
+  //   } else if (props.backgroundColor === 4) {
+  //     return COLOR_BASE_4;
+  //   } else if (props.backgroundColor === 5) {
+  //     return COLOR_BASE_5;
+  //   } else {
+  //     return COLOR_BASE_6;
+  //   }
+  // };
 
   return (
     <>
