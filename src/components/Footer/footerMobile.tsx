@@ -12,7 +12,7 @@ import {
   FOOTER_HEIGHT_MOBILE,
 } from "../../styles/Constants";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import VideoCallOut from "../VideoCallout/videoCallOut";
+import VideoCallOut from "../VideoCallOut/videoCallOut";
 import { FC } from "react";
 
 type FooterProps = {

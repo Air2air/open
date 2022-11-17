@@ -12,7 +12,7 @@ import {
   FOOTER_HEIGHT_DESKTOP,
 } from "../../styles/Constants";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import VideoCallOut from "../VideoCallout/videoCallOut";
+import VideoCallOut from "../VideoCallOut/videoCallOut";
 import { FC } from "react";
 
 type FooterProps = {

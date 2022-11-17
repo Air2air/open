@@ -6,7 +6,7 @@ import {
   CONTENT_WIDTH_MOBILE,
 } from "../../styles/Constants";
 import styled from "styled-components";
-import VideoCallOut from "../VideoCallout/videoCallOut";
+import VideoCallOut from "../VideoCallOut/videoCallOut";
 import parse from "html-react-parser";
 import { BannerText } from "../BannerText/bannerText";
 import { TitleBanner } from "../Title/titleBanner";
