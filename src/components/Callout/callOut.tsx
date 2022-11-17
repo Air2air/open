@@ -17,12 +17,12 @@ import Button from "../Button/button";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import parse from "html-react-parser";
 import { TitleCallout } from "../Title/titleCallout";
-import { ICalloutProps } from "../../api/interfaces";
+// import { ICalloutProps } from "../../api/interfaces";
 
-export const Callout = (props: ICalloutProps) => {
+export const Callout = (props) => {
   const textParsed = parse(props.text);
 
-  const assignBackgroundColor = (props: ICalloutProps) => {
+  const assignBackgroundColor = (props) => {
     if (props.backgroundColor === 1) {
       return COLOR_BASE_1;
     } else if (props.backgroundColor === 2) {
