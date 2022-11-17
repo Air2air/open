@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Container from "../Container/container";
-import { TitleCallout } from "../Title/titleCallout";
+import { TitleCallOut } from "../Title/titleCallOut";
 import { ReactComponent as MapSvg } from "./world_map.svg";
 import "./keyframes.scss";
 import { dataMap } from "./dataMap";
@@ -12,7 +12,7 @@ const Map = (props) => {
   return (
     <>
       <Container>
-        <TitleCallout titleText={props.mapTitle} />
+        <TitleCallOut title={props.mapTitle} />
         <SVGContainer>
           <MapSvg
             style={{

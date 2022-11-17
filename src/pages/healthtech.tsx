@@ -1,5 +1,5 @@
 import setBodyColor from "../utils/setBodyColor";
-import Callout from "../components/Callout/callOut";
+import CallOut from "../components/CallOut/callOut";
 import BannerVideo from "../components/BannerVideo/bannerVideo";
 import { COLOR_BASE } from "../styles/Constants";
 
@@ -20,9 +20,9 @@ const HealthTechPage = () => {
         overlayColor={COLOR_BASE}
         typing={true}
       />
-      <Callout
-        calloutTitle="What we do in HealthTech"
-        calloutText="<p>Here's everything we do in HealthTech. There may be other sections below.  Here's everything we do in HealthTech. There may be other sections below.  Here's everything we do in HealthTech. There may be other sections below.  Here's everything we do in HealthTech. There may be other sections below.  Here's everything we do in HealthTech. There may be other sections below.  Here's everything we do in HealthTech. There may be other sections below. Here's everything we do in HealthTech. There may be other sections below.</p><p>Here's everything we do in HealthTech. There may be other sections below.  Here's everything we do in HealthTech. There may be other sections below.  Here's everything we do in HealthTech. There may be other sections below.  Here's everything we do in HealthTech. There may be other sections below.  Here's everything we do in HealthTech. There may be other sections below.  Here's everything we do in HealthTech. There may be other sections below. Here's everything we do in HealthTech. There may be other sections below.</p>"
+      <CallOut
+        title="What we do in HealthTech"
+        text="<p>Here's everything we do in HealthTech. There may be other sections below.  Here's everything we do in HealthTech. There may be other sections below.  Here's everything we do in HealthTech. There may be other sections below.  Here's everything we do in HealthTech. There may be other sections below.  Here's everything we do in HealthTech. There may be other sections below.  Here's everything we do in HealthTech. There may be other sections below. Here's everything we do in HealthTech. There may be other sections below.</p><p>Here's everything we do in HealthTech. There may be other sections below.  Here's everything we do in HealthTech. There may be other sections below.  Here's everything we do in HealthTech. There may be other sections below.  Here's everything we do in HealthTech. There may be other sections below.  Here's everything we do in HealthTech. There may be other sections below.  Here's everything we do in HealthTech. There may be other sections below. Here's everything we do in HealthTech. There may be other sections below.</p>"
         backgroundColor={COLOR_BASE}
         buttonText=""
         buttonTo=""

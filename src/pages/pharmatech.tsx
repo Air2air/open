@@ -1,5 +1,5 @@
 import setBodyColor from "../utils/setBodyColor";
-import Callout from "../components/Callout/callOut";
+import CallOut from "../components/CallOut/callOut";
 import BannerVideo from "../components/BannerVideo/bannerVideo";
 import {
 
@@ -21,10 +21,10 @@ const PharmaTechPage = () => {
         overlayColor={COLOR_BASE}
         typing={true}
       />
-      <Callout
+      <CallOut
       id={1}
-        calloutTitle="What we do in PharmaTech"
-        calloutText="<p>Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below. Here's everything we do in PharmaTech. There may be other sections below.</p><p>Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below. Here's everything we do in PharmaTech. There may be other sections below.</p>"
+        title="What we do in PharmaTech"
+        text="<p>Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below. Here's everything we do in PharmaTech. There may be other sections below.</p><p>Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below. Here's everything we do in PharmaTech. There may be other sections below.</p>"
         backgroundColor={COLOR_BASE}
         buttonText=""
         buttonTo=""

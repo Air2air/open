@@ -7,9 +7,11 @@ import {
   CONTENT_WIDTH_MOBILE,
 } from "../../styles/Constants";
 import { useState, useEffect } from "react";
-import { ICallOutProps } from "../../api/interfaces";
+import { ITimeLineProps } from "../../api/interfaces";
 
-const TimeLine = (props: ICallOutProps) => {
+
+
+const TimeLine = (props: ITimeLineProps) => {
   /*------ Responsive -------*/
   const [width, setWidth] = useState(window.innerWidth);
 
@@ -84,6 +86,7 @@ const TimeLineCombined = (props: { data: any[]; }) => {
         id={props.id}
         title={props.title}
         text={props.text}
+        backgroundColor={props.backgroundColor}
       />
     ));
   return <>{timeLineMap}</>;

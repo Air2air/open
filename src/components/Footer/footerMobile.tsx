@@ -12,7 +12,7 @@ import {
   FOOTER_HEIGHT_MOBILE,
 } from "../../styles/Constants";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import VideoCallout from "../VideoCallout/videoCallout";
+import VideoCallOut from "../VideoCallout/videoCallOut";
 import { FC } from "react";
 
 type FooterProps = {
@@ -22,7 +22,7 @@ type FooterProps = {
 export const FooterMobile: FC<FooterProps> = ({ footerVideo }) => {
   return (
     <FooterWrapper>
-      <VideoCallout
+      <VideoCallOut
         pageVideo={footerVideo}
         overlayOpacity={0.9}
         overlayColor={COLOR_BASE}

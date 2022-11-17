@@ -16,24 +16,13 @@ import styled from "styled-components";
 import Button from "../Button/button";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import parse from "html-react-parser";
-import { TitleCallout } from "../Title/titleCallout";
+import { TitleCallOut } from "../Title/titleCallOut";
+import { ICallOutProps } from "../../api/interfaces";
 
-interface CalloutProps {
-  id?: number;
-  calloutTitle: string;
-  calloutText: string;
-  calloutVideo?: string;
-  backgroundColor: any;
-  buttonText: string;
-  buttonTo: string;
-}
+export const CallOut = (props) => {
+  const textParsed = parse(props.text);
 
-export const Callout = (props: CalloutProps) => {
-
-  const calloutTitleParsed = parse(props.calloutTitle);
-  const calloutTextParsed = parse(props.calloutText);
-
-  const assignBackgroundColor = (props: CalloutProps) => {
+  const assignBackgroundColor = (props: ICallOutProps) => {
     if (props.backgroundColor === 1) {
       return COLOR_BASE_1;
     } else if (props.backgroundColor === 2) {
@@ -51,26 +40,30 @@ export const Callout = (props: CalloutProps) => {
 
   return (
     <>
-      <CalloutContainer style={{ background: assignBackgroundColor(props) }}>
+      <CallOutContainer style={{ background: assignBackgroundColor(props) }}>
         <TextSection>
-          <TitleCallout titleText={calloutTitleParsed} />
+          <TitleCallOut title={props.title} />
 
           <AnimationOnScroll
             animateIn="animate__fadeIn"
             delay={200}
             offset={60}
           >
-            <CalloutParagraph>{calloutTextParsed}</CalloutParagraph>
+            <CallOutParagraph>{textParsed}</CallOutParagraph>
           </AnimationOnScroll>
 
-          {props.buttonText ? <Button to={props.buttonTo} text={props.buttonText} /> : ""}
+          {props.buttonText ? (
+            <Button to={props.buttonTo} text={props.buttonText} />
+          ) : (
+            ""
+          )}
         </TextSection>
-      </CalloutContainer>
+      </CallOutContainer>
     </>
   );
 };
 
-const CalloutContainer = styled.div`
+const CallOutContainer = styled.div`
   position: relative;
   top: 0;
   display: flex;
@@ -98,7 +91,7 @@ const TextSection = styled.div`
   }
 `;
 
-const CalloutParagraph = styled.div`
+const CallOutParagraph = styled.div`
   color: ${COLOR_TEXT};
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -116,4 +109,4 @@ const CalloutParagraph = styled.div`
   }
 `;
 
-export default Callout;
+export default CallOut;

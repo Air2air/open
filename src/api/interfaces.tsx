@@ -2,10 +2,20 @@ export interface ICallOutProps {
   id?: number;
   data?: any;
   order?: number;
-  title?: string;
-  text?: string;
+  title?: any;
+  text: string;
   side?: string;
-  backgroundColor?: string;
+  backgroundColor: number;
+  buttonText?: string;
+  buttonTo?: string;
+}
+
+export interface ICallOutBulletProps {
+  id: number;
+  title?: any;
+  text: string;
+  side?: string;
+  backgroundColor?: any;
   buttonText?: string;
   buttonTo?: string;
 }
@@ -20,5 +30,33 @@ export interface IAdvisorsProps {
   text?: string;
   photo?: string;
   linkedin?: string;
-  backgroundColor?: string;
+  backgroundColor?: number;
+}
+
+export interface IGraphProps {
+  title?: string;
+  size?: number;
+  backgroundColor: number;
+  buttonText: string;
+  buttonTo: string;
+}
+
+export interface IGraphColumnProps {
+  id?: number;
+  label?: string;
+  value?: string;
+  size?: number;
+  outerHeight?: number;
+}
+
+export interface ITimeLineProps {
+  id?: number;
+  data?: any;
+  order?: number;
+  title?: string;
+  text: string;
+  side?: string;
+  backgroundColor?: number;
+  buttonText?: string;
+  buttonTo?: string;
 }

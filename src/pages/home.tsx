@@ -1,8 +1,8 @@
 import setBodyColor from "../utils/setBodyColor";
-import Callout from "../components/Callout/callOut";
+import CallOut from "../components/CallOut/callOut";
 import BannerVideo from "../components/BannerVideo/bannerVideo";
 import { COLOR_BASE, COLOR_BASE_1 } from "../styles/Constants";
-import OrgsCallout from "../components/OrgsCallout/orgsCallOut";
+import OrgsCallOut from "../components/OrgsCallOut/orgsCallOut";
 
 const pageVideo = 765122469;
 
@@ -18,14 +18,14 @@ const HomePage = () => {
         overlayColor={COLOR_BASE}
         typing={true}
       />
-      <Callout
-        calloutTitle="We know what you need."
-        calloutText="The most <b>experienced</b> healthcare and clinical machine learning and business leaders from leading academic medical centers, venture capital, large technology companies, and successful digital health startups."
-        backgroundColor={COLOR_BASE_1}
+      <CallOut
+        title="We know what you need."
+        text="The most <b>experienced</b> healthcare and clinical machine learning and business leaders from leading academic medical centers, venture capital, large technology companies, and successful digital health startups."
+        backgroundColor={1}
         buttonText="What we do"
         buttonTo="/what_we_do"
       />
-            <OrgsCallout />
+      <OrgsCallOut />
     </>
   );
 };

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import AdvisorMember from "./advisorMember";
 import { dataAdvisors } from "./dataAdvisors";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import { TitleCallout } from "../Title/titleCallout";
+import { TitleCallOut } from "../Title/titleCallOut";
 import Container from "../Container/container";
 import setBodyColor from "../../utils/setBodyColor";
 import { IAdvisorsProps } from "../../api/interfaces";
@@ -17,7 +17,7 @@ const Advisors = (props: IAdvisorsProps) => {
   return (
     <>
       <Container>
-        <TitleCallout titleText={props.pageTitle} />
+        <TitleCallOut title="Advisors" />
         <AdvisorsContainer animateIn="animate__fadeIn" delay={0} offset={30}>
           <AdvisorsGrid>
             {sortedDataAdvisors.map((props) => (

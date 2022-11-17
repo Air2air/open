@@ -4,12 +4,13 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 import { FC } from "react";
 
 type TitleProps = {
-  titleText?: any;
+  title: string;
 };
 
-export const TitleCallout: FC<TitleProps> = ({ titleText }) => (
+export const TitleCallOut: FC<TitleProps> = (props) => (
+  // export const TitleCallOut = (props : TitleProps): JSX.Element => {
   <TitleContainer animateIn="animate__fadeIn" delay={400}>
-    <TitleStyled>{titleText}</TitleStyled>
+    <TitleStyled>{props.title}</TitleStyled>
   </TitleContainer>
 );
 
@@ -19,8 +20,8 @@ const TitleContainer = styled(AnimationOnScroll)`
 `;
 
 const TitleStyled = styled.h1`
-text-transform: uppercase;
-font-weight: 300;
+  text-transform: uppercase;
+  font-weight: 300;
   @media (min-width: ${BREAKPOINT_PX}) {
     font-size: 1.6em;
   }

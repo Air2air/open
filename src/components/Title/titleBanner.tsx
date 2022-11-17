@@ -4,12 +4,12 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 import { FC } from "react";
 
 type TitleProps = {
-  titleText?: any;
+  title?: any;
 };
 
-export const TitleBanner: FC<TitleProps> = ({ titleText }) => (
+export const TitleBanner: FC<TitleProps> = ({ title }) => (
   <TitleContainer animateIn="animate__fadeIn" delay={400}>
-    <TitleStyled>{titleText}</TitleStyled>
+    <TitleStyled>{title}</TitleStyled>
   </TitleContainer>
 );
 

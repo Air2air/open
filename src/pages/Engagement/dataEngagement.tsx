@@ -5,7 +5,6 @@ export const dataEngagement = [
     text: "We advise Healthcare AI companies in:<ul><li>Technical</li><li>Clinical</li><li>Product/Market</li><li>Regulatory/Legal</li><li>Strategy/Business Dev</li></ul> We'll have an initial conversation to identify which you need and when.  Each of these project tracks follow the timelines and milestones as defined in our process.",
     backgroundColor: 2,
   },
-
   {
     id: 2,
     title: "Assessment",
@@ -16,15 +15,14 @@ export const dataEngagement = [
     id: 3,
     title:
       "uses info to work with VC firm and board to provide fractional CXO 'units' into 5 categories (technical, clinical, product,/market regulatory/legal, strategy/business dev) ",
-    text: "Establish common ways of working across data scientists via a common AI framework - Develop a scalability framework based on existing environment.  From the assessment, specific requirements are crystalized so that a scope and schedule can proceed.  Example uses cases can help clarify the expected outcomes and requirements for the project.",
+    text: "Establish common ways of working across data scientists via a common AI framework - Develop a scalability framework based on existing environment.  From the assessment, specific requirements are crystalized so that a scope and schedule can proceed.  Example use cases can help clarify the expected outcomes and requirements for the project.",
     backgroundColor: 2,
   },
-
   {
     id: 4,
     title:
       "use a milestone based process with board review every 3 months to adjust fractional CXO 'units' distribution from #2 min engagement commitment 9 months",
-    text: "Co-deliver initial projects; pilot best 3-5. Set up a deployment architecture and AI and ML ops processes. Drive adoption of AI operating models.   After defining the vision and project requirements, the next priority is defining the scope. What is within the scope? What is outside of the scope? In a healthcare AI project, scoping defines the milestones for the project. Not necessarily on a task level yet, but enough to align goals and expectations. Elevens successfully scopes based on previously defined project milestones and requirements.",
+    text: "Co-deliver initial projects; pilot best 3-5. Set up a deployment architecture and AI and ML ops processes. Drive adoption of AI operating models. ",
     backgroundColor: 3,
   },
 ];

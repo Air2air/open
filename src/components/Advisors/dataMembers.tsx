@@ -8,5 +8,4 @@ export const dataMembers = [
     text: "Description here. Description here. Description here. Description here.  Description here. Description here.",
     photo: "dunning.jpeg",
   },
-
 ];

@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
-export const Button = (props: { to: string; text: string }) => {
+export const Button = (props: { to: any; text: string }) => {
   return (
     <>
       <ButtonPositioner>
@@ -31,6 +31,9 @@ export const Button = (props: { to: string; text: string }) => {
     </>
   );
 };
+
+const buttonWidthDesktop = "200px";
+const buttonWidthMobile = "100%";
 
 const ButtonPositioner = styled.div`
   margin: 0 auto;
@@ -59,9 +62,9 @@ const ButtonPositioner = styled.div`
 `;
 
 const ButtonDesktop = styled.div`
+  min-width: ${buttonWidthDesktop};
   @media (min-width: ${BREAKPOINT_PX}) {
     display: inline-flex;
-    padding: 0 30px;
   }
   @media (max-width: ${BREAKPOINT_PX}) {
     display: none;
@@ -69,7 +72,7 @@ const ButtonDesktop = styled.div`
 `;
 
 const ButtonMobile = styled.div`
-  width: 100%;
+  width: ${buttonWidthMobile};
   @media (min-width: ${BREAKPOINT_PX}) {
     display: none;
   }

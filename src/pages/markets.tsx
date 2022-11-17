@@ -1,10 +1,9 @@
 import setBodyColor from "../utils/setBodyColor";
 import BannerVideo from "../components/BannerVideo/bannerVideo";
-import { COLOR_BASE, COLOR_BASE_1 } from "../styles/Constants";
+import { COLOR_BASE } from "../styles/Constants";
 import Graph from "../components/Graph/graph";
 
 const pageVideo = 769143399;
-
 
 const MarketsPage = () => {
   setBodyColor({ color: COLOR_BASE });
@@ -19,9 +18,9 @@ const MarketsPage = () => {
         typing={true}
       />
       <Graph
-        backgroundColor={COLOR_BASE_1}
-        graphTitle="Mid Decade Market Projections"
-        graphHeight={500}
+        title="Mid Decade Market Projections"
+        backgroundColor={2}
+        size={300}
         buttonText="Vision"
         buttonTo="/vision"
       />

@@ -1,28 +1,27 @@
-import setBodyColor from "../../utils/setBodyColor";
 import BannerVideo from "../../components/BannerVideo/bannerVideo";
 import { COLOR_BASE } from "../../styles/Constants";
-import CalloutBullet from "../../components/Callout/callOutBullet";
+import CallOutBullet from "../../components/CallOut/callOutBullet";
 import { dataEngagement } from "./dataEngagement";
 
 const pageVideo = 769227014;
 
 const EngagementPage = () => {
-  setBodyColor({ color: COLOR_BASE });
+
   return (
     <>
       <BannerVideo
         pageTitle="Engaging Eleven"
-        pageDescription="Our engagement framework is easy to understand"
+        pageDescription="(This page describes our engagement policies, from Matt's steps below.  The 'process' page details workflow, milestones and measurement.)"
         pageVideo={pageVideo}
         overlayOpacity={0}
         overlayColor={COLOR_BASE}
         typing={true}
       />
       {dataEngagement.map((props) => (
-        <CalloutBullet
+        <CallOutBullet
           id={props.id}
-          calloutTitle={props.title}
-          calloutText={props.text}
+          title={props.title}
+          text={props.text}
           backgroundColor={props.backgroundColor}
         />
       ))}

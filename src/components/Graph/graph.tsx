@@ -1,128 +1,32 @@
-import { useState } from "react";
-import { AnimationOnScroll } from "react-animation-on-scroll";
 import styled from "styled-components";
 import {
   BREAKPOINT_PX,
-  COLOR_BASE_1,
-  COLOR_BASE_3,
-  COLOR_BASE_4,
   COLOR_BASE_6,
   COLOR_CAPTION,
-  COLOR_TEXT,
-  COLOR_RED,
+  CONTENT_WIDTH_DESKTOP,
+  CONTENT_WIDTH_MOBILE,
 } from "../../styles/Constants";
-import Button from "../Button/button";
+import { dataGraph } from "./dataGraph";
+import SeriesColumn from "./seriesColumn";
+import { IGraphProps } from "./../../api/interfaces";
+import { TitleCallOut } from "../Title/titleCallOut";
 import Container from "../Container/container";
-import { TitleCallout } from "../Title/titleCallout";
 
-interface IGraphProps {
-  graphHeight?: number;
-  graphTitle?: string;
-  graphText?: string;
-  backgroundColor: string;
-  buttonText: string;
-  buttonTo: string;
-}
-
-/*
-const dataGraph = [
-  {
-    label: "Health",
-    size: 20,
-    value: "$400B",
-    text: "Eleven supports Healthtech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners.",
-  },
-  {
-    label: "Medtech",
-    size: 30,
-    value: "$500B",
-    text: "Eleven supports Medtech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners.",
-  },
-  {
-    label: "Biotech",
-    size: 50,
-    value: "$700B",
-    text: "Eleven supports Biotech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners.",
-  },
-  {
-    label: "Pharma",
-    size: 100,
-    value: "$1.2T",
-    text: "Eleven supports Pharmatech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners.",
-  },
-];
-*/
-const graphHeight = "200px";
-
-const GraphMap = (index) => {
-  const [isHovering1, setIsHovering1] = useState(false);
-  const [isHovering2, setIsHovering2] = useState(false);
-  const [isHovering3, setIsHovering3] = useState(false);
-  const [isHovering4, setIsHovering4] = useState(false);
-
-  const graphSeries = (
+export const Graph = (props: IGraphProps) => {
+  return (
     <>
-      <GraphSeriesWrapper>
-        <SeriesColumn
-          onMouseEnter={() => setIsHovering1(true)}
-          onMouseLeave={() => setIsHovering1(false)}
-        >
-          <SeriesLabel>Health</SeriesLabel>
-          <SeriesBar
-            className="bar"
-            animateIn="animate__fadeInUp"
-            delay={0}
-            style={{ height: "20%" }}
-          >
-            $400B
-          </SeriesBar>
-        </SeriesColumn>
-
-        <SeriesColumn
-          onMouseEnter={() => setIsHovering2(true)}
-          onMouseLeave={() => setIsHovering2(false)}
-        >
-          <SeriesLabel>Med</SeriesLabel>
-          <SeriesBar
-            className="bar"
-            animateIn="animate__fadeInUp"
-            delay={0}
-            style={{ height: "30%" }}
-          >
-            $500B
-          </SeriesBar>
-        </SeriesColumn>
-
-        <SeriesColumn
-          onMouseEnter={() => setIsHovering3(true)}
-          onMouseLeave={() => setIsHovering3(false)}
-        >
-          <SeriesLabel>Bio</SeriesLabel>
-          <SeriesBar
-            className="bar"
-            animateIn="animate__fadeInUp"
-            delay={0}
-            style={{ height: "50%" }}
-          >
-            $700B
-          </SeriesBar>
-        </SeriesColumn>
-
-        <SeriesColumn
-          onMouseEnter={() => setIsHovering4(true)}
-          onMouseLeave={() => setIsHovering4(false)}
-        >
-          <SeriesLabel>Pharma</SeriesLabel>
-          <SeriesBar
-            className="bar"
-            animateIn="animate__fadeInUp"
-            delay={0}
-            style={{ height: "100%" }}
-          >
-            $1.2T
-          </SeriesBar>
-        </SeriesColumn>
-
+    <Container>
+          <TitleCallOut title="Mid Decade Market Projections" />
+      <GraphSeriesWrapper style={{ height: props.size }}>
+        {dataGraph.map((item, index) => (
+          <SeriesColumn
+            id={item.id}
+            label={item.label}
+            value={item.value}
+            size={item.size}
+            outerHeight={props.size}
+          />
+        ))}
         <GraphLegend>
           <div>$1.2T</div>
           <div>$800B</div>
@@ -130,7 +34,7 @@ const GraphMap = (index) => {
           <div style={{ height: 10 }}>&nbsp;</div>
         </GraphLegend>
       </GraphSeriesWrapper>
-      <GraphContent>
+      {/* <GraphContent>
         {isHovering1
           ? "Eleven supports Healthtech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners."
           : null}
@@ -143,26 +47,14 @@ const GraphMap = (index) => {
         {isHovering4
           ? "Eleven supports Pharmatech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners."
           : null}{" "}
-      </GraphContent>
+      </GraphContent> */}
+      </Container>
     </>
-  );
-
-  return <>{graphSeries}</>;
-};
-
-export const Graph = (props: IGraphProps) => {
-  const { graphTitle } = props;
-  return (
-    <Container>
-      <TitleCallout titleText={graphTitle} />
-      <GraphMap />
-      <Button to="/vision" text="Vision" />
-    </Container>
   );
 };
 
 const GraphSeriesWrapper = styled.div`
-  height: ${graphHeight};
+  padding: 40px 0;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -170,47 +62,12 @@ const GraphSeriesWrapper = styled.div`
   border-bottom: 2px solid ${COLOR_BASE_6};
   @media (min-width: ${BREAKPOINT_PX}) {
     gap: 40px;
+    /* width: ${CONTENT_WIDTH_DESKTOP}; */
   }
   @media (max-width: ${BREAKPOINT_PX}) {
     gap: 5px;
+    /* width: ${CONTENT_WIDTH_MOBILE}; */
   }
-`;
-
-const SeriesColumn = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: ${graphHeight};
-  transition: all 300ms;
-  @media (min-width: ${BREAKPOINT_PX}) {
-    font-size: 1.3em;
-  }
-  @media (max-width: ${BREAKPOINT_PX}) {
-    font-size: 1em;
-  }
-  background: ${COLOR_BASE_1};
-  &:hover {
-    background: ${COLOR_BASE_3};
-    .bar {
-      background: ${COLOR_BASE_6};
-    }
-  }
-  .bar {
-    background: ${COLOR_BASE_4};
-  }
-`;
-
-const SeriesBar = styled(AnimationOnScroll)`
-  color: ${COLOR_TEXT};
-  transition: all 300ms;
-  text-align: center;
-  margin-top: 5px;
-  padding-top: 5px;
-`;
-
-const SeriesLabel = styled.div`
-  color: ${COLOR_RED};
-  text-align: center;
 `;
 
 const GraphLegend = styled.div`
@@ -218,28 +75,11 @@ const GraphLegend = styled.div`
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  height: ${graphHeight};
+  height: "100%";
   font-size: 1.3em;
   color: ${COLOR_CAPTION};
   @media (min-width: ${BREAKPOINT_PX}) {
     font-size: 1.3em;
-  }
-  @media (max-width: ${BREAKPOINT_PX}) {
-    font-size: 1em;
-  }
-`;
-
-const GraphContent = styled.div`
-  height: auto;
-  min-height: 70px;
-  color: ${COLOR_TEXT};
-  text-align: left;
-  margin: 12px 0;
-  font-size: 1.2em;
-  line-height: 1.5em;
-  transition: all 300ms;
-  @media (min-width: ${BREAKPOINT_PX}) {
-    font-size: 1.2em;
   }
   @media (max-width: ${BREAKPOINT_PX}) {
     font-size: 1em;

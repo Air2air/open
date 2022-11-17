@@ -16,24 +16,14 @@ import {
 import styled from "styled-components";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import parse from "html-react-parser";
-import { TitleCallout } from "../Title/titleCallout";
+import { TitleCallOut } from "../Title/titleCallOut";
 import Button from "../Button/button";
+import {ICallOutBulletProps} from "../../api/interfaces";
 
-interface ICalloutBulletProps {
-  id: number;
-  calloutTitle: string;
-  calloutText: string;
-  side?: string;
-  backgroundColor?: any;
-  buttonText?: string;
-  buttonTo?: string;
-}
 
-export const CalloutBullet = (props: ICalloutBulletProps) => {
-  const { calloutTitle, calloutText } = props;
+export const CallOutBullet = (props: ICallOutBulletProps) => {
 
-  const calloutTitleParsed = parse(calloutTitle);
-  const calloutTextParsed = parse(calloutText);
+  const textParsed = parse(props.text);
 
   const assignBackgroundColor = (props) => {
     if (props.backgroundColor === 1) {
@@ -53,18 +43,18 @@ export const CalloutBullet = (props: ICalloutBulletProps) => {
 
   return (
     <>
-      <CalloutContainer style={{ background: assignBackgroundColor(props) }}>
+      <CallOutContainer style={{ background: assignBackgroundColor(props) }}>
         {props.id % 2 === 0 ? (
           <InnerSection>
             <TextRow>
-              <TitleCallout titleText={calloutTitleParsed} />
+              <TitleCallOut title={props.title} />
               <AnimationOnScroll
-                animateIn="animate__fadeInUp"
+                animateIn="animate__fadeIn"
                 delay={100}
                 offset={60}
               >
-                <CalloutParagraph>{calloutTextParsed}</CalloutParagraph>
-                {/* {props.buttonText ? <Button to={props.buttonTo} text={props.buttonText} /> : ""} */}
+                <CallOutParagraph>{textParsed}</CallOutParagraph>
+                {props.buttonText ? <Button to={props.buttonTo} text={props.buttonText} /> : ""}
               </AnimationOnScroll>
             </TextRow>
             <AnimationOnScroll
@@ -72,7 +62,7 @@ export const CalloutBullet = (props: ICalloutBulletProps) => {
               delay={0}
               offset={60}
             >
-              <CalloutNumber className="right">{props.id}</CalloutNumber>
+              <CallOutNumber className="right">{props.id}</CallOutNumber>
             </AnimationOnScroll>
           </InnerSection>
         ) : (
@@ -82,27 +72,27 @@ export const CalloutBullet = (props: ICalloutBulletProps) => {
               delay={0}
               offset={60}
             >
-              <CalloutNumber className="left">{props.id}</CalloutNumber>
+              <CallOutNumber className="left">{props.id}</CallOutNumber>
             </AnimationOnScroll>
             <TextRow>
-              <TitleCallout titleText={calloutTitleParsed} />
+              <TitleCallOut title={props.title} />
               <AnimationOnScroll
-                animateIn="animate__fadeInUp"
+                animateIn="animate__fadeIn"
                 delay={100}
                 offset={60}
               >
-                <CalloutParagraph>{calloutTextParsed}</CalloutParagraph>
-                {/* {props.buttonText ? <Button to={props.buttonTo} text={props.buttonText} /> : ""} */}
+                <CallOutParagraph>{textParsed}</CallOutParagraph>
+                {props.buttonText ? <Button to={props.buttonTo} text={props.buttonText} /> : ""}
               </AnimationOnScroll>
             </TextRow>
           </InnerSection>
         )}
-      </CalloutContainer>
+      </CallOutContainer>
     </>
   );
 };
 
-const CalloutContainer = styled.div`
+const CallOutContainer = styled.div`
   position: relative;
   top: 0;
   display: flex;
@@ -137,31 +127,40 @@ const TextRow = styled.div`
   /* background: ${COLOR_BASE_LIGHT}; */
 `;
 
-const CalloutNumber = styled.div`
-  font-family: "Calistoga", cursive;
-  line-height: 1em;
-  /* font-weight: 600; */
-  height: auto;
+const numberSizeDesktop = '110px';
+const numberSizeMobile = '90px';
+
+const CallOutNumber = styled.div`
+  display: flex;
+  justify-content: center;
+  font-family: "Unica One", cursive;
+  text-align: center;
+  border-radius: 50%;
   letter-spacing: -0.06em;
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(0, 0, 0, 0.35);
+  background: rgba(255, 255, 255, 0.1);
   /* background: red; */
   &.right {
-    text-align: right;
+    margin-left:30px;
   }
   &.left {
-    text-align: left;
+    margin-right:30px;
   }
   @media (min-width: ${BREAKPOINT_PX}) {
-    font-size: 6rem;
-    min-width: 140px;
+    width:${numberSizeDesktop};
+    height: ${numberSizeDesktop};
+    font-size: 4rem;
+    line-height: ${numberSizeDesktop};
   }
   @media (max-width: ${BREAKPOINT_PX}) {
-    font-size: 4rem;
-    min-width: 80px;
+    width:${numberSizeMobile};
+    height: ${numberSizeMobile};
+    font-size: 3rem;
+    line-height: ${numberSizeMobile};
   }
 `;
 
-const CalloutParagraph = styled.div`
+const CallOutParagraph = styled.div`
   color: ${COLOR_TEXT};
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -179,4 +178,4 @@ const CalloutParagraph = styled.div`
   }
 `;
 
-export default CalloutBullet;
+export default CallOutBullet;

@@ -56,20 +56,3 @@ const TypeWriterWrapper = styled.div`
   }
 `;
 
-// const NotTypeWriterParagraph = styled.div`
-//   color: "#fff"; //${COLOR_TEXT};
-//   font-family: "Roboto", sans-serif;
-//   font-size: 1.7em;
-//   line-height: 1.5em;
-//   height: auto;
-//   text-align: left;
-//   opacity: ${TEXT_OPACITY};
-//   @media (min-width: ${BREAKPOINT_PX}) {
-//     font-size: 2.6em;
-//     line-height: 1.5em;
-//   }
-//   @media (max-width: ${BREAKPOINT_PX}) {
-//     font-size: 2em;
-//     line-height: 1.5em;
-//   }
-// `;

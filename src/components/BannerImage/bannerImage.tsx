@@ -5,7 +5,7 @@ import {
 } from "../../styles/Constants";
 import styled from "styled-components";
 
-import ImageCallout from "../ImageCallout/imageCallout";
+import ImageCallOut from "../ImageCallOut/imageCallOut";
 import parse from "html-react-parser";
 import { BannerText } from "../BannerText/bannerText";
 import { TitleBanner } from "../Title/titleBanner";
@@ -25,7 +25,7 @@ export const BannerImage = ({
     <>
       <BannerImageWrapper>
         {pageImage ? (
-          <ImageCallout
+          <ImageCallOut
             pageImage={pageImage}
             overlayOpacity={overlayOpacity}
             overlayColor={overlayColor}
@@ -34,7 +34,7 @@ export const BannerImage = ({
           ""
         )}
         <Container>
-          <TitleBanner titleText={pageTitleParsed} />
+          <TitleBanner title={pageTitleParsed} />
           <BannerText typing={typing} bannerText={pageDescription} />
         </Container>
       </BannerImageWrapper>

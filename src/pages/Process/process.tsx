@@ -1,13 +1,11 @@
-import setBodyColor from "../../utils/setBodyColor";
 import BannerVideo from "../../components/BannerVideo/bannerVideo";
 import { COLOR_BASE } from "../../styles/Constants";
-import CalloutBullet from "../../components/Callout/callOutBullet";
+import CallOutBullet from "../../components/CallOut/callOutBullet";
 import { dataProcess } from "./dataProcess";
 
 const pageVideo = 769227014;
 
 const ProcessPage = () => {
-  setBodyColor({ color: COLOR_BASE });
   return (
     <>
       <BannerVideo
@@ -19,10 +17,10 @@ const ProcessPage = () => {
         typing={true}
       />
       {dataProcess.map((props) => (
-        <CalloutBullet
+        <CallOutBullet
           id={props.id}
-          calloutTitle={props.title}
-          calloutText={props.text}
+          title={props.title}
+          text={props.text}
           backgroundColor={props.backgroundColor}
         />
       ))}

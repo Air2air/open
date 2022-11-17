@@ -2,8 +2,9 @@ import setBodyColor from "../../utils/setBodyColor";
 import { COLOR_BASE } from "../../styles/Constants";
 import styled from "styled-components";
 import BannerSpacer from "../../components/BannerSpacer/bannerSpacer";
-import CalloutBullet from "../../components/Callout/callOutBullet";
+import CallOutBullet from "../../components/CallOut/callOutBullet";
 import { dataService } from "./dataService";
+import { TitleCentered } from "../../components/Title/titleCentered";
 
 
 const ServicePage = () => {
@@ -11,15 +12,15 @@ const ServicePage = () => {
   return (
     <>
       <BannerSpacer />
-      <ServiceTitle>Services</ServiceTitle>
+      <TitleCentered title="Services"/>
       {dataService.map((props) => (
-        <CalloutBullet
+        <CallOutBullet
           id={props.id}
-          calloutTitle={props.title}
-          calloutText={props.text}
+          title={props.title}
+          text={props.text}
           backgroundColor={props.backgroundColor}
-          // buttonText={props.buttonText}
-          // buttonTo={props.buttonTo}
+          buttonText={props.buttonText}
+          buttonTo={props.buttonTo}
         />
       ))}
     </>
@@ -28,7 +29,3 @@ const ServicePage = () => {
 
 export default ServicePage;
 
-const ServiceTitle = styled.h2`
-  margin-bottom: 0.8em;
-  text-align: center;
-`;

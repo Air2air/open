@@ -38,7 +38,6 @@ export const BUTTON_COLOR_LINKEDIN = "hsl(0, 86%, 36%)";//"hsl(205, 90%, 28%)";
 export const BUTTON_COLOR_LINKEDIN_HOVER = "hsl(0, 86%, 46%)"//"hsl(205, 73%, 52%)";
 
 
-
 // WIDTH
 export const CONTENT_WIDTH_DESKTOP = "70%";
 export const CONTENT_WIDTH_MOBILE = "84%";
