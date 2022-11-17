@@ -1,5 +1,5 @@
 import setBodyColor from "../utils/setBodyColor";
-import CallOut from "../components/CallOut/callOut";
+import Callout from "../components/Callout/callout";
 import BannerImage from "../components/BannerImage/bannerImage";
 import { COLOR_BASE, COLOR_BASE_1 } from "../styles/Constants";
 
@@ -18,7 +18,7 @@ const VisionPage = () => {
         overlayColor={COLOR_BASE}
         typing={true}
       />
-      <CallOut
+      <Callout
         id={0}
         title="The birth of machine intelligence"
         text='<p>In 1956, 11 experts from multiple scientific disciplines traveled around the world to meet at Dartmouth College. Over several days the <b>Dartmouth Workshop</b> combined their collective experience to build the foundational principles for what we know today as Artificial Intelligence. The proposal states:</p>

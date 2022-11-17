@@ -20,7 +20,7 @@ const OrgsItems = () => {
   return <>{orgsMap}</>;
 };
 
-const OrgsCallOut = (props) => (
+const OrgsCallout = (props) => (
   <OrgsWrapper style={{ background: props.backgroundColor }}>
     <OrgInnerWrapper>
       <OrgMapImageRow>
@@ -85,4 +85,4 @@ const OrgMapImage = styled.img`
   height: auto;
 `;
 
-export default OrgsCallOut;
+export default OrgsCallout;

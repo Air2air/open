@@ -1,4 +1,4 @@
-import CallOut from "../../components/CallOut/callOut";
+import Callout from "../../components/Callout/callout";
 import BannerVideo from "../../components/BannerVideo/bannerVideo";
 import { COLOR_BASE} from "../../styles/Constants";
 import { dataWhatWeDo } from "./dataWhatWeDo";
@@ -19,7 +19,7 @@ const WhatWeDoPage = () => {
         typing={true}
       />
       {dataWhatWeDo.map((props) => (
-        <CallOut
+        <Callout
           id={props.id}
           title={props.title}
           text={props.text}

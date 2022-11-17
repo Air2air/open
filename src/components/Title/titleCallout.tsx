@@ -7,8 +7,8 @@ type TitleProps = {
   title: string;
 };
 
-export const TitleCallOut: FC<TitleProps> = (props) => (
-  // export const TitleCallOut = (props : TitleProps): JSX.Element => {
+export const TitleCallout: FC<TitleProps> = (props) => (
+  // export const TitleCallout = (props : TitleProps): JSX.Element => {
   <TitleContainer animateIn="animate__fadeIn" delay={400}>
     <TitleStyled>{props.title}</TitleStyled>
   </TitleContainer>

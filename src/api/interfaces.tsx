@@ -1,4 +1,4 @@
-export interface ICallOutProps {
+export interface ICalloutProps {
   id?: number;
   data?: any;
   order?: number;
@@ -10,7 +10,7 @@ export interface ICallOutProps {
   buttonTo?: string;
 }
 
-export interface ICallOutBulletProps {
+export interface ICalloutBulletProps {
   id: number;
   title?: any;
   text: string;

@@ -6,7 +6,7 @@ import {
   CONTENT_WIDTH_MOBILE,
 } from "../../styles/Constants";
 import styled from "styled-components";
-import VideoCallOut from "../VideoCallOut/videoCallOut";
+import VideoCallout from "../VideoCallout/videoCallout";
 import parse from "html-react-parser";
 import { BannerText } from "../BannerText/bannerText";
 import { TitleBanner } from "../Title/titleBanner";
@@ -26,7 +26,7 @@ export const BannerVideo = ({
     <>
       <BannerVideoWrapper>
         {pageVideo ? (
-          <VideoCallOut
+          <VideoCallout
             pageVideo={pageVideo}
             overlayOpacity={overlayOpacity}
             overlayColor={overlayColor}

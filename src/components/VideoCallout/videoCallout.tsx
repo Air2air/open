@@ -6,7 +6,7 @@ import {
   BREAKPOINT_PX,
 } from "../../styles/Constants";
 
-const VideoCallOut = ({ pageVideo, overlayOpacity, overlayColor }) => {
+const VideoCallout = ({ pageVideo, overlayOpacity, overlayColor }) => {
   return (
     <>
       <div
@@ -68,4 +68,4 @@ const Overlay = styled.div`
   }
 `;
 
-export default VideoCallOut;
+export default VideoCallout;

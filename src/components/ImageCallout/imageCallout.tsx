@@ -5,7 +5,7 @@ import {
   BREAKPOINT_PX,
 } from "../../styles/Constants";
 
-const ImageCallOut = ({ pageImage, overlayOpacity, overlayColor }) => {
+const ImageCallout = ({ pageImage, overlayOpacity, overlayColor }) => {
   const backgroundImage = "url(/images/content/" + pageImage + ")";
 
   return (
@@ -64,4 +64,4 @@ const Overlay = styled.div`
   }
 `;
 
-export default ImageCallOut;
+export default ImageCallout;

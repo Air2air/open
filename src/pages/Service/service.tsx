@@ -1,7 +1,7 @@
 import setBodyColor from "../../utils/setBodyColor";
 import { COLOR_BASE } from "../../styles/Constants";
 import BannerSpacer from "../../components/BannerSpacer/bannerSpacer";
-import CallOutBullet from "../../components/CallOut/callOutBullet";
+import CalloutBullet from "../../components/Callout/calloutBullet";
 import { dataService } from "./dataService";
 import { TitleCentered } from "../../components/Title/titleCentered";
 
@@ -13,7 +13,7 @@ const ServicePage = () => {
       <BannerSpacer />
       <TitleCentered title="Services"/>
       {dataService.map((props) => (
-        <CallOutBullet
+        <CalloutBullet
           id={props.id}
           title={props.title}
           text={props.text}

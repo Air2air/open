@@ -10,7 +10,7 @@ import {
 import styled from "styled-components";
 import Button from "../Button/button";
 
-interface CallOutButtonProps {
+interface CalloutButtonProps {
   button1Text?: string;
   button1To?: string;
   button2Text?: string;
@@ -20,8 +20,8 @@ interface CallOutButtonProps {
   buttonTo?: string;
 }
 
-const CallOutButton = (props: CallOutButtonProps) => {
-  const assignBackgroundColor = (props: CallOutButtonProps) => {
+const CalloutButton = (props: CalloutButtonProps) => {
+  const assignBackgroundColor = (props: CalloutButtonProps) => {
     if (props.backgroundColor === 1) {
       return COLOR_BASE_1;
     } else if (props.backgroundColor === 2) {
@@ -66,4 +66,4 @@ const ButtonContainer = styled.div`
   height: auto;
 `;
 
-export default CallOutButton;
+export default CalloutButton;

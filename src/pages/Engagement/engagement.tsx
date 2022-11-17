@@ -1,6 +1,6 @@
 import BannerVideo from "../../components/BannerVideo/bannerVideo";
 import { COLOR_BASE } from "../../styles/Constants";
-import CallOutBullet from "../../components/CallOut/callOutBullet";
+import CalloutBullet from "../../components/Callout/calloutBullet";
 import { dataEngagement } from "./dataEngagement";
 
 const pageVideo = 769227014;
@@ -18,7 +18,7 @@ const EngagementPage = () => {
         typing={true}
       />
       {dataEngagement.map((props) => (
-        <CallOutBullet
+        <CalloutBullet
           id={props.id}
           title={props.title}
           text={props.text}

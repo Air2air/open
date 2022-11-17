@@ -12,7 +12,7 @@ import {
   FOOTER_HEIGHT_DESKTOP,
 } from "../../styles/Constants";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import VideoCallOut from "../VideoCallOut/videoCallOut";
+import VideoCallout from "../VideoCallout/videoCallout";
 import { FC } from "react";
 
 type FooterProps = {
@@ -22,7 +22,7 @@ type FooterProps = {
 export const FooterDesktop: FC<FooterProps> = ({footerVideo}) => {
   return (
     <FooterWrapper>
-      <VideoCallOut
+      <VideoCallout
         pageVideo={footerVideo}
         overlayOpacity={0.9}
         overlayColor={COLOR_BASE}

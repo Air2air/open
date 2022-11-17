@@ -16,12 +16,12 @@ import {
 import styled from "styled-components";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import parse from "html-react-parser";
-import { TitleCallOut } from "../Title/titleCallOut";
+import { TitleCallout } from "../Title/titleCallout";
 import Button from "../Button/button";
-import {ICallOutBulletProps} from "../../api/interfaces";
+import {ICalloutBulletProps} from "../../api/interfaces";
 
 
-export const CallOutBullet = (props: ICallOutBulletProps) => {
+export const CalloutBullet = (props: ICalloutBulletProps) => {
 
   const textParsed = parse(props.text);
 
@@ -43,17 +43,17 @@ export const CallOutBullet = (props: ICallOutBulletProps) => {
 
   return (
     <>
-      <CallOutContainer style={{ background: assignBackgroundColor(props) }}>
+      <CalloutContainer style={{ background: assignBackgroundColor(props) }}>
         {props.id % 2 === 0 ? (
           <InnerSection>
             <TextRow>
-              <TitleCallOut title={props.title} />
+              <TitleCallout title={props.title} />
               <AnimationOnScroll
                 animateIn="animate__fadeIn"
                 delay={100}
                 offset={60}
               >
-                <CallOutParagraph>{textParsed}</CallOutParagraph>
+                <CalloutParagraph>{textParsed}</CalloutParagraph>
                 {props.buttonText ? <Button to={props.buttonTo} text={props.buttonText} /> : ""}
               </AnimationOnScroll>
             </TextRow>
@@ -62,7 +62,7 @@ export const CallOutBullet = (props: ICallOutBulletProps) => {
               delay={0}
               offset={60}
             >
-              <CallOutNumber className="right">{props.id}</CallOutNumber>
+              <CalloutNumber className="right">{props.id}</CalloutNumber>
             </AnimationOnScroll>
           </InnerSection>
         ) : (
@@ -72,27 +72,27 @@ export const CallOutBullet = (props: ICallOutBulletProps) => {
               delay={0}
               offset={60}
             >
-              <CallOutNumber className="left">{props.id}</CallOutNumber>
+              <CalloutNumber className="left">{props.id}</CalloutNumber>
             </AnimationOnScroll>
             <TextRow>
-              <TitleCallOut title={props.title} />
+              <TitleCallout title={props.title} />
               <AnimationOnScroll
                 animateIn="animate__fadeIn"
                 delay={100}
                 offset={60}
               >
-                <CallOutParagraph>{textParsed}</CallOutParagraph>
+                <CalloutParagraph>{textParsed}</CalloutParagraph>
                 {props.buttonText ? <Button to={props.buttonTo} text={props.buttonText} /> : ""}
               </AnimationOnScroll>
             </TextRow>
           </InnerSection>
         )}
-      </CallOutContainer>
+      </CalloutContainer>
     </>
   );
 };
 
-const CallOutContainer = styled.div`
+const CalloutContainer = styled.div`
   position: relative;
   top: 0;
   display: flex;
@@ -130,7 +130,7 @@ const TextRow = styled.div`
 const numberSizeDesktop = '110px';
 const numberSizeMobile = '90px';
 
-const CallOutNumber = styled.div`
+const CalloutNumber = styled.div`
   display: flex;
   justify-content: center;
   font-family: "Unica One", cursive;
@@ -160,7 +160,7 @@ const CallOutNumber = styled.div`
   }
 `;
 
-const CallOutParagraph = styled.div`
+const CalloutParagraph = styled.div`
   color: ${COLOR_TEXT};
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -178,4 +178,4 @@ const CallOutParagraph = styled.div`
   }
 `;
 
-export default CallOutBullet;
+export default CalloutBullet;

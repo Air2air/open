@@ -7,9 +7,9 @@ import {
 } from "../../styles/Constants";
 import parse from "html-react-parser";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import { ICallOutProps } from "../../api/interfaces";
+import { ICalloutProps } from "../../api/interfaces";
 
-export const TimeLineItemCombined = (props: ICallOutProps) => {
+export const TimeLineItemCombined = (props: ICalloutProps) => {
   return (
     <AnimationOnScroll
       key={props.id}

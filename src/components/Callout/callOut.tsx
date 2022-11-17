@@ -16,13 +16,13 @@ import styled from "styled-components";
 import Button from "../Button/button";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import parse from "html-react-parser";
-import { TitleCallOut } from "../Title/titleCallOut";
-import { ICallOutProps } from "../../api/interfaces";
+import { TitleCallout } from "../Title/titleCallout";
+import { ICalloutProps } from "../../api/interfaces";
 
-export const CallOut = (props) => {
+export const Callout = (props) => {
   const textParsed = parse(props.text);
 
-  const assignBackgroundColor = (props: ICallOutProps) => {
+  const assignBackgroundColor = (props: ICalloutProps) => {
     if (props.backgroundColor === 1) {
       return COLOR_BASE_1;
     } else if (props.backgroundColor === 2) {
@@ -40,16 +40,16 @@ export const CallOut = (props) => {
 
   return (
     <>
-      <CallOutContainer style={{ background: assignBackgroundColor(props) }}>
+      <CalloutContainer style={{ background: assignBackgroundColor(props) }}>
         <TextSection>
-          <TitleCallOut title={props.title} />
+          <TitleCallout title={props.title} />
 
           <AnimationOnScroll
             animateIn="animate__fadeIn"
             delay={200}
             offset={60}
           >
-            <CallOutParagraph>{textParsed}</CallOutParagraph>
+            <CalloutParagraph>{textParsed}</CalloutParagraph>
           </AnimationOnScroll>
 
           {props.buttonText ? (
@@ -58,12 +58,12 @@ export const CallOut = (props) => {
             ""
           )}
         </TextSection>
-      </CallOutContainer>
+      </CalloutContainer>
     </>
   );
 };
 
-const CallOutContainer = styled.div`
+const CalloutContainer = styled.div`
   position: relative;
   top: 0;
   display: flex;
@@ -91,7 +91,7 @@ const TextSection = styled.div`
   }
 `;
 
-const CallOutParagraph = styled.div`
+const CalloutParagraph = styled.div`
   color: ${COLOR_TEXT};
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -109,4 +109,4 @@ const CallOutParagraph = styled.div`
   }
 `;
 
-export default CallOut;
+export default Callout;

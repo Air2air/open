@@ -9,14 +9,14 @@ import {
 import { dataGraph } from "./dataGraph";
 import SeriesColumn from "./seriesColumn";
 import { IGraphProps } from "./../../api/interfaces";
-import { TitleCallOut } from "../Title/titleCallOut";
+import { TitleCallout } from "../Title/titleCallout";
 import Container from "../Container/container";
 
 export const Graph = (props: IGraphProps) => {
   return (
     <>
     <Container>
-          <TitleCallOut title="Mid Decade Market Projections" />
+          <TitleCallout title="Mid Decade Market Projections" />
       <GraphSeriesWrapper style={{ height: props.size }}>
         {dataGraph.map((item, index) => (
           <SeriesColumn

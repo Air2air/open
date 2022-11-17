@@ -7,7 +7,7 @@ import {
   CONTENT_WIDTH_MOBILE,
 } from "../../styles/Constants";
 
-const ContactCallOut = () => (
+const ContactCallout = () => (
   <>
     <ContactWrapper>
       {dataContact.map((props) => (
@@ -24,7 +24,7 @@ const ContactCallOut = () => (
   </>
 );
 
-export default ContactCallOut;
+export default ContactCallout;
 
 const ContactWrapper = styled.div`
   display: flex;
