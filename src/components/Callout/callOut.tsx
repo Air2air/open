@@ -20,12 +20,12 @@ import { TitleCallout } from "./../Title/titleCallout";
 // import { ICalloutProps } from "./../../api/interfaces";
 
 const Callout = (props: {
-  id: number;
+  id?: number;
   text: string;
   title: string;
-  backgroundColor: number;
-  buttonText: string;
-  buttonTo: any;
+  backgroundColor?: number;
+  buttonText?: string;
+  buttonTo?: any;
 }) => {
   const textParsed = parse(props.text);
 
