@@ -7,7 +7,8 @@ import {
   CONTENT_WIDTH_MOBILE,
 } from "../../styles/Constants";
 
-const ContactCallout = () => (
+const ContactCallout = (props: any) => {
+
   <>
     <ContactWrapper>
       {dataContact.map((props) => (
@@ -22,7 +23,7 @@ const ContactCallout = () => (
       ;
     </ContactWrapper>
   </>
-);
+};
 
 export default ContactCallout;
 
