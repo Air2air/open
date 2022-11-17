@@ -9,6 +9,7 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 import ButtonLinkedIn from "./../Button/buttonLinkedIn";
 
 export const ContactItem = (props: {
+  key: number;
   id: number;
   shortName: string;
   address: string;
