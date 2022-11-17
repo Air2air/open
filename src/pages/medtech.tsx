@@ -19,9 +19,10 @@ const MedTechPage = () => {
         typing={true}
       />
       <Callout
+        id={1}
         title="What we do in MedTech"
         text="<p>Here's everything we do in MedTech. There may be other sections below.  Here's everything we do in MedTech. There may be other sections below.  Here's everything we do in MedTech. There may be other sections below.  Here's everything we do in MedTech. There may be other sections below.  Here's everything we do in MedTech. There may be other sections below.  Here's everything we do in MedTech. There may be other sections below. Here's everything we do in MedTech. There may be other sections below.</p><p>Here's everything we do in MedTech. There may be other sections below.  Here's everything we do in MedTech. There may be other sections below.  Here's everything we do in MedTech. There may be other sections below.  Here's everything we do in MedTech. There may be other sections below.  Here's everything we do in MedTech. There may be other sections below.  Here's everything we do in MedTech. There may be other sections below. Here's everything we do in MedTech. There may be other sections below.</p>"
-        backgroundColor={COLOR_BASE}
+        backgroundColor={1}
         buttonText=""
         buttonTo=""
       />

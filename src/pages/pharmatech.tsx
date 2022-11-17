@@ -25,7 +25,7 @@ const PharmaTechPage = () => {
       id={1}
         title="What we do in PharmaTech"
         text="<p>Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below. Here's everything we do in PharmaTech. There may be other sections below.</p><p>Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below.  Here's everything we do in PharmaTech. There may be other sections below. Here's everything we do in PharmaTech. There may be other sections below.</p>"
-        backgroundColor={COLOR_BASE}
+        backgroundColor={1}
         buttonText=""
         buttonTo=""
       />
