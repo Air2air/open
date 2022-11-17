@@ -1,4 +1,4 @@
-import Callout from "./../../components/Callout/callout";
+import Callout from "./../../components/Callout/callOut";
 import BannerVideo from "./../../components/BannerVideo/bannerVideo";
 import { COLOR_BASE} from "./../../styles/Constants";
 import { dataWhatWeDo } from "./dataWhatWeDo";

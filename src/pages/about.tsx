@@ -5,7 +5,7 @@ import {
   COLOR_BASE,
   COLOR_BASE_1
 } from "./../styles/Constants";
-// import Callout from "./../components/Callout/callout";
+// import Callout from "./../components/Callout/callOut";
 import Advisors from "./../components/Advisors/advisors";
 import Map from "./../components/Map/map";
 
