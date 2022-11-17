@@ -6,9 +6,9 @@ import {
   COLOR_BASE_5,
   COLOR_BASE_6,
 
-} from "./../../styles/Constants";
+} from "../../styles/Constants";
 import styled from "styled-components";
-import Button from "./../Button/button";
+import Button from "../Button/button";
 
 interface CalloutButtonProps {
   button1Text?: string;

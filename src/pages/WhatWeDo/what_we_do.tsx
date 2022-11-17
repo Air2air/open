@@ -1,7 +1,7 @@
-// import Callout from "./../../components/Callout/callout";
+import Callout from "./../../components/Callout/callout";
 import BannerVideo from "./../../components/BannerVideo/bannerVideo";
 import { COLOR_BASE} from "./../../styles/Constants";
-// import { dataWhatWeDo } from "./dataWhatWeDo";
+import { dataWhatWeDo } from "./dataWhatWeDo";
 
 const pageVideo = 766731362;
 
@@ -18,7 +18,7 @@ const WhatWeDoPage = () => {
         overlayColor={COLOR_BASE}
         typing={true}
       />
-      {/* {dataWhatWeDo.map((props) => (
+      {dataWhatWeDo.map((props) => (
         <Callout
           id={props.id}
           title={props.title}
@@ -27,7 +27,7 @@ const WhatWeDoPage = () => {
           buttonText={props.buttonText}
           buttonTo={props.buttonTo}
         />
-      ))} */}
+      ))}
     </>
   );
 };
