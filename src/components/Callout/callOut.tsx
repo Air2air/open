@@ -20,8 +20,8 @@ import parse from "html-react-parser";
 
 interface CalloutProps {
   id?: number;
-  calloutTitle: string;
-  calloutText: string;
+  title: string;
+  text: string;
   calloutVideo?: string;
   backgroundColor: any;
   buttonText: string;
@@ -30,8 +30,8 @@ interface CalloutProps {
 
 export const Callout = (props: CalloutProps) => {
 
-  // const calloutTitleParsed = parse(props.calloutTitle);
-  const calloutTextParsed = parse(props.calloutText);
+  // const titleParsed = parse(props.title);
+  const textParsed = parse(props.text);
 
   const assignBackgroundColor = (props: CalloutProps) => {
     if (props.backgroundColor === 1) {
@@ -53,14 +53,14 @@ export const Callout = (props: CalloutProps) => {
     <>
       <CalloutContainer style={{ background: assignBackgroundColor(props) }}>
         <TextSection>
-          {/* <TitleCallout text={calloutTitleParsed} /> */}
+          {/* <TitleCallout text={titleParsed} /> */}
 
           <AnimationOnScroll
             animateIn="animate__fadeIn"
             delay={200}
             offset={60}
           >
-            <CalloutParagraph>{calloutTextParsed}</CalloutParagraph>
+            <CalloutParagraph>{textParsed}</CalloutParagraph>
           </AnimationOnScroll>
 
           {props.buttonText ? <Button to={props.buttonTo} text={props.buttonText} /> : ""}
