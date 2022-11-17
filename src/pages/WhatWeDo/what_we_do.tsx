@@ -6,6 +6,7 @@ import { dataWhatWeDo } from "./dataWhatWeDo";
 
 const pageVideo = 766731362;
 
+
 const WhatWeDoPage = () => {
   setBodyColor({ color: COLOR_BASE });
   return (
@@ -22,7 +23,7 @@ const WhatWeDoPage = () => {
         <Callout
           id={props.id}
           calloutTitle={props.title}
-          calloutText={props.desc}
+          calloutText={props.text}
           backgroundColor={props.backgroundColor}
           buttonText={props.buttonText}
           buttonTo={props.buttonTo}

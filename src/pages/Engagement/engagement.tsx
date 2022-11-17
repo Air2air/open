@@ -6,15 +6,6 @@ import { dataEngagement } from "./dataEngagement";
 
 const pageVideo = 769227014;
 
-const engagementMap = dataEngagement.map((props) => (
-  <CalloutBullet
-    id={props.id}
-    calloutTitle={props.title}
-    calloutText={props.desc}
-    backgroundColor={props.backgroundColor}
-  />
-));
-
 const EngagementPage = () => {
   setBodyColor({ color: COLOR_BASE });
   return (
@@ -27,7 +18,14 @@ const EngagementPage = () => {
         overlayColor={COLOR_BASE}
         typing={true}
       />
-      {engagementMap}
+      {dataEngagement.map((props) => (
+        <CalloutBullet
+          id={props.id}
+          calloutTitle={props.title}
+          calloutText={props.text}
+          backgroundColor={props.backgroundColor}
+        />
+      ))}
     </>
   );
 };

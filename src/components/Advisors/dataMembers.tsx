@@ -5,7 +5,7 @@ export const dataMembers = [
     nameLast: "Dunning",
     nameFirst: "Todd",
     role: "Head of Engineering",
-    desc: "Description here. Description here. Description here. Description here.  Description here. Description here.",
+    text: "Description here. Description here. Description here. Description here.  Description here. Description here.",
     photo: "dunning.jpeg",
   },
 

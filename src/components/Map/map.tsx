@@ -4,14 +4,11 @@ import { TitleCallout } from "../Title/titleCallout";
 import { ReactComponent as MapSvg } from "./world_map.svg";
 import "./keyframes.scss";
 import { dataMap } from "./dataMap";
-import {
-  COLOR_BASE_1,
-  COLOR_RED,
-} from "../../styles/Constants";
+import { COLOR_RED } from "../../styles/Constants";
 import setBodyColor from "../../utils/setBodyColor";
 
 const Map = (props) => {
-  setBodyColor({ color: COLOR_BASE_1 });
+  setBodyColor({ color: props.backgroundColor });
   return (
     <>
       <Container>
@@ -36,13 +33,13 @@ const Map = (props) => {
             ></MapPin>
           ))}
         </SVGContainer>
-        {/* <LocationGrid>
+        {/* <LocationNamesTable>
           {dataMap
             .sort((a, b) => a.location.localeCompare(b.location))
             .map((item, index) => (
               <div>{item.location}</div>
             ))}
-        </LocationGrid> */}
+        </LocationNamesTable> */}
       </Container>
     </>
   );
@@ -119,7 +116,7 @@ const MapPin = styled.div.attrs((props: { animationTime: string }) => props)`
   }
 `;
 
-// const LocationGrid = styled.div`
+// const LocationNamesTable = styled.div`
 //   padding-top: 32px;
 //   display: grid;
 //   grid-gap: 12px;

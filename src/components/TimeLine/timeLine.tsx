@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { TimeLineItemCombined, TimeLineItemLeft, TimeLineItemRight } from "./timeLineItem";
-
 import {
   BREAKPOINT,
   COLOR_BASE_LIGHT,
@@ -8,8 +7,9 @@ import {
   CONTENT_WIDTH_MOBILE,
 } from "../../styles/Constants";
 import { useState, useEffect } from "react";
+import { ICallOutProps } from "../../api/interfaces";
 
-const TimeLine = (props: { data: any[]; }) => {
+const TimeLine = (props: ICallOutProps) => {
   /*------ Responsive -------*/
   const [width, setWidth] = useState(window.innerWidth);
 
@@ -19,6 +19,8 @@ const TimeLine = (props: { data: any[]; }) => {
 
     return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
+
+
 
   return (
     <>
@@ -54,7 +56,7 @@ const TimeLineLeft = (props: { data: any[]; }) => {
         key={props.id}
         id={props.id}
         title={props.title}
-        desc={props.desc}
+        text={props.text}
       />
     ));
   return <>{timeLineMap}</>;
@@ -68,7 +70,7 @@ const TimeLineRight = (props: { data: any[]; }) => {
         key={props.id}
         id={props.id}
         title={props.title}
-        desc={props.desc}
+        text={props.text}
       />
     ));
   return <>{timeLineMap}</>;
@@ -81,7 +83,7 @@ const TimeLineCombined = (props: { data: any[]; }) => {
         key={props.id}
         id={props.id}
         title={props.title}
-        desc={props.desc}
+        text={props.text}
       />
     ));
   return <>{timeLineMap}</>;

@@ -5,32 +5,32 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 import { TitleCallout } from "../Title/titleCallout";
 import Container from "../Container/container";
 import setBodyColor from "../../utils/setBodyColor";
-import { COLOR_BASE_2 } from "../../styles/Constants";
+import { IAdvisorsProps } from "../../api/interfaces";
 
 const sortedDataAdvisors = dataAdvisors.sort((a, b) =>
   a.nameFirst > b.nameFirst ? 1 : -1
 );
 
-const Advisors = (props) => {
-  const advisorsMap = sortedDataAdvisors.map((props) => (
-    <AdvisorMember
-      key={props.id}
-      id={props.id}
-      nameFirst={props.nameFirst}
-      nameLast={props.nameLast}
-      photo={props.photo}
-      linkedin={props.linkedin}
-    />
-  ));
-
-  setBodyColor({ color: COLOR_BASE_2 });
+const Advisors = (props: IAdvisorsProps) => {
+  setBodyColor({ color: props.backgroundColor });
 
   return (
     <>
-      <Container >
-        <TitleCallout titleText={props.advisorsTitle} />
+      <Container>
+        <TitleCallout titleText={props.pageTitle} />
         <AdvisorsContainer animateIn="animate__fadeIn" delay={0} offset={30}>
-          <AdvisorsGrid>{advisorsMap}</AdvisorsGrid>
+          <AdvisorsGrid>
+            {sortedDataAdvisors.map((props) => (
+              <AdvisorMember
+                key={props.id}
+                id={props.id}
+                nameFirst={props.nameFirst}
+                nameLast={props.nameLast}
+                photo={props.photo}
+                linkedin={props.linkedin}
+              />
+            ))}
+          </AdvisorsGrid>
         </AdvisorsContainer>
       </Container>
     </>

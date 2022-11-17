@@ -7,9 +7,26 @@ import {
 } from "../../styles/Constants";
 import parse from "html-react-parser";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import { ICallOutProps } from "../../api/interfaces";
 
-export const TimeLineItemLeft = ({ id, title, desc }) => {
-  const descParsed = parse(desc);
+export const TimeLineItemCombined = (props: ICallOutProps) => {
+  return (
+    <AnimationOnScroll
+      key={props.id}
+      animateIn="animate__fadeInUp"
+      offset={150}
+    >
+      <TimeLineItemWrapper>
+        <TimeLineContent>
+          <h3>{props.title}</h3>
+        </TimeLineContent>
+      </TimeLineItemWrapper>
+    </AnimationOnScroll>
+  );
+};
+
+export const TimeLineItemLeft = ({ id, title, text }) => {
+  const textParsed = parse(text);
   // const side  = ''
 
   return (
@@ -17,7 +34,7 @@ export const TimeLineItemLeft = ({ id, title, desc }) => {
       <TimeLineItemWrapper>
         <TimeLineContent>
           <h3>{title}</h3>
-          <TimeLineItemDesc>{descParsed}</TimeLineItemDesc>
+          <TimeLineItemDesc>{textParsed}</TimeLineItemDesc>
         </TimeLineContent>
         <TimeLineItemLineBox>
           <div
@@ -30,8 +47,8 @@ export const TimeLineItemLeft = ({ id, title, desc }) => {
   );
 };
 
-export const TimeLineItemRight = ({ id, title, desc }) => {
-  const descParsed = parse(desc);
+export const TimeLineItemRight = ({ id, title, text }) => {
+  const textParsed = parse(text);
   // const side  = ''
 
   return (
@@ -45,21 +62,7 @@ export const TimeLineItemRight = ({ id, title, desc }) => {
         </TimeLineItemLineBox>
         <TimeLineContent>
           <h3>{title}</h3>
-          <TimeLineItemDesc>{descParsed}</TimeLineItemDesc>
-        </TimeLineContent>
-      </TimeLineItemWrapper>
-    </AnimationOnScroll>
-  );
-};
-
-export const TimeLineItemCombined = ({ id, title, desc }) => {
-  const descParsed = parse(desc);
-  return (
-    <AnimationOnScroll key={id} animateIn="animate__fadeInUp" offset={150}>
-      <TimeLineItemWrapper>
-        <TimeLineContent>
-          <h3>{title}</h3>
-          <TimeLineItemDesc>{descParsed}</TimeLineItemDesc>
+          <TimeLineItemDesc>{textParsed}</TimeLineItemDesc>
         </TimeLineContent>
       </TimeLineItemWrapper>
     </AnimationOnScroll>

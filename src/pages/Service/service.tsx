@@ -5,17 +5,6 @@ import BannerSpacer from "../../components/BannerSpacer/bannerSpacer";
 import CalloutBullet from "../../components/Callout/callOutBullet";
 import { dataService } from "./dataService";
 
-const serviceMap = dataService.map((props) => (
-  <CalloutBullet
-    id={props.id}
-    calloutTitle={props.title}
-    calloutText={props.desc}
-    backgroundColor={props.backgroundColor}
-    // buttonText={props.buttonText}
-    // buttonTo={props.buttonTo}
-  />
-));
-
 
 const ServicePage = () => {
   setBodyColor({ color: COLOR_BASE });
@@ -23,7 +12,16 @@ const ServicePage = () => {
     <>
       <BannerSpacer />
       <ServiceTitle>Services</ServiceTitle>
-      {serviceMap}
+      {dataService.map((props) => (
+        <CalloutBullet
+          id={props.id}
+          calloutTitle={props.title}
+          calloutText={props.text}
+          backgroundColor={props.backgroundColor}
+          // buttonText={props.buttonText}
+          // buttonTo={props.buttonTo}
+        />
+      ))}
     </>
   );
 };

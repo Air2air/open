@@ -5,7 +5,7 @@ export const dataAdvisors = [
     nameLast: "Fine",
     nameFirst: "Benjamin",
     role: "Advisor",
-    desc: "Description here. Description here. Description here. Description here.  Description here. Description here.",
+    text: "Description here. Description here. Description here. Description here.  Description here. Description here.",
     photo: "fine.jpeg",
     linkedin:"https://www.linkedin.com/in/benfine"
   },
@@ -15,7 +15,7 @@ export const dataAdvisors = [
     nameLast: "Kleck",
     nameFirst: "Jeff",
     role: "Advisor",
-    desc: "Description here. Description here. Description here. Description here.  Description here. Description here.",
+    text: "Description here. Description here. Description here. Description here.  Description here. Description here.",
     photo: "kleck.jpeg",
     linkedin:"https://www.linkedin.com/in/jeff-kleck-a000299/"
   },
@@ -25,7 +25,7 @@ export const dataAdvisors = [
     nameLast: "Lungren",
     nameFirst: "Matthew",
     role: "Advisor",
-    desc: "Matt Bio",
+    text: "Matt Bio",
     photo: "lungren.jpeg",
     linkedin:"https://www.linkedin.com/in/mattlungrenmd/"
   },
