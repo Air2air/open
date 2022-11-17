@@ -5,8 +5,8 @@ import {
   TEAM_MEMBER_HEIGHT_PX,
   TEAM_MEMBER_PHOTO_PX,
   TEAM_MEMBER_WIDTH_PX,
-} from "../../styles/Constants";
-import ButtonLinkedIn from "../Button/buttonLinkedIn";
+} from "./../../styles/Constants";
+import ButtonLinkedIn from "./../Button/buttonLinkedIn";
 
 const AdvisorMember = ({ id, nameFirst, nameLast, photo, linkedin }) => {
   const backgroundImage = "url(/images/team/man_icon.png)";

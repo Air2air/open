@@ -1,8 +1,8 @@
 
-import TimeLine from "../../components/TimeLine/timeLine";
-import BannerSpacer from "../../components/BannerSpacer/bannerSpacer";
+import TimeLine from "./../../components/TimeLine/timeLine";
+import BannerSpacer from "./../../components/BannerSpacer/bannerSpacer";
 import { dataVentureStage } from "./dataVentureStage";
-import { TitleCentered } from "../../components/Title/titleCentered";
+import { TitleCentered } from "./../../components/Title/titleCentered";
 
 const VentureStagePage = () => {
   return (

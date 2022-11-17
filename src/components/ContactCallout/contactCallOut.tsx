@@ -5,24 +5,25 @@ import {
   BREAKPOINT_PX,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
-} from "../../styles/Constants";
+} from "./../../styles/Constants";
 
-const ContactCallout = (props: any) => {
-
-  <>
-    <ContactWrapper>
-      {dataContact.map((props) => (
-        <ContactItem
-          key={props.id}
-          id={props.id}
-          shortName={props.shortName}
-          address={props.address}
-          photo={props.photo}
-        />
-      ))}
-      ;
-    </ContactWrapper>
-  </>
+const ContactCallout = () => {
+  return (
+    <>
+      <ContactWrapper>
+        {dataContact.map((props) => (
+          <ContactItem
+            key={props.id}
+            id={props.id}
+            shortName={props.shortName}
+            address={props.address}
+            photo={props.photo}
+          />
+        ))}
+        ;
+      </ContactWrapper>
+    </>
+  );
 };
 
 export default ContactCallout;

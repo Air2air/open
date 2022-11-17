@@ -6,7 +6,7 @@ import {
   COLOR_TEXT,
   HEADER_HEIGHT_PX,
   HEADER_COLOR_HOVER,
-} from "../../styles/Constants";
+} from "./../../styles/Constants";
 import { useState, useEffect } from "react";
 
 export const HeaderDesktop = () => {

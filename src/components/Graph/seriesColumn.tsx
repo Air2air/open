@@ -9,9 +9,9 @@ import {
   COLOR_BASE_6,
   COLOR_TEXT,
   COLOR_RED,
-} from "../../styles/Constants";
+} from "./../../styles/Constants";
 
-import { IGraphColumnProps } from "../../api/interfaces";
+import { IGraphColumnProps } from "./../../api/interfaces";
 
 const SeriesColumn = (props: IGraphColumnProps) => {
   // const [isHovering, setIsHovering] = useState(false);

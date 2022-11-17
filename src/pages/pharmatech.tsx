@@ -1,10 +1,10 @@
-import setBodyColor from "../utils/setBodyColor";
-import Callout from "../components/Callout/callout";
-import BannerVideo from "../components/BannerVideo/bannerVideo";
+import setBodyColor from "./../utils/setBodyColor";
+import Callout from "./../components/Callout/callout";
+import BannerVideo from "./../components/BannerVideo/bannerVideo";
 import {
 
   COLOR_BASE,
-} from "../styles/Constants";
+} from "./../styles/Constants";
 
 const pageVideo =
   "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/YqGSkmb/videoblocks-051_bkqzf7sec__ef7f4ded1f549dccc9f364428adbee1e__P360.mp4";

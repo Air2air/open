@@ -1,6 +1,6 @@
-import Callout from "../../components/Callout/callout";
-import BannerVideo from "../../components/BannerVideo/bannerVideo";
-import { COLOR_BASE} from "../../styles/Constants";
+import Callout from "./../../components/Callout/callout";
+import BannerVideo from "./../../components/BannerVideo/bannerVideo";
+import { COLOR_BASE} from "./../../styles/Constants";
 import { dataWhatWeDo } from "./dataWhatWeDo";
 
 const pageVideo = 766731362;

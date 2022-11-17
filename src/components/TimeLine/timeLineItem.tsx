@@ -4,10 +4,10 @@ import {
   COLOR_BASE_3,
   COLOR_BASE_LIGHT,
   COLOR_TEXT,
-} from "../../styles/Constants";
+} from "./../../styles/Constants";
 import parse from "html-react-parser";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import { ICalloutProps } from "../../api/interfaces";
+import { ICalloutProps } from "./../../api/interfaces";
 
 export const TimeLineItemCombined = (props: ICalloutProps) => {
   return (

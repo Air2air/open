@@ -4,12 +4,12 @@ import {
   BREAKPOINT_PX,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
-} from "../../styles/Constants";
+} from "./../../styles/Constants";
 import styled from "styled-components";
-import VideoCallout from "../VideoCallout/videoCallout";
+import VideoCallout from "./../VideoCallout/videoCallout";
 import parse from "html-react-parser";
-import { BannerText } from "../BannerText/bannerText";
-import { TitleBanner } from "../Title/titleBanner";
+import { BannerText } from "./../BannerText/bannerText";
+import { TitleBanner } from "./../Title/titleBanner";
 
 
 export const BannerVideo = ({

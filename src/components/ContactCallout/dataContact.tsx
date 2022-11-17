@@ -1,4 +1,4 @@
-import { COLOR_BASE_1, COLOR_BASE_2, COLOR_BASE_3 } from "../../styles/Constants"
+import { COLOR_BASE_1, COLOR_BASE_2, COLOR_BASE_3 } from "./../../styles/Constants"
 
 export const dataContact = [
   {

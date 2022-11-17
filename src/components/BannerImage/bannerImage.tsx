@@ -2,14 +2,14 @@ import {
   BANNER_HEIGHT_DESKTOP_PX,
   BANNER_HEIGHT_MOBILE_PX,
   BREAKPOINT_PX,
-} from "../../styles/Constants";
+} from "./../../styles/Constants";
 import styled from "styled-components";
 
-import ImageCallout from "../ImageCallout/imageCallout";
+import ImageCallout from "./../ImageCallout/imageCallout";
 import parse from "html-react-parser";
-import { BannerText } from "../BannerText/bannerText";
-import { TitleBanner } from "../Title/titleBanner";
-import Container from "../Container/container";
+import { BannerText } from "./../BannerText/bannerText";
+import { TitleBanner } from "./../Title/titleBanner";
+import Container from "./../Container/container";
 
 export const BannerImage = ({
   pageTitle,

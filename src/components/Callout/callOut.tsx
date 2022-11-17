@@ -11,13 +11,13 @@ import {
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
   TEXT_OPACITY,
-} from "../../styles/Constants";
+} from "./../../styles/Constants";
 import styled from "styled-components";
-import Button from "../Button/button";
+import Button from "./../Button/button";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import parse from "html-react-parser";
-import { TitleCallout } from "../Title/titleCallout";
-// import { ICalloutProps } from "../../api/interfaces";
+import { TitleCallout } from "./../Title/titleCallout";
+// import { ICalloutProps } from "./../../api/interfaces";
 
 export const Callout = (props) => {
   const textParsed = parse(props.text);

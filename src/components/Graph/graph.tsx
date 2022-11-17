@@ -5,12 +5,12 @@ import {
   COLOR_CAPTION,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
-} from "../../styles/Constants";
+} from "./../../styles/Constants";
 import { dataGraph } from "./dataGraph";
 import SeriesColumn from "./seriesColumn";
 import { IGraphProps } from "./../../api/interfaces";
-import { TitleCallout } from "../Title/titleCallout";
-import Container from "../Container/container";
+import { TitleCallout } from "./../Title/titleCallout";
+import Container from "./../Container/container";
 
 export const Graph = (props: IGraphProps) => {
   return (

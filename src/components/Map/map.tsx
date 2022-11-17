@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import Container from "../Container/container";
-import { TitleCallout } from "../Title/titleCallout";
+import Container from "./../Container/container";
+import { TitleCallout } from "./../Title/titleCallout";
 import { ReactComponent as MapSvg } from "./world_map.svg";
 import "./keyframes.scss";
 import { dataMap } from "./dataMap";
-import { COLOR_RED } from "../../styles/Constants";
-import setBodyColor from "../../utils/setBodyColor";
+import { COLOR_RED } from "./../../styles/Constants";
+import setBodyColor from "./../../utils/setBodyColor";
 
 const Map = (props) => {
   setBodyColor({ color: props.backgroundColor });

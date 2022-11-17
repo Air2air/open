@@ -1,7 +1,7 @@
-import setBodyColor from "../utils/setBodyColor";
-import Callout from "../components/Callout/callout";
-import BannerVideo from "../components/BannerVideo/bannerVideo";
-import { COLOR_BASE } from "../styles/Constants";
+import setBodyColor from "./../utils/setBodyColor";
+import Callout from "./../components/Callout/callout";
+import BannerVideo from "./../components/BannerVideo/bannerVideo";
+import { COLOR_BASE } from "./../styles/Constants";
 
 const pageVideo =
   "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/cq8l59W/videoblocks-abstract-dna-double-helix-with-depth-of-field-rotating_bwvuhuvwu__e0e0c7137fc604d291ce0add7aa6df8c__P360.mp4";

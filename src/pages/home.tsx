@@ -1,8 +1,8 @@
-import setBodyColor from "../utils/setBodyColor";
-import Callout from "../components/Callout/callout";
-import BannerVideo from "../components/BannerVideo/bannerVideo";
-import { COLOR_BASE } from "../styles/Constants";
-import OrgsCallout from "../components/OrgsCallout/orgsCallout";
+import setBodyColor from "./../utils/setBodyColor";
+import Callout from "./../components/Callout/callout";
+import BannerVideo from "./../components/BannerVideo/bannerVideo";
+import { COLOR_BASE } from "./../styles/Constants";
+import OrgsCallout from "./../components/OrgsCallout/orgsCallout";
 
 const pageVideo = 765122469;
 

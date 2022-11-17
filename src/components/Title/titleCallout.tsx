@@ -1,4 +1,4 @@
-import { BREAKPOINT_PX } from "../../styles/Constants";
+import { BREAKPOINT_PX } from "./../../styles/Constants";
 import styled from "styled-components";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { FC } from "react";

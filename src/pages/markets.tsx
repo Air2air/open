@@ -1,7 +1,7 @@
-import setBodyColor from "../utils/setBodyColor";
-import BannerVideo from "../components/BannerVideo/bannerVideo";
-import { COLOR_BASE } from "../styles/Constants";
-import Graph from "../components/Graph/graph";
+import setBodyColor from "./../utils/setBodyColor";
+import BannerVideo from "./../components/BannerVideo/bannerVideo";
+import { COLOR_BASE } from "./../styles/Constants";
+import Graph from "./../components/Graph/graph";
 
 const pageVideo = 769143399;
 

@@ -2,10 +2,10 @@ import styled from "styled-components";
 import AdvisorMember from "./advisorMember";
 import { dataAdvisors } from "./dataAdvisors";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import { TitleCallout } from "../Title/titleCallout";
-import Container from "../Container/container";
-import setBodyColor from "../../utils/setBodyColor";
-import { IAdvisorsProps } from "../../api/interfaces";
+import { TitleCallout } from "./../Title/titleCallout";
+import Container from "./../Container/container";
+import setBodyColor from "./../../utils/setBodyColor";
+import { IAdvisorsProps } from "./../../api/interfaces";
 
 const sortedDataAdvisors = dataAdvisors.sort((a, b) =>
   a.nameFirst > b.nameFirst ? 1 : -1

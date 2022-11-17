@@ -7,7 +7,7 @@ import {
   HEADER_COLOR_HOVER,
   HEADER_MOBILE_HEIGHT,
   HEADER_MOBILE_HEIGHT_PX,
-} from "../../styles/Constants";
+} from "./../../styles/Constants";
 
 export const HeaderMobile = () => {
   /*------ Responsive -------*/

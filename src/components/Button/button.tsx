@@ -4,7 +4,7 @@ import {
   BUTTON_COLOR_HOVER,
   BUTTON_HEIGHT_PX,
   BUTTON_TEXT_COLOR,
-} from "../../styles/Constants";
+} from "./../../styles/Constants";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
