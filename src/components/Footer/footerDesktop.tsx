@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { ReactComponent as LogoWhite } from "./../../images/logo_white.svg";
 import { ReactComponent as LogoTextWhite } from "./../../images/logo_text_white.svg";
 import {
-  COLOR_BASE,
   COLOR_BASE_4,
   COLOR_BASE_LIGHT,
   COLOR_RED,
@@ -12,7 +11,7 @@ import {
   FOOTER_HEIGHT_DESKTOP,
 } from "../../styles/Constants";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import VideoCallOut from "../VideoCallOut/videoCallOut";
+// import VideoCallOut from "../VideoCallOut/videoCallOut";
 import { FC } from "react";
 
 type FooterProps = {
@@ -22,11 +21,11 @@ type FooterProps = {
 export const FooterDesktop: FC<FooterProps> = ({footerVideo}) => {
   return (
     <FooterWrapper>
-      <VideoCallOut
+      {/* <VideoCallOut
         pageVideo={footerVideo}
         overlayOpacity={0.9}
         overlayColor={COLOR_BASE}
-      />
+      /> */}
       <FooterContainer>
         <FooterContentRow>
           <FooterColumn>
