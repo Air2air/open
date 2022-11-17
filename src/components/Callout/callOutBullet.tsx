@@ -12,13 +12,13 @@ import {
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
   TEXT_OPACITY,
-} from "./../../styles/Constants";
+} from "../../styles/Constants";
 import styled from "styled-components";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import parse from "html-react-parser";
-import { TitleCallout } from "./../Title/titleCallout";
-import Button from "./../Button/button";
-import {ICalloutBulletProps} from "./../../api/interfaces";
+import { TitleCallout } from "../Title/titleCallout";
+import Button from "../Button/button";
+import {ICalloutBulletProps} from "../../api/interfaces";
 
 
 export const CalloutBullet = (props: ICalloutBulletProps) => {

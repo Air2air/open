@@ -1,7 +1,7 @@
 import setBodyColor from "./../../utils/setBodyColor";
 import { COLOR_BASE } from "./../../styles/Constants";
 import BannerSpacer from "./../../components/BannerSpacer/bannerSpacer";
-import CalloutBullet from "./../../components/Callout/calloutBullet";
+import CalloutBullet from "../../components/Callout/callOutBullet";
 import { dataService } from "./dataService";
 import { TitleCentered } from "./../../components/Title/titleCentered";
 
