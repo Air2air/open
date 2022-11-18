@@ -2,7 +2,7 @@ import Callout from "../../components/Callout/callOut";
 import { dataWhatWeDo } from "./dataWhatWeDo";
 import BannerAnimation from "components/BannerAnimation/bannerAnimation";
 
-const pageVideo = 766731362;
+// const pageVideo = 766731362;
 
 const WhatWeDoNewPage = () => {
   return (
