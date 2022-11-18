@@ -23,7 +23,7 @@ const BannerAnimation = () => {
           <TextSection>
             <TitleBanner title="We know how to juggle." />
             <BannerText
-              bannerText="(A couple sentences introducing our CXO concept - who knows what to do and when to do it )"
+              bannerText="(A couple sentences introducing our CXO concept - a fractional leader who knows what to do and when to do it )"
               typing
             />
           </TextSection>
@@ -53,7 +53,7 @@ const AnimationSection = styled.div`
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
-  height: 40%;
+  height: 30%;
   /* background: blue; */
 `;
 

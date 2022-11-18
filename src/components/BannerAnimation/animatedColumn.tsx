@@ -10,15 +10,22 @@ const AnimatedColumn = (props: {
 }) => {
   const [height, setHeight] = useState(50);
 
+  const minHeight = 10;
+  const maxHeight = 90;
+
   const randomHeight = () => {
-    const randomNumber = Math.floor(Math.random() * 100);
+    // const randomNumber = Math.floor(Math.random() * 100);
+    const randomNumber = Math.random() * (maxHeight - minHeight) + minHeight;
     setHeight(randomNumber);
   };
+
+  const minInterval = 500;
+  const maxInterval = 5000;
 
   useEffect(() => {
     const interval = setInterval(() => {
       randomHeight();
-    }, Math.floor(Math.random() * 10000));
+    }, Math.random() * (maxInterval - minInterval) + minInterval);
     return () => clearInterval(interval);
   }, []);
 
@@ -55,7 +62,7 @@ const ColumnWrapper = styled.div`
   min-width: 90px;
   padding: 10px 4px;
   border-radius: 2px;
-  transition: all 300ms;
+  transition: all 200ms;
 `;
 
 const ColumnBackground = styled.div`
@@ -64,7 +71,6 @@ const ColumnBackground = styled.div`
   flex: 1;
   width: 100%;
   border-radius: 2px;
-  /* transition: all 300ms; */
 `;
 
 const Label = styled.div`
