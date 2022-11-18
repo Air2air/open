@@ -1,0 +1,16 @@
+:root {
+    --animation-time: 1s;
+    --color-1: #ff0000;
+    --color-2: #ffee00;
+  }
+  
+  #square {
+    width: 100px;
+    height: 100px;
+    transition: var(--animation-time) ease;
+    background-color: var(--color-1);
+  }
+  
+  #square.change {
+    background-color: var(--color-2);
+  }
