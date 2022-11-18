@@ -8,6 +8,7 @@ import { dataAnimation } from "./dataAnimation";
 import AnimatedColumn from "./animatedColumn";
 import Container from "../Container/container";
 import { TitleBanner } from "components/Title/titleBanner";
+import { BannerText } from "components/BannerText/bannerText";
 
 const BannerAnimation = () => {
   return (
@@ -16,12 +17,16 @@ const BannerAnimation = () => {
         <BannerAnimationWrapper>
           <AnimationSection>
             {dataAnimation.map((item) => (
-              <AnimatedColumn id={item.id} label={item.label} />
+              <AnimatedColumn id={item.id} label={item.label} color={item.color} bgColor={item.bgColor} />
             ))}
           </AnimationSection>
           <TextSection>
             <TitleBanner title="We know how to juggle." />
-            </TextSection>
+            <BannerText
+              bannerText="(A couple sentences introducing our CXO concept - who knows what to do and when to do it )"
+              typing
+            />
+          </TextSection>
         </BannerAnimationWrapper>
       </Container>
     </>
@@ -55,10 +60,10 @@ const AnimationSection = styled.div`
 const TextSection = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  margin-top: 30px;
   width: 100%;
   height: 30%;
-  /* background: blue; */
+  /* background: green; */
 `;
 
 export default BannerAnimation;
