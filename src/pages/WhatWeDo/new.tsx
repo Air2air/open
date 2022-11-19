@@ -10,6 +10,7 @@ const WhatWeDoNewPage = () => {
       <BannerAnimation />
       {dataWhatWeDo.map((props) => (
         <Callout
+        key={props.id}
           id={props.id}
           title={props.title}
           text={props.text}

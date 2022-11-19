@@ -41,6 +41,6 @@ export const dataAnimation = [
     id: 6,
     label: "Strategy",
     color: "#FFFFFF",
-    bgColor: "#00A8FF",//"#FFFFA6",
+    bgColor: "#098acb",//"#FFFFA6",
   },
 ];

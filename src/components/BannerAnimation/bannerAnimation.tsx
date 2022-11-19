@@ -10,26 +10,31 @@ import Container from "../Container/container";
 import { TitleBanner } from "components/Title/titleBanner";
 import { BannerText } from "components/BannerText/bannerText";
 
-const BannerAnimation = () => {
+const BannerAnimation = (props: any) => {
   return (
-    <>
-      <Container>
-        <BannerAnimationWrapper>
-          <AnimationSection>
-            {dataAnimation.map((item) => (
-              <AnimatedColumn id={item.id} label={item.label} color={item.color} bgColor={item.bgColor} />
-            ))}
-          </AnimationSection>
-          <TextSection>
-            <TitleBanner title="We know how to juggle." />
-            <BannerText
-              bannerText="(A couple sentences introducing our CXO concept - a fractional leader who knows what to do and when to do it )"
-              typing
+    <Container key={props.id}>
+      <BannerAnimationWrapper>
+        <AnimationSection>
+          {dataAnimation.map((item) => (
+            <AnimatedColumn
+              key={item.id}
+              id={item.id}
+              label={item.label}
+              color={item.color}
+              bgColor={item.bgColor}
             />
-          </TextSection>
-        </BannerAnimationWrapper>
-      </Container>
-    </>
+          ))}
+        </AnimationSection>
+        <SectionSpacer />
+        <TextSection>
+          <TitleBanner title="We know how to juggle." />
+          <BannerText
+            bannerText="(A couple sentences introducing our CXO concept - a fractional leader who knows what to do and when to do it )"
+            typing
+          />
+        </TextSection>
+      </BannerAnimationWrapper>
+    </Container>
   );
 };
 
@@ -44,6 +49,7 @@ const BannerAnimationWrapper = styled.div`
     height: ${BANNER_HEIGHT_DESKTOP_PX};
   }
   @media (max-width: ${BREAKPOINT_PX}) {
+    /* padding: 40px auto 0 auto; */
     height: ${BANNER_HEIGHT_MOBILE_PX};
   }
 `;
@@ -53,17 +59,33 @@ const AnimationSection = styled.div`
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
-  height: 30%;
   /* background: blue; */
+  @media (min-width: ${BREAKPOINT_PX}) {
+    height: 40%;
+  }
+  @media (max-width: ${BREAKPOINT_PX}) {
+    padding-top: 30%;
+    height: 45%;
+  }
+`;
+
+const SectionSpacer = styled.div`
+  width: 100%;
+  height: 10%;
+  /* background: red; */
 `;
 
 const TextSection = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
   width: 100%;
-  height: 30%;
   /* background: green; */
+  @media (min-width: ${BREAKPOINT_PX}) {
+    height: 30%;
+  }
+  @media (max-width: ${BREAKPOINT_PX}) {
+    height: 40%;
+  }
 `;
 
 export default BannerAnimation;
