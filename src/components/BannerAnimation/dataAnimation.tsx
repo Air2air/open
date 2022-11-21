@@ -1,12 +1,12 @@
 
 
 export const dataAnimation = [
-  {
-    id: 0,
-    label: "BizDev",
-    color: "#FFFFFF",
-    bgColor: "#FFFF78",//"#004CA3",
-  },
+  // {
+  //   id: 0,
+  //   label: "BizDev",
+  //   color: "#FFFFFF",
+  //   bgColor: "#FFFF78",//"#004CA3",
+  // },
   {
     id: 1,
     label: "Clinical",
@@ -19,12 +19,12 @@ export const dataAnimation = [
     color: "#FFFFFF",
     bgColor: "#59F5AD",//"#CB5E99",
   },
-  {
-    id: 3,
-    label: "Legal",
-    color: "#FFFFFF",
-    bgColor: "#00E8D3",//"#F47BA9",
-  },
+  // {
+  //   id: 3,
+  //   label: "Legal",
+  //   color: "#FFFFFF",
+  //   bgColor: "#00E8D3",//"#F47BA9",
+  // },
   {
     id: 4,
     label: "Marketing",
