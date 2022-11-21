@@ -26,6 +26,14 @@ const HomePage = () => {
         buttonText="What we do"
         buttonTo="/what_we_do"
       />
+      <Callout
+        id={2}
+        title="Pre-seed studio / hospital spin out company with early novel AI model and technical lead"
+        text="Elevens provided a fractional CXAIO that led product management discovery and MVP design, transitioning to full time PM hire, and alidated business model with payors and..."
+        backgroundColor={1}
+        buttonText="Case Studies"
+        buttonTo="/casestudies"
+      />
       <OrgsCallout />
     </>
   );
