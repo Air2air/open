@@ -9,7 +9,7 @@ export const dataAnimation = [
   },
   {
     id: 1,
-    label: "ML/AI",
+    label: "AI/ML",
     color: "#FFFFFF",
 
     bgColor: "#FFFF78",//"#004CA3",
