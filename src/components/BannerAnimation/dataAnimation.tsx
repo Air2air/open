@@ -1,17 +1,18 @@
 
 
 export const dataAnimation = [
-  // {
-  //   id: 0,
-  //   label: "BizDev",
-  //   color: "#FFFFFF",
-  //   bgColor: "#FFFF78",//"#004CA3",
-  // },
   {
-    id: 1,
+    id: 0,
     label: "Clinical",
     color: "#FFFFFF",
     bgColor: "#B3FD8B",//"#8A51A5",
+  },
+  {
+    id: 1,
+    label: "ML/AI",
+    color: "#FFFFFF",
+
+    bgColor: "#FFFF78",//"#004CA3",
   },
   {
     id: 2,
