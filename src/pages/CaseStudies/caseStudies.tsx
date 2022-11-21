@@ -3,7 +3,7 @@ import { COLOR_BASE } from "../../styles/Constants";
 import CalloutBullet from "../../components/Callout/callOutBullet";
 import { dataCaseStudies } from "./dataCaseStudies";
 
-const pageVideo = 769227014;
+const pageVideo = 766650761;
 
 const CaseStudiesPage = () => {
   return (
