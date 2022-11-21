@@ -13,6 +13,7 @@ import VentureStagePage from "./../pages/VentureStage/ventureStage";
 import VisionPage from "./../pages/vision";
 import WhatWeDoPage from "../pages/WhatWeDo/what_we_do";
 import WhatWeDoNewPage from "../pages/WhatWeDo/new";
+import CaseStudiesPage from "pages/CaseStudies/caseStudies";
 
 export const dataRoutes = [
   {
@@ -21,7 +22,12 @@ export const dataRoutes = [
     section: "About",
     element: <AboutPage />,
   },
-
+  {
+    id: "CaseStudies",
+    path: "casestudies",
+    section: "Case Studies",
+    element: <CaseStudiesPage />,
+  },
   {
     id: "Contact",
     path: "contact",
