@@ -12,14 +12,14 @@ import { TitleBanner } from "./../Title/titleBanner";
 import Container from "./../Container/container";
 
 export const BannerImage = ({
-  pageTitle,
-  pageDescription,
+  title,
+  text,
   pageImage,
   overlayOpacity,
   overlayColor,
   typing,
 }) => {
-  const pageTitleParsed = parse(pageTitle);
+  const titleParsed = parse(title);
 
   return (
     <>
@@ -34,8 +34,8 @@ export const BannerImage = ({
           ""
         )}
         <Container>
-          <TitleBanner title={pageTitleParsed} />
-          <BannerText typing={typing} bannerText={pageDescription} />
+          <TitleBanner title={titleParsed} />
+          <BannerText typing={typing} text={text} />
         </Container>
       </BannerImageWrapper>
     </>

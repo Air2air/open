@@ -11,8 +11,8 @@ const VisionPage = () => {
   return (
     <>
       <BannerImage
-        pageTitle="Our Vision"
-        pageDescription="Eleven is a multidisciplinary advisory of physicians, scientists, engineers, entrepreneurs and enterprisers who combine their experience to define a path forward for leading companies building the future of digital health and clinical machine learning"
+        title="Our Vision"
+        text="Eleven is a multidisciplinary advisory of physicians, scientists, engineers, entrepreneurs and enterprisers who combine their experience to define a path forward for leading companies building the future of digital health and clinical machine learning"
         pageImage={pageImage}
         overlayOpacity={0.7}
         overlayColor={COLOR_BASE}

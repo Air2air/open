@@ -9,11 +9,11 @@ import Typewriter from "typewriter-effect";
 import { FC } from "react";
 
 type BannerTextProps = {
-  bannerText: string;
+  text?: string;
   typing: boolean;
 };
 
-export const BannerText: FC<BannerTextProps> = ({ bannerText, typing }) => (
+export const BannerText: FC<BannerTextProps> = ({ text, typing }) => (
   <AnimationOnScroll animateIn="animate__fadeIn" delay={400}>
     <TypeWriterWrapper>
       {typing ? (
@@ -23,7 +23,7 @@ export const BannerText: FC<BannerTextProps> = ({ bannerText, typing }) => (
               autoStart: true,
               delay: 10,
               cursor: "",
-              strings: [bannerText],
+              strings: text,
               skipAddStyles: true,
               devMode: false,
               deleteSpeed: 1000000,
@@ -31,7 +31,7 @@ export const BannerText: FC<BannerTextProps> = ({ bannerText, typing }) => (
           />
         </>
       ) : (
-        { bannerText }
+        { text }
       )}
     </TypeWriterWrapper>
   </AnimationOnScroll>

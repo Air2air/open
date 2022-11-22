@@ -16,8 +16,8 @@ const AboutPage = () => {
   return (
     <>
       <BannerVideo
-        pageTitle="About Eleven"
-        pageDescription="If you know healthcare AI, then you already know some Elevens"
+        title="About Eleven"
+        text="If you know healthcare AI, then you already know some Elevens"
         pageVideo={pageVideo}
         overlayOpacity={0.2}
         overlayColor={COLOR_BASE}
@@ -32,7 +32,7 @@ const AboutPage = () => {
         buttonTo=""
       /> */}
       <Map mapTitle="Elevens Worldwide" backgroundColor={2} />
-      <Advisors pageTitle="Advisory Board" backgroundColor={3} />
+      <Advisors title="Advisory Board" backgroundColor={3} />
     </>
   );
 };

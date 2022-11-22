@@ -13,8 +13,8 @@ const MarketsPage = () => {
   return (
     <>
       <BannerVideo
-        pageTitle="Health AI Markets"
-        pageDescription="Eleven accelerates breakthrough ventures in Biotech, Healthtech, Medtech, and Pharmatech. These sectors collectively comprise one of the largest markets in the world, and the health of these sectors controls the health of our society"
+        title="Health AI Markets"
+        text="Eleven accelerates breakthrough ventures in Biotech, Healthtech, Medtech, and Pharmatech. These sectors collectively comprise one of the largest markets in the world, and the health of these sectors controls the health of our society"
         pageVideo={pageVideo}
         overlayOpacity={0.2}
         overlayColor={COLOR_BASE}

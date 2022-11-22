@@ -10,8 +10,8 @@ const EngagementPage = () => {
   return (
     <>
       <BannerVideo
-        pageTitle="Engaging Eleven"
-        pageDescription="(This page describes our engagement policies, from Matt's steps below.  The 'process' page details workflow, milestones and measurement.)"
+        title="Engaging Eleven"
+        text="(This page describes our engagement policies, from Matt's steps below.  The 'process' page details workflow, milestones and measurement.)"
         pageVideo={pageVideo}
         overlayOpacity={0}
         overlayColor={COLOR_BASE}

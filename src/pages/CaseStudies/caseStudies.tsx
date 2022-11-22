@@ -4,15 +4,16 @@ import CalloutBullet from "components/Callout/callOutBullet";
 import { dataCaseStudies } from "./dataCaseStudies";
 import { ICalloutBulletProps } from "api/interfaces";
 
-const pageVideo = 766650761;
+const pageVideo = 766646401;
 
 const CaseStudiesPage = () => {
   return (
     <>
       <BannerVideo
-        pageTitle="Case Studies"
-        pageDescription="(Summary of the case studies below represent, and whatever other meta data)"
+        title="Case Studies"
+        text="(What the case studies below represent, and other meta data)"
         pageVideo={pageVideo}
+        color="#ffffff"
         overlayOpacity={0}
         overlayColor={COLOR_BASE}
         typing={true}

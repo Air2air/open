@@ -10,8 +10,8 @@ const ContactPage = () => {
   return (
     <>
       <BannerVideo
-        pageTitle="Contact Elevens.ai"
-        pageDescription=""
+        title="Contact Elevens.ai"
+        text=""
         pageVideo={pageVideo}
         overlayOpacity={0.1}
         overlayColor={COLOR_BASE}

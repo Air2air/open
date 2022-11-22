@@ -9,8 +9,8 @@ const ProcessPage = () => {
   return (
     <>
       <BannerVideo
-        pageTitle="Process workflow"
-        pageDescription="(This page lists the steps in the process.  We can have whatever # of steps of course.  There is placeholder text for now.)"
+        title="Process workflow"
+        text="(This page lists the steps in the process.  We can have whatever # of steps of course.  There is placeholder text for now.)"
         pageVideo={pageVideo}
         overlayOpacity={0}
         overlayColor={COLOR_BASE}

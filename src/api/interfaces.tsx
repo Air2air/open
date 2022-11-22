@@ -25,7 +25,7 @@ export interface ICalloutBulletProps {
 }
 
 export interface IAdvisorsProps {
-  pageTitle?: string;
+  title?: string;
   id?: number;
   order?: number;
   nameLast?: string;

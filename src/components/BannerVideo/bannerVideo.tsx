@@ -10,33 +10,36 @@ import VideoCallout from "./../VideoCallout/videoCallout";
 import parse from "html-react-parser";
 import { BannerText } from "./../BannerText/bannerText";
 import { TitleBanner } from "./../Title/titleBanner";
+import { FC } from "react";
 
+type BannerVideoProps = {
+  title: string;
+  text?: string;
+  pageVideo?:number;
+  color?:string;
+  overlayOpacity?:number;
+  overlayColor?:string;
+  typing:boolean;
+};
 
-export const BannerVideo = ({
-  pageTitle,
-  pageDescription,
-  pageVideo,
-  overlayOpacity,
-  overlayColor,
-  typing,
-}) => {
-  const pageTitleParsed = parse(pageTitle);
+export const BannerVideo: FC<BannerVideoProps> = ({...props}) => {
+  const titleParsed = parse(props.title);
 
   return (
     <>
       <BannerVideoWrapper>
-        {pageVideo ? (
+        {props.pageVideo ? (
           <VideoCallout
-            pageVideo={pageVideo}
-            overlayOpacity={overlayOpacity}
-            overlayColor={overlayColor}
+            pageVideo={props.pageVideo}
+            overlayOpacity={props.overlayOpacity}
+            overlayColor={props.overlayColor}
           />
         ) : (
           ""
         )}
         <TextWrapper>
-          <TitleBanner title={pageTitleParsed} />
-          <BannerText typing={typing} bannerText={pageDescription} />
+          <TitleBanner title={titleParsed} color={props.color} />
+          <BannerText typing={props.typing} text={props.text} />
         </TextWrapper>
       </BannerVideoWrapper>
     </>
