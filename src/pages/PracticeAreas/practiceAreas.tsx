@@ -6,7 +6,10 @@ import { ICalloutProps } from "api/interfaces";
 const PracticeAreasPage = () => {
   return (
     <>
-      <BannerAnimation />
+      <BannerAnimation
+        title="We know how to juggle."
+        text="Eleven knows how to juggle the talent and resources needed for each practice area to optimize the outcome for the whole venture. We call this process fractional CXOs."
+      />
       {dataPracticeAreas.map((props: ICalloutProps) => (
         <Callout
           key={props.id}

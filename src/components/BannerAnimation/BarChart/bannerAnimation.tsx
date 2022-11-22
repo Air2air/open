@@ -27,9 +27,9 @@ const BannerAnimation = (props: any) => {
         </AnimationSection>
         <SectionSpacer />
         <TextSection>
-          <TitleBanner title="We know how to juggle." />
+          <TitleBanner title={props.title} />
           <BannerText
-            bannerText="(A couple sentences introducing our CXO concept - a fractional leader who knows what to do and when to do it )"
+            bannerText={props.text}
             typing
           />
         </TextSection>
