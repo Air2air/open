@@ -1,7 +1,7 @@
 export const dataGraph = [
   {
     id: 1,
-    label: "Health",
+    label: "Healthtech",
     size: 20,
     value: "$400B",
     background: "#858457",
@@ -25,7 +25,7 @@ export const dataGraph = [
   },
   {
     id: 4,
-    label: "Pharma",
+    label: "Pharmatech",
     size: 100,
     value: "$1.2T",
     background: "#45737e",

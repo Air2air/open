@@ -38,7 +38,7 @@ const Column = styled.div`
   height: "100%";
   transition: all 300ms;
   @media (min-width: ${BREAKPOINT_PX}) {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
   @media (max-width: ${BREAKPOINT_PX}) {
     font-size: 1em;

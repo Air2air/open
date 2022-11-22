@@ -49,7 +49,7 @@ const GraphSeriesWrapper = styled.div`
   width: 100%;
   border-bottom: 2px solid ${COLOR_BASE_6};
   @media (min-width: ${BREAKPOINT_PX}) {
-    gap: 40px;
+    gap: 30px;
     /* width: ${CONTENT_WIDTH_DESKTOP}; */
   }
   @media (max-width: ${BREAKPOINT_PX}) {
