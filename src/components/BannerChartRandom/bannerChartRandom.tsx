@@ -10,7 +10,7 @@ import Container from "../Container/container";
 import { TitleBanner } from "components/Title/titleBanner";
 import { BannerText } from "components/BannerText/bannerText";
 
-const BannerChart = (props: any) => {
+const BannerChartRandom = (props: any) => {
   return (
     <Container key={props.id}>
       <BannerChartWrapper>
@@ -19,7 +19,7 @@ const BannerChart = (props: any) => {
             <BarColumnRandom
               key={item.id}
               id={item.id}
-              label={item.label}
+              label={item.title}
               color={item.color}
               backgroundColor={item.backgroundColor}
             />
@@ -27,7 +27,7 @@ const BannerChart = (props: any) => {
         </ChartSection>
         <ChartBottomSpacer />
         <TextSection>
-          <TitleBanner title={props.label} color={props.color} />
+          <TitleBanner title={props.title} color={props.color} />
           <BannerText text={props.text} typing />
         </TextSection>
       </BannerChartWrapper>
@@ -83,4 +83,4 @@ const TextSection = styled.div`
   /* background: green; */
 `;
 
-export default BannerChart;
+export default BannerChartRandom;
