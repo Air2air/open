@@ -32,7 +32,7 @@ export const dataPracticeAreas = [
   {
     id: 4,
     title: "Marketing",
-    text: "Eleven accesses the foremost digital health marketing talent in the world to advance ventures.",
+    text: "Professionals shaping some of the most storied companies in modern healthcare position Eleven’s digital health ventures.",
     color: "#FFFFFF",
     backgroundColor: "#45737e",
     buttonText: "Case Studies",
