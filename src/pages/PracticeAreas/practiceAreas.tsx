@@ -17,6 +17,7 @@ const PracticeAreasPage = () => {
           backgroundColor={props.backgroundColor}
           buttonText={props.buttonText}
           buttonTo={props.buttonTo}
+          buttonColor={props.buttonColor}
         />
       ))}
     </>

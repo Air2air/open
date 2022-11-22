@@ -19,7 +19,6 @@ import { TitleCallout } from "../Title/titleCallout";
 import { ICalloutProps } from "api/interfaces";
 
 export const Callout = (props: ICalloutProps) => {
-
   const textParsed = parse(props.text);
 
   const assignBackgroundColor = (props: ICalloutProps) => {
@@ -52,7 +51,13 @@ export const Callout = (props: ICalloutProps) => {
             <CalloutParagraph>{textParsed}</CalloutParagraph>
           </AnimationOnScroll>
 
-          {props.buttonText ? <Button to={props.buttonTo} text={props.buttonText} /> : ""}
+          {props.buttonText ? (
+            <Button
+              buttonTo={props.buttonTo}
+              buttonText={props.buttonText}
+              buttonColor={props.buttonColor}
+            />
+          ) : null}
         </TextSection>
       </CalloutContainer>
     </>

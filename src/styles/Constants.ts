@@ -28,9 +28,11 @@ export const TEAM_MEMBER_PHOTO_PX = TEAM_MEMBER_PHOTO + "px";
 // BUTTONS
 export const BUTTON_HEIGHT = 40;
 export const BUTTON_HEIGHT_PX = BUTTON_HEIGHT + "px";
-export const BUTTON_COLOR = "hsl(0, 86%, 36%)";
 export const BUTTON_TEXT_COLOR = "hsl(0, 0%, 90%)";
-export const BUTTON_COLOR_HOVER = "hsl(0, 86%, 46%)";
+export const BUTTON_COLOR_RED = "hsl(0, 86%, 36%)";
+export const BUTTON_COLOR_HOVER_RED = "hsl(0, 86%, 46%)";
+export const BUTTON_COLOR_GRAY = "hsl(0, 0%, 15%)";
+export const BUTTON_COLOR_HOVER_GRAY = "hsl(0, 0%, 25%)";
 
 export const BUTTON_HEIGHT_LINKEDIN = 40;
 export const BUTTON_HEIGHT_LINKEDIN_PX = BUTTON_HEIGHT_LINKEDIN + "px";

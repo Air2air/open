@@ -54,7 +54,11 @@ export const CalloutBullet = (props: ICalloutBulletProps) => {
                 offset={60}
               >
                 <CalloutParagraph>{textParsed}</CalloutParagraph>
-                {props.buttonText ? <Button to={props.buttonTo} text={props.buttonText} /> : ""}
+                {props.buttonText ?             <Button
+              buttonTo={props.buttonTo}
+              buttonText={props.buttonText}
+              buttonColor={props.buttonColor}
+            /> : null} 
               </AnimationOnScroll>
             </TextRow>
             <AnimationOnScroll
@@ -82,7 +86,11 @@ export const CalloutBullet = (props: ICalloutBulletProps) => {
                 offset={60}
               >
                 <CalloutParagraph>{textParsed}</CalloutParagraph>
-                {props.buttonText ? <Button to={props.buttonTo} text={props.buttonText} /> : ""}
+                {props.buttonText ?             <Button
+              buttonTo={props.buttonTo}
+              buttonText={props.buttonText}
+              buttonColor={props.buttonColor}
+            /> : null} 
               </AnimationOnScroll>
             </TextRow>
           </InnerSection>

@@ -7,8 +7,9 @@ export interface ICalloutProps {
   side?: string;
   color?: string;
   backgroundColor?: any;
-  buttonText?: any;
-  buttonTo?: any;
+  buttonText?: string;
+  buttonTo?: string;
+  buttonColor?: string;
 }
 
 export interface ICalloutBulletProps {
@@ -20,6 +21,7 @@ export interface ICalloutBulletProps {
   backgroundColor?: any;
   buttonText?: string;
   buttonTo?: string;
+  buttonColor?: any;
 }
 
 export interface IAdvisorsProps {
@@ -33,6 +35,7 @@ export interface IAdvisorsProps {
   photo?: string;
   linkedin?: string;
   backgroundColor?: number;
+  buttonColor?: any;
 }
 
 export interface IGraphProps {
