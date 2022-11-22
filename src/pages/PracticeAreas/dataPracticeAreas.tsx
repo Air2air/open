@@ -43,7 +43,7 @@ export const dataPracticeAreas = [
     id: 5,
     title: "Regulatory",
     color: "#FFFFFF",
-    text: "Eleven uses highly market experienced experts to determine where to focus regulatory support for digital health ventures.",
+    text: "Authorities in FDA regulation and practice provide support for Eleven’s digital health ventures.",
     backgroundColor: "#416283",
     buttonText: "Case Studies",
     buttonTo: "/casestudies",
