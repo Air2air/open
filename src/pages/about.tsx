@@ -19,18 +19,12 @@ const AboutPage = () => {
         title="About Eleven"
         text="If you know healthcare AI, then you already know some Elevens"
         pageVideo={pageVideo}
+        color="#ffffff"
         overlayOpacity={0.2}
         overlayColor={COLOR_BASE}
-        typing={true}
+        typing
       />
-      {/* <Callout
-        id={1}
-        title=""
-        text="<p>Eleven was created when some of the foremost AI and medical minds on the planet came together to accelerate breakthrough ventures in health-tech, med-tech, bio-tech, and pharma-tech. These experts (Elevens) are the leaders in AI technologies and business in medicine, healthcare, bioscience, and pharmaceutical science, and all share a mission to deliver today's most fundamental healthcare <b>AI advancements</b>.</p><p>Our advisors are healthcare and clinical machine learning leaders from top academic medical centers, venture capital, large technology companies, and successful digital health startups.</p>"
-        backgroundColor={1}
-        buttonText=""
-        buttonTo=""
-      /> */}
+
       <Map mapTitle="Elevens Worldwide" backgroundColor={2} />
       <Advisors title="Advisory Board" backgroundColor={3} />
     </>

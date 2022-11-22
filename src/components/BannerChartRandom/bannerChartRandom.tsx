@@ -3,20 +3,21 @@ import {
   BANNER_HEIGHT_DESKTOP_PX,
   BANNER_HEIGHT_MOBILE_PX,
   BREAKPOINT_PX,
-} from "../../../styles/Constants";
+} from "../../styles/Constants";
 import { dataPracticeAreas } from "pages/PracticeAreas/dataPracticeAreas";
-import AnimatedColumn from "./animatedColumn";
-import Container from "../../Container/container";
+import BarColumnRandom from "./barColumnRandom";
+import Container from "../Container/container";
 import { TitleBanner } from "components/Title/titleBanner";
 import { BannerText } from "components/BannerText/bannerText";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
-const BannerAnimation = (props: any) => {
+const BannerChart = (props: any) => {
   return (
     <Container key={props.id}>
-      <BannerAnimationWrapper>
-        <AnimationSection>
+      <BannerChartWrapper>
+        <ChartSection animateIn="animate__fadeInDown" delay={200} offset={60}>
           {dataPracticeAreas.map((item) => (
-            <AnimatedColumn
+            <BarColumnRandom
               key={item.id}
               id={item.id}
               title={item.title}
@@ -24,18 +25,18 @@ const BannerAnimation = (props: any) => {
               backgroundColor={item.backgroundColor}
             />
           ))}
-        </AnimationSection>
+        </ChartSection>
         <SectionSpacer />
         <TextSection>
           <TitleBanner title={props.title} color={props.color} />
           <BannerText text={props.text} typing />
         </TextSection>
-      </BannerAnimationWrapper>
+      </BannerChartWrapper>
     </Container>
   );
 };
 
-const BannerAnimationWrapper = styled.div`
+const BannerChartWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,7 +52,7 @@ const BannerAnimationWrapper = styled.div`
   }
 `;
 
-const AnimationSection = styled.div`
+const ChartSection = styled(AnimationOnScroll)`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -85,4 +86,4 @@ const TextSection = styled.div`
   }
 `;
 
-export default BannerAnimation;
+export default BannerChart;

@@ -16,7 +16,7 @@ import {
 import styled from "styled-components";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import parse from "html-react-parser";
-import { TitleCallout } from "../Title/titleCallout";
+import { TitleCallout } from "components/Title/titleCallout";
 import Button from "../Button/button";
 
 

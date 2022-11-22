@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { BREAKPOINT_PX } from "styles/Constants";
 
-// create a div with a random height that changes randomly between 0 and 100 seconds  (0-100000ms)
-const AnimatedColumn = (props: {
+const BarColumnRandom = (props: {
   id: any;
   title: string;
   color: string;
@@ -130,4 +129,4 @@ const ColumnBackgroundColor = styled.div`
   }
 `;
 
-export default AnimatedColumn;
+export default BarColumnRandom;

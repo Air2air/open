@@ -1,7 +1,7 @@
 import setBodyColor from "./../utils/setBodyColor";
 import { COLOR_BASE } from "./../styles/Constants";
 import BannerVideo from "./../components/BannerVideo/bannerVideo";
-import ContactCallout from "../components/ContactCallout/contactCallOut";
+import ContactCallout from "../components/Button/ContactCallout/contactCallOut";
 
 const pageVideo = 769229370;
 

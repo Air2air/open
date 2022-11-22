@@ -2,7 +2,7 @@ export const dataPracticeAreas = [
   {
     id: 0,
     title: "Clinical",
-    text: "Eleven accesses the foremost clinical talent in the world to accelerate digital health ventures.",
+    text: "The world’s foremost clinical talent guides Eleven’s digital health ventures to the best possible outcomes.",
     color: "#FFFFFF",
     backgroundColor: "#858457",
     buttonText: "Case Studies",
@@ -12,7 +12,7 @@ export const dataPracticeAreas = [
   {
     id: 1,
     title: "AI/ML",
-    text: "Eleven accesses the foremost AI/ML talent in the world to accelerate digital health ventures.",
+    text: "Experts from the preeminent academic and commercial AI/ML programs in the world accelerate Eleven's digital health ventures.",
     color: "#FFFFFF",
     backgroundColor: "#6d825c",
     buttonText: "Case Studies",
@@ -22,7 +22,7 @@ export const dataPracticeAreas = [
   {
     id: 2,
     title: "Product",
-    text: "Eleven includes the foremost product talent in the world to accelerate digital health ventures.",
+    text: "Commercial product specialists from leading commercial enterprises help sculpt Eleven’s digital health ventures.",
     color: "#FFFFFF",
     backgroundColor: "#557f66",
     buttonText: "Case Studies",

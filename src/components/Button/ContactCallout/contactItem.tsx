@@ -5,10 +5,10 @@ import {
   COLOR_RED,
   COLOR_TEXT,
   CONTACT_ITEM_HEIGHT_PX,
-} from "./../../styles/Constants";
+} from "../../../styles/Constants";
 
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import ButtonLinkedIn from "./../Button/buttonLinkedIn";
+import ButtonLinkedIn from "../buttonLinkedIn";
 
 export const ContactItem = (props: {
   key: number;

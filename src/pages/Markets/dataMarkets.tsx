@@ -1,10 +1,11 @@
-export const dataGraph = [
+export const dataMarkets = [
   {
     id: 1,
     label: "Healthtech",
     size: 20,
     value: "$400B",
-    background: "#858457",
+    color:"#ffffff",
+    backgroundColor: "#858457",
     text: "Eleven supports Healthtech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners.",
   },
   {
@@ -12,7 +13,8 @@ export const dataGraph = [
     label: "Medtech",
     size: 30,
     value: "$500B",
-    background: "#6d825c",
+    color:"#ffffff",
+    backgroundColor: "#6d825c",
     text: "Eleven supports Medtech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners.",
   },
   {
@@ -20,7 +22,8 @@ export const dataGraph = [
     label: "Biotech",
     size: 50,
     value: "$700B",
-    background: "#557f66",
+    color:"#ffffff",
+    backgroundColor: "#557f66",
     text: "Eleven supports Biotech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners.",
   },
   {
@@ -28,7 +31,8 @@ export const dataGraph = [
     label: "Pharmatech",
     size: 100,
     value: "$1.2T",
-    background: "#45737e",
+    color:"#ffffff",
+    backgroundColor: "#45737e",
     text: "Eleven supports Pharmatech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners.",
   },
 ];

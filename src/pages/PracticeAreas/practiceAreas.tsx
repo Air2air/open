@@ -1,6 +1,6 @@
 import Callout from "components/Callout/callOut";
 import { dataPracticeAreas } from "./dataPracticeAreas";
-import BannerAnimation from "components/BannerAnimation/BarChart/bannerAnimation";
+import BannerAnimation from "components/BannerChartRandom/bannerChartRandom";
 import { ICalloutProps } from "api/interfaces";
 
 const PracticeAreasPage = () => {
@@ -8,8 +8,9 @@ const PracticeAreasPage = () => {
     <>
       <BannerAnimation
         title="What We Do"
-        text="Eleven knows how to juggle the talent and resources needed for each practice area to optimize the outcome for the whole venture. We call this process fractional CXOs."
+        text="Eleven juggles the talent and resources needed for each practice area to optimize the outcome for the whole venture. We call this process fractional CXOs."
         color="#FFFFFF"
+        backgroundColor={2}
       />
       {dataPracticeAreas.map((props: ICalloutProps) => (
         <Callout
