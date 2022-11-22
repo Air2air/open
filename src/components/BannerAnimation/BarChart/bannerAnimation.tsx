@@ -27,11 +27,8 @@ const BannerAnimation = (props: any) => {
         </AnimationSection>
         <SectionSpacer />
         <TextSection>
-          <TitleBanner title={props.title} />
-          <BannerText
-            bannerText={props.text}
-            typing
-          />
+          <TitleBanner title={props.title} color={props.color} />
+          <BannerText bannerText={props.text} typing />
         </TextSection>
       </BannerAnimationWrapper>
     </Container>

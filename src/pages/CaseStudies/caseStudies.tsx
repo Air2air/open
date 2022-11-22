@@ -10,8 +10,8 @@ const CaseStudiesPage = () => {
   return (
     <>
       <BannerVideo
-        pageTitle="Case Studies workflow"
-        pageDescription="(This page lists the steps in the process.  We can have whatever # of steps of course.  There is placeholder text for now.)"
+        pageTitle="Case Studies"
+        pageDescription="(Summary of the case studies below represent, and whatever other meta data)"
         pageVideo={pageVideo}
         overlayOpacity={0}
         overlayColor={COLOR_BASE}
