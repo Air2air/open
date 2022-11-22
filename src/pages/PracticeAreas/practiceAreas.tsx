@@ -7,7 +7,7 @@ const PracticeAreasPage = () => {
   return (
     <>
       <BannerAnimation
-        title="We know how to juggle."
+        title="What We Do"
         text="Eleven knows how to juggle the talent and resources needed for each practice area to optimize the outcome for the whole venture. We call this process fractional CXOs."
       />
       {dataPracticeAreas.map((props: ICalloutProps) => (
