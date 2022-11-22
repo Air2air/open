@@ -46,8 +46,8 @@ const TypeWriterWrapper = styled.div`
     opacity: ${TEXT_OPACITY};
     text-shadow: 0 0 3px #000;
     @media (min-width: ${BREAKPOINT_PX}) {
-      font-size: 1.7em;
-      line-height: 1.5em;
+      font-size: 1.5em;
+      line-height: 1.4em;
     }
     @media (max-width: ${BREAKPOINT_PX}) {
       font-size: 1.2em;
@@ -56,4 +56,3 @@ const TypeWriterWrapper = styled.div`
     }
   }
 `;
-
