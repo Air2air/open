@@ -53,7 +53,7 @@ export const dataPracticeAreas = [
     id: 6,
     title: "Strategy",
     color: "#FFFFFF",
-    text: "Eleven includes some of the world’s most successful digital health enterprisers in support of venture strategy.",
+    text: "Strategists responsible for inventing new healthcare categories over the two decades fabricate direction for Eleven’s digital health ventures.",
     backgroundColor: "#37486e",
     buttonText: "Case Studies",
     buttonTo: "/casestudies",
