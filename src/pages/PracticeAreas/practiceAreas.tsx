@@ -7,8 +7,8 @@ const PracticeAreasPage = () => {
   return (
     <>
       <BannerAnimation
-        title="What We Do"
-        text="Eleven juggles the talent and resources needed for each practice area to optimize the outcome for the whole venture. We call this process fractional CXOs."
+        label="What We Do"
+        text="Eleven juggles the talent and resources for each practice area to optimize the whole venture's outcome. We call this process fractional CXOs."
         color="#FFFFFF"
         backgroundColor={2}
       />
@@ -16,7 +16,7 @@ const PracticeAreasPage = () => {
         <Callout
           key={props.id}
           id={props.id}
-          title={props.title}
+          label={props.label}
           text={props.text}
           color={props.color}
           backgroundColor={props.backgroundColor}

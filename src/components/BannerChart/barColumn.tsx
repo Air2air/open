@@ -44,15 +44,13 @@ const ColumnOuter = styled.div`
   position: relative;
   display: flex;
   justify-content: center;
-  /* overflow: hidden; */
+  overflow: hidden;
   flex: 1;
   @media (min-width: ${BREAKPOINT_PX}) {
     margin: 0 10px;
   }
   @media (max-width: ${BREAKPOINT_PX}) {
     margin: 0 5px;
-    /* align-items: flex-start; */
-    /* padding-top: 30px; */
   }
   /* background: blue; */
 `;
@@ -77,8 +75,6 @@ const ColumnSeries = styled(AnimationOnScroll)`
 `;
 
 const Label = styled(AnimationOnScroll)`
-  /* position: absolute; */
-  /* bottom:0; */
   min-width: 100px;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 500;

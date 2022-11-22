@@ -1,7 +1,7 @@
 export const dataPracticeAreas = [
   {
     id: 0,
-    title: "Clinical",
+    label: "Clinical",
     text: "The world’s foremost clinical talent guides Eleven’s digital health ventures to the best possible outcomes.",
     color: "#FFFFFF",
     backgroundColor: "#858457",
@@ -11,7 +11,7 @@ export const dataPracticeAreas = [
   },
   {
     id: 1,
-    title: "AI/ML",
+    label: "AI/ML",
     text: "Experts from the preeminent academic and commercial AI/ML programs in the world accelerate Eleven's digital health ventures.",
     color: "#FFFFFF",
     backgroundColor: "#6d825c",
@@ -21,7 +21,7 @@ export const dataPracticeAreas = [
   },
   {
     id: 2,
-    title: "Product",
+    label: "Product",
     text: "Commercial product specialists from leading commercial enterprises help sculpt Eleven’s digital health ventures.",
     color: "#FFFFFF",
     backgroundColor: "#557f66",
@@ -31,7 +31,7 @@ export const dataPracticeAreas = [
   },
   {
     id: 4,
-    title: "Marketing",
+    label: "Marketing",
     text: "Eleven accesses the foremost digital health marketing talent in the world to advance ventures.",
     color: "#FFFFFF",
     backgroundColor: "#45737e",
@@ -41,7 +41,7 @@ export const dataPracticeAreas = [
   },
   {
     id: 5,
-    title: "Regulatory",
+    label: "Regulatory",
     color: "#FFFFFF",
     text: "Eleven uses highly market experienced experts to determine where to focus regulatory support for digital health ventures.",
     backgroundColor: "#416283",
@@ -51,7 +51,7 @@ export const dataPracticeAreas = [
   },
   {
     id: 6,
-    title: "Strategy",
+    label: "Strategy",
     color: "#FFFFFF",
     text: "Eleven includes some of the world’s most successful digital health enterprisers in support of venture strategy.",
     backgroundColor: "#37486e",

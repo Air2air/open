@@ -3,6 +3,7 @@ export interface ICalloutProps {
   data?: any;
   order?: number;
   title?: any;
+  label?: any;
   text?: any;
   side?: string;
   color?: string;
