@@ -8,46 +8,34 @@ import {
 } from "./../../styles/Constants";
 import { dataGraph } from "./dataGraph";
 import SeriesColumn from "./seriesColumn";
-import { IGraphProps } from "./../../api/interfaces";
+import { IGraphProps } from "api/interfaces";
 import { TitleCallout } from "./../Title/titleCallout";
 import Container from "./../Container/container";
 
 export const Graph = (props: IGraphProps) => {
   return (
     <>
-    <Container>
-          <TitleCallout title="Mid Decade Market Projections" />
-      <GraphSeriesWrapper style={{ height: props.size }}>
-        {dataGraph.map((item, index) => (
-          <SeriesColumn
-            id={item.id}
-            label={item.label}
-            value={item.value}
-            size={item.size}
-            outerHeight={props.size}
-          />
-        ))}
-        <GraphLegend>
-          <div>$1.2T</div>
-          <div>$800B</div>
-          <div>$400B</div>
-          <div style={{ height: 10 }}>&nbsp;</div>
-        </GraphLegend>
-      </GraphSeriesWrapper>
-      {/* <GraphContent>
-        {isHovering1
-          ? "Eleven supports Healthtech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners."
-          : null}
-        {isHovering2
-          ? "Eleven supports Medtech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners."
-          : null}
-        {isHovering3
-          ? "Eleven supports Biotech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners."
-          : null}
-        {isHovering4
-          ? "Eleven supports Pharmatech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners."
-          : null}{" "}
-      </GraphContent> */}
+      <Container>
+        <TitleCallout title="Mid Decade Market Projections" />
+        <GraphSeriesWrapper style={{ height: props.size }}>
+          {dataGraph.map((item) => (
+            <SeriesColumn
+              id={item.id}
+              label={item.label}
+              value={item.value}
+              size={item.size}
+              background={item.background}
+              outerHeight={props.size}
+            />
+          ))}
+          <GraphLegend>
+            <div>$1.2T</div>
+            <div>$800B</div>
+            <div>$400B</div>
+            <div style={{ height: 10 }}>&nbsp;</div>
+          </GraphLegend>
+        </GraphSeriesWrapper>
+
       </Container>
     </>
   );

@@ -3,11 +3,12 @@ export interface ICalloutProps {
   data?: any;
   order?: number;
   title?: any;
-  text: string;
+  text?: any;
   side?: string;
-  backgroundColor: number;
-  buttonText?: string;
-  buttonTo?: string;
+  color?: string;
+  backgroundColor?: any;
+  buttonText?: any;
+  buttonTo?: any;
 }
 
 export interface ICalloutBulletProps {
@@ -15,6 +16,7 @@ export interface ICalloutBulletProps {
   title?: any;
   text: string;
   side?: string;
+  color?: string;
   backgroundColor?: any;
   buttonText?: string;
   buttonTo?: string;
@@ -36,7 +38,7 @@ export interface IAdvisorsProps {
 export interface IGraphProps {
   title?: string;
   size?: number;
-  backgroundColor: number;
+  backgroundColor?: any;
   buttonText: string;
   buttonTo: string;
 }
@@ -46,17 +48,29 @@ export interface IGraphColumnProps {
   label?: string;
   value?: string;
   size?: number;
+  background?: string;
   outerHeight?: number;
 }
 
 export interface ITimeLineProps {
-  id?: number;
+  id?: any;
   data?: any;
   order?: number;
   title?: string;
-  text: string;
+  text?: any;
   side?: string;
+  color?: any;
   backgroundColor?: number;
+  buttonText?: string;
+  buttonTo?: string;
+}
+
+export interface IPracticeAreasProps {
+  key: number;
+  id: number;
+  title: string;
+  text: string;
+  backgroundColor: string;
   buttonText?: string;
   buttonTo?: string;
 }

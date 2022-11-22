@@ -2,7 +2,7 @@ export const dataProcess = [
   {
     id: 1,
     title: "Assessment",
-    text: "Elevens establishes a framework to measure the success of your AI project, program or venture. Conduct short-term gap audit. – Deliver an AI maturity assessment and roadmap to scale AI. Pain points, problems and inefficiencies are understood so that we can determine success.  Our process of continuous communication and measurement throughout the project keeps stakeholders updated on the project status and any changes that might be required to the budget or schedule.",
+    text: "Elevens establishes a framework to measure the success of your AI project, program or venture. Conduct short-term gap audit. – Deliver an AI maturity assessment and roadmap to scale AI. Pain points, problems and inefficiencies are understood so that we can determine success.  Our process of continuous communication and measurement throughout the project keeps stakeholders updated on the project status and any changes that might be required to the budget or schedule.    ",
     backgroundColor: 1,
   },
   {

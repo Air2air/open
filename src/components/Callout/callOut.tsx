@@ -6,7 +6,6 @@ import {
   COLOR_BASE_3,
   COLOR_BASE_4,
   COLOR_BASE_5,
-  COLOR_BASE_6,
   COLOR_TEXT,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
@@ -17,23 +16,13 @@ import Button from "../Button/button";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import parse from "html-react-parser";
 import { TitleCallout } from "../Title/titleCallout";
+import { ICalloutProps } from "api/interfaces";
 
-interface CalloutProps {
-  id?: number;
-  title: string;
-  text: string;
-  calloutVideo?: string;
-  backgroundColor: any;
-  buttonText: string;
-  buttonTo: string;
-}
+export const Callout = (props: ICalloutProps) => {
 
-export const Callout = (props: CalloutProps) => {
-
-  // const titleParsed = parse(props.title);
   const textParsed = parse(props.text);
 
-  const assignBackgroundColor = (props: CalloutProps) => {
+  const assignBackgroundColor = (props: ICalloutProps) => {
     if (props.backgroundColor === 1) {
       return COLOR_BASE_1;
     } else if (props.backgroundColor === 2) {
@@ -45,7 +34,7 @@ export const Callout = (props: CalloutProps) => {
     } else if (props.backgroundColor === 5) {
       return COLOR_BASE_5;
     } else {
-      return COLOR_BASE_6;
+      return props.backgroundColor;
     }
   };
 
@@ -53,7 +42,7 @@ export const Callout = (props: CalloutProps) => {
     <>
       <CalloutContainer style={{ background: assignBackgroundColor(props) }}>
         <TextSection>
-          <TitleCallout title={props.title} />
+          <TitleCallout title={props.title} color={props.color} />
 
           <AnimationOnScroll
             animateIn="animate__fadeIn"

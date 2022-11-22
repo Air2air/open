@@ -44,6 +44,7 @@ const TypeWriterWrapper = styled.div`
     height: auto;
     text-align: left;
     opacity: ${TEXT_OPACITY};
+    text-shadow: 0 0 3px #000;
     @media (min-width: ${BREAKPOINT_PX}) {
       font-size: 1.7em;
       line-height: 1.5em;

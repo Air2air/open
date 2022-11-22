@@ -3,10 +3,10 @@ import {
   BANNER_HEIGHT_DESKTOP_PX,
   BANNER_HEIGHT_MOBILE_PX,
   BREAKPOINT_PX,
-} from "../../styles/Constants";
-import { dataAnimation } from "./dataAnimation";
+} from "../../../styles/Constants";
+import { dataPracticeAreas } from "pages/PracticeAreas/dataPracticeAreas";
 import AnimatedColumn from "./animatedColumn";
-import Container from "../Container/container";
+import Container from "../../Container/container";
 import { TitleBanner } from "components/Title/titleBanner";
 import { BannerText } from "components/BannerText/bannerText";
 
@@ -15,13 +15,13 @@ const BannerAnimation = (props: any) => {
     <Container key={props.id}>
       <BannerAnimationWrapper>
         <AnimationSection>
-          {dataAnimation.map((item) => (
+          {dataPracticeAreas.map((item) => (
             <AnimatedColumn
               key={item.id}
               id={item.id}
-              label={item.label}
+              title={item.title}
               color={item.color}
-              bgColor={item.bgColor}
+              backgroundColor={item.backgroundColor}
             />
           ))}
         </AnimationSection>

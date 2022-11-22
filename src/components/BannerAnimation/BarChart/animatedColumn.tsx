@@ -5,9 +5,9 @@ import { BREAKPOINT_PX } from "styles/Constants";
 // create a div with a random height that changes randomly between 0 and 100 seconds  (0-100000ms)
 const AnimatedColumn = (props: {
   id: any;
-  label: string;
+  title: string;
   color: string;
-  bgColor: string;
+  backgroundColor: string;
 }) => {
   const [height, setHeight] = useState(50);
 
@@ -36,7 +36,7 @@ const AnimatedColumn = (props: {
         <ColumnBackgroundColor
           id={props.id}
           style={{
-            backgroundColor: props.bgColor,
+            backgroundColor: props.backgroundColor,
             height: height + "%",
           }}
         />
@@ -51,7 +51,7 @@ const AnimatedColumn = (props: {
               color: props.color,
             }}
           >
-            {props.label}
+            {props.title}
           </Label>
         </ColumnLabelHolder>
       </ColumnWrapper>
@@ -72,7 +72,7 @@ const ColumnWrapper = styled.div`
   }
   @media (max-width: ${BREAKPOINT_PX}) {
     padding: 0;
-    min-width: 34px;
+    min-width: 44px;
   }
 `;
 
@@ -104,7 +104,7 @@ const Label = styled.div`
   transition: all 200ms;
   @media (min-width: ${BREAKPOINT_PX}) {
     font-size: 1rem;
-    padding-top:10px;
+    padding-top: 10px;
   }
   @media (max-width: ${BREAKPOINT_PX}) {
     font-size: 0.94rem;
@@ -117,13 +117,11 @@ const Label = styled.div`
 
 const ColumnBackgroundColor = styled.div`
   position: absolute;
-  opacity: 0.4;
   width: 100%;
   border-radius: 2px;
   transition: all 200ms;
   @media (min-width: ${BREAKPOINT_PX}) {
     bottom: 0;
-
     min-height: 30%;
   }
   @media (max-width: ${BREAKPOINT_PX}) {

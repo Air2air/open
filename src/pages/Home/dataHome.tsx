@@ -1,4 +1,4 @@
-export const dataWhatWeDo = [
+export const dataHome = [
   {
     id: 1,
     order: 1,
@@ -27,6 +27,6 @@ export const dataWhatWeDo = [
     side: "right",
     backgroundColor: 3,
     buttonText: "venture Stages",
-    buttonTo: "/ventureStage",
+    buttonTo: "/venturestage",
   },
 ];

@@ -2,18 +2,17 @@ import AboutPage from "./../pages/about";
 import BioTechPage from "./../pages/biotech";
 import ContactPage from "./../pages/contact";
 import HealthTechPage from "./../pages/healthtech";
-import HomePage from "./../pages/home";
-import MarketsPage from "./../pages/markets";
+import HomePage from "../pages/Home/home";
+import MarketsPage from "../pages/Markets/markets";
 import MedTechPage from "./../pages/medtech";
 import PharmaTechPage from "./../pages/pharmatech";
 import ProcessPage from "./../pages/Process/process";
 import ServicePage from "./../pages/Service/service";
 import EngagementPage from "./../pages/Engagement/engagement";
-import VentureStagePage from "./../pages/VentureStage/ventureStage";
 import VisionPage from "./../pages/vision";
-import WhatWeDoPage from "../pages/WhatWeDo/what_we_do";
-import WhatWeDoNewPage from "../pages/WhatWeDo/new";
+import PracticeAreasPage from "../pages/PracticeAreas/practiceAreas";
 import CaseStudiesPage from "pages/CaseStudies/caseStudies";
+
 
 export const dataRoutes = [
   {
@@ -59,6 +58,12 @@ export const dataRoutes = [
     element: <MarketsPage />,
   },
   {
+    id: "PracticeAreas",
+    path: "practice_areas",
+    section: "PracticeAreas",
+    element: <PracticeAreasPage />,
+  },
+  {
     id: "Process",
     path: "process",
     section: "Process",
@@ -70,12 +75,7 @@ export const dataRoutes = [
     section: "Service",
     element: <ServicePage />,
   },
-  {
-    id: "VentureStage",
-    path: "venturestage",
-    section: "VentureStage",
-    element: <VentureStagePage />,
-  },
+
   {
     id: "Vision",
     path: "vision",
@@ -106,16 +106,5 @@ export const dataRoutes = [
     section: "Pharmatech",
     element: <PharmaTechPage />,
   },
-  {
-    id: "WhatWeDo",
-    path: "what_we_do",
-    section: "WhatWeDo",
-    element: <WhatWeDoPage />,
-  },
-  {
-    id: "WhatWeDoNew",
-    path: "new",
-    section: "WhatWeDoNew",
-    element: <WhatWeDoNewPage />,
-  },
+
 ];

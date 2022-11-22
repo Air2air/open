@@ -59,6 +59,7 @@ const TimeLineLeft = (props: { data: any[]; }) => {
         id={props.id}
         title={props.title}
         text={props.text}
+        color={props.color}
       />
     ));
   return <>{timeLineMap}</>;
@@ -73,6 +74,7 @@ const TimeLineRight = (props: { data: any[]; }) => {
         id={props.id}
         title={props.title}
         text={props.text}
+        color={props.color}
       />
     ));
   return <>{timeLineMap}</>;
@@ -86,6 +88,7 @@ const TimeLineCombined = (props: { data: any[]; }) => {
         id={props.id}
         title={props.title}
         text={props.text}
+        color={props.color}
         backgroundColor={props.backgroundColor}
       />
     ));

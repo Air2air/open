@@ -47,7 +47,7 @@ export const CalloutBullet = (props: ICalloutBulletProps) => {
         {props.id % 2 === 0 ? (
           <InnerSection>
             <TextRow>
-              <TitleCallout title={props.title} />
+            <TitleCallout title={props.title} color={props.color} />
               <AnimationOnScroll
                 animateIn="animate__fadeIn"
                 delay={100}

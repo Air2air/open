@@ -5,26 +5,18 @@ import {
   BREAKPOINT_PX,
   COLOR_BASE_1,
   COLOR_BASE_3,
-  COLOR_BASE_4,
-  COLOR_BASE_6,
   COLOR_TEXT,
   COLOR_RED,
+  COLOR_BASE_4,
+  COLOR_BASE_5,
 } from "./../../styles/Constants";
-
-import { IGraphColumnProps } from "./../../api/interfaces";
+import { IGraphColumnProps } from "api/interfaces";
 
 const SeriesColumn = (props: IGraphColumnProps) => {
-  // const [isHovering, setIsHovering] = useState(false);
-
-  const colHeight = props.size + '%';
-
+  const colHeight = props.size + "%";
   return (
     <>
-      <Column
-        // onMouseEnter={() => setIsHovering(true)}
-        // onMouseLeave={() => setIsHovering(false)}
-        style={{ height: props.outerHeight }}
-      >
+      <Column style={{ height: props.outerHeight }}>
         <SeriesLabel>{props.label}</SeriesLabel>
         <SeriesBar
           className="bar"
@@ -55,11 +47,11 @@ const Column = styled.div`
   &:hover {
     background: ${COLOR_BASE_3};
     .bar {
-      background: ${COLOR_BASE_6};
+      background: ${COLOR_BASE_4};
     }
   }
   .bar {
-    background: ${COLOR_BASE_4};
+    background: ${COLOR_BASE_5};
   }
 `;
 

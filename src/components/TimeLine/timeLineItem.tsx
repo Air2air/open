@@ -3,13 +3,14 @@ import {
   BREAKPOINT_PX,
   COLOR_BASE_3,
   COLOR_BASE_LIGHT,
+  COLOR_RED,
   COLOR_TEXT,
 } from "./../../styles/Constants";
 import parse from "html-react-parser";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import { ICalloutProps } from "./../../api/interfaces";
+import { ITimeLineProps } from "./../../api/interfaces";
 
-export const TimeLineItemCombined = (props: ICalloutProps) => {
+export const TimeLineItemCombined = (props: ITimeLineProps) => {
   return (
     <AnimationOnScroll
       key={props.id}
@@ -25,20 +26,20 @@ export const TimeLineItemCombined = (props: ICalloutProps) => {
   );
 };
 
-export const TimeLineItemLeft = ({ id, title, text }) => {
-  const textParsed = parse(text);
+export const TimeLineItemLeft = (props: ITimeLineProps) => {
+  const textParsed = parse(props.text);
   // const side  = ''
 
   return (
-    <AnimationOnScroll key={id} animateIn="animate__fadeInLeft" delay={0}>
+    <AnimationOnScroll key={props.id} animateIn="animate__fadeInLeft" delay={0}>
       <TimeLineItemWrapper>
         <TimeLineContent>
-          <h3>{title}</h3>
+          <TimeLineTitle>{props.title}</TimeLineTitle>
           <TimeLineItemDesc>{textParsed}</TimeLineItemDesc>
         </TimeLineContent>
         <TimeLineItemLineBox>
           <div
-            id={id}
+            id={props.id}
             className="line animate__animated animate__slideInLeft animate__delay-1s"
           ></div>
         </TimeLineItemLineBox>
@@ -47,21 +48,25 @@ export const TimeLineItemLeft = ({ id, title, text }) => {
   );
 };
 
-export const TimeLineItemRight = ({ id, title, text }) => {
-  const textParsed = parse(text);
+export const TimeLineItemRight = (props: ITimeLineProps) => {
+  const textParsed = parse(props.text);
   // const side  = ''
 
   return (
-    <AnimationOnScroll key={id} animateIn="animate__fadeInRight" delay={0}>
+    <AnimationOnScroll
+      key={props.id}
+      animateIn="animate__fadeInRight"
+      delay={0}
+    >
       <TimeLineItemWrapper>
         <TimeLineItemLineBox>
           <div
-            id={id}
+            id={props.id}
             className="line animate__animated animate__slideInRight animate__delay-1s"
           ></div>
         </TimeLineItemLineBox>
         <TimeLineContent>
-          <h3>{title}</h3>
+          <TimeLineTitle>{props.title}</TimeLineTitle>
           <TimeLineItemDesc>{textParsed}</TimeLineItemDesc>
         </TimeLineContent>
       </TimeLineItemWrapper>
@@ -75,6 +80,19 @@ const TimeLineItemWrapper = styled.div`
   height: auto;
   margin-top: 14px;
   margin-bottom: 14px;
+`;
+
+const TimeLineTitle = styled.h2`
+  text-transform: uppercase;
+  font-weight: 500;
+  color: ${(props) =>
+    props.color === "" || !props.color ? COLOR_RED : props.color};
+  @media (min-width: ${BREAKPOINT_PX}) {
+    font-size: 1.3em;
+  }
+  @media (max-width: ${BREAKPOINT_PX}) {
+    font-size: 1.7em;
+  }
 `;
 
 const TimeLineContent = styled.div`

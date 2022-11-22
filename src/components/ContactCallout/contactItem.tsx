@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import {
+  BREAKPOINT_PX,
   COLOR_BASE_2,
+  COLOR_RED,
   COLOR_TEXT,
   CONTACT_ITEM_HEIGHT_PX,
 } from "./../../styles/Constants";
@@ -21,7 +23,7 @@ export const ContactItem = (props: {
     <AnimationOnScroll key={props.id} animateIn="animate__fadeIn" delay={0}>
       <ContactItemWrapper>
         <ContactContent>
-          <h3>{props.shortName}</h3>
+          <ContactTitle>{props.shortName}</ContactTitle>
           <ContactItemDesc>{props.address}</ContactItemDesc>
           <br />
           <ButtonLinkedIn
@@ -80,6 +82,19 @@ const ImageWrapper = styled.div`
   background-size: cover;
   background-position: center;
   transition: all 500ms;
+`;
+
+const ContactTitle = styled.h2`
+  text-transform: uppercase;
+  font-weight: 500;
+  color: ${(props) =>
+    props.color === "" || !props.color ? COLOR_RED : props.color};
+  @media (min-width: ${BREAKPOINT_PX}) {
+    font-size: 1.5em;
+  }
+  @media (max-width: ${BREAKPOINT_PX}) {
+    font-size: 1.3em;
+  }
 `;
 
 const ContactItemDesc = styled.div`

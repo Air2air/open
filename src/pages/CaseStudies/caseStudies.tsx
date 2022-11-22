@@ -1,7 +1,8 @@
-import BannerVideo from "../../components/BannerVideo/bannerVideo";
-import { COLOR_BASE } from "../../styles/Constants";
-import CalloutBullet from "../../components/Callout/callOutBullet";
+import BannerVideo from "components/BannerVideo/bannerVideo";
+import { COLOR_BASE } from "styles/Constants";
+import CalloutBullet from "components/Callout/callOutBullet";
 import { dataCaseStudies } from "./dataCaseStudies";
+import { ICalloutBulletProps } from "api/interfaces";
 
 const pageVideo = 766650761;
 
@@ -16,7 +17,7 @@ const CaseStudiesPage = () => {
         overlayColor={COLOR_BASE}
         typing={true}
       />
-      {dataCaseStudies.map((props) => (
+      {dataCaseStudies.map((props:ICalloutBulletProps) => (
         <CalloutBullet
           id={props.id}
           title={props.title}

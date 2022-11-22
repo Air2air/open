@@ -1,7 +1,10 @@
-import setBodyColor from "./../utils/setBodyColor";
-import BannerVideo from "./../components/BannerVideo/bannerVideo";
-import { COLOR_BASE } from "./../styles/Constants";
-import Graph from "./../components/Graph/graph";
+import setBodyColor from "../../utils/setBodyColor";
+import BannerVideo from "../../components/BannerVideo/bannerVideo";
+import { COLOR_BASE } from "../../styles/Constants";
+import Graph from "../../components/Graph/graph";
+import TimeLine from "components/TimeLine/timeLine";
+import { TitleCentered } from "components/Title/titleCentered";
+import { dataVentureStage } from "./dataVentureStage";
 
 const pageVideo = 769143399;
 
@@ -24,6 +27,8 @@ const MarketsPage = () => {
         buttonText="Vision"
         buttonTo="/vision"
       />
+      <TitleCentered title="Health AI Venture stages" />
+      <TimeLine data={dataVentureStage} title="" text="" backgroundColor={1} />
     </>
   );
 };

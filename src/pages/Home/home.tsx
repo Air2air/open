@@ -1,21 +1,40 @@
+import setBodyColor from "../../utils/setBodyColor";
 import Callout from "../../components/Callout/callOut";
 import BannerVideo from "../../components/BannerVideo/bannerVideo";
-import { COLOR_BASE} from "../../styles/Constants";
+import { COLOR_BASE } from "../../styles/Constants";
+import OrgsCallout from "../../components/OrgsCallout/orgsCallOut";
+import { dataHome } from "./dataHome";
 
+const pageVideo = 765122469;
 
-const pageVideo = 766731362;
-
-const WhatWeDoPage = () => {
-
+const HomePage = () => {
+  setBodyColor({ color: COLOR_BASE });
   return (
     <>
       <BannerVideo
-        pageTitle="What we do for you"
-        pageDescription="Eleven leverages a large multi-disciplinary advisory of industry-leading specialists to deliver across your healthcare AI needs"
+        pageTitle="Drive Health AI portfolio success"
+        pageDescription="Derisk your health AI investments with over 100 years of combined expertise"
         pageVideo={pageVideo}
-        overlayOpacity={0.3}
+        overlayOpacity={0}
         overlayColor={COLOR_BASE}
         typing={true}
+      />
+
+      <Callout
+        id={1}
+        title="We know what you need."
+        text="The most <b>experienced</b> healthcare and clinical machine learning and business leaders from leading academic medical centers, venture capital, large technology companies, and successful digital health startups."
+        backgroundColor={1}
+        buttonText="What we do"
+        buttonTo="/practice_areas"
+      />
+      <Callout
+        id={2}
+        title="Pre-seed studio / hospital spin out company with early novel AI model and technical lead"
+        text="Elevens provided a fractional CXAIO that led product management discovery and MVP design, transitioning to full time PM hire, and alidated business model with payors and..."
+        backgroundColor={2}
+        buttonText="Case Studies"
+        buttonTo="/casestudies"
       />
       <Callout
         title="Product/Market fit"
@@ -44,8 +63,21 @@ const WhatWeDoPage = () => {
         buttonText="Markets"
         buttonTo="/markets"
       />
+      {dataHome.map((props) => (
+        <Callout
+          key={props.id}
+          id={props.id}
+          title={props.title}
+          text={props.text}
+          backgroundColor={props.backgroundColor}
+          buttonText={props.buttonText}
+          buttonTo={props.buttonTo}
+        />
+      ))}
+
+      <OrgsCallout />
     </>
   );
 };
 
-export default WhatWeDoPage;
+export default HomePage;
