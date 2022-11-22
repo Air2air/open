@@ -11,7 +11,7 @@ const MarketsPage = () => {
         data={dataMarkets}
         color="#ffffff"
         title="Mid Decade Market Projections"
-        text="Eleven accelerates breakthrough ventures in Biotech, Healthtech, Medtech, and Pharmatech."
+        text="Eleven accelerates breakthrough ventures in Biotech, Healthtech, Medtech and Pharmatech."
         typing={true}
       />
       <TitleCentered title="Health AI Venture stages" />

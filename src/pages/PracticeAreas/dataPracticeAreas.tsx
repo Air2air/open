@@ -12,7 +12,7 @@ export const dataPracticeAreas = [
   {
     id: 1,
     label: "AI/ML",
-    text: "Experts from the preeminent academic and commercial AI/ML programs in the world accelerate Eleven's digital health ventures.",
+    text: "Experts from the preeminent academic and commercial AI/ML programs accelerate Eleven's digital health ventures.",
     color: "#FFFFFF",
     backgroundColor: "#6d825c",
     buttonText: "Case Studies",
