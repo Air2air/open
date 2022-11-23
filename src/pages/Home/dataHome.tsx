@@ -26,6 +26,4 @@ export const dataHome = [
     buttonText: "Process",
     buttonTo: "/process",
   },
-
-
 ];

@@ -11,7 +11,7 @@ const CaseStudiesPage = () => {
     <>
       <BannerVideo
         title="Case Studies"
-        text="(What the case studies below represent, and other meta data)"
+        text="Examples from Elevens' 100-plus years of experience"
         pageVideo={pageVideo}
         color="#ffffff"
         overlayOpacity={0}
