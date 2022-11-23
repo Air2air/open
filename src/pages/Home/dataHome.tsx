@@ -6,7 +6,7 @@ export const dataHome = [
     side: "left",
     backgroundColor: 1,
     buttonText: "What We Do",
-    buttonTo: "/practiceareas",
+    buttonTo: "/practice_areas",
   },
 
 ];
