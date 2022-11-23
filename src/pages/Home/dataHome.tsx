@@ -27,14 +27,5 @@ export const dataHome = [
     buttonTo: "/process",
   },
 
-  {
-    id: 4,
-    title: "Fitting in to your venture's stage",
-    text: "(Show where our services fit in to your venture timeline)",
-    side: "right",
-    backgroundColor: 4,
-    buttonText: "venture Stages",
-    buttonTo: "/venturestage",
-  },
 
 ];
