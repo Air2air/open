@@ -26,7 +26,6 @@ export const dataMarkets = [
     backgroundColor: "#78633e",
     text: "Eleven supports Biotech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners.",
   },
-
   {
     id: 4,
     label: "Pharmatech",
