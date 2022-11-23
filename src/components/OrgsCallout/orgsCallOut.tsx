@@ -64,13 +64,14 @@ const OrgMapImageRow = styled.div`
   display: grid;
   grid-gap: 0px;
   opacity: 0.5;
-  /* background: red; */
+
   @media (min-width: ${BREAKPOINT_PX}) {
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto ;
   }
   @media (max-width: ${BREAKPOINT_PX}) {
     grid-template-columns: auto auto;
   }
+    /* background: red; */
 `;
 
 const OrgMapImageWrapper = styled.div`
