@@ -1,9 +1,8 @@
 export const dataHome = [
   {
     id: 1,
-    order: 1,
-    title: "Engaging with Eleven",
-    text: "<b>(How we work with your startup or portfolio companies)</b>",
+    title: "We know what you need",
+    text: "The most experienced healthcare and clinical machine learning and business leaders from leading academic medical centers, venture capital, large technology companies, and successful digital health startups.",
     side: "left",
     backgroundColor: 1,
     buttonText: "Engagement",
@@ -11,22 +10,31 @@ export const dataHome = [
   },
   {
     id: 2,
-    order: 2,
-    title: "Our process",
-    text: "(Describe our process workflow and milestones, deliverables and success measurement)",
-    side: "right",
+    title: "Engaging with Eleven",
+    text: "(How we work with your startup or portfolio companies)",
+    side: "left",
     backgroundColor: 2,
-    buttonText: "Process",
-    buttonTo: "/process",
+    buttonText: "Engagement",
+    buttonTo: "/engagement",
   },
   {
     id: 3,
-    order: 3,
+    title: "Our process",
+    text: "(Describe our process workflow and milestones, deliverables and success measurement)",
+    side: "right",
+    backgroundColor: 3,
+    buttonText: "Process",
+    buttonTo: "/process",
+  },
+
+  {
+    id: 4,
     title: "Fitting in to your venture's stage",
     text: "(Show where our services fit in to your venture timeline)",
     side: "right",
-    backgroundColor: 3,
+    backgroundColor: 4,
     buttonText: "venture Stages",
     buttonTo: "/venturestage",
   },
+
 ];
