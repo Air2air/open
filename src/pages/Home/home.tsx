@@ -19,8 +19,6 @@ const HomePage = () => {
         overlayColor={COLOR_BASE}
         typing={true}
       />
-
-      
       {dataHome.map((props) => (
         <Callout
           key={props.id}

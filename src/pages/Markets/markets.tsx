@@ -2,6 +2,7 @@ import TimeLine from "components/TimeLine/timeLine";
 import { dataVentureStage } from "./dataVentureStage";
 import BannerChart from "components/BannerChart/bannerChart";
 import { dataMarkets } from "./dataMarkets";
+import { TitleCentered } from "components/Title/titleCentered";
 
 const MarketsPage = () => {
   return (
@@ -10,9 +11,10 @@ const MarketsPage = () => {
         data={dataMarkets}
         color="#ffffff"
         title="Mid Decade Market Projections"
-        text="Eleven accelerates breakthrough ventures in Biotech, Healthtech, Medtech and Pharmatech through all your AI venture's stages:"
+        text="Eleven accelerates breakthrough ventures in Biotech, Healthtech, Medtech and Pharmatech:"
         typing={true}
       />
+      <TitleCentered title="AI Venture Stages" />
       <TimeLine data={dataVentureStage} backgroundColor={3} />
     </>
   );

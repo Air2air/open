@@ -52,6 +52,10 @@ export const BREAKPOINT_PX = BREAKPOINT + "px";
 export const BREAKPOINT_MID = 900;
 export const BREAKPOINT_MID_PX = BREAKPOINT_MID + "px";
 
+// ANIMATION_OFFSETE
+export const ANIMATION_OFFSET_DESKTOP = 100;
+export const ANIMATION_OFFSET_MOBILE = 100;
+
 // Text 
 export const TEXT_TITLE_DESKTOP = "2.6em"
 export const TEXT_TITLE_MOBILE = "1.2em"
