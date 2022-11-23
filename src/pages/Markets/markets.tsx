@@ -1,5 +1,4 @@
 import TimeLine from "components/TimeLine/timeLine";
-import { TitleCentered } from "components/Title/titleCentered";
 import { dataVentureStage } from "./dataVentureStage";
 import BannerChart from "components/BannerChart/bannerChart";
 import { dataMarkets } from "./dataMarkets";
@@ -14,8 +13,7 @@ const MarketsPage = () => {
         text="Eleven accelerates breakthrough ventures in Biotech, Healthtech, Medtech and Pharmatech through all your AI venture's stages:"
         typing={true}
       />
-      {/* <TitleCentered title="Health AI Venture stages" /> */}
-      <TimeLine data={dataVentureStage} title="" text="" backgroundColor={2} />
+      <TimeLine data={dataVentureStage} backgroundColor={3} />
     </>
   );
 };
