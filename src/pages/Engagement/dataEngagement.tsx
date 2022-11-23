@@ -14,14 +14,14 @@ export const dataEngagement = [
   {
     id: 3,
     title:
-      "uses info to work with VC firm and board to provide fractional CXO 'units' into 5 categories (technical, clinical, product,/market regulatory/legal, strategy/business dev) ",
+      "uses info to work with VC firm and board to provide fractional CXAIO 'units' into 5 categories (technical, clinical, product,/market regulatory/legal, strategy/business dev) ",
     text: "Establish common ways of working across data scientists via a common AI framework - Develop a scalability framework based on existing environment.  From the assessment, specific requirements are crystalized so that a scope and schedule can proceed.  Example use cases can help clarify the expected outcomes and requirements for the project.",
     backgroundColor: 2,
   },
   {
     id: 4,
     title:
-      "use a milestone based process with board review every 3 months to adjust fractional CXO 'units' distribution from #2 min engagement commitment 9 months",
+      "use a milestone based process with board review every 3 months to adjust fractional CXAIO 'units' distribution from #2 min engagement commitment 9 months",
     text: "Co-deliver initial projects; pilot best 3-5. Set up a deployment architecture and AI and ML ops processes. Drive adoption of AI operating models. ",
     backgroundColor: 3,
   },

@@ -8,7 +8,7 @@ const PracticeAreasPage = () => {
     <>
       <BannerChartRandom
         title="What We Do"
-        text="Eleven juggles the talent and resources for each practice area to optimize the whole venture's outcome. We call this process fractional CXOs."
+        text="Eleven juggles the talent and resources for each practice area to optimize the whole venture's outcome. We call this process ''fractional CXAIOs''."
         color="#FFFFFF"
         backgroundColor={2}
       />
