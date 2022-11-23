@@ -1,6 +1,8 @@
 import {
   BANNER_HEIGHT_DESKTOP_PX,
   BANNER_HEIGHT_MOBILE_PX,
+  BANNER_PADDING_TOP_DESKTOP,
+  BANNER_PADDING_TOP_MOBILE,
   BREAKPOINT_PX,
 } from "styles/Constants";
 import styled from "styled-components";
@@ -53,11 +55,16 @@ const BannerImageWrapper = styled.div`
   align-items: center;
   @media (min-width: ${BREAKPOINT_PX}) {
     height: ${BANNER_HEIGHT_DESKTOP_PX};
+    padding-top: ${BANNER_PADDING_TOP_DESKTOP};
   }
   @media (max-width: ${BREAKPOINT_PX}) {
     height: ${BANNER_HEIGHT_MOBILE_PX};
+    padding-top: ${BANNER_PADDING_TOP_MOBILE};
   }
+  /* background: gold; */
 `;
+
+
 
 
 
