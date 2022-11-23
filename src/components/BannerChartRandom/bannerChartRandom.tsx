@@ -2,6 +2,8 @@ import styled from "styled-components";
 import {
   BANNER_HEIGHT_DESKTOP_PX,
   BANNER_HEIGHT_MOBILE_PX,
+  BANNER_PADDING_TOP_DESKTOP,
+  BANNER_PADDING_TOP_MOBILE,
   BREAKPOINT_PX,
 } from "../../styles/Constants";
 import { dataPracticeAreas } from "pages/PracticeAreas/dataPracticeAreas";
@@ -43,9 +45,11 @@ const BannerChartWrapper = styled.div`
   width: 100%;
   @media (min-width: ${BREAKPOINT_PX}) {
     height: ${BANNER_HEIGHT_DESKTOP_PX};
+    padding-top: ${BANNER_PADDING_TOP_DESKTOP};
   }
   @media (max-width: ${BREAKPOINT_PX}) {
     height: ${BANNER_HEIGHT_MOBILE_PX};
+    padding-top: ${BANNER_PADDING_TOP_MOBILE};
   }
   /* background: gold; */
 `;
