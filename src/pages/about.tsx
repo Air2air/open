@@ -1,11 +1,6 @@
 import setBodyColor from "./../utils/setBodyColor";
 import BannerVideo from "./../components/BannerVideo/bannerVideo";
-// import About from "./../components/About/about";
-import {
-  COLOR_BASE,
-  COLOR_BASE_1
-} from "./../styles/Constants";
-// import Callout from "./../components/Callout/callOut";
+import { COLOR_BASE, COLOR_BASE_1, COLOR_WHITE } from "./../styles/Constants";
 import Advisors from "./../components/Advisors/advisors";
 import Map from "./../components/Map/map";
 
@@ -19,7 +14,7 @@ const AboutPage = () => {
         title="About Eleven"
         text="If you know healthcare AI, then you already know some Elevens"
         pageVideo={pageVideo}
-        color="#ffffff"
+        color={COLOR_WHITE}
         overlayOpacity={0.2}
         overlayColor={COLOR_BASE}
         typing

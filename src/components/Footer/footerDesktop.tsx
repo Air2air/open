@@ -10,7 +10,7 @@ import {
   COLOR_RED_HOVER,
   CONTENT_WIDTH_DESKTOP,
   FOOTER_HEIGHT_DESKTOP,
-} from "./../../styles/Constants";
+} from "styles/Constants";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import VideoCallout from "./../VideoCallout/videoCallout";
 import { FC } from "react";

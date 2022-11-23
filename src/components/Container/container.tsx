@@ -3,7 +3,7 @@ import {
   BREAKPOINT_PX,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
-} from "./../../styles/Constants";
+} from "styles/Constants";
 
 type ContainerProps = {
   backgroundColor?: string;

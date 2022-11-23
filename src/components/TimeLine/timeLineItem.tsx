@@ -5,7 +5,7 @@ import {
   COLOR_BASE_LIGHT,
   COLOR_RED,
   COLOR_TEXT,
-} from "./../../styles/Constants";
+} from "styles/Constants";
 import parse from "html-react-parser";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { ITimeLineProps } from "./../../api/interfaces";

@@ -1,4 +1,4 @@
-import { BREAKPOINT } from "./../../styles/Constants";
+import { BREAKPOINT } from "styles/Constants";
 import { useState, useEffect } from "react";
 import { FooterDesktop } from "./footerDesktop";
 import { FooterMobile } from "./footerMobile";

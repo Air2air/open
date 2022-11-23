@@ -2,7 +2,7 @@ import {
   BREAKPOINT_PX,
   COLOR_TEXT,
   TEXT_OPACITY,
-} from "./../../styles/Constants";
+} from "styles/Constants";
 import styled from "styled-components";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import Typewriter from "typewriter-effect";

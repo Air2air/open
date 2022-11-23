@@ -1,8 +1,7 @@
-import { BREAKPOINT_PX, COLOR_WHITE } from "./../../styles/Constants";
+import { BREAKPOINT_PX, COLOR_WHITE } from "styles/Constants";
 import styled from "styled-components";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { FC } from "react";
-import { COLOR_RED } from "../../styles/Constants";
 
 type TitleProps = {
   title?: any;

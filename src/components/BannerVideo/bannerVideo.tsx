@@ -4,7 +4,7 @@ import {
   BREAKPOINT_PX,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
-} from "./../../styles/Constants";
+} from "styles/Constants";
 import styled from "styled-components";
 import VideoCallout from "./../VideoCallout/videoCallout";
 import parse from "html-react-parser";

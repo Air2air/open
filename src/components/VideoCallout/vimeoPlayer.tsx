@@ -5,7 +5,7 @@ import {
   BANNER_HEIGHT_MOBILE_PX,
   BREAKPOINT_MID_PX,
   BREAKPOINT_PX,
-} from "./../../styles/Constants";
+} from "styles/Constants";
 
 export default function VimeoPlayer({ videoID }) {
   return (
