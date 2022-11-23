@@ -99,3 +99,5 @@ export const COLOR_GREEN_TEXT = "hsl(174, 64%, 80%)";
 export const COLOR_RED_1 = "hsl(0, 79%, 10%)";
 export const COLOR_RED_2 = "hsl(0, 79%, 12%)";
 export const COLOR_RED_TEXT = "hsl(35, 100%, 80%)";
+
+export const COLOR_WHITE = "hsl(0, 0%, 90%)";

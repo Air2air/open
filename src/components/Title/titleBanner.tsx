@@ -1,4 +1,4 @@
-import { BREAKPOINT_PX } from "./../../styles/Constants";
+import { BREAKPOINT_PX, COLOR_WHITE } from "./../../styles/Constants";
 import styled from "styled-components";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { FC } from "react";
@@ -22,7 +22,7 @@ const TitleContainer = styled(AnimationOnScroll)`
 
 const TitleStyled = styled.h1<TitleProps>`
   color: ${(props) =>
-    props.color === "" || !props.color ? COLOR_RED : props.color};
+    props.color === "" || !props.color ? COLOR_WHITE : props.color};
   text-shadow: 0 0 4px #000;
   @media (min-width: ${BREAKPOINT_PX}) {
     font-size: 2.4em;
