@@ -5,10 +5,10 @@ import {
   COLOR_RED,
   COLOR_TEXT,
   CONTACT_ITEM_HEIGHT_PX,
-} from "../../../styles/Constants";
+} from "../../styles/Constants";
 
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import ButtonLinkedIn from "../buttonLinkedIn";
+import ButtonLinkedIn from "../Button/buttonLinkedIn";
 
 export const ContactItem = (props: {
   key: number;
@@ -82,6 +82,12 @@ const ImageWrapper = styled.div`
   background-size: cover;
   background-position: center;
   transition: all 500ms;
+  @media (min-width: ${BREAKPOINT_PX}) {
+    display: inline-flex;
+  }
+  @media (max-width: ${BREAKPOINT_PX}) {
+    display: none;
+  }
 `;
 
 const ContactTitle = styled.h2`
