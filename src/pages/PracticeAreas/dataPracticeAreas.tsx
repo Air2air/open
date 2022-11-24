@@ -5,9 +5,6 @@ export const dataPracticeAreas = [
     text: "The world's foremost clinical talent guides Eleven's digital health ventures to the best possible outcomes. Your CXAIO offers deep technical and clinical support for broader consumer health sector landscape (e.g., patient engagement, wearables, digital health and wellness).",
     color: "#FFFFFF",
     backgroundColor: "#858457",
-    buttonText: "Case Studies",
-    buttonTo: "/casestudies",
-    buttonColor: "gray",
   },
   {
     id: 1,
@@ -15,9 +12,6 @@ export const dataPracticeAreas = [
     text: "Experts from the preeminent academic and commercial AI/ML programs accelerate Eleven's digital health ventures.",
     color: "#FFFFFF",
     backgroundColor: "#6d825c",
-    buttonText: "Case Studies",
-    buttonTo: "/casestudies",
-    buttonColor: "gray",
   },
   {
     id: 2,
@@ -25,9 +19,6 @@ export const dataPracticeAreas = [
     text: "Commercial product specialists from leading commercial enterprises help sculpt Eleven's digital health ventures, including: <p><ul><li>Go-to-market and product positioning.</li><li>Pricing methodology for clinical machine learning and digital health solutions.</li><li>Segment landscape, needs, and priorities to drive adoption.</li></ul></p>",
     color: "#FFFFFF",
     backgroundColor: "#557f66",
-    buttonText: "Case Studies",
-    buttonTo: "/casestudies",
-    buttonColor: "gray",
   },
   {
     id: 4,
@@ -35,9 +26,6 @@ export const dataPracticeAreas = [
     text: "Professionals shaping some of the most storied companies in modern healthcare position Eleven's digital health ventures.  This can also include support for early adoption academic initiatives and activities including grants, publications, and collaborations.",
     color: "#FFFFFF",
     backgroundColor: "#45737e",
-    buttonText: "Case Studies",
-    buttonTo: "/casestudies",
-    buttonColor: "gray",
   },
   {
     id: 5,
@@ -45,9 +33,6 @@ export const dataPracticeAreas = [
     color: "#FFFFFF",
     text: "Authorities in FDA regulation and practice provide support for Eleven's digital health ventures.",
     backgroundColor: "#416283",
-    buttonText: "Case Studies",
-    buttonTo: "/casestudies",
-    buttonColor: "gray",
   },
   {
     id: 6,

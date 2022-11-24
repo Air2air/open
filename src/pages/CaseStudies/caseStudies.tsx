@@ -2,7 +2,7 @@ import BannerVideo from "components/BannerVideo/bannerVideo";
 import { COLOR_BASE } from "styles/Constants";
 import Callout from "components/Callout/callOut";
 import { dataCaseStudies } from "./dataCaseStudies";
-import { ICalloutBulletProps } from "api/interfaces";
+import { ICalloutProps } from "api/interfaces";
 
 const pageVideo = 766646401;
 
@@ -18,20 +18,17 @@ const CaseStudiesPage = () => {
         overlayColor={COLOR_BASE}
         typing={true}
       />
-      {dataCaseStudies.map((props:ICalloutBulletProps) => (
-        // <CalloutBullet
-        //   id={props.id}
-        //   title={props.title}
-        //   text={props.text}
-        //   backgroundColor={props.backgroundColor}
-        // />
+      {dataCaseStudies.map((props: ICalloutProps) => (
         <Callout
-        key={props.id}
-        id={props.id}
-        title={props.title}
-        text={props.text}
-        backgroundColor={props.backgroundColor}
-      />
+          key={props.id}
+          id={props.id}
+          title={props.title}
+          text={props.text}
+          backgroundColor={props.backgroundColor}
+          buttonTo={props.buttonTo}
+          buttonText={props.buttonText}
+          buttonColor={props.buttonColor}
+        />
       ))}
     </>
   );

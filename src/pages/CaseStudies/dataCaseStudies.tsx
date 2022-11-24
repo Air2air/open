@@ -16,5 +16,8 @@ export const dataCaseStudies = [
     title: "3. Strategic options",
     text: "<p>Point solution AI startup with market traction at growth inflection point exploring next venture financing round or strategic acquisition</p><p>Elevens provided a fractional CXAIO that:</p><ul><li>Leverage expert AI market network to determine company position in market</li><li>Use data and relationships with venture and strategic acquirers to generate real world options for strategic fit</li><li>Create double consent ''good fit'' meeting opportunities between venture and aligned / interested investors</li><li>Recruited top AI executive and board member to prepare for next round</li><li>Provided market perspective and experience to guide CEO / board through diligence and closing process</li></ul>",
     backgroundColor: 3,
+    buttonText: "Markets",
+    buttonTo: "/markets",
+    buttonColor: "",
   },
 ];

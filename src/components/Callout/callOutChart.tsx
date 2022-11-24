@@ -19,7 +19,6 @@ import parse from "html-react-parser";
 import { TitleCallout } from "components/Title/titleCallout";
 import Button from "../Button/button";
 
-
 export interface ICalloutChartProps {
   id: number;
   title?: any;
@@ -32,9 +31,7 @@ export interface ICalloutChartProps {
   buttonColor?: any;
 }
 
-
 export const CalloutChart = (props: ICalloutChartProps) => {
-
   const textParsed = parse(props.text);
 
   const assignBackgroundColor = (props) => {
@@ -59,18 +56,20 @@ export const CalloutChart = (props: ICalloutChartProps) => {
         {props.id % 2 === 0 ? (
           <InnerSection>
             <TextRow>
-            <TitleCallout title={props.title} color={props.color} />
+              <TitleCallout title={props.title} color={props.color} />
               <AnimationOnScroll
                 animateIn="animate__fadeIn"
                 delay={100}
                 offset={60}
               >
                 <CalloutParagraph>{textParsed}</CalloutParagraph>
-                {props.buttonText ?             <Button
-              buttonTo={props.buttonTo}
-              buttonText={props.buttonText}
-              buttonColor={props.buttonColor}
-            /> : null} 
+                {props.buttonText ? (
+                  <Button
+                    buttonTo={props.buttonTo}
+                    buttonText={props.buttonText}
+                    buttonColor={props.buttonColor}
+                  />
+                ) : null}
               </AnimationOnScroll>
             </TextRow>
             <AnimationOnScroll
@@ -98,11 +97,13 @@ export const CalloutChart = (props: ICalloutChartProps) => {
                 offset={60}
               >
                 <CalloutParagraph>{textParsed}</CalloutParagraph>
-                {props.buttonText ?             <Button
-              buttonTo={props.buttonTo}
-              buttonText={props.buttonText}
-              buttonColor={props.buttonColor}
-            /> : null} 
+                {props.buttonText ? (
+                  <Button
+                    buttonTo={props.buttonTo}
+                    buttonText={props.buttonText}
+                    buttonColor={props.buttonColor}
+                  />
+                ) : null}
               </AnimationOnScroll>
             </TextRow>
           </InnerSection>
@@ -147,8 +148,8 @@ const TextRow = styled.div`
   /* background: ${COLOR_BASE_LIGHT}; */
 `;
 
-const numberSizeDesktop = '110px';
-const numberSizeMobile = '90px';
+const numberSizeDesktop = "110px";
+const numberSizeMobile = "90px";
 
 const CalloutNumber = styled.div`
   display: flex;
@@ -161,19 +162,19 @@ const CalloutNumber = styled.div`
   background: rgba(255, 255, 255, 0.1);
   /* background: red; */
   &.right {
-    margin-left:30px;
+    margin-left: 30px;
   }
   &.left {
-    margin-right:30px;
+    margin-right: 30px;
   }
   @media (min-width: ${BREAKPOINT_PX}) {
-    width:${numberSizeDesktop};
+    width: ${numberSizeDesktop};
     height: ${numberSizeDesktop};
     font-size: 4rem;
     line-height: ${numberSizeDesktop};
   }
   @media (max-width: ${BREAKPOINT_PX}) {
-    width:${numberSizeMobile};
+    width: ${numberSizeMobile};
     height: ${numberSizeMobile};
     font-size: 3rem;
     line-height: ${numberSizeMobile};
