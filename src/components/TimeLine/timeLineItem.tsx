@@ -11,18 +11,20 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 import { ITimeLineProps } from "./../../api/interfaces";
 
 export const TimeLineItemCombined = (props: ITimeLineProps) => {
+  const textParsed = parse(props.text);
   return (
-    <AnimationOnScroll
-      key={props.id}
-      animateIn="animate__fadeInUp"
-      offset={150}
-    >
-      <TimeLineItemWrapper>
-        <TimeLineContent>
-          <h3>{props.title}</h3>
-        </TimeLineContent>
-      </TimeLineItemWrapper>
-    </AnimationOnScroll>
+    // <AnimationOnScroll
+    //   key={props.id}
+    //   animateIn="animate__fadeInUp"
+    //   offset={150}
+    // >
+    <TimeLineItemWrapper>
+      <TimeLineContent>
+        <TimeLineTitle>{props.title}</TimeLineTitle>
+        <TimeLineItemDesc>{textParsed}</TimeLineItemDesc>
+      </TimeLineContent>
+    </TimeLineItemWrapper>
+    // </AnimationOnScroll>
   );
 };
 
@@ -79,7 +81,11 @@ const TimeLineItemWrapper = styled.div`
   flex-direction: row;
   height: auto;
   margin-top: 14px;
-  margin-bottom: 14px;
+  @media (min-width: ${BREAKPOINT_PX}) {
+    margin: 14px 0;
+  }
+  @media (max-width: ${BREAKPOINT_PX}) {
+  }
 `;
 
 const TimeLineTitle = styled.h2`
@@ -91,24 +97,35 @@ const TimeLineTitle = styled.h2`
     font-size: 1.3em;
   }
   @media (max-width: ${BREAKPOINT_PX}) {
-    font-size: 1.7em;
+    font-size: 1.1em;
   }
 `;
 
 const TimeLineContent = styled.div`
-  z-index: +1;
+  /* z-index: +1; */
   display: flex;
   flex-direction: column;
   height: auto;
   border-radius: 6px;
-  width: 90%;
   background: ${COLOR_BASE_3};
   @media (min-width: ${BREAKPOINT_PX}) {
-    padding: 32px;
+    width: 90%;
+    padding: 30px;
   }
   @media (max-width: ${BREAKPOINT_PX}) {
-    padding: 28px 14px;
+    width: 100%;
+    padding: 30px;
   }
+  /* background: green; */
+`;
+
+const TimeLineItemDesc = styled.div`
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.6em;
+  height: auto;
+  color: ${COLOR_TEXT};
+  /* background: gold; ; */
 `;
 
 const TimeLineItemLineBox = styled.div`
@@ -122,11 +139,4 @@ const TimeLineItemLineBox = styled.div`
     border-top: 2px solid ${COLOR_BASE_LIGHT};
     /* opacity: 0; */
   }
-`;
-
-const TimeLineItemDesc = styled.div`
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  line-height: 1.6em;
-  color: ${COLOR_TEXT};
 `;

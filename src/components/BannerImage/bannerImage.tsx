@@ -55,11 +55,11 @@ const BannerImageWrapper = styled.div`
   align-items: center;
   @media (min-width: ${BREAKPOINT_PX}) {
     height: ${BANNER_HEIGHT_DESKTOP_PX};
-    padding-top: ${BANNER_PADDING_TOP_DESKTOP};
+    /* padding-top: ${BANNER_PADDING_TOP_DESKTOP}; */
   }
   @media (max-width: ${BREAKPOINT_PX}) {
     height: ${BANNER_HEIGHT_MOBILE_PX};
-    padding-top: ${BANNER_PADDING_TOP_MOBILE};
+    /* padding-top: ${BANNER_PADDING_TOP_MOBILE}; */
   }
   /* background: gold; */
 `;

@@ -5,6 +5,7 @@ export const dataVentureStage = [
     title: "Pre-Seed Stage",
     text: "<li>Prototype-to-market fit adjustment</li><li>Human Assets and capabilities needs assessment</li><li>Market sizing</li><li>Competitive landscape assessment</li><li>Funding assessment to get to Seed</li><li>Seed funding introductions</li>",
     side: "left",
+    color: "#ffffff",
   },
   {
     id: 1,
@@ -12,6 +13,7 @@ export const dataVentureStage = [
     title: "Seed Stage",
     text: "<li>Product-to-market fit adjustment</li><li>Market focus</li><li>Revenue modeling</li><li>IP portfolio management</li><li>Product development</li><li>Early evangelical selling</li><li>Financial partnership development</li>",
     side: "right",
+    color: "#ffffff",
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ export const dataVentureStage = [
     title: "Series A Stage",
     text: "<li>Market execution</li><li>Revenue base development</li><li>Product development</li><li>Scaling sales</li><li>Market messaging and communications</li><li>Financial partnership development</li><li>Best practices for acquirability</li>",
     side: "left",
+    color: "#ffffff",
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ export const dataVentureStage = [
     title: "Series B Stage",
     text: "<li>Product manufacturing</li><li>Service scaling</li><li>Market growth</li><li>Scaling sales to next level</li><li>Performance metrics development</li><li>Expert validation and analyst coverage</li><li>Financial partnership development</li><li>Liquidity options development</li>",
     side: "right",
+    color: "#ffffff",
   },
   {
     id: 5,
@@ -33,6 +37,7 @@ export const dataVentureStage = [
     title: "Series C Stage",
     text: "<li>Product portfolio expansion</li><li>New market development</li><li>Scaling sales to next level</li><li>Profitability</li><li>Liquidity options development</li>",
     side: "left",
+    color: "#ffffff",
   },
   {
     id: 6,
@@ -40,6 +45,7 @@ export const dataVentureStage = [
     title: "Mezzanine Stage",
     text: "<li>Major event financing</li><li>Merger and acquisition options development</li><li>Liquidity option focus</li>",
     side: "right",
+    color: "#ffffff",
   },
   {
     id: 7,
@@ -47,5 +53,6 @@ export const dataVentureStage = [
     title: "Public Stage",
     text: "<li>Company acquisition options development</li><li>Portfolio expansion through new product options development</li><li>Spin-off and Joint Venture opportunity development</li>",
     side: "left",
+    color: "#ffffff",
   },
 ];
