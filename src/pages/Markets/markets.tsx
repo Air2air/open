@@ -3,6 +3,8 @@ import { dataVentureStage } from "./dataVentureStage";
 import BannerChart from "components/BannerChart/bannerChart";
 import { dataMarkets } from "./dataMarkets";
 import { TitleCentered } from "components/Title/titleCentered";
+import Button from "components/Button/button";
+import Container from "components/Container/container";
 
 const MarketsPage = () => {
   return (
@@ -16,6 +18,11 @@ const MarketsPage = () => {
       />
       <TitleCentered title="AI Venture Stages" />
       <TimeLine data={dataVentureStage} backgroundColor={3} />
+
+<Container>
+  <Button buttonTo="/vision" buttonText="Vision" />
+  </Container>
+
     </>
   );
 };
