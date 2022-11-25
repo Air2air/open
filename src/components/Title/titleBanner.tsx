@@ -1,6 +1,5 @@
 import { BREAKPOINT_PX, COLOR_WHITE } from "styles/Constants";
 import styled from "styled-components";
-// import { AnimationOnScroll } from "react-animation-on-scroll";
 import { FC } from "react";
 
 type TitleProps = {
@@ -8,13 +7,6 @@ type TitleProps = {
   color?: string;
 };
 
-/*
-export const TitleBanner: FC<TitleProps> = (props) => (
-  <TitleContainer animateIn="animate__fadeIn" delay={0}>
-    <TitleStyled color={props.color}>{props.title}</TitleStyled>
-  </TitleContainer>
-);
-*/
 
 export const TitleBanner: FC<TitleProps> = (props) => (
   <TitleContainer>
