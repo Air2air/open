@@ -9,13 +9,9 @@ import {
 const VideoCallout = ({ pageVideo, overlayOpacity, overlayColor }) => {
   return (
     <>
-      <div
-        className={`animate__animated animate__fadeIn animate__delay-1s animate__slower `}
-      >
-        <VideoWrapper>
-          <VimeoPlayer videoID={pageVideo} />
-        </VideoWrapper>
-      </div>
+      <VideoWrapper>
+        <VimeoPlayer videoID={pageVideo} />
+      </VideoWrapper>
       <BannerVideoOpacityOverlay
         overlayOpacity={overlayOpacity}
         overlayColor={overlayColor}
@@ -47,7 +43,6 @@ const VideoWrapper = styled.div`
   max-width: 100vw;
   overflow: hidden;
   @media (min-width: ${BREAKPOINT_PX}) {
-
     min-height: ${BANNER_HEIGHT_DESKTOP_PX};
   }
   @media (max-width: ${BREAKPOINT_PX}) {
