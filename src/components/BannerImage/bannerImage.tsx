@@ -13,7 +13,6 @@ import ImageCallout from "./../ImageCallout/imageCallout";
 import parse from "html-react-parser";
 import { BannerText } from "./../BannerText/bannerText";
 import { TitleBanner } from "./../Title/titleBanner";
-import Container from "./../Container/container";
 import { FC } from "react";
 
 type BannerImageProps = {
