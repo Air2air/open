@@ -3,6 +3,8 @@ import BannerVideo from "./../components/BannerVideo/bannerVideo";
 import { COLOR_BASE, COLOR_BASE_1, COLOR_WHITE } from "./../styles/Constants";
 import Advisors from "./../components/Advisors/advisors";
 import Map from "./../components/Map/map";
+import Button from "components/Button/button";
+import Container from "components/Container/container";
 
 const pageVideo = 766647825;
 
@@ -22,6 +24,9 @@ const AboutPage = () => {
 
       <Map mapTitle="Elevens Worldwide" backgroundColor={2} />
       <Advisors title="Advisory Board" backgroundColor={3} />
+      <Container>
+        <Button buttonTo="/contact" buttonText="Contact" />
+      </Container>
     </>
   );
 };
