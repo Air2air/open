@@ -32,7 +32,7 @@ export const ContactItem = (props: {
           />
           <br />
 
-          <ContactItemLink href="mailto:info@elevens.ai">
+          <ContactItemLink href="mailto:jkleck@elevens.ai">
             info@elevens.ai
           </ContactItemLink>
         </ContactContent>
