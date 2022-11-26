@@ -78,3 +78,26 @@ export interface IPracticeAreasProps {
   buttonText?: string;
   buttonTo?: string;
 }
+
+export interface BannerVideoProps {
+  title: string;
+  text?: string;
+  pageVideo?: number;
+  loadingImage?: string;
+  color?: string;
+  overlayOpacity: number;
+  overlayColor: string;
+  typing: boolean;
+}
+
+export interface VideoCalloutProps {
+  pageVideo: number;
+  overlayOpacity: number;
+  overlayColor: string;
+  loadingImage?: string;
+}
+
+export interface VideoOverlayProps {
+  overlayOpacity: number;
+  overlayColor: string;
+}
