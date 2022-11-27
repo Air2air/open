@@ -13,24 +13,17 @@ import { ITimeLineProps } from "./../../api/interfaces";
 export const TimeLineItemCombined = (props: ITimeLineProps) => {
   const textParsed = parse(props.text);
   return (
-    // <AnimationOnScroll
-    //   key={props.id}
-    //   animateIn="animate__fadeInUp"
-    //   offset={150}
-    // >
     <TimeLineItemWrapper>
       <TimeLineContent>
         <TimeLineTitle>{props.title}</TimeLineTitle>
         <TimeLineItemDesc>{textParsed}</TimeLineItemDesc>
       </TimeLineContent>
     </TimeLineItemWrapper>
-    // </AnimationOnScroll>
   );
 };
 
 export const TimeLineItemLeft = (props: ITimeLineProps) => {
   const textParsed = parse(props.text);
-  // const side  = ''
 
   return (
     <AnimationOnScroll key={props.id} animateIn="animate__fadeInLeft" delay={0}>
@@ -88,18 +81,6 @@ const TimeLineItemWrapper = styled.div`
   }
 `;
 
-const TimeLineTitle = styled.h2`
-  text-transform: uppercase;
-  font-weight: 500;
-  color: ${(props) =>
-    props.color === "" || !props.color ? COLOR_RED : props.color};
-  @media (min-width: ${BREAKPOINT_PX}) {
-    font-size: 1.3em;
-  }
-  @media (max-width: ${BREAKPOINT_PX}) {
-    font-size: 1.1em;
-  }
-`;
 
 const TimeLineContent = styled.div`
   /* z-index: +1; */
@@ -115,16 +96,37 @@ const TimeLineContent = styled.div`
   @media (max-width: ${BREAKPOINT_PX}) {
     width: 100%;
     padding: 30px;
+
   }
   /* background: green; */
+`;
+
+
+const TimeLineTitle = styled.h2`
+  text-transform: uppercase;
+  font-weight: 500;
+  color: ${(props) =>
+    props.color === "" || !props.color ? COLOR_RED : props.color};
+  @media (min-width: ${BREAKPOINT_PX}) {
+    font-size: 1.3em;
+  }
+  @media (max-width: ${BREAKPOINT_PX}) {
+    font-size: 1.3em;
+  }
 `;
 
 const TimeLineItemDesc = styled.div`
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  line-height: 1.6em;
   height: auto;
   color: ${COLOR_TEXT};
+  @media (min-width: ${BREAKPOINT_PX}) {
+    font-size: 1.2em;
+
+  }
+  @media (max-width: ${BREAKPOINT_PX}) {
+    font-size: 1.1em;
+  }
   /* background: gold; ; */
 `;
 
