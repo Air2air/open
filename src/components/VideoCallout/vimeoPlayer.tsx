@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Vimeo from "@u-wave/react-vimeo";
 import {
   BANNER_HEIGHT_DESKTOP_PX,
@@ -11,6 +11,8 @@ import { useState } from "react";
 export const VimeoPlayer = ({ videoID }) => {
   const [isLoading, setIsLoading] = useState(true);
 
+  const backgroundImage = "url(/images/loading-images/" + videoID + ".jpg)";
+
   return (
     <>
       <VideoContainer>
@@ -21,33 +23,33 @@ export const VimeoPlayer = ({ videoID }) => {
           loop
           muted
           responsive
-          onPlay={() => setIsLoading(false)}
+          onPlaying={() => setIsLoading(false)}
         />
-        {isLoading && <Loading loadingImage={videoID} />}
+        {isLoading ? (
+          <LoadingImage style={{ backgroundImage: backgroundImage }} />
+        ) : null}
       </VideoContainer>
     </>
   );
 };
 
-const Loading = ({ loadingImage }) => {
-  const backgroundImage = "url(/images/loading-images/" + loadingImage + ".jpg)";
-
-  return (
-    <LoadingImage
-      className="bgImage"
-      style={{ backgroundImage: backgroundImage }}
-    />
-  );
-};
+const fadeOutKeyframe = keyframes`
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+`;
 
 const LoadingImage = styled.div`
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
-  min-width: 100vw;
-  object-fit: cover;
-  object-position: center;
-  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  animation: ${fadeOutKeyframe} 1s 2s;
   @media (min-width: ${BREAKPOINT_PX}) {
     height: ${BANNER_HEIGHT_DESKTOP_PX};
   }
@@ -67,6 +69,7 @@ const VideoContainer = styled.div`
   object-fit: cover;
   object-position: center;
   z-index: -1;
+
   @media (min-width: ${BREAKPOINT_PX}) {
     height: ${BANNER_HEIGHT_DESKTOP_PX};
   }
@@ -79,9 +82,10 @@ const VideoContainer = styled.div`
 `;
 
 const Video = styled((props) => <Vimeo {...props} />)`
+  position: absolute;
   left: 50%;
   min-width: 100vw;
-  position: absolute;
+  transition: all 2s;
   @media (min-width: ${BREAKPOINT_PX}) {
     top: -50%;
     transform: translate(-50%, 50%);
