@@ -2,7 +2,7 @@ export const dataCaseStudies = [
   {
     id: 1,
     title: "1. Product-market fit",
-    text: "<p>Technical founders develop novel clinical AI application but struggle to find product market fit.</p><p>Elevens provided a fractional CXAIO that:</p><ul><li>Connected to key opinion leaders at 10 United States hospital systems</li><li>Led product discovery cycles with payors and providers</li></ul>",
+    text: "<p>Technical founders develop novel clinical AI application but struggle to find product market fit.</p><p>Elevens provided a fractional CXAIO that:</p><ul><li>Connected to key opinion leaders at 10 United States hospital systems</li><li>Led product discovery cycles with payors, providers to define ideal customer profile</li><li>Helped develop MVP concept</li><li>Mapped out data integrations with health information systems</li><li>Designed scientific evaluation metrics and communication strategy</li><li>Tested marketing materials for first market segment first early adopters </li><li>Defined pricing model for value based and FFS providers</li><li>Made qualified introductions to help land first paid customer</li></ul>",
     backgroundColor: 1,
   },
   {
