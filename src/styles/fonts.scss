@@ -51,12 +51,13 @@ li {
   padding: 12px 0;
   // line-height: 1.5rem;
   // background: green;;
+
 }
 
 li::before {
-  content: "•"; /* Insert content that looks like bullets */
+  content: "•"; 
   padding-right: 8px;
-  font-size: 1.7rem;
+  // font-size: 1.7rem;
   // line-height: 1rem;
   color: red;
 }

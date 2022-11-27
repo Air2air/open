@@ -44,7 +44,7 @@ export const BUTTON_COLOR_LINKEDIN_HOVER = "hsl(0, 86%, 46%)"//"hsl(205, 73%, 52
 
 // WIDTH
 export const CONTENT_WIDTH_DESKTOP = "70%";
-export const CONTENT_WIDTH_MOBILE = "86%";
+export const CONTENT_WIDTH_MOBILE = "90%";
 
 // Breakpoint
 export const BREAKPOINT = 700;
