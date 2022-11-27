@@ -3,8 +3,12 @@ import { Footer } from "./components/Footer/footer";
 import { Header } from "./components/Header/header";
 import ProgressBar from "./components/Progress/progress";
 import { dataRoutes } from "./routes/routes";
+import { BREAKPOINT } from "styles/Constants";
+import { useWindowWidth } from "@react-hook/window-size";
 
 const App = () => {
+  const windowWidth = useWindowWidth();
+
   return (
     <>
       <Header />
@@ -13,7 +17,7 @@ const App = () => {
           <Route key={path} path={path} element={element} />
         ))}
       </Routes>
-      <ProgressBar />
+      {windowWidth > BREAKPOINT && <ProgressBar />}
       <Footer />
     </>
   );
