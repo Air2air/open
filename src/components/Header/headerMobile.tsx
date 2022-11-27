@@ -84,7 +84,6 @@ const HeaderBottom = styled.div`
   width: 100vw;
   height: ${headerButtonHeightPx};
   padding: 0;
-
 `;
 
 const HeaderLink = styled(Link)`

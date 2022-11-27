@@ -52,7 +52,7 @@ export const BREAKPOINT_PX = BREAKPOINT + "px";
 export const BREAKPOINT_MID = 900;
 export const BREAKPOINT_MID_PX = BREAKPOINT_MID + "px";
 
-// ANIMATION_OFFSETE
+// ANIMATION_OFFSET
 export const ANIMATION_OFFSET_DESKTOP = 100;
 export const ANIMATION_OFFSET_MOBILE = 100;
 
@@ -77,7 +77,7 @@ export const COLOR_RED = "hsl(0, 80%, 50%)";
 export const COLOR_RED_HOVER = "hsl(0, 10%, 70%)";
 export const TEXT_OPACITY = 0.8;
 
-export const HEADER_COLOR = "rgba(0, 0, 0, 0.5)";
+export const HEADER_COLOR = "rgba(0, 0, 0, 0.7)";
 export const HEADER_COLOR_HOVER = "rgba(150, 150, 150, 0.5)";
 
 // Themes
