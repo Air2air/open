@@ -16,6 +16,7 @@ const ContactCallout = () => {
             key={props.id}
             id={props.id}
             shortName={props.shortName}
+            email={props.email}
             address={props.address}
             photo={props.photo}
           />

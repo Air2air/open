@@ -14,6 +14,7 @@ export const ContactItem = (props: {
   key: number;
   id: number;
   shortName: string;
+  email: string;
   address: string;
   photo: string;
 }) => {
@@ -32,8 +33,8 @@ export const ContactItem = (props: {
           />
           <br />
 
-          <ContactItemLink href="mailto:jkleck@elevens.ai">
-            info@elevens.ai
+          <ContactItemLink href={`mailto:${props.email}`}>
+          {props.email}
           </ContactItemLink>
         </ContactContent>
         <ImageWrapper
