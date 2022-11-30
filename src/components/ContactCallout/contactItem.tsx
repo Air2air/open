@@ -78,7 +78,7 @@ const ContactItemWrapper = styled.div`
   flex-direction: row;
   align-items: center;
   height: ${CONTACT_ITEM_HEIGHT}px;
-  margin: 24px 0;
+
   transition: all 500ms;
   background: none;
   &:hover {
@@ -94,9 +94,11 @@ const ContactItemWrapper = styled.div`
   }
   @media (min-width: ${BREAKPOINT}px) {
     width: ${CONTENT_WIDTH_DESKTOP};
+    margin: 40px 0;
   }
   @media (max-width: ${BREAKPOINT}px) {
     width: ${CONTENT_WIDTH_MOBILE};
+    margin: 10px 0;
   }
 `;
 
