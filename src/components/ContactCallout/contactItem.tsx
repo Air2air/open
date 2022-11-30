@@ -11,7 +11,6 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 import ButtonLinkedIn from "../Button/buttonLinkedIn";
 
 export const ContactItem = (props: {
-  key: number;
   id: number;
   shortName: string;
   email: string;
@@ -32,9 +31,8 @@ export const ContactItem = (props: {
             text="Elevens.ai"
           />
           <br />
-
           <ContactItemLink href={`mailto:${props.email}`}>
-          {props.email}
+            {props.email}
           </ContactItemLink>
         </ContactContent>
         <ImageWrapper

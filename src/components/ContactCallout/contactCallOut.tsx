@@ -12,14 +12,7 @@ const ContactCallout = () => {
     <>
       <ContactWrapper>
         {dataContact.map((props) => (
-          <ContactItem
-            key={props.id}
-            id={props.id}
-            shortName={props.shortName}
-            email={props.email}
-            address={props.address}
-            photo={props.photo}
-          />
+          <ContactItem {...props} key={props.id} />
         ))}
         ;
       </ContactWrapper>

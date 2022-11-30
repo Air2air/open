@@ -6,7 +6,7 @@ export const dataAdvisors = [
     role: "Advisor",
     text: "Description here. Description here. Description here. Description here.  Description here. Description here.",
     photo: "fine.jpeg",
-    showPhoto: true,
+    showPhoto: false,
     linkedin:"https://www.linkedin.com/in/benfine"
   },
   {
@@ -16,7 +16,7 @@ export const dataAdvisors = [
     role: "Advisor",
     text: "Description here. Description here. Description here. Description here.  Description here. Description here.",
     photo: "kleck.jpeg",
-    showPhoto: true,
+    showPhoto: false,
     linkedin:"https://www.linkedin.com/in/jeff-kleck-a000299/"
   },
   {
