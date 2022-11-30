@@ -60,15 +60,10 @@ export const FooterMobile: FC<FooterProps> = ({ footerVideo }) => {
 };
 
 //Mobile
-const FOOTER_HEIGHT_MOBILE_PX = FOOTER_HEIGHT_MOBILE + "px";
 const FOOTER_CONTAINER_HEIGHT_MOBILE = FOOTER_HEIGHT_MOBILE * 0.8;
-const FOOTER_CONTAINER_HEIGHT_MOBILE_PX = FOOTER_CONTAINER_HEIGHT_MOBILE + "px";
-const FOOTER_LOGO_HEIGHT_MOBILE_PX =
-  FOOTER_CONTAINER_HEIGHT_MOBILE * 0.2 + "px";
-const FOOTER_CONTENT_HEIGHT_MOBILE_PX =
-  FOOTER_CONTAINER_HEIGHT_MOBILE * 0.5 + "px";
-const FOOTER_COPYRIGHT_HEIGHT_MOBILE_PX =
-  FOOTER_CONTAINER_HEIGHT_MOBILE * 0.3 + "px";
+const FOOTER_LOGO_HEIGHT_MOBILE = FOOTER_CONTAINER_HEIGHT_MOBILE * 0.2;
+const FOOTER_CONTENT_HEIGHT_MOBILE = FOOTER_CONTAINER_HEIGHT_MOBILE * 0.5;
+const FOOTER_COPYRIGHT_HEIGHT_MOBILE = FOOTER_CONTAINER_HEIGHT_MOBILE * 0.3;
 
 const FooterWrapper = styled.div`
   position: relative;
@@ -80,7 +75,7 @@ const FooterWrapper = styled.div`
   overflow: hidden;
   width: 100vw;
   background: ${COLOR_BASE_4};
-  height: ${FOOTER_HEIGHT_MOBILE_PX};
+  height: ${FOOTER_HEIGHT_MOBILE}px;
   /* background-color: blue; */
 `;
 
@@ -91,7 +86,7 @@ const FooterContainer = styled.div`
   text-align: center;
   width: ${CONTENT_WIDTH_MOBILE};
   margin: 0 auto;
-  height: ${FOOTER_CONTAINER_HEIGHT_MOBILE_PX};
+  height: ${FOOTER_CONTAINER_HEIGHT_MOBILE}px;
   /* background-color: lightblue; */
 `;
 
@@ -102,7 +97,7 @@ const FooterLogoRow = styled(AnimationOnScroll)`
   justify-content: center;
   text-align: center;
   width: 100%;
-  height: ${FOOTER_LOGO_HEIGHT_MOBILE_PX};
+  height: ${FOOTER_LOGO_HEIGHT_MOBILE}px;
   /* background-color: green; */
   a.link {
     opacity: 0.4;
@@ -118,7 +113,7 @@ const FooterContentRow = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: ${FOOTER_CONTENT_HEIGHT_MOBILE_PX};
+  height: ${FOOTER_CONTENT_HEIGHT_MOBILE}px;
   /* background-color: gold; */
 `;
 
@@ -128,7 +123,7 @@ const FooterLinkColumn = styled.div`
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  height: ${FOOTER_CONTENT_HEIGHT_MOBILE_PX};
+  height: ${FOOTER_CONTENT_HEIGHT_MOBILE}px;
   /* background: green; */
 `;
 
@@ -152,7 +147,7 @@ const FooterCopyright = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   text-align: center;
-  height: ${FOOTER_COPYRIGHT_HEIGHT_MOBILE_PX};
+  height: ${FOOTER_COPYRIGHT_HEIGHT_MOBILE}px;
   div {
     color: ${COLOR_BASE_LIGHT};
   }

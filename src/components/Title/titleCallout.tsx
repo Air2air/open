@@ -1,4 +1,4 @@
-import { BREAKPOINT_PX, COLOR_RED } from "styles/Constants";
+import { BREAKPOINT, COLOR_RED } from "styles/Constants";
 import styled from "styled-components";
 import { FC } from "react";
 
@@ -7,10 +7,9 @@ type TitleProps = {
   color?: string;
 };
 
-
 export const TitleCallout: FC<TitleProps> = (props) => (
   <TitleContainer>
-  <TitleStyled color={props.color}>{props.title}</TitleStyled>
+    <TitleStyled color={props.color}>{props.title}</TitleStyled>
   </TitleContainer>
 );
 
@@ -24,10 +23,10 @@ const TitleStyled = styled.h1<TitleProps>`
   font-weight: 500;
   color: ${(props) =>
     props.color === "" || !props.color ? COLOR_RED : props.color};
-  @media (min-width: ${BREAKPOINT_PX}) {
+  @media (min-width: ${BREAKPOINT}px) {
     font-size: 1.6em;
   }
-  @media (max-width: ${BREAKPOINT_PX}) {
+  @media (max-width: ${BREAKPOINT}px) {
     font-size: 1.4em;
   }
 `;

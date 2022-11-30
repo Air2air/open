@@ -6,7 +6,6 @@ import {
   HEADER_COLOR,
   HEADER_COLOR_HOVER,
   HEADER_MOBILE_HEIGHT,
-  HEADER_MOBILE_HEIGHT_PX,
 } from "styles/Constants";
 
 export const HeaderMobile = () => {
@@ -47,7 +46,7 @@ const HeaderContainer = styled.div`
   display: flex;
   width: 100vw;
   flex-direction: column;
-  height: ${HEADER_MOBILE_HEIGHT_PX};
+  height: ${HEADER_MOBILE_HEIGHT}px;
 `;
 
 const HeaderTop = styled.div`

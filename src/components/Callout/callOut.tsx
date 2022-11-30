@@ -1,6 +1,6 @@
 import {
-  BREAKPOINT_PX,
-  CALLOUT_HEIGHT_PX,
+  BREAKPOINT,
+  CALLOUT_HEIGHT,
   COLOR_BASE_1,
   COLOR_BASE_2,
   COLOR_BASE_3,
@@ -74,7 +74,7 @@ const CalloutContainer = styled.div`
   overflow: hidden;
   align-items: center;
   height: auto;
-  min-height: ${CALLOUT_HEIGHT_PX};
+  min-height: ${CALLOUT_HEIGHT}px;
 `;
 
 const TextSection = styled.div`
@@ -82,11 +82,11 @@ const TextSection = styled.div`
   z-index: +1;
   height: auto;
   text-align: left;
-  @media (min-width: ${BREAKPOINT_PX}) {
+  @media (min-width: ${BREAKPOINT}px) {
     padding: 70px 0;
     width: ${CONTENT_WIDTH_DESKTOP};
   }
-  @media (max-width: ${BREAKPOINT_PX}) {
+  @media (max-width: ${BREAKPOINT}px) {
     padding: 40px 0;
     width: ${CONTENT_WIDTH_MOBILE};
   }
@@ -100,11 +100,11 @@ const CalloutParagraph = styled.div`
   text-align: left;
   opacity: ${TEXT_OPACITY};
   padding-bottom: 20px;
-  @media (min-width: ${BREAKPOINT_PX}) {
+  @media (min-width: ${BREAKPOINT}px) {
     font-size: 1.3em;
     line-height: 1.7em;
   }
-  @media (max-width: ${BREAKPOINT_PX}) {
+  @media (max-width: ${BREAKPOINT}px) {
     font-size: 1.1em;
     line-height: 1.7em;
   }

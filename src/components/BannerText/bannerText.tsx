@@ -1,5 +1,5 @@
 import {
-  BREAKPOINT_PX,
+  BREAKPOINT,
   COLOR_TEXT,
   TEXT_OPACITY,
 } from "styles/Constants";
@@ -45,11 +45,11 @@ const TypeWriterWrapper = styled.div`
     text-align: left;
     opacity: ${TEXT_OPACITY};
     text-shadow: 0 0 3px #000;
-    @media (min-width: ${BREAKPOINT_PX}) {
+    @media (min-width: ${BREAKPOINT}px) {
       font-size: 1.5em;
       line-height: 1.4em;
     }
-    @media (max-width: ${BREAKPOINT_PX}) {
+    @media (max-width: ${BREAKPOINT}px) {
       font-size: 1.2em;
       font-weight: 400;
       line-height: 1.5em;

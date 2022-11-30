@@ -1,7 +1,11 @@
 import {
-  BANNER_HEIGHT_DESKTOP_PX,
-  BANNER_HEIGHT_MOBILE_PX,
-  BREAKPOINT_PX,
+  BANNER_HEIGHT_DESKTOP,
+  BANNER_HEIGHT_MOBILE,
+  BANNER_PADDING_TOP_DESKTOP,
+  BANNER_PADDING_TOP_MOBILE,
+  BANNER_CONTENT_HEIGHT_DESKTOP,
+  BANNER_CONTENT_HEIGHT_MOBILE,
+  BREAKPOINT,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
 } from "styles/Constants";
@@ -37,31 +41,42 @@ export const BannerVideo = (props: BannerVideoProps) => {
   );
 };
 
+
+
 const BannerVideoWrapper = styled.div`
   position: relative;
+  top: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 100vw;
-  @media (min-width: ${BREAKPOINT_PX}) {
-    height: ${BANNER_HEIGHT_DESKTOP_PX};
+  align-items: center;
+  @media (min-width: ${BREAKPOINT}px) {
+    height: ${BANNER_HEIGHT_DESKTOP}px;
   }
-  @media (max-width: ${BREAKPOINT_PX}) {
-    height: ${BANNER_HEIGHT_MOBILE_PX};
+  @media (max-width: ${BREAKPOINT}px) {
+    height: ${BANNER_HEIGHT_MOBILE}px;
   }
 `;
 
 const TextWrapper = styled.div`
-  margin: 80px auto 0 auto;
+  position: absolute;
   z-index: +1;
-  height: auto;
   text-align: left;
-  @media (min-width: ${BREAKPOINT_PX}) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: ${BREAKPOINT}px) {
+    top: ${BANNER_PADDING_TOP_DESKTOP}px;
+    height: ${BANNER_CONTENT_HEIGHT_DESKTOP}px;
     width: ${CONTENT_WIDTH_DESKTOP};
   }
-  @media (max-width: ${BREAKPOINT_PX}) {
+  @media (max-width: ${BREAKPOINT}px) {
+    top: ${BANNER_PADDING_TOP_MOBILE}px;
+    height: ${BANNER_CONTENT_HEIGHT_MOBILE}px;
     width: ${CONTENT_WIDTH_MOBILE};
   }
+  /* background: gold; */
 `;
 
 export default BannerVideo;

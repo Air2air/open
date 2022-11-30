@@ -19,7 +19,7 @@ type FooterProps = {
   footerVideo: number;
 };
 
-export const FooterDesktop: FC<FooterProps> = ({footerVideo}) => {
+export const FooterDesktop: FC<FooterProps> = ({ footerVideo }) => {
   return (
     <FooterWrapper>
       <VideoCallout
@@ -68,14 +68,9 @@ export const FooterDesktop: FC<FooterProps> = ({footerVideo}) => {
 };
 
 //Desktop
-const FOOTER_HEIGHT_DESKTOP_PX = FOOTER_HEIGHT_DESKTOP + "px";
 const FOOTER_CONTAINER_HEIGHT_DESKTOP = FOOTER_HEIGHT_DESKTOP * 0.8;
-const FOOTER_CONTAINER_HEIGHT_DESKTOP_PX =
-  FOOTER_CONTAINER_HEIGHT_DESKTOP + "px";
-const FOOTER_CONTENT_HEIGHT_DESKTOP_PX =
-  FOOTER_CONTAINER_HEIGHT_DESKTOP * 0.8 + "px";
-const FOOTER_COPYRIGHT_HEIGHT_DESKTOP_PX =
-  FOOTER_CONTAINER_HEIGHT_DESKTOP * 0.2 + "px";
+const FOOTER_CONTENT_HEIGHT_DESKTOP = FOOTER_CONTAINER_HEIGHT_DESKTOP * 0.8;
+const FOOTER_COPYRIGHT_HEIGHT_DESKTOP = FOOTER_CONTAINER_HEIGHT_DESKTOP * 0.2;
 
 const FooterWrapper = styled.div`
   position: relative;
@@ -87,7 +82,7 @@ const FooterWrapper = styled.div`
   overflow: hidden;
   width: 100vw;
   background: ${COLOR_BASE_4};
-  height: ${FOOTER_HEIGHT_DESKTOP_PX};
+  height: ${FOOTER_HEIGHT_DESKTOP}px;
   /* background-color: blue; */
 `;
 
@@ -97,7 +92,7 @@ const FooterContainer = styled.div`
   flex-direction: column;
   width: ${CONTENT_WIDTH_DESKTOP};
   margin: 0 auto;
-  height: ${FOOTER_CONTAINER_HEIGHT_DESKTOP_PX};
+  height: ${FOOTER_CONTAINER_HEIGHT_DESKTOP}px;
   /* background-color: lightblue; */
 `;
 
@@ -106,7 +101,7 @@ const FooterContentRow = styled.div`
   flex-direction: row;
   width: 100%;
   height: auto;
-  height: ${FOOTER_CONTENT_HEIGHT_DESKTOP_PX};
+  height: ${FOOTER_CONTENT_HEIGHT_DESKTOP}px;
   /* background-color: gold; */
 `;
 
@@ -116,7 +111,7 @@ const FooterColumn = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  height: ${FOOTER_CONTENT_HEIGHT_DESKTOP_PX};
+  height: ${FOOTER_CONTENT_HEIGHT_DESKTOP}px;
   /* background: ${COLOR_RED}; */
 `;
 
@@ -126,7 +121,7 @@ const FooterLinkColumn = styled.div`
   flex-direction: column;
   text-align: left;
   justify-content: center;
-  height: ${FOOTER_CONTENT_HEIGHT_DESKTOP_PX};
+  height: ${FOOTER_CONTENT_HEIGHT_DESKTOP}px;
   /* background: green; */
 `;
 
@@ -150,7 +145,7 @@ const FooterCopyright = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   text-align: center;
-  height: ${FOOTER_COPYRIGHT_HEIGHT_DESKTOP_PX};
+  height: ${FOOTER_COPYRIGHT_HEIGHT_DESKTOP}px;
 
   div {
     color: ${COLOR_BASE_LIGHT};

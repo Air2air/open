@@ -2,7 +2,7 @@ export const dataMarkets = [
   {
     id: 1,
     label: "Healthtech",
-    size: 20,
+    height: 20,
     value: "$400B",
     color: "#ffffff",
     backgroundColor: "#5e4150",
@@ -11,7 +11,7 @@ export const dataMarkets = [
   {
     id: 2,
     label: "Medtech",
-    size: 30,
+    height: 30,
     value: "$500B",
     color: "#ffffff",
     backgroundColor: "#834747",
@@ -20,7 +20,7 @@ export const dataMarkets = [
   {
     id: 3,
     label: "Biotech",
-    size: 50,
+    height: 50,
     value: "$700B",
     color: "#ffffff",
     backgroundColor: "#78633e",
@@ -29,7 +29,7 @@ export const dataMarkets = [
   {
     id: 4,
     label: "Pharmatech",
-    size: 100,
+    height: 100,
     value: "$1.2T",
     color: "#ffffff",
     backgroundColor: "#76764f",

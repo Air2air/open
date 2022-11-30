@@ -1,10 +1,10 @@
 import {
-  BREAKPOINT_PX,
+  BREAKPOINT,
   BUTTON_COLOR_RED,
   BUTTON_COLOR_GRAY,
   BUTTON_COLOR_HOVER_RED,
   BUTTON_COLOR_HOVER_GRAY,
-  BUTTON_HEIGHT_PX,
+  BUTTON_HEIGHT,
   BUTTON_TEXT_COLOR,
 } from "styles/Constants";
 import styled from "styled-components";
@@ -43,13 +43,13 @@ const buttonWidthMobile = "100%";
 
 const ButtonPositioner = styled.div`
   margin: 0 auto;
-  height: ${BUTTON_HEIGHT_PX};
+  height: ${BUTTON_HEIGHT}px;
   text-align: right;
   width: 100%;
 `;
 
 const ButtonDesktop = styled.div<{ buttonColor?: string }>`
-  height: ${BUTTON_HEIGHT_PX};
+  height: ${BUTTON_HEIGHT}px;
   font-size: 1.1em;
   font-weight: 500;
   font-family: "Roboto Condensed", sans-serif;
@@ -70,16 +70,16 @@ const ButtonDesktop = styled.div<{ buttonColor?: string }>`
         : BUTTON_COLOR_HOVER_RED};
   }
   min-width: ${buttonWidthDesktop};
-  @media (min-width: ${BREAKPOINT_PX}) {
+  @media (min-width: ${BREAKPOINT}px) {
     display: inline-flex;
   }
-  @media (max-width: ${BREAKPOINT_PX}) {
+  @media (max-width: ${BREAKPOINT}px) {
     display: none;
   }
 `;
 
 const ButtonMobile = styled.div`
-  height: ${BUTTON_HEIGHT_PX};
+  height: ${BUTTON_HEIGHT}px;
   font-size: 1.1em;
   font-weight: 500;
   font-family: "Roboto Condensed", sans-serif;
@@ -100,10 +100,10 @@ const ButtonMobile = styled.div`
         : BUTTON_COLOR_HOVER_RED};
   }
   width: ${buttonWidthMobile};
-  @media (min-width: ${BREAKPOINT_PX}) {
+  @media (min-width: ${BREAKPOINT}px) {
     display: none;
   }
-  @media (max-width: ${BREAKPOINT_PX}) {
+  @media (max-width: ${BREAKPOINT}px) {
     display: inline-flex;
   }
 `;

@@ -1,7 +1,7 @@
 import {
   BUTTON_COLOR_LINKEDIN,
   BUTTON_COLOR_LINKEDIN_HOVER,
-  BUTTON_HEIGHT_LINKEDIN_PX,
+  BUTTON_HEIGHT_LINKEDIN,
   BUTTON_TEXT_COLOR,
 } from "styles/Constants";
 import styled from "styled-components";
@@ -23,7 +23,7 @@ export const ButtonLinkedIn = (props: { to: string; text: string }) => {
 };
 
 const ButtonPositioner = styled.div`
-  height: ${BUTTON_HEIGHT_LINKEDIN_PX};
+  height: ${BUTTON_HEIGHT_LINKEDIN}px;
 `;
 
 const ButtonWrapper = styled.div`
@@ -34,7 +34,7 @@ const ButtonWrapper = styled.div`
   padding: 0 16px;
   display: inline-flex;
   align-items: center;
-  height: ${BUTTON_HEIGHT_LINKEDIN_PX};
+  height: ${BUTTON_HEIGHT_LINKEDIN}px;
   transition: all 300ms;
   text-transform: uppercase;
   background: ${BUTTON_COLOR_LINKEDIN};

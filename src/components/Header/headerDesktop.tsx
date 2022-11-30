@@ -4,7 +4,7 @@ import { ReactComponent as LogoWhite } from "./../../images/logo_text_white.svg"
 import {
   HEADER_COLOR,
   COLOR_TEXT,
-  HEADER_HEIGHT_PX,
+  HEADER_HEIGHT,
   HEADER_COLOR_HOVER,
 } from "styles/Constants";
 import { useState, useEffect } from "react";
@@ -65,14 +65,14 @@ const HeaderOuter = styled.div`
   justify-content: center;
   width: 100vw;
   padding: 0;
-  height: ${HEADER_HEIGHT_PX};
+  height: ${HEADER_HEIGHT}px;
 `;
 
 const HeaderOverlay = styled.div`
   z-index: -1;
   position: absolute;
   width: 100vw;
-  height: ${HEADER_HEIGHT_PX};
+  height: ${HEADER_HEIGHT}px;
   background: ${HEADER_COLOR};
 `;
 
@@ -81,7 +81,7 @@ const HeaderInner = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 90%;
-  height: ${HEADER_HEIGHT_PX};
+  height: ${HEADER_HEIGHT}px;
   margin: 0 auto;
   padding: 0;
   /* background-color: blue; */
@@ -91,7 +91,7 @@ const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: ${HEADER_HEIGHT_PX};
+  height: ${HEADER_HEIGHT}px;
   padding: 0;
   opacity: 0.7;
   transform: scale(1);
@@ -108,7 +108,7 @@ const HeaderLeft = styled.div`
   align-items: center;
   flex: 1;
   justify-content: space-between;
-  height: ${HEADER_HEIGHT_PX};
+  height: ${HEADER_HEIGHT}px;
   padding: 0;
   /* background: #000; */
 `;
@@ -117,7 +117,7 @@ const HeaderRight = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  height: ${HEADER_HEIGHT_PX};
+  height: ${HEADER_HEIGHT}px;
 `;
 
 const HeaderLink = styled(Link)`
@@ -130,7 +130,7 @@ const HeaderLink = styled(Link)`
   align-items: center;
   flex-wrap:nowrap;
   text-transform: uppercase;
-  height: ${HEADER_HEIGHT_PX};
+  height: ${HEADER_HEIGHT}px;
   background: ${HEADER_COLOR};
   transition: all 300ms;
   &:hover {

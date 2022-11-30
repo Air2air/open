@@ -1,9 +1,9 @@
 import VimeoPlayer from "./vimeoPlayer";
 import styled from "styled-components";
 import {
-  BANNER_HEIGHT_DESKTOP_PX,
-  BANNER_HEIGHT_MOBILE_PX,
-  BREAKPOINT_PX,
+  BANNER_HEIGHT_DESKTOP,
+  BANNER_HEIGHT_MOBILE,
+  BREAKPOINT,
 } from "styles/Constants";
 import { VideoCalloutProps, VideoOverlayProps } from "api/interfaces";
 
@@ -47,11 +47,11 @@ const VideoWrapper = styled.div`
   min-width: 100vw;
   max-width: 100vw;
   overflow: hidden;
-  @media (min-width: ${BREAKPOINT_PX}) {
-    min-height: ${BANNER_HEIGHT_DESKTOP_PX};
+  @media (min-width: ${BREAKPOINT}px) {
+    min-height: ${BANNER_HEIGHT_DESKTOP}px;
   }
-  @media (max-width: ${BREAKPOINT_PX}) {
-    height: ${BANNER_HEIGHT_MOBILE_PX};
+  @media (max-width: ${BREAKPOINT}px) {
+    height: ${BANNER_HEIGHT_MOBILE}px;
   }
 `;
 
@@ -60,11 +60,11 @@ const Overlay = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  @media (min-width: ${BREAKPOINT_PX}) {
-    height: ${BANNER_HEIGHT_DESKTOP_PX};
+  @media (min-width: ${BREAKPOINT}px) {
+    height: ${BANNER_HEIGHT_DESKTOP}px;
   }
-  @media (max-width: ${BREAKPOINT_PX}) {
-    height: ${BANNER_HEIGHT_MOBILE_PX};
+  @media (max-width: ${BREAKPOINT}px) {
+    height: ${BANNER_HEIGHT_MOBILE}px;
   }
 `;
 

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {
-  BREAKPOINT_PX,
+  BREAKPOINT,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
 } from "styles/Constants";
@@ -29,11 +29,11 @@ const ContainerDiv = styled.div`
   overflow: hidden;
   height: auto;
   /* background: green; */
-  @media (min-width: ${BREAKPOINT_PX}) {
+  @media (min-width: ${BREAKPOINT}px) {
     padding: 40px 0;
     width: ${CONTENT_WIDTH_DESKTOP};
   }
-  @media (max-width: ${BREAKPOINT_PX}) {
+  @media (max-width: ${BREAKPOINT}px) {
     padding: 40px 0;
     width: ${CONTENT_WIDTH_MOBILE};
   }

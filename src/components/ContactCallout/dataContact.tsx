@@ -1,4 +1,8 @@
-import { COLOR_BASE_1, COLOR_BASE_2, COLOR_BASE_3 } from "../../styles/Constants"
+import {
+  COLOR_BASE_1,
+  COLOR_BASE_2,
+  COLOR_BASE_3,
+} from "../../styles/Constants";
 
 export const dataContact = [
   {
@@ -7,7 +11,7 @@ export const dataContact = [
     address: "Stanford, California, United States",
     email: "info@elevens.ai",
     photo: "stanford.jpg",
-    backgroundColor: {COLOR_BASE_1}
+    backgroundColor: { COLOR_BASE_1 },
   },
   {
     id: 2,
@@ -15,7 +19,7 @@ export const dataContact = [
     address: "Toronto, Ontario, Canada",
     email: "info@elevens.ai",
     photo: "toronto.jpg",
-    backgroundColor: {COLOR_BASE_2}
+    backgroundColor: { COLOR_BASE_2 },
   },
   {
     id: 3,
@@ -23,6 +27,6 @@ export const dataContact = [
     address: "Austin, Texas, United States",
     email: "info@elevens.ai",
     photo: "austin.jpg",
-    backgroundColor: {COLOR_BASE_3}
+    backgroundColor: { COLOR_BASE_3 },
   },
 ];

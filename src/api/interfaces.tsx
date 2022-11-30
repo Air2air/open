@@ -101,3 +101,22 @@ export interface VideoOverlayProps {
   overlayOpacity: number;
   overlayColor: string;
 }
+
+export interface BannerChartProps {
+  data: any;
+  randomHeight: boolean;
+  color: string;
+  label: string;
+  text: string;
+  backgroundColor: number;
+  typing?: boolean;
+}
+export interface BarColumnProps {
+  // data: any;
+  id: number;
+  label?: any;
+  randomHeight: boolean;
+  height: number;
+  color: string;
+  backgroundColor: any;
+}

@@ -1,6 +1,6 @@
 import {
-  BREAKPOINT_PX,
-  CALLOUT_HEIGHT_PX,
+  BREAKPOINT,
+  CALLOUT_HEIGHT,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
 } from "../../styles/Constants";
@@ -43,7 +43,7 @@ const OrgsWrapper = styled.div`
   overflow: hidden;
   align-items: center;
   height: auto;
-  min-height: ${CALLOUT_HEIGHT_PX};
+  min-height: ${CALLOUT_HEIGHT}px;
 `;
 
 const OrgInnerWrapper = styled.div`
@@ -51,10 +51,10 @@ const OrgInnerWrapper = styled.div`
   padding: 50px 0;
   z-index: +1;
   height: auto;
-  @media (min-width: ${BREAKPOINT_PX}) {
+  @media (min-width: ${BREAKPOINT}px) {
     width: ${CONTENT_WIDTH_DESKTOP};
   }
-  @media (max-width: ${BREAKPOINT_PX}) {
+  @media (max-width: ${BREAKPOINT}px) {
     width: ${CONTENT_WIDTH_MOBILE};
   }
 `;
@@ -65,10 +65,10 @@ const OrgMapImageRow = styled.div`
   grid-gap: 0px;
   opacity: 0.5;
 
-  @media (min-width: ${BREAKPOINT_PX}) {
+  @media (min-width: ${BREAKPOINT}px) {
     grid-template-columns: auto auto auto ;
   }
-  @media (max-width: ${BREAKPOINT_PX}) {
+  @media (max-width: ${BREAKPOINT}px) {
     grid-template-columns: auto auto;
   }
     /* background: red; */

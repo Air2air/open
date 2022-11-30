@@ -1,10 +1,10 @@
 import styled, { keyframes } from "styled-components";
 import Vimeo from "@u-wave/react-vimeo";
 import {
-  BANNER_HEIGHT_DESKTOP_PX,
-  BANNER_HEIGHT_MOBILE_PX,
-  BREAKPOINT_MID_PX,
-  BREAKPOINT_PX,
+  BANNER_HEIGHT_DESKTOP,
+  BANNER_HEIGHT_MOBILE,
+  BREAKPOINT_MID,
+  BREAKPOINT,
 } from "styles/Constants";
 import { useState } from "react";
 
@@ -50,14 +50,14 @@ const LoadingImage = styled.div`
   background-size: cover;
   width: 100vw;
   animation: ${fadeOutKeyframe} 1s 2s;
-  @media (min-width: ${BREAKPOINT_PX}) {
-    height: ${BANNER_HEIGHT_DESKTOP_PX};
+  @media (min-width: ${BREAKPOINT}px) {
+    height: ${BANNER_HEIGHT_DESKTOP}px;
   }
-  @media (max-width: ${BREAKPOINT_MID_PX}) {
-    height: ${BANNER_HEIGHT_DESKTOP_PX};
+  @media (max-width: ${BREAKPOINT_MID}px) {
+    height: ${BANNER_HEIGHT_DESKTOP}px;
   }
-  @media (max-width: ${BREAKPOINT_PX}) {
-    height: ${BANNER_HEIGHT_MOBILE_PX};
+  @media (max-width: ${BREAKPOINT}px) {
+    height: ${BANNER_HEIGHT_MOBILE}px;
   }
 `;
 
@@ -70,14 +70,14 @@ const VideoContainer = styled.div`
   object-position: center;
   z-index: -1;
 
-  @media (min-width: ${BREAKPOINT_PX}) {
-    height: ${BANNER_HEIGHT_DESKTOP_PX};
+  @media (min-width: ${BREAKPOINT}px) {
+    height: ${BANNER_HEIGHT_DESKTOP}px;
   }
-  @media (max-width: ${BREAKPOINT_MID_PX}) {
-    height: ${BANNER_HEIGHT_DESKTOP_PX};
+  @media (max-width: ${BREAKPOINT_MID}px) {
+    height: ${BANNER_HEIGHT_DESKTOP}px;
   }
-  @media (max-width: ${BREAKPOINT_PX}) {
-    height: ${BANNER_HEIGHT_MOBILE_PX};
+  @media (max-width: ${BREAKPOINT}px) {
+    height: ${BANNER_HEIGHT_MOBILE}px;
   }
 `;
 
@@ -86,22 +86,22 @@ const Video = styled((props) => <Vimeo {...props} />)`
   left: 50%;
   min-width: 100vw;
   transition: all 2s;
-  @media (min-width: ${BREAKPOINT_PX}) {
+  @media (min-width: ${BREAKPOINT}px) {
     top: -50%;
     transform: translate(-50%, 50%);
-    height: ${BANNER_HEIGHT_DESKTOP_PX};
+    height: ${BANNER_HEIGHT_DESKTOP}px;
   }
-  @media (min-width: ${BREAKPOINT_PX}) and (max-width: ${BREAKPOINT_MID_PX}) {
+  @media (min-width: ${BREAKPOINT}px) and (max-width: ${BREAKPOINT_MID}px) {
     min-width: 1100px;
     top: -50%;
     transform: translate(-50%, 50%);
-    height: ${BANNER_HEIGHT_DESKTOP_PX};
+    height: ${BANNER_HEIGHT_DESKTOP}px;
   }
-  @media (max-width: ${BREAKPOINT_PX}) {
+  @media (max-width: ${BREAKPOINT}px) {
     min-width: 900px;
     top: -50%;
     transform: translate(-50%, 50%);
-    height: ${BANNER_HEIGHT_MOBILE_PX};
+    height: ${BANNER_HEIGHT_MOBILE}px;
   }
 `;
 

@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import {
-  BANNER_HEIGHT_DESKTOP_PX,
-  BANNER_HEIGHT_MOBILE_PX,
-  BREAKPOINT_PX,
+  BANNER_HEIGHT_DESKTOP,
+  BANNER_HEIGHT_MOBILE,
+  BREAKPOINT,
 } from "styles/Constants";
 
 const ImageCallout = ({ pageImage, overlayOpacity, overlayColor }) => {
@@ -43,11 +43,11 @@ const ImageWrapper = styled.div`
   overflow: hidden;
   background-size: cover;
   overflow: hidden;
-  @media (min-width: ${BREAKPOINT_PX}) {
-    height: ${BANNER_HEIGHT_DESKTOP_PX};
+  @media (min-width: ${BREAKPOINT}px) {
+    height: ${BANNER_HEIGHT_DESKTOP}px;
   }
-  @media (max-width: ${BREAKPOINT_PX}) {
-    height: ${BANNER_HEIGHT_MOBILE_PX};
+  @media (max-width: ${BREAKPOINT}px) {
+    height: ${BANNER_HEIGHT_MOBILE}px;
   }
 `;
 
@@ -56,11 +56,11 @@ const Overlay = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  @media (min-width: ${BREAKPOINT_PX}) {
-    height: ${BANNER_HEIGHT_DESKTOP_PX};
+  @media (min-width: ${BREAKPOINT}px) {
+    height: ${BANNER_HEIGHT_DESKTOP}px;
   }
-  @media (max-width: ${BREAKPOINT_PX}) {
-    height: ${BANNER_HEIGHT_MOBILE_PX};
+  @media (max-width: ${BREAKPOINT}px) {
+    height: ${BANNER_HEIGHT_MOBILE}px;
   }
 `;
 

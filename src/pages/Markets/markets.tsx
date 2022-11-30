@@ -12,17 +12,18 @@ const MarketsPage = () => {
       <BannerChart
         data={dataMarkets}
         color="#ffffff"
-        title="Mid Decade Market Projections"
-        text="Eleven accelerates breakthrough ventures in Biotech, Healthtech, Medtech and Pharmatech:"
+        label="Mid Decade Market Projections"
+        text="Eleven accelerates breakthrough ventures in Biotech, Healthtech, Medtech and Pharma"
         typing={true}
+        randomHeight={false}
+        backgroundColor={2}
       />
       <TitleCentered title="AI Venture Stages" />
       <TimeLine data={dataVentureStage} backgroundColor={3} />
 
-<Container>
-  <Button buttonTo="/vision" buttonText="Vision" />
-  </Container>
-
+      <Container>
+        <Button buttonTo="/vision" buttonText="Vision" />
+      </Container>
     </>
   );
 };

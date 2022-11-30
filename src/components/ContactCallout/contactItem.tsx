@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import {
-  BREAKPOINT_PX,
+  BREAKPOINT,
   COLOR_BASE_2,
   COLOR_RED,
   COLOR_TEXT,
-  CONTACT_ITEM_HEIGHT_PX,
+  CONTACT_ITEM_HEIGHT,
 } from "../../styles/Constants";
 
 import { AnimationOnScroll } from "react-animation-on-scroll";
@@ -49,7 +49,7 @@ export const ContactItem = (props: {
 const ContactItemWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  height: ${CONTACT_ITEM_HEIGHT_PX};
+  height: ${CONTACT_ITEM_HEIGHT}px;
   margin: 24px 0;
   transition: all 500ms;
   background: none;
@@ -67,7 +67,7 @@ const ContactItemWrapper = styled.div`
 `;
 
 const ContactContent = styled.div`
-  height: ${CONTACT_ITEM_HEIGHT_PX};
+  height: ${CONTACT_ITEM_HEIGHT}px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -79,14 +79,14 @@ const ContactContent = styled.div`
 const ImageWrapper = styled.div`
   flex: 1;
   width: 100%;
-  height: ${CONTACT_ITEM_HEIGHT_PX};
+  height: ${CONTACT_ITEM_HEIGHT}px;
   background-size: cover;
   background-position: center;
   transition: all 500ms;
-  @media (min-width: ${BREAKPOINT_PX}) {
+  @media (min-width: ${BREAKPOINT}px) {
     display: inline-flex;
   }
-  @media (max-width: ${BREAKPOINT_PX}) {
+  @media (max-width: ${BREAKPOINT}px) {
     display: none;
   }
 `;
@@ -96,10 +96,10 @@ const ContactTitle = styled.h2`
   font-weight: 500;
   color: ${(props) =>
     props.color === "" || !props.color ? COLOR_RED : props.color};
-  @media (min-width: ${BREAKPOINT_PX}) {
+  @media (min-width: ${BREAKPOINT}px) {
     font-size: 1.5em;
   }
-  @media (max-width: ${BREAKPOINT_PX}) {
+  @media (max-width: ${BREAKPOINT}px) {
     font-size: 1.3em;
   }
 `;

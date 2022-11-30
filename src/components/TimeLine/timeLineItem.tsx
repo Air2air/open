@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {
-  BREAKPOINT_PX,
+  BREAKPOINT,
   COLOR_BASE_3,
   COLOR_BASE_LIGHT,
   COLOR_RED,
@@ -74,10 +74,10 @@ const TimeLineItemWrapper = styled.div`
   flex-direction: row;
   height: auto;
   margin-top: 14px;
-  @media (min-width: ${BREAKPOINT_PX}) {
+  @media (min-width: ${BREAKPOINT}px) {
     margin: 14px 0;
   }
-  @media (max-width: ${BREAKPOINT_PX}) {
+  @media (max-width: ${BREAKPOINT}px) {
   }
 `;
 
@@ -89,11 +89,11 @@ const TimeLineContent = styled.div`
   height: auto;
   border-radius: 6px;
   background: ${COLOR_BASE_3};
-  @media (min-width: ${BREAKPOINT_PX}) {
+  @media (min-width: ${BREAKPOINT}px) {
     width: 90%;
     padding: 30px;
   }
-  @media (max-width: ${BREAKPOINT_PX}) {
+  @media (max-width: ${BREAKPOINT}px) {
     width: 100%;
     padding: 30px;
 
@@ -107,10 +107,10 @@ const TimeLineTitle = styled.h2`
   font-weight: 500;
   color: ${(props) =>
     props.color === "" || !props.color ? COLOR_RED : props.color};
-  @media (min-width: ${BREAKPOINT_PX}) {
+  @media (min-width: ${BREAKPOINT}px) {
     font-size: 1.3em;
   }
-  @media (max-width: ${BREAKPOINT_PX}) {
+  @media (max-width: ${BREAKPOINT}px) {
     font-size: 1.3em;
   }
 `;
@@ -120,11 +120,11 @@ const TimeLineItemDesc = styled.div`
   font-weight: 300;
   height: auto;
   color: ${COLOR_TEXT};
-  @media (min-width: ${BREAKPOINT_PX}) {
+  @media (min-width: ${BREAKPOINT}px) {
     font-size: 1.2em;
 
   }
-  @media (max-width: ${BREAKPOINT_PX}) {
+  @media (max-width: ${BREAKPOINT}px) {
     font-size: 1.1em;
   }
   /* background: gold; ; */

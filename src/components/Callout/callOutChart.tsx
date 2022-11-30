@@ -1,6 +1,6 @@
 import {
-  BREAKPOINT_PX,
-  CALLOUT_HEIGHT_PX,
+  BREAKPOINT,
+  CALLOUT_HEIGHT,
   COLOR_BASE_1,
   COLOR_BASE_2,
   COLOR_BASE_3,
@@ -123,7 +123,7 @@ const CalloutContainer = styled.div`
   overflow: hidden;
   align-items: center;
   height: auto;
-  min-height: ${CALLOUT_HEIGHT_PX};
+  min-height: ${CALLOUT_HEIGHT}px;
 `;
 
 const InnerSection = styled.div`
@@ -131,11 +131,11 @@ const InnerSection = styled.div`
   margin: 0 auto;
   height: auto;
   text-align: left;
-  @media (min-width: ${BREAKPOINT_PX}) {
+  @media (min-width: ${BREAKPOINT}px) {
     padding: 50px 0;
     width: ${CONTENT_WIDTH_DESKTOP};
   }
-  @media (max-width: ${BREAKPOINT_PX}) {
+  @media (max-width: ${BREAKPOINT}px) {
     padding: 30px 0;
     width: ${CONTENT_WIDTH_MOBILE};
   }
@@ -167,13 +167,13 @@ const CalloutNumber = styled.div`
   &.left {
     margin-right: 30px;
   }
-  @media (min-width: ${BREAKPOINT_PX}) {
+  @media (min-width: ${BREAKPOINT}px) {
     width: ${numberSizeDesktop};
     height: ${numberSizeDesktop};
     font-size: 4rem;
     line-height: ${numberSizeDesktop};
   }
-  @media (max-width: ${BREAKPOINT_PX}) {
+  @media (max-width: ${BREAKPOINT}px) {
     width: ${numberSizeMobile};
     height: ${numberSizeMobile};
     font-size: 3rem;
@@ -189,11 +189,11 @@ const CalloutParagraph = styled.div`
   text-align: left;
   opacity: ${TEXT_OPACITY};
   /* padding-bottom: 20px; */
-  @media (min-width: ${BREAKPOINT_PX}) {
+  @media (min-width: ${BREAKPOINT}px) {
     font-size: 1.3em;
     line-height: 1.7em;
   }
-  @media (max-width: ${BREAKPOINT_PX}) {
+  @media (max-width: ${BREAKPOINT}px) {
     font-size: 1.1em;
     line-height: 1.7em;
   }

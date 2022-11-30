@@ -124,10 +124,10 @@ const MapPin = styled.div.attrs((props: { animationTime: string }) => props)`
 //   color: ${COLOR_TEXT};
 //   /* background: red; */
 
-//   @media (min-width: ${BREAKPOINT_PX}) {
+//   @media (min-width: ${BREAKPOINT}px) {
 //     grid-template-columns: auto auto auto auto;
 //   }
-//   @media (max-width: ${BREAKPOINT_PX}) {
+//   @media (max-width: ${BREAKPOINT}px) {
 //     grid-template-columns: auto auto;
 //   }
 // `;

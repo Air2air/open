@@ -2,9 +2,9 @@ import styled from "styled-components";
 import {
   COLOR_BASE_LIGHT,
   COLOR_BASE_TEXT,
-  TEAM_MEMBER_HEIGHT_PX,
-  TEAM_MEMBER_PHOTO_PX,
-  TEAM_MEMBER_WIDTH_PX,
+  TEAM_MEMBER_HEIGHT,
+  TEAM_MEMBER_PHOTO,
+  TEAM_MEMBER_WIDTH,
 } from "styles/Constants";
 import ButtonLinkedIn from "./../Button/buttonLinkedIn";
 
@@ -31,15 +31,15 @@ const AdvisorMemberWrapper = styled.div`
   align-items: center;
   justify-content: flex-start;
   text-align: center;
-  height: ${TEAM_MEMBER_HEIGHT_PX};
-  min-width: ${TEAM_MEMBER_WIDTH_PX};
+  height: ${TEAM_MEMBER_HEIGHT}px;
+  min-width: ${TEAM_MEMBER_WIDTH}px;
   /* background: gold; */
 `;
 
 
 const ImageWrapper = styled.div`
-  width: ${TEAM_MEMBER_PHOTO_PX};
-  height:${TEAM_MEMBER_PHOTO_PX};
+  width: ${TEAM_MEMBER_PHOTO}px;
+  height:${TEAM_MEMBER_PHOTO}px;
   background-size: cover;
   background-color: ${COLOR_BASE_LIGHT}
 `;

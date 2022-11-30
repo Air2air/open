@@ -1,9 +1,11 @@
 import {
-  BANNER_HEIGHT_DESKTOP_PX,
-  BANNER_HEIGHT_MOBILE_PX,
+  BANNER_HEIGHT_DESKTOP,
+  BANNER_HEIGHT_MOBILE,
   BANNER_PADDING_TOP_DESKTOP,
   BANNER_PADDING_TOP_MOBILE,
-  BREAKPOINT_PX,
+  BANNER_CONTENT_HEIGHT_DESKTOP,
+  BANNER_CONTENT_HEIGHT_MOBILE,
+  BREAKPOINT,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
 } from "styles/Constants";
@@ -18,14 +20,14 @@ import { FC } from "react";
 type BannerImageProps = {
   title: string;
   text?: string;
-  pageImage?:string;
-  color?:string;
-  overlayOpacity?:number;
-  overlayColor?:string;
-  typing:boolean;
+  pageImage?: string;
+  color?: string;
+  overlayOpacity?: number;
+  overlayColor?: string;
+  typing: boolean;
 };
 
-export const BannerImage: FC<BannerImageProps> = ({...props}) => {
+export const BannerImage: FC<BannerImageProps> = ({ ...props }) => {
   const titleParsed = parse(props.title);
 
   return (
@@ -54,34 +56,35 @@ const BannerImageWrapper = styled.div`
   top: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 100vw;
-  overflow: hidden;
   align-items: center;
-  @media (min-width: ${BREAKPOINT_PX}) {
-    height: ${BANNER_HEIGHT_DESKTOP_PX};
-    /* padding-top: ${BANNER_PADDING_TOP_DESKTOP}; */
+  @media (min-width: ${BREAKPOINT}px) {
+    height: ${BANNER_HEIGHT_DESKTOP}px;
   }
-  @media (max-width: ${BREAKPOINT_PX}) {
-    height: ${BANNER_HEIGHT_MOBILE_PX};
-    /* padding-top: ${BANNER_PADDING_TOP_MOBILE}; */
+  @media (max-width: ${BREAKPOINT}px) {
+    height: ${BANNER_HEIGHT_MOBILE}px;
   }
-  /* background: gold; */
 `;
 
-
-
 const TextWrapper = styled.div`
-  margin: 80px auto 0 auto;
+  position: absolute;
   z-index: +1;
-  height: auto;
   text-align: left;
-  @media (min-width: ${BREAKPOINT_PX}) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: ${BREAKPOINT}px) {
+    top: ${BANNER_PADDING_TOP_DESKTOP}px;
+    height: ${BANNER_CONTENT_HEIGHT_DESKTOP}px;
     width: ${CONTENT_WIDTH_DESKTOP};
   }
-  @media (max-width: ${BREAKPOINT_PX}) {
+  @media (max-width: ${BREAKPOINT}px) {
+    top: ${BANNER_PADDING_TOP_MOBILE}px;
+    height: ${BANNER_CONTENT_HEIGHT_MOBILE}px;
     width: ${CONTENT_WIDTH_MOBILE};
   }
+  /* background: gold; */
 `;
 
 export default BannerImage;

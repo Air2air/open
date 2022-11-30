@@ -1,22 +1,25 @@
 import Callout from "components/Callout/callOut";
 import { dataPracticeAreas } from "./dataPracticeAreas";
-import BannerChartRandom from "components/BannerChartRandom/bannerChartRandom";
+import BannerChart from "components/BannerChart/bannerChart";
 import { ICalloutProps } from "api/interfaces";
 
 const PracticeAreasPage = () => {
   return (
     <>
-      <BannerChartRandom
-        title="What We Do"
+      <BannerChart
+        data={dataPracticeAreas}
+        color="#ffffff"
+        label=""
         text="Eleven juggles the talent and resources for each practice area to optimize the whole venture's outcome. We call this process ''fractional CXAIOs''."
-        color="#FFFFFF"
+        randomHeight={true}
         backgroundColor={2}
       />
+
       {dataPracticeAreas.map((props: ICalloutProps) => (
         <Callout
           key={props.id}
           id={props.id}
-          title={props.title}
+          title={props.label}
           text={props.text}
           color={props.color}
           backgroundColor={props.backgroundColor}
