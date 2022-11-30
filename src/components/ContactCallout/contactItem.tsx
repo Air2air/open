@@ -78,7 +78,6 @@ const ContactItemWrapper = styled.div`
   flex-direction: row;
   align-items: center;
   height: ${CONTACT_ITEM_HEIGHT}px;
-
   transition: all 500ms;
   background: none;
   &:hover {
