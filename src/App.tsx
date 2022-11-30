@@ -5,8 +5,11 @@ import ProgressBar from "./components/Progress/progress";
 import { dataRoutes } from "./routes/routes";
 import { BREAKPOINT } from "styles/Constants";
 import { useWindowWidth } from "@react-hook/window-size";
+import { usePageTracking } from "./components/Analytics/gaTracking"
 
 const App = () => {
+
+  usePageTracking();
   const windowWidth = useWindowWidth();
 
   return (
