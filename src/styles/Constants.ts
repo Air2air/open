@@ -17,9 +17,9 @@ export const CALLOUT_HEIGHT = 250;
 export const CONTACT_ITEM_HEIGHT = 250;
 
 // TEAM
-export const TEAM_MEMBER_HEIGHT = 280;
+export const TEAM_MEMBER_HEIGHT = 220;
 export const TEAM_MEMBER_WIDTH = 100;
-export const TEAM_MEMBER_PHOTO = 140;
+export const TEAM_MEMBER_PHOTO = 120;
 
 // BUTTONS
 export const BUTTON_HEIGHT = 40;

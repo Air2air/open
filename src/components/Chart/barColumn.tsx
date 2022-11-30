@@ -2,7 +2,7 @@ import { BarColumnProps } from "api/interfaces";
 import { useState, useEffect } from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import styled from "styled-components";
-import { BREAKPOINT} from "styles/Constants";
+import { BREAKPOINT } from "styles/Constants";
 
 const BarColumn = (props: BarColumnProps) => {
   const [seriesRandomHeight, setSeriesRandomHeight] = useState(50);

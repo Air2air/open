@@ -21,14 +21,7 @@ const Advisors = (props: IAdvisorsProps) => {
         <AdvisorsContainer animateIn="animate__fadeIn" delay={0} offset={30}>
           <AdvisorsGrid>
             {sortedDataAdvisors.map((props) => (
-              <AdvisorMember
-                key={props.id}
-                id={props.id}
-                nameFirst={props.nameFirst}
-                nameLast={props.nameLast}
-                photo={props.photo}
-                linkedin={props.linkedin}
-              />
+              <AdvisorMember key={props.id} {...props} />
             ))}
           </AdvisorsGrid>
         </AdvisorsContainer>
@@ -44,11 +37,10 @@ const AdvisorsContainer = styled(AnimationOnScroll)`
 `;
 
 const AdvisorsGrid = styled.div`
-  margin: 0 auto;
   display: grid;
   flex: 0 0 100%;
   gap: 2rem;
-  padding: 40px 0 0 0;
+  /* padding: 10px 0 0 0; */
   width: 100%;
   @media (min-width: 701px) {
     grid-template-columns: repeat(3, 1fr);
