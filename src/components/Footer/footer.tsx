@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { FooterDesktop } from "./footerDesktop";
 import { FooterMobile } from "./footerMobile";
 
-const footerVideo: number = 766733147;
+const footerVideo: number = 776445588;
 
 export const Footer = () => {
   /*------ Responsive -------*/
