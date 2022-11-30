@@ -14,7 +14,7 @@ export const FOOTER_HEIGHT_MOBILE = 400;
 
 export const CALLOUT_HEIGHT = 250;
 
-export const CONTACT_ITEM_HEIGHT = 250;
+export const CONTACT_ITEM_HEIGHT = 210;
 
 // TEAM
 export const TEAM_MEMBER_HEIGHT = 220;

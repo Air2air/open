@@ -19,11 +19,11 @@ import { FC } from "react";
 
 type BannerImageProps = {
   title: string;
-  text?: string;
-  pageImage?: string;
+  text: string;
+  pageImage: string;
   color?: string;
-  overlayOpacity?: number;
-  overlayColor?: string;
+  overlayOpacity: number;
+  overlayColor: string;
   typing: boolean;
 };
 
@@ -33,15 +33,7 @@ export const BannerImage: FC<BannerImageProps> = ({ ...props }) => {
   return (
     <>
       <BannerImageWrapper>
-        {props.pageImage ? (
-          <ImageCallout
-            pageImage={props.pageImage}
-            overlayOpacity={props.overlayOpacity}
-            overlayColor={props.overlayColor}
-          />
-        ) : (
-          ""
-        )}
+        {props.pageImage ? <ImageCallout {...props} /> : ""}
         <TextWrapper>
           <TitleBanner title={titleParsed} color={props.color} />
           <BannerText typing={props.typing} text={props.text} />

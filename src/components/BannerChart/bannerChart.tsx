@@ -51,7 +51,6 @@ const BannerChart = (props: BannerChartProps) => {
   );
 };
 
-
 /* Chart Height */
 const chartSectionHeightDesktop = BANNER_CONTENT_HEIGHT_DESKTOP * 0.6;
 const chartSectionHeightMobile = BANNER_CONTENT_HEIGHT_MOBILE * 0.5;
@@ -61,8 +60,12 @@ const chartSpacerHeightDesktop = BANNER_CONTENT_HEIGHT_DESKTOP * 0.1;
 const chartSpacerHeightMobile = BANNER_CONTENT_HEIGHT_MOBILE * 0.07;
 
 /* Text Height */
-const chartTextHeightDesktop = BANNER_CONTENT_HEIGHT_DESKTOP - (chartSectionHeightDesktop + chartSpacerHeightDesktop);
-const chartTextHeightMobile = BANNER_CONTENT_HEIGHT_MOBILE - (chartSectionHeightMobile + chartSpacerHeightMobile);
+const chartTextHeightDesktop =
+  BANNER_CONTENT_HEIGHT_DESKTOP -
+  (chartSectionHeightDesktop + chartSpacerHeightDesktop);
+const chartTextHeightMobile =
+  BANNER_CONTENT_HEIGHT_MOBILE -
+  (chartSectionHeightMobile + chartSpacerHeightMobile);
 
 const BannerChartWrapper = styled.div`
   position: relative;

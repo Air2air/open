@@ -120,3 +120,12 @@ export interface BarColumnProps {
   color: string;
   backgroundColor: any;
 }
+
+export interface IContactItemProps {
+  id: number;
+  shortName: string;
+  email: string;
+  address: string;
+  photo: string;
+  backgroundColor: number;
+}

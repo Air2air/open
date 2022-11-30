@@ -16,7 +16,7 @@ const BarColumn = (props: BarColumnProps) => {
   };
 
   const minInterval = 500;
-  const maxInterval = 5000;
+  const maxInterval = 4000;
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -76,8 +76,8 @@ const BarColumn = (props: BarColumnProps) => {
   );
 };
 
-const barMinHeightDesktop = "28%";
-const barMinHeightMobile = "28%";
+const barMinHeightDesktop = 30;
+const barMinHeightMobile = 10;
 
 const ColumnOuter = styled.div`
   position: relative;
@@ -100,14 +100,14 @@ const ColumnSeries = styled(AnimationOnScroll)`
   display: flex;
   justify-content: center;
   align-self: flex-end;
-  transition: all 200ms;
+  transition: all 400ms;
   width: 100%;
   @media (min-width: ${BREAKPOINT}px) {
-    min-height: ${barMinHeightDesktop};
+    min-height: ${barMinHeightDesktop}px;
     align-items: flex-start;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    min-height: ${barMinHeightMobile};
+    min-height: ${barMinHeightMobile}px;
     align-items: flex-end;
   }
   /* background: blue; */
@@ -118,7 +118,7 @@ const Label = styled(AnimationOnScroll)`
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
-  transition: all 200ms;
+  transition: all 400ms;
   @media (min-width: ${BREAKPOINT}px) {
     font-height: 1rem;
     text-align: center;
