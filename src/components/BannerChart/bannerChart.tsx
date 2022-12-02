@@ -56,7 +56,7 @@ const chartSectionHeightDesktop = BANNER_CONTENT_HEIGHT_DESKTOP * 0.6;
 const chartSectionHeightMobile = BANNER_CONTENT_HEIGHT_MOBILE * 0.5;
 
 /* Spacer Height */
-const chartSpacerHeightDesktop = BANNER_CONTENT_HEIGHT_DESKTOP * 0.1;
+const chartSpacerHeightDesktop = BANNER_CONTENT_HEIGHT_DESKTOP * 0.07;
 const chartSpacerHeightMobile = BANNER_CONTENT_HEIGHT_MOBILE * 0.07;
 
 /* Text Height */
@@ -100,7 +100,7 @@ const ContentArea = styled.div`
     height: ${BANNER_CONTENT_HEIGHT_MOBILE}px;
     width: ${CONTENT_WIDTH_MOBILE};
   }
-  /* background: gold; */
+  background: gold;
 `;
 
 const ChartSection = styled.div`
@@ -112,7 +112,7 @@ const ChartSection = styled.div`
   @media (max-width: ${BREAKPOINT}px) {
     height: ${chartSectionHeightMobile}px;
   }
-  /* background: blue; */
+  background: blue;
 `;
 
 const ChartBottomSpacer = styled.div`
@@ -123,7 +123,7 @@ const ChartBottomSpacer = styled.div`
   @media (max-width: ${BREAKPOINT}px) {
     height: ${chartSpacerHeightMobile}px;
   }
-  /* background: red; */
+  background: red;
 `;
 
 const GraphLegend = styled.div`
@@ -140,7 +140,7 @@ const GraphLegend = styled.div`
   @media (max-width: ${BREAKPOINT}px) {
     font-size: 1em;
   }
-  /* background: green;  */
+  background: green; 
 `;
 
 const TextSection = styled.div`
@@ -154,7 +154,7 @@ const TextSection = styled.div`
   @media (max-width: ${BREAKPOINT}px) {
     height: ${chartTextHeightMobile}px;
   }
-  /* background: green; */
+  background: green;
 `;
 
 export default BannerChart;
