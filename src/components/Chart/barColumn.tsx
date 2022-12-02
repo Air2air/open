@@ -125,7 +125,7 @@ const Label = styled(AnimationOnScroll)`
     padding-top: 10px;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    transform: translate(0, -280%) rotate(90deg);
+    transform: translate(0, -260%) rotate(90deg);
     transform-origin: 50%;
     font-height: 0.94rem;
   }
