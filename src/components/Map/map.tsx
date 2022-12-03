@@ -6,6 +6,11 @@ import "./keyframes.scss";
 import { dataMap } from "./dataMap";
 import { COLOR_RED } from "styles/Constants";
 import setBodyColor from "./../../utils/setBodyColor";
+import ReactTooltip from "react-tooltip";
+
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
 
 const Map = (props) => {
   setBodyColor({ color: props.backgroundColor });
@@ -26,11 +31,13 @@ const Map = (props) => {
           />
           {dataMap.map((item, index) => (
             <MapPin
+              data-tip={item.location}
               key={index}
-              className="sonar"
               style={{ left: item.left, top: item.top }}
               animationTime={getRndInteger(2000, 3000) + "ms"}
-            ></MapPin>
+            >
+              <Tooltip padding="18px" type="dark" />
+            </MapPin>
           ))}
         </SVGContainer>
         {/* <LocationNamesTable>
@@ -45,10 +52,6 @@ const Map = (props) => {
   );
 };
 
-function getRndInteger(min, max) {
-  return Math.floor(Math.random() * (max - min)) + min;
-}
-
 const dotSize = "20px";
 
 const SVGContainer = styled.div`
@@ -60,31 +63,10 @@ const SVGContainer = styled.div`
   vertical-align: middle;
   /* overflow: hidden; */
 `;
-/*
-const MapPinTooltip = styled.div`
- position: absolute;
-  top: 50%;
-  left: 50%; 
-  transform-origin: center; 
 
-  width: ${toolTipWidth};
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: ${COLOR_BASE_3};
-  border-radius: 3px;
-  padding: 12px;
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
-  z-index: +2;
-  pointer-events: all;
-  &:hover {
-    opacity: 1;
-  }
+const Tooltip = styled(ReactTooltip)`
+  font-size: 2rem;
 `;
-*/
 
 const MapPin = styled.div.attrs((props: { animationTime: string }) => props)`
   position: absolute;
