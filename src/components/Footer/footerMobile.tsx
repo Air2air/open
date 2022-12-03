@@ -36,9 +36,10 @@ export const FooterMobile: FC<FooterProps> = ({ footerVideo }) => {
 
         <FooterContentRow>
           <FooterLinkColumn>
-            <FooterLink to="/">Home</FooterLink>
+            {/* <FooterLink to="/">Home</FooterLink> */}
             <FooterLink to="/practice_areas">What We Do</FooterLink>
             <FooterLink to="/markets">Markets</FooterLink>
+            <FooterLink to="/casestudies">Case Studies</FooterLink>
           </FooterLinkColumn>
           <FooterLinkColumn>
             <FooterLink to="/vision">Vision</FooterLink>

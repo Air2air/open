@@ -42,14 +42,14 @@ export const FooterDesktop: FC<FooterProps> = ({ footerVideo }) => {
           </FooterColumn>
           <FooterColumn>
             <FooterLinkColumn>
-              <FooterLink to="/">Home</FooterLink>
+              {/* <FooterLink to="/">Home</FooterLink> */}
               <FooterLink to="/practice_areas">What We Do</FooterLink>
               <FooterLink to="/markets">Markets</FooterLink>
+              <FooterLink to="/casestudies">Case Studies</FooterLink>
             </FooterLinkColumn>
             <FooterLinkColumn>
               <FooterLink to="/vision">Vision</FooterLink>
               <FooterLink to="/about">About</FooterLink>
-              {/* <FooterLink to="/timeline">Venture stage</FooterLink> */}
               <FooterLink to="/contact">Contact</FooterLink>
             </FooterLinkColumn>
           </FooterColumn>
