@@ -53,8 +53,7 @@ const BarColumn = (props: IBarColumnProps) => {
         ) : (
           <ColumnSeries
             style={{
-              // height: props.height + "%",
-              height: "50%",
+              height: props.height + "%",
               backgroundColor: props.backgroundColor,
             }}
             animateIn="animate__fadeInUp"
