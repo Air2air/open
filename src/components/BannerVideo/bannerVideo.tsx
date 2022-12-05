@@ -14,9 +14,9 @@ import VideoCallout from "./../VideoCallout/videoCallout";
 import parse from "html-react-parser";
 import { BannerText } from "./../BannerText/bannerText";
 import { TitleBanner } from "./../Title/titleBanner";
-import { BannerVideoProps } from "api/interfaces";
+import { IBannerVideoProps } from "interfaces/videos";
 
-export const BannerVideo = (props: BannerVideoProps) => {
+export const BannerVideo = (props: IBannerVideoProps) => {
   const titleParsed = parse(props.title);
 
   return (

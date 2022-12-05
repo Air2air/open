@@ -11,7 +11,9 @@ import {
   CONTENT_WIDTH_MOBILE,
 } from "styles/Constants";
 import { useState, useEffect } from "react";
-import { ITimeLineProps } from "./../../api/interfaces";
+import { ITimeLineProps } from "./interface";
+
+
 
 const TimeLine = (props: ITimeLineProps) => {
   /*------ Responsive -------*/

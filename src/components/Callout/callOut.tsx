@@ -16,7 +16,7 @@ import Button from "../Button/button";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import parse from "html-react-parser";
 import { TitleCallout } from "components/Title/titleCallout";
-import { ICalloutProps } from "api/interfaces";
+import { ICalloutProps } from "interfaces/callouts";
 
 export const Callout = (props: ICalloutProps) => {
   const textParsed = parse(props.text);

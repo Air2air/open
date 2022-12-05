@@ -5,19 +5,29 @@ import { ReactComponent as MapSvg } from "./world_map.svg";
 import "./keyframes.scss";
 import { dataMap } from "./dataMap";
 import { COLOR_RED } from "styles/Constants";
-import setBodyColor from "./../../utils/setBodyColor";
 import ReactTooltip from "react-tooltip";
+import { Key } from "react";
 
-function getRndInteger(min, max) {
+interface IDataMap {
+  id: number;
+  location: string;
+  left: string;
+  top: string;
+  member: {
+    role: string;
+    vertical: string;
+  }[];
+}
+
+function getRndInteger(min: number, max: number) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
-const Map = (props) => {
-  setBodyColor({ color: props.backgroundColor });
+const Map = ({ mapTitle, backgroundColor }) => {
   return (
     <>
       <Container>
-        <TitleCallout title={props.mapTitle} />
+        <TitleCallout title={mapTitle} />
         <SVGContainer>
           <MapSvg
             style={{
@@ -29,29 +39,29 @@ const Map = (props) => {
               left: 0,
             }}
           />
-          {dataMap.map((item, index) => (
-            <MapPin
-              data-tip={item.location}
-              key={index}
-              style={{ left: item.left, top: item.top }}
-              animationTime={getRndInteger(2000, 3000) + "ms"}
-            >
-              <Tooltip padding="18px" type="dark" />
-            </MapPin>
-          ))}
+          <MapPins data={dataMap} />
         </SVGContainer>
-        {/* <LocationNamesTable>
-          {dataMap
-            .sort((a, b) => a.location.localeCompare(b.location))
-            .map((item, index) => (
-              <div>{item.location}</div>
-            ))}
-        </LocationNamesTable> */}
       </Container>
     </>
   );
 };
 
+const MapPins = ({ data }) =>
+  data.map(
+    (
+      item: { location: any; left: any; top: any },
+      index: Key | null | undefined
+    ) => (
+      <MapPin
+        data-tip={item.location}
+        key={index}
+        style={{ left: item.left, top: item.top }}
+        animationTime={getRndInteger(2000, 3000) + "ms"}
+      >
+        <Tooltip padding="18px" type="dark" />
+      </MapPin>
+    )
+  );
 const dotSize = "20px";
 
 const SVGContainer = styled.div`

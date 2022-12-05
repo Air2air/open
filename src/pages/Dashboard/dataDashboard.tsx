@@ -1,4 +1,4 @@
-export const dataCaseStudies = [
+export const dataDashboard = [
   {
     id: 1,
     title: "1. Product-market fit",

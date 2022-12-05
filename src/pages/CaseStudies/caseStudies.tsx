@@ -1,8 +1,9 @@
 import BannerVideo from "components/BannerVideo/bannerVideo";
 import { COLOR_BASE } from "styles/Constants";
 import Callout from "components/Callout/callOut";
+// import CallOutChart from "components/Callout/callOutChart";
 import { dataCaseStudies } from "./dataCaseStudies";
-import { ICalloutProps } from "api/interfaces";
+// import { ICalloutProps } from "interfaces/callouts";
 
 const pageVideo = 776446335;
 
@@ -18,17 +19,12 @@ const CaseStudiesPage = () => {
         overlayColor={COLOR_BASE}
         typing={true}
       />
-      {dataCaseStudies.map((props: ICalloutProps) => (
-        <Callout
-          key={props.id}
-          id={props.id}
-          title={props.title}
-          text={props.text}
-          backgroundColor={props.backgroundColor}
-          buttonTo={props.buttonTo}
-          buttonText={props.buttonText}
-          buttonColor={props.buttonColor}
-        />
+
+      {dataCaseStudies.map((props) => (
+        <div key={props.id}>
+          {/* <CallOutChart data={dataCaseStudies}/> */}
+          <Callout {...props} />
+        </div>
       ))}
     </>
   );

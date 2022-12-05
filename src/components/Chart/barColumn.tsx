@@ -1,10 +1,11 @@
-import { BarColumnProps } from "api/interfaces";
+import { IBarColumnProps } from "interfaces/callouts";
 import { useState, useEffect } from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import styled from "styled-components";
 import { BREAKPOINT } from "styles/Constants";
 
-const BarColumn = (props: BarColumnProps) => {
+const BarColumn = (props: IBarColumnProps) => {
+
   const [seriesRandomHeight, setSeriesRandomHeight] = useState(50);
 
   const minHeight = 10;
@@ -52,7 +53,8 @@ const BarColumn = (props: BarColumnProps) => {
         ) : (
           <ColumnSeries
             style={{
-              height: props.height + "%",
+              // height: props.height + "%",
+              height: "50%",
               backgroundColor: props.backgroundColor,
             }}
             animateIn="animate__fadeInUp"
@@ -74,6 +76,9 @@ const BarColumn = (props: BarColumnProps) => {
       </ColumnOuter>
     </>
   );
+
+
+
 };
 
 const barMinHeightDesktop = 30;
@@ -85,13 +90,14 @@ const ColumnOuter = styled.div`
   justify-content: center;
   overflow: hidden;
   flex: 1;
+  height:100%;
   @media (min-width: ${BREAKPOINT}px) {
     margin: 0 10px;
   }
   @media (max-width: ${BREAKPOINT}px) {
     margin: 0 5px;
   }
-  /* background: blue; */
+  background: blue;
 `;
 
 const ColumnSeries = styled(AnimationOnScroll)`
@@ -110,7 +116,7 @@ const ColumnSeries = styled(AnimationOnScroll)`
     min-height: ${barMinHeightMobile}px;
     align-items: flex-end;
   }
-  /* background: blue; */
+  background: gold;
 `;
 
 const Label = styled(AnimationOnScroll)`
@@ -129,7 +135,7 @@ const Label = styled(AnimationOnScroll)`
     transform-origin: 50%;
     font-height: 0.94rem;
   }
-  /* background: red; */
+  background: green;
 `;
 
 export default BarColumn;

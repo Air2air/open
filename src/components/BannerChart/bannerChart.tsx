@@ -14,14 +14,14 @@ import {
 import BarColumn from "../Chart/barColumn";
 import { TitleBanner } from "components/Title/titleBanner";
 import { BannerText } from "components/BannerText/bannerText";
-import { BannerChartProps, BarColumnProps } from "api/interfaces";
+import { IBannerChartProps, IBarColumnProps } from "interfaces/callouts";
 
-const BannerChart = (props: BannerChartProps) => {
+const BannerChart = (props: IBannerChartProps) => {
   return (
     <BannerChartWrapper>
       <ContentArea>
         <ChartSection>
-          {props.data.map((item: BarColumnProps) => (
+          {props.data.map((item: IBarColumnProps) => (
             <BarColumn
               key={item.id}
               id={item.id}

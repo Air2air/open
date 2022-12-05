@@ -14,7 +14,15 @@ import {
 } from "../../styles/Constants";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import ButtonLinkedIn from "../Button/buttonLinkedIn";
-import { IContactItemProps } from "api/interfaces";
+
+interface IContactItemProps {
+  id: number;
+  shortName: string;
+  email: string;
+  address: string;
+  photo: string;
+  backgroundColor: number;
+}
 
 const assignBackgroundColor = (props: IContactItemProps) => {
   if (props.backgroundColor === 1) {

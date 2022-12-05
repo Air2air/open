@@ -8,7 +8,8 @@ import {
 } from "styles/Constants";
 import parse from "html-react-parser";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import { ITimeLineProps } from "./../../api/interfaces";
+import { ITimeLineProps } from "./interface";
+
 
 export const TimeLineItemCombined = (props: ITimeLineProps) => {
   const textParsed = parse(props.text);

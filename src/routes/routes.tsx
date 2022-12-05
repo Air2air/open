@@ -7,6 +7,7 @@ import EngagementPage from "pages/Engagement/engagement";
 import VisionPage from "pages/vision";
 import PracticeAreasPage from "pages/PracticeAreas/practiceAreas";
 import CaseStudiesPage from "pages/CaseStudies/caseStudies";
+import DashboardPage from "pages/Dashboard/dashboard";
 
 export const dataRoutes = [
   {
@@ -26,6 +27,12 @@ export const dataRoutes = [
     path: "contact",
     section: "Contact",
     element: <ContactPage />,
+  },
+  {
+    id: "Dashboard",
+    path: "dashboard",
+    section: "Dashboard",
+    element: <DashboardPage />,
   },
   {
     id: "Engagement",

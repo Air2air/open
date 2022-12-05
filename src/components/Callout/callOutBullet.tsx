@@ -18,7 +18,7 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 import parse from "html-react-parser";
 import { TitleCallout } from "components/Title/titleCallout";
 import Button from "../Button/button";
-import {ICalloutBulletProps} from "api/interfaces";
+import {ICalloutBulletProps} from "interfaces/callouts";
 
 
 export const CalloutBullet = (props: ICalloutBulletProps) => {

@@ -5,27 +5,22 @@ import {
   BANNER_HEIGHT_MOBILE,
   BREAKPOINT,
 } from "styles/Constants";
-import { VideoCalloutProps, VideoOverlayProps } from "api/interfaces";
+import { IVideoCalloutProps, IVideoOverlayProps } from "interfaces/videos";
 
-const VideoCallout = (props: VideoCalloutProps) => {
+const VideoCallout = (props: IVideoCalloutProps) => {
   return (
     <>
       <VideoWrapper>
-        <VimeoPlayer
-          videoID={props.pageVideo}
-        />
+        <VimeoPlayer videoID={props.pageVideo} />
       </VideoWrapper>
-      <BannerVideoOpacityOverlay
-        overlayOpacity={props.overlayOpacity}
-        overlayColor={props.overlayColor}
-      />
+      <BannerVideoOpacityOverlay {...props} />
     </>
   );
 };
 
 /* */
 
-const BannerVideoOpacityOverlay = (props: VideoOverlayProps) => {
+const BannerVideoOpacityOverlay = (props: IVideoOverlayProps) => {
   return (
     <>
       <Overlay

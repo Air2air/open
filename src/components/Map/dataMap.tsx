@@ -1,5 +1,6 @@
 export const dataMap = [
   {
+    id: 1,
     location: "Silicon Valley",
     left: "5%",
     top: "46%",
@@ -15,6 +16,7 @@ export const dataMap = [
     ],
   },
   {
+    id: 2,
     location: "Toronto, ON, CAN",
     left: "29%",
     top: "37%",
@@ -30,6 +32,7 @@ export const dataMap = [
     ],
   },
   {
+    id: 3,
     location: "Austin, TX",
     left: "19%",
     top: "55%",
@@ -41,6 +44,7 @@ export const dataMap = [
     ],
   },
   {
+    id: 4,
     location: "Jerusalem, Israel",
     left: "92%",
     top: "55%",
@@ -56,6 +60,7 @@ export const dataMap = [
     ],
   },
   {
+    id: 5,
     location: "Durham, NC",
     left: "29%",
     top: "51%",
@@ -67,6 +72,7 @@ export const dataMap = [
     ],
   },
   {
+    id: 6,
     location: "Cambridge, MA",
     left: "33%",
     top: "43%",
@@ -82,6 +88,7 @@ export const dataMap = [
     ],
   },
   {
+    id: 7,
     location: "New York, NY",
     left: "32%",
     top: "46%",
@@ -97,6 +104,7 @@ export const dataMap = [
     ],
   },
   {
+    id: 8,
     location: "Chicago, IL",
     left: "24%",
     top: "42%",
@@ -112,6 +120,7 @@ export const dataMap = [
     ],
   },
   {
+    id: 9,
     location: "London, England",
     left: "72%",
     top: "29%",

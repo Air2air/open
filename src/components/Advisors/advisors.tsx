@@ -5,7 +5,20 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 import { TitleCallout } from "./../Title/titleCallout";
 import Container from "./../Container/container";
 import setBodyColor from "./../../utils/setBodyColor";
-import { IAdvisorsProps } from "./../../api/interfaces";
+
+interface IAdvisorsProps {
+  title?: string;
+  id?: number;
+  order?: number;
+  nameLast?: string;
+  nameFirst?: string;
+  role?: string;
+  text?: string;
+  photo?: string;
+  linkedin?: string;
+  backgroundColor?: number;
+  buttonColor?: any;
+}
 
 const sortedDataAdvisors = dataAdvisors.sort((a, b) =>
   a.nameFirst > b.nameFirst ? 1 : -1
