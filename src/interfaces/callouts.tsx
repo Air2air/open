@@ -1,8 +1,8 @@
 export interface ICalloutProps {
   id?: number;
   order?: number;
-  title?: any;
-  label?: any;
+  title?: string;
+  label?: string;
   text?: any;
   side?: string;
   color?: string;

@@ -2,7 +2,7 @@ import { BREAKPOINT, COLOR_WHITE } from "styles/Constants";
 import styled from "styled-components";
 
 type TitleProps = {
-  title?: any;
+  title?: string;
   color?: string;
 };
 

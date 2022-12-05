@@ -1,11 +1,17 @@
 import Container from "components/Container/container";
 import styled from "styled-components";
+import {TitleCallout as Title } from "components/Title/titleCallout";
 
 const DashboardPage = () => {
   return (
     <>
       <div style={{ height: "100px", width: "100vw" }}></div>
+
       <Container>
+
+      <Title title="Client dashboard mockup"></Title>
+
+
         <Wireframe>
           <h3>Timeline to liquidity</h3>
           <ul>

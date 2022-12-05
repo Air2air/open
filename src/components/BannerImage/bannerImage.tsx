@@ -12,7 +12,7 @@ import {
 import styled from "styled-components";
 
 import ImageCallout from "./../ImageCallout/imageCallout";
-import parse from "html-react-parser";
+// import parse from "html-react-parser";
 import { BannerText } from "./../BannerText/bannerText";
 import { TitleBanner } from "./../Title/titleBanner";
 import { FC } from "react";
@@ -28,14 +28,14 @@ type BannerImageProps = {
 };
 
 export const BannerImage: FC<BannerImageProps> = ({ ...props }) => {
-  const titleParsed = parse(props.title);
+  // const titleParsed = parse(props.title);
 
   return (
     <>
       <BannerImageWrapper>
         {props.pageImage ? <ImageCallout {...props} /> : ""}
         <TextWrapper>
-          <TitleBanner title={titleParsed} color={props.color} />
+          <TitleBanner title={props.title} color={props.color} />
           <BannerText typing={props.typing} text={props.text} />
         </TextWrapper>
       </BannerImageWrapper>

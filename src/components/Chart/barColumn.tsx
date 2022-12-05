@@ -97,7 +97,7 @@ const ColumnOuter = styled.div`
   @media (max-width: ${BREAKPOINT}px) {
     margin: 0 5px;
   }
-  background: blue;
+  /* background: blue; */
 `;
 
 const ColumnSeries = styled(AnimationOnScroll)`
@@ -116,7 +116,7 @@ const ColumnSeries = styled(AnimationOnScroll)`
     min-height: ${barMinHeightMobile}px;
     align-items: flex-end;
   }
-  background: gold;
+  /* background: gold; */
 `;
 
 const Label = styled(AnimationOnScroll)`
@@ -135,7 +135,7 @@ const Label = styled(AnimationOnScroll)`
     transform-origin: 50%;
     font-height: 0.94rem;
   }
-  background: green;
+  /* background: green; */
 `;
 
 export default BarColumn;
