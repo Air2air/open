@@ -19,7 +19,7 @@ const CaseStudiesPage = () => {
     <>
       <BannerVideo
         title="Case Studies"
-        text="Examples from Elevens' 100-plus years of experience"
+        text="Examples from Elevens' 100-plus years of cumulative experience"
         pageVideo={pageVideo}
         color="#ffffff"
         overlayOpacity={0}
