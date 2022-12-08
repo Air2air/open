@@ -5,7 +5,6 @@ import styled from "styled-components";
 import { BREAKPOINT } from "styles/Constants";
 
 const BarColumn = (props: IBarColumnProps) => {
-
   const [seriesRandomHeight, setSeriesRandomHeight] = useState(50);
 
   const minHeight = 10;
@@ -75,9 +74,6 @@ const BarColumn = (props: IBarColumnProps) => {
       </ColumnOuter>
     </>
   );
-
-
-
 };
 
 const barMinHeightDesktop = 30;
@@ -89,7 +85,7 @@ const ColumnOuter = styled.div`
   justify-content: center;
   overflow: hidden;
   flex: 1;
-  height:100%;
+  height: 100%;
   @media (min-width: ${BREAKPOINT}px) {
     margin: 0 10px;
   }

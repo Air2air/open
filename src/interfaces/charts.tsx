@@ -38,8 +38,8 @@ export interface IBannerChartProps {
 export interface IBarColumnProps {
   id: number;
   label?: any;
-  randomHeight?: boolean;
-  height?: number;
-  color: string;
+  randomHeight: boolean;
+  height: number;
+  color?: string;
   backgroundColor: any;
 }

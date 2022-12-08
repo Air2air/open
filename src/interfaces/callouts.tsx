@@ -25,6 +25,19 @@ export interface ICalloutBulletProps {
   buttonColor?: any;
 }
 
+export interface ICalloutImageProps {
+  id: number;
+  title?: any;
+  text: string;
+  color?: string;
+  image?:string;
+  backgroundColor?: any;
+  buttonText?: string;
+  buttonTo?: string;
+  buttonColor?: any;
+}
+
+
 
 export interface IBannerChartProps {
   data: any;
