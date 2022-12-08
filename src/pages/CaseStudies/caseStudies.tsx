@@ -7,7 +7,6 @@ import {
 } from "styles/Constants";
 import Callout from "components/Callout/callOut";
 import { dataCaseStudies } from "./dataCaseStudies";
-import { IBarColumnProps } from "interfaces/charts";
 import styled from "styled-components";
 import BarColumn from "components/Chart/barColumn";
 
