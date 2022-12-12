@@ -19,7 +19,7 @@ const TitleContainer = styled.div`
 `;
 
 const TitleStyled = styled.h1<TitleProps>`
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 500;
   color: ${(props) =>
     props.color === "" || !props.color ? COLOR_RED : props.color};
