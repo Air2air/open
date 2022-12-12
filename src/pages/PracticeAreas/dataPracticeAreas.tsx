@@ -3,7 +3,7 @@ export const dataPracticeAreas = [
     id: 0,
     title: "Clinical",
     label: "Clinical",
-    text: "The world's foremost clinical talent guides Eleven's digital health ventures to the best possible outcomes. Your CXAIO offers deep technical and clinical support for broader consumer health sector landscape (e.g., patient engagement, wearables, digital health and wellness).",
+    text: "The world's foremost clinical talent guides Eleven's digital health ventures to the best possible outcomes. Your Chief Medical AI Officer {CMAIO} offers deep technical and clinical support for broader consumer health sector landscape (e.g., patient engagement, wearables, digital health and wellness).",
     color: "#FFFFFF",
     backgroundColor: "#858457",
   },

@@ -8,7 +8,7 @@ type TitleProps = {
 
 export const TitleBanner = (props: TitleProps) => {
   return props.title !== "" ? (
-    <TitleContainer>
+    <TitleContainer className="animate__animated animate__fadeInDown animate__delay-0s">
       <TitleStyled color={props.color}>{props.title}</TitleStyled>
     </TitleContainer>
   ) : null;
