@@ -21,8 +21,8 @@ const AboutPage = () => {
         overlayColor={COLOR_BASE}
         typing
       />
-      <Map mapTitle="Elevens Worldwide" backgroundColor={2} />
-      <Advisors title="Advisory Board" backgroundColor={3} />
+      <Map mapTitle="ELEVENS WORLDWIDE" backgroundColor={2} />
+      <Advisors title="ADVISORY BOARD" backgroundColor={3} />
       <Container>
         <Button buttonTo="/contact" buttonText="Contact" />
       </Container>

@@ -1,13 +1,13 @@
 export const dataEngagement = [
   {
     id: 1,
-    title: "Practice Areas",
+    title: "PRACTICE AREAS",
     text: "We advise Healthcare AI companies in:<ul><li>Technical</li><li>Clinical</li><li>Product/Market</li><li>Regulatory/Legal</li><li>Strategy/Business Dev</li></ul> We'll have an initial conversation to identify which you need and when.  Each of these project tracks follow the timelines and milestones as defined in our process.",
     backgroundColor: 2,
   },
   {
     id: 2,
-    title: "Assessment",
+    title: "ASSESSMENT",
     text: "Our exec group performs a 'readiness assessment' of your company culture, fit, pain points, biggest needs - benchmarked by our deep and broad industry understanding.  We begin with success goals and timeframe, then perform a gap audit and maturity assessment.  The resulting delta becomes  Elevens establishes a framework to measure the success of your AI project, program or venture. Conduct short-term gap audit. - Deliver an AI maturity assessment and roadmap to scale AI. Pain points, problems and inefficiencies are understood so that we can determine success.  Our process of continuous communication and measurement throughout the project keeps stakeholders updated on the project status and any changes that might be required to the budget or schedule.",
     backgroundColor: 1,
   },
