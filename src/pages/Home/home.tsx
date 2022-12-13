@@ -13,7 +13,7 @@ const HomePage = () => {
     <>
       <BannerVideo
         title="Get your Health AI venture to liquidity"
-        text="Use the best people and practices to build your AI venture."
+        text="Compress your timeline to liquidity, slashing dilution, risk and time."
         pageVideo={pageVideo}
         overlayOpacity={0}
         overlayColor={COLOR_BASE}

@@ -1,13 +1,16 @@
-import AboutPage from "pages/about";
-import ContactPage from "pages/contact";
-import HomePage from "pages/Home/home";
-import MarketsPage from "pages/Markets/markets";
-import ProcessPage from "pages/Process/process";
-import EngagementPage from "pages/Engagement/engagement";
-import VisionPage from "pages/vision";
-import PracticeAreasPage from "pages/PracticeAreas/practiceAreas";
-import CaseStudiesPage from "pages/CaseStudies/caseStudies";
-import DashboardPage from "pages/Dashboard/dashboard";
+import { lazy } from "react";
+const AboutPage = lazy(() => import("pages/about"));
+const ContactPage = lazy(() => import("pages/contact"));
+const HomePage = lazy(() => import("pages/Home/home"));
+const MarketsPage = lazy(() => import("pages/Markets/markets"));
+const ProcessPage = lazy(() => import("pages/Process/process"));
+const EngagementPage = lazy(() => import("pages/Engagement/engagement"));
+const VisionPage = lazy(() => import("pages/vision"));
+const PracticeAreasPage = lazy(
+  () => import("pages/PracticeAreas/practiceAreas")
+);
+const CaseStudiesPage = lazy(() => import("pages/CaseStudies/caseStudies"));
+const DashboardPage = lazy(() => import("pages/Dashboard/dashboard"));
 
 export const dataRoutes = [
   {
