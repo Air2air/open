@@ -1,11 +1,9 @@
 import { StagesColumns } from "../Stages/stagesColumns";
-// import { BenefitsColumns } from "../Benefits/benefitsColumns";
 import BannerCompressText from "../Text/bannerCompressText";
 import styled from "styled-components";
 import {
   BREAKPOINT,
   COLOR_BASE_3,
-  COLOR_CAPTION,
   BANNER_HEIGHT_DESKTOP,
   BANNER_HEIGHT_MOBILE,
   BANNER_PADDING_TOP_DESKTOP,
