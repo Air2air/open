@@ -14,7 +14,6 @@ import {
 
 export const StagesColumns = () => {
   const [stagesOpacity, setStagesOpacity] = useState(1);
-  const [stagesWidth, setStagesWidth] = useState("100%");
   const [stagesTop, setStagesTop] = useState(-200);
   const [stagesEndLoop, setStagesEndLoop] = useState(0);
 
@@ -23,7 +22,6 @@ export const StagesColumns = () => {
     const stagesInit = setTimeout(() => {
       setStagesOpacity(0);
       setStagesTop(-200);
-      setStagesWidth("100%");
       setStagesEndLoop(0);
     }, 0);
 
@@ -34,7 +32,6 @@ export const StagesColumns = () => {
 
     const stagesShrink = setTimeout(() => {
       setStagesOpacity(1);
-      setStagesWidth("50%");
     }, 10000);
 
     const stagesExit = setTimeout(() => {
@@ -60,7 +57,7 @@ export const StagesColumns = () => {
 
   return (
     <StagesColumnWrapper
-      style={{ width: stagesWidth, opacity: stagesOpacity, top: stagesTop }}
+      style={{ opacity: stagesOpacity, top: stagesTop }}
     >
       {dataStages.map((item) => (
         <StagesColumn
@@ -87,6 +84,7 @@ const StagesColumnWrapper = styled.div`
   grid-template-columns: repeat(${dataVisionLength}, 1fr);
   transform-origin: 0% 0%;
   transition: all ${columnTransition}ms;
+  width:100%;
   @media (min-width: ${BREAKPOINT}px) {
     grid-gap: 10px;
     height: ${chartHeightDesktop}px;

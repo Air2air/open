@@ -1,3 +1,4 @@
+import HistoryPage from "pages/History/history";
 import { lazy } from "react";
 const AboutPage = lazy(() => import("pages/about"));
 const ContactPage = lazy(() => import("pages/contact"));
@@ -42,6 +43,12 @@ export const dataRoutes = [
     path: "engagement",
     section: "Engagement",
     element: <EngagementPage />,
+  },
+  {
+    id: "History",
+    path: "history",
+    section: "History",
+    element: <HistoryPage />,
   },
   {
     id: "Home",
