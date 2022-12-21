@@ -1,6 +1,6 @@
 import TimeLine from "components/TimeLine/timeLine";
 import { dataVentureStage } from "./dataVentureStage";
-import BannerChart from "components/BannerChart/bannerChart";
+import BannerChart from "components/BannerChart/bannerMarkets";
 import { dataMarkets } from "./dataMarkets";
 import { TitleCentered } from "components/Title/titleCentered";
 import Button from "components/Button/button";

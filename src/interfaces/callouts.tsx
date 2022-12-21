@@ -37,9 +37,17 @@ export interface ICalloutImageProps {
   buttonColor?: any;
 }
 
+export interface IBannerMarketsProps {
+  data: any;
+  randomHeight: boolean;
+  color: string;
+  label: string;
+  text: string;
+  backgroundColor: number;
+  typing?: boolean;
+}
 
-
-export interface IBannerChartProps {
+export interface IBannerCompressProps {
   data: any;
   randomHeight: boolean;
   color: string;

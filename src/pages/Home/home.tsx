@@ -1,24 +1,20 @@
 import setBodyColor from "../../utils/setBodyColor";
 import Callout from "../../components/Callout/callOut";
-import BannerVideo from "../../components/BannerVideo/bannerVideo";
 import { COLOR_BASE } from "../../styles/Constants";
 import OrgsCallout from "../../components/OrgsCallout/orgsCallOut";
-import { dataHome } from "./dataHome";
 
-const pageVideo = 776443340;
+import { dataHome } from "./dataHome";
+// import BannerAnimation from "components/BannerAnimations/test";
+import BannerCompress from "components/BannerCompress/Wrapper/bannerCompress";
+// import AnimatedColumns from "components/BannerAnimations/animatedColumns";
+
+// const pageVideo = 776443340;
 
 const HomePage = () => {
   setBodyColor({ color: COLOR_BASE });
   return (
     <>
-      <BannerVideo
-        title="Get your Health AI venture to liquidity"
-        text="Compress your timeline to liquidity, slashing dilution, risk and time."
-        pageVideo={pageVideo}
-        overlayOpacity={0}
-        overlayColor={COLOR_BASE}
-        typing={true}
-      />
+      <BannerCompress />
       {dataHome.map((props) => (
         <Callout
           key={props.id}
@@ -30,7 +26,6 @@ const HomePage = () => {
           buttonTo={props.buttonTo}
         />
       ))}
-
       <OrgsCallout />
     </>
   );

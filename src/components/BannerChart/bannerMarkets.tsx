@@ -14,11 +14,11 @@ import {
 import BarColumn from "../Chart/barColumn";
 import { TitleBanner } from "components/Title/titleBanner";
 import { BannerText } from "components/BannerText/bannerText";
-import { IBannerChartProps, IBarColumnProps } from "interfaces/callouts";
+import { IBannerMarketsProps, IBarColumnProps } from "interfaces/callouts";
 
-const BannerChart = (props: IBannerChartProps) => {
+const BannerMarkets = (props: IBannerMarketsProps) => {
   return (
-    <BannerChartWrapper>
+    <BannerMarketsWrapper>
       <ContentArea>
         <ChartSection>
           {props.data.map((item: IBarColumnProps) => (
@@ -47,7 +47,7 @@ const BannerChart = (props: IBannerChartProps) => {
           <BannerText text={props.text} typing />
         </TextSection>
       </ContentArea>
-    </BannerChartWrapper>
+    </BannerMarketsWrapper>
   );
 };
 
@@ -67,7 +67,7 @@ const chartTextHeightMobile =
   BANNER_CONTENT_HEIGHT_MOBILE -
   (chartSectionHeightMobile + chartSpacerHeightMobile);
 
-const BannerChartWrapper = styled.div`
+const BannerMarketsWrapper = styled.div`
   position: relative;
   top: 0;
   display: flex;
@@ -157,4 +157,4 @@ const TextSection = styled.div`
   /* background: green; */
 `;
 
-export default BannerChart;
+export default BannerMarkets;

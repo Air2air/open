@@ -15,8 +15,8 @@ const BarColumn = (props: IBarColumnProps) => {
     setSeriesRandomHeight(randomNumber);
   };
 
-  const minInterval = 500;
-  const maxInterval = 4000;
+  const minInterval = 3000;
+  const maxInterval = 5000;
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -121,14 +121,15 @@ const Label = styled(AnimationOnScroll)`
   text-transform: uppercase;
   transition: all 400ms;
   @media (min-width: ${BREAKPOINT}px) {
-    font-height: 1rem;
+    font-size: 1rem;
     text-align: center;
     padding-top: 10px;
   }
   @media (max-width: ${BREAKPOINT}px) {
     transform: translate(0, -260%) rotate(90deg);
-    transform-origin: 50%;
-    font-height: 0.94rem;
+    transform-origin: 50%; 
+    /* writing-mode: vertical-rl; */
+    font-size: 0.94rem;
   }
   /* background: green; */
 `;

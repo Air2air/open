@@ -1,6 +1,6 @@
 import Callout from "components/Callout/callOut";
 import { dataPracticeAreas } from "./dataPracticeAreas";
-import BannerChart from "components/BannerChart/bannerChart";
+import BannerChart from "components/BannerChart/bannerMarkets";
 import { ICalloutProps } from "interfaces/callouts";
 
 const PracticeAreasPage = () => {
@@ -16,7 +16,7 @@ const PracticeAreasPage = () => {
       />
 
       {dataPracticeAreas.map((props: ICalloutProps) => (
-        <Callout {...props} />
+        <Callout {...props} key={props.id} />
       ))}
     </>
   );
