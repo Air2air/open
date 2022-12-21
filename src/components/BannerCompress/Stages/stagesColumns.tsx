@@ -1,13 +1,18 @@
 import styled from "styled-components";
 import {
-  BREAKPOINT, CHART_LABEL_DESKTOP, CHART_LABEL_MOBILE,
+  BREAKPOINT,
+  CHART_LABEL_DESKTOP,
+  CHART_LABEL_MOBILE,
 } from "styles/Constants";
 import { dataStages } from "./dataStages";
 import { useState, useEffect } from "react";
-import { chartHeightDesktop, chartHeightMobile, columnTransition } from "../Wrapper/config";
+import {
+  chartHeightDesktop,
+  chartHeightMobile,
+  columnTransition,
+} from "../Wrapper/config";
 
 export const StagesColumns = () => {
-
   const [stagesOpacity, setStagesOpacity] = useState(1);
   const [stagesWidth, setStagesWidth] = useState("100%");
   const [stagesTop, setStagesTop] = useState(-200);
@@ -19,6 +24,7 @@ export const StagesColumns = () => {
       setStagesOpacity(0);
       setStagesTop(-200);
       setStagesWidth("100%");
+      setStagesEndLoop(0);
     }, 0);
 
     const stagesEnter = setTimeout(() => {
@@ -48,8 +54,14 @@ export const StagesColumns = () => {
     };
   }, [stagesEndLoop]);
 
+
+//crete a useEffect function that loops continuously
+
+
   return (
-    <StagesColumnWrapper style={{ width: stagesWidth, opacity: stagesOpacity, top: stagesTop }}>
+    <StagesColumnWrapper
+      style={{ width: stagesWidth, opacity: stagesOpacity, top: stagesTop }}
+    >
       {dataStages.map((item) => (
         <StagesColumn
           id="stages-column"
@@ -60,7 +72,7 @@ export const StagesColumns = () => {
           <span>{item.label}</span>
         </StagesColumn>
       ))}
-            <div style={{width:stagesEndLoop}} />
+      <div style={{ width: stagesEndLoop }} />
     </StagesColumnWrapper>
   );
 };

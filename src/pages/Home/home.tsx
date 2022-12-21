@@ -1,13 +1,10 @@
 import setBodyColor from "../../utils/setBodyColor";
 import { COLOR_BASE } from "../../styles/Constants";
 import OrgsCallout from "../../components/OrgsCallout/orgsCallOut";
-// import BannerAnimation from "components/BannerAnimations/test";
 import BannerCompress from "components/BannerCompress/Wrapper/bannerCompress";
 import Button from "components/Button/button";
 import Container from "components/Container/container";
-// import AnimatedColumns from "components/BannerAnimations/animatedColumns";
 
-// const pageVideo = 776443340;
 
 const HomePage = () => {
   setBodyColor({ color: COLOR_BASE });

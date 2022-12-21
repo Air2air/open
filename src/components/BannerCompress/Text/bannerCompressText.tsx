@@ -22,6 +22,7 @@ const BannerCompressText = () => {
       setTextCutTimelineOpacity(0);
       setTextCXAIOOpacity(0);
       setTextHowOpacity(0);
+      setTextEndLoop(0);
     }, 0);
 
     const textFaster = setTimeout(() => {
