@@ -1,6 +1,8 @@
 import {
   BREAKPOINT,
   CALLOUT_HEIGHT,
+  COLOR_BASE_2,
+  COLOR_BASE_3,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
 } from "../../styles/Constants";
@@ -44,6 +46,7 @@ const OrgsWrapper = styled.div`
   align-items: center;
   height: auto;
   min-height: ${CALLOUT_HEIGHT}px;
+  background: ${COLOR_BASE_3};
 `;
 
 const OrgInnerWrapper = styled.div`

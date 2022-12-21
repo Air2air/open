@@ -14,6 +14,7 @@ const BannerCompressText = () => {
   const [textCutTimelineOpacity, setTextCutTimelineOpacity] = useState(0);
   const [textCXAIOOpacity, setTextCXAIOOpacity] = useState(0);
   const [textHowOpacity, setTextHowOpacity] = useState(0);
+  const [textEndLoop, setTextEndLoop] = useState(0);
 
   useEffect(() => {
     const textReset = setTimeout(() => {
@@ -27,7 +28,7 @@ const BannerCompressText = () => {
       setTextFasterOpacity(1);
     }, 1000);
 
-    const textFasterReset = setTimeout(() => {
+    const textFasterEnd = setTimeout(() => {
       setTextFasterOpacity(0);
     }, 6000);
 
@@ -35,38 +36,43 @@ const BannerCompressText = () => {
       setTextCutTimelineOpacity(1);
     }, 7000);
 
-    const textCutTimelineReset = setTimeout(() => {
+    const textCutTimelineEnd = setTimeout(() => {
       setTextCutTimelineOpacity(0);
-    }, 11000);
+    }, 12000);
 
     const textCXAIO = setTimeout(() => {
       setTextCXAIOOpacity(1);
-    }, 11500);
+    }, 13000);
 
-    const textCXAIOReset = setTimeout(() => {
+    const textCXAIOEnd = setTimeout(() => {
       setTextCXAIOOpacity(0);
-    }, 15000);
+    }, 18000);
 
     const textHow = setTimeout(() => {
       setTextHowOpacity(1);
-    }, 15500);
+    }, 19000);
 
-    const textHowFade = setTimeout(() => {
+    const textHowEnd = setTimeout(() => {
       setTextHowOpacity(0);
-    }, 20000);
+    }, 24000);
+
+    const textEndLoop = setTimeout(() => {
+      setTextEndLoop(1);
+    }, 24000);
 
     return () => {
       clearTimeout(textReset);
       clearTimeout(textFaster);
-      clearTimeout(textFasterReset);
+      clearTimeout(textFasterEnd);
       clearTimeout(textCutTimeline);
-      clearTimeout(textCutTimelineReset);
+      clearTimeout(textCutTimelineEnd);
       clearTimeout(textCXAIO);
-      clearTimeout(textCXAIOReset);
+      clearTimeout(textCXAIOEnd);
       clearTimeout(textHow);
-      clearTimeout(textHowFade);
+      clearTimeout(textHowEnd);
+      clearTimeout(textEndLoop);
     };
-  }, []);
+  }, [textEndLoop]);
 
   return (
     <>
@@ -82,10 +88,11 @@ const BannerCompressText = () => {
         <TitleBanner title="Reducing Risk, Dilution and Time." />
         <BannerText text="Getting you to the goal line for a fraction of the cost. " />
       </TextSection>
-      <TextSection style={{ opacity: textHowOpacity }}>
+      <TextSection style={{ opacity: textHowOpacity }} >
         <TitleBanner title="How does it work?" />
         <BannerText text="Your CXAIO advises you through every step of your venture." />
       </TextSection>
+      <div style={{width:textEndLoop}} />
     </>
   );
 };

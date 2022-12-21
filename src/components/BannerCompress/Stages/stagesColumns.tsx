@@ -31,11 +31,12 @@ export const StagesColumns = () => {
 
     const stagesHide = setTimeout(() => {
       setStagesTop(-200);
-      setStagesWidth("100%");
+   
     }, 10000);
 
     const stagesReEnter = setTimeout(() => {
       setStagesTop(0);
+      setStagesWidth("100%");
     }, 15000);
 
     const stagesFade = setTimeout(() => {
