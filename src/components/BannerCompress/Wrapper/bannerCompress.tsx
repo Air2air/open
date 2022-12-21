@@ -23,28 +23,11 @@ import {
   chartSpacerHeightDesktop,
   chartSpacerHeightMobile,
 } from "./config";
-import { ReductionsColumns } from "../Reductions/reductionsColumns";
-import ButtonCentered from "components/Button/buttonCentered";
-import { useState, useEffect } from "react";
-import { SavingsColumns } from "../Savings/savingsColumn";
+
+
+
 
 const BannerCompress = () => {
-  const [buttonOpacity, setButtonOpacity] = useState(0);
-
-  useEffect(() => {
-    const buttonReset = setTimeout(() => {
-      setButtonOpacity(0);
-    }, 0);
-
-    const buttonShow = setTimeout(() => {
-      setButtonOpacity(1);
-    }, 20000);
-
-    return () => {
-      clearTimeout(buttonReset);
-      clearTimeout(buttonShow);
-    };
-  }, []);
 
   return (
     <BannerCompressWrapper>
@@ -58,9 +41,6 @@ const BannerCompress = () => {
         </ChartSection>
         <ChartBottomSpacer />
         <BannerCompressText />
-        {/* <ButtonPositioner style={{ opacity: buttonOpacity }}>
-          <ButtonCentered buttonTo="/practice_areas" buttonText="What We Do" />
-        </ButtonPositioner> */}
       </ContentArea>
     </BannerCompressWrapper>
   );
