@@ -105,7 +105,6 @@ const ReductionsColumn = styled.div`
     }
     @media (max-width: ${BREAKPOINT}px) {
       font-size: ${CHART_LABEL_MOBILE};
-      writing-mode: vertical-rl;
     }
     /* background: red; */
   }

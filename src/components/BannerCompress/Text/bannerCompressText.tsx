@@ -37,23 +37,23 @@ const BannerCompressText = () => {
 
     const textCutTimelineReset = setTimeout(() => {
       setTextCutTimelineOpacity(0);
-    }, 12000);
+    }, 11000);
 
     const textCXAIO = setTimeout(() => {
       setTextCXAIOOpacity(1);
-    }, 13000);
+    }, 11500);
 
     const textCXAIOReset = setTimeout(() => {
       setTextCXAIOOpacity(0);
-    }, 17000);
+    }, 15000);
 
     const textHow = setTimeout(() => {
       setTextHowOpacity(1);
-    }, 18000);
+    }, 15500);
 
     const textHowFade = setTimeout(() => {
       setTextHowOpacity(0);
-    }, 22000);
+    }, 20000);
 
     return () => {
       clearTimeout(textReset);

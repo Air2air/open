@@ -61,7 +61,7 @@ export const TEXT_CONTENT_MOBILE = "2em";
 
 // Charts
 export const CHART_LABEL_DESKTOP = "1.2em";
-export const CHART_LABEL_MOBILE = "1.1em";
+export const CHART_LABEL_MOBILE = "1em";
 
 // Colors
 export const COLOR_BIO = "#ff9a0e";

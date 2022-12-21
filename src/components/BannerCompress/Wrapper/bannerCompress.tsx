@@ -38,7 +38,7 @@ const BannerCompress = () => {
 
     const buttonShow = setTimeout(() => {
       setButtonOpacity(1);
-    }, 22000);
+    }, 20000);
 
     return () => {
       clearTimeout(buttonReset);
@@ -141,7 +141,7 @@ const ChartBottomSpacer = styled.div`
 
 const ButtonPositioner = styled.div`
   position: absolute;
-  margin: 0 auto;
+  margin: auto auto;
   display: flex;
   justify-self: center;
   justify-content: center;
