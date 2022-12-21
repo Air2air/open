@@ -1,9 +1,6 @@
 import setBodyColor from "../../utils/setBodyColor";
-import Callout from "../../components/Callout/callOut";
 import { COLOR_BASE } from "../../styles/Constants";
 import OrgsCallout from "../../components/OrgsCallout/orgsCallOut";
-
-import { dataHome } from "./dataHome";
 // import BannerAnimation from "components/BannerAnimations/test";
 import BannerCompress from "components/BannerCompress/Wrapper/bannerCompress";
 import Button from "components/Button/button";
