@@ -1,8 +1,5 @@
 import BannerChart from "components/BannerChart/bannerMarkets";
 import { dataMarkets } from "./dataMarkets";
-import { TitleCentered } from "components/Title/titleCentered";
-import Button from "components/Button/button";
-import Container from "components/Container/container";
 import Callout from "components/Callout/callOut";
 
 const MarketsPage = () => {
