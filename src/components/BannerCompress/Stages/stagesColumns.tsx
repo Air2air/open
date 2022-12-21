@@ -11,12 +11,14 @@ export const StagesColumns = () => {
   const [stagesOpacity, setStagesOpacity] = useState(1);
   const [stagesWidth, setStagesWidth] = useState("100%");
   const [stagesTop, setStagesTop] = useState(-200);
+  const [stagesEndLoop, setStagesEndLoop] = useState(0);
 
   useEffect(() => {
 
     const stagesInit = setTimeout(() => {
       setStagesOpacity(0);
       setStagesTop(-200);
+      setStagesWidth("100%");
     }, 0);
 
     const stagesEnter = setTimeout(() => {
@@ -27,31 +29,24 @@ export const StagesColumns = () => {
     const stagesShrink = setTimeout(() => {
       setStagesOpacity(1);
       setStagesWidth("50%");
-    }, 6000);
-
-    const stagesHide = setTimeout(() => {
-      setStagesTop(-200);
-   
     }, 10000);
 
-    const stagesReEnter = setTimeout(() => {
-      setStagesTop(0);
-      setStagesWidth("100%");
-    }, 15000);
-
-    const stagesFade = setTimeout(() => {
-      setStagesOpacity(0.5);
+    const stagesExit = setTimeout(() => {
+      setStagesTop(-200);
     }, 21000);
+
+    const stagesEndLoop = setTimeout(() => {
+      setStagesEndLoop(1);
+    }, 24000);
 
     return () => {
       clearTimeout(stagesInit);
       clearTimeout(stagesEnter);
       clearTimeout(stagesShrink);
-      clearTimeout(stagesHide);
-      clearTimeout(stagesReEnter);
-      clearTimeout(stagesFade);
+      clearTimeout(stagesExit);
+      clearTimeout(stagesEndLoop);
     };
-  }, []);
+  }, [stagesEndLoop]);
 
   return (
     <StagesColumnWrapper style={{ width: stagesWidth, opacity: stagesOpacity, top: stagesTop }}>
@@ -65,6 +60,7 @@ export const StagesColumns = () => {
           <span>{item.label}</span>
         </StagesColumn>
       ))}
+            <div style={{width:stagesEndLoop}} />
     </StagesColumnWrapper>
   );
 };
