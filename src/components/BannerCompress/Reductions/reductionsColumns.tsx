@@ -1,6 +1,10 @@
 import styled from "styled-components";
-import { BREAKPOINT } from "styles/Constants";
-import { dataBenefits } from "./dataBenefits";
+import {
+  BREAKPOINT,
+  CHART_LABEL_DESKTOP,
+  CHART_LABEL_MOBILE,
+} from "styles/Constants";
+import { dataReductions } from "./dataReductions";
 import { useState, useEffect } from "react";
 import {
   chartHeightDesktop,
@@ -8,65 +12,59 @@ import {
   columnTransition,
 } from "../Wrapper/config";
 
-export const BenefitsColumns = () => {
-  const [benefitsOpacity, setBenefitsOpacity] = useState(0);
-  const [benefitsWidth, setBenefitsWidth] = useState("10%");
-  const [benefitsTop, setBenefitsTop] = useState(-200);
+export const ReductionsColumns = () => {
+  const [reductionsOpacity, setReductionsOpacity] = useState(0);
+  const [reductionsTop, setReductionsTop] = useState(0);
+  const [reductionsWidth, setReductionsWidth] = useState('100%');
 
   useEffect(() => {
-    const benefitsInit = setTimeout(() => {
-      setBenefitsOpacity(0);
-      setBenefitsTop(-200);
+    const reductionsInit = setTimeout(() => {
+      setReductionsOpacity(0);
+      setReductionsTop(0);
+      setReductionsWidth('100%');
     }, 0);
 
-    const benefitsEnter = setTimeout(() => {
-      setBenefitsOpacity(1);
-      setBenefitsTop(0);
-      setBenefitsWidth("47%");
-    }, 8000);
+    const reductionsEnter = setTimeout(() => {
+      setReductionsOpacity(1);
+    }, 11000);
 
-    const benefitsExpand = setTimeout(() => {
-      setBenefitsWidth("100%");
-    }, 10000);
-
-    const benefitsLeave = setTimeout(() => {
-      setBenefitsTop(200);
-    }, 17000);
+    const reductionsLeave = setTimeout(() => {
+      setReductionsTop(200);
+    }, 15000);
 
     return () => {
-      clearTimeout(benefitsInit);
-      clearTimeout(benefitsEnter);
-      clearTimeout(benefitsExpand);
-      clearTimeout(benefitsLeave);
+      clearTimeout(reductionsInit);
+      clearTimeout(reductionsEnter);
+      clearTimeout(reductionsLeave);
     };
   }, []);
 
   return (
-    <BenefitsColumnWrapper
+    <ReductionsColumnWrapper
       style={{
-        width: benefitsWidth,
-        opacity: benefitsOpacity,
-        top: benefitsTop,
+        opacity: reductionsOpacity,
+        top: reductionsTop,
+        width: reductionsWidth,
       }}
     >
-      {dataBenefits.map((item) => (
-        <BenefitsColumn
+      {dataReductions.map((item) => (
+        <ReductionsColumn
           id="stages-column"
           key={item.id}
           style={{ backgroundColor: item.backgroundColor }}
         >
           {/* width: {width} */}
           <div>{item.label}</div>
-        </BenefitsColumn>
+        </ReductionsColumn>
       ))}
-    </BenefitsColumnWrapper>
+    </ReductionsColumnWrapper>
   );
 };
 
 // the length of dataCompress array
-const dataCompressLength = dataBenefits.length;
+const dataCompressLength = dataReductions.length;
 
-const BenefitsColumnWrapper = styled.div`
+const ReductionsColumnWrapper = styled.div`
   position: absolute;
   top: 0;
   right: 0;
@@ -85,14 +83,14 @@ const BenefitsColumnWrapper = styled.div`
   /* background: red; */
 `;
 
-const BenefitsColumn = styled.div`
+const ReductionsColumn = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #fff;
   height: inherit;
-  width: auto;
+
   & div {
     align-items: center;
     justify-content: center;
@@ -101,12 +99,12 @@ const BenefitsColumn = styled.div`
     font-weight: 500;
     text-transform: uppercase;
     word-wrap: break-word;
-    padding:0 10px;
+    padding: 0 10px;
     @media (min-width: ${BREAKPOINT}px) {
-      font-size: 1.1rem;
+      font-size: ${CHART_LABEL_DESKTOP};
     }
     @media (max-width: ${BREAKPOINT}px) {
-      font-size: 1rem;
+      font-size: ${CHART_LABEL_MOBILE};
       writing-mode: vertical-rl;
     }
     /* background: red; */

@@ -1,4 +1,4 @@
-export const dataBenefits = [
+export const dataReductions = [
   {
     id: 1,
     label: "Risk",

@@ -23,9 +23,10 @@ import {
   chartSpacerHeightDesktop,
   chartSpacerHeightMobile,
 } from "./config";
-import { BenefitsColumns } from "../Benefits/benefitsColumns";
+import { ReductionsColumns } from "../Reductions/reductionsColumns";
 import ButtonCentered from "components/Button/buttonCentered";
 import { useState, useEffect } from "react";
+import { SavingsColumns } from "../Savings/savingsColumn";
 
 const BannerCompress = () => {
   const [buttonOpacity, setButtonOpacity] = useState(0);
@@ -37,7 +38,7 @@ const BannerCompress = () => {
 
     const buttonShow = setTimeout(() => {
       setButtonOpacity(1);
-    }, 21000);
+    }, 22000);
 
     return () => {
       clearTimeout(buttonReset);
@@ -51,16 +52,17 @@ const BannerCompress = () => {
         <ChartSection>
           <ChartSectionBackground>
             <StagesColumns />
-            <BenefitsColumns />
+            <SavingsColumns />
+            <ReductionsColumns />
           </ChartSectionBackground>
           {/* <GraphLegend></GraphLegend> */}
         </ChartSection>
         <ChartBottomSpacer />
         <BannerCompressText />
+        <ButtonPositioner style={{ opacity: buttonOpacity }}>
+          <ButtonCentered buttonTo="/practice_areas" buttonText="What We Do" />
+        </ButtonPositioner>
       </ContentArea>
-      <ButtonPositioner style={{opacity: buttonOpacity}}>
-        <ButtonCentered buttonTo="/practice_areas" buttonText="What We Do"  />
-      </ButtonPositioner>
     </BannerCompressWrapper>
   );
 };
@@ -93,24 +95,6 @@ const ChartSectionBackground = styled.div`
   }
   /* background: blue; */
 `;
-
-// const GraphLegend = styled.div`
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   text-align: center;
-//   font-size: 1.3rem;
-//   width: 100%;
-//   color: ${COLOR_CAPTION};
-//   @media (min-width: ${BREAKPOINT}px) {
-//     height: ${chartLegendHeightDesktop}px;
-//   }
-//   @media (max-width: ${BREAKPOINT}px) {
-//     height: ${chartLegendHeightMobile}px;
-//   }
-
-//   /* background: green; */
-// `;
 
 const BannerCompressWrapper = styled.div`
   position: relative;
@@ -157,17 +141,19 @@ const ChartBottomSpacer = styled.div`
 
 const ButtonPositioner = styled.div`
   position: absolute;
+  margin: 0 auto;
   display: flex;
+  justify-self: center;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: auto;
-  z-index: +1;
+  /* pointer-events: all; */
   @media (min-width: ${BREAKPOINT}px) {
-    top: 50%;
+    /* top: 50%; */
   }
   @media (max-width: ${BREAKPOINT}px) {
-    top: 63%;
+    /* top: 63%; */
   }
   /* background: blue; */
 `;

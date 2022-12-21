@@ -10,6 +10,8 @@ import {
   COLOR_CAPTION,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
+  CHART_LABEL_DESKTOP,
+  CHART_LABEL_MOBILE,
 } from "../../styles/Constants";
 import BarColumn from "../Chart/barColumn";
 import { TitleBanner } from "components/Title/titleBanner";
@@ -132,13 +134,13 @@ const GraphLegend = styled.div`
   justify-content: space-between;
   text-align: center;
   height: "100%";
-  font-size: 1.3em;
+  font-size: ${CHART_LABEL_DESKTOP};
   color: ${COLOR_CAPTION};
   @media (min-width: ${BREAKPOINT}px) {
-    font-size: 1.3em;
+    font-size: ${CHART_LABEL_DESKTOP};
   }
   @media (max-width: ${BREAKPOINT}px) {
-    font-size: 1em;
+    font-size: ${CHART_LABEL_MOBILE};
   }
   /* background: green;  */
 `;

@@ -2,7 +2,7 @@ import { IBarColumnProps } from "interfaces/callouts";
 import { useState, useEffect } from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import styled from "styled-components";
-import { BREAKPOINT } from "styles/Constants";
+import { BREAKPOINT, CHART_LABEL_DESKTOP, CHART_LABEL_MOBILE } from "styles/Constants";
 
 const BarColumn = (props: IBarColumnProps) => {
   const [seriesRandomHeight, setSeriesRandomHeight] = useState(50);
@@ -121,7 +121,7 @@ const Label = styled(AnimationOnScroll)`
   text-transform: uppercase;
   transition: all 400ms;
   @media (min-width: ${BREAKPOINT}px) {
-    font-size: 1rem;
+    font-size: ${CHART_LABEL_DESKTOP};
     text-align: center;
     padding-top: 10px;
   }
@@ -129,7 +129,7 @@ const Label = styled(AnimationOnScroll)`
     transform: translate(0, -260%) rotate(90deg);
     transform-origin: 50%; 
     /* writing-mode: vertical-rl; */
-    font-size: 0.94rem;
+    font-size: ${CHART_LABEL_MOBILE};
   }
   /* background: green; */
 `;

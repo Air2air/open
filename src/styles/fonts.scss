@@ -50,11 +50,10 @@ li {
   padding: 12px 0;
   // line-height: 1.5rem;
   // background: green;;
-
 }
 
 li::before {
-  content: "•"; 
+  content: "•";
   padding-right: 8px;
   // font-size: 1.7rem;
   // line-height: 1rem;

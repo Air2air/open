@@ -1,7 +1,10 @@
-// HEIGHT
+// Header
 export const HEADER_HEIGHT = 90;
 export const HEADER_MOBILE_HEIGHT = 130;
+export const HEADER_COLOR = "rgba(0, 0, 0, 0.7)";
+export const HEADER_COLOR_HOVER = "rgba(150, 150, 150, 0.5)";
 
+// Banner
 export const BANNER_HEIGHT_DESKTOP = 540;
 export const BANNER_HEIGHT_MOBILE = 460;
 export const BANNER_PADDING_TOP_DESKTOP = HEADER_HEIGHT + 60;
@@ -9,9 +12,12 @@ export const BANNER_PADDING_TOP_MOBILE = HEADER_MOBILE_HEIGHT +40;
 export const BANNER_CONTENT_HEIGHT_DESKTOP = (BANNER_HEIGHT_DESKTOP - BANNER_PADDING_TOP_DESKTOP) * 0.9;
 export const BANNER_CONTENT_HEIGHT_MOBILE = (BANNER_HEIGHT_MOBILE - BANNER_PADDING_TOP_MOBILE) * 0.9;
 
+// Footer
 export const FOOTER_HEIGHT_DESKTOP = 400;
 export const FOOTER_HEIGHT_MOBILE = 400;
 
+
+// Callout
 export const CALLOUT_HEIGHT = 250;
 
 export const CONTACT_ITEM_HEIGHT = 210;
@@ -53,6 +59,10 @@ export const TEXT_BANNER_MOBILE = "2em";
 export const TEXT_CONTENT_DESKTOP = "2.6em";
 export const TEXT_CONTENT_MOBILE = "2em";
 
+// Charts
+export const CHART_LABEL_DESKTOP = "1.2em";
+export const CHART_LABEL_MOBILE = "1.1em";
+
 // Colors
 export const COLOR_BIO = "#ff9a0e";
 export const COLOR_HEALTH = "#39b3a5";
@@ -66,8 +76,6 @@ export const COLOR_RED = "hsl(0, 80%, 50%)";
 export const COLOR_RED_HOVER = "hsl(0, 10%, 70%)";
 export const TEXT_OPACITY = 0.8;
 
-export const HEADER_COLOR = "rgba(0, 0, 0, 0.7)";
-export const HEADER_COLOR_HOVER = "rgba(150, 150, 150, 0.5)";
 
 // Themes
 export const COLOR_BLACK = "hsl(0, 0%, 0%)";

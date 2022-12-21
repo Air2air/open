@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {
-  BREAKPOINT,
+  BREAKPOINT, CHART_LABEL_DESKTOP, CHART_LABEL_MOBILE,
 } from "styles/Constants";
 import { dataStages } from "./dataStages";
 import { useState, useEffect } from "react";
@@ -36,10 +36,10 @@ export const StagesColumns = () => {
 
     const stagesReEnter = setTimeout(() => {
       setStagesTop(0);
-    }, 17000);
+    }, 15000);
 
     const stagesFade = setTimeout(() => {
-      setStagesOpacity(0.3);
+      setStagesOpacity(0.5);
     }, 21000);
 
     return () => {
@@ -103,11 +103,11 @@ const StagesColumn = styled.div`
     text-transform: uppercase;
     writing-mode: vertical-rl;
     @media (min-width: ${BREAKPOINT}px) {
-      font-size: 1.1rem;
+      font-size: ${CHART_LABEL_DESKTOP};
       height: inherit;
     }
     @media (max-width: ${BREAKPOINT}px) {
-      font-size: 1rem;
+      font-size: ${CHART_LABEL_MOBILE};
       height: inherit;
     }
     /* background: red; */

@@ -4,7 +4,7 @@ import {
 } from "styles/Constants";
 
 // export const transitionTime = 500;
-export const columnTransition = 700;  
+export const columnTransition = 1000;  
 export const textTransition = 600;
 
 /* Chart Height */
