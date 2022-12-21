@@ -14,7 +14,6 @@ const BannerCompressText = () => {
   const [textCutTimelineOpacity, setTextCutTimelineOpacity] = useState(0);
   const [textCXAIOOpacity, setTextCXAIOOpacity] = useState(0);
   const [textHowOpacity, setTextHowOpacity] = useState(0);
-  const [textHowWidth, setTextHowWidth] = useState('100%');
 
   useEffect(() => {
     const textReset = setTimeout(() => {
@@ -83,7 +82,7 @@ const BannerCompressText = () => {
         <TitleBanner title="Reducing Risk, Dilution and Time." />
         <BannerText text="Getting you to the goal line for a fraction of the cost. " />
       </TextSection>
-      <TextSection style={{ opacity: textHowOpacity, width: textHowWidth }}>
+      <TextSection style={{ opacity: textHowOpacity }}>
         <TitleBanner title="How does it work?" />
         <BannerText text="Your CXAIO advises you through every step of your venture." />
       </TextSection>
