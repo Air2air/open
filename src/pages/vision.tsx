@@ -2,6 +2,7 @@ import setBodyColor from "utils/setBodyColor";
 import Callout from "../components/Callout/callOut";
 import BannerImage from "components/BannerImage/bannerImage";
 import { COLOR_BASE } from "./../styles/Constants";
+import BannerVision from "components/BannerVision/Wrapper/bannerVision";
 
 const pageImage = "dartmouth.jpeg";
 
@@ -10,14 +11,15 @@ const VisionPage = () => {
 
   return (
     <>
-      <BannerImage
+      <BannerVision />
+      {/* <BannerImage
         title="Our Vision"
         text="Eleven is a multidisciplinary advisory of physicians, scientists, engineers and entrepreneurs who define a path forward for leading companies building the future of digital health and clinical machine learning"
         pageImage={pageImage}
         overlayOpacity={0.7}
         overlayColor={COLOR_BASE}
         typing={true}
-      />
+      /> */}
       <Callout
         id={0}
         title="THE BIRTH OF MACHINE INTELLIGENCE"
