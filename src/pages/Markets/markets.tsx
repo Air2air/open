@@ -1,5 +1,5 @@
 import TimeLine from "components/TimeLine/timeLine";
-import { dataVentureStage } from "./dataVentureStage";
+import { dataVentureStage } from "../Vision/dataVentureStage";
 import BannerChart from "components/BannerChart/bannerMarkets";
 import { dataMarkets } from "./dataMarkets";
 import { TitleCentered } from "components/Title/titleCentered";
@@ -19,7 +19,7 @@ const MarketsPage = () => {
         backgroundColor={2}
       />
       <TitleCentered title="AI Venture Stages" />
-      <TimeLine data={dataVentureStage} backgroundColor={3} />
+
 
       <Container>
         <Button buttonTo="/vision" buttonText="Vision" />

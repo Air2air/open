@@ -1,7 +1,9 @@
 import setBodyColor from "utils/setBodyColor";
-import Callout from "../components/Callout/callOut";
+import Callout from "../../components/Callout/callOut";
 // import BannerImage from "components/BannerImage/bannerImage";
-import { COLOR_BASE } from "./../styles/Constants";
+import TimeLine from "components/TimeLine/timeLine";
+import { dataVentureStage } from "../Vision/dataVentureStage";
+import { COLOR_BASE } from "../../styles/Constants";
 import BannerVision from "components/BannerVision/Wrapper/bannerVision";
 
 // const pageImage = "dartmouth.jpeg";
@@ -20,6 +22,9 @@ const VisionPage = () => {
         overlayColor={COLOR_BASE}
         typing={true}
       /> */}
+
+      <TimeLine data={dataVentureStage} backgroundColor={3} />
+
       <Callout
         id={0}
         title="THE BIRTH OF MACHINE INTELLIGENCE"
