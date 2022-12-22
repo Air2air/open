@@ -12,17 +12,15 @@ import {
 const BannerCompressText = () => {
   const [textFasterOpacity, setTextFasterOpacity] = useState(0);
   const [textCutTimelineOpacity, setTextCutTimelineOpacity] = useState(0);
-  const [textCXAIOOpacity, setTextCXAIOOpacity] = useState(0);
-  // const [textHowOpacity, setTextHowOpacity] = useState(0);
-  const [textEndLoop, setTextEndLoop] = useState(0);
+  const [textRiskOpacity, setTextRiskOpacity] = useState(0);
+  const [textLoopEndTime, setTextLoopEndTime] = useState(0);
 
   useEffect(() => {
     const textReset = setTimeout(() => {
       setTextFasterOpacity(0);
       setTextCutTimelineOpacity(0);
-      setTextCXAIOOpacity(0);
-      // setTextHowOpacity(0);
-      setTextEndLoop(0);
+      setTextRiskOpacity(0);
+      setTextLoopEndTime(0);
     }, 0);
 
     const textFaster = setTimeout(() => {
@@ -41,25 +39,17 @@ const BannerCompressText = () => {
       setTextCutTimelineOpacity(0);
     }, 12000);
 
-    const textCXAIO = setTimeout(() => {
-      setTextCXAIOOpacity(1);
+    const textRisk = setTimeout(() => {
+      setTextCutTimelineOpacity(1);
     }, 13000);
 
-    const textCXAIOEnd = setTimeout(() => {
-      setTextCXAIOOpacity(0);
-    }, 24000/*18000*/);
-
-    // const textHow = setTimeout(() => {
-    //   setTextHowOpacity(1);
-    // }, 19000);
-
-    // const textHowEnd = setTimeout(() => {
-    //   setTextHowOpacity(0);
-    // }, 24000);
-
-    const textEndLoop = setTimeout(() => {
-      setTextEndLoop(1);
-    }, 24000);
+    const textRiskEnd = setTimeout(() => {
+      setTextCutTimelineOpacity(0);
+    }, 18000);
+ 
+    const textLoopEndTime = setTimeout(() => {
+      setTextLoopEndTime(1);
+    }, 18000);
 
     return () => {
       clearTimeout(textReset);
@@ -67,13 +57,11 @@ const BannerCompressText = () => {
       clearTimeout(textFasterEnd);
       clearTimeout(textCutTimeline);
       clearTimeout(textCutTimelineEnd);
-      clearTimeout(textCXAIO);
-      clearTimeout(textCXAIOEnd);
-      // clearTimeout(textHow);
-      // clearTimeout(textHowEnd);
-      clearTimeout(textEndLoop);
+      clearTimeout(textRisk);
+      clearTimeout(textRiskEnd);
+      clearTimeout(textLoopEndTime);
     };
-  }, [textEndLoop]);
+  }, [textLoopEndTime]);
 
   return (
     <>
@@ -85,15 +73,11 @@ const BannerCompressText = () => {
         <TitleBanner title="We cut your timeline to liquidity" />
         <BannerText text="With world class, professional oversight." />
       </TextSection>
-      <TextSection style={{ opacity: textCXAIOOpacity }}>
+      <TextSection style={{ opacity: textRiskOpacity }}>
         <TitleBanner title="Reducing Risk, Dilution and Time." />
         <BannerText text="Getting you to the goal line for a fraction of the cost. " />
       </TextSection>
-      {/* <TextSection style={{ opacity: textHowOpacity }} >
-        <TitleBanner title="How does it work?" />
-        <BannerText text="Your CXAIO advises you through every step of your venture." />
-      </TextSection> */}
-      <div style={{width:textEndLoop}} />
+      <div style={{width:textLoopEndTime}} />
     </>
   );
 };

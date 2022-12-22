@@ -1,5 +1,5 @@
-import { StagesColumns } from "../Stages/stagesColumns";
-import BannerCompressText from "../Text/bannerCompressText";
+import { VisionColumns } from "./columns";
+import BannerVisionText from "./text";
 import styled from "styled-components";
 import {
   BREAKPOINT,
@@ -20,20 +20,20 @@ import {
   CHART_SPACER_HEIGHT_MOBILE,
 } from "constants/index";
 
-const BannerCompress = () => {
+export const LoopEndTime = 12000;
+
+const BannerVision = () => {
   return (
-    <BannerCompressWrapper>
+    <BannerVisionWrapper>
       <ContentArea>
         <ChartSection>
           <ChartSectionBackground>
-            <StagesColumns />
-
+            <VisionColumns />
           </ChartSectionBackground>
         </ChartSection>
-        <ChartBottomSpacer />
-        <BannerCompressText />
+        <BannerVisionText />
       </ContentArea>
-    </BannerCompressWrapper>
+    </BannerVisionWrapper>
   );
 };
 
@@ -55,7 +55,7 @@ const ChartSectionBackground = styled.div`
   position: relative;
   overflow: hidden;
   width: 100%;
-  background: ${COLOR_BASE_3};
+  /* background: ${COLOR_BASE_3}; */
 
   @media (min-width: ${BREAKPOINT}px) {
     height: ${CHART_HEIGHT_DESKTOP}px;
@@ -66,7 +66,7 @@ const ChartSectionBackground = styled.div`
   /* background: blue; */
 `;
 
-const BannerCompressWrapper = styled.div`
+const BannerVisionWrapper = styled.div`
   position: relative;
   top: 0;
   display: flex;
@@ -109,23 +109,4 @@ const ChartBottomSpacer = styled.div`
   /* background: red; */
 `;
 
-// const ButtonPositioner = styled.div`
-//   position: absolute;
-//   margin: auto auto;
-//   display: flex;
-//   justify-self: center;
-//   justify-content: center;
-//   align-items: center;
-//   width: 100%;
-//   height: auto;
-//   /* pointer-events: all; */
-//   @media (min-width: ${BREAKPOINT}px) {
-//     /* top: 50%; */
-//   }
-//   @media (max-width: ${BREAKPOINT}px) {
-//     /* top: 63%; */
-//   }
-//   /* background: blue; */
-// `;
-
-export default BannerCompress;
+export default BannerVision;

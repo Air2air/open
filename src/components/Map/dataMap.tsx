@@ -1,6 +1,8 @@
+import { v4 as uuid } from "uuid";
+
 export const dataMap = [
   {
-    id: 1,
+    id: uuid(),
     location: "Silicon Valley",
     left: "5%",
     top: "46%",
@@ -16,7 +18,7 @@ export const dataMap = [
     ],
   },
   {
-    id: 2,
+    id: uuid(),
     location: "Toronto, ON, CAN",
     left: "29%",
     top: "37%",
@@ -32,7 +34,7 @@ export const dataMap = [
     ],
   },
   {
-    id: 3,
+    id: uuid(),
     location: "Austin, TX",
     left: "19%",
     top: "55%",
@@ -44,7 +46,7 @@ export const dataMap = [
     ],
   },
   {
-    id: 4,
+    id: uuid(),
     location: "Jerusalem, Israel",
     left: "92%",
     top: "55%",
@@ -60,7 +62,7 @@ export const dataMap = [
     ],
   },
   {
-    id: 5,
+    id: uuid(),
     location: "Durham, NC",
     left: "29%",
     top: "51%",
@@ -72,7 +74,7 @@ export const dataMap = [
     ],
   },
   {
-    id: 6,
+    id: uuid(),
     location: "Cambridge, MA",
     left: "33%",
     top: "43%",
@@ -88,7 +90,7 @@ export const dataMap = [
     ],
   },
   {
-    id: 7,
+    id: uuid(),
     location: "New York, NY",
     left: "32%",
     top: "46%",
@@ -104,7 +106,7 @@ export const dataMap = [
     ],
   },
   {
-    id: 8,
+    id: uuid(),
     location: "Chicago, IL",
     left: "24%",
     top: "42%",
@@ -120,7 +122,7 @@ export const dataMap = [
     ],
   },
   {
-    id: 9,
+    id: uuid(),
     location: "London, England",
     left: "72%",
     top: "29%",

@@ -1,3 +1,7 @@
+
+
+
+import { v4 as uuid } from "uuid";
 const saturation = '15%';
 
 
@@ -12,7 +16,7 @@ export const dataPracticeAreas = [
     backgroundColor: `hsl(180, ${saturation}, 30%)`,
   },
   {
-    id: 1,
+    id: uuid(),
     title: "{x} = AI/ML",
     label: "AI/ML",
     text: "Experts from the preeminent academic and commercial AI/ML programs accelerate Eleven's digital health ventures.",
@@ -20,7 +24,7 @@ export const dataPracticeAreas = [
     backgroundColor: `hsl(160, ${saturation}, 35%)`,
   },
   {
-    id: 2,
+    id: uuid(),
     title: "{x} = PRODUCT",
     label: "Product",
     text: "Commercial product specialists from leading commercial enterprises help sculpt Eleven's digital health ventures, including: <p><ul><li>Go-to-market and product positioning.</li><li>Pricing methodology for clinical machine learning and digital health solutions.</li><li>Segment landscape, needs, and priorities to drive adoption.</li></ul></p>",
@@ -28,7 +32,7 @@ export const dataPracticeAreas = [
     backgroundColor: `hsl(140, ${saturation}, 40%)`,
   },
   {
-    id: 4,
+    id: uuid(),
     title: "{x} = MARKETING",
     label: "Marketing",
     text: "Professionals shaping some of the most storied companies in modern healthcare position Eleven's digital health ventures.  This can also include support for early adoption academic initiatives and activities including grants, publications, and collaborations.",
@@ -36,7 +40,7 @@ export const dataPracticeAreas = [
     backgroundColor: `hsl(120, ${saturation}, 45%)`,
   },
   {
-    id: 5,
+    id: uuid(),
     title: "{x} = REGULATORY",
     label: "Regulatory",
     color: "#FFFFFF",
@@ -44,7 +48,7 @@ export const dataPracticeAreas = [
     backgroundColor: `hsl(100, ${saturation}, 50%)`,
   },
   {
-    id: 6,
+    id: uuid(),
     title: "{x} = STRATEGY",
     label: "Strategy",
     color: "#FFFFFF",

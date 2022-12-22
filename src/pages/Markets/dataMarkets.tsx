@@ -1,8 +1,11 @@
+import { v4 as uuid } from "uuid";
+
+
 const saturation = '25%';
 
 export const dataMarkets = [
   {
-    id: 1,
+    id: uuid(),
     label: "HEALTHTECH",
     height: 20,
     value: "$400B",
@@ -11,7 +14,7 @@ export const dataMarkets = [
     text: "Eleven supports Healthtech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners.",
   },
   {
-    id: 2,
+    id: uuid(),
     label: "MEDTECH",
     height: 30,
     value: "$500B",
@@ -20,7 +23,7 @@ export const dataMarkets = [
     text: "Eleven supports Medtech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners.",
   },
   {
-    id: 3,
+    id: uuid(),
     label: "BIOTECH",
     height: 50,
     value: "$700B",
@@ -29,7 +32,7 @@ export const dataMarkets = [
     text: "Eleven supports Biotech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners.",
   },
   {
-    id: 4,
+    id: uuid(),
     label: "PHARMATECH",
     height: 100,
     value: "$1.2T",

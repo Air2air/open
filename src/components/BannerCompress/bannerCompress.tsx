@@ -1,5 +1,5 @@
-import { StagesColumns } from "../Stages/stagesColumns";
-import BannerVisionText from "../Text/bannerVisionText";
+import { StagesColumns } from "./Stages/stagesColumns";
+import BannerCompressText from "./Text/bannerCompressText";
 import styled from "styled-components";
 import {
   BREAKPOINT,
@@ -20,21 +20,20 @@ import {
   CHART_SPACER_HEIGHT_MOBILE,
 } from "constants/index";
 
-const BannerVision = () => {
+const BannerCompress = () => {
   return (
-    <BannerVisionWrapper>
+    <BannerCompressWrapper>
       <ContentArea>
         <ChartSection>
           <ChartSectionBackground>
             <StagesColumns />
-            {/* <SavingsColumns />
-            <ReductionsColumns /> */}
+
           </ChartSectionBackground>
         </ChartSection>
         <ChartBottomSpacer />
-        <BannerVisionText />
+        <BannerCompressText />
       </ContentArea>
-    </BannerVisionWrapper>
+    </BannerCompressWrapper>
   );
 };
 
@@ -56,7 +55,7 @@ const ChartSectionBackground = styled.div`
   position: relative;
   overflow: hidden;
   width: 100%;
-  /* background: ${COLOR_BASE_3}; */
+  background: ${COLOR_BASE_3};
 
   @media (min-width: ${BREAKPOINT}px) {
     height: ${CHART_HEIGHT_DESKTOP}px;
@@ -67,7 +66,7 @@ const ChartSectionBackground = styled.div`
   /* background: blue; */
 `;
 
-const BannerVisionWrapper = styled.div`
+const BannerCompressWrapper = styled.div`
   position: relative;
   top: 0;
   display: flex;
@@ -110,4 +109,23 @@ const ChartBottomSpacer = styled.div`
   /* background: red; */
 `;
 
-export default BannerVision;
+// const ButtonPositioner = styled.div`
+//   position: absolute;
+//   margin: auto auto;
+//   display: flex;
+//   justify-self: center;
+//   justify-content: center;
+//   align-items: center;
+//   width: 100%;
+//   height: auto;
+//   /* pointer-events: all; */
+//   @media (min-width: ${BREAKPOINT}px) {
+//     /* top: 50%; */
+//   }
+//   @media (max-width: ${BREAKPOINT}px) {
+//     /* top: 63%; */
+//   }
+//   /* background: blue; */
+// `;
+
+export default BannerCompress;

@@ -23,17 +23,9 @@ export const StagesColumns = () => {
       setStagesEndLoop(0);
     }, 0);
 
-    // const stagesEnter = setTimeout(() => {
-    //   setStagesTop(0);
-    // }, 1000);
-
     const stagesShrink = setTimeout(() => {
       setStagesWidth("50%");
     }, 8000);
-
-    // const stagesExit = setTimeout(() => {
-    //   setStagesTop(-200);
-    // }, 21000);
 
     const stagesEndLoop = setTimeout(() => {
       setStagesEndLoop(1);

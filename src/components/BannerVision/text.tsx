@@ -8,17 +8,18 @@ import {
   CHART_TEXT_HEIGHT_MOBILE,
   CHART_TEXT_TRANSITION,
 } from "constants/index";
+import { LoopEndTime } from "./bannerVision";
 
 const BannerVisionText = () => {
   const [textPathOpacity, setTextFasterOpacity] = useState(0);
   const [textDefineOpacity, setTextCutTimelineOpacity] = useState(0);
-  const [textEndLoop, setTextEndLoop] = useState(0);
+  const [textLoopEndTime, setTextLoopEndTime] = useState(0);
 
   useEffect(() => {
     const textReset = setTimeout(() => {
       setTextFasterOpacity(0);
       setTextCutTimelineOpacity(0);
-      setTextEndLoop(0);
+      setTextLoopEndTime(0);
     }, 0);
 
     const textPath = setTimeout(() => {
@@ -35,11 +36,11 @@ const BannerVisionText = () => {
 
     const textDefineEnd = setTimeout(() => {
       setTextCutTimelineOpacity(0);
-    }, 12000);
+    }, LoopEndTime - 2000);
 
-    const textEndLoop = setTimeout(() => {
-      setTextEndLoop(1);
-    }, 12000);
+    const textLoopEndTime = setTimeout(() => {
+      setTextLoopEndTime(1);
+    }, LoopEndTime);
 
     return () => {
       clearTimeout(textReset);
@@ -47,9 +48,9 @@ const BannerVisionText = () => {
       clearTimeout(textPathEnd);
       clearTimeout(textDefine);
       clearTimeout(textDefineEnd);
-      clearTimeout(textEndLoop);
+      clearTimeout(textLoopEndTime);
     };
-  }, [textEndLoop]);
+  }, [textLoopEndTime]);
 
   return (
     <>
@@ -61,8 +62,7 @@ const BannerVisionText = () => {
         <TitleBanner title="We define the path forward" />
         <BannerText text=" for leading companies building the future of digital health and clinical machine learning." />
       </TextSection>
-
-      <div style={{width:textEndLoop}} />
+      <div style={{width:textLoopEndTime}} />
     </>
   );
 };

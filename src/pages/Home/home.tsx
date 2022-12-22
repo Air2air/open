@@ -1,7 +1,7 @@
 import setBodyColor from "../../utils/setBodyColor";
 import { COLOR_BASE } from "constants/index";
 import OrgsCallout from "../../components/OrgsCallout/orgsCallOut";
-import BannerCompress from "components/BannerCompress/Wrapper/bannerCompress";
+import BannerCompress from "components/BannerCompress/bannerCompress";
 import Button from "components/Button/button";
 import Container from "components/Container/container";
 

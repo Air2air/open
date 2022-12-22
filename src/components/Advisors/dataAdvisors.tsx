@@ -1,6 +1,9 @@
+import { v4 as uuid } from "uuid";
+
+
 export const dataAdvisors = [
   {
-    id: 2,
+    id: uuid(),
     nameLast: "Fine",
     nameFirst: "Benjamin",
     role: "Advisor",
@@ -10,7 +13,7 @@ export const dataAdvisors = [
     linkedin:"https://www.linkedin.com/in/benfine"
   },
   {
-    id: 3,
+    id: uuid(),
     nameLast: "Kleck",
     nameFirst: "Jeff",
     role: "Advisor",
@@ -20,7 +23,7 @@ export const dataAdvisors = [
     linkedin:"https://www.linkedin.com/in/jeff-kleck-a000299/"
   },
   {
-    id: 4,
+    id: uuid(),
     nameLast: "Lungren",
     nameFirst: "Matthew",
     role: "Advisor",
