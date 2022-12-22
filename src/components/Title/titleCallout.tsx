@@ -1,4 +1,4 @@
-import { BREAKPOINT, COLOR_RED } from "styles/Constants";
+import { BREAKPOINT, COLOR_RED } from "constants/index";
 import styled from "styled-components";
 import { FC } from "react";
 

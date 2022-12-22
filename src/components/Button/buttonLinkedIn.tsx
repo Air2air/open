@@ -3,7 +3,7 @@ import {
   BUTTON_COLOR_LINKEDIN_HOVER,
   BUTTON_HEIGHT_LINKEDIN,
   BUTTON_TEXT_COLOR,
-} from "styles/Constants";
+} from "constants/index";
 import styled from "styled-components";
 import { ReactComponent as LogoLinkedIn } from "./../../images/logo_linkedin.svg";
 

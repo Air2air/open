@@ -3,14 +3,15 @@ import {
   BREAKPOINT,
   CHART_LABEL_DESKTOP,
   CHART_LABEL_MOBILE,
-} from "styles/Constants";
+  COLUMN_GRID_GAP_DESKTOP,
+  COLUMN_GRID_GAP_MOBILE,
+  CHART_HEIGHT_DESKTOP,
+  CHART_HEIGHT_MOBILE,
+  CHART_COLUMN_TRANSITION,
+} from "constants/index";
 import { dataReductions } from "./dataReductions";
 import { useState, useEffect } from "react";
-import {
-  chartHeightDesktop,
-  chartHeightMobile,
-  columnTransition,
-} from "../Wrapper/config";
+
 
 export const ReductionsColumns = () => {
   const [reductionsOpacity, setReductionsOpacity] = useState(0);
@@ -71,14 +72,14 @@ const ReductionsColumnWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(${dataCompressLength}, 1fr);
   transform-origin: 0% 0%;
-  transition: all ${columnTransition}ms;
+  transition: all ${CHART_COLUMN_TRANSITION}ms;
   @media (min-width: ${BREAKPOINT}px) {
-    grid-gap: 10px;
-    height: ${chartHeightDesktop}px;
+    grid-gap: ${COLUMN_GRID_GAP_DESKTOP};
+    height: ${CHART_HEIGHT_DESKTOP}px;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    grid-gap: 2px;
-    height: ${chartHeightMobile}px;
+    grid-gap: ${COLUMN_GRID_GAP_MOBILE};
+    height: ${CHART_HEIGHT_MOBILE}px;
   }
   /* background: red; */
 `;

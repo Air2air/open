@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { BREAKPOINT } from "../../styles/Constants";
-import BarColumn from "../Chart/barColumn";
+import { BREAKPOINT } from "constants/index";
+import BarColumn from "../BarColumn/barColumn";
 // import { IBarColumnProps } from "interfaces/callouts";
 
 // export interface IBarColumnMapProps {

@@ -2,12 +2,12 @@ import { TitleBanner } from "components/Title/titleBanner";
 import { BannerText } from "components/BannerText/bannerText";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
-import { BREAKPOINT } from "styles/Constants";
+import { BREAKPOINT } from "constants/index";
 import {
-  chartTextHeightDesktop,
-  chartTextHeightMobile,
-  textTransition,
-} from "../Wrapper/config";
+  CHART_TEXT_HEIGHT_DESKTOP,
+  CHART_TEXT_HEIGHT_MOBILE,
+  CHART_TEXT_TRANSITION,
+} from "constants/index";
 
 const BannerCompressText = () => {
   const [textFasterOpacity, setTextFasterOpacity] = useState(0);
@@ -104,12 +104,12 @@ const TextSection = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  transition: all ${textTransition}ms;
+  transition: all ${CHART_TEXT_TRANSITION}ms;
   @media (min-width: ${BREAKPOINT}px) {
-    height: ${chartTextHeightDesktop}px;
+    height: ${CHART_TEXT_HEIGHT_DESKTOP}px;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    height: ${chartTextHeightMobile}px;
+    height: ${CHART_TEXT_HEIGHT_MOBILE}px;
   }
   /* background: green; */
 `;

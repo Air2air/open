@@ -1,4 +1,4 @@
-import { BREAKPOINT, COLOR_WHITE } from "styles/Constants";
+import { BREAKPOINT, COLOR_WHITE } from "constants/index";
 import styled from "styled-components";
 
 type TitleProps = {

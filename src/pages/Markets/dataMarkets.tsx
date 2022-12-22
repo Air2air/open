@@ -1,3 +1,5 @@
+const saturation = '25%';
+
 export const dataMarkets = [
   {
     id: 1,
@@ -5,7 +7,7 @@ export const dataMarkets = [
     height: 20,
     value: "$400B",
     color: "#ffffff",
-    backgroundColor: "#5e4150",
+    backgroundColor: `hsl(350, ${saturation}, 30%)`,
     text: "Eleven supports Healthtech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners.",
   },
   {
@@ -14,7 +16,7 @@ export const dataMarkets = [
     height: 30,
     value: "$500B",
     color: "#ffffff",
-    backgroundColor: "#834747",
+    backgroundColor: `hsl(370, ${saturation}, 35%)`,
     text: "Eleven supports Medtech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners.",
   },
   {
@@ -23,7 +25,7 @@ export const dataMarkets = [
     height: 50,
     value: "$700B",
     color: "#ffffff",
-    backgroundColor: "#78633e",
+    backgroundColor: `hsl(390, ${saturation}, 40%)`,
     text: "Eleven supports Biotech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners.",
   },
   {
@@ -32,7 +34,7 @@ export const dataMarkets = [
     height: 100,
     value: "$1.2T",
     color: "#ffffff",
-    backgroundColor: "#76764f",
+    backgroundColor: `hsl(410, ${saturation}, 45%)`,
     text: "Eleven supports Pharmatech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners.",
   },
 ];

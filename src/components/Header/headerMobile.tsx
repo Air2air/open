@@ -6,7 +6,7 @@ import {
   HEADER_COLOR,
   HEADER_COLOR_HOVER,
   HEADER_MOBILE_HEIGHT,
-} from "styles/Constants";
+} from "constants/index";
 
 export const HeaderMobile = () => {
   /*------ Responsive -------*/

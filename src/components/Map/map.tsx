@@ -4,7 +4,7 @@ import { TitleCallout } from "./../Title/titleCallout";
 import { ReactComponent as MapSvg } from "./world_map.svg";
 import "./keyframes.scss";
 import { dataMap } from "./dataMap";
-import { COLOR_RED } from "styles/Constants";
+import { COLOR_RED } from "constants/index";
 import ReactTooltip from "react-tooltip";
 import { Key } from "react";
 

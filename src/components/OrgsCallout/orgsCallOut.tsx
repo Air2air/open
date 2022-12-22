@@ -4,7 +4,7 @@ import {
   COLOR_BASE_3,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
-} from "../../styles/Constants";
+} from "constants/index";
 import styled from "styled-components";
 import { dataOrgs } from "./dataOrgs";
 

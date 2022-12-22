@@ -1,42 +1,25 @@
-import styled from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 import {
   BREAKPOINT,
   CHART_LABEL_DESKTOP,
   CHART_LABEL_MOBILE,
-} from "styles/Constants";
+  COLUMN_GRID_GAP_DESKTOP,
+  COLUMN_GRID_GAP_MOBILE,
+  CHART_HEIGHT_DESKTOP,
+  CHART_HEIGHT_MOBILE,
+  CHART_COLUMN_TRANSITION,
+  CHART_COLUMN_STAGGER,
+} from "constants/index";
 import { dataStages } from "./dataStages";
 import { useState, useEffect } from "react";
-import {
-  chartHeightDesktop,
-  chartHeightMobile,
-  columnTransition,
-} from "../Wrapper/config";
 
 export const StagesColumns = () => {
-  const [stagesOpacity, setStagesOpacity] = useState(1);
-  const [stagesTop, setStagesTop] = useState(-200);
   const [stagesEndLoop, setStagesEndLoop] = useState(0);
 
   useEffect(() => {
-
     const stagesInit = setTimeout(() => {
-      setStagesOpacity(0);
-      setStagesTop(-200);
       setStagesEndLoop(0);
     }, 0);
-
-    const stagesEnter = setTimeout(() => {
-      setStagesOpacity(1);
-      setStagesTop(0);
-    }, 1000);
-
-    const stagesShrink = setTimeout(() => {
-      setStagesOpacity(1);
-    }, 10000);
-
-    const stagesExit = setTimeout(() => {
-      setStagesTop(-200);
-    }, 21000);
 
     const stagesEndLoop = setTimeout(() => {
       setStagesEndLoop(1);
@@ -44,28 +27,26 @@ export const StagesColumns = () => {
 
     return () => {
       clearTimeout(stagesInit);
-      clearTimeout(stagesEnter);
-      clearTimeout(stagesShrink);
-      clearTimeout(stagesExit);
       clearTimeout(stagesEndLoop);
     };
   }, [stagesEndLoop]);
 
 
-//crete a useEffect function that loops continuously
-
+  const animationString = (index) =>
+    `fadeInDown ${CHART_COLUMN_TRANSITION}ms ease-out ${
+      CHART_COLUMN_STAGGER * (index + 1)
+    }ms forwards`;
 
   return (
-    <StagesColumnWrapper
-      style={{ opacity: stagesOpacity, top: stagesTop }}
-    >
-      {dataStages.map((item) => (
+    <StagesColumnWrapper>
+      {dataStages.map((item, index) => (
         <StagesColumn
-          id="stages-column"
-          key={item.id}
-          style={{ backgroundColor: item.backgroundColor }}
+          key={index}
+          style={{
+            backgroundColor: item.backgroundColor,
+            animation: animationString(index),
+          }}
         >
-          {/* width: {width} */}
           <span>{item.label}</span>
         </StagesColumn>
       ))}
@@ -74,7 +55,6 @@ export const StagesColumns = () => {
   );
 };
 
-// the length of dataVision array
 const dataVisionLength = dataStages.length;
 
 const StagesColumnWrapper = styled.div`
@@ -83,26 +63,26 @@ const StagesColumnWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(${dataVisionLength}, 1fr);
   transform-origin: 0% 0%;
-  transition: all ${columnTransition}ms;
-  width:100%;
+  transition: all ${CHART_COLUMN_TRANSITION}ms;
+  width: 100%;
   @media (min-width: ${BREAKPOINT}px) {
-    grid-gap: 10px;
-    height: ${chartHeightDesktop}px;
+    grid-gap: ${COLUMN_GRID_GAP_DESKTOP};
+    height: ${CHART_HEIGHT_DESKTOP}px;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    grid-gap: 2px;
-    height: ${chartHeightMobile}px;
+    grid-gap: ${COLUMN_GRID_GAP_MOBILE};
+    height: ${CHART_HEIGHT_MOBILE}px;
   }
 `;
 
 const StagesColumn = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #fff;
   height: inherit;
   width: auto;
+  opacity: 0;
   & span {
     text-align: center;
     font-family: "Roboto Condensed", sans-serif;

@@ -4,11 +4,11 @@ import {
   COLOR_BASE,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
-} from "styles/Constants";
+} from "constants/index";
 import Callout from "components/Callout/callOut";
 import { dataCaseStudies } from "./dataCaseStudies";
 import styled from "styled-components";
-import BarColumn from "components/Chart/barColumn";
+import BarColumn from "components/BarColumn/barColumn";
 
 const pageVideo = 776446335;
 

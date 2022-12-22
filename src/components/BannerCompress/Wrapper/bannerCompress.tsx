@@ -12,31 +12,22 @@ import {
   BANNER_PADDING_TOP_MOBILE,
   BANNER_CONTENT_HEIGHT_MOBILE,
   CONTENT_WIDTH_MOBILE,
-} from "styles/Constants";
-import {
-  chartSectionHeightDesktop,
-  chartSectionHeightMobile,
-  chartHeightDesktop,
-  chartHeightMobile,
-  // chartLegendHeightDesktop,
-  // chartLegendHeightMobile,
-  chartSpacerHeightDesktop,
-  chartSpacerHeightMobile,
-} from "./config";
-
-
-
+  CHART_SECTION_HEIGHT_DESKTOP,
+  CHART_SECTION_HEIGHT_MOBILE,
+  CHART_HEIGHT_DESKTOP,
+  CHART_HEIGHT_MOBILE,
+  CHART_SPACER_HEIGHT_DESKTOP,
+  CHART_SPACER_HEIGHT_MOBILE,
+} from "constants/index";
 
 const BannerCompress = () => {
-
   return (
     <BannerCompressWrapper>
       <ContentArea>
         <ChartSection>
           <ChartSectionBackground>
             <StagesColumns />
-            {/* <SavingsColumns />
-            <ReductionsColumns /> */}
+
           </ChartSectionBackground>
         </ChartSection>
         <ChartBottomSpacer />
@@ -52,10 +43,10 @@ const ChartSection = styled.div`
   flex-direction: column;
   width: 100%;
   @media (min-width: ${BREAKPOINT}px) {
-    height: ${chartSectionHeightDesktop}px;
+    height: ${CHART_SECTION_HEIGHT_DESKTOP}px;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    height: ${chartSectionHeightMobile}px;
+    height: ${CHART_SECTION_HEIGHT_MOBILE}px;
   }
   /* background: blue; */
 `;
@@ -67,10 +58,10 @@ const ChartSectionBackground = styled.div`
   background: ${COLOR_BASE_3};
 
   @media (min-width: ${BREAKPOINT}px) {
-    height: ${chartHeightDesktop}px;
+    height: ${CHART_HEIGHT_DESKTOP}px;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    height: ${chartHeightMobile}px;
+    height: ${CHART_HEIGHT_MOBILE}px;
   }
   /* background: blue; */
 `;
@@ -110,10 +101,10 @@ const ContentArea = styled.div`
 const ChartBottomSpacer = styled.div`
   width: 100%;
   @media (min-width: ${BREAKPOINT}px) {
-    height: ${chartSpacerHeightDesktop}px;
+    height: ${CHART_SPACER_HEIGHT_DESKTOP}px;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    height: ${chartSpacerHeightMobile}px;
+    height: ${CHART_SPACER_HEIGHT_MOBILE}px;
   }
   /* background: red; */
 `;

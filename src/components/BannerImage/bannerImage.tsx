@@ -8,7 +8,7 @@ import {
   BREAKPOINT,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
-} from "styles/Constants";
+} from "constants/index";
 import styled from "styled-components";
 
 import ImageCallout from "./../ImageCallout/imageCallout";

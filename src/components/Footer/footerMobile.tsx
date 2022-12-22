@@ -10,7 +10,7 @@ import {
   COLOR_RED_HOVER,
   CONTENT_WIDTH_MOBILE,
   FOOTER_HEIGHT_MOBILE,
-} from "styles/Constants";
+} from "constants/index";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import VideoCallout from "./../VideoCallout/videoCallout";
 import { FC } from "react";

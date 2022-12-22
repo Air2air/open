@@ -1,6 +1,6 @@
 import setBodyColor from "utils/setBodyColor";
 import BannerVideo from "components/BannerVideo/bannerVideo";
-import { COLOR_BASE, COLOR_BASE_1, COLOR_WHITE } from "./../styles/Constants";
+import { COLOR_BASE, COLOR_BASE_1, COLOR_WHITE } from "constants/index";
 import Advisors from "components/Advisors/advisors";
 import Map from "components/Map/map";
 import Button from "components/Button/button";

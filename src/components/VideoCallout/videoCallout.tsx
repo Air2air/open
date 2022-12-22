@@ -4,7 +4,7 @@ import {
   BANNER_HEIGHT_DESKTOP,
   BANNER_HEIGHT_MOBILE,
   BREAKPOINT,
-} from "styles/Constants";
+} from "constants/index";
 import { IVideoCalloutProps, IVideoOverlayProps } from "interfaces/videos";
 
 const VideoCallout = (props: IVideoCalloutProps) => {

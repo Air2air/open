@@ -5,7 +5,7 @@ import {
   BANNER_HEIGHT_MOBILE,
   BREAKPOINT_MID,
   BREAKPOINT,
-} from "styles/Constants";
+} from "constants/index";
 import { useState } from "react";
 
 export const VimeoPlayer = ({ videoID }) => {

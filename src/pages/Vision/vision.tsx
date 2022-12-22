@@ -3,7 +3,7 @@ import Callout from "../../components/Callout/callOut";
 // import BannerImage from "components/BannerImage/bannerImage";
 import TimeLine from "components/TimeLine/timeLine";
 import { dataVentureStage } from "../Vision/dataVentureStage";
-import { COLOR_BASE } from "../../styles/Constants";
+import { COLOR_BASE } from "constants/index";
 import BannerVision from "components/BannerVision/Wrapper/bannerVision";
 
 // const pageImage = "dartmouth.jpeg";

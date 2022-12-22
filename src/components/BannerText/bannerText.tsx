@@ -1,4 +1,4 @@
-import { BREAKPOINT, COLOR_TEXT, TEXT_OPACITY } from "styles/Constants";
+import { BREAKPOINT, COLOR_TEXT, TEXT_OPACITY } from "constants/index";
 import styled from "styled-components";
 import Typewriter from "typewriter-effect";
 

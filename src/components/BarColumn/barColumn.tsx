@@ -2,12 +2,12 @@ import { IBarColumnProps } from "interfaces/callouts";
 import { useState, useEffect } from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import styled from "styled-components";
-import { BREAKPOINT, CHART_LABEL_DESKTOP, CHART_LABEL_MOBILE } from "styles/Constants";
+import { BREAKPOINT, CHART_COLUMN_TRANSITION, CHART_LABEL_DESKTOP, CHART_LABEL_MOBILE } from "constants/index";
 
 const BarColumn = (props: IBarColumnProps) => {
   const [seriesRandomHeight, setSeriesRandomHeight] = useState(50);
 
-  const minHeight = 10;
+  const minHeight = 20;
   const maxHeight = 100;
 
   const randomHeight = () => {
@@ -101,7 +101,7 @@ const ColumnSeries = styled(AnimationOnScroll)`
   display: flex;
   justify-content: center;
   align-self: flex-end;
-  transition: all 400ms;
+  transition: all ${CHART_COLUMN_TRANSITION}ms;
   width: 100%;
   @media (min-width: ${BREAKPOINT}px) {
     min-height: ${barMinHeightDesktop}px;
@@ -119,7 +119,7 @@ const Label = styled(AnimationOnScroll)`
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
-  transition: all 400ms;
+  transition: all ${CHART_COLUMN_TRANSITION}ms;
   @media (min-width: ${BREAKPOINT}px) {
     font-size: ${CHART_LABEL_DESKTOP};
     text-align: center;

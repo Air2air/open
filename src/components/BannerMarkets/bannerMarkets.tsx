@@ -12,8 +12,14 @@ import {
   CONTENT_WIDTH_MOBILE,
   CHART_LABEL_DESKTOP,
   CHART_LABEL_MOBILE,
-} from "../../styles/Constants";
-import BarColumn from "../Chart/barColumn";
+  CHART_SPACER_HEIGHT_DESKTOP,
+  CHART_SPACER_HEIGHT_MOBILE,
+  CHART_SECTION_HEIGHT_MOBILE,
+  CHART_SECTION_HEIGHT_DESKTOP,
+  CHART_TEXT_HEIGHT_DESKTOP,
+  CHART_TEXT_HEIGHT_MOBILE,
+} from "constants/index";
+import BarColumn from "../BarColumn/barColumn";
 import { TitleBanner } from "components/Title/titleBanner";
 import { BannerText } from "components/BannerText/bannerText";
 import { IBannerMarketsProps, IBarColumnProps } from "interfaces/callouts";
@@ -53,21 +59,6 @@ const BannerMarkets = (props: IBannerMarketsProps) => {
   );
 };
 
-/* Chart Height */
-const chartSectionHeightDesktop = BANNER_CONTENT_HEIGHT_DESKTOP * 0.6;
-const chartSectionHeightMobile = BANNER_CONTENT_HEIGHT_MOBILE * 0.5;
-
-/* Spacer Height */
-const chartSpacerHeightDesktop = BANNER_CONTENT_HEIGHT_DESKTOP * 0.07;
-const chartSpacerHeightMobile = BANNER_CONTENT_HEIGHT_MOBILE * 0.07;
-
-/* Text Height */
-const chartTextHeightDesktop =
-  BANNER_CONTENT_HEIGHT_DESKTOP -
-  (chartSectionHeightDesktop + chartSpacerHeightDesktop);
-const chartTextHeightMobile =
-  BANNER_CONTENT_HEIGHT_MOBILE -
-  (chartSectionHeightMobile + chartSpacerHeightMobile);
 
 const BannerMarketsWrapper = styled.div`
   position: relative;
@@ -109,10 +100,10 @@ const ChartSection = styled.div`
   display: flex;
   width: 100%;
   @media (min-width: ${BREAKPOINT}px) {
-    height: ${chartSectionHeightDesktop}px;
+    height: ${CHART_SECTION_HEIGHT_DESKTOP}px;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    height: ${chartSectionHeightMobile}px;
+    height: ${CHART_SECTION_HEIGHT_MOBILE}px;
   }
   /* background: blue; */
 `;
@@ -120,10 +111,10 @@ const ChartSection = styled.div`
 const ChartBottomSpacer = styled.div`
   width: 100%;
   @media (min-width: ${BREAKPOINT}px) {
-    height: ${chartSpacerHeightDesktop}px;
+    height: ${CHART_SPACER_HEIGHT_DESKTOP}px;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    height: ${chartSpacerHeightMobile}px;
+    height: ${CHART_SPACER_HEIGHT_MOBILE}px;
   }
   /* background: red; */
 `;
@@ -151,10 +142,10 @@ const TextSection = styled.div`
   justify-content: center;
   width: 100%;
   @media (min-width: ${BREAKPOINT}px) {
-    height: ${chartTextHeightDesktop}px;
+    height: ${CHART_TEXT_HEIGHT_DESKTOP}px;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    height: ${chartTextHeightMobile}px;
+    height: ${CHART_TEXT_HEIGHT_MOBILE}px;
   }
   /* background: green; */
 `;

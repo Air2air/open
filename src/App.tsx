@@ -5,7 +5,7 @@ import { Footer } from "./components/Footer/footer";
 import { Header } from "./components/Header/header";
 import ProgressBar from "./components/Progress/progress";
 import { dataRoutes } from "./routes/routes";
-import { BREAKPOINT } from "styles/Constants";
+import { BREAKPOINT } from "constants/index";
 import { useWindowWidth } from "@react-hook/window-size";
 import { usePageTracking } from "./components/Analytics/gaTracking";
 

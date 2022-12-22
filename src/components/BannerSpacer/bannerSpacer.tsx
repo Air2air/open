@@ -1,5 +1,5 @@
 import setBodyColor from "./../../utils/setBodyColor";
-import { COLOR_BASE } from "styles/Constants";
+import { COLOR_BASE } from "constants/index";
 import styled from "styled-components";
 
 const BannerSpacer = () => {

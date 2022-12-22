@@ -10,7 +10,7 @@ import {
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
   TEXT_OPACITY,
-} from "../../styles/Constants";
+} from "constants/index";
 import styled from "styled-components";
 import Button from "../Button/button";
 import { AnimationOnScroll } from "react-animation-on-scroll";

@@ -3,7 +3,7 @@ import {
   BANNER_HEIGHT_DESKTOP,
   BANNER_HEIGHT_MOBILE,
   BREAKPOINT,
-} from "styles/Constants";
+} from "constants/index";
 
 const ImageCallout = ({ pageImage, overlayOpacity, overlayColor }) => {
   const backgroundImage = "url(/images/content/" + pageImage + ")";

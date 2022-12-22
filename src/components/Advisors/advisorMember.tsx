@@ -5,7 +5,7 @@ import {
   TEAM_MEMBER_HEIGHT,
   TEAM_MEMBER_PHOTO,
   TEAM_MEMBER_WIDTH,
-} from "styles/Constants";
+} from "constants/index";
 import ButtonLinkedIn from "./../Button/buttonLinkedIn";
 
 interface IAdvisorProps {

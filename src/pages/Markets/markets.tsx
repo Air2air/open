@@ -1,4 +1,4 @@
-import BannerChart from "components/BannerChart/bannerMarkets";
+import BannerChart from "components/BannerMarkets/bannerMarkets";
 import { dataMarkets } from "./dataMarkets";
 import Callout from "components/Callout/callOut";
 

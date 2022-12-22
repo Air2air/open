@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { BREAKPOINT, BUTTON_COLOR_RED, CHART_LABEL_DESKTOP, CHART_LABEL_MOBILE } from "styles/Constants";
+import { BREAKPOINT, BUTTON_COLOR_RED, CHART_LABEL_DESKTOP, CHART_LABEL_MOBILE } from "constants/index";
 import { useState, useEffect } from "react";
 import {
-  chartHeightDesktop,
-  chartHeightMobile,
-  columnTransition,
-} from "../Wrapper/config";
+  CHART_HEIGHT_DESKTOP,
+  CHART_HEIGHT_MOBILE,
+  CHART_COLUMN_TRANSITION,
+} from "constants/index";
 
 export const SavingsColumns = () => {
   const [savingsOpacity, setSavingsOpacity] = useState(0);
@@ -62,12 +62,12 @@ const SavingsColumnWrapper = styled.div`
   top: 0;
   right: 0;
   transform-origin: 0% 0%;
-  transition: all ${columnTransition}ms;
+  transition: all ${CHART_COLUMN_TRANSITION}ms;
   @media (min-width: ${BREAKPOINT}px) {
-    height: ${chartHeightDesktop}px;
+    height: ${CHART_HEIGHT_DESKTOP}px;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    height: ${chartHeightMobile}px;
+    height: ${CHART_HEIGHT_MOBILE}px;
   }
   /* background: red; */
 `;
@@ -81,10 +81,10 @@ const SavingsColumn = styled.div`
   height: inherit;
   /* width: 100%; */
   @media (min-width: ${BREAKPOINT}px) {
-    height: ${chartHeightDesktop}px;
+    height: ${CHART_HEIGHT_DESKTOP}px;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    height: ${chartHeightMobile}px;
+    height: ${CHART_HEIGHT_MOBILE}px;
   }
   & div {
     align-items: center;

@@ -11,7 +11,7 @@ import {
   CONTACT_ITEM_HEIGHT,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
-} from "../../styles/Constants";
+} from "constants/index";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import ButtonLinkedIn from "../Button/buttonLinkedIn";
 
