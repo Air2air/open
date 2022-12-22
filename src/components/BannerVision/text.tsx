@@ -11,50 +11,54 @@ import {
 import { LoopEndTime } from "./bannerVision";
 
 const BannerVisionText = () => {
-  const [textPathOpacity, setTextFasterOpacity] = useState(0);
-  const [textDefineOpacity, setTextCutTimelineOpacity] = useState(0);
+  const [textAdvisoryOpacity, setTextAdvisoryOpacity] = useState(0);
+  const [textDefineOpacity, setTextDefineOpacity] = useState(0);
   const [textLoopEndTime, setTextLoopEndTime] = useState(0);
+  const [count, setCount] = useState(1);
 
   useEffect(() => {
-    const textReset = setTimeout(() => {
-      setTextFasterOpacity(0);
-      setTextCutTimelineOpacity(0);
+
+    const loopIsStarting = setTimeout(() => {
       setTextLoopEndTime(0);
     }, 0);
 
-    const textPath = setTimeout(() => {
-      setTextFasterOpacity(1);
+    const textAdvisory = setTimeout(() => {
+      setTextAdvisoryOpacity(1);
     }, 1000);
 
-    const textPathEnd = setTimeout(() => {
-      setTextFasterOpacity(0);
+    const textAdvisoryEnd = setTimeout(() => {
+      setTextAdvisoryOpacity(0);
     }, 6000);
 
     const textDefine = setTimeout(() => {
-      setTextCutTimelineOpacity(1);
+      setTextDefineOpacity(1);
     }, 7000);
 
     const textDefineEnd = setTimeout(() => {
-      setTextCutTimelineOpacity(0);
-    }, LoopEndTime - 2000);
+      setTextDefineOpacity(0);
+    }, LoopEndTime - 1000);
 
-    const textLoopEndTime = setTimeout(() => {
+    const loopIsOver = setTimeout(() => {
       setTextLoopEndTime(1);
+      setCount(count + 1);
     }, LoopEndTime);
 
+
     return () => {
-      clearTimeout(textReset);
-      clearTimeout(textPath);
-      clearTimeout(textPathEnd);
+      clearTimeout(loopIsStarting);
+      clearTimeout(textAdvisory);
+      clearTimeout(textAdvisoryEnd);
       clearTimeout(textDefine);
       clearTimeout(textDefineEnd);
       clearTimeout(textLoopEndTime);
+      clearTimeout(loopIsOver);
     };
-  }, [textLoopEndTime]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [count]);
 
   return (
     <>
-      <TextSection style={{ opacity: textPathOpacity }}>
+      <TextSection style={{ opacity: textAdvisoryOpacity }}>
         <TitleBanner title="Eleven is a healthcare AI advisory" />
         <BannerText text="of the leading physicians, scientists, engineers and entrepreneurs in healthcare AI." />
       </TextSection>
@@ -62,7 +66,6 @@ const BannerVisionText = () => {
         <TitleBanner title="We define the path forward" />
         <BannerText text=" for leading companies building the future of digital health and clinical machine learning." />
       </TextSection>
-      <div style={{width:textLoopEndTime}} />
     </>
   );
 };

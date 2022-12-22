@@ -15,13 +15,12 @@ import { useState, useEffect } from "react";
 import { LoopEndTime } from "./bannerVision";
 
 export const VisionColumns = () => {
-  const [loopIsRunning, setLoopIsRunning] = useState(0);
   const [columnsAreEntering, setColumnsAreEntering] = useState(0);
   const [count, setCount] = useState(1);
 
   useEffect(() => {
+
     const loopIsStarting = setTimeout(() => {
-      setLoopIsRunning(0);
       setColumnsAreEntering(1);
     }, 0);
 
@@ -29,8 +28,7 @@ export const VisionColumns = () => {
       setColumnsAreEntering(0);
     }, LoopEndTime - 4000);
 
-    const loopIsRunning = setTimeout(() => {
-      setLoopIsRunning(1);
+    const loopIsOver = setTimeout(() => {
       setColumnsAreEntering(0);
       setCount(count + 1);
     }, LoopEndTime);
@@ -39,7 +37,7 @@ export const VisionColumns = () => {
       clearTimeout(loopIsStarting);
       clearTimeout(columnsAreEntering);
       clearTimeout(stageAnimationEnd);
-      clearTimeout(loopIsRunning);
+      clearTimeout(loopIsOver);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [count]);
@@ -75,7 +73,6 @@ export const VisionColumns = () => {
         );
       })}
 
-      <div style={{ width: loopIsRunning }} />
     </StageColumnWrapper>
   );
 };
