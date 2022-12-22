@@ -13,7 +13,7 @@ const BannerCompressText = () => {
   const [textFasterOpacity, setTextFasterOpacity] = useState(0);
   const [textCutTimelineOpacity, setTextCutTimelineOpacity] = useState(0);
   const [textCXAIOOpacity, setTextCXAIOOpacity] = useState(0);
-  const [textHowOpacity, setTextHowOpacity] = useState(0);
+  // const [textHowOpacity, setTextHowOpacity] = useState(0);
   const [textEndLoop, setTextEndLoop] = useState(0);
 
   useEffect(() => {
@@ -21,7 +21,7 @@ const BannerCompressText = () => {
       setTextFasterOpacity(0);
       setTextCutTimelineOpacity(0);
       setTextCXAIOOpacity(0);
-      setTextHowOpacity(0);
+      // setTextHowOpacity(0);
       setTextEndLoop(0);
     }, 0);
 
@@ -47,15 +47,15 @@ const BannerCompressText = () => {
 
     const textCXAIOEnd = setTimeout(() => {
       setTextCXAIOOpacity(0);
-    }, 18000);
+    }, 24000/*18000*/);
 
-    const textHow = setTimeout(() => {
-      setTextHowOpacity(1);
-    }, 19000);
+    // const textHow = setTimeout(() => {
+    //   setTextHowOpacity(1);
+    // }, 19000);
 
-    const textHowEnd = setTimeout(() => {
-      setTextHowOpacity(0);
-    }, 24000);
+    // const textHowEnd = setTimeout(() => {
+    //   setTextHowOpacity(0);
+    // }, 24000);
 
     const textEndLoop = setTimeout(() => {
       setTextEndLoop(1);
@@ -69,8 +69,8 @@ const BannerCompressText = () => {
       clearTimeout(textCutTimelineEnd);
       clearTimeout(textCXAIO);
       clearTimeout(textCXAIOEnd);
-      clearTimeout(textHow);
-      clearTimeout(textHowEnd);
+      // clearTimeout(textHow);
+      // clearTimeout(textHowEnd);
       clearTimeout(textEndLoop);
     };
   }, [textEndLoop]);
@@ -89,10 +89,10 @@ const BannerCompressText = () => {
         <TitleBanner title="Reducing Risk, Dilution and Time." />
         <BannerText text="Getting you to the goal line for a fraction of the cost. " />
       </TextSection>
-      <TextSection style={{ opacity: textHowOpacity }} >
+      {/* <TextSection style={{ opacity: textHowOpacity }} >
         <TitleBanner title="How does it work?" />
         <BannerText text="Your CXAIO advises you through every step of your venture." />
-      </TextSection>
+      </TextSection> */}
       <div style={{width:textEndLoop}} />
     </>
   );

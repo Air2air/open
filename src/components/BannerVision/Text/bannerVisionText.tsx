@@ -10,89 +10,58 @@ import {
 } from "constants/index";
 
 const BannerVisionText = () => {
-  const [textFasterOpacity, setTextFasterOpacity] = useState(0);
-  const [textCutTimelineOpacity, setTextCutTimelineOpacity] = useState(0);
-  const [textCXAIOOpacity, setTextCXAIOOpacity] = useState(0);
-  const [textHowOpacity, setTextHowOpacity] = useState(0);
+  const [textPathOpacity, setTextFasterOpacity] = useState(0);
+  const [textDefineOpacity, setTextCutTimelineOpacity] = useState(0);
   const [textEndLoop, setTextEndLoop] = useState(0);
 
   useEffect(() => {
     const textReset = setTimeout(() => {
       setTextFasterOpacity(0);
       setTextCutTimelineOpacity(0);
-      setTextCXAIOOpacity(0);
-      setTextHowOpacity(0);
       setTextEndLoop(0);
     }, 0);
 
-    const textFaster = setTimeout(() => {
+    const textPath = setTimeout(() => {
       setTextFasterOpacity(1);
     }, 1000);
 
-    const textFasterEnd = setTimeout(() => {
+    const textPathEnd = setTimeout(() => {
       setTextFasterOpacity(0);
     }, 6000);
 
-    const textCutTimeline = setTimeout(() => {
+    const textDefine = setTimeout(() => {
       setTextCutTimelineOpacity(1);
     }, 7000);
 
-    const textCutTimelineEnd = setTimeout(() => {
+    const textDefineEnd = setTimeout(() => {
       setTextCutTimelineOpacity(0);
     }, 12000);
 
-    const textCXAIO = setTimeout(() => {
-      setTextCXAIOOpacity(1);
-    }, 13000);
-
-    const textCXAIOEnd = setTimeout(() => {
-      setTextCXAIOOpacity(0);
-    }, 18000);
-
-    const textHow = setTimeout(() => {
-      setTextHowOpacity(1);
-    }, 19000);
-
-    const textHowEnd = setTimeout(() => {
-      setTextHowOpacity(0);
-    }, 24000);
-
     const textEndLoop = setTimeout(() => {
       setTextEndLoop(1);
-    }, 24000);
+    }, 12000);
 
     return () => {
       clearTimeout(textReset);
-      clearTimeout(textFaster);
-      clearTimeout(textFasterEnd);
-      clearTimeout(textCutTimeline);
-      clearTimeout(textCutTimelineEnd);
-      clearTimeout(textCXAIO);
-      clearTimeout(textCXAIOEnd);
-      clearTimeout(textHow);
-      clearTimeout(textHowEnd);
+      clearTimeout(textPath);
+      clearTimeout(textPathEnd);
+      clearTimeout(textDefine);
+      clearTimeout(textDefineEnd);
       clearTimeout(textEndLoop);
     };
   }, [textEndLoop]);
 
   return (
     <>
-      <TextSection style={{ opacity: textFasterOpacity }}>
-        <TitleBanner title="Faster liquidity for Health AI ventures" />
-        <BannerText text="Vision your timeline and slash dilution, risk and time." />
+      <TextSection style={{ opacity: textPathOpacity }}>
+        <TitleBanner title="Eleven is a healthcare AI advisory" />
+        <BannerText text="of the leading physicians, scientists, engineers and entrepreneurs in healthcare AI." />
       </TextSection>
-      <TextSection style={{ opacity: textCutTimelineOpacity }}>
-        <TitleBanner title="We cut your timeline to liquidity" />
-        <BannerText text="With world class, professional oversight." />
+      <TextSection style={{ opacity: textDefineOpacity }}>
+        <TitleBanner title="We define the path forward" />
+        <BannerText text=" for leading companies building the future of digital health and clinical machine learning." />
       </TextSection>
-      <TextSection style={{ opacity: textCXAIOOpacity }}>
-        <TitleBanner title="Reducing Risk, Dilution and Time." />
-        <BannerText text="Getting you to the goal line for a fraction of the cost. " />
-      </TextSection>
-      <TextSection style={{ opacity: textHowOpacity }} >
-        <TitleBanner title="How does it work?" />
-        <BannerText text="Your CXAIO advises you through every step of your venture." />
-      </TextSection>
+
       <div style={{width:textEndLoop}} />
     </>
   );
