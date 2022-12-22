@@ -10,7 +10,7 @@ const PracticeAreasPage = () => {
         data={dataPracticeAreas}
         color="#ffffff"
         label=""
-        text="Eleven juggles the talent and resources for each practice area to optimize the venture's outcome. We call this process ''fractional C{x}AIOs''."
+        text="Elevens juggles the talent and resources for each practice area to optimize the venture's outcome. We call this process ''fractional C{x}AIOs''."
         randomHeight={true}
         backgroundColor={2}
       />

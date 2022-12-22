@@ -11,31 +11,30 @@ import {
 import { LoopEndTime } from "./bannerVision";
 
 const BannerVisionText = () => {
-  const [textAdvisoryOpacity, setTextAdvisoryOpacity] = useState(0);
-  const [textDefineOpacity, setTextDefineOpacity] = useState(0);
+  const [advisoryOpacity, setAdvisoryOpacity] = useState(0);
+  const [defineOpacity, setDefineOpacity] = useState(0);
   const [textLoopEndTime, setTextLoopEndTime] = useState(0);
   const [count, setCount] = useState(1);
 
   useEffect(() => {
-
     const loopIsStarting = setTimeout(() => {
       setTextLoopEndTime(0);
     }, 0);
 
-    const textAdvisory = setTimeout(() => {
-      setTextAdvisoryOpacity(1);
+    const advisoryStart = setTimeout(() => {
+      setAdvisoryOpacity(1);
     }, 1000);
 
-    const textAdvisoryEnd = setTimeout(() => {
-      setTextAdvisoryOpacity(0);
+    const advisoryEnd = setTimeout(() => {
+      setAdvisoryOpacity(0);
     }, 6000);
 
-    const textDefine = setTimeout(() => {
-      setTextDefineOpacity(1);
+    const defineStart = setTimeout(() => {
+      setDefineOpacity(1);
     }, 7000);
 
-    const textDefineEnd = setTimeout(() => {
-      setTextDefineOpacity(0);
+    const defineEnd = setTimeout(() => {
+      setDefineOpacity(0);
     }, LoopEndTime - 1000);
 
     const loopIsOver = setTimeout(() => {
@@ -43,13 +42,12 @@ const BannerVisionText = () => {
       setCount(count + 1);
     }, LoopEndTime);
 
-
     return () => {
       clearTimeout(loopIsStarting);
-      clearTimeout(textAdvisory);
-      clearTimeout(textAdvisoryEnd);
-      clearTimeout(textDefine);
-      clearTimeout(textDefineEnd);
+      clearTimeout(advisoryStart);
+      clearTimeout(advisoryEnd);
+      clearTimeout(defineStart);
+      clearTimeout(defineEnd);
       clearTimeout(textLoopEndTime);
       clearTimeout(loopIsOver);
     };
@@ -58,11 +56,11 @@ const BannerVisionText = () => {
 
   return (
     <>
-      <TextSection style={{ opacity: textAdvisoryOpacity }}>
-        <TitleBanner title="Eleven is a healthcare AI advisory" />
+      <TextSection style={{ opacity: advisoryOpacity }}>
+        <TitleBanner title="Elevens is a healthcare AI advisory" />
         <BannerText text="of the leading physicians, scientists, engineers and entrepreneurs in healthcare AI." />
       </TextSection>
-      <TextSection style={{ opacity: textDefineOpacity }}>
+      <TextSection style={{ opacity: defineOpacity }}>
         <TitleBanner title="We define the path forward" />
         <BannerText text=" for leading companies building the future of digital health and clinical machine learning." />
       </TextSection>

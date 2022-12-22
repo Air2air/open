@@ -57,7 +57,7 @@ export const FooterDesktop: FC<FooterProps> = ({ footerVideo }) => {
         </FooterContentRow>
 
         <FooterCopyright>
-          <div>&copy; Eleven of Ten LLP</div>
+          <div>&copy; Elevens of Ten LLP</div>
           <Link to="/home">
             <LogoWhite width="30" style={{ opacity: 0.3 }} />
           </Link>

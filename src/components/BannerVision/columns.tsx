@@ -48,7 +48,7 @@ export const VisionColumns = () => {
     }ms forwards`;
 
   const animationExit = (index: number) =>
-    `fadeOutDown ${CHART_COLUMN_TRANSITION}ms ease-out ${
+    `fadeOutDown ${CHART_COLUMN_TRANSITION}ms ease-in ${
       CHART_COLUMN_STAGGER * (index + 1)
     }ms forwards`;
 

@@ -16,7 +16,7 @@ const MarketsPage = () => {
       />
       <Callout
         title=""
-        text="Eleven accelerates breakthrough ventures in Biotech, Healthtech, Medtech and Pharma."
+        text="Elevens accelerates breakthrough ventures in Biotech, Healthtech, Medtech and Pharma."
         buttonText="Vision"
         buttonTo="/vision"
         buttonColor="white"

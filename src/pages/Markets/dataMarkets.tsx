@@ -11,7 +11,7 @@ export const dataMarkets = [
     value: "$400B",
     color: "#ffffff",
     backgroundColor: `hsl(350, ${saturation}, 30%)`,
-    text: "Eleven supports Healthtech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners.",
+    text: "Elevens supports Healthtech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners.",
   },
   {
     id: uuid(),
@@ -20,7 +20,7 @@ export const dataMarkets = [
     value: "$500B",
     color: "#ffffff",
     backgroundColor: `hsl(370, ${saturation}, 35%)`,
-    text: "Eleven supports Medtech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners.",
+    text: "Elevens supports Medtech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners.",
   },
   {
     id: uuid(),
@@ -29,7 +29,7 @@ export const dataMarkets = [
     value: "$700B",
     color: "#ffffff",
     backgroundColor: `hsl(390, ${saturation}, 40%)`,
-    text: "Eleven supports Biotech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners.",
+    text: "Elevens supports Biotech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners.",
   },
   {
     id: uuid(),
@@ -38,6 +38,6 @@ export const dataMarkets = [
     value: "$1.2T",
     color: "#ffffff",
     backgroundColor: `hsl(410, ${saturation}, 45%)`,
-    text: "Eleven supports Pharmatech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners.",
+    text: "Elevens supports Pharmatech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners.",
   },
 ];
