@@ -20,9 +20,7 @@ import {
   CHART_SPACER_HEIGHT_MOBILE,
 } from "constants/index";
 
-
 const BannerVision = () => {
-
   return (
     <BannerVisionWrapper>
       <ContentArea>
@@ -58,7 +56,7 @@ const ChartSectionBackground = styled.div`
   position: relative;
   overflow: hidden;
   width: 100%;
-  background: ${COLOR_BASE_3};
+  /* background: ${COLOR_BASE_3}; */
 
   @media (min-width: ${BREAKPOINT}px) {
     height: ${CHART_HEIGHT_DESKTOP}px;
@@ -111,7 +109,5 @@ const ChartBottomSpacer = styled.div`
   }
   /* background: red; */
 `;
-
-
 
 export default BannerVision;

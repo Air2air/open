@@ -14,17 +14,7 @@ const VisionPage = () => {
   return (
     <>
       <BannerVision />
-      {/* <BannerImage
-        title="Our Vision"
-        text="Eleven is a multidisciplinary advisory of physicians, scientists, engineers and entrepreneurs who define a path forward for leading companies building the future of digital health and clinical machine learning"
-        pageImage={pageImage}
-        overlayOpacity={0.7}
-        overlayColor={COLOR_BASE}
-        typing={true}
-      /> */}
-
       <TimeLine data={dataVentureStage} backgroundColor={3} />
-
       <Callout
         id={0}
         title="THE BIRTH OF MACHINE INTELLIGENCE"

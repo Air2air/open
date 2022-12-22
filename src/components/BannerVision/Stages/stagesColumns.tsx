@@ -31,7 +31,6 @@ export const StagesColumns = () => {
     };
   }, [stagesEndLoop]);
 
-
   const animationString = (index) =>
     `fadeInDown ${CHART_COLUMN_TRANSITION}ms ease-out ${
       CHART_COLUMN_STAGGER * (index + 1)
