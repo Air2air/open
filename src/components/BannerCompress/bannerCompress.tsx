@@ -1,5 +1,5 @@
-import { StagesColumns } from "./Stages/stagesColumns";
-import BannerCompressText from "./Text/bannerCompressText";
+import { StagesColumns } from "./stagesColumns";
+import BannerCompressText from "./text";
 import styled from "styled-components";
 import {
   BREAKPOINT,
@@ -27,7 +27,6 @@ const BannerCompress = () => {
         <ChartSection>
           <ChartSectionBackground>
             <StagesColumns />
-
           </ChartSectionBackground>
         </ChartSection>
         <ChartBottomSpacer />

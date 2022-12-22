@@ -4,7 +4,6 @@ import { dataVentureStage } from "../Vision/dataVentureStage";
 import { COLOR_BASE } from "constants/index";
 import BannerVision from "components/BannerVision/bannerVision";
 
-// const pageImage = "dartmouth.jpeg";
 
 const VisionPage = () => {
   setBodyColor({ color: COLOR_BASE });

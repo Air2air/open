@@ -35,7 +35,7 @@ export const dataVision = [
   },
   {
     id: uuid(),
-    label: "Exit",
+    label: "Public",
     backgroundColor: `hsl(170, ${saturation}, 60%)`,
   },
 ];
