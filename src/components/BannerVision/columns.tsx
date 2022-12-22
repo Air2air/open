@@ -15,12 +15,13 @@ import { useState, useEffect } from "react";
 import { LoopEndTime } from "./bannerVision";
 
 export const VisionColumns = () => {
-  const [loopIsEnding, setLoopIsEnding] = useState(0);
+  const [loopIsRunning, setLoopIsRunning] = useState(0);
   const [columnsAreEntering, setColumnsAreEntering] = useState(0);
+  const [count, setCount] = useState(1);
 
   useEffect(() => {
     const loopIsStarting = setTimeout(() => {
-      setLoopIsEnding(0);
+      setLoopIsRunning(0);
       setColumnsAreEntering(1);
     }, 0);
 
@@ -28,17 +29,20 @@ export const VisionColumns = () => {
       setColumnsAreEntering(0);
     }, LoopEndTime - 4000);
 
-    const loopIsEnding = setTimeout(() => {
-      setLoopIsEnding(1);
+    const loopIsRunning = setTimeout(() => {
+      setLoopIsRunning(1);
+      setColumnsAreEntering(0);
+      setCount(count + 1);
     }, LoopEndTime);
 
     return () => {
       clearTimeout(loopIsStarting);
       clearTimeout(columnsAreEntering);
       clearTimeout(stageAnimationEnd);
-      clearTimeout(loopIsEnding);
+      clearTimeout(loopIsRunning);
     };
-  }, [loopIsEnding]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [count]);
 
   const animationEnter = (index: number) =>
     `fadeInDown ${CHART_COLUMN_TRANSITION}ms ease-out ${
@@ -71,7 +75,7 @@ export const VisionColumns = () => {
         );
       })}
 
-      <div style={{ width: loopIsEnding }} />
+      <div style={{ width: loopIsRunning }} />
     </StageColumnWrapper>
   );
 };

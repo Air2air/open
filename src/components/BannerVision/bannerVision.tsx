@@ -16,8 +16,6 @@ import {
   CHART_SECTION_HEIGHT_MOBILE,
   CHART_HEIGHT_DESKTOP,
   CHART_HEIGHT_MOBILE,
-  CHART_SPACER_HEIGHT_DESKTOP,
-  CHART_SPACER_HEIGHT_MOBILE,
 } from "constants/index";
 
 export const LoopEndTime = 12000;
@@ -98,15 +96,6 @@ const ContentArea = styled.div`
   /* background: gold; */
 `;
 
-const ChartBottomSpacer = styled.div`
-  width: 100%;
-  @media (min-width: ${BREAKPOINT}px) {
-    height: ${CHART_SPACER_HEIGHT_DESKTOP}px;
-  }
-  @media (max-width: ${BREAKPOINT}px) {
-    height: ${CHART_SPACER_HEIGHT_MOBILE}px;
-  }
-  /* background: red; */
-`;
+
 
 export default BannerVision;
