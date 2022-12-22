@@ -18,7 +18,6 @@ const HistoryPage = () => {
         overlayColor={COLOR_BASE}
         typing={true}
       />
-
       <Callout
         id={0}
         title="THE BIRTH OF MACHINE INTELLIGENCE"
