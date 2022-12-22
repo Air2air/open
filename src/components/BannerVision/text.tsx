@@ -13,13 +13,9 @@ import { LoopEndTime } from "./bannerVision";
 const BannerVisionText = () => {
   const [advisoryOpacity, setAdvisoryOpacity] = useState(0);
   const [defineOpacity, setDefineOpacity] = useState(0);
-  const [textLoopEndTime, setTextLoopEndTime] = useState(0);
   const [count, setCount] = useState(1);
 
   useEffect(() => {
-    const loopIsStarting = setTimeout(() => {
-      setTextLoopEndTime(0);
-    }, 0);
 
     const advisoryStart = setTimeout(() => {
       setAdvisoryOpacity(1);
@@ -38,17 +34,14 @@ const BannerVisionText = () => {
     }, LoopEndTime - 1000);
 
     const loopIsOver = setTimeout(() => {
-      setTextLoopEndTime(1);
       setCount(count + 1);
     }, LoopEndTime);
 
     return () => {
-      clearTimeout(loopIsStarting);
       clearTimeout(advisoryStart);
       clearTimeout(advisoryEnd);
       clearTimeout(defineStart);
       clearTimeout(defineEnd);
-      clearTimeout(textLoopEndTime);
       clearTimeout(loopIsOver);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
