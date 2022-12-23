@@ -1,5 +1,5 @@
 import { v4 as uuid } from "uuid";
-export const dataStages = [
+export const dataCompress = [
   {
     id: uuid(),
     label: "Pre-Seed",

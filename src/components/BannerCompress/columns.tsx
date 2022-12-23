@@ -10,62 +10,76 @@ import {
   CHART_COLUMN_TRANSITION,
   CHART_COLUMN_STAGGER,
 } from "constants/index";
-import { dataStages } from "./dataStages";
+import { dataCompress } from "./dataCompress";
 import { useState, useEffect } from "react";
 import { LoopEndTime } from "./bannerCompress";
 
 export const StagesColumns = () => {
-  const [stagesWidth, setStagesWidth] = useState("100%");
-  const [stagesEndLoop, setStagesEndLoop] = useState(0);
+  const [columnsAreEntering, setColumnsAreEntering] = useState(0);
+  const [columnWidth, setColumnWidth] = useState("100%");
   const [count, setCount] = useState(1);
 
   useEffect(() => {
-    setStagesEndLoop(0);
 
-    const stagesShrink = setTimeout(() => {
-      setStagesWidth("50%");
-    }, 8000);
+    setColumnWidth("100%");
+    setColumnsAreEntering(1);
+
+    const columnShrink = setTimeout(() => {
+      setColumnWidth("50%");
+    }, 7000);
+
+    const columnExit = setTimeout(() => {
+      setColumnsAreEntering(0)
+    }, LoopEndTime - 2000);
 
     const loopIsOver = setTimeout(() => {
       setCount(count + 1);
     }, LoopEndTime);
 
     return () => {
-      clearTimeout(stagesShrink);
-      clearTimeout(stagesEndLoop);
+      clearTimeout(columnShrink);
+      clearTimeout(columnExit);
       clearTimeout(loopIsOver);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [count]);
 
-  const animationString = (index) =>
+
+  const animationEnter = (index: number) =>
     `fadeInDown ${CHART_COLUMN_TRANSITION}ms ease-out ${
       CHART_COLUMN_STAGGER * (index + 1)
     }ms forwards`;
 
+  const animationExit = (index: number) =>
+    `fadeOutDown ${CHART_COLUMN_TRANSITION}ms ease-in ${
+      CHART_COLUMN_STAGGER * (index + 1)
+    }ms forwards`;
+
   return (
-    <StagesColumnWrapper style={{ width: stagesWidth }}>
-      {dataStages.map((item, index) => (
-        <StagesColumn
+    <CompressColumnWrapper style={{ width: columnWidth }}>
+      {dataCompress.map((item, index) => (
+        <CompressColumn
           key={item.id}
           style={{
             backgroundColor: item.backgroundColor,
-            animation: animationString(index),
+            animation: columnsAreEntering
+              ? animationEnter(index)
+              : animationExit(index),
+            opacity: columnsAreEntering ? 0 : 1,
           }}
         >
-          {/* width: {width} */}
           <span>{item.label}</span>
-        </StagesColumn>
+        </CompressColumn>
       ))}
-      <div style={{ width: stagesEndLoop }} />
-    </StagesColumnWrapper>
+      {/* <div style={{ width: columnEndLoop }} /> */}
+    </CompressColumnWrapper>
   );
 };
 
 // the length of dataCompress array
-const dataCompressLength = dataStages.length;
+const dataCompressLength = dataCompress.length;
 
-const StagesColumnWrapper = styled.div`
+const CompressColumnWrapper = styled.div`
   position: absolute;
   left: 0;
   display: grid;
@@ -82,7 +96,7 @@ const StagesColumnWrapper = styled.div`
   }
 `;
 
-const StagesColumn = styled.div`
+const CompressColumn = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,7 +104,7 @@ const StagesColumn = styled.div`
   color: #fff;
   height: inherit;
   width: auto;
-  opacity: 0;
+  /* opacity: 0; */
   & span {
     text-align: center;
     font-family: "Roboto Condensed", sans-serif;

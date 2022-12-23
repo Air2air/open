@@ -22,7 +22,7 @@ export const VisionColumns = () => {
 
     setColumnsAreEntering(1);
 
-    const stageAnimationEnd = setTimeout(() => {
+    const columnAnimationEnd = setTimeout(() => {
       setColumnsAreEntering(0);
     }, LoopEndTime - 4000);
 
@@ -32,7 +32,7 @@ export const VisionColumns = () => {
 
     return () => {
       clearTimeout(columnsAreEntering);
-      clearTimeout(stageAnimationEnd);
+      clearTimeout(columnAnimationEnd);
       clearTimeout(loopIsOver);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps

@@ -20,7 +20,7 @@ import {
   CHART_SPACER_HEIGHT_MOBILE,
 } from "constants/index";
 
-export const LoopEndTime = 18000;
+export const LoopEndTime = 14000;
 
 const BannerCompress = () => {
   return (

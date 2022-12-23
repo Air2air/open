@@ -28,23 +28,23 @@ const BannerCompressText = () => {
 
     const textFasterEnd = setTimeout(() => {
       setTextFasterOpacity(0);
-    }, 6000);
+    }, 5000);
 
     const textTimelineStart = setTimeout(() => {
       setTextTimelineOpacity(1);
-    }, 7000);
+    }, 6000);
 
     const textTimelineEnd = setTimeout(() => {
       setTextTimelineOpacity(0);
-    }, 12000);
+    }, 9000);
 
     const textRiskStart = setTimeout(() => {
       setTextRiskOpacity(1);
-    }, 13000);
+    }, 10000);
 
     const textRiskEnd = setTimeout(() => {
       setTextRiskOpacity(0);
-    }, LoopEndTime - 1000);
+    }, LoopEndTime - 500);
 
     const loopIsOver = setTimeout(() => {
       setCount(count + 1);
