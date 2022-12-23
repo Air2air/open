@@ -1,4 +1,4 @@
-import BannerVideo from "components/BannerVideo/bannerVideo";
+import BannerVideo from "components/Banner/Video/bannerVideo";
 import {
   BREAKPOINT,
   COLOR_BASE,
@@ -8,7 +8,7 @@ import {
 import Callout from "components/Callout/callOut";
 import { dataCaseStudies } from "./dataCaseStudies";
 import styled from "styled-components";
-import BarColumn from "components/BarColumn/barColumn";
+import BarColumn from "components/Chart/PracticeAreas/barColumn";
 
 const pageVideo = 776446335;
 

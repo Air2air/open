@@ -2,12 +2,12 @@ import { BREAKPOINT, COLOR_TEXT, TEXT_OPACITY } from "constants/index";
 import styled from "styled-components";
 import Typewriter from "typewriter-effect";
 
-type BannerTextProps = {
+type SubHeadingProps = {
   text?: string;
   typing?: boolean;
 };
 
-export const BannerText = (props: BannerTextProps) => (
+export const SubHeading = (props: SubHeadingProps) => (
   <TextContainer className="animate__animated animate__fadeInUp animate__delay-500ms">
     <TypeWriterWrapper>
       {props.typing ? (

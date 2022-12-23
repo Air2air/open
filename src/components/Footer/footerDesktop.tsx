@@ -48,8 +48,8 @@ export const FooterDesktop: FC<FooterProps> = ({ footerVideo }) => {
               <FooterLink to="/casestudies">Case Studies</FooterLink>
             </FooterLinkColumn>
             <FooterLinkColumn>
-            <FooterLink to="/vision">Vision</FooterLink>
-            <FooterLink to="/history">History</FooterLink>
+              <FooterLink to="/vision">Vision</FooterLink>
+              <FooterLink to="/history">History</FooterLink>
               <FooterLink to="/about">About</FooterLink>
               <FooterLink to="/contact">Contact</FooterLink>
             </FooterLinkColumn>
@@ -84,7 +84,8 @@ const FooterWrapper = styled.div`
   width: 100vw;
   background: ${COLOR_BASE_4};
   height: ${FOOTER_HEIGHT_DESKTOP}px;
-  /* background-color: blue; */
+  /* margin: 50px 0 0 0; */
+  background-color: blue;
 `;
 
 const FooterContainer = styled.div`

@@ -1,4 +1,4 @@
-import BannerVideo from "./../../components/BannerVideo/bannerVideo";
+import BannerVideo from "../../components/Banner/Video/bannerVideo";
 import { COLOR_BASE } from "constants/index";
 import CalloutBullet from "../../components/Callout/callOutBullet";
 import { dataProcess } from "./dataProcess";

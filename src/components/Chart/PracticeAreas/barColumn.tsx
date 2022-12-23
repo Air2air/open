@@ -1,8 +1,12 @@
 import { IBarColumnProps } from "interfaces/callouts";
 import { useState, useEffect } from "react";
-import { AnimationOnScroll } from "react-animation-on-scroll";
 import styled from "styled-components";
-import { BREAKPOINT, CHART_COLUMN_TRANSITION, CHART_LABEL_DESKTOP, CHART_LABEL_MOBILE } from "constants/index";
+import {
+  BREAKPOINT,
+  CHART_COLUMN_TRANSITION,
+  CHART_LABEL_DESKTOP,
+  CHART_LABEL_MOBILE,
+} from "constants/index";
 
 const BarColumn = (props: IBarColumnProps) => {
   const [seriesRandomHeight, setSeriesRandomHeight] = useState(50);
@@ -34,17 +38,11 @@ const BarColumn = (props: IBarColumnProps) => {
               height: seriesRandomHeight + "%",
               backgroundColor: props.backgroundColor,
             }}
-            animateIn="animate__fadeInUp"
-            delay={300}
-            offset={60}
           >
             <Label
               style={{
                 color: props.color,
               }}
-              animateIn="animate__fadeIn"
-              delay={1000}
-              offset={60}
             >
               {props.label}
             </Label>
@@ -55,17 +53,11 @@ const BarColumn = (props: IBarColumnProps) => {
               height: props.height + "%",
               backgroundColor: props.backgroundColor,
             }}
-            animateIn="animate__fadeInUp"
-            delay={300}
-            offset={60}
           >
             <Label
               style={{
                 color: props.color,
               }}
-              animateIn="animate__fadeIn"
-              delay={1000}
-              offset={60}
             >
               {props.label}
             </Label>
@@ -95,7 +87,7 @@ const ColumnOuter = styled.div`
   /* background: blue; */
 `;
 
-const ColumnSeries = styled(AnimationOnScroll)`
+const ColumnSeries = styled.div`
   position: absolute;
   bottom: 0;
   display: flex;
@@ -114,7 +106,7 @@ const ColumnSeries = styled(AnimationOnScroll)`
   /* background: gold; */
 `;
 
-const Label = styled(AnimationOnScroll)`
+const Label = styled.div`
   min-width: 100px;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 500;
@@ -127,7 +119,7 @@ const Label = styled(AnimationOnScroll)`
   }
   @media (max-width: ${BREAKPOINT}px) {
     transform: translate(0, -260%) rotate(90deg);
-    transform-origin: 50%; 
+    transform-origin: 50%;
     /* writing-mode: vertical-rl; */
     font-size: ${CHART_LABEL_MOBILE};
   }

@@ -12,7 +12,7 @@ import {
 } from "constants/index";
 import { dataVision } from "./dataVision";
 import { useState, useEffect } from "react";
-import { LoopEndTime } from "./bannerVision";
+import { LoopEndTime } from "./chartVision";
 
 export const VisionColumns = () => {
   const [columnsAreEntering, setColumnsAreEntering] = useState(0);

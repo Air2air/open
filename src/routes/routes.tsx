@@ -2,11 +2,11 @@ import HistoryPage from "pages/History/history";
 import { lazy } from "react";
 const AboutPage = lazy(() => import("pages/about"));
 const ContactPage = lazy(() => import("pages/contact"));
-const HomePage = lazy(() => import("pages/Home/home"));
+const HomePage = lazy(() => import("pages/Home/pageHome"));
 const MarketsPage = lazy(() => import("pages/Markets/markets"));
 const ProcessPage = lazy(() => import("pages/Process/process"));
 const EngagementPage = lazy(() => import("pages/Engagement/engagement"));
-const VisionPage = lazy(() => import("pages/Vision/vision"));
+const VisionPage = lazy(() => import("pages/Vision/pageVision"));
 const PracticeAreasPage = lazy(
   () => import("pages/PracticeAreas/practiceAreas")
 );

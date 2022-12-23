@@ -1,23 +1,23 @@
 import { TitleBanner } from "components/Title/titleBanner";
-import { BannerText } from "components/BannerText/bannerText";
+import { SubHeading } from "components/SubHeading/subHeading";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
-import { BREAKPOINT } from "constants/index";
 import {
-  CHART_TEXT_HEIGHT_DESKTOP,
-  CHART_TEXT_HEIGHT_MOBILE,
+  BREAKPOINT,
   CHART_TEXT_TRANSITION,
+  HEADING_HEIGHT_DESKTOP,
+  HEADING_HEIGHT_MOBILE,
 } from "constants/index";
-import { LoopEndTime } from "./bannerCompress";
+import { LoopEndTime } from "../Chart/Home/chartHome";
+import Container from "components/Container/container";
 
-const BannerCompressText = () => {
+const HeadingHome = (props: { backgroundColor?: any }) => {
   const [textFasterOpacity, setTextFasterOpacity] = useState(0);
   const [textTimelineOpacity, setTextTimelineOpacity] = useState(0);
   const [textRiskOpacity, setTextRiskOpacity] = useState(0);
   const [count, setCount] = useState(1);
 
   useEffect(() => {
-
     setTextFasterOpacity(0);
     setTextTimelineOpacity(0);
     setTextRiskOpacity(0);
@@ -51,7 +51,6 @@ const BannerCompressText = () => {
     }, LoopEndTime);
 
     return () => {
-
       clearTimeout(textFasterStart);
       clearTimeout(textFasterEnd);
       clearTimeout(textTimelineStart);
@@ -65,37 +64,51 @@ const BannerCompressText = () => {
 
   return (
     <>
-      <TextSection style={{ opacity: textFasterOpacity }}>
-        <TitleBanner title="Faster liquidity for Health AI ventures" />
-        <BannerText text="Compress your timeline and slash dilution, risk and time." />
-      </TextSection>
-      <TextSection style={{ opacity: textTimelineOpacity }}>
-        <TitleBanner title="We cut your timeline to liquidity" />
-        <BannerText text="With world class, professional oversight." />
-      </TextSection>
-      <TextSection style={{ opacity: textRiskOpacity }}>
-        <TitleBanner title="Reducing Risk, Dilution and Time." />
-        <BannerText text="Getting you to the goal line for a fraction of the cost. " />
-      </TextSection>
-
+      <Container backgroundColor={props.backgroundColor}>
+      <Wrapper>
+        <TextSection style={{ opacity: textFasterOpacity }}>
+          <TitleBanner title="Faster liquidity for Health AI ventures" />
+          <SubHeading text="Home your timeline and slash dilution, risk and time." />
+        </TextSection>
+        <TextSection style={{ opacity: textTimelineOpacity }}>
+          <TitleBanner title="We cut your timeline to liquidity" />
+          <SubHeading text="With world class, professional oversight." />
+        </TextSection>
+        <TextSection style={{ opacity: textRiskOpacity }}>
+          <TitleBanner title="Reducing Risk, Dilution and Time." />
+          <SubHeading text="Getting you to the goal line for a fraction of the cost. " />
+        </TextSection>
+      </Wrapper>
+      </Container>
     </>
   );
 };
 
-const TextSection = styled.div`
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+const Wrapper = styled.div`
+  position: relative;
+  top: 0;
   width: 100%;
-  transition: all ${CHART_TEXT_TRANSITION}ms;
   @media (min-width: ${BREAKPOINT}px) {
-    height: ${CHART_TEXT_HEIGHT_DESKTOP}px;
+    min-height: ${HEADING_HEIGHT_DESKTOP}px;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    height: ${CHART_TEXT_HEIGHT_MOBILE}px;
+    min-height: ${HEADING_HEIGHT_MOBILE}px;
   }
   /* background: green; */
 `;
 
-export default BannerCompressText;
+const TextSection = styled.div`
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition: all ${CHART_TEXT_TRANSITION}ms;
+  @media (min-width: ${BREAKPOINT}px) {
+    min-height: ${HEADING_HEIGHT_DESKTOP}px;
+  }
+  @media (max-width: ${BREAKPOINT}px) {
+    min-height: ${HEADING_HEIGHT_MOBILE}px;
+  }
+  /* background: green; */
+`;
+
+export default HeadingHome;

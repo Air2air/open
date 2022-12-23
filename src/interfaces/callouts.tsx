@@ -47,7 +47,7 @@ export interface IBannerMarketsProps {
   typing?: boolean;
 }
 
-export interface IBannerCompressProps {
+export interface IBannerHomeProps {
   data: any;
   randomHeight: boolean;
   color: string;

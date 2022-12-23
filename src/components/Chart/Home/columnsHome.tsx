@@ -5,22 +5,21 @@ import {
   CHART_LABEL_MOBILE,
   COLUMN_GRID_GAP_DESKTOP,
   COLUMN_GRID_GAP_MOBILE,
-  CHART_HEIGHT_DESKTOP,
-  CHART_HEIGHT_MOBILE,
   CHART_COLUMN_TRANSITION,
   CHART_COLUMN_STAGGER,
+  CHART_SECTION_HEIGHT_DESKTOP,
+  CHART_SECTION_HEIGHT_MOBILE,
 } from "constants/index";
-import { dataCompress } from "./dataCompress";
+import { dataHome } from "./dataHome";
 import { useState, useEffect } from "react";
-import { LoopEndTime } from "./bannerCompress";
+import { LoopEndTime } from "./chartHome";
 
-export const StagesColumns = () => {
+export const HomeColumns = () => {
   const [columnsAreEntering, setColumnsAreEntering] = useState(0);
   const [columnWidth, setColumnWidth] = useState("100%");
   const [count, setCount] = useState(1);
 
   useEffect(() => {
-
     setColumnWidth("100%");
     setColumnsAreEntering(1);
 
@@ -29,7 +28,7 @@ export const StagesColumns = () => {
     }, 7000);
 
     const columnExit = setTimeout(() => {
-      setColumnsAreEntering(0)
+      setColumnsAreEntering(0);
     }, LoopEndTime - 2000);
 
     const loopIsOver = setTimeout(() => {
@@ -44,7 +43,6 @@ export const StagesColumns = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [count]);
 
-
   const animationEnter = (index: number) =>
     `fadeInDown ${CHART_COLUMN_TRANSITION}ms ease-out ${
       CHART_COLUMN_STAGGER * (index + 1)
@@ -56,9 +54,9 @@ export const StagesColumns = () => {
     }ms forwards`;
 
   return (
-    <CompressColumnWrapper style={{ width: columnWidth }}>
-      {dataCompress.map((item, index) => (
-        <CompressColumn
+    <HomeColumnWrapper style={{ width: columnWidth }}>
+      {dataHome.map((item, index) => (
+        <HomeColumn
           key={item.id}
           style={{
             backgroundColor: item.backgroundColor,
@@ -69,34 +67,34 @@ export const StagesColumns = () => {
           }}
         >
           <span>{item.label}</span>
-        </CompressColumn>
+        </HomeColumn>
       ))}
-      {/* <div style={{ width: columnEndLoop }} /> */}
-    </CompressColumnWrapper>
+    </HomeColumnWrapper>
   );
 };
 
-// the length of dataCompress array
-const dataCompressLength = dataCompress.length;
+// the length of dataHome array
+const dataHomeLength = dataHome.length;
 
-const CompressColumnWrapper = styled.div`
+const HomeColumnWrapper = styled.div`
   position: absolute;
   left: 0;
   display: grid;
-  grid-template-columns: repeat(${dataCompressLength}, 1fr);
+  grid-template-columns: repeat(${dataHomeLength}, 1fr);
   transform-origin: 0% 0%;
   transition: all ${CHART_COLUMN_TRANSITION}ms;
+  overflow: hidden;
   @media (min-width: ${BREAKPOINT}px) {
     grid-gap: ${COLUMN_GRID_GAP_DESKTOP};
-    height: ${CHART_HEIGHT_DESKTOP}px;
+    height: ${CHART_SECTION_HEIGHT_DESKTOP}px;
   }
   @media (max-width: ${BREAKPOINT}px) {
     grid-gap: ${COLUMN_GRID_GAP_MOBILE};
-    height: ${CHART_HEIGHT_MOBILE}px;
+    height: ${CHART_SECTION_HEIGHT_MOBILE}px;
   }
 `;
 
-const CompressColumn = styled.div`
+const HomeColumn = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;

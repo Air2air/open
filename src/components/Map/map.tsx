@@ -26,7 +26,7 @@ function getRndInteger(min: number, max: number) {
 const Map = ({ mapTitle, backgroundColor }) => {
   return (
     <>
-      <Container>
+       <Container backgroundColor="">
         <TitleCallout title={mapTitle} />
         <SVGContainer>
           <MapSvg

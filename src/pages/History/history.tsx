@@ -1,6 +1,6 @@
 import setBodyColor from "utils/setBodyColor";
 import Callout from "../../components/Callout/callOut";
-import BannerImage from "components/BannerImage/bannerImage";
+import BannerImage from "components/Banner/Image/bannerImage";
 import { COLOR_BASE } from "constants/index";
 
 const pageImage = "dartmouth.jpeg";

@@ -7,7 +7,7 @@ const DashboardPage = () => {
     <>
       <div style={{ height: "100px", width: "100vw" }}></div>
 
-      <Container>
+       <Container backgroundColor="">
         <Title title="Client dashboard mockup"></Title>
 
         <Wireframe>

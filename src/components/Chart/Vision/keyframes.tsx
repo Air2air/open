@@ -1,6 +1,6 @@
 import { keyframes } from "styled-components";
 
-export const compressColumns = keyframes` 
+export const homeColumns = keyframes` 
   0% {
     opacity: 0;
     transform: scaleX(1) translateY(200px);

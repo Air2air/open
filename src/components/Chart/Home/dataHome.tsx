@@ -1,5 +1,5 @@
 import { v4 as uuid } from "uuid";
-export const dataCompress = [
+export const dataHome = [
   {
     id: uuid(),
     label: "Pre-Seed",

@@ -1,5 +1,5 @@
 import setBodyColor from "utils/setBodyColor";
-import BannerVideo from "components/BannerVideo/bannerVideo";
+import BannerVideo from "components/Banner/Video/bannerVideo";
 import { COLOR_BASE, COLOR_BASE_1, COLOR_WHITE } from "constants/index";
 import Advisors from "components/Advisors/advisors";
 import Map from "components/Map/map";
@@ -23,7 +23,7 @@ const AboutPage = () => {
       />
       <Map mapTitle="ELEVENS WORLDWIDE" backgroundColor={2} />
       <Advisors title="ADVISORY BOARD" backgroundColor={3} />
-      <Container>
+       <Container backgroundColor="">
         <Button buttonTo="/contact" buttonText="Contact" />
       </Container>
     </>

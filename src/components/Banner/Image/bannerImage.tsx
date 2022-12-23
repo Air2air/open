@@ -10,40 +10,40 @@ import {
   CONTENT_WIDTH_MOBILE,
 } from "constants/index";
 import styled from "styled-components";
-import VideoCallout from "./../VideoCallout/videoCallout";
-// import parse from "html-react-parser";
-import { BannerText } from "./../BannerText/bannerText";
-import { TitleBanner } from "./../Title/titleBanner";
-import { IBannerVideoProps } from "interfaces/videos";
 
-export const BannerVideo = (props: IBannerVideoProps) => {
+import ImageCallout from "../../ImageCallout/imageCallout";
+// import parse from "html-react-parser";
+import { SubHeading } from "../../SubHeading/subHeading";
+import { TitleBanner } from "../../Title/titleBanner";
+import { FC } from "react";
+
+type BannerImageProps = {
+  title: string;
+  text: string;
+  pageImage: string;
+  color?: string;
+  overlayOpacity: number;
+  overlayColor: string;
+  typing: boolean;
+};
+
+export const BannerImage: FC<BannerImageProps> = ({ ...props }) => {
   // const titleParsed = parse(props.title);
 
   return (
     <>
-      <BannerVideoWrapper>
-        {props.pageVideo ? (
-          <VideoCallout
-            pageVideo={props.pageVideo}
-            overlayOpacity={props.overlayOpacity}
-            overlayColor={props.overlayColor}
-            loadingImage={props.loadingImage}
-          />
-        ) : (
-          ""
-        )}
+      <BannerImageWrapper>
+        {props.pageImage ? <ImageCallout {...props} /> : ""}
         <TextWrapper>
           <TitleBanner title={props.title} color={props.color} />
-          <BannerText typing={props.typing} text={props.text} />
+          <SubHeading typing={props.typing} text={props.text} />
         </TextWrapper>
-      </BannerVideoWrapper>
+      </BannerImageWrapper>
     </>
   );
 };
 
-
-
-const BannerVideoWrapper = styled.div`
+const BannerImageWrapper = styled.div`
   position: relative;
   top: 0;
   display: flex;
@@ -79,4 +79,4 @@ const TextWrapper = styled.div`
   /* background: gold; */
 `;
 
-export default BannerVideo;
+export default BannerImage;

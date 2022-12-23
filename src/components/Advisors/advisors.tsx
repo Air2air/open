@@ -29,7 +29,7 @@ const Advisors = (props: IAdvisorsProps) => {
 
   return (
     <>
-      <Container>
+       <Container backgroundColor="">
         <TitleCallout title="Advisors" />
         <AdvisorsContainer animateIn="animate__fadeIn" delay={0} offset={30}>
           <AdvisorsGrid>

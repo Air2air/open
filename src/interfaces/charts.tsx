@@ -35,7 +35,7 @@ export interface IBannerChartProps {
   typing?: boolean;
 }
 
-export interface IChartCompressProps {
+export interface IChartHomeProps {
   id: number;
   label: string;
   backgroundColor: number;
