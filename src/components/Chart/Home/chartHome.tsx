@@ -1,4 +1,4 @@
-import { HomeColumns } from "./columnsHome";
+import { HomeColumns } from "./columnHome";
 import styled from "styled-components";
 import {
   BREAKPOINT,

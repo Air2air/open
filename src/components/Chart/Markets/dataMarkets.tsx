@@ -1,7 +1,5 @@
 import { v4 as uuid } from "uuid";
-
-
-const saturation = '25%';
+const saturation = "25%";
 
 export const dataMarkets = [
   {

@@ -7,7 +7,7 @@ import {
   CHART_SECTION_HEIGHT_MOBILE,
   CHART_SECTION_HEIGHT_DESKTOP,
 } from "constants/index";
-import ColumnMarkets from "./columnsMarkets";
+import ColumnMarkets from "./columnMarkets";
 import Container from "components/Container/container";
 import { dataMarkets } from "./dataMarkets";
 

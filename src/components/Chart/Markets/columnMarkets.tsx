@@ -2,6 +2,7 @@
 import styled from "styled-components";
 import {
   BREAKPOINT,
+  CHART_COLUMN_STAGGER,
   CHART_COLUMN_TRANSITION,
   CHART_LABEL_DESKTOP,
   CHART_LABEL_MOBILE,
@@ -9,21 +10,27 @@ import {
 } from "constants/index";
 
 const ColumnMarkets = (props) => {
+  // const [columnsAreEntering, setColumnsAreEntering] = useState(0);
+
+  const animationEnter = (index: number) =>
+    `fadeInUp ${CHART_COLUMN_TRANSITION}ms ease-out ${
+      CHART_COLUMN_STAGGER * (index + 1)
+    }ms forwards`;
+
   return (
     <>
-      <ColumnOuter>
-        <Column
+      <MarketColumnWrapper>
+        <MarketsColumn
+          key={props.id}
           style={{
             height: props.height + "%",
             backgroundColor: props.backgroundColor,
+            animation: animationEnter(props.index),
           }}
         >
-          <Label
-          >
-            {props.label}
-          </Label>
-        </Column>
-      </ColumnOuter>
+          <Label>{props.label}</Label>
+        </MarketsColumn>
+      </MarketColumnWrapper>
     </>
   );
 };
@@ -31,7 +38,7 @@ const ColumnMarkets = (props) => {
 const barMinHeightDesktop = 30;
 const barMinHeightMobile = 10;
 
-const ColumnOuter = styled.div`
+const MarketColumnWrapper = styled.div`
   position: relative;
   display: flex;
   justify-content: center;
@@ -47,14 +54,14 @@ const ColumnOuter = styled.div`
   /* background: blue; */
 `;
 
-const Column = styled.div`
+const MarketsColumn = styled.div`
   position: absolute;
   bottom: 0;
   display: flex;
   justify-content: center;
   align-self: flex-end;
-  transition: all ${CHART_COLUMN_TRANSITION}ms;
   width: 100%;
+  opacity: 0;
   @media (min-width: ${BREAKPOINT}px) {
     min-height: ${barMinHeightDesktop}px;
     align-items: flex-start;
@@ -71,8 +78,7 @@ const Label = styled.div`
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
-  color:${COLOR_WHITE};
-  transition: all ${CHART_COLUMN_TRANSITION}ms;
+  color: ${COLOR_WHITE};
   @media (min-width: ${BREAKPOINT}px) {
     font-size: ${CHART_LABEL_DESKTOP};
     text-align: center;

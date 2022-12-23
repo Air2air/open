@@ -12,9 +12,8 @@ import {
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight, faCircleXmark } from "@fortawesome/free-solid-svg-icons";
-import Container from "components/Container/container";
-// import { AnimationOnScroll } from "react-animation-on-scroll";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+
 
 export const RowButton = (props: {
   buttonTo: any;
