@@ -61,7 +61,7 @@ const MarketsColumn = styled.div`
   justify-content: center;
   align-self: flex-end;
   width: 100%;
-  opacity: 0;
+  /* opacity: 0; */
   @media (min-width: ${BREAKPOINT}px) {
     min-height: ${barMinHeightDesktop}px;
     align-items: flex-start;
