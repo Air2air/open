@@ -6,8 +6,13 @@ import {
   CHART_COLUMN_TRANSITION,
   CHART_LABEL_DESKTOP,
   CHART_LABEL_MOBILE,
+  CHART_SECTION_HEIGHT_DESKTOP,
+  CHART_SECTION_HEIGHT_MOBILE,
   COLOR_WHITE,
+  COLUMN_GRID_GAP_DESKTOP,
+  COLUMN_GRID_GAP_MOBILE,
 } from "constants/index";
+import { dataMarkets } from "./dataMarkets";
 
 const ColumnMarkets = (props) => {
   // const [columnsAreEntering, setColumnsAreEntering] = useState(0);
@@ -38,18 +43,22 @@ const ColumnMarkets = (props) => {
 const barMinHeightDesktop = 30;
 const barMinHeightMobile = 10;
 
+const dataMarketsLength = dataMarkets.length;
+
 const MarketColumnWrapper = styled.div`
   position: relative;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(${dataMarketsLength}, 1fr);
   overflow: hidden;
   flex: 1;
   height: 100%;
   @media (min-width: ${BREAKPOINT}px) {
-    margin: 0 10px;
+    grid-gap: ${COLUMN_GRID_GAP_DESKTOP};
+    height: ${CHART_SECTION_HEIGHT_DESKTOP}px;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    margin: 0 5px;
+    grid-gap: ${COLUMN_GRID_GAP_MOBILE};
+    height: ${CHART_SECTION_HEIGHT_MOBILE}px;
   }
   /* background: blue; */
 `;
