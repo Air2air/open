@@ -12,33 +12,31 @@ import {
 } from "constants/index";
 import { dataStages } from "./dataStages";
 import { useState, useEffect } from "react";
+import { LoopEndTime } from "./bannerCompress";
 
 export const StagesColumns = () => {
   const [stagesWidth, setStagesWidth] = useState("100%");
-  // const [stagesTop, setStagesTop] = useState(0);
   const [stagesEndLoop, setStagesEndLoop] = useState(0);
+  const [count, setCount] = useState(1);
 
   useEffect(() => {
-    const stagesInit = setTimeout(() => {
-      setStagesEndLoop(0);
-    }, 0);
+    setStagesEndLoop(0);
 
     const stagesShrink = setTimeout(() => {
       setStagesWidth("50%");
     }, 8000);
 
-    const stagesEndLoop = setTimeout(() => {
-      setStagesEndLoop(1);
-    }, 24000);
+    const loopIsOver = setTimeout(() => {
+      setCount(count + 1);
+    }, LoopEndTime);
 
     return () => {
-      clearTimeout(stagesInit);
-      // clearTimeout(stagesEnter);
       clearTimeout(stagesShrink);
-      // clearTimeout(stagesExit);
       clearTimeout(stagesEndLoop);
+      clearTimeout(loopIsOver);
     };
-  }, [stagesEndLoop]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [count]);
 
   const animationString = (index) =>
     `fadeInDown ${CHART_COLUMN_TRANSITION}ms ease-out ${

@@ -1,4 +1,4 @@
-import { StagesColumns } from "./stagesColumns";
+import { StagesColumns } from "./columns";
 import BannerCompressText from "./text";
 import styled from "styled-components";
 import {
@@ -19,6 +19,8 @@ import {
   CHART_SPACER_HEIGHT_DESKTOP,
   CHART_SPACER_HEIGHT_MOBILE,
 } from "constants/index";
+
+export const LoopEndTime = 18000;
 
 const BannerCompress = () => {
   return (

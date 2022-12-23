@@ -20,21 +20,17 @@ export const VisionColumns = () => {
 
   useEffect(() => {
 
-    const loopIsStarting = setTimeout(() => {
-      setColumnsAreEntering(1);
-    }, 0);
+    setColumnsAreEntering(1);
 
     const stageAnimationEnd = setTimeout(() => {
       setColumnsAreEntering(0);
     }, LoopEndTime - 4000);
 
     const loopIsOver = setTimeout(() => {
-      setColumnsAreEntering(0);
       setCount(count + 1);
     }, LoopEndTime);
 
     return () => {
-      clearTimeout(loopIsStarting);
       clearTimeout(columnsAreEntering);
       clearTimeout(stageAnimationEnd);
       clearTimeout(loopIsOver);
@@ -72,7 +68,6 @@ export const VisionColumns = () => {
           </>
         );
       })}
-
     </StageColumnWrapper>
   );
 };

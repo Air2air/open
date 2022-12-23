@@ -8,22 +8,21 @@ import {
   CHART_TEXT_HEIGHT_MOBILE,
   CHART_TEXT_TRANSITION,
 } from "constants/index";
+import { LoopEndTime } from "./bannerCompress";
 
 const BannerCompressText = () => {
   const [textFasterOpacity, setTextFasterOpacity] = useState(0);
-  const [textCutTimelineOpacity, setTextCutTimelineOpacity] = useState(0);
+  const [textTimelineOpacity, setTextTimelineOpacity] = useState(0);
   const [textRiskOpacity, setTextRiskOpacity] = useState(0);
-  const [textLoopEndTime, setTextLoopEndTime] = useState(0);
+  const [count, setCount] = useState(1);
 
   useEffect(() => {
-    const textReset = setTimeout(() => {
-      setTextFasterOpacity(0);
-      setTextCutTimelineOpacity(0);
-      setTextRiskOpacity(0);
-      setTextLoopEndTime(0);
-    }, 0);
 
-    const textFaster = setTimeout(() => {
+    setTextFasterOpacity(0);
+    setTextTimelineOpacity(0);
+    setTextRiskOpacity(0);
+
+    const textFasterStart = setTimeout(() => {
       setTextFasterOpacity(1);
     }, 1000);
 
@@ -31,37 +30,38 @@ const BannerCompressText = () => {
       setTextFasterOpacity(0);
     }, 6000);
 
-    const textCutTimeline = setTimeout(() => {
-      setTextCutTimelineOpacity(1);
+    const textTimelineStart = setTimeout(() => {
+      setTextTimelineOpacity(1);
     }, 7000);
 
-    const textCutTimelineEnd = setTimeout(() => {
-      setTextCutTimelineOpacity(0);
+    const textTimelineEnd = setTimeout(() => {
+      setTextTimelineOpacity(0);
     }, 12000);
 
-    const textRisk = setTimeout(() => {
-      setTextCutTimelineOpacity(1);
+    const textRiskStart = setTimeout(() => {
+      setTextRiskOpacity(1);
     }, 13000);
 
     const textRiskEnd = setTimeout(() => {
-      setTextCutTimelineOpacity(0);
-    }, 18000);
- 
-    const textLoopEndTime = setTimeout(() => {
-      setTextLoopEndTime(1);
-    }, 18000);
+      setTextRiskOpacity(0);
+    }, LoopEndTime - 1000);
+
+    const loopIsOver = setTimeout(() => {
+      setCount(count + 1);
+    }, LoopEndTime);
 
     return () => {
-      clearTimeout(textReset);
-      clearTimeout(textFaster);
+
+      clearTimeout(textFasterStart);
       clearTimeout(textFasterEnd);
-      clearTimeout(textCutTimeline);
-      clearTimeout(textCutTimelineEnd);
-      clearTimeout(textRisk);
+      clearTimeout(textTimelineStart);
+      clearTimeout(textTimelineEnd);
+      clearTimeout(textRiskStart);
       clearTimeout(textRiskEnd);
-      clearTimeout(textLoopEndTime);
+      clearTimeout(loopIsOver);
     };
-  }, [textLoopEndTime]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [count]);
 
   return (
     <>
@@ -69,7 +69,7 @@ const BannerCompressText = () => {
         <TitleBanner title="Faster liquidity for Health AI ventures" />
         <BannerText text="Compress your timeline and slash dilution, risk and time." />
       </TextSection>
-      <TextSection style={{ opacity: textCutTimelineOpacity }}>
+      <TextSection style={{ opacity: textTimelineOpacity }}>
         <TitleBanner title="We cut your timeline to liquidity" />
         <BannerText text="With world class, professional oversight." />
       </TextSection>
@@ -77,7 +77,7 @@ const BannerCompressText = () => {
         <TitleBanner title="Reducing Risk, Dilution and Time." />
         <BannerText text="Getting you to the goal line for a fraction of the cost. " />
       </TextSection>
-      <div style={{width:textLoopEndTime}} />
+
     </>
   );
 };
