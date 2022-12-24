@@ -1,6 +1,5 @@
 import { TitleHeading } from "components/Title/titleHeading";
 import { SubHeadHeading } from "components/SubHead/subHeadHeading";
-import { useEffect, useState } from "react";
 import styled from "styled-components";
 import {
   BREAKPOINT,
@@ -11,11 +10,7 @@ import {
 
 import Container from "components/Container/container";
 
-
-
 const HeadingUnderConstruction = (props: { backgroundColor?: any }) => {
-
-
   return (
     <>
       <Container backgroundColor={props.backgroundColor}>

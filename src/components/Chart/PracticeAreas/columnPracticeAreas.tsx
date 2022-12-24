@@ -47,7 +47,7 @@ const ColumnPracticeAreas = (props: { data: any[] }) => {
                 {props.label}
               </Label>
             </ColumnSeries>
-          </ColumnOuter>
+          </ColumnOuter> 
         );
       })}
     </>
@@ -60,9 +60,10 @@ const barMinHeightMobile = 10;
 const ColumnOuter = styled.div`
   position: relative;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   overflow: hidden;
-  flex: 1;
+  /* flex: 1; */
   height: 100%;
   width: 100%;
   @media (min-width: ${BREAKPOINT}px) {
@@ -71,6 +72,7 @@ const ColumnOuter = styled.div`
   @media (max-width: ${BREAKPOINT}px) {
     margin: 0 5px;
   }
+    background: gold;
 `;
 
 const ColumnSeries = styled.div`
@@ -80,7 +82,7 @@ const ColumnSeries = styled.div`
   justify-content: center;
   align-self: flex-end;
   transition: all ${CHART_COLUMN_TRANSITION}ms;
-  width: 100%;
+  /* width: 100%; */
   @media (min-width: ${BREAKPOINT}px) {
     min-height: ${barMinHeightDesktop}px;
     align-items: flex-start;
