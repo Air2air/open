@@ -6,12 +6,11 @@ import RowButton from "components/Button/rowButton";
 import BannerVideo from "components/VideoBanner/videoBanner";
 import { COLOR_BASE } from "constants/index";
 
-
 const HomePage = () => {
   return (
     <>
       <BannerVideo
-        title="Homepage Title"
+        title=""
         text="Homepage Subtitle, Homepage Subtitle, Homepage Subtitle, Homepage Subtitle "
         pageVideo={776443340}
         overlayOpacity={0.1}
