@@ -22,7 +22,7 @@ const VisionPage = () => {
       />
       <ChartVision backgroundColor={COLOR_BASE} />
       <HeadingVision backgroundColor={COLOR_BASE} />
-      <RowButton buttonTo="/practice_areas" buttonText="What we do" />
+      <RowButton buttonTo="/about" buttonText="About Elevens" />
       <Spacer height={60} />
       {/* <TimeLine data={dataVentureStage} backgroundColor={3} /> */}
     </>

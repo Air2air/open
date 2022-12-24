@@ -109,4 +109,5 @@ const TextSection = styled.div`
   }
   /* background: green; */
 `;
+
 export default HeadingHome;
