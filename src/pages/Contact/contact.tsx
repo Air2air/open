@@ -1,18 +1,18 @@
 import setBodyColor from "utils/setBodyColor";
 import { COLOR_BASE } from "constants/index";
-import BannerVideo from "components/Banner/Video/bannerVideo";
-import ContactCallout from "../components/ContactCallout/contactCallOut";
+import BannerVideo from "components/VideoBanner/videoBanner";
+import ContactCallout from "../../components/ContactCallout/contactCallOut";
 
-const pageVideo = 776449715;
+
 
 const ContactPage = () => {
   setBodyColor({ color: COLOR_BASE });
   return (
     <>
       <BannerVideo
-        title="CONTACT ELEVENS.AI"
+        title="Contact Elevens.ai"
         text=""
-        pageVideo={pageVideo}
+        pageVideo={769227014}
         overlayOpacity={0.1}
         overlayColor={COLOR_BASE}
         typing={true}

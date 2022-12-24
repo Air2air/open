@@ -1,8 +1,8 @@
 // Charts
 export const CHART_LABEL_DESKTOP = "1.2em";
 export const CHART_LABEL_MOBILE = "1em";
-export const COLUMN_GRID_GAP_DESKTOP = "10px";
-export const COLUMN_GRID_GAP_MOBILE = "7px";
+export const COLUMN_GRID_GAP_DESKTOP = 10;
+export const COLUMN_GRID_GAP_MOBILE = 7;
 
 /* Chart Height */
 export const CHART_HEIGHT_DESKTOP = 200;

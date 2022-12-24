@@ -1,105 +1,124 @@
-// import { IColumnMarketsProps } from "interfaces/callouts";
 import styled from "styled-components";
 import {
   BREAKPOINT,
-  CHART_COLUMN_STAGGER,
-  CHART_COLUMN_TRANSITION,
   CHART_LABEL_DESKTOP,
   CHART_LABEL_MOBILE,
-  CHART_SECTION_HEIGHT_DESKTOP,
-  CHART_SECTION_HEIGHT_MOBILE,
-  COLOR_WHITE,
   COLUMN_GRID_GAP_DESKTOP,
   COLUMN_GRID_GAP_MOBILE,
+  CHART_COLUMN_TRANSITION,
+  CHART_COLUMN_STAGGER,
+  CHART_SECTION_HEIGHT_DESKTOP,
+  CHART_SECTION_HEIGHT_MOBILE,
 } from "constants/index";
 import { dataMarkets } from "./dataMarkets";
+import { useState, useEffect } from "react";
+import { LoopEndTime } from "./chartMarkets";
 
-const ColumnMarkets = (props) => {
-  // const [columnsAreEntering, setColumnsAreEntering] = useState(0);
+export const MarketsColumns = () => {
+  const [columnsAreEntering, setColumnsAreEntering] = useState(0);
+  const [columnWidth, setColumnWidth] = useState("100%");
+  const [count, setCount] = useState(1);
+
+  useEffect(() => {
+    setColumnWidth("100%");
+    setColumnsAreEntering(1);
+
+    const columnShrink = setTimeout(() => {
+      setColumnWidth("50%");
+    }, 7000);
+
+    const columnExit = setTimeout(() => {
+      setColumnsAreEntering(0);
+    }, LoopEndTime - 2000);
+
+    const loopIsOver = setTimeout(() => {
+      setCount(count + 1);
+    }, LoopEndTime);
+
+    return () => {
+      clearTimeout(columnShrink);
+      clearTimeout(columnExit);
+      clearTimeout(loopIsOver);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [count]);
 
   const animationEnter = (index: number) =>
     `fadeInUp ${CHART_COLUMN_TRANSITION}ms ease-out ${
       CHART_COLUMN_STAGGER * (index + 1)
     }ms forwards`;
 
+  const animationExit = (index: number) =>
+    `fadeOutDown ${CHART_COLUMN_TRANSITION}ms ease-in ${
+      CHART_COLUMN_STAGGER * (index + 1)
+    }ms forwards`;
+
   return (
-    <>
-      <MarketColumnWrapper>
+    <MarketsColumnWrapper style={{ width: columnWidth }}>
+      {dataMarkets.map((item, index) => (
         <MarketsColumn
-          key={props.id}
+          key={item.id}
           style={{
-            height: props.height + "%",
-            backgroundColor: props.backgroundColor,
-            animation: animationEnter(props.index),
+            height: item.height,
+            backgroundColor: item.backgroundColor,
+            animation: columnsAreEntering
+              ? animationEnter(index)
+              : animationExit(index),
+            opacity: columnsAreEntering ? 0 : 1,
           }}
         >
-          <Label>{props.label}</Label>
+          <span>{item.label}</span>
         </MarketsColumn>
-      </MarketColumnWrapper>
-    </>
+      ))}
+    </MarketsColumnWrapper>
   );
 };
 
-const barMinHeightDesktop = 30;
-const barMinHeightMobile = 10;
-
+// the length of dataMarkets array
 const dataMarketsLength = dataMarkets.length;
 
-const MarketColumnWrapper = styled.div`
-  position: relative;
+const MarketsColumnWrapper = styled.div`
+  position: absolute;
+  left: 0;
   display: grid;
   grid-template-columns: repeat(${dataMarketsLength}, 1fr);
+  transform-origin: 0% 0%;
+  /* transition: all ${CHART_COLUMN_TRANSITION}ms; */
   overflow: hidden;
-  flex: 1;
-  height: 100%;
   @media (min-width: ${BREAKPOINT}px) {
-    grid-gap: ${COLUMN_GRID_GAP_DESKTOP};
+    grid-gap: ${COLUMN_GRID_GAP_DESKTOP}px;
     height: ${CHART_SECTION_HEIGHT_DESKTOP}px;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    grid-gap: ${COLUMN_GRID_GAP_MOBILE};
+    grid-gap: ${COLUMN_GRID_GAP_MOBILE}px;
     height: ${CHART_SECTION_HEIGHT_MOBILE}px;
   }
-  /* background: blue; */
+
 `;
 
 const MarketsColumn = styled.div`
-  position: absolute;
-  bottom: 0;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-self: flex-end;
-  width: 100%;
+  color: #fff;
+  height: inherit;
+  width: auto;
   /* opacity: 0; */
-  @media (min-width: ${BREAKPOINT}px) {
-    min-height: ${barMinHeightDesktop}px;
-    align-items: flex-start;
-  }
-  @media (max-width: ${BREAKPOINT}px) {
-    min-height: ${barMinHeightMobile}px;
-    align-items: flex-end;
-  }
-  /* background: gold; */
-`;
-
-const Label = styled.div`
-  min-width: 100px;
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: ${COLOR_WHITE};
-  @media (min-width: ${BREAKPOINT}px) {
-    font-size: ${CHART_LABEL_DESKTOP};
+  & span {
     text-align: center;
-    padding-top: 10px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    @media (min-width: ${BREAKPOINT}px) {
+      font-size: ${CHART_LABEL_DESKTOP};
+      height: inherit;
+    }
+    @media (max-width: ${BREAKPOINT}px) {
+      font-size: ${CHART_LABEL_MOBILE};
+      height: inherit;
+    }
+    /* background: red; */
   }
-  @media (max-width: ${BREAKPOINT}px) {
-    transform: translate(0, -260%) rotate(90deg);
-    transform-origin: 50%;
-    /* writing-mode: vertical-rl; */
-    font-size: ${CHART_LABEL_MOBILE};
-  }
-  /* background: green; */
 `;
-
-export default ColumnMarkets;

@@ -82,14 +82,14 @@ const HomeColumnWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(${dataHomeLength}, 1fr);
   transform-origin: 0% 0%;
-  /* transition: all ${CHART_COLUMN_TRANSITION}ms; */
+  transition: all ${CHART_COLUMN_TRANSITION}ms;
   overflow: hidden;
   @media (min-width: ${BREAKPOINT}px) {
-    grid-gap: ${COLUMN_GRID_GAP_DESKTOP};
+    grid-gap: ${COLUMN_GRID_GAP_DESKTOP}px;
     height: ${CHART_SECTION_HEIGHT_DESKTOP}px;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    grid-gap: ${COLUMN_GRID_GAP_MOBILE};
+    grid-gap: ${COLUMN_GRID_GAP_MOBILE}px;
     height: ${CHART_SECTION_HEIGHT_MOBILE}px;
   }
 `;

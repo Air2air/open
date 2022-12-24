@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { ReactComponent as LogoWhite } from "./../../images/logo_white.svg";
 import { ReactComponent as LogoTextWhite } from "./../../images/logo_text_white.svg";
 import {
-  COLOR_BASE,
   COLOR_BASE_4,
   COLOR_BASE_LIGHT,
   COLOR_RED,
@@ -12,21 +11,10 @@ import {
   FOOTER_HEIGHT_MOBILE,
 } from "constants/index";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import VideoCallout from "./../VideoCallout/videoCallout";
-import { FC } from "react";
 
-type FooterProps = {
-  footerVideo: number;
-};
-
-export const FooterMobile: FC<FooterProps> = ({ footerVideo }) => {
+export const FooterMobile = () => {
   return (
     <FooterWrapper>
-      <VideoCallout
-        pageVideo={footerVideo}
-        overlayOpacity={0.9}
-        overlayColor={COLOR_BASE}
-      />
       <FooterContainer>
         <FooterLogoRow animateIn="animate__fadeInUp" delay={0} offset={0}>
           <Link className="link" to="/home">
@@ -42,7 +30,7 @@ export const FooterMobile: FC<FooterProps> = ({ footerVideo }) => {
             <FooterLink to="/casestudies">Case Studies</FooterLink>
           </FooterLinkColumn>
           <FooterLinkColumn>
-          <FooterLink to="/vision">Vision</FooterLink>
+            <FooterLink to="/vision">Vision</FooterLink>
             <FooterLink to="/history">History</FooterLink>
             <FooterLink to="/about">About</FooterLink>
             <FooterLink to="/contact">Contact</FooterLink>

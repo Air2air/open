@@ -4,11 +4,13 @@ import {
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
 } from "constants/index";
+import { assignBackgroundColor } from "utils/assignBackgroundColor";
 
-const Container = ({ children }: any, props: { backgroundColor?: any }) => {
+const Container = ({ children }: any, props: any) => {
   return (
     <>
-      <OuterWrapper style={{ backgroundColor: props.backgroundColor }}>
+      <OuterWrapper style={{ background: assignBackgroundColor(3) }}>
+      {/* <OuterWrapper style={{ background: 'red' }}> */}
         <ContainerDiv>{children}</ContainerDiv>
       </OuterWrapper>
     </>

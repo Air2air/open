@@ -6,34 +6,35 @@ import {
   BUTTON_COLOR_HOVER_GRAY,
   BUTTON_HEIGHT,
   BUTTON_TEXT_COLOR,
-  CONTENT_WIDTH_DESKTOP,
-  CONTENT_WIDTH_MOBILE,
 } from "constants/index";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
-
+import Container from "components/Container/container";
 
 export const RowButton = (props: {
   buttonTo: any;
   buttonText: string;
   buttonColor?: string;
+  backgroundColor?: number;
 }) => {
   return (
     <>
-      <ButtonPositioner>
-        <Link to={props.buttonTo}>
-          <ButtonDesktop buttonColor={props.buttonColor}>
-            <span>{props.buttonText}</span>
-            <FontAwesomeIcon icon={faChevronRight} size="xs" />
-          </ButtonDesktop>
-          <ButtonMobile buttonColor={props.buttonColor}>
-            <span>{props.buttonText}</span>
-            <FontAwesomeIcon icon={faChevronRight} size="xs" />
-          </ButtonMobile>
-        </Link>
-      </ButtonPositioner>
+      <Container backgroundColor={props.backgroundColor}>
+        <ButtonPositioner>
+          <Link to={props.buttonTo}>
+            <ButtonDesktop buttonColor={props.buttonColor}>
+              <span>{props.buttonText} {props.backgroundColor}</span>
+              <FontAwesomeIcon icon={faChevronRight} size="xs" />
+            </ButtonDesktop>
+            <ButtonMobile buttonColor={props.buttonColor}>
+              <span>{props.buttonText}</span>
+              <FontAwesomeIcon icon={faChevronRight} size="xs" />
+            </ButtonMobile>
+          </Link>
+        </ButtonPositioner>
+      </Container>
     </>
   );
 };
@@ -48,13 +49,10 @@ const ButtonPositioner = styled.div`
   width: 100%;
   @media (min-width: ${BREAKPOINT}px) {
     padding: 5px 0;
-    width: ${CONTENT_WIDTH_DESKTOP};
   }
   @media (max-width: ${BREAKPOINT}px) {
     padding: 5px 0;
-    width: ${CONTENT_WIDTH_MOBILE};
   }
-
 `;
 
 const ButtonDesktop = styled.div<{ buttonColor?: string }>`

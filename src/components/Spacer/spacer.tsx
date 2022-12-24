@@ -1,9 +1,15 @@
 import styled from "styled-components";
+import { assignBackgroundColor } from "utils/assignBackgroundColor";
 
-const Spacer = (props: { height: any; }) => {
+const Spacer = (props: { height: any; backgroundColor?: any }) => {
   return (
     <>
-      <SpacerDiv style={{ height: props.height }} />
+      <SpacerDiv
+        style={{
+          height: props.height,
+          background: assignBackgroundColor(props),
+        }}
+      />
     </>
   );
 };

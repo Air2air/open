@@ -9,7 +9,7 @@ import Container from "components/Container/container";
 
 export const LoopEndTime = 14000;
 
-const ChartHome = (props: { backgroundColor: any; }) => {
+const ChartHome = (props: { backgroundColor: any }) => {
   return (
     <Container backgroundColor={props.backgroundColor}>
       <ChartSection>

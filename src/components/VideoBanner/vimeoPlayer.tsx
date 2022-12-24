@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import Vimeo from "@u-wave/react-vimeo";
 import {
   BANNER_HEIGHT_DESKTOP,
@@ -10,8 +10,6 @@ import { useState } from "react";
 
 export const VimeoPlayer = ({ videoID }) => {
   const [isLoading, setIsLoading] = useState(true);
-
-  const backgroundImage = "url(/images/loading-images/" + videoID + ".jpg)";
 
   return (
     <>
@@ -25,41 +23,11 @@ export const VimeoPlayer = ({ videoID }) => {
           responsive
           onPlaying={() => setIsLoading(false)}
         />
-        {isLoading ? (
-          <LoadingImage style={{ backgroundImage: backgroundImage }} />
-        ) : null}
+        {isLoading ? "" : null}
       </VideoContainer>
     </>
   );
 };
-
-const fadeOutKeyframe = keyframes`
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-`;
-
-const LoadingImage = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-position: center;
-  background-size: cover;
-  width: 100vw;
-  animation: ${fadeOutKeyframe} 1s 2s;
-  @media (min-width: ${BREAKPOINT}px) {
-    height: ${BANNER_HEIGHT_DESKTOP}px;
-  }
-  @media (max-width: ${BREAKPOINT_MID}px) {
-    height: ${BANNER_HEIGHT_DESKTOP}px;
-  }
-  @media (max-width: ${BREAKPOINT}px) {
-    height: ${BANNER_HEIGHT_MOBILE}px;
-  }
-`;
 
 const VideoContainer = styled.div`
   position: relative;
@@ -69,7 +37,6 @@ const VideoContainer = styled.div`
   object-fit: cover;
   object-position: center;
   z-index: -1;
-
   @media (min-width: ${BREAKPOINT}px) {
     height: ${BANNER_HEIGHT_DESKTOP}px;
   }

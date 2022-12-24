@@ -1,4 +1,4 @@
-import BannerVideo from "../../components/Banner/Video/bannerVideo";
+import BannerVideo from "../../components/VideoBanner/videoBanner";
 import { COLOR_BASE } from "constants/index";
 import CalloutBullet from "../../components/Callout/callOutBullet";
 import { dataEngagement } from "./dataEngagement";
@@ -10,7 +10,7 @@ const EngagementPage = () => {
   return (
     <>
       <BannerVideo
-        title="Engaging Eleven"
+        title="Engaging Elevens"
         text="(This page describes our engagement policies, from Matt's steps below.  The 'process' page details workflow, milestones and measurement.)"
         pageVideo={pageVideo}
         overlayOpacity={0}

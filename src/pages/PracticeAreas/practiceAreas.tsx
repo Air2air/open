@@ -5,11 +5,21 @@ import Spacer from "components/Spacer/spacer";
 import { COLOR_BASE } from "constants/index";
 import HeadingPracticeAreas from "components/Heading/headingPracticeAreas";
 import RowButton from "components/Button/rowButton";
+import { BannerVideo } from "components/VideoBanner/videoBanner";
+
+
 
 const PracticeAreasPage = () => {
   return (
     <>
-      <Spacer height={120} />
+      <BannerVideo
+        title="Practice Areas Page Title"
+        text="Practice Areas Page Subtitle, Practice Areas Page Subtitle, Practice Areas Page Subtitle, Practice Areas Page Subtitle "
+        pageVideo={776449715}
+        overlayOpacity={0.1}
+        overlayColor={COLOR_BASE}
+        typing={true}
+      />
       {/* <ChartPracticeAreas backgroundColor={COLOR_BASE} /> */}
       <HeadingPracticeAreas backgroundColor={COLOR_BASE} />
       <RowButton buttonTo="/casestudies" buttonText="Case Studies" />

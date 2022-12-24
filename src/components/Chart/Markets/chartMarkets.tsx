@@ -1,30 +1,22 @@
+import { MarketsColumns } from "./columnMarkets";
 import styled from "styled-components";
 import {
   BREAKPOINT,
-  COLOR_CAPTION,
   CHART_LABEL_DESKTOP,
   CHART_LABEL_MOBILE,
-  CHART_SECTION_HEIGHT_MOBILE,
   CHART_SECTION_HEIGHT_DESKTOP,
+  CHART_SECTION_HEIGHT_MOBILE,
+  COLOR_CAPTION,
 } from "constants/index";
-import ColumnMarkets from "./columnMarkets";
 import Container from "components/Container/container";
-import { dataMarkets } from "./dataMarkets";
 
+export const LoopEndTime = 14000;
 
-const ChartMarkets = () => {
+const ChartMarkets = (props: { backgroundColor: any }) => {
   return (
-    <Container backgroundColor="">
+    <Container backgroundColor={props.backgroundColor}>
       <ChartSection>
-        {dataMarkets.map((item) => (
-          <ColumnMarkets
-            key={item.id}
-            label={item.label}
-            height={item.height}
-            color={item.color}
-            backgroundColor={item.backgroundColor}
-          />
-        ))}
+        <MarketsColumns />
         <GraphLegend>
           <div>$1.2T</div>
           <div>$800B</div>
@@ -36,16 +28,36 @@ const ChartMarkets = () => {
   );
 };
 
+// const ChartSection = styled.div`
+//   position: relative;
+//   width: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   overflow: hidden;
+//   @media (min-width: ${BREAKPOINT}px) {
+//     height: ${CHART_HEIGHT_DESKTOP}px;
+//   }
+//   @media (max-width: ${BREAKPOINT}px) {
+//     height: ${CHART_HEIGHT_MOBILE}px;
+//   }
+// `;
+
 const ChartSection = styled.div`
+  margin: 0 auto;
   display: flex;
-  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   @media (min-width: ${BREAKPOINT}px) {
     height: ${CHART_SECTION_HEIGHT_DESKTOP}px;
   }
   @media (max-width: ${BREAKPOINT}px) {
     height: ${CHART_SECTION_HEIGHT_MOBILE}px;
   }
-  /* background: blue; */
+  background: blue;
 `;
 
 const GraphLegend = styled.div`

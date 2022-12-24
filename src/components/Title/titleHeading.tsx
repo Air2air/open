@@ -14,7 +14,7 @@ type TitleProps = {
   color?: string;
 };
 
-export const TitleBanner = (props: TitleProps) => {
+export const TitleHeading = (props: TitleProps) => {
   return props.title !== "" ? (
     <TitleContainer className="animate__animated animate__fadeInDown animate__delay-0s">
       <TitleStyled color={props.color}>{props.title}</TitleStyled>
@@ -27,11 +27,9 @@ const TitleContainer = styled.div`
   text-align: left;
   @media (min-width: ${BREAKPOINT}px) {
     width: ${CONTENT_WIDTH_DESKTOP};
-    top: 40%;
   }
   @media (max-width: ${BREAKPOINT}px) {
     width: ${CONTENT_WIDTH_MOBILE};
-    top: 50%;
   }
   /* background: red; */
 `;

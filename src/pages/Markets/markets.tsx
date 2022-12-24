@@ -1,19 +1,27 @@
 import ChartMarkets from "components/Chart/Markets/chartMarkets";
-import Callout from "components/Callout/callOut";
 import Spacer from "components/Spacer/spacer";
+import HeadingMarkets from "components/Heading/headingMarkets";
+import RowButton from "components/Button/rowButton";
+import { COLOR_BASE } from "constants/index";
+import BannerVideo from "components/VideoBanner/videoBanner";
+
+
 
 const MarketsPage = () => {
   return (
     <>
-      <Spacer height={120} />
-      <ChartMarkets />
-      <Callout
-        title=""
-        text="Elevens accelerates breakthrough ventures in Biotech, Healthtech, Medtech and Pharma."
-        buttonText="Vision"
-        buttonTo="/vision"
-        buttonColor="white"
+      <BannerVideo
+        title="Markets Page Title"
+        text="Markets Page Subtitle, Markets Page Subtitle, Markets Page Subtitle, Markets Page Subtitle "
+        pageVideo={766731362}
+        overlayOpacity={0.1}
+        overlayColor={COLOR_BASE}
+        typing={true}
       />
+      <ChartMarkets backgroundColor={1} />
+      <HeadingMarkets backgroundColor={1} />
+      <RowButton buttonTo="/vision" buttonText="Vision" />
+      <Spacer height={60} />
     </>
   );
 };

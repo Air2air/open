@@ -1,4 +1,4 @@
-import BannerVideo from "components/Banner/Video/bannerVideo";
+import BannerVideo from "components/VideoBanner/videoBanner";
 import {
   BREAKPOINT,
   COLOR_BASE,
@@ -13,20 +13,18 @@ import BarColumn from "components/Chart/PracticeAreas/barColumn";
 const pageVideo = 776446335;
 
 
-
 const CaseStudiesPage = () => {
   return (
     <>
       <BannerVideo
-        title="Case Studies"
-        text="Examples from Elevens' 100-plus years of cumulative experience"
+        title="Case Studies Page Title"
+        text="Case Studies Page SubTitle, Case Studies Page SubTitle, Case Studies Page SubTitle, Case Studies Page SubTitle"
         pageVideo={pageVideo}
         color="#ffffff"
         overlayOpacity={0}
         overlayColor={COLOR_BASE}
         typing={true}
       />
-
       {dataCaseStudies.map((props) => (
         <div key={props.id}>
           <ChartSection {...props} />

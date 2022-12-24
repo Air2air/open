@@ -8,26 +8,15 @@ import { COLOR_RED } from "constants/index";
 import ReactTooltip from "react-tooltip";
 import { Key } from "react";
 
-// interface IDataMap {
-//   id: number;
-//   location: string;
-//   left: string;
-//   top: string;
-//   member: {
-//     role: string;
-//     vertical: string;
-//   }[];
-// }
-
 function getRndInteger(min: number, max: number) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
-const Map = ({ mapTitle, backgroundColor }) => {
+const Map = (props) => {
   return (
     <>
-       <Container backgroundColor="">
-        <TitleCallout title={mapTitle} />
+      <Container backgroundColor={props.backgroundColor}>
+        <TitleCallout title={props.title} />
         <SVGContainer>
           <MapSvg
             style={{

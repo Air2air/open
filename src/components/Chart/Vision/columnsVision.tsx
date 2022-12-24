@@ -83,11 +83,11 @@ const StageColumnWrapper = styled.div`
   transition: all ${CHART_COLUMN_TRANSITION}ms;
   width: 100%;
   @media (min-width: ${BREAKPOINT}px) {
-    grid-gap: ${COLUMN_GRID_GAP_DESKTOP};
+    grid-gap: ${COLUMN_GRID_GAP_DESKTOP}px;
     height: ${CHART_HEIGHT_DESKTOP}px;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    grid-gap: ${COLUMN_GRID_GAP_MOBILE};
+    grid-gap: ${COLUMN_GRID_GAP_MOBILE}px;
     height: ${CHART_HEIGHT_MOBILE}px;
   }
 `;
