@@ -14,7 +14,7 @@ const PracticeAreasPage = () => {
   return (
     <>
       <BannerVideo
-        title="Practice Areas Page Title"
+        title="Practice Areas "
         text="Practice Areas Page Subtitle, Practice Areas Page Subtitle, Practice Areas Page Subtitle, Practice Areas Page Subtitle "
         pageVideo={776449715}
         overlayOpacity={0.1}

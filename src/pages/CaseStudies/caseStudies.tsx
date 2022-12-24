@@ -2,7 +2,7 @@ import BannerVideo from "components/VideoBanner/videoBanner";
 import { COLOR_BASE } from "constants/index";
 import Callout from "components/Callout/callOut";
 import { dataCaseStudies } from "./dataCaseStudies";
-import ChartCaseStudies from "components/Chart/CaseStudies/chartCaseStudies";
+// import ChartCaseStudies from "components/Chart/CaseStudies/chartCaseStudies";
 
 const pageVideo = 776446335;
 
@@ -10,7 +10,7 @@ const CaseStudiesPage = () => {
   return (
     <>
       <BannerVideo
-        title="Case Studies Page Title"
+        title="Case Studies "
         text="Case Studies Page SubTitle, Case Studies Page SubTitle, Case Studies Page SubTitle, Case Studies Page SubTitle"
         pageVideo={pageVideo}
         color="#ffffff"

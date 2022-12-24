@@ -13,7 +13,7 @@ const VisionPage = () => {
   return (
     <>
       <BannerVideo
-        title="Vision Page Title"
+        title="Vision "
         text="Vision Page Subtitle, Vision Page Subtitle, Vision Page Subtitle, Vision Page Subtitle "
         pageVideo={pageVideo}
         overlayOpacity={0.1}

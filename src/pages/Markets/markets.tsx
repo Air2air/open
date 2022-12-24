@@ -11,7 +11,7 @@ const MarketsPage = () => {
   return (
     <>
       <BannerVideo
-        title="Markets Page Title"
+        title="Markets "
         text="Markets Page Subtitle, Markets Page Subtitle, Markets Page Subtitle, Markets Page Subtitle "
         pageVideo={766731362}
         overlayOpacity={0.1}
