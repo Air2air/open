@@ -14,7 +14,8 @@ import Container from "components/Container/container";
 const LoopEndTime = 10000;
 
 const HeadingUnderConstruction = (props: { backgroundColor?: any }) => {
-  const [textUnderConstructionOpacity, setTextUnderConstructionOpacity] = useState(0);
+  const [textUnderConstructionOpacity, setTextUnderConstructionOpacity] =
+    useState(0);
 
   const [count, setCount] = useState(1);
 
@@ -58,8 +59,7 @@ const HeadingUnderConstruction = (props: { backgroundColor?: any }) => {
 
 const Wrapper = styled.div`
   position: relative;
-  top: 80px;
-  height:100%;
+  height: 100%;
   @media (min-width: ${BREAKPOINT}px) {
     height: ${HEADING_HEIGHT_DESKTOP}px;
   }
@@ -74,7 +74,7 @@ const TextSection = styled.div`
   top: 0;
   transition: all ${CHART_TEXT_TRANSITION}ms;
   width: 100%;
-  height:100%;
+  height: 100%;
   @media (min-width: ${BREAKPOINT}px) {
     min-height: ${HEADING_HEIGHT_DESKTOP}px;
   }

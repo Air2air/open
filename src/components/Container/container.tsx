@@ -10,7 +10,7 @@ const Container = ({ children }: any, props: any) => {
   return (
     <>
       <OuterWrapper style={{ background: assignBackgroundColor(3) }}>
-      {/* <OuterWrapper style={{ background: 'red' }}> */}
+        {/* <OuterWrapper style={{ background: 'red' }}> */}
         <ContainerDiv>{children}</ContainerDiv>
       </OuterWrapper>
     </>
@@ -18,16 +18,16 @@ const Container = ({ children }: any, props: any) => {
 };
 
 const OuterWrapper = styled.div`
-  position: relative;
-  top: 0;
+  margin: auto auto;
   height: auto;
   width: 100%;
   /* background-color: gold; */
 `;
 
 const ContainerDiv = styled.div`
-  margin: 0 auto;
+  margin: auto auto;
   height: auto;
+  /* position: relative; */
   @media (min-width: ${BREAKPOINT}px) {
     padding: 10px 0;
     width: ${CONTENT_WIDTH_DESKTOP};
