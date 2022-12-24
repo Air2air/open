@@ -14,13 +14,11 @@ import Container from "components/Container/container";
 const HeadingMarkets = (props: { backgroundColor?: any }) => {
   const [textFasterOpacity, setTextFasterOpacity] = useState(0);
   const [textTimelineOpacity, setTextTimelineOpacity] = useState(0);
-  const [textRiskOpacity, setTextRiskOpacity] = useState(0);
   const [count, setCount] = useState(1);
 
   useEffect(() => {
     setTextFasterOpacity(0);
     setTextTimelineOpacity(0);
-    setTextRiskOpacity(0);
 
     const textFasterStart = setTimeout(() => {
       setTextFasterOpacity(1);
@@ -38,13 +36,6 @@ const HeadingMarkets = (props: { backgroundColor?: any }) => {
       setTextTimelineOpacity(0);
     }, 9000);
 
-    const textRiskStart = setTimeout(() => {
-      setTextRiskOpacity(1);
-    }, 10000);
-
-    const textRiskEnd = setTimeout(() => {
-      setTextRiskOpacity(0);
-    }, LoopEndTime - 500);
 
     const loopIsOver = setTimeout(() => {
       setCount(count + 1);
@@ -55,8 +46,6 @@ const HeadingMarkets = (props: { backgroundColor?: any }) => {
       clearTimeout(textFasterEnd);
       clearTimeout(textTimelineStart);
       clearTimeout(textTimelineEnd);
-      clearTimeout(textRiskStart);
-      clearTimeout(textRiskEnd);
       clearTimeout(loopIsOver);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
