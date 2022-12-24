@@ -16,6 +16,7 @@ import HeadingAbout from "components/Heading/headingAbout";
 import HeadingCaseStudies from "components/Heading/headingCaseStudies";
 import HeadingContact from "components/Heading/headingContact";
 import HeadingHistory from "components/Heading/headingHistory";
+import HeadingUnderConstruction from "components/Heading/headingUnderConstruction";
 
 export const BannerVideo = (props) => {
   const headingText = () => {
@@ -33,6 +34,8 @@ export const BannerVideo = (props) => {
       return <HeadingMarkets />;
     } else if (props.text === "practiceareas") {
       return <HeadingPracticeAreas />;
+    } else if (props.text === "underconstruction") {
+      return <HeadingUnderConstruction />;
     } else if (props.text === "vision") {
       return <HeadingVision />;
     } else {

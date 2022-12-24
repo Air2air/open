@@ -60,7 +60,6 @@ export const dataRoutes = [
     section: "PracticeAreas",
     element: <PracticeAreasPage />,
   },
-
   {
     id: "Vision",
     path: "vision",

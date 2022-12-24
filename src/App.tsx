@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import { Footer } from "./components/Footer/footer";
-import { Header } from "./components/Header/header";
+// import { Footer } from "./components/Footer/footer";
+// import { Header } from "./components/Header/header";
 import ProgressBar from "./components/Progress/progress";
 import { dataRoutes } from "./routes/routes";
 import { BREAKPOINT } from "constants/index";
@@ -14,7 +14,7 @@ const App = () => {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           {dataRoutes.map(({ path, element }) => (
@@ -23,7 +23,7 @@ const App = () => {
         </Routes>
       </Suspense>
       {windowWidth > BREAKPOINT && <ProgressBar />}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
