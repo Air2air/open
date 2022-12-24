@@ -13,8 +13,8 @@ import styled from "styled-components";
 
 import ImageCallout from "../../ImageCallout/imageCallout";
 // import parse from "html-react-parser";
-import { SubHeading } from "../../SubHeading/subHeading";
-import { TitleBanner } from "../../Title/titleBanner";
+import { SubHeadBanner } from "components/SubHeading/subHeadBanner";
+import { TitleBanner } from "components/Title/titleBanner";
 import { FC } from "react";
 
 type BannerImageProps = {
@@ -36,7 +36,7 @@ export const BannerImage: FC<BannerImageProps> = ({ ...props }) => {
         {props.pageImage ? <ImageCallout {...props} /> : ""}
         <TextWrapper>
           <TitleBanner title={props.title} color={props.color} />
-          <SubHeading typing={props.typing} text={props.text} />
+          <SubHeadBanner typing={props.typing} text={props.text} />
         </TextWrapper>
       </BannerImageWrapper>
     </>

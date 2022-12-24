@@ -1,5 +1,5 @@
-import { TitleBanner } from "components/Title/titleBanner";
-import { SubHeading } from "components/SubHeading/subHeading";
+import { TitleHeading } from "components/Title/titleHeading";
+import { SubHeadHeading } from "components/SubHeading/subHeadHeading";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import {
@@ -67,16 +67,16 @@ const HeadingHome = (props: { backgroundColor?: any }) => {
       <Container backgroundColor={props.backgroundColor}>
       <Wrapper>
         <TextSection style={{ opacity: textFasterOpacity }}>
-          <TitleBanner title="Faster liquidity for Health AI ventures" />
-          <SubHeading text="Home your timeline and slash dilution, risk and time." />
+          <TitleHeading title="Faster liquidity for Health AI ventures" />
+          <SubHeadHeading text="Home your timeline and slash dilution, risk and time." />
         </TextSection>
         <TextSection style={{ opacity: textTimelineOpacity }}>
-          <TitleBanner title="We cut your timeline to liquidity" />
-          <SubHeading text="With world class, professional oversight." />
+          <TitleHeading title="We cut your timeline to liquidity" />
+          <SubHeadHeading text="With world class, professional oversight." />
         </TextSection>
         <TextSection style={{ opacity: textRiskOpacity }}>
-          <TitleBanner title="Reducing Risk, Dilution and Time." />
-          <SubHeading text="Getting you to the goal line for a fraction of the cost. " />
+          <TitleHeading title="Reducing Risk, Dilution and Time." />
+          <SubHeadHeading text="Getting you to the goal line for a fraction of the cost. " />
         </TextSection>
       </Wrapper>
       </Container>
@@ -87,21 +87,20 @@ const HeadingHome = (props: { backgroundColor?: any }) => {
 const Wrapper = styled.div`
   position: relative;
   top: 0;
-  width: 100%;
   @media (min-width: ${BREAKPOINT}px) {
-    min-height: ${HEADING_HEIGHT_DESKTOP}px;
+    height: ${HEADING_HEIGHT_DESKTOP}px;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    min-height: ${HEADING_HEIGHT_MOBILE}px;
+    height: ${HEADING_HEIGHT_MOBILE}px;
   }
-  /* background: green; */
+  /* background: blue; */
 `;
 
 const TextSection = styled.div`
   position: absolute;
   top: 0;
-  width: 100%;
   transition: all ${CHART_TEXT_TRANSITION}ms;
+  width:100%;
   @media (min-width: ${BREAKPOINT}px) {
     min-height: ${HEADING_HEIGHT_DESKTOP}px;
   }
@@ -110,5 +109,4 @@ const TextSection = styled.div`
   }
   /* background: green; */
 `;
-
 export default HeadingHome;

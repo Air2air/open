@@ -1,4 +1,3 @@
-
 import {
   BREAKPOINT,
   COLOR_WHITE,
@@ -24,14 +23,17 @@ export const TitleHeading = (props: TitleProps) => {
 
 const TitleContainer = styled.div`
   position: absolute;
+  display: flex;
+  align-items: flex-end;
   text-align: left;
+  height: 40%;
+  width: 100%;
   @media (min-width: ${BREAKPOINT}px) {
-    width: ${CONTENT_WIDTH_DESKTOP};
   }
   @media (max-width: ${BREAKPOINT}px) {
     width: ${CONTENT_WIDTH_MOBILE};
   }
-  /* background: red; */
+  /* background: blue; */
 `;
 
 const TitleStyled = styled.h1<TitleProps>`

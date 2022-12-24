@@ -1,5 +1,5 @@
-import { TitleBanner } from "components/Title/titleBanner";
-import { SubHeading } from "components/SubHeading/subHeading";
+import { TitleHeading } from "components/Title/titleHeading";
+import { SubHeadHeading } from "components/SubHeading/subHeadHeading";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import {
@@ -52,12 +52,12 @@ const HeadingVision = (props: { backgroundColor?: any }) => {
       <Container backgroundColor={props.backgroundColor}>
         <Wrapper>
           <TextSection style={{ opacity: advisoryOpacity }}>
-            <TitleBanner title="Elevens is a healthcare AI advisory" />
-            <SubHeading text="of the leading physicians, scientists, engineers and entrepreneurs in healthcare AI." />
+            <TitleHeading title="Elevens is a healthcare AI advisory" />
+            <SubHeadHeading text="of the leading physicians, scientists, engineers and entrepreneurs in healthcare AI." />
           </TextSection>
           <TextSection style={{ opacity: defineOpacity }}>
-            <TitleBanner title="We define the path forward" />
-            <SubHeading text=" for leading companies building the future of digital health and clinical machine learning." />
+            <TitleHeading title="We define the path forward" />
+            <SubHeadHeading text=" for leading companies building the future of digital health and clinical machine learning." />
           </TextSection>
         </Wrapper>
       </Container>
@@ -68,21 +68,20 @@ const HeadingVision = (props: { backgroundColor?: any }) => {
 const Wrapper = styled.div`
   position: relative;
   top: 0;
-  width: 100%;
   @media (min-width: ${BREAKPOINT}px) {
-    min-height: ${HEADING_HEIGHT_DESKTOP}px;
+    height: ${HEADING_HEIGHT_DESKTOP}px;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    min-height: ${HEADING_HEIGHT_MOBILE}px;
+    height: ${HEADING_HEIGHT_MOBILE}px;
   }
-  /* background: green; */
+  /* background: blue; */
 `;
 
 const TextSection = styled.div`
   position: absolute;
   top: 0;
-  width: 100%;
   transition: all ${CHART_TEXT_TRANSITION}ms;
+  width: 100%;
   @media (min-width: ${BREAKPOINT}px) {
     min-height: ${HEADING_HEIGHT_DESKTOP}px;
   }

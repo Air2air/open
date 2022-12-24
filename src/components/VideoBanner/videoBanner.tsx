@@ -7,7 +7,7 @@ import {
   COLOR_BLACK,
 } from "constants/index";
 import styled from "styled-components";
-import { SubHeading } from "../SubHeading/subHeading";
+import { SubHeadBanner } from "../SubHeading/subHeadBanner";
 import { TitleBanner } from "../Title/titleBanner";
 import { IBannerVideoProps } from "components/VideoBanner/videos";
 import VimeoPlayer from "./vimeoPlayer";
@@ -26,7 +26,7 @@ export const BannerVideo = (props: IBannerVideoProps) => {
           }}
         />
         <TitleBanner title={props.title} color={props.color} />
-        <SubHeading typing={props.typing} text={props.text} />
+        <SubHeadBanner typing={props.typing} text={props.text} />
       </BannerVideoWrapper>
     </>
   );
