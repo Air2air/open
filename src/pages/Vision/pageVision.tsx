@@ -1,5 +1,5 @@
-import TimeLine from "components/TimeLine/timeLine";
-import { dataVentureStage } from "./dataVentureStage";
+// import TimeLine from "components/TimeLine/timeLine";
+// import { dataVentureStage } from "./dataVentureStage";
 import { COLOR_BASE } from "constants/index";
 import RowButton from "components/Button/rowButton";
 import HeadingVision from "components/Heading/headingVision";
