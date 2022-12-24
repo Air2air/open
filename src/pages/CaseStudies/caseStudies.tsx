@@ -27,7 +27,7 @@ const CaseStudiesPage = () => {
       />
       {dataCaseStudies.map((props) => (
         <div key={props.id}>
-          <ChartSection {...props} />
+          {/* <ChartSection {...props} /> */}
           <Callout {...props} />
         </div>
       ))}
