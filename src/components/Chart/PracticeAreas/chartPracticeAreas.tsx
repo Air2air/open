@@ -1,18 +1,17 @@
-import { VisionColumns } from "./columnsVision";
+import ColumnPracticeAreas from "./columnPracticeAreas";
 import Container from "components/Container/container";
 import { ChartSection } from "../chartSection";
 
 export const LoopEndTime = 12000;
 
-const ChartVision = (props: { backgroundColor: any; }) => {
+const ChartPracticeAreas = (props) => {
   return (
-    <Container backgroundColor={props.backgroundColor}>
+    <Container backgroundColor={3}>
       <ChartSection>
-        <VisionColumns />
+        <ColumnPracticeAreas data={props.data} />
       </ChartSection>
     </Container>
   );
 };
 
-
-export default ChartVision;
+export default ChartPracticeAreas;

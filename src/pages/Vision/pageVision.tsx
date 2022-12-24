@@ -24,7 +24,7 @@ const VisionPage = () => {
       <HeadingVision backgroundColor={COLOR_BASE} />
       <RowButton buttonTo="/practice_areas" buttonText="What we do" />
       <Spacer height={60} />
-      <TimeLine data={dataVentureStage} backgroundColor={3} />
+      {/* <TimeLine data={dataVentureStage} backgroundColor={3} /> */}
     </>
   );
 };

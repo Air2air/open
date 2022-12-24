@@ -6,6 +6,7 @@ import { COLOR_BASE } from "constants/index";
 import HeadingPracticeAreas from "components/Heading/headingPracticeAreas";
 import RowButton from "components/Button/rowButton";
 import { BannerVideo } from "components/VideoBanner/videoBanner";
+import ChartPracticeAreas from "components/Chart/PracticeAreas/chartPracticeAreas";
 
 
 
@@ -20,7 +21,7 @@ const PracticeAreasPage = () => {
         overlayColor={COLOR_BASE}
         typing={true}
       />
-      {/* <ChartPracticeAreas backgroundColor={COLOR_BASE} /> */}
+      <ChartPracticeAreas data={dataPracticeAreas} backgroundColor={COLOR_BASE} />
       <HeadingPracticeAreas backgroundColor={COLOR_BASE} />
       <RowButton buttonTo="/casestudies" buttonText="Case Studies" />
       <Spacer height={40} />

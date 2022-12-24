@@ -1,4 +1,3 @@
-import { IBarColumnProps } from "interfaces/callouts";
 import { useState, useEffect } from "react";
 import styled from "styled-components";
 import {
@@ -8,7 +7,7 @@ import {
   CHART_LABEL_MOBILE,
 } from "constants/index";
 
-const BarColumn = (props: IBarColumnProps) => {
+const ColumnPracticeAreas = (props: { data: any[] }) => {
   const [seriesRandomHeight, setSeriesRandomHeight] = useState(50);
 
   const minHeight = 20;
@@ -31,39 +30,26 @@ const BarColumn = (props: IBarColumnProps) => {
 
   return (
     <>
-      <ColumnOuter>
-        {props.randomHeight ? (
-          <ColumnSeries
-            style={{
-              height: seriesRandomHeight + "%",
-              backgroundColor: props.backgroundColor,
-            }}
-          >
-            <Label
+      {props.data.map((props) => {
+        return (
+          <ColumnOuter>
+            <ColumnSeries
               style={{
-                color: props.color,
+                height: seriesRandomHeight + "%",
+                backgroundColor: props.backgroundColor,
               }}
             >
-              {props.label}
-            </Label>
-          </ColumnSeries>
-        ) : (
-          <ColumnSeries
-            style={{
-              height: props.height + "%",
-              backgroundColor: props.backgroundColor,
-            }}
-          >
-            <Label
-              style={{
-                color: props.color,
-              }}
-            >
-              {props.label}
-            </Label>
-          </ColumnSeries>
-        )}
-      </ColumnOuter>
+              <Label
+                style={{
+                  color: props.color,
+                }}
+              >
+                {props.label}
+              </Label>
+            </ColumnSeries>
+          </ColumnOuter>
+        );
+      })}
     </>
   );
 };
@@ -78,13 +64,13 @@ const ColumnOuter = styled.div`
   overflow: hidden;
   flex: 1;
   height: 100%;
+  width: 100%;
   @media (min-width: ${BREAKPOINT}px) {
     margin: 0 10px;
   }
   @media (max-width: ${BREAKPOINT}px) {
     margin: 0 5px;
   }
-  /* background: blue; */
 `;
 
 const ColumnSeries = styled.div`
@@ -126,4 +112,4 @@ const Label = styled.div`
   /* background: green; */
 `;
 
-export default BarColumn;
+export default ColumnPracticeAreas;

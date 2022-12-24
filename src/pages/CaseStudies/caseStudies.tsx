@@ -8,7 +8,7 @@ import {
 import Callout from "components/Callout/callOut";
 import { dataCaseStudies } from "./dataCaseStudies";
 import styled from "styled-components";
-import BarColumn from "components/Chart/PracticeAreas/barColumn";
+import BarColumn from "components/Chart/PracticeAreas/columnPracticeAreas";
 
 const pageVideo = 776446335;
 
