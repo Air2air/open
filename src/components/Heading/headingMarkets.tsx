@@ -1,5 +1,5 @@
 import { TitleHeading } from "components/Title/titleHeading";
-import { SubHeadHeading } from "components/SubHeading/subHeadHeading";
+import { SubHeadHeading } from "components/SubHead/subHeadHeading";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import {

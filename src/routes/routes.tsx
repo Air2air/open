@@ -1,17 +1,14 @@
 import HistoryPage from "pages/History/history";
 import { lazy } from "react";
 const AboutPage = lazy(() => import("pages/About/about"));
+const CaseStudiesPage = lazy(() => import("pages/CaseStudies/caseStudies"));
 const ContactPage = lazy(() => import("pages/Contact/contact"));
 const HomePage = lazy(() => import("pages/Home/pageHome"));
 const MarketsPage = lazy(() => import("pages/Markets/markets"));
-const ProcessPage = lazy(() => import("pages/Process/process"));
-const EngagementPage = lazy(() => import("pages/Engagement/engagement"));
-const VisionPage = lazy(() => import("pages/Vision/pageVision"));
 const PracticeAreasPage = lazy(
   () => import("pages/PracticeAreas/practiceAreas")
 );
-const CaseStudiesPage = lazy(() => import("pages/CaseStudies/caseStudies"));
-const DashboardPage = lazy(() => import("pages/Dashboard/dashboard"));
+const VisionPage = lazy(() => import("pages/Vision/pageVision"));
 
 export const dataRoutes = [
   {
@@ -32,18 +29,7 @@ export const dataRoutes = [
     section: "Contact",
     element: <ContactPage />,
   },
-  {
-    id: "Dashboard",
-    path: "dashboard",
-    section: "Dashboard",
-    element: <DashboardPage />,
-  },
-  {
-    id: "Engagement",
-    path: "engagement",
-    section: "Engagement",
-    element: <EngagementPage />,
-  },
+
   {
     id: "History",
     path: "history",
@@ -73,12 +59,6 @@ export const dataRoutes = [
     path: "practice_areas",
     section: "PracticeAreas",
     element: <PracticeAreasPage />,
-  },
-  {
-    id: "Process",
-    path: "process",
-    section: "Process",
-    element: <ProcessPage />,
   },
 
   {

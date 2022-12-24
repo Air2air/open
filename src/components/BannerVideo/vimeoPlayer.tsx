@@ -30,7 +30,7 @@ export const VimeoPlayer = ({ videoID }) => {
 };
 
 const VideoContainer = styled.div`
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   min-width: 100vw;

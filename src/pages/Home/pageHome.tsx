@@ -3,15 +3,14 @@ import HeadingHome from "components/Heading/headingHome";
 import ChartHome from "components/Chart/Home/chartHome";
 import Spacer from "components/Spacer/spacer";
 import RowButton from "components/Button/rowButton";
-import BannerVideo from "components/VideoBanner/videoBanner";
+import BannerVideo from "components/BannerVideo/videoBanner";
 import { COLOR_BASE } from "constants/index";
 
 const HomePage = () => {
   return (
     <>
       <BannerVideo
-        title=""
-        text="Homepage Subtitle, Homepage Subtitle, Homepage Subtitle, Homepage Subtitle "
+        text="home"
         pageVideo={776443340}
         overlayOpacity={0.1}
         overlayColor={COLOR_BASE}

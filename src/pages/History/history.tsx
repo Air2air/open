@@ -1,6 +1,6 @@
 import setBodyColor from "utils/setBodyColor";
 import Callout from "../../components/Callout/callOut";
-import BannerImage from "components/Banner/Image/bannerImage";
+import BannerImage from "components/BannerImage/bannerImage";
 import { COLOR_BASE } from "constants/index";
 
 const pageImage = "dartmouth.jpeg";
@@ -11,8 +11,7 @@ const HistoryPage = () => {
   return (
     <>
       <BannerImage
-        title=""
-        text=""
+        text="history"
         pageImage={pageImage}
         overlayOpacity={0.7}
         overlayColor={COLOR_BASE}

@@ -1,4 +1,4 @@
-import BannerVideo from "components/VideoBanner/videoBanner";
+import BannerVideo from "components/BannerVideo/videoBanner";
 import { COLOR_BASE } from "constants/index";
 import Callout from "components/Callout/callOut";
 import { dataCaseStudies } from "./dataCaseStudies";
@@ -10,8 +10,7 @@ const CaseStudiesPage = () => {
   return (
     <>
       <BannerVideo
-        title="Case Studies "
-        text="Case Studies Page SubTitle, Case Studies Page SubTitle, Case Studies Page SubTitle, Case Studies Page SubTitle"
+        text="casestudies"
         pageVideo={pageVideo}
         color="#ffffff"
         overlayOpacity={0}
