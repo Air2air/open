@@ -7,6 +7,7 @@ import { dataRoutes } from "./routes/routes";
 import { BREAKPOINT } from "constants/index";
 import { useWindowWidth } from "@react-hook/window-size";
 import { usePageTracking } from "./components/Analytics/gaTracking";
+import UnderConstructionPage from "pages/UnderConstruction/pageUnderConstruction";
 
 const isUnderConstruction = true;
 
@@ -19,9 +20,15 @@ const App = () => {
       {!isUnderConstruction ? <Header /> : ""}
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
-          {dataRoutes.map(({ path, element }) => (
-            <Route key={path} path={path} element={element} />
-          ))}
+          {isUnderConstruction ? (
+            <Route path="*" element={<UnderConstructionPage />} />
+          ) : (
+            <>
+              {dataRoutes.map(({ path, element }) => (
+                <Route key={path} path={path} element={element} />
+              ))}
+            </>
+          )}
         </Routes>
       </Suspense>
       {windowWidth > BREAKPOINT && <ProgressBar />}
