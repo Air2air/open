@@ -5,11 +5,13 @@ import styled from "styled-components";
 
 const ChartPracticeAreas = (props) => {
   return (
-    <Container backgroundColor={3}>
+    <Container backgroundColor={3} key={props.id}>
       <ChartSection>
         <ChartWrapper>
           {props.data.map((props: any) => {
-            return <ColumnPracticeAreas {...props} />;
+            return (
+              <ColumnPracticeAreas key={props.id} {...props} {...props.practiceAreasData} />
+            );
           })}
         </ChartWrapper>
       </ChartSection>

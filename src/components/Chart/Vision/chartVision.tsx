@@ -1,4 +1,4 @@
-import { VisionColumns } from "./columnsVision";
+import { ColumnVision } from "./columnVision";
 import Container from "components/Container/container";
 import { ChartSection } from "../chartSection";
 
@@ -8,7 +8,7 @@ const ChartVision = (props: { backgroundColor: any; }) => {
   return (
     <Container backgroundColor={props.backgroundColor}>
       <ChartSection>
-        <VisionColumns />
+        <ColumnVision />
       </ChartSection>
     </Container>
   );

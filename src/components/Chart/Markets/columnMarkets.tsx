@@ -31,7 +31,7 @@ export const ColumnMarkets = () => {
     <>
       <ColumnsWrapper>
         {dataMarkets.map((item, index) => (
-          <ColumnOuter>
+          <ColumnOuter  key={index}>
             <ColumnInner
               key={item.id}
               style={{

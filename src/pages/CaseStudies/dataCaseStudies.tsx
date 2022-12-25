@@ -1,8 +1,5 @@
-
 import { v4 as uuid } from "uuid";
 export const dataCaseStudies = [
-
-
   {
     id: uuid(),
     title: "1. PRODUCT-MARKET FIT",

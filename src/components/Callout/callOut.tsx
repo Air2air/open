@@ -13,7 +13,6 @@ import parse from "html-react-parser";
 import { TitleCallout } from "components/Title/titleCallout";
 import { ICalloutProps } from "interfaces/callouts";
 
-
 export const Callout = (props: ICalloutProps) => {
   const textParsed = parse(props.text);
 

@@ -1,10 +1,4 @@
-import {
-  useState,
-  useEffect,
-  ReactChild,
-  ReactFragment,
-  ReactPortal,
-} from "react";
+import { useState, useEffect } from "react";
 import styled from "styled-components";
 import {
   BREAKPOINT,
@@ -14,11 +8,7 @@ import {
   COLOR_WHITE,
 } from "constants/index";
 
-const ColumnPracticeAreas = (props: {
-  backgroundColor: any;
-  color: any;
-  label: boolean | ReactChild | ReactFragment | ReactPortal | null | undefined;
-}) => {
+const ColumnPracticeAreas = (props) => {
   const [seriesRandomHeight, setSeriesRandomHeight] = useState(50);
 
   const minHeight = 20;
@@ -40,16 +30,15 @@ const ColumnPracticeAreas = (props: {
   }, []);
 
   return (
-    <>
-      <ColumnSeries
-        style={{
-          height: seriesRandomHeight + "%",
-          backgroundColor: props.backgroundColor,
-        }}
-      >
-        <Label>{props.label}</Label>
-      </ColumnSeries>
-    </>
+    <ColumnSeries
+      key={props.id}
+      style={{
+        height: seriesRandomHeight + "%",
+        backgroundColor: props.backgroundColor,
+      }}
+    >
+      <Label>{props.label}</Label>
+    </ColumnSeries>
   );
 };
 

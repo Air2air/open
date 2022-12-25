@@ -14,16 +14,15 @@ import { dataVision } from "./dataVision";
 import { useState, useEffect } from "react";
 import { LoopEndTime } from "./chartVision";
 
-export const VisionColumns = () => {
-  const [columnsAreEntering, setColumnsAreEntering] = useState(0);
+export const ColumnVision = () => {
+  const [columnsAreEntering, setColumnAreEntering] = useState(0);
   const [count, setCount] = useState(1);
 
   useEffect(() => {
-
-    setColumnsAreEntering(1);
+    setColumnAreEntering(1);
 
     const columnAnimationEnd = setTimeout(() => {
-      setColumnsAreEntering(0);
+      setColumnAreEntering(0);
     }, LoopEndTime - 4000);
 
     const loopIsOver = setTimeout(() => {
@@ -52,20 +51,18 @@ export const VisionColumns = () => {
     <StageColumnWrapper>
       {dataVision.map((item, index) => {
         return (
-          <>
-            <StageColumn
-              key={index}
-              style={{
-                backgroundColor: item.backgroundColor,
-                animation: columnsAreEntering
-                  ? animationEnter(index)
-                  : animationExit(index),
-                opacity: columnsAreEntering ? 0 : 1,
-              }}
-            >
-              <span>{item.label}</span>
-            </StageColumn>
-          </>
+          <StageColumn
+            key={index}
+            style={{
+              backgroundColor: item.backgroundColor,
+              animation: columnsAreEntering
+                ? animationEnter(index)
+                : animationExit(index),
+              opacity: columnsAreEntering ? 0 : 1,
+            }}
+          >
+            <span>{item.label}</span>
+          </StageColumn>
         );
       })}
     </StageColumnWrapper>
