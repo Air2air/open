@@ -9,81 +9,70 @@ import {
   CHART_COLUMN_STAGGER,
   CHART_SECTION_HEIGHT_DESKTOP,
   CHART_SECTION_HEIGHT_MOBILE,
+  COLOR_CAPTION,
 } from "constants/index";
 import { dataMarkets } from "./dataMarkets";
-import { useState, useEffect } from "react";
-import { LoopEndTime } from "./chartMarkets";
 
-export const MarketsColumns = () => {
-  const [columnsAreEntering, setColumnsAreEntering] = useState(0);
-  const [columnWidth, setColumnWidth] = useState("100%");
-  const [count, setCount] = useState(1);
 
-  useEffect(() => {
-    setColumnWidth("100%");
-    setColumnsAreEntering(1);
+export const ColumnMarkets = () => {
 
-    const columnShrink = setTimeout(() => {
-      setColumnWidth("50%");
-    }, 7000);
 
-    const columnExit = setTimeout(() => {
-      setColumnsAreEntering(0);
-    }, LoopEndTime - 2000);
-
-    const loopIsOver = setTimeout(() => {
-      setCount(count + 1);
-    }, LoopEndTime);
-
-    return () => {
-      clearTimeout(columnShrink);
-      clearTimeout(columnExit);
-      clearTimeout(loopIsOver);
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [count]);
-
-  const animationEnter = (index: number) =>
+  const animationEnterColumn = (index: number) =>
     `fadeInUp ${CHART_COLUMN_TRANSITION}ms ease-out ${
       CHART_COLUMN_STAGGER * (index + 1)
     }ms forwards`;
 
-  const animationExit = (index: number) =>
-    `fadeOutDown ${CHART_COLUMN_TRANSITION}ms ease-in ${
+  const animationEnterLabel = (index: number) =>
+    `fadeInDown ${CHART_COLUMN_TRANSITION}ms ease-out ${
       CHART_COLUMN_STAGGER * (index + 1)
     }ms forwards`;
 
   return (
-    <MarketsColumnWrapper style={{ width: columnWidth }}>
-      {dataMarkets.map((item, index) => (
-        <MarketsColumn
-          key={item.id}
-          style={{
-            height: item.height,
-            backgroundColor: item.backgroundColor,
-            animation: columnsAreEntering
-              ? animationEnter(index)
-              : animationExit(index),
-            opacity: columnsAreEntering ? 0 : 1,
-          }}
-        >
-          <span>{item.label}</span>
-        </MarketsColumn>
-      ))}
-    </MarketsColumnWrapper>
+    <>
+      <ColumnsWrapper>
+        {dataMarkets.map((item, index) => (
+          <ColumnOuter>
+            <ColumnInner
+              key={item.id}
+              style={{
+                height: item.height,
+                backgroundColor: item.backgroundColor,
+                animation: animationEnterColumn(index),
+                opacity: 0
+              }}
+            ></ColumnInner>
+            <ColumnLabel
+              style={{
+                animation: animationEnterLabel(index),
+                opacity: 0
+              }}
+            >
+              {item.label}
+            </ColumnLabel>
+          </ColumnOuter>
+        ))}
+        <GraphLegend>
+          <div>$1.2T</div>
+          <div>$800B</div>
+          <div>$400B</div>
+          <div style={{ height: 10 }}>&nbsp;</div>
+        </GraphLegend>
+      </ColumnsWrapper>
+    </>
   );
 };
 
 // the length of dataMarkets array
 const dataMarketsLength = dataMarkets.length;
 
-const MarketsColumnWrapper = styled.div`
+const ColumnsWrapper = styled.div`
   position: absolute;
   left: 0;
   display: grid;
-  grid-template-columns: repeat(${dataMarketsLength}, 1fr);
+  grid-template-columns: repeat(${dataMarketsLength + 1}, 1fr);
   transform-origin: 0% 0%;
-  /* transition: all ${CHART_COLUMN_TRANSITION}ms; */
+
+  width: 100%;
   overflow: hidden;
   @media (min-width: ${BREAKPOINT}px) {
     grid-gap: ${COLUMN_GRID_GAP_DESKTOP}px;
@@ -93,32 +82,57 @@ const MarketsColumnWrapper = styled.div`
     grid-gap: ${COLUMN_GRID_GAP_MOBILE}px;
     height: ${CHART_SECTION_HEIGHT_MOBILE}px;
   }
-
+  /* background: blue; */
 `;
 
-const MarketsColumn = styled.div`
+const ColumnOuter = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
+  color: #fff;
+  width: 100%;
+`;
+
+const ColumnInner = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
   justify-content: center;
   color: #fff;
-  height: inherit;
-  width: auto;
-  /* opacity: 0; */
-  & span {
-    text-align: center;
-    font-family: "Roboto Condensed", sans-serif;
-    font-weight: 500;
-    text-transform: uppercase;
-    writing-mode: vertical-rl;
-    @media (min-width: ${BREAKPOINT}px) {
-      font-size: ${CHART_LABEL_DESKTOP};
-      height: inherit;
-    }
-    @media (max-width: ${BREAKPOINT}px) {
-      font-size: ${CHART_LABEL_MOBILE};
-      height: inherit;
-    }
-    /* background: red; */
+  width: 100%;
+`;
+
+const ColumnLabel = styled.div`
+  /* text-align: left; */
+  position: absolute;
+  top: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  @media (min-width: ${BREAKPOINT}px) {
+    font-size: ${CHART_LABEL_DESKTOP};
   }
+  @media (max-width: ${BREAKPOINT}px) {
+    font-size: ${CHART_LABEL_MOBILE};
+  }
+`;
+
+const GraphLegend = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  height: "100%";
+  /* align-self: flex-end; */
+  font-size: ${CHART_LABEL_DESKTOP};
+  color: ${COLOR_CAPTION};
+  @media (min-width: ${BREAKPOINT}px) {
+    font-size: ${CHART_LABEL_DESKTOP};
+  }
+  @media (max-width: ${BREAKPOINT}px) {
+    font-size: ${CHART_LABEL_MOBILE};
+  }
+  /* background: green;  */
 `;

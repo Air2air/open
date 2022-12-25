@@ -1,13 +1,24 @@
-import { useState, useEffect } from "react";
+import {
+  useState,
+  useEffect,
+  ReactChild,
+  ReactFragment,
+  ReactPortal,
+} from "react";
 import styled from "styled-components";
 import {
   BREAKPOINT,
   CHART_COLUMN_TRANSITION,
   CHART_LABEL_DESKTOP,
   CHART_LABEL_MOBILE,
+  COLOR_WHITE,
 } from "constants/index";
 
-const ColumnPracticeAreas = (props: { data: any[] }) => {
+const ColumnPracticeAreas = (props: {
+  backgroundColor: any;
+  color: any;
+  label: boolean | ReactChild | ReactFragment | ReactPortal | null | undefined;
+}) => {
   const [seriesRandomHeight, setSeriesRandomHeight] = useState(50);
 
   const minHeight = 20;
@@ -30,26 +41,14 @@ const ColumnPracticeAreas = (props: { data: any[] }) => {
 
   return (
     <>
-      {props.data.map((props) => {
-        return (
-          <ColumnOuter>
-            <ColumnSeries
-              style={{
-                height: seriesRandomHeight + "%",
-                backgroundColor: props.backgroundColor,
-              }}
-            >
-              <Label
-                style={{
-                  color: props.color,
-                }}
-              >
-                {props.label}
-              </Label>
-            </ColumnSeries>
-          </ColumnOuter> 
-        );
-      })}
+      <ColumnSeries
+        style={{
+          height: seriesRandomHeight + "%",
+          backgroundColor: props.backgroundColor,
+        }}
+      >
+        <Label>{props.label}</Label>
+      </ColumnSeries>
     </>
   );
 };
@@ -57,30 +56,10 @@ const ColumnPracticeAreas = (props: { data: any[] }) => {
 const barMinHeightDesktop = 30;
 const barMinHeightMobile = 10;
 
-const ColumnOuter = styled.div`
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  overflow: hidden;
-  /* flex: 1; */
-  height: 100%;
-  width: 100%;
-  @media (min-width: ${BREAKPOINT}px) {
-    margin: 0 10px;
-  }
-  @media (max-width: ${BREAKPOINT}px) {
-    margin: 0 5px;
-  }
-    background: gold;
-`;
-
 const ColumnSeries = styled.div`
-  position: absolute;
-  bottom: 0;
   display: flex;
-  justify-content: center;
-  align-self: flex-end;
+  /* justify-content: center; */
+  align-items: flex-end;
   transition: all ${CHART_COLUMN_TRANSITION}ms;
   /* width: 100%; */
   @media (min-width: ${BREAKPOINT}px) {
@@ -91,10 +70,11 @@ const ColumnSeries = styled.div`
     min-height: ${barMinHeightMobile}px;
     align-items: flex-end;
   }
-  /* background: gold; */
+  background: gold;
 `;
 
 const Label = styled.div`
+  color: ${COLOR_WHITE};
   min-width: 100px;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 500;

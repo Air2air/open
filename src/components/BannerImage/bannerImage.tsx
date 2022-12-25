@@ -1,8 +1,6 @@
 import {
   BANNER_HEIGHT_DESKTOP,
   BANNER_HEIGHT_MOBILE,
-  BANNER_PADDING_TOP_DESKTOP,
-  BANNER_PADDING_TOP_MOBILE,
   BREAKPOINT,
   COLOR_BLACK,
 } from "constants/index";
@@ -67,11 +65,9 @@ const BannerImageWrapper = styled.div`
   overflow: hidden;
   background: ${COLOR_BLACK};
   @media (min-width: ${BREAKPOINT}px) {
-    /* padding-top: ${BANNER_PADDING_TOP_DESKTOP}px; */
     height: ${BANNER_HEIGHT_DESKTOP}px;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    /* padding-top: ${BANNER_PADDING_TOP_MOBILE}px; */
     height: ${BANNER_HEIGHT_MOBILE}px;
   }
 `;
