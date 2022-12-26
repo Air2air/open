@@ -7,7 +7,6 @@ import {
   HEADING_HEIGHT_DESKTOP,
   HEADING_HEIGHT_MOBILE,
 } from "constants/index";
-
 import Container from "components/Container/container";
 
 const HeadingUnderConstruction = (props: { backgroundColor?: any }) => {

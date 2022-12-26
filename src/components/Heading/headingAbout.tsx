@@ -1,6 +1,5 @@
 import { TitleHeading } from "components/Title/titleHeading";
 import { SubHeadHeading } from "components/SubHead/subHeadHeading";
-import { useEffect, useState } from "react";
 import styled from "styled-components";
 import {
   BREAKPOINT,
@@ -8,46 +7,15 @@ import {
   HEADING_HEIGHT_DESKTOP,
   HEADING_HEIGHT_MOBILE,
 } from "constants/index";
-
 import Container from "components/Container/container";
 
-const LoopEndTime = 10000;
-
 const HeadingAbout = (props: { backgroundColor?: any }) => {
-  const [textAboutOpacity, setTextAboutOpacity] = useState(0);
-
-  const [count, setCount] = useState(1);
-
-  useEffect(() => {
-    setTextAboutOpacity(0);
-
-    const textAboutStart = setTimeout(() => {
-      setTextAboutOpacity(1);
-    }, 1000);
-
-    const textAboutEnd = setTimeout(() => {
-      setTextAboutOpacity(0);
-    }, 5000);
-
-    const loopIsOver = setTimeout(() => {
-      setCount(count + 1);
-    }, LoopEndTime);
-
-    return () => {
-      clearTimeout(textAboutStart);
-      clearTimeout(textAboutEnd);
-
-      clearTimeout(loopIsOver);
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [count]);
-
   return (
     <>
       <Container backgroundColor={props.backgroundColor}>
         <Wrapper>
-          <TextSection style={{ opacity: textAboutOpacity }}>
-            <TitleHeading title="Healthcare AI About" />
+          <TextSection>
+            <TitleHeading title="About Elevens" />
             <SubHeadHeading text="Elevens supports Healthtech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners" />
           </TextSection>
         </Wrapper>
@@ -58,7 +26,7 @@ const HeadingAbout = (props: { backgroundColor?: any }) => {
 
 const Wrapper = styled.div`
   position: relative;
-  top: 0;
+  height: 100%;
   @media (min-width: ${BREAKPOINT}px) {
     height: ${HEADING_HEIGHT_DESKTOP}px;
   }
@@ -73,6 +41,7 @@ const TextSection = styled.div`
   top: 0;
   transition: all ${CHART_TEXT_TRANSITION}ms;
   width: 100%;
+  height: 100%;
   @media (min-width: ${BREAKPOINT}px) {
     min-height: ${HEADING_HEIGHT_DESKTOP}px;
   }

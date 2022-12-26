@@ -8,7 +8,7 @@ import {
 } from "constants/index";
 import styled from "styled-components";
 import VimeoPlayer from "./vimeoPlayer";
-import HeadingHome from "components/Heading/headingHome";
+import HeadingHome from "components/Heading/headingHomeOld";
 import HeadingMarkets from "components/Heading/headingMarkets";
 import HeadingPracticeAreas from "components/Heading/headingPracticeAreas";
 import HeadingVision from "components/Heading/headingVision";
