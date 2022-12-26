@@ -1,15 +1,10 @@
 import { TitleHeading } from "components/Title/titleHeading";
 import { SubHeadHeading } from "components/SubHead/subHeadHeading";
 import { useEffect, useState } from "react";
-import styled from "styled-components";
-import {
-  BREAKPOINT,
-  CHART_TEXT_TRANSITION,
-  HEADING_HEIGHT_DESKTOP,
-  HEADING_HEIGHT_MOBILE,
-} from "constants/index";
 import { LoopEndTime } from "../Chart/Vision/chartVision";
 import Container from "components/Container/container";
+import { TextSection } from "./headingTextSection";
+import { Wrapper } from "./headingWrapper";
 
 const HeadingVision = (props: { backgroundColor?: any }) => {
   const [advisoryOpacity, setAdvisoryOpacity] = useState(0);
@@ -64,31 +59,5 @@ const HeadingVision = (props: { backgroundColor?: any }) => {
     </>
   );
 };
-
-const Wrapper = styled.div`
-  position: relative;
-  top: 0;
-  @media (min-width: ${BREAKPOINT}px) {
-    height: ${HEADING_HEIGHT_DESKTOP}px;
-  }
-  @media (max-width: ${BREAKPOINT}px) {
-    height: ${HEADING_HEIGHT_MOBILE}px;
-  }
-  /* background: blue; */
-`;
-
-const TextSection = styled.div`
-  position: absolute;
-  top: 0;
-  transition: all ${CHART_TEXT_TRANSITION}ms;
-  width: 100%;
-  @media (min-width: ${BREAKPOINT}px) {
-    min-height: ${HEADING_HEIGHT_DESKTOP}px;
-  }
-  @media (max-width: ${BREAKPOINT}px) {
-    min-height: ${HEADING_HEIGHT_MOBILE}px;
-  }
-  /* background: green; */
-`;
 
 export default HeadingVision;

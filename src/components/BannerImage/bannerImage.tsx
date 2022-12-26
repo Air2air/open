@@ -5,7 +5,7 @@ import {
   COLOR_BLACK,
 } from "constants/index";
 import styled from "styled-components";
-import HeadingHome from "components/Heading/headingHomeOld";
+import HeadingHome from "components/Heading/headingHome";
 import HeadingMarkets from "components/Heading/headingMarkets";
 import HeadingPracticeAreas from "components/Heading/headingPracticeAreas";
 import HeadingVision from "components/Heading/headingVision";
