@@ -14,5 +14,5 @@ export const Wrapper = styled.div`
   @media (max-width: ${BREAKPOINT}px) {
     height: ${HEADING_HEIGHT_MOBILE}px;
   }
-  background: blue;
+  /* background: blue; */
 `;

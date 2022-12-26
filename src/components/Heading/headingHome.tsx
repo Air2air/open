@@ -60,24 +60,23 @@ const HeadingHome = (props: { backgroundColor?: any }) => {
   return (
     <>
       <Container backgroundColor={props.backgroundColor}>
-      <Wrapper>
-        <TextSection style={{ opacity: textFasterOpacity }}>
-          <TitleHeading title="Faster liquidity for Health AI ventures" />
-          <SubHeadHeading text="Reduce your timeline and slash dilution, risk and time." />
-        </TextSection>
-        <TextSection style={{ opacity: textTimelineOpacity }}>
-          <TitleHeading title="We cut your timeline to liquidity" />
-          <SubHeadHeading text="With world class technical and business experts." />
-        </TextSection>
-        <TextSection style={{ opacity: textRiskOpacity }}>
-          <TitleHeading title="Reducing Risk, Dilution and Time." />
-          <SubHeadHeading text="Getting you to the goal line for a fraction of the cost. " />
-        </TextSection>
-      </Wrapper>
+        <Wrapper>
+          <TextSection style={{ opacity: textFasterOpacity }}>
+            <TitleHeading title="Faster liquidity for Health AI ventures" />
+            <SubHeadHeading text="Reduce your timeline and slash dilution, risk and time to liquidity." />
+          </TextSection>
+          <TextSection style={{ opacity: textTimelineOpacity }}>
+            <TitleHeading title="We cut your timeline to liquidity" />
+            <SubHeadHeading text="With world class technical and business experts." />
+          </TextSection>
+          <TextSection style={{ opacity: textRiskOpacity }}>
+            <TitleHeading title="Reducing Risk, Dilution and Time." />
+            <SubHeadHeading text="Getting you to the goal line for a fraction of the cost. " />
+          </TextSection>
+        </Wrapper>
       </Container>
     </>
   );
 };
-
 
 export default HeadingHome;
