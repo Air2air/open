@@ -17,6 +17,7 @@ const PracticeAreasPage = () => {
         overlayColor={COLOR_BASE}
         typing={true}
       />
+      <Spacer height={60} />
       <ChartPracticeAreas
         data={dataPracticeAreas}
         backgroundColor={COLOR_BASE}

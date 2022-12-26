@@ -14,6 +14,7 @@ const MarketsPage = () => {
         overlayColor={COLOR_BASE}
         typing={true}
       />
+      <Spacer height={60} />
       <ChartMarkets backgroundColor={1} />
       <RowButton buttonTo="/vision" buttonText="Vision" />
       <Spacer height={60} />

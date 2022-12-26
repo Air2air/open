@@ -6,7 +6,7 @@ const ContactPage = lazy(() => import("pages/Contact/contact"));
 const HomePage = lazy(() => import("pages/Home/pageHome"));
 const MarketsPage = lazy(() => import("pages/Markets/markets"));
 const PracticeAreasPage = lazy(
-  () => import("pages/PracticeAreas/practiceAreas")
+  () => import("pages/PracticeAreas/pagePracticeAreas")
 );
 const VisionPage = lazy(() => import("pages/Vision/pageVision"));
 

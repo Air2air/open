@@ -17,6 +17,7 @@ const VisionPage = () => {
         overlayColor={COLOR_BASE}
         typing={true}
       />
+      <Spacer height={60} />
       <ChartVision backgroundColor={COLOR_BASE} />
       <RowButton buttonTo="/about" buttonText="About Elevens" />
       <Spacer height={60} />

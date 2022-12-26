@@ -25,6 +25,7 @@ const ChartWrapper = styled.div`
   justify-content: space-around;
   overflow: hidden;
   height: 100%;
+  width:100%;
   overflow: hidden;
   /* background: blue; */
 `;

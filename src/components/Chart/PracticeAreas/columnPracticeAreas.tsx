@@ -5,8 +5,11 @@ import {
   CHART_COLUMN_TRANSITION,
   CHART_LABEL_DESKTOP,
   CHART_LABEL_MOBILE,
+  CHART_SECTION_HEIGHT_DESKTOP,
+  CHART_SECTION_HEIGHT_MOBILE,
   COLOR_WHITE,
 } from "constants/index";
+///import { dataPracticeAreas } from "./../../../pages/PracticeAreas/dataPracticeAreas";
 
 const ColumnPracticeAreas = (props) => {
   const [seriesRandomHeight, setSeriesRandomHeight] = useState(50);
@@ -30,20 +33,38 @@ const ColumnPracticeAreas = (props) => {
   }, []);
 
   return (
-    <ColumnSeries
-      key={props.id}
-      style={{
-        height: seriesRandomHeight + "%",
-        backgroundColor: props.backgroundColor,
-      }}
-    >
-      <Label>{props.label}</Label>
-    </ColumnSeries>
+    <ColumnWrapper>
+      <ColumnSeries
+        key={props.id}
+        style={{
+          height: seriesRandomHeight + "%",
+          backgroundColor: props.backgroundColor,
+        }}
+      >
+        <Label>{props.label}</Label>
+      </ColumnSeries>
+    </ColumnWrapper>
   );
 };
 
 const barMinHeightDesktop = 30;
 const barMinHeightMobile = 10;
+
+//const dataPracticeAreasLength = dataPracticeAreas.length;
+
+const ColumnWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  @media (min-width: ${BREAKPOINT}px) {
+    height: ${CHART_SECTION_HEIGHT_DESKTOP}px;
+  }
+  @media (max-width: ${BREAKPOINT}px) {
+    height: ${CHART_SECTION_HEIGHT_MOBILE}px;
+  }
+  /* background: gold; */
+`;
 
 const ColumnSeries = styled.div`
   display: flex;
@@ -59,7 +80,7 @@ const ColumnSeries = styled.div`
     min-height: ${barMinHeightMobile}px;
     align-items: flex-end;
   }
-  background: gold;
+  /* background: gold; */
 `;
 
 const Label = styled.div`

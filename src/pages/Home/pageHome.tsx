@@ -15,6 +15,7 @@ const HomePage = () => {
         overlayColor={COLOR_BASE}
         typing={true}
       />
+      <Spacer height={60} />
       <ChartHome backgroundColor={1} />
       <RowButton
         buttonTo="/practice_areas"
