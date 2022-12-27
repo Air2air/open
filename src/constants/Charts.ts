@@ -12,8 +12,8 @@ export const CHART_SECTION_HEIGHT_MOBILE = CHART_HEIGHT_MOBILE * 0.8;
 
 // Transitions
 export const CHART_COLUMN_TRANSITION = 400;
-export const CHART_COLUMN_STAGGER = 200;
-export const CHART_TEXT_TRANSITION = 600;
+export const CHART_COLUMN_STAGGER = 100;
+export const CHART_TEXT_TRANSITION = 400;
 
 // Bar min height
 export const CHART_BAR_HEIGHT_MIN_DESKTOP = 30;
