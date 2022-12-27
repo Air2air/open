@@ -17,7 +17,6 @@ import HeadingCaseStudies from "components/Heading/headingCaseStudies";
 import HeadingContact from "components/Heading/headingContact";
 import HeadingHistory from "components/Heading/headingHistory";
 import HeadingUnderConstruction from "components/Heading/headingUnderConstruction";
-import Spacer from "components/Spacer/spacer";
 
 export const BannerVideo = (props) => {
   const headingText = () => {

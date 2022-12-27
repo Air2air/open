@@ -3,7 +3,6 @@ import { COLOR_BASE } from "constants/index";
 import Callout from "components/Callout/callOut";
 import { dataCaseStudies } from "./dataCaseStudies";
 import ChartCaseStudies from "components/Chart/CaseStudies/chartCaseStudies";
-import Spacer from "components/Spacer/spacer";
 
 const CaseStudiesPage = () => {
   return (

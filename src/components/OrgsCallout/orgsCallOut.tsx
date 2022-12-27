@@ -36,7 +36,7 @@ const orgImageHeight = "100px";
 const OrgsWrapper = styled.div`
   position: relative;
   top: 0;
-  margin: 0 auto;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,18 +46,26 @@ const OrgsWrapper = styled.div`
   height: auto;
   min-height: ${CALLOUT_HEIGHT}px;
   background: ${COLOR_BASE_3};
+  @media (min-width: ${BREAKPOINT}px) {
+    margin-top: 60px;
+  }
+  @media (max-width: ${BREAKPOINT}px) {
+    margin-top: 40px;
+  }
 `;
 
 const OrgInnerWrapper = styled.div`
   margin: 0 auto;
-  padding: 50px 0;
+
   z-index: +1;
   height: auto;
   @media (min-width: ${BREAKPOINT}px) {
     width: ${CONTENT_WIDTH_DESKTOP};
+    padding: 50px 0;
   }
   @media (max-width: ${BREAKPOINT}px) {
     width: ${CONTENT_WIDTH_MOBILE};
+    padding: 20px 0;
   }
 `;
 
@@ -68,12 +76,12 @@ const OrgMapImageRow = styled.div`
   opacity: 0.5;
 
   @media (min-width: ${BREAKPOINT}px) {
-    grid-template-columns: auto auto auto ;
+    grid-template-columns: auto auto auto;
   }
   @media (max-width: ${BREAKPOINT}px) {
     grid-template-columns: auto auto;
   }
-    /* background: red; */
+  /* background: red; */
 `;
 
 const OrgMapImageWrapper = styled.div`
