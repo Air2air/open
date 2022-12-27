@@ -8,7 +8,7 @@ import styled from "styled-components";
 
 export const ColumnLabel = (props: {
   index: any;
-  visible?: boolean;
+  hidden?: boolean;
   rotate?: boolean;
   label: string;
 }) => {
@@ -17,7 +17,7 @@ export const ColumnLabel = (props: {
       <LabelDiv
         style={{
           transform: props.rotate ? `rotate(90deg)` : "",
-          display: props.visible ? "block" : "none",
+          display: !props.hidden ? "block" : "none",
         }}
       >
         {props.label}

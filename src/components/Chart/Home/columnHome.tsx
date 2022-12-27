@@ -13,27 +13,26 @@ import { ColumnLabel } from "../ChartComponents/columnLabel";
 export const ColumnHome = (props: any) => {
   const [columnIsEntering, setColumnsAreEntering] = useState(0);
   const [columnWidth, setColumnWidth] = useState("100%");
-  const [labelVisible, setLabelVisible] = useState(false);
+  const [labelHidden, setLabelHidden] = useState(true);
   const [count, setCount] = useState(1);
 
   useEffect(() => {
     setColumnWidth("100%");
     setColumnsAreEntering(1);
 
-
     const showLabels = setTimeout(() => {
-      setLabelVisible(true);
+      setLabelHidden(true);
     }, 2000);
 
     const columnShrink = setTimeout(() => {
       setColumnWidth("50%");
-      setLabelVisible(false);
+      setLabelHidden(false);
     }, 7000);
 
     const columnExit = setTimeout(() => {
       setColumnsAreEntering(0);
 
-      setLabelVisible(false);
+      setLabelHidden(true);
     }, props.loopEndTime - 2000);
 
     const loopIsOver = setTimeout(() => {
@@ -74,7 +73,7 @@ export const ColumnHome = (props: any) => {
               }}
             />
             <ColumnLabel
-              visible={labelVisible}
+              hidden={labelHidden}
               label={props.title}
               index={index}
             />
