@@ -1,30 +1,17 @@
 import { ColumnMarkets } from "./columnMarkets";
-import styled from "styled-components";
 import Container from "components/Container/container";
-import { ChartSection } from "../chartSection";
+import { ChartSection, ChartWrapper } from "../ChartComponents/chartScaffold";
 
 export const LoopEndTime = 14000;
 
-const ChartMarkets = (props: { backgroundColor: any }) => {
+const ChartMarkets = (props) => {
   return (
     <Container backgroundColor={props.backgroundColor}>
       <ChartSection>
-        <ChartWrapper>
-          <ColumnMarkets />
-        </ChartWrapper>
+        <ColumnMarkets data={props.data} />
       </ChartSection>
     </Container>
   );
 };
-
-const ChartWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  overflow: hidden;
-  height: 100%;
-  overflow: hidden;
-  /* background: blue; */
-`;
 
 export default ChartMarkets;

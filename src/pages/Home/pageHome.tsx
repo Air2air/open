@@ -4,8 +4,11 @@ import Spacer from "components/Spacer/spacer";
 import RowButton from "components/Button/rowButton";
 import BannerVideo from "components/BannerVideo/videoBanner";
 import { COLOR_BASE } from "constants/index";
+import { dataHome } from "./dataHome";
 
 const HomePage = () => {
+  const loopEndTime = 14000;
+
   return (
     <>
       <BannerVideo
@@ -14,9 +17,15 @@ const HomePage = () => {
         overlayOpacity={0.1}
         overlayColor={COLOR_BASE}
         typing={true}
+        loopEndTime={loopEndTime}
       />
       <Spacer height={60} />
-      <ChartHome backgroundColor={1} />
+      <ChartHome
+        columnCount={7}
+        data={dataHome}
+        loopEndTime={loopEndTime}
+        backgroundColor={1}
+      />
       <RowButton
         buttonTo="/practice_areas"
         buttonText="What we do"

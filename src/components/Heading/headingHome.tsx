@@ -1,12 +1,11 @@
 import { TitleHeading } from "components/Title/titleHeading";
 import { SubHeadHeading } from "components/SubHead/subHeadHeading";
 import { useEffect, useState } from "react";
-import { LoopEndTime } from "../Chart/Home/chartHome";
 import Container from "components/Container/container";
 import { TextSection } from "./headingTextSection";
 import { Wrapper } from "./headingWrapper";
 
-const HeadingHome = (props: { backgroundColor?: any }) => {
+const HeadingHome = (props: { loopEndTime: number; backgroundColor: any }) => {
   const [textFasterOpacity, setTextFasterOpacity] = useState(0);
   const [textTimelineOpacity, setTextTimelineOpacity] = useState(0);
   const [textRiskOpacity, setTextRiskOpacity] = useState(0);
@@ -39,11 +38,11 @@ const HeadingHome = (props: { backgroundColor?: any }) => {
 
     const textRiskEnd = setTimeout(() => {
       setTextRiskOpacity(0);
-    }, LoopEndTime - 500);
+    }, props.loopEndTime - 500);
 
     const loopIsOver = setTimeout(() => {
       setCount(count + 1);
-    }, LoopEndTime);
+    }, props.loopEndTime);
 
     return () => {
       clearTimeout(textFasterStart);

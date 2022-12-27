@@ -10,7 +10,6 @@ const Container = ({ children }: any, props: any) => {
   return (
     <>
       <OuterWrapper style={{ background: assignBackgroundColor(3) }}>
-        {/* <OuterWrapper style={{ background: 'red' }}> */}
         <ContainerDiv>{children}</ContainerDiv>
       </OuterWrapper>
     </>

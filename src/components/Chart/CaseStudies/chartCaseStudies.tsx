@@ -1,18 +1,15 @@
-import  ColumnCaseStudies  from "./columnCaseStudies";
+import ColumnCaseStudies from "./columnCaseStudies";
 import Container from "components/Container/container";
-import { ChartSection } from "../chartSection";
+import { ChartSection } from "../ChartComponents/chartScaffold";
 
-export const LoopEndTime = 12000;
-
-const ChartCaseStudies = (props: { backgroundColor: any; }) => {
+const ChartCaseStudies = (props) => {
   return (
     <Container backgroundColor={props.backgroundColor}>
       <ChartSection>
-        <ColumnCaseStudies />
+        <ColumnCaseStudies {...props} />
       </ChartSection>
     </Container>
   );
 };
-
 
 export default ChartCaseStudies;

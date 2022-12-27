@@ -19,8 +19,9 @@ const PracticeAreasPage = () => {
       />
       <Spacer height={60} />
       <ChartPracticeAreas
+        columnCount={6}
         data={dataPracticeAreas}
-        backgroundColor={COLOR_BASE}
+        backgroundColor={3}
       />
       <RowButton buttonTo="/casestudies" buttonText="Case Studies" />
       <Spacer height={40} />

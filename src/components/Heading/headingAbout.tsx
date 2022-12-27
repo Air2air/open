@@ -16,7 +16,7 @@ const HeadingAbout = (props: { backgroundColor?: any }) => {
         </Wrapper>
       </Container>
     </>
-  );
+  );;
 };
 
 

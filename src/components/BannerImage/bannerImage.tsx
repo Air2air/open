@@ -18,7 +18,7 @@ import ImageCallout from "components/ImageCallout/imageCallout";
 export const BannerImage = (props) => {
   const headingText = () => {
     if (props.text === "home") {
-      return <HeadingHome />;
+      return <HeadingHome {...props} />;
     } else if (props.text === "about") {
       return <HeadingAbout />;
     } else if (props.text === "casestudies") {
@@ -34,7 +34,7 @@ export const BannerImage = (props) => {
     } else if (props.text === "vision") {
       return <HeadingVision />;
     } else {
-      return <HeadingHome />;
+      return <HeadingHome {...props}/>;
     }
   };
 

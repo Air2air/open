@@ -1,15 +1,18 @@
-import { useState, useEffect } from "react";
-import styled from "styled-components";
+import { useState, useEffect, Key } from "react";
+
 import {
-  BREAKPOINT,
   CHART_COLUMN_TRANSITION,
+  BREAKPOINT,
+  CHART_BAR_HEIGHT_MIN_DESKTOP,
+  CHART_BAR_HEIGHT_MIN_MOBILE,
+  CHART_COLUMN_STAGGER,
   CHART_LABEL_DESKTOP,
   CHART_LABEL_MOBILE,
-  CHART_SECTION_HEIGHT_DESKTOP,
-  CHART_SECTION_HEIGHT_MOBILE,
   COLOR_WHITE,
 } from "constants/index";
-///import { dataPracticeAreas } from "./../../../pages/PracticeAreas/dataPracticeAreas";
+import styled from "styled-components";
+import { ColumnOuter, ColumnSeries } from "../ChartComponents/chartScaffold";
+import { ColumnLabel } from "../ChartComponents/columnLabel";
 
 const ColumnPracticeAreas = (props) => {
   const [seriesRandomHeight, setSeriesRandomHeight] = useState(50);
@@ -33,75 +36,16 @@ const ColumnPracticeAreas = (props) => {
   }, []);
 
   return (
-    <ColumnWrapper>
+    <ColumnOuter>
       <ColumnSeries
-        key={props.id}
         style={{
           height: seriesRandomHeight + "%",
           backgroundColor: props.backgroundColor,
         }}
-      >
-        <Label>{props.label}</Label>
-      </ColumnSeries>
-    </ColumnWrapper>
+      />
+      <ColumnLabel label={props.title} index={props.id} />
+    </ColumnOuter>
   );
 };
-
-const barMinHeightDesktop = 30;
-const barMinHeightMobile = 10;
-
-//const dataPracticeAreasLength = dataPracticeAreas.length;
-
-const ColumnWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  overflow: hidden;
-  @media (min-width: ${BREAKPOINT}px) {
-    height: ${CHART_SECTION_HEIGHT_DESKTOP}px;
-  }
-  @media (max-width: ${BREAKPOINT}px) {
-    height: ${CHART_SECTION_HEIGHT_MOBILE}px;
-  }
-  /* background: gold; */
-`;
-
-const ColumnSeries = styled.div`
-  display: flex;
-  /* justify-content: center; */
-  align-items: flex-end;
-  transition: all ${CHART_COLUMN_TRANSITION}ms;
-  /* width: 100%; */
-  @media (min-width: ${BREAKPOINT}px) {
-    min-height: ${barMinHeightDesktop}px;
-    align-items: flex-start;
-  }
-  @media (max-width: ${BREAKPOINT}px) {
-    min-height: ${barMinHeightMobile}px;
-    align-items: flex-end;
-  }
-  /* background: gold; */
-`;
-
-const Label = styled.div`
-  color: ${COLOR_WHITE};
-  min-width: 100px;
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
-  transition: all ${CHART_COLUMN_TRANSITION}ms;
-  @media (min-width: ${BREAKPOINT}px) {
-    font-size: ${CHART_LABEL_DESKTOP};
-    text-align: center;
-    padding-top: 10px;
-  }
-  @media (max-width: ${BREAKPOINT}px) {
-    transform: translate(0, -260%) rotate(90deg);
-    transform-origin: 50%;
-    /* writing-mode: vertical-rl; */
-    font-size: ${CHART_LABEL_MOBILE};
-  }
-  /* background: green; */
-`;
 
 export default ColumnPracticeAreas;

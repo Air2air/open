@@ -1,19 +1,15 @@
-import { HomeColumns } from "./columnHome";
+import { ColumnHome } from "./columnHome";
 import Container from "components/Container/container";
-import { ChartSection } from "../chartSection";
+import { ChartSection } from "../ChartComponents/chartScaffold";
 
-export const LoopEndTime = 14000;
-
-const ChartHome = (props: { backgroundColor: any }) => {
+const ChartHome = (props) => {
   return (
     <Container backgroundColor={props.backgroundColor}>
       <ChartSection>
-        <HomeColumns />
+        <ColumnHome data={props.data} loopEndTime={props.loopEndTime} />
       </ChartSection>
     </Container>
   );
 };
-
-
 
 export default ChartHome;

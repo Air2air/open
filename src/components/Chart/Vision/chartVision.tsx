@@ -1,18 +1,17 @@
 import { ColumnVision } from "./columnVision";
 import Container from "components/Container/container";
-import { ChartSection } from "../chartSection";
+import { ChartSection } from "../ChartComponents/chartScaffold";
 
-export const LoopEndTime = 12000;
+export const LoopEndTime = 14000;
 
-const ChartVision = (props: { backgroundColor: any; }) => {
+const ChartVision = (props) => {
   return (
     <Container backgroundColor={props.backgroundColor}>
       <ChartSection>
-        <ColumnVision />
+        <ColumnVision data={props.data} />
       </ChartSection>
     </Container>
   );
 };
-
 
 export default ChartVision;

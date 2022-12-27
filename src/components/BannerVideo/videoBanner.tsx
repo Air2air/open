@@ -21,7 +21,7 @@ import HeadingUnderConstruction from "components/Heading/headingUnderConstructio
 export const BannerVideo = (props) => {
   const headingText = () => {
     if (props.text === "home") {
-      return <HeadingHome />;
+      return <HeadingHome {...props} />;
     } else if (props.text === "about") {
       return <HeadingAbout />;
     } else if (props.text === "casestudies") {
@@ -39,7 +39,7 @@ export const BannerVideo = (props) => {
     } else if (props.text === "vision") {
       return <HeadingVision />;
     } else {
-      return <HeadingHome />;
+      return <HeadingHome {...props} />;
     }
   };
 
