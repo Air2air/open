@@ -6,10 +6,22 @@ import {
 } from "constants/index";
 import styled from "styled-components";
 
-export const ColumnLabel = (props: { index: any; label: string }) => {
+export const ColumnLabel = (props: {
+  index: any;
+  visible?: boolean;
+  rotate?: boolean;
+  label: string;
+}) => {
   return (
     <LabelWrapper key={props.index}>
-      <LabelDiv>{props.label}</LabelDiv>
+      <LabelDiv
+        style={{
+          transform: props.rotate ? `rotate(90deg)` : "",
+          display: props.visible ? "block" : "none",
+        }}
+      >
+        {props.label}
+      </LabelDiv>
     </LabelWrapper>
   );
 };
@@ -36,14 +48,14 @@ export const LabelDiv = styled.div`
   color: ${COLOR_WHITE};
   @media (min-width: ${BREAKPOINT}px) {
     top: 0;
-    width:100%;
+    width: 100%;
     font-size: ${CHART_LABEL_DESKTOP};
     text-align: center;
   }
   @media (max-width: ${BREAKPOINT}px) {
     left: 0%;
     top: 0;
-    transform-origin:25% 18%;
+    transform-origin: 25% 18%;
     transform: rotate(90deg);
     font-size: ${CHART_LABEL_MOBILE};
     min-width: 130px;

@@ -1,6 +1,6 @@
 import { ColumnMarkets } from "./columnMarkets";
 import Container from "components/Container/container";
-import { ChartSection, ChartWrapper } from "../ChartComponents/chartScaffold";
+import { ChartSection } from "../ChartComponents/chartScaffold";
 
 export const LoopEndTime = 14000;
 

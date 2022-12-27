@@ -1,16 +1,4 @@
-import { useState, useEffect, Key } from "react";
-
-import {
-  CHART_COLUMN_TRANSITION,
-  BREAKPOINT,
-  CHART_BAR_HEIGHT_MIN_DESKTOP,
-  CHART_BAR_HEIGHT_MIN_MOBILE,
-  CHART_COLUMN_STAGGER,
-  CHART_LABEL_DESKTOP,
-  CHART_LABEL_MOBILE,
-  COLOR_WHITE,
-} from "constants/index";
-import styled from "styled-components";
+import { useState, useEffect } from "react";
 import { ColumnOuter, ColumnSeries } from "../ChartComponents/chartScaffold";
 import { ColumnLabel } from "../ChartComponents/columnLabel";
 

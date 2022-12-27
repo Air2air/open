@@ -1,7 +1,8 @@
-import { useState, useEffect, Key } from "react";
+import { useState, useEffect } from "react";
 import { LoopEndTime } from "./chartVision";
 import {
   animationEnter,
+  animationExit,
   ChartWrapper,
   ColumnOuter,
   ColumnSeries,
@@ -49,14 +50,14 @@ export const ColumnVision = (props) => {
               style={{
                 height: concatPercent(props.height),
                 backgroundColor: props.backgroundColor,
-                animation: animationEnter(index),
-                opacity: 0,
+                animation: columnIsEntering
+                  ? animationEnter(index)
+                  : animationExit(index),
+                opacity: columnIsEntering ? 0 : 1,
               }}
             />
-            <ColumnLabel
-              label={props.title}
-              index={index}
-            />
+
+            <ColumnLabel label={props.title} index={index} />
           </ColumnOuter>
         )
       )}
