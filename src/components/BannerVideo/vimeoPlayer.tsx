@@ -36,7 +36,7 @@ const VideoContainer = styled.div`
   min-width: 100vw;
   object-fit: cover;
   object-position: center;
-  z-index: -1;
+  /* z-index: 1; */
   @media (min-width: ${BREAKPOINT}px) {
     height: ${BANNER_HEIGHT_DESKTOP}px;
   }

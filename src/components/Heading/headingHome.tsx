@@ -11,13 +11,9 @@ const HeadingHome = (props: { loopEndTime: number; backgroundColor: any }) => {
   const [count, setCount] = useState(1);
 
   useEffect(() => {
-    setTextFasterOpacity(0);
+    setTextFasterOpacity(1);
     setTextTimelineOpacity(0);
     setTextRiskOpacity(0);
-
-    const textFasterStart = setTimeout(() => {
-      setTextFasterOpacity(1);
-    }, 1000);
 
     const textFasterEnd = setTimeout(() => {
       setTextFasterOpacity(0);
@@ -44,7 +40,6 @@ const HeadingHome = (props: { loopEndTime: number; backgroundColor: any }) => {
     }, props.loopEndTime);
 
     return () => {
-      clearTimeout(textFasterStart);
       clearTimeout(textFasterEnd);
       clearTimeout(textTimelineStart);
       clearTimeout(textTimelineEnd);

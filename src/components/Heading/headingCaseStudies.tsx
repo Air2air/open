@@ -1,6 +1,3 @@
-
-
-
 import { TitleHeading } from "components/Title/titleHeading";
 import { SubHeadHeading } from "components/SubHead/subHeadHeading";
 import { useEffect, useState } from "react";
@@ -47,16 +44,16 @@ const HeadingCaseStudies = (props: { backgroundColor?: any }) => {
   return (
     <>
       <Container backgroundColor={props.backgroundColor}>
-      <Wrapper>
-        <TextSection style={{ opacity: advisoryOpacity }}>
-          <TitleHeading title="Case Studies" />
-          <SubHeadHeading text="Elevens supports Healthtech ventures from early private stages through initial public offering (IPO)..." />
-        </TextSection>
-        <TextSection style={{ opacity: defineOpacity }}>
-          <TitleHeading title="Case Studies" />
-          <SubHeadHeading text="...and assists public companies to identify innovative private sector partners." />
-        </TextSection>
-      </Wrapper>
+        <Wrapper>
+          <TextSection style={{ opacity: advisoryOpacity }}>
+            <TitleHeading title="Case Studies" />
+            <SubHeadHeading text="Elevens supports Healthtech ventures from early private stages through initial public offering (IPO)..." />
+          </TextSection>
+          <TextSection style={{ opacity: defineOpacity }}>
+            <TitleHeading title="Case Studies" />
+            <SubHeadHeading text="...and assists public companies to identify innovative private sector partners." />
+          </TextSection>
+        </Wrapper>
       </Container>
     </>
   );

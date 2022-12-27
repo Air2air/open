@@ -12,7 +12,7 @@ const CaseStudiesPage = () => {
         pageVideo={776446335}
         overlayOpacity={0}
         overlayColor={COLOR_BASE}
-        typing={true}
+        typing
       />
       {dataCaseStudies.map((props, index) => (
         <div key={index}>

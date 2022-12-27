@@ -45,15 +45,20 @@ export const BannerVideo = (props) => {
 
   return (
     <>
-      <BannerVideoWrapper className="animate__animated animate__fadeIn animate__delay-0s animate__slower">
-        <VimeoPlayer videoID={props.pageVideo} />
-        <Overlay
-          style={{
-            opacity: props.overlayOpacity,
-            background: props.overlayColor,
-          }}
-        />
-        <TextPositioner>{headingText()}</TextPositioner>
+      <BannerVideoWrapper>
+        {/* <BannerBackground /> */}
+        <BannerContent>
+          <VimeoPlayer videoID={props.pageVideo} />
+          <Overlay
+            style={{
+              opacity: props.overlayOpacity,
+              background: props.overlayColor,
+            }}
+          />
+          <TextPositioner >
+            {headingText()}
+          </TextPositioner>
+        </BannerContent>
       </BannerVideoWrapper>
     </>
   );
@@ -76,9 +81,34 @@ const BannerVideoWrapper = styled.div`
   }
 `;
 
+// const BannerBackground = styled.div`
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   @media (min-width: ${BREAKPOINT}px) {
+//     height: ${BANNER_HEIGHT_DESKTOP}px;
+//   }
+//   @media (max-width: ${BREAKPOINT}px) {
+//     height: ${BANNER_HEIGHT_MOBILE}px;
+//   }
+// `;
+
+const BannerContent = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  @media (min-width: ${BREAKPOINT}px) {
+    height: ${BANNER_HEIGHT_DESKTOP}px;
+  }
+  @media (max-width: ${BREAKPOINT}px) {
+    height: ${BANNER_HEIGHT_MOBILE}px;
+  }
+`;
+
 const TextPositioner = styled.div`
   position: relative;
-
   left: 0;
   width: 100%;
   @media (min-width: ${BREAKPOINT}px) {

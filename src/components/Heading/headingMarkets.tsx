@@ -51,11 +51,11 @@ const HeadingMarkets = (props: { backgroundColor?: any }) => {
         <Wrapper>
           <TextSection style={{ opacity: textFasterOpacity }}>
             <TitleHeading title="Healthcare AI Markets" />
-            <SubHeadHeading text="Elevens supports Healthtech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners" />
+            <SubHeadHeading text="Elevens supports Healthtech ventures from early private stages through initial public offering (IPO)..." />
           </TextSection>
           <TextSection style={{ opacity: textTimelineOpacity }}>
-            <TitleHeading title="We cut your timeline to liquidity" />
-            <SubHeadHeading text="With world class technical and business experts." />
+            <TitleHeading title="Healthcare AI Markets" />
+            <SubHeadHeading text="...and assists public companies to identify innovative private sector partners" />
           </TextSection>
         </Wrapper>
       </Container>

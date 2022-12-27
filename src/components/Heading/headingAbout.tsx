@@ -10,7 +10,7 @@ const HeadingAbout = (props: { backgroundColor?: any }) => {
         <Wrapper>
           <TextSection>
             <TitleHeading title="About Elevens" />
-            <SubHeadHeading text="Elevens supports Healthtech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners" />
+            <SubHeadHeading text="Elevens supports Healthtech ventures from early private stages through initial public offering (IPO)." />
           </TextSection>
         </Wrapper>
       </Container>

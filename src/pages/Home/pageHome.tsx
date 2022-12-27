@@ -15,7 +15,6 @@ const HomePage = () => {
         pageVideo={776443340}
         overlayOpacity={0.1}
         overlayColor={COLOR_BASE}
-        typing={true}
         loopEndTime={loopEndTime}
       />
 

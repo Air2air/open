@@ -12,7 +12,7 @@ const PracticeAreasPage = () => {
       <BannerVideo
         text="practiceareas"
         pageVideo={776449715}
-        overlayOpacity={0.1}
+        overlayOpacity={0.7}
         overlayColor={COLOR_BASE}
         typing={true}
       />
