@@ -54,8 +54,7 @@ export const BannerVideo = (props) => {
             background: props.overlayColor,
           }}
         />
-        <Spacer height={120} />
-        {headingText()}
+        <TextPositioner>{headingText()}</TextPositioner>
       </BannerVideoWrapper>
     </>
   );
@@ -71,13 +70,25 @@ const BannerVideoWrapper = styled.div`
   overflow: hidden;
   background: ${COLOR_BLACK};
   @media (min-width: ${BREAKPOINT}px) {
-    /* padding-top: ${BANNER_PADDING_TOP_DESKTOP}px; */
     height: ${BANNER_HEIGHT_DESKTOP}px;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    /* padding-top: ${BANNER_PADDING_TOP_MOBILE}px; */
     height: ${BANNER_HEIGHT_MOBILE}px;
   }
+`;
+
+const TextPositioner = styled.div`
+  position: relative;
+
+  left: 0;
+  width: 100%;
+  @media (min-width: ${BREAKPOINT}px) {
+    top: ${BANNER_PADDING_TOP_DESKTOP}px;
+  }
+  @media (max-width: ${BREAKPOINT}px) {
+    top: ${BANNER_PADDING_TOP_MOBILE}px;
+  }
+  /* background: red; */
 `;
 
 const Overlay = styled.div`

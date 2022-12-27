@@ -19,7 +19,7 @@ const HomePage = () => {
         typing={true}
         loopEndTime={loopEndTime}
       />
-      <Spacer height={60} />
+
       <ChartHome
         columnCount={7}
         data={dataHome}

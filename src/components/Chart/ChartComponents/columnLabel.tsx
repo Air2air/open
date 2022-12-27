@@ -58,7 +58,7 @@ export const LabelDiv = styled.div`
   @media (max-width: ${BREAKPOINT}px) {
     left: 0%;
     bottom: 90%;
-    text-align:right;
+    text-align: right;
     transform-origin: 20% 18%;
     transform: rotate(90deg);
     font-size: ${CHART_LABEL_MOBILE};

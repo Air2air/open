@@ -15,7 +15,6 @@ const CaseStudiesPage = () => {
         overlayColor={COLOR_BASE}
         typing={true}
       />
-      <Spacer height={60} />
       {dataCaseStudies.map((props, index) => (
         <div key={index}>
           <ChartCaseStudies data={props.practiceArea} backgroundColor={2} />

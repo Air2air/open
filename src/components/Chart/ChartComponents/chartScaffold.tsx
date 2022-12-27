@@ -12,16 +12,14 @@ import {
 import styled from "styled-components";
 
 export const ChartSection = styled.div`
-  position: relative;
-  /* width: 100%; */
-  /* overflow:hidden; */
   @media (min-width: ${BREAKPOINT}px) {
+    padding-top: 40px;
     height: ${CHART_HEIGHT_DESKTOP}px;
   }
   @media (max-width: ${BREAKPOINT}px) {
+    padding-top: 20px;
     height: ${CHART_HEIGHT_MOBILE}px;
   }
-  /* background: blue; */
 `;
 
 export const ChartWrapper = styled.div`
