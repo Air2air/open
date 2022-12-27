@@ -2,8 +2,7 @@ import { TitleHeading } from "components/Title/titleHeading";
 import { SubHeadHeading } from "components/SubHead/subHeadHeading";
 import { useEffect, useState } from "react";
 import Container from "components/Container/container";
-import { TextSection } from "./headingTextSection";
-import { Wrapper } from "./headingWrapper";
+import { Wrapper, TextSection } from "./Components/headingComponents";
 
 const HeadingHome = (props: { loopEndTime: number; backgroundColor: any }) => {
   const [textFasterOpacity, setTextFasterOpacity] = useState(0);

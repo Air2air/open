@@ -13,7 +13,7 @@ import styled from "styled-components";
 
 export const ChartSection = styled.div`
   position: relative;
-  width: 100%;
+  /* width: 100%; */
   /* overflow:hidden; */
   @media (min-width: ${BREAKPOINT}px) {
     height: ${CHART_HEIGHT_DESKTOP}px;
@@ -21,7 +21,7 @@ export const ChartSection = styled.div`
   @media (max-width: ${BREAKPOINT}px) {
     height: ${CHART_HEIGHT_MOBILE}px;
   }
-  /* background: red; */
+  /* background: blue; */
 `;
 
 export const ChartWrapper = styled.div`
@@ -33,7 +33,6 @@ export const ChartWrapper = styled.div`
   transform-origin: 0% 0%;
   transition: all ${CHART_COLUMN_TRANSITION}ms;
   overflow: hidden;
-  width: 100%;
   @media (min-width: ${BREAKPOINT}px) {
     grid-gap: ${COLUMN_GRID_GAP_DESKTOP}px;
     height: ${CHART_HEIGHT_DESKTOP}px;
@@ -42,37 +41,46 @@ export const ChartWrapper = styled.div`
     grid-gap: ${COLUMN_GRID_GAP_MOBILE}px;
     height: ${CHART_HEIGHT_MOBILE}px;
   }
-  /* background: gold; */
+  /* background: red; */
 `;
 
 export const ColumnOuter = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-end;
   height: 100%;
-  width: 100%;
+  @media (min-width: ${BREAKPOINT}px) {
+    width: 100%;
+    height: 100%;
+  }
+  @media (max-width: ${BREAKPOINT}px) {
+    width: 100%;
+    height: 100%;
+  }
   /* background: gold; */
 `;
 
 export const ColumnSeries = styled.div`
-  position: absolute;
-  left: 0;
-  display: flex;
+  /* position: absolute;
+  left: 0; */
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 100%;
+  justify-content: center; */
   /* transition: all ${CHART_COLUMN_TRANSITION}ms; */
   @media (min-width: ${BREAKPOINT}px) {
     min-height: ${CHART_BAR_HEIGHT_MIN_DESKTOP}px;
     align-items: flex-start;
+    width: 100%;
   }
   @media (max-width: ${BREAKPOINT}px) {
     min-height: ${CHART_BAR_HEIGHT_MIN_MOBILE}px;
     align-items: flex-end;
+    width: 100%;
   }
+  background: gold;
 `;
 
 export const animationEnter = (index: number) =>

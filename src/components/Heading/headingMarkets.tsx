@@ -3,8 +3,7 @@ import { SubHeadHeading } from "components/SubHead/subHeadHeading";
 import { useEffect, useState } from "react";
 import { LoopEndTime } from "../Chart/Markets/chartMarkets";
 import Container from "components/Container/container";
-import { TextSection } from "./headingTextSection";
-import { Wrapper } from "./headingWrapper";
+import { Wrapper, TextSection } from "./Components/headingComponents";
 
 const HeadingMarkets = (props: { backgroundColor?: any }) => {
   const [textFasterOpacity, setTextFasterOpacity] = useState(0);

@@ -3,8 +3,7 @@ import { SubHeadHeading } from "components/SubHead/subHeadHeading";
 import { useEffect, useState } from "react";
 import { LoopEndTime } from "../Chart/Vision/chartVision";
 import Container from "components/Container/container";
-import { TextSection } from "./headingTextSection";
-import { Wrapper } from "./headingWrapper";
+import { Wrapper, TextSection } from "./Components/headingComponents";
 
 const HeadingVision = (props: { backgroundColor?: any }) => {
   const [advisoryOpacity, setAdvisoryOpacity] = useState(0);

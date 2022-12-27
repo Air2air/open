@@ -1,8 +1,7 @@
 import { TitleHeading } from "components/Title/titleHeading";
 import { SubHeadHeading } from "components/SubHead/subHeadHeading";
 import Container from "components/Container/container";
-import { TextSection } from "./headingTextSection";
-import { Wrapper } from "./headingWrapper";
+import { Wrapper, TextSection } from "./Components/headingComponents";
 
 const HeadingAbout = (props: { backgroundColor?: any }) => {
   return (
@@ -16,8 +15,7 @@ const HeadingAbout = (props: { backgroundColor?: any }) => {
         </Wrapper>
       </Container>
     </>
-  );;
+  );
 };
-
 
 export default HeadingAbout;
