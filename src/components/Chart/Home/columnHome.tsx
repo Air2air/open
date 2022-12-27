@@ -19,14 +19,15 @@ export const ColumnHome = (props: any) => {
   useEffect(() => {
     setColumnWidth("100%");
     setColumnsAreEntering(1);
+    setLabelHidden(true);
 
     const showLabels = setTimeout(() => {
-      setLabelHidden(true);
+      setLabelHidden(false);
     }, 2000);
 
     const columnShrink = setTimeout(() => {
       setColumnWidth("50%");
-      setLabelHidden(false);
+      setLabelHidden(true);
     }, 7000);
 
     const columnExit = setTimeout(() => {
