@@ -16,7 +16,7 @@ const VisionPage = () => {
         typing={true}
       />
       <ChartVision columnCount={7} data={dataVision} backgroundColor={2} />
-      <RowButton buttonTo="/about" buttonText="About Elevens" />
+      <RowButton buttonTo="/about" buttonText="About" />
       {/* <TimeLine data={dataVision} backgroundColor={3} /> */}
     </>
   );

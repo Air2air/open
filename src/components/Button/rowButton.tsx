@@ -6,6 +6,7 @@ import {
   BUTTON_COLOR_HOVER_GRAY,
   BUTTON_HEIGHT,
   BUTTON_TEXT_COLOR,
+  BUTTON_ROW_HEIGHT,
 } from "constants/index";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
@@ -43,12 +44,16 @@ const buttonWidthDesktop = "200px";
 const buttonWidthMobile = "100%";
 
 const ButtonPositioner = styled.div`
+  display: flex;
+
+  align-items: center;
   margin: 0 auto;
-  height: ${BUTTON_HEIGHT}px;
+  height: ${BUTTON_ROW_HEIGHT}px;
   text-align: right;
   width: 100%;
   @media (min-width: ${BREAKPOINT}px) {
     padding: 5px 0;
+    justify-content: flex-end;
   }
   @media (max-width: ${BREAKPOINT}px) {
     padding: 5px 0;
