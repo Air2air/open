@@ -7,12 +7,11 @@ import ChartCaseStudies from "components/Chart/CaseStudies/chartCaseStudies";
 const dataSource = "data/dataCaseStudies.json";
 
 const CaseStudiesPage = () => {
-
   const fetchData = async () => {
     const res = await fetch(dataSource, {
       headers: {
         "Content-Type": "application/json",
-        "Accept": "application/json",
+        Accept: "application/json",
       },
     });
     return res.json();
@@ -49,11 +48,7 @@ const CaseStudiesPage = () => {
           />
           {data.map((props, index) => (
             <div key={index}>
-              <ChartCaseStudies
-                loopEndTime={loopEndTime}
-                data={props.practiceArea}
-                backgroundColor={2}
-              />
+              {/* <ChartCaseStudies data={props.practiceArea} backgroundColor={2} /> */}
               <Callout {...props} />
             </div>
           ))}

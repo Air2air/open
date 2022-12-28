@@ -9,6 +9,7 @@ import {
 import { ColumnLabel } from "../ChartComponents/columnLabel";
 
 const ColumnCaseStudies = (props: {
+
   data: {
     id: number;
     height: number;
@@ -25,6 +26,7 @@ const ColumnCaseStudies = (props: {
             height: number;
             backgroundColor: string;
             title: string;
+            
           },
           index: number
         ) => (

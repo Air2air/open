@@ -150,9 +150,6 @@
         "randomHeight": false,
         "backgroundColor": "#37486e"
       }
-    ],
-    "buttonText": "Markets",
-    "buttonTo": "/markets",
-    "buttonColor": ""
+    ]
   }
 ]
