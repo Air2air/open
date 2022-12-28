@@ -52,7 +52,7 @@ const TextSection = styled.div`
   height: auto;
   text-align: left;
   @media (min-width: ${BREAKPOINT}px) {
-    padding: 70px 0;
+    padding: 50px 0;
     width: ${CONTENT_WIDTH_DESKTOP};
   }
   @media (max-width: ${BREAKPOINT}px) {
@@ -68,7 +68,7 @@ const CalloutParagraph = styled.div`
   height: auto;
   text-align: left;
   opacity: ${TEXT_OPACITY};
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
   @media (min-width: ${BREAKPOINT}px) {
     font-size: 1.3em;
     line-height: 1.7em;
