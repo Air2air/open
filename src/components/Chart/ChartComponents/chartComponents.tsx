@@ -30,7 +30,7 @@ export const ChartWrapper = styled.div`
   justify-content: space-around;
   transform-origin: 0% 0%;
   transition: all ${CHART_COLUMN_TRANSITION}ms;
-  /* overflow: hidden; */
+  overflow: hidden;
   @media (min-width: ${BREAKPOINT}px) {
     grid-gap: ${COLUMN_GRID_GAP_DESKTOP}px;
     height: ${CHART_HEIGHT_DESKTOP}px;
