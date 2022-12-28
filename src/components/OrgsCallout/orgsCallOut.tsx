@@ -46,12 +46,6 @@ const OrgsWrapper = styled.div`
   height: auto;
   min-height: ${CALLOUT_HEIGHT}px;
   background: ${COLOR_BASE_3};
-  @media (min-width: ${BREAKPOINT}px) {
-    margin-top: 60px;
-  }
-  @media (max-width: ${BREAKPOINT}px) {
-    margin-top: 40px;
-  }
 `;
 
 const OrgInnerWrapper = styled.div`

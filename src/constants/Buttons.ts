@@ -2,7 +2,7 @@
 
 // BUTTONS
 export const BUTTON_HEIGHT = 40;
-export const BUTTON_ROW_HEIGHT_DESKTOP = 90;
+export const BUTTON_ROW_HEIGHT_DESKTOP = 120;
 export const BUTTON_ROW_HEIGHT_MOBILE = 90;
 
 export const BUTTON_TEXT_COLOR = "hsl(0, 0%, 90%)";
