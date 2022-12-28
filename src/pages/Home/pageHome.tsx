@@ -1,7 +1,7 @@
 import OrgsCallout from "../../components/OrgsCallout/orgsCallOut";
 import ChartHome from "components/Chart/Home/chartHome";
 import RowButton from "components/Button/rowButton";
-import BannerVideo from "components/BannerVideo/videoBanner";
+import BannerVideo from "components/BannerVideo/bannerVideo";
 import { COLOR_BASE } from "constants/index";
 import { dataHome } from "./dataHome";
 

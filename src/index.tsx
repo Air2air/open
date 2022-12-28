@@ -8,9 +8,10 @@ import "./styles/styles.scss";
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-    <ScrollToTop />
-        <App />
+      <ScrollToTop />
+      <App />
     </BrowserRouter>
   </React.StrictMode>,
+
   document.getElementById("root")
 );

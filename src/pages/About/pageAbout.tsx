@@ -1,5 +1,5 @@
 
-import BannerVideo from "components/BannerVideo/videoBanner";
+import BannerVideo from "components/BannerVideo/bannerVideo";
 import { COLOR_BASE} from "constants/index";
 import Advisors from "components/Advisors/advisors";
 import Map from "components/Map/map";

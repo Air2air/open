@@ -1,3 +1,4 @@
+import { QueryClient, QueryClientProvider } from "react-query";
 import { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import { Footer } from "./components/Footer/footer";
@@ -11,28 +12,32 @@ import UnderConstructionPage from "pages/UnderConstruction/pageUnderConstruction
 
 const isUnderConstruction = 0;
 
+const queryClient = new QueryClient();
+
 const App = () => {
   usePageTracking();
   const windowWidth = useWindowWidth();
 
   return (
     <>
-      {!isUnderConstruction ? <Header /> : ""}
-      <Suspense fallback={<div>Loading...</div>}>
-        <Routes>
-          {isUnderConstruction ? (
-            <Route path="*" element={<UnderConstructionPage />} />
-          ) : (
-            <>
-              {dataRoutes.map(({ path, element }) => (
-                <Route key={path} path={path} element={element} />
-              ))}
-            </>
-          )}
-        </Routes>
-      </Suspense>
-      {windowWidth > BREAKPOINT && <ProgressBar />}
-      {!isUnderConstruction ? <Footer /> : ""}
+      <QueryClientProvider client={queryClient}>
+        {!isUnderConstruction ? <Header /> : ""}
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            {isUnderConstruction ? (
+              <Route path="*" element={<UnderConstructionPage />} />
+            ) : (
+              <>
+                {dataRoutes.map(({ path, element }) => (
+                  <Route key={path} path={path} element={element} />
+                ))}
+              </>
+            )}
+          </Routes>
+        </Suspense>
+        {windowWidth > BREAKPOINT && <ProgressBar />}
+        {!isUnderConstruction ? <Footer /> : ""}
+      </QueryClientProvider>
     </>
   );
 };

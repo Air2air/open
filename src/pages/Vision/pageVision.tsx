@@ -1,7 +1,7 @@
 import { COLOR_BASE } from "constants/index";
 import RowButton from "components/Button/rowButton";
 import ChartVision from "components/Chart/Vision/chartVision";
-import { BannerVideo } from "components/BannerVideo/videoBanner";
+import { BannerVideo } from "components/BannerVideo/bannerVideo";
 import { dataVision } from "./dataVision";
 
 

@@ -3,7 +3,7 @@ import { dataPracticeAreas } from "./dataPracticeAreas";
 import { ICalloutProps } from "interfaces/callouts";
 import { COLOR_BASE } from "constants/index";
 import RowButton from "components/Button/rowButton";
-import { BannerVideo } from "components/BannerVideo/videoBanner";
+import { BannerVideo } from "components/BannerVideo/bannerVideo";
 import ChartPracticeAreas from "components/Chart/PracticeAreas/chartPracticeAreas";
 
 const PracticeAreasPage = () => {

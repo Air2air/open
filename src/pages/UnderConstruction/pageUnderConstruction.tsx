@@ -1,4 +1,4 @@
-import BannerVideo from "components/BannerVideo/videoBanner";
+import BannerVideo from "components/BannerVideo/bannerVideo";
 import { COLOR_BASE } from "constants/index";
 
 const UnderConstructionPage = () => {
