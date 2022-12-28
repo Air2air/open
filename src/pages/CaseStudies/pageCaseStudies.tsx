@@ -7,9 +7,14 @@ import ChartCaseStudies from "components/Chart/CaseStudies/chartCaseStudies";
 const dataSource = "data/dataCaseStudies.json";
 
 const CaseStudiesPage = () => {
-  
+
   const fetchData = async () => {
-    const res = await fetch(dataSource);
+    const res = await fetch(dataSource, {
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+      },
+    });
     return res.json();
   };
 
