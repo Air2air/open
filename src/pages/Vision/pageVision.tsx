@@ -8,12 +8,11 @@ import ChartVision from "components/Chart/Vision/chartVision";
 const dataSource = "data/dataVision.json";
 
 const VisionPage = () => {
-
   const fetchData = async () => {
     const res = await fetch(dataSource, {
       headers: {
         "Content-Type": "application/json",
-        "Accept": "application/json",
+        Accept: "application/json",
       },
     });
     return res.json();
