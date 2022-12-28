@@ -1,3 +1,4 @@
+
 import {
   animationEnter,
   ChartWrapper,
@@ -7,7 +8,14 @@ import {
 } from "../ChartComponents/chartComponents";
 import { ColumnLabel } from "../ChartComponents/columnLabel";
 
-const ColumnCaseStudies = (props) => {
+const ColumnCaseStudies = (props: {
+  data: {
+    id: number;
+    height: number;
+    backgroundColor: string;
+    title: string;
+  }[];
+}) => {
   return (
     <ChartWrapper>
       {props.data.map(
@@ -27,7 +35,6 @@ const ColumnCaseStudies = (props) => {
                 height: concatPercent(props.height),
                 backgroundColor: props.backgroundColor,
                 animation: animationEnter(index),
-                opacity: 0,
               }}
             />
             <ColumnLabel label={props.title} index={index} />

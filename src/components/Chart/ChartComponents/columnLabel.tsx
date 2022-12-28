@@ -8,10 +8,10 @@ import styled from "styled-components";
 import { animationEnter, animationExit } from "./chartComponents";
 
 export const ColumnLabel = (props: {
-  index: any;
+  index?: any;
   hidden?: boolean;
   rotate?: boolean;
-  label: string;
+  label?: string;
 }) => {
   return (
     <LabelWrapper

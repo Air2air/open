@@ -6,7 +6,7 @@ const ChartCaseStudies = (props) => {
   return (
     <Container backgroundColor={props.backgroundColor}>
       <ChartSection>
-        <ColumnCaseStudies {...props} />
+        <ColumnCaseStudies  data={props.data} />
       </ChartSection>
     </Container>
   );
