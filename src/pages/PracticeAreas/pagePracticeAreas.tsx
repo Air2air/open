@@ -56,7 +56,7 @@ const PracticeAreasPage = () => {
           {data.map((props, index) => (
             <Callout {...props} key={props.id} />
           ))}
-          <RowButton buttonTo="/about" buttonText="About" />
+          <RowButton buttonTo="/casestudies" buttonText="Case Studies" />
         </>
       )}
     </>

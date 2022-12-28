@@ -3,12 +3,12 @@ import BannerVideo from "components/BannerVideo/bannerVideo";
 import { COLOR_BASE } from "constants/index";
 import Callout from "components/Callout/callOut";
 import ChartCaseStudies from "components/Chart/CaseStudies/chartCaseStudies";
+import RowButton from "components/Button/rowButton";
 
 const dataSource = "data/dataCaseStudies.json";
 const queryName = "casestudies";
 
 const CaseStudiesPage = () => {
-
   const fetchData = async () => {
     const res = await fetch(dataSource, {
       headers: {
@@ -20,7 +20,6 @@ const CaseStudiesPage = () => {
   };
   const { data, status } = useQuery(queryName, fetchData);
 
-  
   const loopEndTime = 14000;
 
   return (
@@ -54,6 +53,11 @@ const CaseStudiesPage = () => {
               <Callout {...props} />
             </div>
           ))}
+          <RowButton
+            buttonTo="/markets"
+            buttonText="Markets"
+            backgroundColor={4}
+          />
         </>
       )}
     </>

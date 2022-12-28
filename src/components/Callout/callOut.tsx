@@ -7,7 +7,6 @@ import {
   TEXT_OPACITY,
 } from "constants/index";
 import styled from "styled-components";
-import Button from "../Button/button";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import parse from "html-react-parser";
 import { TitleCallout } from "components/Title/titleCallout";
@@ -21,22 +20,13 @@ export const Callout = (props: ICalloutProps) => {
       <CalloutContainer style={{ background: props.backgroundColor }}>
         <TextSection>
           <TitleCallout title={props.title} color={props.color} />
-
           <AnimationOnScroll
             animateIn="animate__fadeIn"
-            delay={200}
+            delay={100}
             offset={60}
           >
             <CalloutParagraph>{textParsed}</CalloutParagraph>
           </AnimationOnScroll>
-
-          {props.buttonText ? (
-            <Button
-              buttonTo={props.buttonTo}
-              buttonText={props.buttonText}
-              buttonColor={props.buttonColor}
-            />
-          ) : null}
         </TextSection>
       </CalloutContainer>
     </>
@@ -66,7 +56,7 @@ const TextSection = styled.div`
     width: ${CONTENT_WIDTH_DESKTOP};
   }
   @media (max-width: ${BREAKPOINT}px) {
-    padding: 40px 0;
+    padding: 20px 0;
     width: ${CONTENT_WIDTH_MOBILE};
   }
 `;

@@ -1,5 +1,4 @@
 import ChartMarkets from "components/Chart/Markets/chartMarkets";
-
 import RowButton from "components/Button/rowButton";
 import { COLOR_BASE } from "constants/index";
 import BannerVideo from "components/BannerVideo/bannerVideo";

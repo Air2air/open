@@ -55,7 +55,6 @@ const VisionPage = () => {
           {data.map((props, index) => (
             <Callout key={index} {...props} />
           ))}
-
           <RowButton buttonTo="/about" buttonText="About" />
         </>
       )}
@@ -64,22 +63,3 @@ const VisionPage = () => {
 };
 
 export default VisionPage;
-
-// const VisionPage = () => {
-//   return (
-//     <>
-//       <BannerVideo
-//         text="vision"
-//         pageVideo={776451115}
-//         overlayOpacity={0.1}
-//         overlayColor={COLOR_BASE}
-//         typing={true}
-//       />
-//       <ChartVision columnCount={7} data={dataVision} backgroundColor={2} />
-//       <RowButton buttonTo="/about" buttonText="About" />
-//       {/* <TimeLine data={dataVision} backgroundColor={3} /> */}
-//     </>
-//   );
-// };
-
-// export default VisionPage;
