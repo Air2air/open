@@ -47,5 +47,10 @@ ul {
 }
 
 li {
-  padding: 10px 0;
+  @media (min-width: 700px) {
+    padding: 10px 0;
+  }
+  @media (max-width: 700px) {
+    padding: 5px 0;
+  }
 }

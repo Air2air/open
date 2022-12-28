@@ -18,15 +18,16 @@ const TitleContainer = styled.div`
   width: 100%;
 `;
 
-const TitleStyled = styled.h1<TitleProps>`
-  /* text-transform: uppercase; */
-  font-weight: 500;
+const TitleStyled = styled.h3<TitleProps>`
+  text-transform: uppercase;
   color: ${(props) =>
     props.color === "" || !props.color ? COLOR_WHITE : props.color};
   @media (min-width: ${BREAKPOINT}px) {
     font-size: 1.6em;
+    font-weight: 400;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    font-size: 1.4em;
+    font-size: 1.3em;
+    font-weight: 500;
   }
 `;

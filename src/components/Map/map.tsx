@@ -4,7 +4,7 @@ import { TitleCallout } from "./../Title/titleCallout";
 import { ReactComponent as MapSvg } from "./world_map.svg";
 import "./keyframes.scss";
 import { dataMap } from "./dataMap";
-import { COLOR_RED } from "constants/index";
+import { BREAKPOINT, COLOR_RED } from "constants/index";
 import ReactTooltip from "react-tooltip";
 import { Key } from "react";
 
@@ -16,20 +16,22 @@ const Map = (props) => {
   return (
     <>
       <Container backgroundColor={props.backgroundColor}>
-        <TitleCallout title={props.title} />
-        <SVGContainer>
-          <MapSvg
-            style={{
-              width: "100%",
-              height: "100%",
-              display: "inline-block",
-              position: "absolute",
-              top: 0,
-              left: 0,
-            }}
-          />
-          <MapPins data={dataMap} />
-        </SVGContainer>
+        <PaddingSection>
+          <TitleCallout title={props.title} />
+          <SVGContainer>
+            <MapSvg
+              style={{
+                width: "100%",
+                height: "100%",
+                display: "inline-block",
+                position: "absolute",
+                top: 0,
+                left: 0,
+              }}
+            />
+            <MapPins data={dataMap} />
+          </SVGContainer>
+        </PaddingSection>
       </Container>
     </>
   );
@@ -51,7 +53,15 @@ const MapPins = ({ data }) =>
       </MapPin>
     )
   );
-const dotSize = "20px";
+
+const PaddingSection = styled.div`
+  @media (min-width: ${BREAKPOINT}px) {
+    padding: 50px 0;
+  }
+  @media (max-width: ${BREAKPOINT}px) {
+    padding: 20px 0;
+  }
+`;
 
 const SVGContainer = styled.div`
   display: inline-block;
@@ -67,14 +77,23 @@ const Tooltip = styled(ReactTooltip)`
   font-size: 2rem;
 `;
 
+const dotSizeDesktop = "20px";
+const dotSizeMobile = "10px";
+
 const MapPin = styled.div.attrs((props: { animationTime: string }) => props)`
   position: absolute;
-  width: ${dotSize};
-  height: ${dotSize};
   border-radius: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%, 0);
+  @media (min-width: ${BREAKPOINT}px) {
+    width: ${dotSizeDesktop};
+    height: ${dotSizeDesktop};
+  }
+  @media (max-width: ${BREAKPOINT}px) {
+    width: ${dotSizeMobile};
+    height: ${dotSizeMobile};
+  }
   &:before,
   &:after {
     content: "";
@@ -96,21 +115,5 @@ const MapPin = styled.div.attrs((props: { animationTime: string }) => props)`
     animation: largePulse ${(props) => props.animationTime} ease-out infinite;
   }
 `;
-
-// const LocationNamesTable = styled.div`
-//   padding-top: 32px;
-//   display: grid;
-//   grid-gap: 12px;
-//   width: 100%;
-//   color: ${COLOR_TEXT};
-//   /* background: red; */
-
-//   @media (min-width: ${BREAKPOINT}px) {
-//     grid-template-columns: auto auto auto auto;
-//   }
-//   @media (max-width: ${BREAKPOINT}px) {
-//     grid-template-columns: auto auto;
-//   }
-// `;
 
 export default Map;
