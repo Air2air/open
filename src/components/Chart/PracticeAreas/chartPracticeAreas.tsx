@@ -2,7 +2,12 @@ import ColumnPracticeAreas from "./columnPracticeAreas";
 import Container from "components/Container/container";
 import { ChartSection, ChartWrapper } from "../ChartComponents/chartComponents";
 
-const ChartPracticeAreas = (props) => {
+const ChartPracticeAreas = (props: {
+  backgroundColor: any;
+  data: any;
+  loopEndTime?: number;
+  columnCount?:number
+}) => {
   return (
     <Container>
       <ChartSection>
@@ -22,3 +27,5 @@ const ChartPracticeAreas = (props) => {
 };
 
 export default ChartPracticeAreas;
+
+

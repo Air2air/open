@@ -4,7 +4,11 @@ import { ChartSection } from "../ChartComponents/chartComponents";
 
 export const LoopEndTime = 14000;
 
-const ChartMarkets = (props) => {
+const ChartMarkets = (props: {
+  backgroundColor: any;
+  data: any;
+  columnCount?: number;
+}) => {
   return (
     <Container backgroundColor={props.backgroundColor}>
       <ChartSection>

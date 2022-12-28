@@ -2,7 +2,12 @@ import { ColumnHome } from "./columnHome";
 import Container from "components/Container/container";
 import { ChartSection } from "../ChartComponents/chartComponents";
 
-const ChartHome = (props) => {
+const ChartHome = (props: {
+  backgroundColor: any;
+  data: any;
+  loopEndTime: any;
+  columnCount:number
+}) => {
   return (
     <Container backgroundColor={props.backgroundColor}>
       <ChartSection>

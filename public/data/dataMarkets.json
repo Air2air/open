@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "HEALTHTECH",
+    "height": 20,
+    "value": "$400B",
+    "backgroundColor": "hsl(350, 39%, 30%)",
+    "text": "Elevens supports Healthtech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners."
+  },
+  {
+    "id": 2,
+    "title": "MEDTECH",
+    "height": 30,
+    "value": "$500B",
+    "backgroundColor": "hsl(370, 39%, 30%)",
+    "text": "Elevens supports Medtech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners."
+  },
+  {
+    "id": 3,
+    "title": "BIOTECH",
+    "height": 50,
+    "value": "$700B",
+    "backgroundColor": "hsl(390, 39%, 30%)",
+    "text": "Elevens supports Biotech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners."
+  },
+  {
+    "id": 4,
+    "title": "PHARMATECH",
+    "height": 100,
+    "value": "$1.2T",
+    "backgroundColor": "hsl( 410, 39%, 30%)",
+    "text": "Elevens supports Pharmatech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners."
+  }
+]

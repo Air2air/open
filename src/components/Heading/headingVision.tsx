@@ -49,12 +49,12 @@ const HeadingVision = (props: { backgroundColor?: any }) => {
       <Container backgroundColor={props.backgroundColor}>
         <Wrapper>
           <TextSection style={{ opacity: advisoryOpacity }}>
-            <TitleHeading title="Elevens is a healthcare AI advisory" />
-            <SubHeadHeading text="of the leading physicians, scientists, engineers and entrepreneurs in healthcare AI." />
+            <TitleHeading title="Our vision" />
+            <SubHeadHeading text="Elevens is a healthcare AI advisory of the leading physicians, scientists, engineers and entrepreneurs in healthcare AI." />
           </TextSection>
           <TextSection style={{ opacity: defineOpacity }}>
-            <TitleHeading title="We define the path forward" />
-            <SubHeadHeading text="for leading companies building the future of digital health and clinical machine learning." />
+            <TitleHeading title="Our vision" />
+            <SubHeadHeading text="We define the path forward for leading companies building the future of digital health and clinical machine learning." />
           </TextSection>
         </Wrapper>
       </Container>
