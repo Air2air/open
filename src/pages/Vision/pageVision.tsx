@@ -2,7 +2,6 @@ import { useQuery } from "react-query";
 import BannerVideo from "components/BannerVideo/bannerVideo";
 import { COLOR_BASE } from "constants/index";
 import Callout from "components/Callout/callOut";
-import ChartCaseStudies from "components/Chart/CaseStudies/chartCaseStudies";
 import RowButton from "components/Button/rowButton";
 import ChartVision from "components/Chart/Vision/chartVision";
 
