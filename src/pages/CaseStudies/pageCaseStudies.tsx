@@ -5,8 +5,10 @@ import Callout from "components/Callout/callOut";
 import ChartCaseStudies from "components/Chart/CaseStudies/chartCaseStudies";
 
 const dataSource = "data/dataCaseStudies.json";
+const queryName = "casestudies";
 
 const CaseStudiesPage = () => {
+
   const fetchData = async () => {
     const res = await fetch(dataSource, {
       headers: {
@@ -16,9 +18,9 @@ const CaseStudiesPage = () => {
     });
     return res.json();
   };
+  const { data, status } = useQuery(queryName, fetchData);
 
-  const { data, status } = useQuery("casestudies", fetchData);
-
+  
   const loopEndTime = 14000;
 
   return (

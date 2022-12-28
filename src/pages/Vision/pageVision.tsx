@@ -6,6 +6,7 @@ import RowButton from "components/Button/rowButton";
 import ChartVision from "components/Chart/Vision/chartVision";
 
 const dataSource = "data/dataVision.json";
+const queryName = "vision";
 
 const VisionPage = () => {
   const fetchData = async () => {
@@ -17,8 +18,7 @@ const VisionPage = () => {
     });
     return res.json();
   };
-
-  const { data, status } = useQuery("users", fetchData);
+  const { data, status } = useQuery(queryName, fetchData);
 
   const loopEndTime = 14000;
 
