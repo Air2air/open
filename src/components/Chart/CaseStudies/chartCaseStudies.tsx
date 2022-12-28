@@ -3,8 +3,7 @@ import Container from "components/Container/container";
 import { ChartSection } from "../ChartComponents/chartComponents";
 
 const ChartCaseStudies = (props: {
-  loopEndTime?: number;
-  backgroundColor: any;
+  backgroundColor?: any;
   data: {
     id: number;
     height: number;
