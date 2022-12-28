@@ -6,7 +6,8 @@ import {
   BUTTON_COLOR_HOVER_GRAY,
   BUTTON_HEIGHT,
   BUTTON_TEXT_COLOR,
-  BUTTON_ROW_HEIGHT,
+  BUTTON_ROW_HEIGHT_DESKTOP,
+  BUTTON_ROW_HEIGHT_MOBILE,
 } from "constants/index";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
@@ -41,26 +42,28 @@ export const RowButton = (props: {
 };
 
 const buttonWidthDesktop = "200px";
-const buttonWidthMobile = "100%";
+
+const rowTopPaddingDesktop = (BUTTON_ROW_HEIGHT_DESKTOP - BUTTON_HEIGHT) * 0.5;
+const rowTopPaddingMobile = (BUTTON_ROW_HEIGHT_MOBILE - BUTTON_HEIGHT) * 0.5;
 
 const ButtonPositioner = styled.div`
-  display: flex;
+  /* display:inline-flex; */
 
-  align-items: center;
-  margin: 0 auto;
-  height: ${BUTTON_ROW_HEIGHT}px;
-  text-align: right;
   width: 100%;
+
   @media (min-width: ${BREAKPOINT}px) {
-    padding: 5px 0;
+    height: ${BUTTON_ROW_HEIGHT_DESKTOP}px;
+    text-align: right;
     justify-content: flex-end;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    padding: 5px 0;
+    height: ${BUTTON_ROW_HEIGHT_MOBILE}px;
   }
+  /* background: green; */
 `;
 
 const ButtonDesktop = styled.div<{ buttonColor?: string }>`
+  margin-top: ${rowTopPaddingDesktop}px;
   height: ${BUTTON_HEIGHT}px;
   font-size: 1.1em;
   font-weight: 500;
@@ -91,6 +94,7 @@ const ButtonDesktop = styled.div<{ buttonColor?: string }>`
 `;
 
 const ButtonMobile = styled.div`
+  margin-top: ${rowTopPaddingMobile}px;
   height: ${BUTTON_HEIGHT}px;
   font-size: 1.1em;
   font-weight: 500;
@@ -100,6 +104,7 @@ const ButtonMobile = styled.div`
   justify-content: center;
   transition: all 300ms;
   text-transform: uppercase;
+  width: 100%;
   span {
     margin-right: 10px;
   }
@@ -111,7 +116,6 @@ const ButtonMobile = styled.div`
         ? BUTTON_COLOR_HOVER_GRAY
         : BUTTON_COLOR_HOVER_RED};
   }
-  width: ${buttonWidthMobile};
   @media (min-width: ${BREAKPOINT}px) {
     display: none;
   }
