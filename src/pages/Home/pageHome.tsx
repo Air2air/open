@@ -17,7 +17,6 @@ const HomePage = () => {
         overlayColor={COLOR_BASE}
         loopEndTime={loopEndTime}
       />
-
       <ChartHome
         columnCount={7}
         data={dataHome}

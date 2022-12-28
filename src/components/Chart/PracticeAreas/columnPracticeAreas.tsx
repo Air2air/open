@@ -55,7 +55,7 @@ const ColumnPracticeAreas = (props, index) => {
             backgroundColor: props.backgroundColor,
             transition: animationString,
             animation: columnIsEntering ? animationEnter(props.index) : "",
-            opacity: columnIsEntering ? 0 : 1,
+            // opacity: columnIsEntering ? 0 : 1,
           }}
         />
         <ColumnLabel

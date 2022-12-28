@@ -6,12 +6,13 @@ import ChartCaseStudies from "components/Chart/CaseStudies/chartCaseStudies";
 
 const dataSource = "data/dataCaseStudies.json";
 
-const fetchData = async () => {
-  const res = await fetch(dataSource);
-  return res.json();
-};
-
 const CaseStudiesPage = () => {
+  
+  const fetchData = async () => {
+    const res = await fetch(dataSource);
+    return res.json();
+  };
+
   const { data, status } = useQuery("users", fetchData);
 
   const loopEndTime = 14000;

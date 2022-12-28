@@ -21,14 +21,14 @@ export const ColumnVision = (props) => {
 
     const showLabels = setTimeout(() => {
       setLabelHidden(false);
-    }, 1000);
+    }, 500);
 
     const columnAnimationEnd = setTimeout(() => {
       setColumnIsEntering(0);
-    }, LoopEndTime - 4000);
+      setLabelHidden(true);
+    }, LoopEndTime - 3000);
 
     const loopIsOver = setTimeout(() => {
-      setLabelHidden(true);
       setCount(count + 1);
     }, LoopEndTime);
 

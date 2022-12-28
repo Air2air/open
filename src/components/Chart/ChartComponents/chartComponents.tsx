@@ -13,11 +13,11 @@ import styled from "styled-components";
 
 export const ChartSection = styled.div`
   @media (min-width: ${BREAKPOINT}px) {
-    padding-top: 40px;
+    padding: 40px 0;
     height: ${CHART_HEIGHT_DESKTOP}px;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    padding-top: 20px;
+    padding: 20px 0;
     height: ${CHART_HEIGHT_MOBILE}px;
   }
 `;
