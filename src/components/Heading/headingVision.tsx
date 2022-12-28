@@ -1,9 +1,12 @@
-import { TitleHeading } from "components/Title/titleHeading";
-import { SubHeadHeading } from "components/SubHead/subHeadHeading";
 import { useEffect, useState } from "react";
 import { LoopEndTime } from "../Chart/Vision/chartVision";
 import Container from "components/Container/container";
-import { Wrapper, TextSection } from "./Components/headingComponents";
+import {
+  Wrapper,
+  TextSection,
+  TitleHeading,
+} from "./Components/headingComponents";
+import { SubHeadHeading } from "components/Heading/Components/subHeadHeading";
 
 const HeadingVision = (props: { backgroundColor?: any }) => {
   const [advisoryOpacity, setAdvisoryOpacity] = useState(0);
@@ -51,7 +54,7 @@ const HeadingVision = (props: { backgroundColor?: any }) => {
           </TextSection>
           <TextSection style={{ opacity: defineOpacity }}>
             <TitleHeading title="We define the path forward" />
-            <SubHeadHeading text=" for leading companies building the future of digital health and clinical machine learning." />
+            <SubHeadHeading text="for leading companies building the future of digital health and clinical machine learning." />
           </TextSection>
         </Wrapper>
       </Container>

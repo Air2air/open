@@ -1,11 +1,15 @@
-import { TitleHeading } from "components/Title/titleHeading";
-import { SubHeadHeading } from "components/SubHead/subHeadHeading";
 import { useEffect, useState } from "react";
 import { LoopEndTime } from "../Chart/Vision/chartVision";
 import Container from "components/Container/container";
-import { Wrapper, TextSection } from "./Components/headingComponents";
+import {
+  Wrapper,
+  TextSection,
+  TitleHeading,
+} from "./Components/headingComponents";
+import { SubHeadHeading } from "components/Heading/Components/subHeadHeading";
 
-const HeadingCaseStudies = (props: { backgroundColor?: any }) => {
+
+const HeadingCaseStudies = (props: { loopEndTime?: number; backgroundColor: any; }) => {
   const [advisoryOpacity, setAdvisoryOpacity] = useState(0);
   const [defineOpacity, setDefineOpacity] = useState(0);
   const [count, setCount] = useState(1);

@@ -5,6 +5,7 @@ import {
   COLOR_WHITE,
 } from "constants/index";
 import styled from "styled-components";
+import { animationEnter, animationExit } from "./chartComponents";
 
 export const ColumnLabel = (props: {
   index: any;
@@ -13,7 +14,15 @@ export const ColumnLabel = (props: {
   label: string;
 }) => {
   return (
-    <LabelWrapper key={props.index}>
+    <LabelWrapper
+      key={props.index}
+      style={{
+        animation: !props.hidden
+          ? animationEnter(props.index)
+          : animationExit(props.index),
+        opacity: !props.hidden ? 0 : 1,
+      }}
+    >
       <LabelDiv
         style={{
           transform: props.rotate ? `rotate(90deg)` : "",
@@ -28,18 +37,10 @@ export const ColumnLabel = (props: {
 
 export const LabelWrapper = styled.div`
   position: absolute;
+  top:0;
   height: 100%;
   width: 100%;
-  z-index: +2;
-  @media (min-width: ${BREAKPOINT}px) {
-    padding-top: 10px;
-  }
-  @media (max-width: ${BREAKPOINT}px) {
-    /* bottom: 0%; */
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-  }
+  z-index: top;
   /* background: red; */
 `;
 

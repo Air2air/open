@@ -30,7 +30,7 @@ export const ChartWrapper = styled.div`
   justify-content: space-around;
   transform-origin: 0% 0%;
   transition: all ${CHART_COLUMN_TRANSITION}ms;
-  overflow: hidden;
+  /* overflow: hidden; */
   @media (min-width: ${BREAKPOINT}px) {
     grid-gap: ${COLUMN_GRID_GAP_DESKTOP}px;
     height: ${CHART_HEIGHT_DESKTOP}px;
@@ -57,16 +57,10 @@ export const ColumnOuter = styled.div`
     width: 100%;
     height: 100%;
   }
-  /* background: gold; */
+  /* background: green; */
 `;
 
 export const ColumnSeries = styled.div`
-  /* position: absolute;
-  left: 0; */
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
   /* transition: all ${CHART_COLUMN_TRANSITION}ms; */
   @media (min-width: ${BREAKPOINT}px) {
     min-height: ${CHART_BAR_HEIGHT_MIN_DESKTOP}px;
@@ -78,7 +72,7 @@ export const ColumnSeries = styled.div`
     align-items: flex-end;
     width: 100%;
   }
-  background: gold;
+  /* background: gold; */
 `;
 
 export const animationEnter = (index: number) =>

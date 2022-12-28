@@ -5,6 +5,7 @@ import { dataCaseStudies } from "./dataCaseStudies";
 import ChartCaseStudies from "components/Chart/CaseStudies/chartCaseStudies";
 
 const CaseStudiesPage = () => {
+  const loopEndTime = 14000;
   return (
     <>
       <BannerVideo
@@ -13,10 +14,15 @@ const CaseStudiesPage = () => {
         overlayOpacity={0}
         overlayColor={COLOR_BASE}
         typing
+        loopEndTime={loopEndTime}
       />
       {dataCaseStudies.map((props, index) => (
         <div key={index}>
-          <ChartCaseStudies data={props.practiceArea} backgroundColor={2} />
+          <ChartCaseStudies
+            loopEndTime={loopEndTime}
+            data={props.practiceArea}
+            backgroundColor={2}
+          />
           <Callout {...props} />
         </div>
       ))}

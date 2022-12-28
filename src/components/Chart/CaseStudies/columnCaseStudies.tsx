@@ -4,7 +4,7 @@ import {
   ColumnOuter,
   ColumnSeries,
   concatPercent,
-} from "../ChartComponents/chartScaffold";
+} from "../ChartComponents/chartComponents";
 import { ColumnLabel } from "../ChartComponents/columnLabel";
 
 const ColumnCaseStudies = (props) => {

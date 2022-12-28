@@ -1,9 +1,12 @@
-import { TitleHeading } from "components/Title/titleHeading";
-import { SubHeadHeading } from "components/SubHead/subHeadHeading";
 import Container from "components/Container/container";
-import { Wrapper, TextSection } from "./Components/headingComponents";
+import {
+  Wrapper,
+  TextSection,
+  TitleHeading,
+} from "./Components/headingComponents";
+import { SubHeadHeading } from "components/Heading/Components/subHeadHeading";
 
-const HeadingAbout = (props: { backgroundColor?: any }) => {
+const HeadingAbout = (props: { loopEndTime?: number; backgroundColor: any; }) => {
   return (
     <>
       <Container backgroundColor={props.backgroundColor}>

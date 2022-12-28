@@ -31,12 +31,18 @@ export const SubHeadHeading = (props: SubHeadHeadingProps) => (
   </TextContainer>
 );
 
+// export const SubHeadHeading = (props: SubHeadHeadingProps) => (
+//   <TextContainer className="animate__animated animate__fadeInUp animate__delay-500ms">
+//     <TypeWriterWrapper>{props.text}</TypeWriterWrapper>
+//   </TextContainer>
+// );
+
 const TextContainer = styled.div`
   position: absolute;
   bottom: 0;
   text-align: left;
   width: 100%;
-  height:60%;
+  height: 60%;
   /* background: red; */
 `;
 

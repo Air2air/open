@@ -11,7 +11,7 @@ const MarketsPage = () => {
       <BannerVideo
         text="markets"
         pageVideo={766731362}
-        overlayOpacity={0.1}
+        overlayOpacity={0.4}
         overlayColor={COLOR_BASE}
         typing={true}
       />

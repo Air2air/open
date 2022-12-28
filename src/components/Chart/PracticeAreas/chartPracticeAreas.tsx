@@ -1,16 +1,16 @@
 import ColumnPracticeAreas from "./columnPracticeAreas";
 import Container from "components/Container/container";
-import { ChartSection, ChartWrapper } from "../ChartComponents/chartScaffold";
+import { ChartSection, ChartWrapper } from "../ChartComponents/chartComponents";
 
 const ChartPracticeAreas = (props) => {
   return (
     <Container>
       <ChartSection>
         <ChartWrapper>
-          {props.data.map((props) => (
+          {props.data.map((props, index: number) => (
             <ColumnPracticeAreas
               key={props.id}
-              index={props.index}
+              index={index}
               backgroundColor={props.backgroundColor}
               title={props.title}
             />
@@ -20,9 +20,5 @@ const ChartPracticeAreas = (props) => {
     </Container>
   );
 };
-
-
-
-
 
 export default ChartPracticeAreas;

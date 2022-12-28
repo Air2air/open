@@ -20,21 +20,21 @@ export const BannerImage = (props) => {
     if (props.text === "home") {
       return <HeadingHome {...props} />;
     } else if (props.text === "about") {
-      return <HeadingAbout />;
+      return <HeadingAbout {...props} />;
     } else if (props.text === "casestudies") {
-      return <HeadingCaseStudies />;
+      return <HeadingCaseStudies {...props} />;
     } else if (props.text === "contact") {
-      return <HeadingContact />;
+      return <HeadingContact {...props} />;
     } else if (props.text === "history") {
-      return <HeadingHistory />;
+      return <HeadingHistory {...props} />;
     } else if (props.text === "markets") {
-      return <HeadingMarkets />;
+      return <HeadingMarkets {...props} />;
     } else if (props.text === "practiceareas") {
-      return <HeadingPracticeAreas />;
+      return <HeadingPracticeAreas {...props} />;
     } else if (props.text === "vision") {
-      return <HeadingVision />;
+      return <HeadingVision {...props} />;
     } else {
-      return <HeadingHome {...props}/>;
+      return <HeadingHome {...props} />;
     }
   };
 

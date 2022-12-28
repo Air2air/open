@@ -11,7 +11,7 @@ import {
   ColumnOuter,
   ColumnSeries,
   concatPercent,
-} from "../ChartComponents/chartScaffold";
+} from "../ChartComponents/chartComponents";
 import { ColumnLabel } from "../ChartComponents/columnLabel";
 
 export const ColumnMarkets = (props: any) => {

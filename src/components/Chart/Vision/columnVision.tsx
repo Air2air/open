@@ -7,27 +7,35 @@ import {
   ColumnOuter,
   ColumnSeries,
   concatPercent,
-} from "../ChartComponents/chartScaffold";
+} from "../ChartComponents/chartComponents";
 import { ColumnLabel } from "../ChartComponents/columnLabel";
 
 export const ColumnVision = (props) => {
   const [columnIsEntering, setColumnIsEntering] = useState(0);
+  const [labelHidden, setLabelHidden] = useState(true);
   const [count, setCount] = useState(1);
 
   useEffect(() => {
     setColumnIsEntering(1);
+    setLabelHidden(true);
+
+    const showLabels = setTimeout(() => {
+      setLabelHidden(false);
+    }, 1000);
 
     const columnAnimationEnd = setTimeout(() => {
       setColumnIsEntering(0);
     }, LoopEndTime - 4000);
 
     const loopIsOver = setTimeout(() => {
+      setLabelHidden(true);
       setCount(count + 1);
     }, LoopEndTime);
 
     return () => {
       clearTimeout(columnAnimationEnd);
       clearTimeout(loopIsOver);
+      clearTimeout(showLabels);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [count]);
@@ -57,7 +65,11 @@ export const ColumnVision = (props) => {
               }}
             />
 
-            <ColumnLabel label={props.title} index={index} />
+            <ColumnLabel
+              hidden={labelHidden}
+              label={props.title}
+              index={index}
+            />
           </ColumnOuter>
         )
       )}

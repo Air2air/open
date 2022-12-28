@@ -1,6 +1,6 @@
 import { ColumnHome } from "./columnHome";
 import Container from "components/Container/container";
-import { ChartSection } from "../ChartComponents/chartScaffold";
+import { ChartSection } from "../ChartComponents/chartComponents";
 
 const ChartHome = (props) => {
   return (

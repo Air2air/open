@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-
 import {
   animationEnter,
   animationExit,
@@ -7,23 +6,23 @@ import {
   ColumnOuter,
   ColumnSeries,
   concatPercent,
-} from "../ChartComponents/chartScaffold";
+} from "../ChartComponents/chartComponents";
 import { ColumnLabel } from "../ChartComponents/columnLabel";
 
 export const ColumnHome = (props: any) => {
-  const [columnIsEntering, setColumnsAreEntering] = useState(0);
+  const [columnIsEntering, setColumnIsEntering] = useState(0);
   const [columnWidth, setColumnWidth] = useState("100%");
   const [labelHidden, setLabelHidden] = useState(true);
   const [count, setCount] = useState(1);
 
   useEffect(() => {
     setColumnWidth("100%");
-    setColumnsAreEntering(1);
+    setColumnIsEntering(1);
     setLabelHidden(true);
 
     const showLabels = setTimeout(() => {
       setLabelHidden(false);
-    }, 2000);
+    }, 500);
 
     const columnShrink = setTimeout(() => {
       setColumnWidth("50%");
@@ -31,8 +30,7 @@ export const ColumnHome = (props: any) => {
     }, 7000);
 
     const columnExit = setTimeout(() => {
-      setColumnsAreEntering(0);
-
+      setColumnIsEntering(0);
       setLabelHidden(true);
     }, props.loopEndTime - 2000);
 

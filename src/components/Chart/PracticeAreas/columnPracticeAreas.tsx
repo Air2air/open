@@ -1,10 +1,16 @@
+import { CHART_COLUMN_TRANSITION } from "constants/index";
 import { useState, useEffect } from "react";
-import { ColumnOuter, ColumnSeries } from "../ChartComponents/chartScaffold";
+import {
+  animationEnter,
+  ColumnOuter,
+  ColumnSeries,
+} from "../ChartComponents/chartComponents";
 import { ColumnLabel } from "../ChartComponents/columnLabel";
 
-const ColumnPracticeAreas = (props) => {
+const ColumnPracticeAreas = (props, index) => {
+  const [labelHidden, setLabelHidden] = useState(true);
+  const [columnIsEntering, setColumnIsEntering] = useState(false);
   const [seriesRandomHeight, setSeriesRandomHeight] = useState(50);
-
   const minHeight = 20;
   const maxHeight = 100;
 
@@ -17,22 +23,48 @@ const ColumnPracticeAreas = (props) => {
   const maxInterval = 5000;
 
   useEffect(() => {
+    setColumnIsEntering(true);
+
     const interval = setInterval(() => {
       randomHeight();
     }, Math.random() * (maxInterval - minInterval) + minInterval);
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+    setLabelHidden(true);
+
+    const showLabels = setTimeout(() => {
+      setLabelHidden(false);
+    }, 500);
+
+    return () => {
+      clearTimeout(showLabels);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const animationString = `all ${CHART_COLUMN_TRANSITION}ms`;
+
   return (
-    <ColumnOuter>
-      <ColumnSeries
-        style={{
-          height: seriesRandomHeight + "%",
-          backgroundColor: props.backgroundColor,
-        }}
-      />
-      <ColumnLabel label={props.title} index={props.id} />
-    </ColumnOuter>
+    <>
+      <ColumnOuter key={index}>
+        <ColumnSeries
+          style={{
+            height: seriesRandomHeight + "%",
+            backgroundColor: props.backgroundColor,
+            transition: animationString,
+            animation: columnIsEntering ? animationEnter(props.index) : "",
+            opacity: columnIsEntering ? 0 : 1,
+          }}
+        />
+        <ColumnLabel
+          hidden={labelHidden}
+          label={props.title}
+          index={props.index}
+        />
+      </ColumnOuter>
+    </>
   );
 };
 
