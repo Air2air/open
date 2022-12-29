@@ -4,6 +4,7 @@ import RowButton from "components/Button/rowButton";
 import { BannerVideo } from "components/BannerVideo/bannerVideo";
 import ChartPracticeAreas from "components/Chart/PracticeAreas/chartPracticeAreas";
 import { useQuery } from "react-query";
+import BannerText from "components/BannerText/bannerText";
 
 const dataSource = "data/dataPracticeAreas.json";
 const queryName = "practiceareas";
@@ -28,14 +29,16 @@ const PracticeAreasPage = () => {
         <p style={{ color: "red" }}>Error fetching data</p>
       )}
       {status === "loading" && (
+        <>
         <BannerVideo
-          text="casestudies"
           pageVideo={776446335}
           overlayOpacity={0.4}
           overlayColor={COLOR_BASE}
           typing
           loopEndTime={loopEndTime}
         />
+        <BannerText text="markets" />
+        </>
       )}
       {status === "success" && (
         <>
@@ -46,6 +49,7 @@ const PracticeAreasPage = () => {
             overlayColor={COLOR_BASE}
             typing={true}
           />
+        <BannerText text="practiceareas" />
           <ChartPracticeAreas
             loopEndTime={loopEndTime}
             columnCount={6}

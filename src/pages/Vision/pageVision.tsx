@@ -4,6 +4,7 @@ import { COLOR_BASE } from "constants/index";
 import Callout from "components/Callout/callOut";
 import RowButton from "components/Button/rowButton";
 import ChartVision from "components/Chart/Vision/chartVision";
+import { BannerText } from "components/BannerText/bannerText";
 
 const dataSource = "data/dataVision.json";
 const queryName = "vision";
@@ -28,24 +29,26 @@ const VisionPage = () => {
         <p style={{ color: "red" }}>Error fetching data</p>
       )}
       {status === "loading" && (
-        <BannerVideo
-          text="casestudies"
-          pageVideo={776446335}
-          overlayOpacity={0.4}
-          overlayColor={COLOR_BASE}
-          typing
-          loopEndTime={loopEndTime}
-        />
+        <>
+          <BannerVideo
+            pageVideo={776446335}
+            overlayOpacity={0.4}
+            overlayColor={COLOR_BASE}
+            typing
+            loopEndTime={loopEndTime}
+          />
+          <BannerText text="vision" />
+        </>
       )}
       {status === "success" && (
         <>
           <BannerVideo
-            text="vision"
             pageVideo={776451115}
             overlayOpacity={0.1}
             overlayColor={COLOR_BASE}
             typing={true}
           />
+          <BannerText text="vision" />
           <ChartVision
             loopEndTime={loopEndTime}
             columnCount={7}

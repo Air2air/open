@@ -4,6 +4,7 @@ import { COLOR_BASE } from "constants/index";
 import Callout from "components/Callout/callOut";
 import ChartCaseStudies from "components/Chart/CaseStudies/chartCaseStudies";
 import RowButton from "components/Button/rowButton";
+import { BannerText } from "components/BannerText/bannerText";
 
 const dataSource = "data/dataCaseStudies.json";
 const queryName = "casestudies";
@@ -28,25 +29,27 @@ const CaseStudiesPage = () => {
         <p style={{ color: "red" }}>Error fetching data</p>
       )}
       {status === "loading" && (
-        <BannerVideo
-          text="casestudies"
-          pageVideo={776446335}
-          overlayOpacity={0.4}
-          overlayColor={COLOR_BASE}
-          typing
-          loopEndTime={loopEndTime}
-        />
-      )}
-      {status === "success" && (
         <>
           <BannerVideo
-            text="casestudies"
             pageVideo={776446335}
             overlayOpacity={0.4}
             overlayColor={COLOR_BASE}
             typing
             loopEndTime={loopEndTime}
           />
+          <BannerText text="casestudies" />
+        </>
+      )}
+      {status === "success" && (
+        <>
+          <BannerVideo
+            pageVideo={776446335}
+            overlayOpacity={0.4}
+            overlayColor={COLOR_BASE}
+            typing
+            loopEndTime={loopEndTime}
+          />
+          <BannerText text="casestudies" />
           {data.map((props, index) => (
             <div key={index}>
               <ChartCaseStudies data={props.practiceArea} backgroundColor={2} />

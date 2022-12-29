@@ -2,6 +2,7 @@ import setBodyColor from "utils/setBodyColor";
 import Callout from "../../components/Callout/callOut";
 import BannerImage from "components/BannerImage/bannerImage";
 import { COLOR_BASE } from "constants/index";
+import BannerText from "components/BannerText/bannerText";
 
 const pageImage = "dartmouth.jpeg";
 
@@ -11,12 +12,12 @@ const HistoryPage = () => {
   return (
     <>
       <BannerImage
-        text="history"
         pageImage={pageImage}
         overlayOpacity={0.7}
         overlayColor={COLOR_BASE}
         typing={true}
       />
+      <BannerText text="history" />
       <Callout
         id={0}
         title="THE BIRTH OF MACHINE INTELLIGENCE"
