@@ -4,7 +4,6 @@ import ChartHome from "components/Chart/Home/chartHome";
 import RowButton from "components/Button/rowButton";
 import BannerVideo from "components/BannerVideo/bannerVideo";
 import { COLOR_BASE } from "constants/index";
-import { dataHome } from "./dataHome";
 import { BannerText } from "components/BannerText/bannerText";
 
 const dataSource = "data/dataHome.json";
@@ -30,13 +29,15 @@ const HomePage = () => {
         <p style={{ color: "red" }}>Error fetching data</p>
       )}
       {status === "loading" && (
-        <BannerVideo
-          text="home"
-          pageVideo={776443340}
-          overlayOpacity={0.1}
-          overlayColor={COLOR_BASE}
-          loopEndTime={loopEndTime}
-        />
+        <>
+          <BannerVideo
+            pageVideo={776443340}
+            overlayOpacity={0.1}
+            overlayColor={COLOR_BASE}
+            loopEndTime={loopEndTime}
+          />
+          <BannerText text="home" />
+        </>
       )}
       {status === "success" && (
         <>
@@ -49,7 +50,7 @@ const HomePage = () => {
           <BannerText text="home" />
           <ChartHome
             columnCount={7}
-            data={dataHome}
+            data={data}
             loopEndTime={loopEndTime}
             backgroundColor={1}
           />
