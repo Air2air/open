@@ -7,7 +7,13 @@ import {
 import styled from "styled-components";
 import VimeoPlayer from "./vimeoPlayer";
 
-export const BannerVideo = (props) => {
+export const BannerVideo = (props: {
+  pageVideo: any;
+  overlayOpacity: any;
+  overlayColor?: any;
+  typing?: boolean;
+  loopEndTime?: number;
+}) => {
   return (
     <>
       <BannerVideoWrapper>

@@ -43,7 +43,6 @@ const PracticeAreasPage = () => {
       {status === "success" && (
         <>
           <BannerVideo
-            text="practiceareas"
             pageVideo={776449715}
             overlayOpacity={0.7}
             overlayColor={COLOR_BASE}

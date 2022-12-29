@@ -34,7 +34,7 @@ const VisionPage = () => {
             pageVideo={776446335}
             overlayOpacity={0.4}
             overlayColor={COLOR_BASE}
-            typing
+            typing={true}
             loopEndTime={loopEndTime}
           />
           <BannerText text="vision" />
