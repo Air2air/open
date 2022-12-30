@@ -6,33 +6,39 @@ import {
 } from "constants/index";
 import { assignBackgroundColor } from "utils/assignBackgroundColor";
 
-const Container = ({ children }: any, props: any) => {
+type ContainerProps = {
+  height?: number;
+  backgroundColor?: number;
+};
+
+const Container = (
+  { children }: any,
+  props: { backgroundColor: ContainerProps }
+) => {
   return (
     <>
-      <OuterWrapper style={{ background: assignBackgroundColor(3) }}>
-        <ContainerDiv>{children}</ContainerDiv>
-      </OuterWrapper>
+      <ContainerOuter>
+        <ContainerInner>{children}</ContainerInner>
+      </ContainerOuter>
     </>
   );
 };
 
-const OuterWrapper = styled.div`
+const ContainerOuter = styled.div<ContainerProps>`
   margin: auto auto;
   height: auto;
-  width: 100%;
+  width: 100vw;
+  background: ${(props) => assignBackgroundColor(props.backgroundColor)};
   /* background-color: gold; */
 `;
 
-const ContainerDiv = styled.div`
-  margin: auto auto;
+const ContainerInner = styled.div`
+  margin: 0 auto;
   height: auto;
-  /* position: relative; */
   @media (min-width: ${BREAKPOINT}px) {
-    padding: 10px 0;
     width: ${CONTENT_WIDTH_DESKTOP};
   }
   @media (max-width: ${BREAKPOINT}px) {
-    padding: 10px 0;
     width: ${CONTENT_WIDTH_MOBILE};
   }
   /* background: red; */

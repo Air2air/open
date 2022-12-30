@@ -9,7 +9,7 @@ const ChartPracticeAreas = (props: {
   columnCount?:number
 }) => {
   return (
-    <Container>
+    <Container backgroundColor={props.backgroundColor}>
       <ChartSection>
         <ChartWrapper>
           {props.data.map((props, index: number) => (

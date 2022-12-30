@@ -53,7 +53,7 @@ const VisionPage = () => {
             loopEndTime={loopEndTime}
             columnCount={7}
             data={data}
-            backgroundColor={2}
+            backgroundColor={3}
           />
           <RowButton buttonTo="/history" buttonText="History" />
           {data.map((props, index) => (

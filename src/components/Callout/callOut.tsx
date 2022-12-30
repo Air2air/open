@@ -10,15 +10,27 @@ import styled from "styled-components";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import parse from "html-react-parser";
 import { TitleCallout } from "components/Title/titleCallout";
-import { ICalloutProps } from "interfaces/callouts";
 
-export const Callout = (props: ICalloutProps) => {
+type CalloutProps = {
+  id?: number;
+  order?: number;
+  title?: string;
+  label?: string;
+  text?: any;
+  color?: string;
+  backgroundColor?: any;
+  buttonText?: string;
+  buttonTo?: string;
+  buttonColor?: string;
+};
+
+export const Callout = (props: CalloutProps) => {
   const textParsed = parse(props.text);
 
   return (
     <>
       <CalloutContainer style={{ background: props.backgroundColor }}>
-        <TextSection>
+        <CallOutInner>
           <TitleCallout title={props.title} color={props.color} />
           <AnimationOnScroll
             animateIn="animate__fadeIn"
@@ -27,7 +39,7 @@ export const Callout = (props: ICalloutProps) => {
           >
             <CalloutParagraph>{textParsed}</CalloutParagraph>
           </AnimationOnScroll>
-        </TextSection>
+        </CallOutInner>
       </CalloutContainer>
     </>
   );
@@ -43,10 +55,11 @@ const CalloutContainer = styled.div`
   overflow: hidden;
   align-items: center;
   height: auto;
+
   min-height: ${CALLOUT_HEIGHT}px;
 `;
 
-const TextSection = styled.div`
+const CallOutInner = styled.div`
   margin: 0 auto;
   z-index: +1;
   height: auto;
@@ -59,6 +72,7 @@ const TextSection = styled.div`
     padding: 20px 0;
     width: ${CONTENT_WIDTH_MOBILE};
   }
+  /* background: red;; */
 `;
 
 const CalloutParagraph = styled.div`
