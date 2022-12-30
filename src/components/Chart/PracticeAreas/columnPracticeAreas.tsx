@@ -60,7 +60,7 @@ const ColumnPracticeAreas = (props, index) => {
         />
         <ColumnLabel
           hidden={labelHidden}
-          label={props.title}
+          label={props.label}
           index={props.index}
         />
       </ColumnOuter>

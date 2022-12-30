@@ -53,9 +53,10 @@ export const ColumnHome = (props: any) => {
         (
           props: {
             id: number;
+            title: string;
+            label: string;
             height: number;
             backgroundColor: string;
-            title: string;
           },
           index: number
         ) => (
@@ -73,7 +74,7 @@ export const ColumnHome = (props: any) => {
             />
             <ColumnLabel
               hidden={labelHidden}
-              label={props.title}
+              label={props.label}
               index={index}
             />
           </ColumnOuter>

@@ -6,9 +6,10 @@ const ChartCaseStudies = (props: {
   backgroundColor?: any;
   data: {
     id: number;
+    title: string;
+    label: string;
     height: number;
     backgroundColor: string;
-    title: string;
   }[];
 }) => {
   return (

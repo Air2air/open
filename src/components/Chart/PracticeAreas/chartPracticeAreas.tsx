@@ -16,8 +16,10 @@ const ChartPracticeAreas = (props: {
             <ColumnPracticeAreas
               key={props.id}
               index={index}
-              backgroundColor={props.backgroundColor}
               title={props.title}
+              label={props.label}
+              value={props.value} 
+              backgroundColor={props.backgroundColor}
             />
           ))}
         </ChartWrapper>

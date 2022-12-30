@@ -21,9 +21,10 @@ export const ColumnMarkets = (props: any) => {
         (
           props: {
             id: number;
+            title: string;
+            label: string;
             height: number;
             backgroundColor: string;
-            title: string;
           },
           index: number
         ) => (
@@ -37,7 +38,7 @@ export const ColumnMarkets = (props: any) => {
                 opacity: 0,
               }}
             />
-            <ColumnLabel label={props.title} index={index} />
+            <ColumnLabel label={props.label} index={index} />
           </ColumnOuter>
         )
       )}

@@ -2,6 +2,7 @@
   {
     "id": 1,
     "title": "HEALTHTECH",
+    "label": "HEALTHTECH",
     "height": 20,
     "value": "$400B",
     "backgroundColor": "hsl(30, 72%, 32%)",
@@ -10,6 +11,7 @@
   {
     "id": 2,
     "title": "MEDTECH",
+    "label": "MEDTECH",
     "height": 30,
     "value": "$500B",
     "backgroundColor": "hsl(24, 73%, 28%)",
@@ -18,14 +20,16 @@
   {
     "id": 3,
     "title": "BIOTECH",
+    "label": "BIOTECH",
     "height": 50,
     "value": "$700B",
     "backgroundColor": "hsl(11, 75%, 25%)",
-    "text": "<p><p>According to a report by Markets and Markets, the global biotech market is expected to reach a size of $742.4 billion by 2025, growing at a CAGR of 7.6% from 2020 to 2025. sHowever, this projection may vary depending on influenced by various factors such as technological advancements, regulatory approval processes, market demand, and economic conditions. "
+    "text": "<p>According to a report by Markets and Markets, the global biotech market is expected to reach a size of $742.4 billion by 2025, growing at a CAGR of 7.6% from 2020 to 2025. sHowever, this projection may vary depending on influenced by various factors such as technological advancements, regulatory approval processes, market demand, and economic conditions. "
   },
   {
     "id": 4,
     "title": "PHARMATECH",
+    "label": "PHARMATECH",
     "height": 100,
     "value": "$1.2T",
     "backgroundColor": "hsl(2, 68%, 15%)",

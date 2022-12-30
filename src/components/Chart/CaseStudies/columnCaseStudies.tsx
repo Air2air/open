@@ -10,9 +10,10 @@ import { ColumnLabel } from "../ChartComponents/columnLabel";
 const ColumnCaseStudies = (props: {
   data: {
     id: number;
+    title: string;
+    label: string;
     height: number;
     backgroundColor: string;
-    title: string;
   }[];
 }) => {
   return (
@@ -21,9 +22,10 @@ const ColumnCaseStudies = (props: {
         (
           props: {
             id: number;
+            title: string;
+            label: string;
             height: number;
             backgroundColor: string;
-            title: string;
           },
           index: number
         ) => (
@@ -36,7 +38,10 @@ const ColumnCaseStudies = (props: {
                 animation: animationEnter(index),
               }}
             />
-            <ColumnLabel label={props.title} index={index} />
+            <ColumnLabel
+              label={props.label}
+              index={index}
+            />
           </ColumnOuter>
         )
       )}

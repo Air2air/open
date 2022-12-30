@@ -46,9 +46,10 @@ export const ColumnVision = (props) => {
         (
           props: {
             id: number;
+            title: string;
+            label: string;
             height: number;
             backgroundColor: string;
-            title: string;
           },
           index: number
         ) => (
@@ -67,7 +68,7 @@ export const ColumnVision = (props) => {
 
             <ColumnLabel
               hidden={labelHidden}
-              label={props.title}
+              label={props.label}
               index={index}
             />
           </ColumnOuter>
