@@ -14,7 +14,7 @@ const ContactPage = () => {
         overlayColor={COLOR_BASE}
         typing={true}
       />
-      <BannerText text="about" />
+      <BannerText text="contact" />
       <ContactCallout />
     </>
   );
