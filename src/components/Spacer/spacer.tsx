@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { assignBackgroundColor } from "utils/assignBackgroundColor";
+// import { assignBackgroundColor } from "utils/assignBackgroundColor";
 
 type SpacerProps = {
   height?: number;
