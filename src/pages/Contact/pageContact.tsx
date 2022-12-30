@@ -4,6 +4,7 @@ import BannerVideo from "components/BannerVideo/bannerVideo";
 import ContactCallout from "../../components/ContactCallout/contactCallOut";
 import { BannerText } from "components/BannerText/bannerText";
 
+
 const ContactPage = () => {
   setBodyColor({ color: COLOR_BASE });
   return (

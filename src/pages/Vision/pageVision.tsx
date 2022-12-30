@@ -55,10 +55,11 @@ const VisionPage = () => {
             data={data}
             backgroundColor={2}
           />
+          <RowButton buttonTo="/history" buttonText="History" />
           {data.map((props, index) => (
             <Callout key={index} {...props} />
           ))}
-          <RowButton buttonTo="/about" buttonText="About" />
+          <RowButton buttonTo="/history" buttonText="History" />
         </>
       )}
     </>

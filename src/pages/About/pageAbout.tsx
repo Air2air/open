@@ -14,9 +14,10 @@ const AboutPage = () => {
         overlayColor={COLOR_BASE}
       />
       <BannerText text="about" />
+      <RowButton buttonTo="/contact" buttonText="Contact" />
       <Map title="Elevens Worldwide" backgroundColor={1} />
       <Advisors title="Advisory Board" backgroundColor={3} />
-      <RowButton buttonTo="/contact" buttonText="Contact" backgroundColor={4} />
+      <RowButton buttonTo="/contact" buttonText="Contact" />
     </>
   );
 };

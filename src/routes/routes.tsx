@@ -1,8 +1,8 @@
-import HistoryPage from "pages/History/history";
+import HistoryPage from "pages/History/pageHistory";
 import { lazy } from "react";
 const AboutPage = lazy(() => import("pages/About/pageAbout"));
 const CaseStudiesPage = lazy(() => import("pages/CaseStudies/pageCaseStudies"));
-const ContactPage = lazy(() => import("pages/Contact/contact"));
+const ContactPage = lazy(() => import("pages/Contact/pageContact"));
 const HomePage = lazy(() => import("pages/Home/pageHome"));
 const MarketsPage = lazy(() => import("pages/Markets/pageMarkets"));
 const PracticeAreasPage = lazy(

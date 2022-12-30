@@ -4,6 +4,7 @@ import RowButton from "components/Button/rowButton";
 import { COLOR_BASE } from "constants/index";
 import BannerVideo from "components/BannerVideo/bannerVideo";
 import BannerText from "components/BannerText/bannerText";
+import Callout from "components/Callout/callOut";
 
 const dataSource = "data/dataMarkets.json";
 const queryName = "markets";
@@ -47,6 +48,9 @@ const MarketsPage = () => {
           <BannerText text="markets" />
           <ChartMarkets columnCount={5} data={data} backgroundColor={1} />
           <RowButton buttonTo="/vision" buttonText="Vision" />
+          {data.map((props, index) => (
+            <Callout key={index} {...props} />
+          ))}
         </>
       )}
     </>

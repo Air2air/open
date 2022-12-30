@@ -3,6 +3,7 @@ import Callout from "../../components/Callout/callOut";
 import BannerImage from "components/BannerImage/bannerImage";
 import { COLOR_BASE } from "constants/index";
 import BannerText from "components/BannerText/bannerText";
+import RowButton from "components/Button/rowButton";
 
 const pageImage = "dartmouth.jpeg";
 
@@ -18,6 +19,7 @@ const HistoryPage = () => {
         typing={true}
       />
       <BannerText text="history" />
+      <RowButton buttonTo="/about" buttonText="About" />
       <Callout
         id={0}
         title="THE BIRTH OF MACHINE INTELLIGENCE"
@@ -26,6 +28,7 @@ const HistoryPage = () => {
         buttonText="About Elevens"
         buttonTo="/about"
       />
+      <RowButton buttonTo="/about" buttonText="About" />
     </>
   );
 };

@@ -9,6 +9,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@react-hook/window-size": "^3.1.1",
+    "@slightlyoff/lite-vimeo": "^0.1.2",
     "@types/node": "^16.11.60",
     "@u-wave/react-vimeo": "^0.9.10",
     "animate.css": "^4.1.1",
