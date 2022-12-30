@@ -50,11 +50,11 @@ const CaseStudiesPage = () => {
             loopEndTime={loopEndTime}
           />
           <BannerText text="casestudies" />
-          <RowButton
+          {/* <RowButton
             buttonTo="/markets"
             buttonText="Markets"
             backgroundColor={4}
-          />
+          /> */}
           {data.map((props, index) => (
             <div key={index}>
               <ChartCaseStudies data={props.practiceArea} backgroundColor={2} />
