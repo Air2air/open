@@ -4,6 +4,7 @@ import BannerImage from "components/BannerImage/bannerImage";
 import { COLOR_BASE } from "constants/index";
 import BannerText from "components/BannerText/bannerText";
 import RowButton from "components/Button/rowButton";
+import Spacer from "components/Spacer/spacer";
 
 const pageImage = "dartmouth.jpeg";
 
@@ -19,6 +20,7 @@ const HistoryPage = () => {
         typing={true}
       />
       <BannerText text="history" />
+      <Spacer height={40} backgroundColor={2}/>
       <RowButton buttonTo="/about" buttonText="About" />
       <Callout
         id={0}
