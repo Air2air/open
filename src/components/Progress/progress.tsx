@@ -12,6 +12,8 @@ const ProgressBar = (): JSX.Element => {
     }, 1400);
   };
 
+  
+
   useEffect(() => {
     window.addEventListener("scroll", onScroll);
 
