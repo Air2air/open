@@ -15,7 +15,7 @@ const HistoryPage = () => {
     <>
       <BannerImage
         pageImage={pageImage}
-        overlayOpacity={0.3}
+        overlayOpacity={0.7}
         overlayColor={COLOR_BASE}
         typing={true}
       />
