@@ -8,6 +8,9 @@ export default defineConfig({
   plugins: [react(), viteTsconfigPaths(), svgr()],
   define: {
     'process.env': {}
+  },
+  root: 'src',
+  build: {
+      outDir: '../dist'
   }
 });
-
