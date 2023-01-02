@@ -30,14 +30,14 @@ const PracticeAreasPage = () => {
       )}
       {status === "loading" && (
         <>
-        <BannerVideo
-          pageVideo={776446335}
-          overlayOpacity={0.4}
-          overlayColor={COLOR_BASE}
-          typing
-          loopEndTime={loopEndTime}
-        />
-        <BannerText text="markets" />
+          <BannerVideo
+            pageVideo={776446335}
+            overlayOpacity={0.4}
+            overlayColor={COLOR_BASE}
+            typing
+            loopEndTime={loopEndTime}
+          />
+          <BannerText text="markets" />
         </>
       )}
       {status === "success" && (
@@ -48,7 +48,7 @@ const PracticeAreasPage = () => {
             overlayColor={COLOR_BASE}
             typing={true}
           />
-        <BannerText text="practiceareas" />
+          <BannerText text="practiceareas" />
           <ChartPracticeAreas
             loopEndTime={loopEndTime}
             columnCount={6}
@@ -56,9 +56,24 @@ const PracticeAreasPage = () => {
             backgroundColor={3}
           />
           <RowButton buttonTo="/casestudies" buttonText="Case Studies" />
-          {data.map((props, index) => (
-            <Callout {...props} key={props.id} />
-          ))}
+          {data.map(
+            (
+              props: JSX.IntrinsicAttributes & {
+                id?: number | undefined;
+                order?: number | undefined;
+                title?: string | undefined;
+                label?: string | undefined;
+                text?: any;
+                color?: string | undefined;
+                backgroundColor?: any;
+                buttonText?: string | undefined;
+                buttonTo?: string | undefined;
+                buttonColor?: string | undefined;
+              }
+            ) => (
+              <Callout {...props} key={props.id} />
+            )
+          )}
           <RowButton buttonTo="/casestudies" buttonText="Case Studies" />
         </>
       )}

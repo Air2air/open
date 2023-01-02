@@ -11,8 +11,7 @@ type ContainerProps = {
 };
 
 const Container = (
-  { children }: any,
-  props: { backgroundColor: ContainerProps }
+  { children }: any
 ) => {
   return (
     <>

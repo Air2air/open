@@ -15,7 +15,7 @@ export const HeaderDesktop = () => {
   const [height, setHeight] = useState(0);
 
   const listenToScroll = () => {
-    let heightToHideFrom = 100;
+    const heightToHideFrom = 100;
     const winScroll =
       document.body.scrollTop || document.documentElement.scrollTop;
     setHeight(winScroll);
