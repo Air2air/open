@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { ReactComponent as LogoWhite } from "./../../images/logo_text_white.svg";
+import { ReactComponent as LogoWhite } from "images/logo_text_white.svg";
 import {
   HEADER_COLOR,
   COLOR_TEXT,

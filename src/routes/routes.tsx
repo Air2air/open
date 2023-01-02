@@ -1,6 +1,7 @@
 import HistoryPage from "pages/History/pageHistory";
 import { lazy } from "react";
 const AboutPage = lazy(() => import("pages/About/pageAbout"));
+const ArticlesPage = lazy(() => import("pages/Articles/pageArticles"));
 const CaseStudiesPage = lazy(() => import("pages/CaseStudies/pageCaseStudies"));
 const ContactPage = lazy(() => import("pages/Contact/pageContact"));
 const HomePage = lazy(() => import("pages/Home/pageHome"));
@@ -16,6 +17,12 @@ export const dataRoutes = [
     path: "about",
     section: "About",
     element: <AboutPage />,
+  },
+  {
+    id: "Articles",
+    path: "articles",
+    section: "Articles",
+    element: <ArticlesPage />,
   },
   {
     id: "CaseStudies",

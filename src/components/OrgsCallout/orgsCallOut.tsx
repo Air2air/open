@@ -12,7 +12,7 @@ const OrgsItems = () => {
   const orgsMap = dataOrgs.map((props) => (
     <OrgMapImageWrapper key={props.id}>
       <OrgMapImage
-        src={`${process.env.PUBLIC_URL}/images/content/${props.image}`}
+        src={`images/content/${props.image}`}
         alt={props.title}
         width={props.width}
       />
