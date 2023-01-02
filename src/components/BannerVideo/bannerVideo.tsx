@@ -1,3 +1,4 @@
+import { lazy } from "react";
 import {
   BANNER_HEIGHT_DESKTOP,
   BANNER_HEIGHT_MOBILE,
@@ -5,7 +6,7 @@ import {
   COLOR_BLACK,
 } from "constants/index";
 import styled from "styled-components";
-import VimeoPlayer from "./vimeoPlayer";
+const VimeoPlayer = lazy(() => import("./vimeoPlayer"));
 
 export const BannerVideo = (props: {
   pageVideo: any;

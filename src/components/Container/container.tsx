@@ -4,7 +4,6 @@ import {
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
 } from "constants/index";
-import { assignBackgroundColor } from "utils/assignBackgroundColor";
 
 type ContainerProps = {
   height?: number;
@@ -28,7 +27,6 @@ const ContainerOuter = styled.div<ContainerProps>`
   margin: auto auto;
   height: auto;
   width: 100vw;
-  background: ${(props) => assignBackgroundColor(props.backgroundColor)};
   /* background-color: gold; */
 `;
 
