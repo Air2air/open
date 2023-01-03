@@ -14,6 +14,10 @@ export const CALLOUT_HEIGHT = 250;
 // Contact
 export const CONTACT_ITEM_HEIGHT = 210;
 
+// MAP
+export const MAP_HEIGHT_DESKTOP = 400;
+export const MAP_HEIGHT_MOBILE = 400;
+
 // TEAM
 export const TEAM_MEMBER_HEIGHT = 220;
 export const TEAM_MEMBER_WIDTH = 100;

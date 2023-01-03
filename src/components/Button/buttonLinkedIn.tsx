@@ -5,7 +5,7 @@ import {
   BUTTON_TEXT_COLOR,
 } from "constants/index";
 import styled from "styled-components";
-import { ReactComponent as LogoLinkedIn } from "./../../images/logo_linkedin.svg";
+import LogoLinkedIn  from "images/logo_linkedin.svg";
 
 export const ButtonLinkedIn = (props: { to: string; text: string }) => {
   return (
@@ -13,7 +13,7 @@ export const ButtonLinkedIn = (props: { to: string; text: string }) => {
       <ButtonPositioner>
         <a href={props.to}>
           <ButtonWrapper>
-            <LogoLinkedIn className="icon" />
+            <LogoLinkedIn/>
             <span>{props.text}</span>
           </ButtonWrapper>
         </a>

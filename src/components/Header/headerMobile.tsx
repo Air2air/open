@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { ReactComponent as LogoWhite } from "./../../images/logo_text_white.svg";
+import LogoWhite from "images/logo_text_white.svg";
 import {
   COLOR_TEXT,
   HEADER_COLOR,
@@ -17,7 +17,9 @@ export const HeaderMobile = () => {
         <HeaderTop>
           <LogoWrapper>
             <Link to="/home">
-              <LogoWhite width="140px" />
+              <div style={{width:"140px"}}>
+              <LogoWhite  />
+              </div>
             </Link>
           </LogoWrapper>
         </HeaderTop>

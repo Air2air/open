@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { ReactComponent as LogoWhite } from "images/logo_text_white.svg";
+import LogoWhite from "images/logo_text_white.svg";
 import {
   HEADER_COLOR,
   COLOR_TEXT,
@@ -40,7 +40,9 @@ export const HeaderDesktop = () => {
         <HeaderLeft>
           <LogoWrapper>
             <Link to="/home">
-              <LogoWhite width="150" />
+              <div style={{ width: "140px" }}>
+                <LogoWhite />
+              </div>
             </Link>
           </LogoWrapper>
         </HeaderLeft>
@@ -128,7 +130,7 @@ const HeaderLink = styled(Link)`
   padding: 0 20px;
   display: flex;
   align-items: center;
-  flex-wrap:nowrap;
+  flex-wrap: nowrap;
   text-transform: uppercase;
   height: ${HEADER_HEIGHT}px;
   background: ${HEADER_COLOR};

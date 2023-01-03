@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { ReactComponent as LogoWhite } from "./../../images/logo_white.svg";
-import { ReactComponent as LogoTextWhite } from "./../../images/logo_text_white.svg";
+import LogoWhite from "images/logo_white.svg";
+import LogoTextWhite from "images/logo_text_white.svg";
 import {
   COLOR_BASE_4,
   COLOR_BASE_LIGHT,
@@ -18,7 +18,9 @@ export const FooterMobile = () => {
       <FooterContainer>
         <FooterLogoRow animateIn="animate__fadeInUp" delay={0} offset={0}>
           <Link className="link" to="/home">
-            <LogoTextWhite width="150" />
+            <div style={{ width: "150px", opacity: 0.6 }}>
+              <LogoTextWhite />
+            </div>
           </Link>
         </FooterLogoRow>
 
@@ -40,7 +42,9 @@ export const FooterMobile = () => {
         <FooterCopyright>
           <div>&copy; Eleven of Ten LLP</div>
           <Link to="/home">
-            <LogoWhite width="30" style={{ opacity: 0.3 }} />
+            <div style={{ width: "30px", opacity: 0.3 }}>
+              <LogoWhite />
+            </div>
           </Link>
           <div>All rights reserved.</div>
         </FooterCopyright>
