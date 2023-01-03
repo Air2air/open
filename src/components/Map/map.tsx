@@ -74,6 +74,8 @@ const PaddingSection = styled.div`
     padding: ${mapSectionPaddingMobile}px 0;
   }
   /* background: gold; */
+
+  
 `;
 
 const MapImageDiv = styled.div`
