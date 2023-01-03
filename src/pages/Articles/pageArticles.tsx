@@ -1,9 +1,10 @@
 import { useQuery } from "react-query";
 import BannerVideo from "components/BannerVideo/bannerVideo";
 import { COLOR_BASE } from "constants/index";
-import Callout from "components/Callout/callOut";
 import RowButton from "components/Button/rowButton";
 import { BannerText } from "components/BannerText/bannerText";
+import CardArticles from "components/Card/cardArticles";
+import Spacer from "components/Spacer/spacer";
 
 const dataSource = "data/dataArticles.json";
 const queryName = "articles";
@@ -29,42 +30,15 @@ const ArticlesPage = () => {
       )}
       {status === "loading" && (
         <>
-          <BannerVideo
-            pageVideo={776446335}
-            overlayOpacity={0.4}
-            overlayColor={COLOR_BASE}
-            typing
-            loopEndTime={loopEndTime}
-          />
+          <Spacer height={140} />
           <BannerText text="articles" />
         </>
       )}
       {status === "success" && (
         <>
-          <BannerVideo
-            pageVideo={776446335}
-            overlayOpacity={0.4}
-            overlayColor={COLOR_BASE}
-            typing
-            loopEndTime={loopEndTime}
-          />
-          <BannerText text="articles" />
-          {/* <RowButton
-            buttonTo="/markets"
-            buttonText="Markets"
-            backgroundColor={4}
-          /> */}
-          {data.map((props, index) => (
-            <div key={index}>
+          <Spacer height={140} />
+          <CardArticles data={data} />
 
-              <Callout {...props} />
-            </div>
-          ))}
-          <RowButton
-            buttonTo="/markets"
-            buttonText="Markets"
-            backgroundColor={4}
-          />
         </>
       )}
     </>

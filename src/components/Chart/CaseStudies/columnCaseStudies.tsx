@@ -38,10 +38,7 @@ const ColumnCaseStudies = (props: {
                 animation: animationEnter(index),
               }}
             />
-            <ColumnLabel
-              label={props.label}
-              index={index}
-            />
+            <ColumnLabel label={props.label} index={index} />
           </ColumnOuter>
         )
       )}

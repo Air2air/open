@@ -4,7 +4,7 @@ import { dataAdvisors } from "./dataAdvisors";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { TitleCallout } from "./../Title/titleCallout";
 import Container from "./../Container/container";
-import setBodyColor from "./../../utils/setBodyColor";
+
 
 interface IAdvisorsProps {
   title?: string;
@@ -25,7 +25,7 @@ const sortedDataAdvisors = dataAdvisors.sort((a, b) =>
 );
 
 const Advisors = (props: IAdvisorsProps) => {
-  setBodyColor({ color: props.backgroundColor });
+
 
   return (
     <>
