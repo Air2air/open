@@ -59,6 +59,9 @@ const SVGContainer = styled.div`
   }
 `;
 
+
+
+
 const mapSectionPaddingDesktop = 50;
 const mapSectionPaddingMobile = 20;
 
@@ -75,7 +78,7 @@ const PaddingSection = styled.div`
   }
   /* background: gold; */
 
-  
+
 `;
 
 const MapImageDiv = styled.div`
