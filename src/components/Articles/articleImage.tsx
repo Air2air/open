@@ -113,13 +113,13 @@ export const ArticleCodeBlock = styled.div`
   }
   .brace {
     font-weight: bold;
-    color: lightskyblue;
+    color: #22aaff;
   }
   .key {
-    color: lightgreen;
+    color: #3ae998;
   }
   .value {
-    color: lightcoral;
+    color: #faab4a;
   }
 `;
 
