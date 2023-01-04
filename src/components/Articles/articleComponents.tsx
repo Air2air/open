@@ -1,18 +1,17 @@
 import {
-    BREAKPOINT,
-    CARD_HEIGHT_DESKTOP,
-    CARD_HEIGHT_MOBILE,
-    CARD_WIDTH_DESKTOP,
-    CARD_WIDTH_MOBILE,
-    COLOR_BASE_1,
-    COLOR_WHITE,
-    HEADER_HEIGHT_DESKTOP,
-    HEADER_HEIGHT_MOBILE,
-  } from "constants/index";
-  import styled from "styled-components";
+  BREAKPOINT,
+  CARD_HEIGHT_DESKTOP,
+  CARD_HEIGHT_MOBILE,
+  CARD_WIDTH_DESKTOP,
+  CARD_WIDTH_MOBILE,
+  COLOR_BASE_1,
+  COLOR_WHITE,
+  HEADER_HEIGHT_DESKTOP,
+  HEADER_HEIGHT_MOBILE,
+} from "constants/index";
+import styled from "styled-components";
 
-
-  export const CardHolder = styled.div`
+export const CardHolder = styled.div`
   top: 0;
   left: 0;
   width: 100%;
@@ -27,8 +26,9 @@ import {
   }
 `;
 
-
 export const CardRow = styled.div`
+  box-sizing: border-box;
+  margin: 40px 0;
   display: flex;
   justify-content: flex-start;
   height: auto;

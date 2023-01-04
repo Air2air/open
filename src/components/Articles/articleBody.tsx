@@ -43,14 +43,9 @@ export const ArticleBody = (props: IArticleProps) => {
 };
 
 const ArticleBodyContainer = styled.div`
+  margin: 20px 0;
   position: relative;
   top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100vw;
-  overflow: hidden;
-  align-items: center;
   height: auto;
   min-height: ${CALLOUT_HEIGHT}px;
 `;
@@ -86,7 +81,5 @@ const ArticleBodyParagraph = styled.div`
     line-height: 1.7em;
   }
 `;
-
-
 
 export default ArticleBody;

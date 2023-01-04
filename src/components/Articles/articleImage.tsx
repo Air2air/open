@@ -100,7 +100,7 @@ export const ArticleCodeBlock = styled.div`
     width: ${ARTICLE_IMAGE_SIZE_MOBILE}px;
   }
   color: ${COLOR_WHITE};
-  background-color: ${COLOR_BASE};
+  background-color: hsl(211, 40%, 12%);  //${COLOR_BASE};
   .code-wrapper {
     height: auto;
   }
