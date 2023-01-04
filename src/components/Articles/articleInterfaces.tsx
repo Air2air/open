@@ -15,4 +15,5 @@ export interface IArticleProps {
   buttonTo?: string;
   buttonColor?: string;
   data?: any;
+  style?: any;
 }

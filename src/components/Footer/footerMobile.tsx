@@ -30,12 +30,13 @@ export const FooterMobile = () => {
             <FooterLink to="/practice_areas">What We Do</FooterLink>
             <FooterLink to="/markets">Markets</FooterLink>
             <FooterLink to="/casestudies">Case Studies</FooterLink>
+            <FooterLink to="/vision">Vision</FooterLink>
           </FooterLinkColumn>
           <FooterLinkColumn>
-            <FooterLink to="/vision">Vision</FooterLink>
             <FooterLink to="/history">History</FooterLink>
             <FooterLink to="/about">About</FooterLink>
             <FooterLink to="/contact">Contact</FooterLink>
+            <FooterLink to="/articles">Articles</FooterLink>
           </FooterLinkColumn>
         </FooterContentRow>
 

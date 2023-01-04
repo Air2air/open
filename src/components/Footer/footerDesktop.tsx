@@ -36,12 +36,13 @@ export const FooterDesktop = () => {
               <FooterLink to="/practice_areas">What We Do</FooterLink>
               <FooterLink to="/markets">Markets</FooterLink>
               <FooterLink to="/casestudies">Case Studies</FooterLink>
+              <FooterLink to="/vision">Vision</FooterLink>
             </FooterLinkColumn>
             <FooterLinkColumn>
-              <FooterLink to="/vision">Vision</FooterLink>
               <FooterLink to="/history">History</FooterLink>
               <FooterLink to="/about">About</FooterLink>
               <FooterLink to="/contact">Contact</FooterLink>
+              <FooterLink to="/articles">Articles</FooterLink>
             </FooterLinkColumn>
           </FooterColumn>
         </FooterContentRow>
@@ -49,7 +50,7 @@ export const FooterDesktop = () => {
         <FooterCopyright>
           <div>&copy; Eleven of Ten LLP</div>
           <Link to="/home">
-          <div style={{ width: "30px", opacity: 0.3 }}>
+            <div style={{ width: "30px", opacity: 0.3 }}>
               <LogoWhite />
             </div>
           </Link>
