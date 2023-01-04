@@ -6,7 +6,7 @@ import BannerVideo from "components/BannerVideo/bannerVideo";
 import BannerText from "components/BannerText/bannerText";
 import Callout from "components/Callout/callOut";
 
-const dataSource = "data/dataMarkets.json";
+const dataSource = "/data/dataMarkets.json";
 const queryName = "markets";
 
 const MarketsPage = () => {

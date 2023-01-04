@@ -6,7 +6,7 @@ import BannerVideo from "components/BannerVideo/bannerVideo";
 import { COLOR_BASE } from "constants/index";
 import { BannerText } from "components/BannerText/bannerText";
 
-const dataSource = "data/dataHome.json";
+const dataSource = "/data/dataHome.json";
 const queryName = "home";
 
 const HomePage = () => {
@@ -59,7 +59,7 @@ const HomePage = () => {
             buttonText="What we do"
             backgroundColor={4}
           />
-          <OrgsCallout />
+          <OrgsCallout backgroundColor={1}/>
         </>
       )}
     </>

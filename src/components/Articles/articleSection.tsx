@@ -1,5 +1,3 @@
-
-
 import ArticleCard from "./articleCard";
 import { IArticleDataProps } from "./articleInterfaces";
 

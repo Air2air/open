@@ -6,7 +6,7 @@ import ChartCaseStudies from "components/Chart/CaseStudies/chartCaseStudies";
 import RowButton from "components/Button/rowButton";
 import { BannerText } from "components/BannerText/bannerText";
 
-const dataSource = "data/dataCaseStudies.json";
+const dataSource = "/data/dataCaseStudies.json";
 const queryName = "casestudies";
 
 const CaseStudiesPage = () => {

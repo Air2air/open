@@ -6,7 +6,7 @@ import RowButton from "components/Button/rowButton";
 import ChartVision from "components/Chart/Vision/chartVision";
 import { BannerText } from "components/BannerText/bannerText";
 
-const dataSource = "data/dataVision.json";
+const dataSource = "/data/dataVision.json";
 const queryName = "vision";
 
 const VisionPage = () => {

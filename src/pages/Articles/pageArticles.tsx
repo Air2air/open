@@ -1,12 +1,9 @@
 import { useQuery } from "react-query";
-import BannerVideo from "components/BannerVideo/bannerVideo";
-import { COLOR_BASE } from "constants/index";
-import RowButton from "components/Button/rowButton";
 import { BannerText } from "components/BannerText/bannerText";
 import ArticleSection from "components/Articles/articleSection";
 import Spacer from "components/Spacer/spacer";
 
-const dataSource = "data/dataArticles.json";
+const dataSource = "/data/dataArticles.json";
 const queryName = "articles";
 
 const ArticlesPage = () => {

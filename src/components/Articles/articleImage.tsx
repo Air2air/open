@@ -23,9 +23,7 @@ export const ArticleImage = (props: IArticleProps) => {
           <div className="indent">
             <span className="brace">&#123;</span>
             <span className="key">"prompt"</span>:
-            <span className="value">
-              "{props.code}"
-            </span>
+            <span className="value">"{props.code}"</span>
             <span className="brace">&#125;,</span>
           </div>
           <div className="indent">
@@ -100,7 +98,7 @@ export const ArticleCodeBlock = styled.div`
     width: ${ARTICLE_IMAGE_SIZE_MOBILE}px;
   }
   color: ${COLOR_WHITE};
-  background-color: hsl(211, 40%, 12%);  //${COLOR_BASE};
+  background-color: hsl(211, 40%, 12%); //${COLOR_BASE};
   .code-wrapper {
     height: auto;
   }

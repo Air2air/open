@@ -5,31 +5,71 @@ import {
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
 } from "constants/index";
+import { useQuery } from "react-query";
 import styled from "styled-components";
-import { dataOrgs } from "./dataOrgs";
+import { assignBackgroundColor } from "utils/assignBackgroundColor";
 
-const OrgsItems = () => {
-  const orgsMap = dataOrgs.map((props) => (
-    <OrgMapImageWrapper key={props.id}>
-      <OrgMapImage
-        src={`images/content/${props.image}`}
-        alt={props.title}
-        width={props.width}
-      />
-    </OrgMapImageWrapper>
-  ));
-  return <>{orgsMap}</>;
+const dataSource = "/data/dataOrgs.json";
+const queryName = "orgs";
+
+const OrgsCallout = (props) => {
+  const fetchData = async () => {
+    const res = await fetch(dataSource, {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    });
+    return res.json();
+  };
+  const { data, status } = useQuery(queryName, fetchData);
+
+  const isMobile = window.innerWidth < BREAKPOINT;
+
+  function resizeImage(width, isMobile) {
+    if (isMobile) {
+      return width * 0.6;
+    } else {
+      return width;
+    }
+  }
+
+  return (
+    <>
+      {status === "error" && (
+        <OrgsWrapper style={{ background: "red" }}>
+          <div style={{ color: "white" }}>Data fetch error at {dataSource}</div>
+        </OrgsWrapper>
+      )}
+      {status === "loading" && (
+        <OrgsWrapper style={{ background: "red" }}>
+          <div style={{ color: "white" }}>Loading from {dataSource}</div>
+        </OrgsWrapper>
+      )}
+      {status === "success" && (
+        <>
+          <OrgsWrapper
+            style={{ background: assignBackgroundColor(props.backgroundColor) }}
+          >
+            <OrgInnerWrapper>
+              <OrgMapImageRow>
+                {data.map((props, index) => (
+                  <OrgMapImageWrapper key={index}>
+                    <OrgMapImage
+                      src={`images/content/${props.image}`}
+                      alt={props.title}
+                      width={resizeImage(props.width, isMobile)}
+                    />
+                  </OrgMapImageWrapper>
+                ))}
+              </OrgMapImageRow>
+            </OrgInnerWrapper>
+          </OrgsWrapper>
+        </>
+      )}
+    </>
+  );
 };
-
-const OrgsCallout = (props) => (
-  <OrgsWrapper style={{ background: props.backgroundColor }}>
-    <OrgInnerWrapper>
-      <OrgMapImageRow>
-        <OrgsItems />
-      </OrgMapImageRow>
-    </OrgInnerWrapper>
-  </OrgsWrapper>
-);
 
 const orgImageHeight = "100px";
 
@@ -68,13 +108,13 @@ const OrgMapImageRow = styled.div`
   display: grid;
   grid-gap: 0px;
   opacity: 0.5;
-
-  @media (min-width: ${BREAKPOINT}px) {
+  grid-template-columns: auto auto auto;
+  /* @media (min-width: ${BREAKPOINT}px) {
     grid-template-columns: auto auto auto;
   }
   @media (max-width: ${BREAKPOINT}px) {
     grid-template-columns: auto auto;
-  }
+  } */
   /* background: red; */
 `;
 

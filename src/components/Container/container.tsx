@@ -4,18 +4,22 @@ import {
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
 } from "constants/index";
+import { assignBackgroundColor } from "utils/assignBackgroundColor";
 
 type ContainerProps = {
-  height?: number;
-  backgroundColor?: number;
+  backgroundColor?: any;
 };
 
-const Container = (
-  { children }: any
-) => {
+const Container = ({ children }: any, { backgroundColor }: ContainerProps) => {
   return (
     <>
-      <ContainerOuter>
+      <ContainerOuter
+        style={{
+          background: backgroundColor
+            ? assignBackgroundColor(backgroundColor)
+            : "none",
+        }}
+      >
         <ContainerInner>{children}</ContainerInner>
       </ContainerOuter>
     </>

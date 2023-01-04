@@ -1,4 +1,4 @@
-import setBodyColor from "utils/setBodyColor";
+
 import Callout from "../../components/Callout/callOut";
 import BannerImage from "components/BannerImage/bannerImage";
 import { COLOR_BASE } from "constants/index";
@@ -9,7 +9,7 @@ import Spacer from "components/Spacer/spacer";
 const pageImage = "dartmouth.jpeg";
 
 const HistoryPage = () => {
-  setBodyColor({ color: COLOR_BASE });
+
 
   return (
     <>
@@ -21,7 +21,7 @@ const HistoryPage = () => {
       />
       <BannerText text="history" />
       <Spacer height={40} backgroundColor={2}/>
-      <RowButton buttonTo="/about" buttonText="About" />
+      <RowButton buttonTo="/about" buttonText="About" backgroundColor={2}/>
       <Callout
         id={0}
         title="THE BIRTH OF MACHINE INTELLIGENCE"

@@ -6,7 +6,7 @@ import ChartPracticeAreas from "components/Chart/PracticeAreas/chartPracticeArea
 import { useQuery } from "react-query";
 import BannerText from "components/BannerText/bannerText";
 
-const dataSource = "data/dataPracticeAreas.json";
+const dataSource = "/data/dataPracticeAreas.json";
 const queryName = "practiceareas";
 
 const PracticeAreasPage = () => {

@@ -5,6 +5,7 @@ export interface IArticleDataProps {
 export interface IArticleProps {
   id?: number;
   to?: string;
+  category?: string;
   title?: string;
   text?: any;
   date?: Date;
