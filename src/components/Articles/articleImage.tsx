@@ -47,8 +47,8 @@ export const ArticleImage = (props: IArticleProps) => {
   );
 };
 
-const articleImageCodeBlockHeightDesktop = 200;
-const articleImageCodeBlockHeightMobile = 200;
+const articleImageCodeBlockHeightDesktop = 240;
+const articleImageCodeBlockHeightMobile = 240;
 
 export const ArticleImageWrapper = styled.div`
   float: right;
