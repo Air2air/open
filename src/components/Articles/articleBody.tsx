@@ -1,51 +1,48 @@
 import {
+  ARTICLE_IMAGE_SIZE_DESKTOP,
+  ARTICLE_IMAGE_SIZE_MOBILE,
   BREAKPOINT,
   CALLOUT_HEIGHT,
+  CARD_HEIGHT_DESKTOP,
+  CARD_HEIGHT_MOBILE,
+  CARD_WIDTH_DESKTOP,
+  CARD_WIDTH_MOBILE,
   COLOR_TEXT,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
-  TEXT_OPACITY,
 } from "constants/index";
 import styled from "styled-components";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import parse from "html-react-parser";
 import { TitleCallout } from "components/Title/titleCallout";
+import { IArticleProps } from "./articleInterfaces";
+import { ArticleImage } from "./articleImage";
 
-type CalloutProps = {
-  id?: number;
-  order?: number;
-  title?: string;
-  label?: string;
-  text?: any;
-  color?: string;
-  backgroundColor?: any;
-  buttonText?: string;
-  buttonTo?: string;
-  buttonColor?: string;
-};
-
-export const Callout = (props: CalloutProps) => {
+export const ArticleBody = (props: IArticleProps) => {
   const textParsed = parse(props.text);
 
   return (
     <>
-      <CalloutContainer style={{ background: props.backgroundColor }}>
-        <CallOutInner>
-          <TitleCallout title={props.title} color={props.color} />
+      <ArticleBodyContainer style={{ background: props.backgroundColor }}>
+        <ArticleInner>
+          <TitleCallout title={props.title} />
           <AnimationOnScroll
             animateIn="animate__fadeIn"
             delay={10}
-            offset={60}
+            offset={100}
           >
-            <CalloutParagraph>{textParsed}</CalloutParagraph>
+            <ArticleBodyParagraph>
+              <ArticleImage {...props} />
+              {textParsed}
+            </ArticleBodyParagraph>
           </AnimationOnScroll>
-        </CallOutInner>
-      </CalloutContainer>
+        </ArticleInner>
+      </ArticleBodyContainer>
     </>
   );
 };
 
-const CalloutContainer = styled.div`
+const ArticleBodyContainer = styled.div`
   position: relative;
   top: 0;
   display: flex;
@@ -55,11 +52,10 @@ const CalloutContainer = styled.div`
   overflow: hidden;
   align-items: center;
   height: auto;
-
   min-height: ${CALLOUT_HEIGHT}px;
 `;
 
-const CallOutInner = styled.div`
+const ArticleInner = styled.div`
   margin: 0 auto;
   z-index: +1;
   height: auto;
@@ -75,14 +71,12 @@ const CallOutInner = styled.div`
   /* background: red;; */
 `;
 
-const CalloutParagraph = styled.div`
+const ArticleBodyParagraph = styled.div`
   color: ${COLOR_TEXT};
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   height: auto;
   text-align: left;
-  opacity: ${TEXT_OPACITY};
-  /* padding-bottom: 20px; */
   @media (min-width: ${BREAKPOINT}px) {
     font-size: 1.3em;
     line-height: 1.7em;
@@ -93,4 +87,6 @@ const CalloutParagraph = styled.div`
   }
 `;
 
-export default Callout;
+
+
+export default ArticleBody;

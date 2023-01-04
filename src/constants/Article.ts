@@ -1,0 +1,5 @@
+// ARTICLES
+
+export const ARTICLE_IMAGE_SIZE_DESKTOP = 380;
+export const ARTICLE_IMAGE_SIZE_MOBILE = 280;
+

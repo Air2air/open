@@ -50,7 +50,7 @@ export const CalloutBullet = (props: ICalloutBulletProps) => {
             <TitleCallout title={props.title} color={props.color} />
               <AnimationOnScroll
                 animateIn="animate__fadeIn"
-                delay={100}
+                delay={10}
                 offset={60}
               >
                 <CalloutParagraph>{textParsed}</CalloutParagraph>
@@ -82,7 +82,7 @@ export const CalloutBullet = (props: ICalloutBulletProps) => {
               <TitleCallout title={props.title} />
               <AnimationOnScroll
                 animateIn="animate__fadeIn"
-                delay={100}
+                delay={10}
                 offset={60}
               >
                 <CalloutParagraph>{textParsed}</CalloutParagraph>

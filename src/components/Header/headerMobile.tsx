@@ -5,7 +5,7 @@ import {
   COLOR_TEXT,
   HEADER_COLOR,
   HEADER_COLOR_HOVER,
-  HEADER_MOBILE_HEIGHT,
+  HEADER_HEIGHT_MOBILE,
 } from "constants/index";
 
 export const HeaderMobile = () => {
@@ -35,10 +35,10 @@ export const HeaderMobile = () => {
   );
 };
 
-const headerTopHeight = HEADER_MOBILE_HEIGHT * 0.5;
+const headerTopHeight = HEADER_HEIGHT_MOBILE * 0.5;
 const headerTopHeightPx = headerTopHeight + "px";
 
-const headerButtonHeight = HEADER_MOBILE_HEIGHT * 0.5;
+const headerButtonHeight = HEADER_HEIGHT_MOBILE * 0.5;
 const headerButtonHeightPx = headerButtonHeight + "px";
 
 const HeaderContainer = styled.div`
@@ -48,7 +48,7 @@ const HeaderContainer = styled.div`
   display: flex;
   width: 100vw;
   flex-direction: column;
-  height: ${HEADER_MOBILE_HEIGHT}px;
+  height: ${HEADER_HEIGHT_MOBILE}px;
 `;
 
 const HeaderTop = styled.div`

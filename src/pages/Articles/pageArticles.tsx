@@ -3,7 +3,7 @@ import BannerVideo from "components/BannerVideo/bannerVideo";
 import { COLOR_BASE } from "constants/index";
 import RowButton from "components/Button/rowButton";
 import { BannerText } from "components/BannerText/bannerText";
-import CardArticles from "components/Card/cardArticles";
+import ArticleSection from "components/Articles/articleSection";
 import Spacer from "components/Spacer/spacer";
 
 const dataSource = "data/dataArticles.json";
@@ -30,15 +30,12 @@ const ArticlesPage = () => {
       )}
       {status === "loading" && (
         <>
-          <Spacer height={140} />
           <BannerText text="articles" />
         </>
       )}
       {status === "success" && (
         <>
-          <Spacer height={140} />
-          <CardArticles data={data} />
-
+          <ArticleSection data={data} />
         </>
       )}
     </>

@@ -1,46 +1,34 @@
 import {
-  BREAKPOINT,
-  CARD_HEIGHT_DESKTOP,
-  CARD_HEIGHT_MOBILE,
-  CARD_WIDTH_DESKTOP,
-  CARD_WIDTH_MOBILE,
-  COLOR_WHITE,
-} from "constants/index";
-import styled from "styled-components";
-import { Link } from "react-router-dom";
-import { IArticleDataProps } from "./cardArticles";
-import Container from "components/Container/container";
+    BREAKPOINT,
+    CARD_HEIGHT_DESKTOP,
+    CARD_HEIGHT_MOBILE,
+    CARD_WIDTH_DESKTOP,
+    CARD_WIDTH_MOBILE,
+    COLOR_BASE_1,
+    COLOR_WHITE,
+    HEADER_HEIGHT_DESKTOP,
+    HEADER_HEIGHT_MOBILE,
+  } from "constants/index";
+  import styled from "styled-components";
 
-export const Card = (props: IArticleDataProps) => {
-  return (
-    <>
-      <Container>
-        <CardRow>
-          {props.data.map((item) => {
-            return (
-              <Link to={item.to} key={item.id}>
-                <CardContentWrapper>
-                  <CardBackground
-                    style={{
-                      backgroundImage: `url(/images/content/${item.image})`,
-                    }}
-                    className="card-background"
-                  />
-                  <CardTextSection>
-                    <CardTextBlock className="card-block" />
-                    <CardText>{item.title}</CardText>
-                  </CardTextSection>
-                </CardContentWrapper>
-              </Link>
-            );
-          })}
-        </CardRow>
-      </Container>
-    </>
-  );
-};
 
-const CardRow = styled.div`
+  export const CardHolder = styled.div`
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: ${COLOR_BASE_1};
+  @media (min-width: ${BREAKPOINT}px) {
+    padding-top: ${HEADER_HEIGHT_DESKTOP}px;
+    height: auto;
+  }
+  @media (max-width: ${BREAKPOINT}px) {
+    padding-top: ${HEADER_HEIGHT_MOBILE}px;
+    height: auto;
+  }
+`;
+
+
+export const CardRow = styled.div`
   display: flex;
   justify-content: flex-start;
   height: auto;
@@ -48,7 +36,7 @@ const CardRow = styled.div`
   /* background: gold; */
 `;
 
-const CardContentWrapper = styled.div`
+export const CardContentWrapper = styled.div`
   margin: 20px 12px;
   position: relative;
   top: 0;
@@ -58,12 +46,12 @@ const CardContentWrapper = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   .card-background {
-    filter: brightness(0.5);
+    filter: brightness(0.7);
     transform: scale(1);
   }
   .card-block {
     transition: all 600ms;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.2);
   }
   &:hover {
     .card-background {
@@ -87,7 +75,7 @@ const CardContentWrapper = styled.div`
   /* background-color: blue; */
 `;
 
-const CardBackground = styled.div`
+export const CardBackground = styled.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -106,7 +94,7 @@ const CardBackground = styled.div`
   /* background-color: blue; */
 `;
 
-const CardTextSection = styled.div`
+export const CardTextSection = styled.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -123,7 +111,7 @@ const CardTextSection = styled.div`
   /* background-color: blue; */
 `;
 
-const CardTextBlock = styled.div`
+export const CardTextBlock = styled.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -137,7 +125,7 @@ const CardTextBlock = styled.div`
   }
 `;
 
-const CardText = styled.div`
+export const CardText = styled.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -163,5 +151,3 @@ const CardText = styled.div`
   }
   /* background-color: blue; */
 `;
-
-export default Card;

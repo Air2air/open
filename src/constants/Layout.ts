@@ -1,6 +1,6 @@
 // Header
-export const HEADER_HEIGHT = 90;
-export const HEADER_MOBILE_HEIGHT = 130;
+export const HEADER_HEIGHT_DESKTOP = 90;
+export const HEADER_HEIGHT_MOBILE = 130;
 export const HEADER_COLOR = "rgba(0, 0, 0, 0.4)";
 export const HEADER_COLOR_HOVER = "rgba(100, 100, 100, 0.5)";
 
