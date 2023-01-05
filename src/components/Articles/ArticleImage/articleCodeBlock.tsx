@@ -50,7 +50,7 @@ export const ArticleCode = styled.div`
   @media (min-width: ${BREAKPOINT}px) {
     ${FONT_CODE_DESKTOP}
     padding: 30px;
-    height: 100%;
+    /* height: 100%; */
     width: ${ARTICLE_IMAGE_SIZE_DESKTOP}px;
   }
   @media (max-width: ${BREAKPOINT}px) {
