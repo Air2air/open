@@ -6,7 +6,7 @@ import {
   TextSection,
   TitleHeading,
 } from "./Components/headingComponents";
-import { SubHeadHeading } from "components/Heading/Components/subHeadHeading";
+import { HeadingSubHead } from "components/Heading/Components/headingSubHead";
 
 const HeadingHome = (props: { loopEndTime: number; backgroundColor: any }) => {
   const [textFasterOpacity, setTextFasterOpacity] = useState(0);
@@ -60,15 +60,15 @@ const HeadingHome = (props: { loopEndTime: number; backgroundColor: any }) => {
         <Wrapper>
           <TextSection style={{ opacity: textFasterOpacity }}>
             <TitleHeading title="Faster liquidity for Health AI ventures" />
-            <SubHeadHeading text="Reduce your timeline and slash dilution, risk and time to liquidity." />
+            <HeadingSubHead text="Reduce your timeline and slash dilution, risk and time to liquidity." />
           </TextSection>
           <TextSection style={{ opacity: textTimelineOpacity }}>
             <TitleHeading title="We cut your timeline to liquidity" />
-            <SubHeadHeading text="With world class technical and business experts." />
+            <HeadingSubHead text="With world class technical and business experts." />
           </TextSection>
           <TextSection style={{ opacity: textRiskOpacity }}>
             <TitleHeading title="Reducing Risk, Dilution and Time." />
-            <SubHeadHeading text="Getting you to the goal line for a fraction of the cost. " />
+            <HeadingSubHead text="Getting you to the goal line for a fraction of the cost. " />
           </TextSection>
         </Wrapper>
       </Container>

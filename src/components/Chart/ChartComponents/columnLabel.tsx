@@ -1,11 +1,14 @@
 import {
   BREAKPOINT,
-  CHART_LABEL_DESKTOP,
-  CHART_LABEL_MOBILE,
   COLOR_WHITE,
-} from "constants/index";
+  FONT_CAPTION_DESKTOP,
+  FONT_CAPTION_MOBILE,
+  FONT_FAMILY_CONDENSED,
+  FONT_WEIGHT_BOLD,
+} from "styles/Constants";
 import styled from "styled-components";
 import { animationEnter } from "./chartComponents";
+import { CHART_LABEL_DESKTOP, CHART_LABEL_MOBILE } from "./chartCSS";
 
 export const ColumnLabel = (props: {
   index: any;
@@ -44,23 +47,21 @@ export const LabelWrapper = styled.div`
 
 export const LabelDiv = styled.div`
   position: absolute;
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 500;
   text-transform: uppercase;
   color: ${COLOR_WHITE};
   @media (min-width: ${BREAKPOINT}px) {
+    ${FONT_CAPTION_DESKTOP};
     bottom: 10%;
     width: 100%;
-    font-size: ${CHART_LABEL_DESKTOP};
     text-align: center;
   }
   @media (max-width: ${BREAKPOINT}px) {
+    ${FONT_CAPTION_MOBILE};
     left: 0%;
     bottom: 90%;
     text-align: right;
     transform-origin: 20% 18%;
     transform: rotate(90deg);
-    font-size: ${CHART_LABEL_MOBILE};
     min-width: 160px;
   }
   /* background: green; */

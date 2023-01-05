@@ -1,10 +1,11 @@
-import { CHART_COLUMN_TRANSITION } from "constants/index";
+
 import { useState, useEffect } from "react";
 import {
   animationEnter,
   ColumnOuter,
   ColumnSeries,
 } from "../ChartComponents/chartComponents";
+import { CHART_COLUMN_TRANSITION } from "../ChartComponents/chartCSS";
 import { ColumnLabel } from "../ChartComponents/columnLabel";
 
 const ColumnPracticeAreas = (props, index) => {

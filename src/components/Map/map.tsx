@@ -8,11 +8,10 @@ import { dataMap } from "./dataMap";
 import {
   BREAKPOINT,
   COLOR_RED,
-  MAP_HEIGHT_DESKTOP,
-  MAP_HEIGHT_MOBILE,
-} from "constants/index";
+} from "styles/Constants";
 import ReactTooltip from "react-tooltip";
 import { Key } from "react";
+import { MAP_HEIGHT_DESKTOP, MAP_HEIGHT_MOBILE } from "./mapCSS";
 
 function getRndInteger(min: number, max: number) {
   return Math.floor(Math.random() * (max - min)) + min;

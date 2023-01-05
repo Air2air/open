@@ -6,7 +6,7 @@ import {
   TextSection,
   TitleHeading,
 } from "./Components/headingComponents";
-import { SubHeadHeading } from "components/Heading/Components/subHeadHeading";
+import { HeadingSubHead } from "components/Heading/Components/headingSubHead";
 
 const HeadingVision = (props: { backgroundColor?: any }) => {
   const [advisoryOpacity, setAdvisoryOpacity] = useState(0);
@@ -50,11 +50,11 @@ const HeadingVision = (props: { backgroundColor?: any }) => {
         <Wrapper>
           <TextSection style={{ opacity: advisoryOpacity }}>
             <TitleHeading title="Our vision" />
-            <SubHeadHeading text="Elevens is a healthcare AI advisory of the leading physicians, scientists, engineers and entrepreneurs in healthcare AI." />
+            <HeadingSubHead text="Elevens is a healthcare AI advisory of the leading physicians, scientists, engineers and entrepreneurs in healthcare AI." />
           </TextSection>
           <TextSection style={{ opacity: defineOpacity }}>
             <TitleHeading title="Our vision" />
-            <SubHeadHeading text="We define the path forward for leading companies building the future of digital health and clinical machine learning." />
+            <HeadingSubHead text="We define the path forward for leading companies building the future of digital health and clinical machine learning." />
           </TextSection>
         </Wrapper>
       </Container>

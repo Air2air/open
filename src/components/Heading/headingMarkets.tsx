@@ -7,7 +7,7 @@ import {
   TextSection,
   TitleHeading,
 } from "./Components/headingComponents";
-import { SubHeadHeading } from "components/Heading/Components/subHeadHeading";
+import { HeadingSubHead } from "components/Heading/Components/headingSubHead";
 
 const HeadingMarkets = (props: { backgroundColor?: any }) => {
   const [textFasterOpacity, setTextFasterOpacity] = useState(0);
@@ -55,11 +55,11 @@ const HeadingMarkets = (props: { backgroundColor?: any }) => {
         <Wrapper>
           <TextSection style={{ opacity: textFasterOpacity }}>
             <TitleHeading title="Healthcare AI Markets" />
-            <SubHeadHeading text="Elevens supports Healthtech ventures from early private stages through initial public offering (IPO)..." />
+            <HeadingSubHead text="Elevens supports Healthtech ventures from early private stages through initial public offering (IPO)..." />
           </TextSection>
           <TextSection style={{ opacity: textTimelineOpacity }}>
             <TitleHeading title="Healthcare AI Markets" />
-            <SubHeadHeading text="...and assists public companies to identify innovative private sector partners" />
+            <HeadingSubHead text="...and assists public companies to identify innovative private sector partners" />
           </TextSection>
         </Wrapper>
       </Container>

@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "University of Toronto",
+    "image": "uot.png",
+    "width": 150
+  },
+  {
+    "id": 2,
+    "title": "UCSF",
+    "image": "ucsf.png",
+    "width": 80
+  },
+  {
+    "id": 3,
+    "title": "Stanford University",
+    "image": "stanford.png",
+    "width": 140
+  },
+  {
+    "id": 4,
+    "title": "MIT",
+    "image": "mit.png",
+    "width": 150
+  },
+  {
+    "id": 5,
+    "title": "Harvard University",
+    "image": "harvard.png",
+    "width": 150
+  },
+  {
+    "id": 6,
+    "title": "Duke University",
+    "image": "duke.png",
+    "width": 100
+  },
+  {
+    "id": 7,
+    "title": "Microsoft",
+    "image": "microsoft.png",
+    "width": 150
+  },
+  {
+    "id": 8,
+    "title": "Google",
+    "image": "google.png",
+    "width": 120
+  },
+  {
+    "id": 9,
+    "title": "Amazon Web Services",
+    "image": "aws.png",
+    "width": 80
+  }
+]

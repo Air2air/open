@@ -9,7 +9,7 @@ import {
   COLOR_BASE_LIGHT,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
-} from "constants/index";
+} from "styles/Constants";
 import { useState, useEffect } from "react";
 import { ITimeLineProps } from "./interface";
 

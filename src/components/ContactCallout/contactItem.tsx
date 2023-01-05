@@ -8,12 +8,13 @@ import {
   COLOR_BASE_5,
   COLOR_RED,
   COLOR_TEXT,
-  CONTACT_ITEM_HEIGHT,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
-} from "constants/index";
+  FONT_WEIGHT_BOLD,
+} from "styles/Constants";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import ButtonLinkedIn from "../Button/buttonLinkedIn";
+import { CONTACT_ITEM_HEIGHT } from "./contactCSS";
 
 interface IContactItemProps {
   id: number;
@@ -138,7 +139,7 @@ const ImageWrapper = styled.div`
 
 const ContactTitle = styled.h2`
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: ${FONT_WEIGHT_BOLD};
   color: ${(props) =>
     props.color === "" || !props.color ? COLOR_RED : props.color};
   @media (min-width: ${BREAKPOINT}px) {
@@ -151,15 +152,13 @@ const ContactTitle = styled.h2`
 
 const ContactItemDesc = styled.div`
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  line-height: 1.6em;
+    line-height: 1.6em;
   color: ${COLOR_TEXT};
 `;
 
 const ContactItemLink = styled.a`
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1.3em;
+    font-size: 1.3em;
   line-height: 1.6em;
   color: ${COLOR_TEXT};
   transition: all 300ms;

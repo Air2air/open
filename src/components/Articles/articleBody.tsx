@@ -1,16 +1,17 @@
 import {
   BREAKPOINT,
-  CALLOUT_HEIGHT,
   COLOR_TEXT,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
-} from "constants/index";
+  FONT_DEFAULT_DESKTOP,
+  FONT_DEFAULT_MOBILE,
+} from "styles/Constants";
 import styled from "styled-components";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import parse from "html-react-parser";
 import { TitleCallout } from "components/Title/titleCallout";
 import { IArticleProps } from "./articleInterfaces";
-import { ArticleImage } from "./articleImage";
+import { ArticleImage } from "./ArticleImage/articleImage";
 
 export const ArticleBody = (props: IArticleProps) => {
   const textParsed = parse(props.text);
@@ -41,7 +42,6 @@ const ArticleBodyContainer = styled.div`
   position: relative;
   top: 0;
   height: auto;
-  min-height: ${CALLOUT_HEIGHT}px;
 `;
 
 const ArticleInner = styled.div`
@@ -62,17 +62,13 @@ const ArticleInner = styled.div`
 
 const ArticleBodyParagraph = styled.div`
   color: ${COLOR_TEXT};
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
   height: auto;
   text-align: left;
   @media (min-width: ${BREAKPOINT}px) {
-    font-size: 1.3em;
-    line-height: 1.7em;
+    /* ${FONT_DEFAULT_DESKTOP} */
   }
   @media (max-width: ${BREAKPOINT}px) {
-    font-size: 1.1em;
-    line-height: 1.7em;
+    /* ${FONT_DEFAULT_MOBILE} */
   }
 `;
 

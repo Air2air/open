@@ -1,15 +1,13 @@
 import {
   BREAKPOINT,
-  CARD_HEIGHT_DESKTOP,
-  CARD_HEIGHT_MOBILE,
-  CARD_WIDTH_DESKTOP,
-  CARD_WIDTH_MOBILE,
   COLOR_BASE_1,
   COLOR_WHITE,
-  HEADER_HEIGHT_DESKTOP,
-  HEADER_HEIGHT_MOBILE,
-} from "constants/index";
+  FONT_CAPTION_DESKTOP,
+  FONT_CAPTION_MOBILE,
+} from "styles/Constants";
+import { BANNER_PADDING_TOP_DESKTOP, BANNER_PADDING_TOP_MOBILE } from "./articleCSS";
 import styled from "styled-components";
+import { CARD_HEIGHT_DESKTOP, CARD_WIDTH_DESKTOP, CARD_HEIGHT_MOBILE, CARD_WIDTH_MOBILE } from "./articleCSS";
 
 export const CardHolder = styled.div`
   top: 0;
@@ -17,11 +15,11 @@ export const CardHolder = styled.div`
   width: 100%;
   background-color: ${COLOR_BASE_1};
   @media (min-width: ${BREAKPOINT}px) {
-    padding-top: ${HEADER_HEIGHT_DESKTOP}px;
+    padding-top: ${BANNER_PADDING_TOP_DESKTOP}px;
     height: auto;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    padding-top: ${HEADER_HEIGHT_MOBILE}px;
+    padding-top: ${BANNER_PADDING_TOP_MOBILE}px;
     height: auto;
   }
 `;
@@ -133,21 +131,17 @@ export const CardText = styled.div`
   color: ${COLOR_WHITE};
   padding: 30px;
   box-sizing: border-box;
-  font-weight: 400;
-  font-family: "Roboto Condensed", sans-serif;
   align-items: center;
   justify-content: center;
   /* text-transform: uppercase; */
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
   @media (min-width: ${BREAKPOINT}px) {
     height: 50%;
-    width: ${CARD_WIDTH_DESKTOP}px;
-    font-size: 1.3em;
+  ${FONT_CAPTION_DESKTOP}
   }
   @media (max-width: ${BREAKPOINT}px) {
     height: 50%;
-    width: ${CARD_WIDTH_MOBILE}px;
-    font-size: 1.3em;
+    ${FONT_CAPTION_MOBILE}
   }
   /* background-color: blue; */
 `;

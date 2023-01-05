@@ -1,11 +1,12 @@
+import styled from "styled-components";
+import LogoLinkedIn from "images/logo_linkedin.svg";
 import {
-  BUTTON_COLOR_LINKEDIN,
-  BUTTON_COLOR_LINKEDIN_HOVER,
   BUTTON_HEIGHT_LINKEDIN,
   BUTTON_TEXT_COLOR,
-} from "constants/index";
-import styled from "styled-components";
-import LogoLinkedIn  from "images/logo_linkedin.svg";
+  BUTTON_COLOR_LINKEDIN,
+  BUTTON_COLOR_LINKEDIN_HOVER,
+} from "./buttonCSS";
+import { FONT_CONDENSED_DESKTOP, FONT_FAMILY_CONDENSED, FONT_WEIGHT_BOLD } from "styles/Constants";
 
 export const ButtonLinkedIn = (props: { to: string; text: string }) => {
   return (
@@ -13,7 +14,7 @@ export const ButtonLinkedIn = (props: { to: string; text: string }) => {
       <ButtonPositioner>
         <a href={props.to}>
           <ButtonWrapper>
-            <LogoLinkedIn/>
+            <LogoLinkedIn />
             <span>{props.text}</span>
           </ButtonWrapper>
         </a>
@@ -27,9 +28,7 @@ const ButtonPositioner = styled.div`
 `;
 
 const ButtonWrapper = styled.div`
-  font-size: 1.1em;
-  font-weight: 500;
-  font-family: "Roboto Condensed", sans-serif;
+  ${FONT_CONDENSED_DESKTOP};
   color: ${BUTTON_TEXT_COLOR};
   padding: 0 16px;
   display: inline-flex;

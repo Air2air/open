@@ -4,7 +4,7 @@ import {
   TextSection,
   TitleHeading,
 } from "./Components/headingComponents";
-import { SubHeadHeading } from "components/Heading/Components/subHeadHeading";
+import { HeadingSubHead } from "components/Heading/Components/headingSubHead";
 
 const HeadingUnderConstruction = (props: { backgroundColor?: any }) => {
   return (
@@ -13,7 +13,7 @@ const HeadingUnderConstruction = (props: { backgroundColor?: any }) => {
         <Wrapper>
           <TextSection>
             <TitleHeading title="Elevens is Under Construction" />
-            <SubHeadHeading text="Elevens supports Healthtech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners." />
+            <HeadingSubHead text="Elevens supports Healthtech ventures from early private stages through initial public offering (IPO), and assists public companies to identify innovative private sector partners." />
           </TextSection>
         </Wrapper>
       </Container>

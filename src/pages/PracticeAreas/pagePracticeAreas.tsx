@@ -1,10 +1,10 @@
 import Callout from "components/Callout/callOut";
-import { COLOR_BASE } from "constants/index";
+import { COLOR_BASE } from "styles/Constants";
 import RowButton from "components/Button/rowButton";
-import { BannerVideo } from "components/BannerVideo/bannerVideo";
+import { BannerVideo } from "components/Banner/bannerVideo";
 import ChartPracticeAreas from "components/Chart/PracticeAreas/chartPracticeAreas";
 import { useQuery } from "react-query";
-import BannerText from "components/BannerText/bannerText";
+import BannerText from "components/Banner/bannerText";
 
 const dataSource = "/data/dataPracticeAreas.json";
 const queryName = "practiceareas";

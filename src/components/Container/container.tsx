@@ -3,7 +3,7 @@ import {
   BREAKPOINT,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
-} from "constants/index";
+} from "styles/Constants";
 import { assignBackgroundColor } from "utils/assignBackgroundColor";
 
 type ContainerProps = {

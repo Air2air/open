@@ -8,9 +8,11 @@ import {
   COLOR_RED,
   COLOR_RED_HOVER,
   CONTENT_WIDTH_DESKTOP,
-  FOOTER_HEIGHT_DESKTOP,
-} from "constants/index";
+  FONT_CAPTION_DESKTOP,
+  FONT_WEIGHT_SEMIBOLD,
+} from "styles/Constants";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import { FOOTER_HEIGHT_DESKTOP } from "./footerCSS";
 
 export const FooterDesktop = () => {
   return (
@@ -121,8 +123,7 @@ const FooterLinkColumn = styled.div`
 `;
 
 const FooterLink = styled(Link)`
-  font-size: 1.1em;
-  font-weight: 400;
+  ${FONT_CAPTION_DESKTOP}
   padding: 8px 0;
   text-align: left;
   color: ${COLOR_RED};

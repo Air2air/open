@@ -5,7 +5,9 @@ import {
   COLOR_BASE_LIGHT,
   COLOR_RED,
   COLOR_TEXT,
-} from "constants/index";
+  FONT_CAPTION_DESKTOP,
+  FONT_CAPTION_MOBILE,
+} from "styles/Constants";
 import parse from "html-react-parser";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { ITimeLineProps } from "./interface";
@@ -105,21 +107,19 @@ const TimeLineContent = styled.div`
 
 const TimeLineTitle = styled.h2`
   text-transform: uppercase;
-  font-weight: 500;
   color: ${(props) =>
     props.color === "" || !props.color ? COLOR_RED : props.color};
   @media (min-width: ${BREAKPOINT}px) {
-    font-size: 1.3em;
+${FONT_CAPTION_DESKTOP}
   }
   @media (max-width: ${BREAKPOINT}px) {
-    font-size: 1.3em;
+    ${FONT_CAPTION_MOBILE}
   }
 `;
 
 const TimeLineItemDesc = styled.div`
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  height: auto;
+    height: auto;
   color: ${COLOR_TEXT};
   @media (min-width: ${BREAKPOINT}px) {
     font-size: 1.2em;

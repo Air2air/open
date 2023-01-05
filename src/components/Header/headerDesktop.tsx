@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import LogoWhite from "images/logo_text_white.svg";
-import {
-  HEADER_COLOR,
-  COLOR_TEXT,
-  HEADER_HEIGHT_DESKTOP,
-  HEADER_COLOR_HOVER,
-} from "constants/index";
+import { COLOR_TEXT, FONT_CAPTION_DESKTOP } from "styles/Constants";
 import { useState, useEffect } from "react";
+import {
+  HEADER_HEIGHT_DESKTOP,
+  HEADER_COLOR,
+  HEADER_COLOR_HOVER,
+} from "./headerCSS";
 
 export const HeaderDesktop = () => {
   /*------ Scrolling -------*/
@@ -123,15 +123,12 @@ const HeaderRight = styled.div`
 `;
 
 const HeaderLink = styled(Link)`
-  font-family: "Roboto Condensed", sans-serif;
+  ${FONT_CAPTION_DESKTOP};
   color: ${COLOR_TEXT};
-  font-size: 1em;
-  font-weight: 500;
   padding: 0 20px;
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  text-transform: uppercase;
   height: ${HEADER_HEIGHT_DESKTOP}px;
   background: ${HEADER_COLOR};
   transition: all 300ms;

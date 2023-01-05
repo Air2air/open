@@ -1,8 +1,8 @@
 
 import Callout from "../../components/Callout/callOut";
-import BannerImage from "components/BannerImage/bannerImage";
-import { COLOR_BASE } from "constants/index";
-import BannerText from "components/BannerText/bannerText";
+import BannerImage from "components/Banner/bannerImage";
+import { COLOR_BASE } from "styles/Constants";
+import BannerText from "components/Banner/bannerText";
 import RowButton from "components/Button/rowButton";
 import Spacer from "components/Spacer/spacer";
 

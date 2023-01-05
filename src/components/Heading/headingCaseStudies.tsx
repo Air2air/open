@@ -6,7 +6,7 @@ import {
   TextSection,
   TitleHeading,
 } from "./Components/headingComponents";
-import { SubHeadHeading } from "components/Heading/Components/subHeadHeading";
+import { HeadingSubHead } from "components/Heading/Components/headingSubHead";
 
 
 const HeadingCaseStudies = (props: { loopEndTime?: number; backgroundColor: any; }) => {
@@ -51,11 +51,11 @@ const HeadingCaseStudies = (props: { loopEndTime?: number; backgroundColor: any;
         <Wrapper>
           <TextSection style={{ opacity: advisoryOpacity }}>
             <TitleHeading title="Case Studies" />
-            <SubHeadHeading text="Elevens supports Healthtech ventures from early private stages through initial public offering (IPO)..." />
+            <HeadingSubHead text="Elevens supports Healthtech ventures from early private stages through initial public offering (IPO)..." />
           </TextSection>
           <TextSection style={{ opacity: defineOpacity }}>
             <TitleHeading title="Case Studies" />
-            <SubHeadHeading text="...and assists public companies to identify innovative private sector partners." />
+            <HeadingSubHead text="...and assists public companies to identify innovative private sector partners." />
           </TextSection>
         </Wrapper>
       </Container>

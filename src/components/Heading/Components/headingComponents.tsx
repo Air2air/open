@@ -1,14 +1,15 @@
 import {
   BREAKPOINT,
-  CHART_TEXT_TRANSITION,
   COLOR_WHITE,
   CONTENT_WIDTH_MOBILE,
-  HEADING_HEIGHT_DESKTOP,
-  HEADING_HEIGHT_MOBILE,
+  FONT_HEADING_DESKTOP,
+  FONT_HEADING_MOBILE,
   TEXT_TITLE_DESKTOP,
   TEXT_TITLE_MOBILE,
-} from "constants/index";
+} from "styles/Constants";
 import styled from "styled-components";
+import { CHART_TEXT_TRANSITION } from "components/Chart/ChartComponents/chartCSS";
+import { HEADING_HEIGHT_DESKTOP, HEADING_HEIGHT_MOBILE } from "../headingCSS";
 
 export const Wrapper = styled.div`
   position: relative;
@@ -64,10 +65,9 @@ const TitleStyled = styled.h1`
   color: ${COLOR_WHITE};
   text-shadow: 0 0 4px #000;
   @media (min-width: ${BREAKPOINT}px) {
-    font-size: ${TEXT_TITLE_DESKTOP};
+    ${FONT_HEADING_DESKTOP}
   }
   @media (max-width: ${BREAKPOINT}px) {
-    font-size: ${TEXT_TITLE_MOBILE};
-    line-height: 1.3em;
+    ${FONT_HEADING_MOBILE}
   }
 `;

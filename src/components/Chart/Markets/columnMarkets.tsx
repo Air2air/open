@@ -1,10 +1,8 @@
 import styled from "styled-components";
 import {
   BREAKPOINT,
-  CHART_LABEL_DESKTOP,
-  CHART_LABEL_MOBILE,
   COLOR_CAPTION,
-} from "constants/index";
+} from "styles/Constants";
 import {
   animationEnter,
   ChartWrapper,
@@ -12,6 +10,7 @@ import {
   ColumnSeries,
   concatPercent,
 } from "../ChartComponents/chartComponents";
+import { CHART_LABEL_DESKTOP, CHART_LABEL_MOBILE } from "../ChartComponents/chartCSS";
 import { ColumnLabel } from "../ChartComponents/columnLabel";
 
 export const ColumnMarkets = (props: any) => {

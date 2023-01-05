@@ -5,7 +5,7 @@ import {
   COLOR_BASE_4,
   COLOR_BASE_5,
   COLOR_BASE_6,
-} from "../constants/index";
+} from "styles/Constants";
 
 export const assignBackgroundColor = (backgroundColor: number) => {
   if (backgroundColor === 1) {

@@ -3,9 +3,9 @@ import { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import { Footer } from "./components/Footer/footer";
 import { Header } from "./components/Header/header";
-import ProgressBar from "./components/Progress/progress";
+
 import { dataRoutes } from "./routes/routes";
-import { BREAKPOINT } from "constants/index";
+import { BREAKPOINT } from "styles/Constants";
 import { useWindowWidth } from "@react-hook/window-size";
 import { usePageTracking } from "./components/Analytics/gaTracking";
 import UnderConstructionPage from "pages/UnderConstruction/pageUnderConstruction";
@@ -35,7 +35,7 @@ const App = () => {
             )}
           </Routes>
         </Suspense>
-        {windowWidth > BREAKPOINT && <ProgressBar />}
+
         {!isUnderConstruction ? <Footer /> : ""}
       </QueryClientProvider>
     </>

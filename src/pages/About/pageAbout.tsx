@@ -1,8 +1,8 @@
-import BannerVideo from "components/BannerVideo/bannerVideo";
+import BannerVideo from "components/Banner/bannerVideo";
 import Advisors from "components/Advisors/advisors";
 import Map from "components/Map/map";
 import { RowButton } from "components/Button/rowButton";
-import BannerText from "components/BannerText/bannerText";
+import BannerText from "components/Banner/bannerText";
 import Spacer from "components/Spacer/spacer";
 
 const AboutPage = () => {

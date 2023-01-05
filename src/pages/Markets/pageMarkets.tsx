@@ -1,9 +1,9 @@
 import { useQuery } from "react-query";
 import ChartMarkets from "components/Chart/Markets/chartMarkets";
 import RowButton from "components/Button/rowButton";
-import { COLOR_BASE } from "constants/index";
-import BannerVideo from "components/BannerVideo/bannerVideo";
-import BannerText from "components/BannerText/bannerText";
+import { COLOR_BASE } from "styles/Constants";
+import BannerVideo from "components/Banner/bannerVideo";
+import BannerText from "components/Banner/bannerText";
 import Callout from "components/Callout/callOut";
 
 const dataSource = "/data/dataMarkets.json";

@@ -1,12 +1,17 @@
 import styled from "styled-components";
 import {
+  BREAKPOINT,
   COLOR_BASE_LIGHT,
   COLOR_BASE_TEXT,
+  FONT_CONDENSED_DESKTOP,
+  FONT_CONDENSED_MOBILE,
+} from "styles/Constants";
+import ButtonLinkedIn from "./../Button/buttonLinkedIn";
+import {
   TEAM_MEMBER_HEIGHT,
   TEAM_MEMBER_PHOTO,
   TEAM_MEMBER_WIDTH,
-} from "constants/index";
-import ButtonLinkedIn from "./../Button/buttonLinkedIn";
+} from "./advisorsCSS";
 
 interface IAdvisorProps {
   id: number;
@@ -58,13 +63,17 @@ const ImageWrapper = styled.div`
 
 const AdvisorMemberName = styled.div`
   padding: 12px 0;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 1.3em;
   color: ${COLOR_BASE_TEXT};
   display: flex;
   align-items: center;
-  /* height: 80px; */
+
   /* background: red; */
+  @media (min-width: ${BREAKPOINT}px) {
+    ${FONT_CONDENSED_DESKTOP};
+  }
+  @media (max-width: ${BREAKPOINT}px) {
+    ${FONT_CONDENSED_MOBILE};
+  }
 `;
 
 export default AdvisorMember;

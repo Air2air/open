@@ -1,10 +1,9 @@
 import {
   BREAKPOINT,
-  CALLOUT_HEIGHT,
   COLOR_BASE_3,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
-} from "constants/index";
+} from "styles/Constants";
 import { useQuery } from "react-query";
 import styled from "styled-components";
 import { assignBackgroundColor } from "utils/assignBackgroundColor";
@@ -84,7 +83,6 @@ const OrgsWrapper = styled.div`
   overflow: hidden;
   align-items: center;
   height: auto;
-  min-height: ${CALLOUT_HEIGHT}px;
   background: ${COLOR_BASE_3};
 `;
 
@@ -109,13 +107,7 @@ const OrgMapImageRow = styled.div`
   grid-gap: 0px;
   opacity: 0.5;
   grid-template-columns: auto auto auto;
-  /* @media (min-width: ${BREAKPOINT}px) {
-    grid-template-columns: auto auto auto;
-  }
-  @media (max-width: ${BREAKPOINT}px) {
-    grid-template-columns: auto auto;
-  } */
-  /* background: red; */
+
 `;
 
 const OrgMapImageWrapper = styled.div`

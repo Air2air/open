@@ -1,4 +1,4 @@
-import { BREAKPOINT, COLOR_RED } from "constants/index";
+import { BREAKPOINT, COLOR_RED } from "styles/Constants";
 import styled from "styled-components";
 import { FC } from "react";
 
@@ -21,8 +21,7 @@ const TitleContainer = styled.div`
 const TitleStyled = styled.h1<TitleProps>`
   margin: 0 auto 10px auto;
   text-align: center;
-  font-weight: 300;
-  color: ${(props) =>
+    color: ${(props) =>
     props.color === "" || !props.color ? COLOR_RED : props.color};
   @media (min-width: ${BREAKPOINT}px) {
     font-size: 2.4em;

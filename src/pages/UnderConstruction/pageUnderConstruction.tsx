@@ -1,6 +1,6 @@
-import { BannerText } from "components/BannerText/bannerText";
-import BannerVideo from "components/BannerVideo/bannerVideo";
-import { COLOR_BASE } from "constants/index";
+import { BannerText } from "components/Banner/bannerText";
+import BannerVideo from "components/Banner/bannerVideo";
+import { COLOR_BASE } from "styles/Constants";
 
 const UnderConstructionPage = () => {
   return (

@@ -4,7 +4,7 @@ import {
   TextSection,
   TitleHeading,
 } from "./Components/headingComponents";
-import { SubHeadHeading } from "components/Heading/Components/subHeadHeading";
+import { HeadingSubHead } from "components/Heading/Components/headingSubHead";
 
 const HeadingHistory = (props: { backgroundColor?: any }) => {
   return (
@@ -13,7 +13,7 @@ const HeadingHistory = (props: { backgroundColor?: any }) => {
         <Wrapper>
           <TextSection>
             <TitleHeading title="Elevens History" />
-            <SubHeadHeading text="" />
+            <HeadingSubHead text="" />
           </TextSection>
         </Wrapper>
       </Container>

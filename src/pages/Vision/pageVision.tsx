@@ -1,10 +1,10 @@
 import { useQuery } from "react-query";
-import BannerVideo from "components/BannerVideo/bannerVideo";
-import { COLOR_BASE } from "constants/index";
+import BannerVideo from "components/Banner/bannerVideo";
+import { COLOR_BASE } from "styles/Constants";
 import Callout from "components/Callout/callOut";
 import RowButton from "components/Button/rowButton";
 import ChartVision from "components/Chart/Vision/chartVision";
-import { BannerText } from "components/BannerText/bannerText";
+import { BannerText } from "components/Banner/bannerText";
 
 const dataSource = "/data/dataVision.json";
 const queryName = "vision";

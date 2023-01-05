@@ -1,5 +1,5 @@
 import { useQuery } from "react-query";
-import { BannerText } from "components/BannerText/bannerText";
+import { BannerText } from "components/Banner/bannerText";
 import ArticleSection from "components/Articles/articleSection";
 import Spacer from "components/Spacer/spacer";
 

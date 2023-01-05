@@ -4,7 +4,7 @@ import {
   CONTENT_WIDTH_MOBILE,
   TEXT_TITLE_DESKTOP,
   TEXT_TITLE_MOBILE,
-} from "constants/index";
+} from "styles/Constants";
 import styled from "styled-components";
 
 type TitleProps = {

@@ -1,16 +1,16 @@
-import {
-  BREAKPOINT,
-  BUTTON_COLOR_RED,
-  BUTTON_COLOR_GRAY,
-  BUTTON_COLOR_HOVER_RED,
-  BUTTON_COLOR_HOVER_GRAY,
-  BUTTON_HEIGHT,
-  BUTTON_TEXT_COLOR,
-} from "constants/index";
+import { BREAKPOINT, FONT_CONDENSED_DESKTOP, FONT_CONDENSED_MOBILE } from "styles/Constants";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  BUTTON_COLOR_GRAY,
+  BUTTON_COLOR_HOVER_GRAY,
+  BUTTON_COLOR_HOVER_RED,
+  BUTTON_COLOR_RED,
+  BUTTON_HEIGHT,
+  BUTTON_TEXT_COLOR,
+} from "./buttonCSS";
 // import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export const Button = (props: {
@@ -49,10 +49,8 @@ const ButtonPositioner = styled.div`
 `;
 
 const ButtonDesktop = styled.div<{ buttonColor?: string }>`
+  ${FONT_CONDENSED_DESKTOP};
   height: ${BUTTON_HEIGHT}px;
-  font-size: 1.1em;
-  font-weight: 500;
-  font-family: "Roboto Condensed", sans-serif;
   color: ${BUTTON_TEXT_COLOR};
   align-items: center;
   justify-content: center;
@@ -79,10 +77,8 @@ const ButtonDesktop = styled.div<{ buttonColor?: string }>`
 `;
 
 const ButtonMobile = styled.div`
+  ${FONT_CONDENSED_MOBILE};
   height: ${BUTTON_HEIGHT}px;
-  font-size: 1.1em;
-  font-weight: 500;
-  font-family: "Roboto Condensed", sans-serif;
   color: ${BUTTON_TEXT_COLOR};
   align-items: center;
   justify-content: center;

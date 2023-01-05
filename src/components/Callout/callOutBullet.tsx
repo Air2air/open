@@ -1,6 +1,5 @@
 import {
   BREAKPOINT,
-  CALLOUT_HEIGHT,
   COLOR_BASE_1,
   COLOR_BASE_2,
   COLOR_BASE_3,
@@ -12,13 +11,14 @@ import {
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
   TEXT_OPACITY,
-} from "constants/index";
+} from "styles/Constants";
 import styled from "styled-components";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import parse from "html-react-parser";
 import { TitleCallout } from "components/Title/titleCallout";
 import Button from "../Button/button";
 import {ICalloutBulletProps} from "interfaces/callouts";
+import { CALLOUT_HEIGHT } from "./callOutCSS";
 
 
 export const CalloutBullet = (props: ICalloutBulletProps) => {
@@ -171,8 +171,7 @@ const CalloutNumber = styled.div`
 const CalloutParagraph = styled.div`
   color: ${COLOR_TEXT};
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  height: auto;
+    height: auto;
   text-align: left;
   opacity: ${TEXT_OPACITY};
   /* padding-bottom: 20px; */

@@ -1,4 +1,11 @@
-import { BREAKPOINT, COLOR_WHITE } from "constants/index";
+import {
+  BREAKPOINT,
+  COLOR_WHITE,
+  FONT_SUBHEAD_DESKTOP,
+  FONT_SUBHEAD_MOBILE,
+  FONT_WEIGHT_BOLD,
+  FONT_WEIGHT_SEMIBOLD,
+} from "styles/Constants";
 import styled from "styled-components";
 import { FC } from "react";
 
@@ -19,15 +26,12 @@ const TitleContainer = styled.div`
 `;
 
 const TitleStyled = styled.h3<TitleProps>`
-  text-transform: uppercase;
   color: ${(props) =>
     props.color === "" || !props.color ? COLOR_WHITE : props.color};
   @media (min-width: ${BREAKPOINT}px) {
-    font-size: 1.6em;
-    font-weight: 400;
+    ${FONT_SUBHEAD_DESKTOP}
   }
   @media (max-width: ${BREAKPOINT}px) {
-    font-size: 1.3em;
-    font-weight: 500;
+    ${FONT_SUBHEAD_MOBILE}
   }
 `;

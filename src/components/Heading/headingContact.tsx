@@ -4,7 +4,7 @@ import {
   TextSection,
   TitleHeading,
 } from "./Components/headingComponents";
-import { SubHeadHeading } from "components/Heading/Components/subHeadHeading";
+import { HeadingSubHead } from "components/Heading/Components/headingSubHead";
 
 const HeadingContact = (props: { backgroundColor?: any }) => {
   return (
@@ -13,7 +13,7 @@ const HeadingContact = (props: { backgroundColor?: any }) => {
         <Wrapper>
           <TextSection>
             <TitleHeading title="Contact Elevens.ai" />
-            <SubHeadHeading text="" />
+            <HeadingSubHead text="" />
           </TextSection>
         </Wrapper>
       </Container>

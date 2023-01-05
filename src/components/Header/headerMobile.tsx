@@ -1,12 +1,8 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import LogoWhite from "images/logo_text_white.svg";
-import {
-  COLOR_TEXT,
-  HEADER_COLOR,
-  HEADER_COLOR_HOVER,
-  HEADER_HEIGHT_MOBILE,
-} from "constants/index";
+import { COLOR_TEXT, FONT_FAMILY_CONDENSED, FONT_WEIGHT_BOLD } from "styles/Constants";
+import { HEADER_HEIGHT_MOBILE, HEADER_COLOR, HEADER_COLOR_HOVER } from "./headerCSS";
 
 export const HeaderMobile = () => {
   /*------ Responsive -------*/
@@ -17,8 +13,8 @@ export const HeaderMobile = () => {
         <HeaderTop>
           <LogoWrapper>
             <Link to="/home">
-              <div style={{width:"140px"}}>
-              <LogoWhite  />
+              <div style={{ width: "140px" }}>
+                <LogoWhite />
               </div>
             </Link>
           </LogoWrapper>
@@ -88,11 +84,11 @@ const HeaderBottom = styled.div`
 `;
 
 const HeaderLink = styled(Link)`
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: ${FONT_FAMILY_CONDENSED};
   flex-wrap: nowrap;
   color: ${COLOR_TEXT};
   font-size: 0.95em;
-  font-weight: 500;
+  font-weight: ${FONT_WEIGHT_BOLD};
   display: flex;
   align-items: center;
   justify-content: center;
