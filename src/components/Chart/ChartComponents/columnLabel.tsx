@@ -8,7 +8,7 @@ import {
 } from "styles/Constants";
 import styled from "styled-components";
 import { animationEnter } from "./chartComponents";
-import { CHART_LABEL_DESKTOP, CHART_LABEL_MOBILE } from "./chartCSS";
+import { CHART_HEIGHT_MOBILE, CHART_LABEL_DESKTOP, CHART_LABEL_MOBILE } from "./chartCSS";
 
 export const ColumnLabel = (props: {
   index: any;
@@ -58,7 +58,7 @@ export const LabelDiv = styled.div`
   @media (max-width: ${BREAKPOINT}px) {
     ${FONT_CAPTION_MOBILE};
     left: 0%;
-    bottom: 90%;
+    bottom: ${CHART_HEIGHT_MOBILE + 20}px;
     text-align: right;
     transform-origin: 20% 18%;
     transform: rotate(90deg);
