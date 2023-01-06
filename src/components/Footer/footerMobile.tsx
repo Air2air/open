@@ -6,91 +6,62 @@ import {
   COLOR_BASE_LIGHT,
   COLOR_RED,
   COLOR_RED_HOVER,
-  CONTENT_WIDTH_MOBILE,
   FONT_CAPTION_MOBILE,
 } from "styles/Constants";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import { FOOTER_HEIGHT_MOBILE } from "./footerCSS";
-import { assignBackgroundColor } from "utils/assignBackgroundColor";
+import {
+  FOOTER_CONTENT_HEIGHT_MOBILE,
+  FOOTER_COPYRIGHT_HEIGHT_MOBILE,
+  FOOTER_LOGO_HEIGHT_MOBILE,
+} from "./footerCSS";
+
 import { IFooterProps } from "./footer";
+import Container from "components/Container/container";
+import { Spacer } from "components/Spacer/spacer";
 
-export const FooterMobile = (props:IFooterProps) => {
-
-
+export const FooterMobile = (props: IFooterProps) => {
   return (
-    <FooterWrapper
-      style={{
-        backgroundColor: assignBackgroundColor(props.backgroundColor),
-      }}
-    >
-      <FooterContainer>
-        <FooterLogoRow animateIn="animate__fadeInUp" delay={0} offset={0}>
-          <Link className="link" to="/home">
-            <div style={{ width: "150px", opacity: 0.6 }}>
-              <LogoTextWhite />
-            </div>
-          </Link>
-        </FooterLogoRow>
+    <Container backgroundColor={props.backgroundColor}>
+      <Spacer height={30} backgroundColor={props.backgroundColor} />
+      <FooterLogoRow animateIn="animate__fadeInUp" delay={0} offset={0}>
+        <Link className="link" to="/home">
+          <div style={{ width: "130px", opacity: 0.6 }}>
+            <LogoTextWhite />
+          </div>
+        </Link>
+      </FooterLogoRow>
 
-        <FooterContentRow>
-          <FooterLinkColumn>
-            <FooterLink to="/">Home</FooterLink>
-            <FooterLink to="/practice_areas">What We Do</FooterLink>
-            <FooterLink to="/markets">Markets</FooterLink>
-            <FooterLink to="/casestudies">Case Studies</FooterLink>
-            <FooterLink to="/vision">Vision</FooterLink>
-          </FooterLinkColumn>
-          <FooterLinkColumn>
-            <FooterLink to="/history">History</FooterLink>
-            <FooterLink to="/about">About</FooterLink>
-            <FooterLink to="/contact">Contact</FooterLink>
-            <FooterLink to="/articles">Articles</FooterLink>
-          </FooterLinkColumn>
-        </FooterContentRow>
+      <FooterContentRow>
+        <FooterLinkColumn>
+          <FooterLink to="/">Home</FooterLink>
+          <FooterLink to="/practice_areas">What We Do</FooterLink>
+          <FooterLink to="/markets">Markets</FooterLink>
+          <FooterLink to="/casestudies">Case Studies</FooterLink>
+          <FooterLink to="/vision">Vision</FooterLink>
+        </FooterLinkColumn>
+        <FooterLinkColumn>
+          <FooterLink to="/history">History</FooterLink>
+          <FooterLink to="/about">About</FooterLink>
+          <FooterLink to="/contact">Contact</FooterLink>
+          <FooterLink to="/articles">Articles</FooterLink>
+        </FooterLinkColumn>
+      </FooterContentRow>
 
-        <FooterCopyright>
-          <div>&copy; Eleven of Ten LLP</div>
-          <Link to="/home">
-            <div style={{ width: "30px", opacity: 0.3 }}>
-              <LogoWhite />
-            </div>
-          </Link>
-          <div>All rights reserved.</div>
-        </FooterCopyright>
-      </FooterContainer>
-    </FooterWrapper>
+      <FooterCopyright>
+        <div>&copy; Eleven of Ten LLP</div>
+
+        <div style={{ width: "24px", opacity: 0.3 }}>
+          <LogoWhite />
+        </div>
+
+        <div>All rights reserved.</div>
+      </FooterCopyright>
+      <Spacer height={20} backgroundColor={props.backgroundColor} />
+    </Container>
   );
 };
 
 //Mobile
-const FOOTER_CONTAINER_HEIGHT_MOBILE = FOOTER_HEIGHT_MOBILE * 0.8;
-const FOOTER_LOGO_HEIGHT_MOBILE = FOOTER_CONTAINER_HEIGHT_MOBILE * 0.2;
-const FOOTER_CONTENT_HEIGHT_MOBILE = FOOTER_CONTAINER_HEIGHT_MOBILE * 0.5;
-const FOOTER_COPYRIGHT_HEIGHT_MOBILE = FOOTER_CONTAINER_HEIGHT_MOBILE * 0.3;
-
-const FooterWrapper = styled.div`
-  position: relative;
-  z-index: +1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  width: 100vw;
-  height: ${FOOTER_HEIGHT_MOBILE}px;
-  /* background-color: blue; */
-`;
-
-const FooterContainer = styled.div`
-  display: flex;
-  z-index: +1;
-  flex-direction: column;
-  text-align: center;
-  width: ${CONTENT_WIDTH_MOBILE};
-  margin: 0 auto;
-  height: ${FOOTER_CONTAINER_HEIGHT_MOBILE}px;
-  /* background-color: lightblue; */
-`;
 
 const FooterLogoRow = styled(AnimationOnScroll)`
   display: flex;
@@ -100,7 +71,6 @@ const FooterLogoRow = styled(AnimationOnScroll)`
   text-align: center;
   width: 100%;
   height: ${FOOTER_LOGO_HEIGHT_MOBILE}px;
-  /* background-color: green; */
   a.link {
     opacity: 0.4;
   }
@@ -109,13 +79,14 @@ const FooterLogoRow = styled(AnimationOnScroll)`
       opacity: 1;
     }
   }
+  /* background-color: green; */
 `;
 
 const FooterContentRow = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: ${FOOTER_CONTENT_HEIGHT_MOBILE}px;
+  /* min-height: ${FOOTER_CONTENT_HEIGHT_MOBILE}px; */
   /* background-color: gold; */
 `;
 
@@ -125,13 +96,13 @@ const FooterLinkColumn = styled.div`
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  height: ${FOOTER_CONTENT_HEIGHT_MOBILE}px;
+  /* min-height: ${FOOTER_CONTENT_HEIGHT_MOBILE}px; */
   /* background: green; */
 `;
 
 const FooterLink = styled(Link)`
   ${FONT_CAPTION_MOBILE}
-  padding: 8px 0;
+  padding: 6px 0;
   text-align: center;
   color: ${COLOR_RED};
   transition: all 200ms;
@@ -142,15 +113,15 @@ const FooterLink = styled(Link)`
 
 const FooterCopyright = styled.div`
   z-index: +1;
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: ${COLOR_BASE_LIGHT};
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   height: ${FOOTER_COPYRIGHT_HEIGHT_MOBILE}px;
   div {
     color: ${COLOR_BASE_LIGHT};
   }
-  /* background: ${COLOR_RED}; */
+  /* background: "red"; */
 `;

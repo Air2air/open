@@ -10,7 +10,7 @@ import {
   FONT_CAPTION_DESKTOP,
 } from "styles/Constants";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import { FOOTER_HEIGHT_DESKTOP } from "./footerCSS";
+import { FOOTER_CONTAINER_HEIGHT_DESKTOP, FOOTER_CONTENT_HEIGHT_DESKTOP, FOOTER_COPYRIGHT_HEIGHT_DESKTOP, FOOTER_HEIGHT_DESKTOP } from "./footerCSS";
 import { assignBackgroundColor } from "utils/assignBackgroundColor";
 import { IFooterProps } from "./footer";
 
@@ -70,9 +70,7 @@ export const FooterDesktop = (props:IFooterProps) => {
 };
 
 //Desktop
-const FOOTER_CONTAINER_HEIGHT_DESKTOP = FOOTER_HEIGHT_DESKTOP * 0.8;
-const FOOTER_CONTENT_HEIGHT_DESKTOP = FOOTER_CONTAINER_HEIGHT_DESKTOP * 0.8;
-const FOOTER_COPYRIGHT_HEIGHT_DESKTOP = FOOTER_CONTAINER_HEIGHT_DESKTOP * 0.2;
+
 
 const FooterWrapper = styled.div`
   position: relative;
