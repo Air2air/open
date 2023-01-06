@@ -3,9 +3,7 @@ import { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import { Footer } from "./components/Footer/footer";
 import { Header } from "./components/Header/header";
-
 import { dataRoutes } from "./routes/routes";
-import { BREAKPOINT } from "styles/Constants";
 import { useWindowWidth } from "@react-hook/window-size";
 import { usePageTracking } from "./components/Analytics/gaTracking";
 import UnderConstructionPage from "pages/UnderConstruction";
