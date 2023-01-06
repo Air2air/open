@@ -1,6 +1,4 @@
-// Text
-export const TEXT_TITLE_DESKTOP = "2.3em";
-export const TEXT_TITLE_MOBILE = "1.7em";
+// FAMILY
 
 export const FONT_FAMILY_HEADING = `"Roboto Condensed", sans-serif`;
 export const FONT_FAMILY_DEFAULT = `"Source Sans Pro", sans-serif`;
@@ -9,19 +7,19 @@ export const FONT_FAMILY_CODE = `'Cousine', monospace;`;
 
 // SIZES
 export const FONT_SIZE_HEADING_DESKTOP = "2.4em";
-export const FONT_SIZE_HEADING_MOBILE = "2em";
+export const FONT_SIZE_HEADING_MOBILE = "1.7em";
 
 export const FONT_SIZE_BANNER_SUBHEAD_DESKTOP = "1.5em";
-export const FONT_SIZE_BANNER_SUBHEAD_MOBILE = "1.2em";
+export const FONT_SIZE_BANNER_SUBHEAD_MOBILE = "1.1em";
 
 export const FONT_SIZE_SUBHEAD_DESKTOP = "1.6em";
 export const FONT_SIZE_SUBHEAD_MOBILE = "1.3em";
 
 export const FONT_SIZE_CAPTION_DESKTOP = "1.05em";
-export const FONT_SIZE_CAPTION_MOBILE = "1em";
+export const FONT_SIZE_CAPTION_MOBILE = ".9em";
 
 export const FONT_SIZE_DEFAULT_DESKTOP = "1.05em";
-export const FONT_SIZE_DEFAULT_MOBILE = "1em";
+export const FONT_SIZE_DEFAULT_MOBILE = ".95em";
 
 export const FONT_SIZE_CODE_DESKTOP = ".82em";
 export const FONT_SIZE_CODE_MOBILE = ".6em";
