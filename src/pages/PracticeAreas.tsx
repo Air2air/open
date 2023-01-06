@@ -6,6 +6,7 @@ import ChartPracticeAreas from "components/Chart/PracticeAreas/chartPracticeArea
 import { useQuery } from "react-query";
 import BannerText from "components/Banner/bannerText";
 import Spacer from "components/Spacer/spacer";
+import BannerLoading from "components/Banner/bannerLoading";
 
 const dataSource = "/data/dataPracticeAreas.json";
 const queryName = "practiceareas";
@@ -27,18 +28,15 @@ const PracticeAreasPage = () => {
   return (
     <>
       {status === "error" && (
-        <p style={{ color: "red" }}>Error fetching data</p>
+        <>
+          <BannerLoading />
+          <BannerText text="error" />
+        </>
       )}
       {status === "loading" && (
         <>
-          <BannerVideo
-            pageVideo={776446335}
-            overlayOpacity={0.4}
-            overlayColor={COLOR_BASE}
-            typing
-            loopEndTime={loopEndTime}
-          />
-          <BannerText text="markets" />
+          <BannerLoading />
+          <BannerText text="practiceareas" />
         </>
       )}
       {status === "success" && (
@@ -47,7 +45,6 @@ const PracticeAreasPage = () => {
             pageVideo={776449715}
             overlayOpacity={0.7}
             overlayColor={COLOR_BASE}
-            typing={true}
           />
           <BannerText text="practiceareas" />
           <ChartPracticeAreas

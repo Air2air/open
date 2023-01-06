@@ -6,6 +6,7 @@ import BannerVideo from "components/Banner/bannerVideo";
 import BannerText from "components/Banner/bannerText";
 import Callout from "components/Callout/callOut";
 import Spacer from "components/Spacer/spacer";
+import BannerLoading from "components/Banner/bannerLoading";
 
 const dataSource = "/data/dataMarkets.json";
 const queryName = "markets";
@@ -25,16 +26,14 @@ const MarketsPage = () => {
   return (
     <>
       {status === "error" && (
-        <p style={{ color: "red" }}>Error fetching data</p>
+        <>
+          <BannerLoading />
+          <BannerText text="error" />
+        </>
       )}
       {status === "loading" && (
         <>
-          <BannerVideo
-            pageVideo={784844948}
-            overlayOpacity={0.4}
-            overlayColor={COLOR_BASE}
-            typing={true}
-          />
+          <BannerLoading />
           <BannerText text="markets" />
         </>
       )}
@@ -44,7 +43,6 @@ const MarketsPage = () => {
             pageVideo={784844948}
             overlayOpacity={0.4}
             overlayColor={COLOR_BASE}
-            typing={true}
           />
           <BannerText text="markets" />
           <ChartMarkets columnCount={5} data={data} backgroundColor={1} />

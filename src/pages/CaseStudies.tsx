@@ -6,6 +6,7 @@ import ChartCaseStudies from "components/Chart/CaseStudies/chartCaseStudies";
 import RowButton from "components/Button/rowButton";
 import { BannerText } from "components/Banner/bannerText";
 import Spacer from "components/Spacer/spacer";
+import BannerLoading from "components/Banner/bannerLoading";
 
 const dataSource = "/data/dataCaseStudies.json";
 const queryName = "casestudies";
@@ -27,17 +28,14 @@ const CaseStudiesPage = () => {
   return (
     <>
       {status === "error" && (
-        <p style={{ color: "red" }}>Error fetching data</p>
+        <>
+          <BannerLoading />
+          <BannerText text="error" />
+        </>
       )}
       {status === "loading" && (
         <>
-          <BannerVideo
-            pageVideo={776446335}
-            overlayOpacity={0.4}
-            overlayColor={COLOR_BASE}
-            typing
-            loopEndTime={loopEndTime}
-          />
+          <BannerLoading />
           <BannerText text="casestudies" />
         </>
       )}
@@ -51,11 +49,7 @@ const CaseStudiesPage = () => {
             loopEndTime={loopEndTime}
           />
           <BannerText text="casestudies" />
-          {/* <RowButton
-            buttonTo="/markets"
-            buttonText="Markets"
-            backgroundColor={4}
-          /> */}
+
           {data.map((props, index) => (
             <div key={index}>
               <ChartCaseStudies data={props.practiceArea} backgroundColor={2} />

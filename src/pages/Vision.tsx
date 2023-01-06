@@ -6,6 +6,7 @@ import RowButton from "components/Button/rowButton";
 import ChartVision from "components/Chart/Vision/chartVision";
 import { BannerText } from "components/Banner/bannerText";
 import Spacer from "components/Spacer/spacer";
+import BannerLoading from "components/Banner/bannerLoading";
 
 const dataSource = "/data/dataVision.json";
 const queryName = "vision";
@@ -27,17 +28,14 @@ const VisionPage = () => {
   return (
     <>
       {status === "error" && (
-        <p style={{ color: "red" }}>Error fetching data</p>
+        <>
+          <BannerLoading />
+          <BannerText text="error" />
+        </>
       )}
       {status === "loading" && (
         <>
-          <BannerVideo
-            pageVideo={776446335}
-            overlayOpacity={0.4}
-            overlayColor={COLOR_BASE}
-            typing={true}
-            loopEndTime={loopEndTime}
-          />
+          <BannerLoading />
           <BannerText text="vision" />
         </>
       )}
@@ -47,7 +45,6 @@ const VisionPage = () => {
             pageVideo={776451115}
             overlayOpacity={0.1}
             overlayColor={COLOR_BASE}
-            typing={true}
           />
           <BannerText text="vision" />
           <ChartVision

@@ -12,6 +12,7 @@ import {
 } from "styles/Constants";
 import styled from "styled-components";
 import { BANNER_PADDING_TOP_DESKTOP, BANNER_PADDING_TOP_MOBILE } from "./bannerCSS";
+import HeadingError from "components/Heading/headingError";
 
 export const BannerText = (props) => {
   const headingText = () => {
@@ -33,6 +34,8 @@ export const BannerText = (props) => {
       return <HeadingUnderConstruction {...props} />;
     } else if (props.text === "vision") {
       return <HeadingVision {...props} />;
+    } else if (props.text === "error") {
+      return <HeadingError {...props} />;
     } else {
       return <HeadingHome {...props} />;
     }

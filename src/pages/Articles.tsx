@@ -3,6 +3,7 @@ import { BannerText } from "components/Banner/bannerText";
 import Articles from "components/Articles/articles";
 import RowButton from "components/Button/rowButton";
 import Spacer from "components/Spacer/spacer";
+import BannerLoading from "components/Banner/bannerLoading";
 
 const dataSource = "/data/dataArticles.json";
 const queryName = "articles";
@@ -24,10 +25,14 @@ const ArticlesPage = () => {
   return (
     <>
       {status === "error" && (
-        <p style={{ color: "red" }}>Error fetching data</p>
+        <>
+          <BannerLoading />
+          <BannerText text="error" />
+        </>
       )}
       {status === "loading" && (
         <>
+          <BannerLoading />
           <BannerText text="articles" />
         </>
       )}

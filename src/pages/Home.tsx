@@ -6,6 +6,7 @@ import BannerVideo from "components/Banner/bannerVideo";
 import { COLOR_BASE } from "styles/Constants";
 import { BannerText } from "components/Banner/bannerText";
 import Spacer from "components/Spacer/spacer";
+import BannerLoading from "components/Banner/bannerLoading";
 
 const dataSource = "/data/dataHome.json";
 const queryName = "home";
@@ -27,16 +28,14 @@ const HomePage = () => {
   return (
     <>
       {status === "error" && (
-        <p style={{ color: "red" }}>Error fetching data</p>
+        <>
+          <BannerLoading />
+          <BannerText text="error" />
+        </>
       )}
       {status === "loading" && (
         <>
-          <BannerVideo
-            pageVideo={776443340}
-            overlayOpacity={0.1}
-            overlayColor={COLOR_BASE}
-            loopEndTime={loopEndTime}
-          />
+          <BannerLoading />
           <BannerText text="home" />
         </>
       )}
