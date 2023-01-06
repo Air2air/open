@@ -10,10 +10,9 @@ import {
 
 const GlobalStyles = createGlobalStyle`
 
-@import url('https://fonts.googleapis.com/css2?family=Cousine&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600&display=swap'); 
+/* @import url('https://fonts.googleapis.com/css2?family=Cousine&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600&display=swap'); 
 
-
-/* @font-face {
+ @font-face {
   font-family: 'Rajdhani';
   src: local('Rajdhani'), url(./fonts/Rajdhani/Rajdhani-Regular.ttf) format('truetype');
 } */

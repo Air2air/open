@@ -10,11 +10,15 @@ import {
   COLOR_TEXT,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
-  FONT_WEIGHT_BOLD,
+  FONT_DEFAULT_DESKTOP,
+  FONT_DEFAULT_MOBILE,
+  FONT_SUBHEAD_DESKTOP,
+  FONT_SUBHEAD_MOBILE,
 } from "styles/Constants";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import ButtonLinkedIn from "../Button/buttonLinkedIn";
 import { CONTACT_ITEM_HEIGHT } from "./contactCSS";
+import { Spacer } from "components/Spacer/spacer";
 
 interface IContactItemProps {
   id: number;
@@ -55,12 +59,12 @@ export const ContactItem = (props: IContactItemProps) => {
         <ContactContent>
           <ContactTitle>{props.shortName}</ContactTitle>
           <ContactItemDesc>{props.address}</ContactItemDesc>
-          <br />
+          <Spacer height={15} />
           <ButtonLinkedIn
             to="https://www.linkedin.com/company/eleven-health"
             text="Elevens.ai"
           />
-          <br />
+          <Spacer height={15} />
           <ContactItemLink href={`mailto:${props.email}`}>
             {props.email}
           </ContactItemLink>
@@ -138,33 +142,36 @@ const ImageWrapper = styled.div`
 `;
 
 const ContactTitle = styled.h2`
-  text-transform: uppercase;
-  font-weight: ${FONT_WEIGHT_BOLD};
   color: ${(props) =>
     props.color === "" || !props.color ? COLOR_RED : props.color};
   @media (min-width: ${BREAKPOINT}px) {
-    font-size: 1.5em;
+    ${FONT_SUBHEAD_DESKTOP}
   }
   @media (max-width: ${BREAKPOINT}px) {
-    font-size: 1.3em;
+    ${FONT_SUBHEAD_MOBILE}
   }
 `;
 
 const ContactItemDesc = styled.div`
   font-family: "Roboto", sans-serif;
-    line-height: 1.6em;
+  line-height: 1.6em;
   color: ${COLOR_TEXT};
 `;
 
 const ContactItemLink = styled.a`
-  font-family: "Roboto", sans-serif;
-    font-size: 1.3em;
-  line-height: 1.6em;
   color: ${COLOR_TEXT};
   transition: all 300ms;
   transform: scale(1);
   transform-origin: center center;
   &:hover {
     transform: scale(1.04);
+  }
+  @media (min-width: ${BREAKPOINT}px) {
+    ${FONT_DEFAULT_DESKTOP}
+    font-size: 1.2em;
+  }
+  @media (max-width: ${BREAKPOINT}px) {
+    ${FONT_DEFAULT_MOBILE}
+    font-size: 1.1em;
   }
 `;
