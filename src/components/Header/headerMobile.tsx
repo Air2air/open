@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import LogoWhite from "images/logo_text_white.svg";
-import { COLOR_TEXT, FONT_FAMILY_CONDENSED, FONT_WEIGHT_BOLD } from "styles/Constants";
+import { COLOR_TEXT, FONT_CAPTION_MOBILE, FONT_FAMILY_CONDENSED, FONT_WEIGHT_BOLD } from "styles/Constants";
 import { HEADER_HEIGHT_MOBILE, HEADER_COLOR, HEADER_COLOR_HOVER } from "./headerCSS";
 
 export const HeaderMobile = () => {
@@ -84,16 +84,13 @@ const HeaderBottom = styled.div`
 `;
 
 const HeaderLink = styled(Link)`
-  font-family: ${FONT_FAMILY_CONDENSED};
+  ${FONT_CAPTION_MOBILE};
   flex-wrap: nowrap;
   color: ${COLOR_TEXT};
-  font-size: 0.95em;
-  font-weight: ${FONT_WEIGHT_BOLD};
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  text-transform: uppercase;
   height: ${headerButtonHeightPx};
   background: ${HEADER_COLOR};
   transition: all 300ms;

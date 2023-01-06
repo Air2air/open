@@ -22,5 +22,5 @@ export const Spacer = (props: SpacerProps) => {
 export default Spacer;
 
 const SpacerDiv = styled.div<SpacerProps>`
-  width: 100vw;
+  width: 100%;
 `;
