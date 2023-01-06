@@ -35,7 +35,7 @@ const TypeWriterWrapper = styled.div`
   height: auto;
   text-align: left;
   opacity: ${TEXT_OPACITY};
-  /* text-shadow: 0 0 3px #000; */
+  text-shadow: 0 0 4px #000;
   /* background: red; */
   @media (min-width: ${BREAKPOINT}px) {
     ${FONT_BANNER_SUBHEAD_DESKTOP}
