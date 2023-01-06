@@ -2,6 +2,8 @@ import {
   BREAKPOINT,
   COLOR_WHITE,
   CONTENT_WIDTH_MOBILE,
+  FONT_HEADING_DESKTOP,
+  FONT_HEADING_MOBILE,
   TEXT_TITLE_DESKTOP,
   TEXT_TITLE_MOBILE,
 } from "styles/Constants";
@@ -40,10 +42,9 @@ const TitleStyled = styled.h1<TitleProps>`
     props.color === "" || !props.color ? COLOR_WHITE : props.color};
   text-shadow: 0 0 4px #000;
   @media (min-width: ${BREAKPOINT}px) {
-    font-size: ${TEXT_TITLE_DESKTOP};
+    ${FONT_HEADING_DESKTOP}
   }
   @media (max-width: ${BREAKPOINT}px) {
-    font-size: ${TEXT_TITLE_MOBILE};
-    line-height: 1.3em;
+    ${FONT_HEADING_MOBILE}
   }
 `;
