@@ -42,25 +42,6 @@ export const LMenuItem = ({ children }: Props) => (
   <MapImageDiv>{children}</MapImageDiv>
 );
 
-const SVGContainer = styled.div`
-  /* display: inline-block; */
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  /* padding-bottom: 44%; */
-  vertical-align: middle;
-  @media (min-width: ${BREAKPOINT}px) {
-    height: ${MAP_HEIGHT_DESKTOP}px;
-  }
-  @media (max-width: ${BREAKPOINT}px) {
-    height: ${MAP_HEIGHT_MOBILE}px;
-  }
-  /* background: ${COLOR_RED}; */
-`;
-
-
-
 
 const mapSectionPaddingDesktop = 50;
 const mapSectionPaddingMobile = 20;
@@ -80,6 +61,25 @@ const PaddingSection = styled.div`
 
 `;
 
+const SVGContainer = styled.div`
+  /* display: inline-block; */
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* padding-bottom: 44%; */
+  vertical-align: middle;
+  @media (min-width: ${BREAKPOINT}px) {
+    height: ${MAP_HEIGHT_DESKTOP}px;
+  }
+  @media (max-width: ${BREAKPOINT}px) {
+    height: ${MAP_HEIGHT_MOBILE}px;
+  }
+  /* background: ${COLOR_RED}; */
+`;
+
+
+
 const MapImageDiv = styled.div`
   > svg {
     z-index: +1;
@@ -95,7 +95,7 @@ const MapImageDiv = styled.div`
       height: ${MAP_HEIGHT_MOBILE}px;
     }
   }
-    /* background: gold; */
+    /* background: blue; */
 `;
 
 const MapPins = ({ data }) =>
