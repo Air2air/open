@@ -1,11 +1,18 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import LogoWhite from "images/logo_text_white.svg";
-import { COLOR_TEXT, FONT_CAPTION_MOBILE, FONT_FAMILY_CONDENSED, FONT_WEIGHT_BOLD } from "styles/Constants";
-import { HEADER_HEIGHT_MOBILE, HEADER_COLOR, HEADER_COLOR_HOVER } from "./headerCSS";
+import {
+  COLOR_TEXT,
+  FONT_CAPTION_MOBILE,
+} from "styles/Constants";
+import {
+  HEADER_HEIGHT_MOBILE,
+  HEADER_COLOR,
+  HEADER_COLOR_HOVER,
+} from "./headerCSS";
 
 export const HeaderMobile = () => {
-  /*------ Responsive -------*/
+
 
   return (
     <>
@@ -59,7 +66,7 @@ const HeaderTop = styled.div`
 
 const LogoWrapper = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   height: ${headerTopHeightPx};
   padding: 4px 0 0 0;
