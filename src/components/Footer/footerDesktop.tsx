@@ -3,20 +3,26 @@ import styled from "styled-components";
 import LogoWhite from "images/logo_white.svg";
 import LogoTextWhite from "images/logo_text_white.svg";
 import {
-  COLOR_BASE_4,
   COLOR_BASE_LIGHT,
   COLOR_RED,
   COLOR_RED_HOVER,
   CONTENT_WIDTH_DESKTOP,
   FONT_CAPTION_DESKTOP,
-  FONT_WEIGHT_SEMIBOLD,
 } from "styles/Constants";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { FOOTER_HEIGHT_DESKTOP } from "./footerCSS";
+import { assignBackgroundColor } from "utils/assignBackgroundColor";
+import { IFooterProps } from "./footer";
 
-export const FooterDesktop = () => {
+export const FooterDesktop = (props:IFooterProps) => {
+
+
   return (
-    <FooterWrapper>
+    <FooterWrapper
+      style={{
+        backgroundColor: assignBackgroundColor(props.backgroundColor),
+      }}
+    >
       <FooterContainer>
         <FooterContentRow>
           <FooterColumn>
@@ -77,7 +83,7 @@ const FooterWrapper = styled.div`
   justify-content: center;
   overflow: hidden;
   width: 100vw;
-  background: ${COLOR_BASE_4};
+
   height: ${FOOTER_HEIGHT_DESKTOP}px;
   /* margin: 50px 0 0 0; */
   /* background-color: blue; */

@@ -1,10 +1,12 @@
 import { BREAKPOINT } from "styles/Constants";
 import styled from "styled-components";
 import { IArticleProps } from "../articleInterfaces";
-import { ARTICLE_IMAGE_SIZE_MOBILE } from "../articleCSS";
+import { ARTICLE_IMAGE_SIZE_MOBILE } from "../articleConstants";
 import ArticleCodeBlock from "./articleCodeBlock";
 
-export const ArticleImageMobile = (props: IArticleProps) => {
+export const ArticleImageMobile = (
+  props: JSX.IntrinsicAttributes & { code?: string; image?: string }
+) => {
   return (
     <ArticleImageWrapperMobile>
       <ArticleImageBackground
@@ -16,7 +18,6 @@ export const ArticleImageMobile = (props: IArticleProps) => {
     </ArticleImageWrapperMobile>
   );
 };
-
 
 export const ArticleImageWrapperMobile = styled.div`
   float: top;

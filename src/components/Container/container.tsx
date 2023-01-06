@@ -1,3 +1,4 @@
+import { type } from "os";
 import styled from "styled-components";
 import {
   BREAKPOINT,
@@ -7,29 +8,36 @@ import {
 import { assignBackgroundColor } from "utils/assignBackgroundColor";
 
 type ContainerProps = {
-  backgroundColor?: any;
+  children: React.ReactNode;
+  backgroundColor?: number | undefined;
 };
 
-const Container = ({ children }: any, { backgroundColor }: ContainerProps) => {
+const Container = ({ children, backgroundColor }: ContainerProps) => {
+
+
+  // console.log("backgroundColor: ", backgroundColor);
+
   return (
     <>
       <ContainerOuter
         style={{
-          background: backgroundColor
-            ? assignBackgroundColor(backgroundColor)
-            : "none",
+          height: "100%",
+          width: "100%",
+          backgroundColor: assignBackgroundColor(backgroundColor),
+          //backgroundColor: `#00${backgroundColor}`,
         }}
       >
         <ContainerInner>{children}</ContainerInner>
       </ContainerOuter>
+
     </>
   );
 };
 
-const ContainerOuter = styled.div<ContainerProps>`
-  margin: auto auto;
-  height: auto;
-  width: 100vw;
+const ContainerOuter = styled.div`
+  /* margin: auto auto; */
+  height: 100%;
+  width: 100%;
   /* background-color: gold; */
 `;
 

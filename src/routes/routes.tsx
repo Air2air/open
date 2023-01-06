@@ -1,15 +1,14 @@
-import HistoryPage from "pages/History/pageHistory";
+
 import { lazy } from "react";
-const AboutPage = lazy(() => import("pages/About/pageAbout"));
-const ArticlesPage = lazy(() => import("pages/Articles/pageArticles"));
-const CaseStudiesPage = lazy(() => import("pages/CaseStudies/pageCaseStudies"));
-const ContactPage = lazy(() => import("pages/Contact/pageContact"));
-const HomePage = lazy(() => import("pages/Home/pageHome"));
-const MarketsPage = lazy(() => import("pages/Markets/pageMarkets"));
-const PracticeAreasPage = lazy(
-  () => import("pages/PracticeAreas/pagePracticeAreas")
-);
-const VisionPage = lazy(() => import("pages/Vision/pageVision"));
+const AboutPage = lazy(() => import("pages/About"));
+const ArticlesPage = lazy(() => import("pages/Articles"));
+const CaseStudiesPage = lazy(() => import("pages/CaseStudies"));
+const ContactPage = lazy(() => import("pages/Contact"));
+const HistoryPage = lazy(() => import("pages/History"));
+const HomePage = lazy(() => import("pages/Home"));
+const MarketsPage = lazy(() => import("pages/Markets"));
+const PracticeAreasPage = lazy(() => import("pages/PracticeAreas"));
+const VisionPage = lazy(() => import("pages/Vision"));
 
 export const dataRoutes = [
   {

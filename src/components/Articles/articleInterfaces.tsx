@@ -1,10 +1,6 @@
-export interface IArticleDataProps {
-  data: any;
-}
-
 export interface IArticleProps {
-  id?: number;
   to?: string;
+  id?: number;
   category?: string;
   title?: string;
   text?: any;
@@ -17,4 +13,5 @@ export interface IArticleProps {
   buttonColor?: string;
   data?: any;
   style?: any;
+  children?: any;
 }

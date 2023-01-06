@@ -3,10 +3,12 @@ import { useState, useEffect } from "react";
 import { FooterDesktop } from "./footerDesktop";
 import { FooterMobile } from "./footerMobile";
 
+export interface IFooterProps {
+  children?: React.ReactNode;
+  backgroundColor: number;
+}
 
-
-export const Footer = () => {
-  /*------ Responsive -------*/
+export const Footer = (props: IFooterProps) => {
   const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -16,5 +18,15 @@ export const Footer = () => {
     return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
 
-  return <>{width > BREAKPOINT ? <FooterDesktop /> : <FooterMobile />}</>;
+  console.log("backgroundColor: ", props.backgroundColor);
+
+  return (
+    <>
+      {width > BREAKPOINT ? (
+        <FooterDesktop backgroundColor={props.backgroundColor} />
+      ) : (
+        <FooterMobile backgroundColor={props.backgroundColor} />
+      )}
+    </>
+  );
 };

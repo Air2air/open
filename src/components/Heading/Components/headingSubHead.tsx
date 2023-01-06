@@ -16,12 +16,12 @@ type HeadingSubHeadProps = {
 };
 
 export const HeadingSubHead = (props: HeadingSubHeadProps) => (
-  <TextContainer className="animate__animated animate__fadeInUp animate__delay-500ms">
+  <SubheadContainer className="animate__animated animate__fadeInUp animate__delay-500ms">
     <TypeWriterWrapper>{props.text}</TypeWriterWrapper>
-  </TextContainer>
+  </SubheadContainer>
 );
 
-const TextContainer = styled.div`
+const SubheadContainer = styled.div`
   position: absolute;
   bottom: 0;
   text-align: left;

@@ -26,6 +26,9 @@ export const FONT_SIZE_DEFAULT_MOBILE = "1em";
 export const FONT_SIZE_CODE_DESKTOP = ".82em";
 export const FONT_SIZE_CODE_MOBILE = ".6em";
 
+export const FONT_SIZE_BUTTON_DESKTOP = "1.1em";
+export const FONT_SIZE_BUTTON_MOBILE = "1.1em";
+
 // LINE-HEIGHT
 export const LINE_HEIGHT_DEFAULT_DESKTOP = "1.8em";
 export const LINE_HEIGHT_DEFAULT_MOBILE = "1.6em";
@@ -35,6 +38,9 @@ export const LINE_HEIGHT_SUBHEAD_MOBILE = "1.2em";
 
 export const LINE_HEIGHT_CODE_DESKTOP = "1.5em";
 export const LINE_HEIGHT_CODE_MOBILE = "1.3em";
+
+export const LINE_HEIGHT_BUTTON_DESKTOP = "1.5em";
+export const LINE_HEIGHT_BUTTON_MOBILE = "1.3em";
 
 // WEIGHTS
 export const FONT_WEIGHT_LIGHT = 100; //Roboto: 100;300;400;500;700
@@ -77,3 +83,8 @@ export const FONT_DEFAULT_MOBILE = `font-weight: ${FONT_WEIGHT_DEFAULT}; font-si
 export const FONT_CODE_DESKTOP = `font-weight: ${FONT_WEIGHT_CODE}; font-size: ${FONT_SIZE_CODE_DESKTOP}; font-family: ${FONT_FAMILY_CODE}; line-height: ${LINE_HEIGHT_CODE_DESKTOP};`;
 
 export const FONT_CODE_MOBILE = `font-weight: ${FONT_WEIGHT_CODE}; font-size: ${FONT_SIZE_CODE_MOBILE}; font-family: ${FONT_FAMILY_CODE}; line-height: ${LINE_HEIGHT_CODE_MOBILE};`;
+
+// BUTTON
+export const FONT_BUTTON_DESKTOP = `font-weight: ${FONT_WEIGHT_SEMIBOLD}; font-size: ${FONT_SIZE_BUTTON_DESKTOP}; font-family: ${FONT_FAMILY_CONDENSED}; line-height: ${LINE_HEIGHT_BUTTON_DESKTOP};`;
+
+export const FONT_BUTTON_MOBILE = `font-weight: ${FONT_WEIGHT_SEMIBOLD}; font-size: ${FONT_SIZE_BUTTON_MOBILE}; font-family: ${FONT_FAMILY_CONDENSED}; line-height: ${LINE_HEIGHT_BUTTON_MOBILE};`;

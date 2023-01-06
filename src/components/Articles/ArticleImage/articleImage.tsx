@@ -4,7 +4,12 @@ import { IArticleProps } from "../articleInterfaces";
 import ArticleImageDesktop from "./articleImageDesktop";
 import { ArticleImageMobile } from "./articleImageMobile";
 
-export const ArticleImage = (props: IArticleProps) => {
+export const ArticleImage = (
+  props: JSX.IntrinsicAttributes & {
+    code?: string | undefined;
+    image?: string | undefined;
+  }
+) => {
   const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {

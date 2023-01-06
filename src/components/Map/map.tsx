@@ -56,6 +56,7 @@ const SVGContainer = styled.div`
   @media (max-width: ${BREAKPOINT}px) {
     height: ${MAP_HEIGHT_MOBILE}px;
   }
+  /* background: ${COLOR_RED}; */
 `;
 
 
@@ -67,16 +68,15 @@ const mapSectionPaddingMobile = 20;
 const PaddingSection = styled.div`
   width: "100%";
   @media (min-width: ${BREAKPOINT}px) {
-    height: ${MAP_HEIGHT_DESKTOP}px;
+    height: auto;
     padding: ${mapSectionPaddingDesktop}px 0;
   }
 
   @media (max-width: ${BREAKPOINT}px) {
-    height: ${MAP_HEIGHT_MOBILE}px;
+    height: auto;
     padding: ${mapSectionPaddingMobile}px 0;
   }
   /* background: gold; */
-
 
 `;
 
@@ -95,6 +95,7 @@ const MapImageDiv = styled.div`
       height: ${MAP_HEIGHT_MOBILE}px;
     }
   }
+    /* background: gold; */
 `;
 
 const MapPins = ({ data }) =>

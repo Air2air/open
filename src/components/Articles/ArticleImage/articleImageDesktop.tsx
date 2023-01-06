@@ -1,11 +1,11 @@
-
 import styled from "styled-components";
 import { IArticleProps } from "../articleInterfaces";
-import { ARTICLE_IMAGE_SIZE_DESKTOP } from "../articleCSS";
+import { ARTICLE_IMAGE_SIZE_DESKTOP } from "../articleConstants";
 import ArticleCodeBlock from "./articleCodeBlock";
 
-
-export const ArticleImageDesktop = (props: IArticleProps) => {
+export const ArticleImageDesktop = (
+  props: JSX.IntrinsicAttributes & { code?: string; image?: string }
+) => {
   return (
     <ArticleImageWrapperDesktop>
       <ArticleImageBackground

@@ -3,8 +3,6 @@ import {
   COLOR_WHITE,
   FONT_SUBHEAD_DESKTOP,
   FONT_SUBHEAD_MOBILE,
-  FONT_WEIGHT_BOLD,
-  FONT_WEIGHT_SEMIBOLD,
 } from "styles/Constants";
 import styled from "styled-components";
 import { FC } from "react";
@@ -23,6 +21,8 @@ export const TitleCallout: FC<TitleProps> = (props) => (
 const TitleContainer = styled.div`
   text-align: left;
   width: 100%;
+  min-height: 50px;
+  /* background: red; */
 `;
 
 const TitleStyled = styled.h3<TitleProps>`

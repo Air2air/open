@@ -1,147 +1,45 @@
 import {
   BREAKPOINT,
-  COLOR_BASE_1,
-  COLOR_WHITE,
-  FONT_CAPTION_DESKTOP,
-  FONT_CAPTION_MOBILE,
+  COLOR_TEXT,
+  CONTENT_WIDTH_DESKTOP,
+  CONTENT_WIDTH_MOBILE,
+  FONT_DEFAULT_DESKTOP,
+  FONT_DEFAULT_MOBILE,
 } from "styles/Constants";
-import { BANNER_PADDING_TOP_DESKTOP, BANNER_PADDING_TOP_MOBILE } from "./articleCSS";
+
 import styled from "styled-components";
-import { CARD_HEIGHT_DESKTOP, CARD_WIDTH_DESKTOP, CARD_HEIGHT_MOBILE, CARD_WIDTH_MOBILE } from "./articleCSS";
 
-export const CardHolder = styled.div`
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: ${COLOR_BASE_1};
-  @media (min-width: ${BREAKPOINT}px) {
-    padding-top: ${BANNER_PADDING_TOP_DESKTOP}px;
-    height: auto;
-  }
-  @media (max-width: ${BREAKPOINT}px) {
-    padding-top: ${BANNER_PADDING_TOP_MOBILE}px;
-    height: auto;
-  }
-`;
-
-export const CardRow = styled.div`
-  box-sizing: border-box;
-  margin: 40px 0;
-  display: flex;
-  justify-content: flex-start;
-  height: auto;
-  flex-wrap: wrap;
-  /* background: gold; */
-`;
-
-export const CardContentWrapper = styled.div`
-  margin: 20px 12px;
+export const ArticleBodyContainer = styled.div`
+  margin: 20px 0;
   position: relative;
   top: 0;
-  left: 0;
-  transition: all 600ms;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  .card-background {
-    filter: brightness(0.7);
-    transform: scale(1);
-  }
-  .card-block {
-    transition: all 600ms;
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-  &:hover {
-    .card-background {
-      filter: brightness(1);
-      transform: scale(1.03);
-    }
-    .card-block {
-      /* transition: all 600ms; */
-      background-color: rgba(0, 0, 0, 0.7);
-    }
-  }
-  overflow: hidden;
-  @media (min-width: ${BREAKPOINT}px) {
-    height: ${CARD_HEIGHT_DESKTOP}px;
-    width: ${CARD_WIDTH_DESKTOP}px;
-  }
-  @media (max-width: ${BREAKPOINT}px) {
-    height: ${CARD_HEIGHT_MOBILE}px;
-    width: ${CARD_WIDTH_MOBILE}px;
-  }
-  /* background-color: blue; */
+  height: auto;
 `;
 
-export const CardBackground = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: all 600ms;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+export const ArticleInner = styled.div`
+  margin: 0 auto;
+  z-index: +1;
+  height: auto;
+  text-align: left;
   @media (min-width: ${BREAKPOINT}px) {
-    height: ${CARD_HEIGHT_DESKTOP}px;
-    width: ${CARD_WIDTH_DESKTOP}px;
+    padding: 50px 0;
+    width: ${CONTENT_WIDTH_DESKTOP};
   }
   @media (max-width: ${BREAKPOINT}px) {
-    height: ${CARD_HEIGHT_MOBILE}px;
-    width: ${CARD_WIDTH_MOBILE}px;
+    padding: 20px 0;
+    width: ${CONTENT_WIDTH_MOBILE};
   }
-  /* background-color: blue; */
+  /* background: red;; */
 `;
 
-export const CardTextSection = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: flex-start;
+export const ArticleBodyParagraph = styled.div`
+  color: ${COLOR_TEXT};
+  height: auto;
+  text-align: left;
   @media (min-width: ${BREAKPOINT}px) {
-    height: ${CARD_HEIGHT_DESKTOP}px;
-    width: ${CARD_WIDTH_DESKTOP}px;
+    /* ${FONT_DEFAULT_DESKTOP} */
   }
   @media (max-width: ${BREAKPOINT}px) {
-    height: ${CARD_HEIGHT_MOBILE}px;
-    width: ${CARD_WIDTH_MOBILE}px;
+    /* ${FONT_DEFAULT_MOBILE} */
   }
-  /* background-color: blue; */
-`;
-
-export const CardTextBlock = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  @media (min-width: ${BREAKPOINT}px) {
-    height: 50%;
-    width: ${CARD_WIDTH_DESKTOP}px;
-  }
-  @media (max-width: ${BREAKPOINT}px) {
-    height: 50%;
-    width: ${CARD_WIDTH_MOBILE}px;
-  }
-`;
-
-export const CardText = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  color: ${COLOR_WHITE};
-  padding: 30px;
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: center;
-  /* text-transform: uppercase; */
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
-  @media (min-width: ${BREAKPOINT}px) {
-    height: 50%;
-  ${FONT_CAPTION_DESKTOP}
-  }
-  @media (max-width: ${BREAKPOINT}px) {
-    height: 50%;
-    ${FONT_CAPTION_MOBILE}
-  }
-  /* background-color: blue; */
 `;

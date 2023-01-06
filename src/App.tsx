@@ -8,7 +8,7 @@ import { dataRoutes } from "./routes/routes";
 import { BREAKPOINT } from "styles/Constants";
 import { useWindowWidth } from "@react-hook/window-size";
 import { usePageTracking } from "./components/Analytics/gaTracking";
-import UnderConstructionPage from "pages/UnderConstruction/pageUnderConstruction";
+import UnderConstructionPage from "pages/UnderConstruction";
 
 const isUnderConstruction = 0;
 
@@ -35,8 +35,7 @@ const App = () => {
             )}
           </Routes>
         </Suspense>
-
-        {!isUnderConstruction ? <Footer /> : ""}
+        {isUnderConstruction ? "" : <Footer backgroundColor={5} />}
       </QueryClientProvider>
     </>
   );

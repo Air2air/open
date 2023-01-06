@@ -3,20 +3,26 @@ import styled from "styled-components";
 import LogoWhite from "images/logo_white.svg";
 import LogoTextWhite from "images/logo_text_white.svg";
 import {
-  COLOR_BASE_4,
   COLOR_BASE_LIGHT,
   COLOR_RED,
   COLOR_RED_HOVER,
   CONTENT_WIDTH_MOBILE,
   FONT_CAPTION_MOBILE,
-  FONT_WEIGHT_SEMIBOLD,
 } from "styles/Constants";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { FOOTER_HEIGHT_MOBILE } from "./footerCSS";
+import { assignBackgroundColor } from "utils/assignBackgroundColor";
+import { IFooterProps } from "./footer";
 
-export const FooterMobile = () => {
+export const FooterMobile = (props:IFooterProps) => {
+
+
   return (
-    <FooterWrapper>
+    <FooterWrapper
+      style={{
+        backgroundColor: assignBackgroundColor(props.backgroundColor),
+      }}
+    >
       <FooterContainer>
         <FooterLogoRow animateIn="animate__fadeInUp" delay={0} offset={0}>
           <Link className="link" to="/home">
@@ -71,7 +77,6 @@ const FooterWrapper = styled.div`
   justify-content: center;
   overflow: hidden;
   width: 100vw;
-  background: ${COLOR_BASE_4};
   height: ${FOOTER_HEIGHT_MOBILE}px;
   /* background-color: blue; */
 `;

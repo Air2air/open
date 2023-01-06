@@ -16,7 +16,6 @@ import styled from "styled-components";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import parse from "html-react-parser";
 import { TitleCallout } from "components/Title/titleCallout";
-import Button from "../Button/button";
 import {ICalloutBulletProps} from "interfaces/callouts";
 import { CALLOUT_HEIGHT } from "./callOutCSS";
 
@@ -54,11 +53,7 @@ export const CalloutBullet = (props: ICalloutBulletProps) => {
                 offset={60}
               >
                 <CalloutParagraph>{textParsed}</CalloutParagraph>
-                {props.buttonText ?             <Button
-              buttonTo={props.buttonTo}
-              buttonText={props.buttonText}
-              buttonColor={props.buttonColor}
-            /> : null} 
+
               </AnimationOnScroll>
             </TextRow>
             <AnimationOnScroll
@@ -86,11 +81,7 @@ export const CalloutBullet = (props: ICalloutBulletProps) => {
                 offset={60}
               >
                 <CalloutParagraph>{textParsed}</CalloutParagraph>
-                {props.buttonText ?             <Button
-              buttonTo={props.buttonTo}
-              buttonText={props.buttonText}
-              buttonColor={props.buttonColor}
-            /> : null} 
+
               </AnimationOnScroll>
             </TextRow>
           </InnerSection>

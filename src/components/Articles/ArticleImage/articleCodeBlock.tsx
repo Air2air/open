@@ -1,19 +1,20 @@
 import {
   BREAKPOINT,
   COLOR_CODE_BACKGROUND,
-  COLOR_WHITE,
   FONT_CODE_DESKTOP,
   FONT_CODE_MOBILE,
   FONT_WEIGHT_BOLD,
 } from "styles/Constants";
 import styled from "styled-components";
-import { IArticleProps } from "../articleInterfaces";
 import {
   ARTICLE_IMAGE_SIZE_DESKTOP,
   ARTICLE_IMAGE_SIZE_MOBILE,
-} from "../articleCSS";
+} from "../articleConstants";
 
-export const ArticleCodeBlock = (props: IArticleProps) => {
+
+export const ArticleCodeBlock = (props: {
+  code?: string;
+}) => {
   return (
     <ArticleCode>
       <div className="code-wrapper">
@@ -41,7 +42,6 @@ export const ArticleCodeBlock = (props: IArticleProps) => {
     </ArticleCode>
   );
 };
-
 
 export const ArticleCode = styled.div`
   display: flex;
