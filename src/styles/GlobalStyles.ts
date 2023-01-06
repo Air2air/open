@@ -89,12 +89,29 @@ li {
 }
 
 @font-face {
+  font-family: "Roboto Condensed";
+  src: url("/fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed Light";
+  src: url("/fonts/Roboto_Condensed/RobotoCondensed-Light.ttf") format("truetype");
+  font-display: swap;
+}
+
+
+@font-face {
   font-family: "Roboto";
   src: url("/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
   font-display: swap;
 }
+
+
 
 @font-face {
   font-family: "Roboto Condensed";
@@ -103,6 +120,7 @@ li {
   font-weight: normal;
   font-display: swap;
 }
+
 
 
 `;

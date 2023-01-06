@@ -1,6 +1,6 @@
 // FAMILY
 
-export const FONT_FAMILY_HEADING = `"Roboto Condensed", sans-serif`;
+export const FONT_FAMILY_HEADING = `"Roboto Condensed Light", sans-serif`;
 export const FONT_FAMILY_DEFAULT = `"Source Sans Pro", sans-serif`;
 export const FONT_FAMILY_CONDENSED = `"Roboto Condensed", sans-serif`;
 export const FONT_FAMILY_CODE = `'Cousine', monospace;`;
