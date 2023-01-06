@@ -36,7 +36,6 @@ export default defineConfig({
         ],
         display: "auto",
         preload: true,
-        injectTo: "head-prepend",
       },
     }),
   ],

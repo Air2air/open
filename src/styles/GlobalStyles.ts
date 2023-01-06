@@ -10,7 +10,6 @@ import {
 
 const GlobalStyles = createGlobalStyle`
 
-
 body {
 box-sizing: border-box;
 outline: 0;
@@ -88,6 +87,23 @@ li {
     padding: 5px 0;
   }
 }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("/fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
 
 `;
 export default GlobalStyles;
