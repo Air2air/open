@@ -1,19 +1,16 @@
 import { createGlobalStyle } from "styled-components";
 import {
   BREAKPOINT,
-  COLOR_BASE,
-  COLOR_BASE_1,
   COLOR_BASE_2,
   FONT_CONDENSED_DESKTOP,
   FONT_DEFAULT_DESKTOP,
   FONT_DEFAULT_MOBILE,
-  FONT_FAMILY_CONDENSED,
-  FONT_FAMILY_DEFAULT,
   FONT_WEIGHT_BOLD,
-  FONT_WEIGHT_DEFAULT,
 } from "./Constants";
 
 const GlobalStyles = createGlobalStyle`
+
+@import url('https://fonts.googleapis.com/css2?family=Cousine&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600&display=swap'); 
 
 body {
 box-sizing: border-box;
