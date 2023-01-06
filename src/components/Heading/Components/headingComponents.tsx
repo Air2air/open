@@ -4,8 +4,6 @@ import {
   CONTENT_WIDTH_MOBILE,
   FONT_HEADING_DESKTOP,
   FONT_HEADING_MOBILE,
-  TEXT_TITLE_DESKTOP,
-  TEXT_TITLE_MOBILE,
 } from "styles/Constants";
 import styled from "styled-components";
 import { CHART_TEXT_TRANSITION } from "components/Chart/ChartComponents/chartCSS";
