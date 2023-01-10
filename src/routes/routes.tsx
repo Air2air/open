@@ -7,7 +7,7 @@ const ContactPage = lazy(() => import("pages/Contact"));
 const HistoryPage = lazy(() => import("pages/History"));
 const HomePage = lazy(() => import("pages/Home"));
 const MarketsPage = lazy(() => import("pages/Markets"));
-const PracticeAreasPage = lazy(() => import("pages/PracticeAreas"));
+const WhatWeDoPage = lazy(() => import("pages/WhatWeDo"));
 const VisionPage = lazy(() => import("pages/Vision"));
 
 export const dataRoutes = [
@@ -61,10 +61,10 @@ export const dataRoutes = [
     element: <MarketsPage />,
   },
   {
-    id: "PracticeAreas",
-    path: "practice_areas",
-    section: "PracticeAreas",
-    element: <PracticeAreasPage />,
+    id: "WhatWeDo",
+    path: "whatwedo",
+    section: "WhatWeDo",
+    element: <WhatWeDoPage />,
   },
   {
     id: "Vision",

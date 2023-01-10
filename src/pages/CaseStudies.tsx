@@ -2,14 +2,29 @@ import { useQuery } from "react-query";
 import BannerVideo from "components/Banner/bannerVideo";
 import { COLOR_BASE } from "styles/Constants";
 import Callout from "components/Callout/callOut";
-import ChartCaseStudies from "components/Chart/CaseStudies/chartCaseStudies";
 import RowButton from "components/Button/rowButton";
 import { BannerText } from "components/Banner/bannerText";
 import Spacer from "components/Spacer/spacer";
 import BannerLoading from "components/Banner/bannerLoading";
+import { BarLabel } from "components/Callout/Chart/barLabel";
+import {
+  ChartSection,
+  ChartWrapper,
+  BarOuter,
+  BarInner,
+  concatPercent,
+  animationEnter,
+} from "components/Callout/Chart/chartComponents";
+import Container from "components/Container/container";
+
 
 const dataSource = "/data/dataCaseStudies.json";
 const queryName = "casestudies";
+
+interface ICaseStudy {
+  id?: number;
+  backgroundColor?: number;
+}
 
 const CaseStudiesPage = () => {
   const fetchData = async () => {
@@ -50,12 +65,44 @@ const CaseStudiesPage = () => {
           />
           <BannerText text="casestudies" />
 
-          {data.map((props, index) => (
-            <div key={index}>
-              <ChartCaseStudies data={props.practiceArea} backgroundColor={2} />
-              <Callout {...props} />
+          {data && data.length > 0 ? (
+            data.map((item, index) => {
+              return (
+                <div key={index}>
+                  <Container backgroundColor={item.backgroundColor}>
+                    <ChartSection>
+                      <ChartWrapper>
+                        {item.chart
+                          ? item.chart.map((item) => {
+                              return (
+                                <BarOuter key={item.id}>
+                                  <BarInner
+                                    style={{
+                                      height: concatPercent(item.height),
+                                      backgroundColor: item.backgroundColor,
+                                      animation: animationEnter(item.id),
+                                    }}
+                                  />
+                                  <BarLabel
+                                    label={item.label}
+                                    index={item.id}
+                                  />
+                                </BarOuter>
+                              );
+                            })
+                          : "Props not passed to Chart component"}
+                      </ChartWrapper>
+                    </ChartSection>
+                  </Container>
+                  <Callout {...item} />
+                </div>
+              );
+            })
+          ) : (
+            <div style={{ color: "white" }}>
+              Data Fetch error in Page component
             </div>
-          ))}
+          )}
 
           <Spacer height={40} backgroundColor={2} />
           <RowButton

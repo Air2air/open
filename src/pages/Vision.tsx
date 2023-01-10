@@ -3,7 +3,7 @@ import BannerVideo from "components/Banner/bannerVideo";
 import { COLOR_BASE } from "styles/Constants";
 import Callout from "components/Callout/callOut";
 import RowButton from "components/Button/rowButton";
-import ChartVision from "components/Chart/Vision/chartVision";
+import ChartVision from "components/Callout/Chart/Vision/chartVision";
 import { BannerText } from "components/Banner/bannerText";
 import Spacer from "components/Spacer/spacer";
 import BannerLoading from "components/Banner/bannerLoading";

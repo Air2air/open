@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-import { LoopEndTime } from "../Chart/Markets/chartMarkets";
+import { LoopEndTime } from "components/Callout/Chart/Markets/chartMarkets";
 import Container from "components/Container/container";
 import {
   Wrapper,

@@ -1,6 +1,6 @@
 import HeadingHome from "components/Heading/headingHome";
 import HeadingMarkets from "components/Heading/headingMarkets";
-import HeadingPracticeAreas from "components/Heading/headingPracticeAreas";
+import HeadingWhatWeDo from "components/Heading/headingWhatWeDo";
 import HeadingVision from "components/Heading/headingVision";
 import HeadingAbout from "components/Heading/headingAbout";
 import HeadingCaseStudies from "components/Heading/headingCaseStudies";
@@ -28,8 +28,8 @@ export const BannerText = (props) => {
       return <HeadingHistory {...props} />;
     } else if (props.text === "markets") {
       return <HeadingMarkets {...props} />;
-    } else if (props.text === "practiceareas") {
-      return <HeadingPracticeAreas {...props} />;
+    } else if (props.text === "whatwedo") {
+      return <HeadingWhatWeDo {...props} />;
     } else if (props.text === "underconstruction") {
       return <HeadingUnderConstruction {...props} />;
     } else if (props.text === "vision") {

@@ -27,7 +27,7 @@ export const HeaderMobile = () => {
           </LogoWrapper>
         </HeaderTop>
         <HeaderBottom>
-          <HeaderLink to="/practice_areas">Work</HeaderLink>
+          <HeaderLink to="/whatwedo">Work</HeaderLink>
           <HeaderLink to="/markets">Markets</HeaderLink>
           <HeaderLink to="/vision">Vision</HeaderLink>
           <HeaderLink to="/about">About</HeaderLink>

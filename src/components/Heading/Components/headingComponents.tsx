@@ -6,8 +6,8 @@ import {
   FONT_HEADING_MOBILE,
 } from "styles/Constants";
 import styled from "styled-components";
-import { CHART_TEXT_TRANSITION } from "components/Chart/ChartComponents/chartCSS";
-import { HEADING_HEIGHT_DESKTOP, HEADING_HEIGHT_MOBILE } from "../headingCSS";
+import { HEADING_HEIGHT_DESKTOP, HEADING_HEIGHT_MOBILE } from "components/Heading/headingCSS";
+import { CHART_TEXT_TRANSITION } from "components/Callout/Chart/chartComponents";
 
 export const Wrapper = styled.div`
   position: relative;

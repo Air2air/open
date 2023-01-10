@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import Container from "./../Container/container";
-import { TitleCallout } from "./../Title/titleCallout";
+import Container from "components/Container/container";
+import { TitleCallout } from "components/Title/titleCallout";
 import MapImage from "images/world_map.svg";
 
 import "./keyframes.scss";

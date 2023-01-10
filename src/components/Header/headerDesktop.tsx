@@ -47,7 +47,7 @@ export const HeaderDesktop = () => {
           </LogoWrapper>
         </HeaderLeft>
         <HeaderRight>
-          <HeaderLink to="/practice_areas">What we do</HeaderLink>
+          <HeaderLink to="/whatwedo">What we do</HeaderLink>
           <HeaderLink to="/markets">Markets</HeaderLink>
           <HeaderLink to="/vision">Vision</HeaderLink>
           <HeaderLink to="/about">About</HeaderLink>

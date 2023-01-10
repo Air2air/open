@@ -9,12 +9,21 @@ type SpacerProps = {
 export const Spacer = (props: SpacerProps) => {
   return (
     <>
-      <SpacerDiv
-        style={{
-          height: props.height,
-          background: assignBackgroundColor(props.backgroundColor),
-        }}
-      />
+      {props.backgroundColor ? (
+        <SpacerDiv
+          style={{
+            height: props.height,
+            background: assignBackgroundColor(props.backgroundColor),
+          }}
+        />
+      ) : (
+        <SpacerDiv
+          style={{
+            height: props.height,
+            background: assignBackgroundColor(1),
+          }}
+        />
+      )}
     </>
   );
 };

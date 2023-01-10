@@ -1,4 +1,3 @@
-import { type } from "os";
 import styled from "styled-components";
 import {
   BREAKPOINT,
@@ -12,30 +11,24 @@ type ContainerProps = {
   backgroundColor?: number | undefined;
 };
 
-const Container = ({ children, backgroundColor }: ContainerProps) => {
-
-
-  // console.log("backgroundColor: ", backgroundColor);
-
+const Container = (props) => {
   return (
     <>
       <ContainerOuter
         style={{
           height: "100%",
           width: "100%",
-          backgroundColor: assignBackgroundColor(backgroundColor),
-          //backgroundColor: `#00${backgroundColor}`,
+          backgroundColor: assignBackgroundColor(props.backgroundColor),
         }}
       >
-        <ContainerInner>{children}</ContainerInner>
+        {props ? null : "No props passed"}
+        <ContainerInner>{props.children}</ContainerInner>
       </ContainerOuter>
-
     </>
   );
 };
 
 const ContainerOuter = styled.div`
-  /* margin: auto auto; */
   height: 100%;
   width: 100%;
   /* background-color: gold; */
