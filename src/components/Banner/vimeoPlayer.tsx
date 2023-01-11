@@ -1,8 +1,12 @@
 import styled from "styled-components";
 import Vimeo from "@u-wave/react-vimeo";
-import { BREAKPOINT_MID, BREAKPOINT } from "styles/Constants";
+import { BREAKPOINT_MID, BREAKPOINT, COLOR_BASE } from "styles/Constants";
 import { useState } from "react";
-import { BANNER_HEIGHT_DESKTOP, BANNER_HEIGHT_MOBILE, VideoContainer } from "./bannerComponents";
+import {
+  BANNER_HEIGHT_DESKTOP,
+  BANNER_HEIGHT_MOBILE,
+  VideoContainer,
+} from "./bannerComponents";
 
 export const VimeoPlayer = ({ videoID }) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -30,6 +34,8 @@ const Video = styled((props) => <Vimeo {...props} />)`
   left: 50%;
   min-width: 100vw;
   transition: all 2s;
+  background: ${COLOR_BASE};
+
   @media (min-width: ${BREAKPOINT}px) {
     top: -50%;
     transform: translate(-50%, 50%);

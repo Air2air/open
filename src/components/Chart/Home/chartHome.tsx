@@ -1,6 +1,6 @@
 import { ColumnHome } from "./columnHome";
 import Container from "components/Container/container";
-import { ChartSection } from "components/Chart/chartComponents";
+import { ChartSection, ChartSkeleton } from "components/Chart/chartComponents";
 import { FetchData } from "fetch/fetch";
 
 const HomeChart = ({ jsonFile }) => {
@@ -9,7 +9,7 @@ const HomeChart = ({ jsonFile }) => {
   });
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <ChartSkeleton />;
   }
   if (error) {
     return <div>Error: {error.message}</div>;
