@@ -4,7 +4,6 @@ import { Route, Routes } from "react-router-dom";
 import { Footer } from "./components/Footer/footer";
 import { Header } from "./components/Header/header";
 import { dataRoutes } from "./routes/routes";
-import { useWindowWidth } from "@react-hook/window-size";
 import { usePageTracking } from "./components/Analytics/gaTracking";
 import UnderConstructionPage from "pages/UnderConstruction";
 import { ChartSkeleton } from "components/Chart/chartComponents";
@@ -16,7 +15,7 @@ const queryClient = new QueryClient();
 
 const App = () => {
   usePageTracking();
-  const windowWidth = useWindowWidth();
+  // const windowWidth = useWindowWidth();
 
   const LoadingSkeleton = () => (
     <>

@@ -1,7 +1,7 @@
 import Container from "components/Container/container";
 import { FetchData } from "fetch/fetch";
 import { BarLabel } from "../barLabel";
-import { ChartSection, ChartWrapper, BarOuter, BarInner, concatPercent, animationEnter } from "../chartComponents";
+import { ChartSection, ChartWrapper, BarOuter, BarInner, concatPercent, animationEnter, ChartSkeleton } from "../chartComponents";
 
 const VisionChart = ({ jsonFile }) => {
   const { data, loading, error } = FetchData({
@@ -9,7 +9,7 @@ const VisionChart = ({ jsonFile }) => {
   });
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <ChartSkeleton />;
   }
   if (error) {
     return <div>Error: {error.message}</div>;
