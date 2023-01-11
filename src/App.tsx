@@ -7,6 +7,8 @@ import { dataRoutes } from "./routes/routes";
 import { useWindowWidth } from "@react-hook/window-size";
 import { usePageTracking } from "./components/Analytics/gaTracking";
 import UnderConstructionPage from "pages/UnderConstruction";
+import { ChartSkeleton } from "components/Chart/chartComponents";
+import { BannerImageWrapper } from "components/Banner/bannerComponents";
 
 const isUnderConstruction = 0;
 
@@ -16,11 +18,24 @@ const App = () => {
   usePageTracking();
   const windowWidth = useWindowWidth();
 
+  const LoadingSkeleton = () => (
+    <>
+      <BannerImageWrapper />
+      <ChartSkeleton />
+    </>
+  );
+
   return (
     <>
       <QueryClientProvider client={queryClient}>
-        {!isUnderConstruction ? <Header /> : ""}
-        <Suspense fallback={<div>Loading...</div>}>
+        {!isUnderConstruction ? (
+          <>
+            <Header />
+          </>
+        ) : (
+          ""
+        )}
+        <Suspense fallback={<LoadingSkeleton />}>
           <Routes>
             {isUnderConstruction ? (
               <Route path="*" element={<UnderConstructionPage />} />

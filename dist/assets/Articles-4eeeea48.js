@@ -1,4 +1,4 @@
-import{s as i,B as a,C as I,d as v,j as e,b as n,r as u,F as c}from"./bannerCSS-18d11c47.js";import{z as E,D as N,E as O,q as A,G as D,H as B,I as y,J as L,K as $,M as P,a as R,A as S,B as k,S as f}from"./index-6ddabe69.js";import{u as M}from"./useQuery-61113c0d.js";import{p as W}from"./index-be224f05.js";import{T as H}from"./titleCallout-3e33033a.js";import{R as z}from"./rowButton-5db528ae.js";import{B as T}from"./bannerLoading-a2685889.js";import"./buttonComponents-a90f10df.js";const F=i.div`
+import{s as i,B as a,i as v,p as I,q as N,u as E,D as O,m as e,n,r as u,F as c}from"./bannerComponents-b17e5c41.js";import{q as A,v as D,w as B,x as y,y as L,z as P,D as $,C as R,A as S,B as k,S as f}from"./index-24415fcf.js";import{u as W}from"./useQuery-b813b750.js";import{p as M}from"./index-9076de00.js";import{T as z}from"./titleCallout-e41bbb77.js";import{R as F}from"./rowButton-1ab95f14.js";import{B as T}from"./bannerLoading-d0dd46e1.js";import"./buttonComponents-841b3e60.js";const H=i.div`
   margin: 20px 0;
   position: relative;
   top: 0;
@@ -10,24 +10,24 @@ import{s as i,B as a,C as I,d as v,j as e,b as n,r as u,F as c}from"./bannerCSS-
   text-align: left;
   @media (min-width: ${a}px) {
     padding: 50px 0;
-    width: ${I};
+    width: ${v};
   }
   @media (max-width: ${a}px) {
     padding: 20px 0;
-    width: ${v};
+    width: ${I};
   }
   /* background: red;; */
 `,j=i.div`
-  color: ${E};
+  color: ${N};
   height: auto;
   text-align: left;
   @media (min-width: ${a}px) {
-    /* ${N} */
+    /* ${A} */
   }
   @media (max-width: ${a}px) {
-    /* ${O} */
+    /* ${D} */
   }
-`,G=60,U=60,b=180,m=180,w=180,g=180,q=i.div`
+`,G=60,q=60,b=180,m=180,w=180,g=180,U=i.div`
   top: 0;
   left: 0;
   width: 100%;
@@ -36,7 +36,7 @@ import{s as i,B as a,C as I,d as v,j as e,b as n,r as u,F as c}from"./bannerCSS-
     padding-top: ${G}px;
   }
   @media (max-width: ${a}px) {
-    padding-top: ${U}px;
+    padding-top: ${q}px;
   }
   /* background: red; */
 `,Z=i.div`
@@ -45,7 +45,7 @@ import{s as i,B as a,C as I,d as v,j as e,b as n,r as u,F as c}from"./bannerCSS-
   height: auto;
   flex-wrap: wrap;
   /* background: gold; */
-`,J=i.div`
+`,Q=i.div`
   margin: 20px 12px;
   position: relative;
   top: 0;
@@ -82,7 +82,7 @@ import{s as i,B as a,C as I,d as v,j as e,b as n,r as u,F as c}from"./bannerCSS-
     width: ${g}px;
   }
   /* background-color: blue; */
-`,Q=i.div`
+`,X=i.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -99,7 +99,7 @@ import{s as i,B as a,C as I,d as v,j as e,b as n,r as u,F as c}from"./bannerCSS-
     width: ${g}px;
   }
   background-color: blue;
-`,X=i.div`
+`,J=i.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -131,7 +131,7 @@ import{s as i,B as a,C as I,d as v,j as e,b as n,r as u,F as c}from"./bannerCSS-
   top: 0;
   left: 0;
   display: flex;
-  color: ${A};
+  color: ${E};
   padding: 30px;
   box-sizing: border-box;
   align-items: center;
@@ -140,11 +140,11 @@ import{s as i,B as a,C as I,d as v,j as e,b as n,r as u,F as c}from"./bannerCSS-
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
   @media (min-width: ${a}px) {
     height: 50%;
-    ${D}
+    ${B}
   }
   @media (max-width: ${a}px) {
     height: 50%;
-    ${B}
+    ${y}
   }
   /* background-color: blue; */
 `,l=400,h=180,_=t=>e(ee,{children:n("div",{className:"code-wrapper",children:[e("div",{className:"bracket",children:"["}),n("div",{className:"indent",children:[e("span",{className:"brace",children:"{"}),e("span",{className:"key",children:'"prompt"'}),":",n("span",{className:"value",children:['"',t.code,'"']}),e("span",{className:"brace",children:"},"})]}),n("div",{className:"indent",children:[e("span",{className:"brace",children:"{"}),e("span",{className:"key",children:'"model"'}),":",e("span",{className:"value",children:'"text-davinci-003"'}),e("span",{className:"brace",children:"},"})]}),n("div",{className:"indent",children:[e("span",{className:"brace",children:"{"}),e("span",{className:"key",children:'"top_p"'}),":",e("span",{className:"value",children:"1.2"}),e("span",{className:"brace",children:"},"})]}),e("div",{className:"bracket",children:"]"})]})}),ee=i.div`
@@ -152,13 +152,13 @@ import{s as i,B as a,C as I,d as v,j as e,b as n,r as u,F as c}from"./bannerCSS-
   align-items: center;
   box-sizing: border-box;
   @media (min-width: ${a}px) {
-    ${y}
+    ${L}
     padding: 30px;
     /* height: 100%; */
     width: ${l}px;
   }
   @media (max-width: ${a}px) {
-    ${L}
+    ${P}
     padding: 10px;
     height: 100%;
     width: ${h}px;
@@ -184,7 +184,7 @@ import{s as i,B as a,C as I,d as v,j as e,b as n,r as u,F as c}from"./bannerCSS-
   .value {
     color: #faab4a;
   }
-  background-color: ${P};
+  background-color: ${O};
 `,te=t=>n(ie,{children:[e(ne,{style:{backgroundImage:`url(/images/content/${t.image})`}}),e(_,{...t})]}),ae=240,ie=i.div`
   float: right;
   margin: 0 0 40px 40px;
@@ -212,7 +212,7 @@ import{s as i,B as a,C as I,d as v,j as e,b as n,r as u,F as c}from"./bannerCSS-
   height: ${h}px;
   width: ${h}px;
   /* background-color: blue; */
-`,ce=t=>{const[r,d]=u.useState(window.innerWidth);return u.useEffect(()=>{const s=()=>d(window.innerWidth);return window.addEventListener("resize",s),()=>window.removeEventListener("resize",s)},[]),e(c,{children:r>a?e(te,{...t}):e(re,{...t})})},se=t=>{const[r,d]=u.useState(0);function s(p){let o=document.getElementsByClassName("cardContent");for(let x=0;x<o.length;x++)o[x].classList.remove("active");o[p].classList.add("active")}const C=W(t.data[r].text);return n(c,{children:[e(R,{backgroundColor:4,children:e(q,{children:e(Z,{children:t.data.map((p,o)=>n(J,{className:`card ${o===r?"active":""}`,onClick:()=>{d(o),s(o)},children:[e(Q,{style:{backgroundImage:`url(/images/content/${p.image})`}}),e(X,{children:e(V,{children:e(Y,{children:p.title})})})]},o))})})}),e(F,{className:"cardContent",style:{background:t.backgroundColor},children:n(K,{children:[e(H,{title:t.data[r].title}),e(S,{animateIn:"animate__fadeIn",delay:10,offset:100,children:n(j,{children:[e(ce,{image:t.data[r].image,code:t.data[r].code}),C]})})]})})]})};i.div`
+`,ce=t=>{const[r,d]=u.useState(window.innerWidth);return u.useEffect(()=>{const s=()=>d(window.innerWidth);return window.addEventListener("resize",s),()=>window.removeEventListener("resize",s)},[]),e(c,{children:r>a?e(te,{...t}):e(re,{...t})})},se=t=>{const[r,d]=u.useState(0);function s(p){let o=document.getElementsByClassName("cardContent");for(let x=0;x<o.length;x++)o[x].classList.remove("active");o[p].classList.add("active")}const C=M(t.data[r].text);return n(c,{children:[e(R,{backgroundColor:4,children:e(U,{children:e(Z,{children:t.data.map((p,o)=>n(Q,{className:`card ${o===r?"active":""}`,onClick:()=>{d(o),s(o)},children:[e(X,{style:{backgroundImage:`url(/images/content/${p.image})`}}),e(J,{children:e(V,{children:e(Y,{children:p.title})})})]},o))})})}),e(H,{className:"cardContent",style:{background:t.backgroundColor},children:n(K,{children:[e(z,{title:t.data[r].title}),e(S,{animateIn:"animate__fadeIn",delay:10,offset:100,children:n(j,{children:[e(ce,{image:t.data[r].image,code:t.data[r].code}),C]})})]})})]})};i.div`
   display: grid;
   flex: 0 0 100%;
   gap: 2rem;
@@ -230,4 +230,4 @@ import{s as i,B as a,C as I,d as v,j as e,b as n,r as u,F as c}from"./bannerCSS-
   }
 
   background: gold;
-`;const le="/data/dataArticles.json",pe="articles",ke=()=>{const t=async()=>(await fetch(le,{headers:{"Content-Type":"application/json",Accept:"application/json"}})).json(),{data:r,status:d}=M(pe,t);return n(c,{children:[d==="error"&&n(c,{children:[e(T,{}),e(k,{text:"error"})]}),d==="loading"&&n(c,{children:[e(T,{}),e(k,{text:"articles"})]}),d==="success"&&e(c,{children:e(se,{data:r})}),e(f,{height:40,backgroundColor:2}),e(z,{buttonTo:"/contact",buttonText:"Contact"}),e(f,{height:40,backgroundColor:2})]})};export{ke as default};
+`;const le="/data/dataArticles.json",pe="articles",ke=()=>{const t=async()=>(await fetch(le,{headers:{"Content-Type":"application/json",Accept:"application/json"}})).json(),{data:r,status:d}=W(pe,t);return n(c,{children:[d==="error"&&n(c,{children:[e(T,{}),e(k,{text:"error"})]}),d==="loading"&&n(c,{children:[e(T,{}),e(k,{text:"articles"})]}),d==="success"&&e(c,{children:e(se,{data:r})}),e(f,{height:40,backgroundColor:2}),e(F,{buttonTo:"/contact",buttonText:"Contact"}),e(f,{height:40,backgroundColor:2})]})};export{ke as default};

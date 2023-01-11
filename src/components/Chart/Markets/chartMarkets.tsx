@@ -1,7 +1,20 @@
+
+import { Suspense } from "react";
 import Container from "components/Container/container";
 import { FetchData } from "fetch/fetch";
 import { BarLabel } from "../barLabel";
-import { ChartSection, ChartWrapper, BarOuter, BarInner, concatPercent, animationEnter, GraphLegend } from "../chartComponents";
+import {
+  ChartSection,
+  ChartWrapper,
+  BarOuter,
+  BarInner,
+  concatPercent,
+  animationEnter,
+  GraphLegend,
+  ChartSkeleton,
+} from "../chartComponents";
+
+
 
 const MarketsChart = ({ jsonFile }) => {
   const { data, loading, error } = FetchData({
@@ -9,7 +22,7 @@ const MarketsChart = ({ jsonFile }) => {
   });
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <ChartSkeleton />;
   }
   if (error) {
     return <div>Error: {error.message}</div>;

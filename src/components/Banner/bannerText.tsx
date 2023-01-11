@@ -11,8 +11,8 @@ import {
   BREAKPOINT,
 } from "styles/Constants";
 import styled from "styled-components";
-import { BANNER_PADDING_TOP_DESKTOP, BANNER_PADDING_TOP_MOBILE } from "./bannerCSS";
 import HeadingError from "components/Heading/headingError";
+import { BANNER_PADDING_TOP_DESKTOP, BANNER_PADDING_TOP_MOBILE } from "./bannerComponents";
 
 export const BannerText = (props) => {
   const headingText = () => {

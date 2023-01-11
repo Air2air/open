@@ -1,5 +1,6 @@
 import { BREAKPOINT, COLOR_CAPTION } from "styles/Constants";
 import styled from "styled-components";
+import Container from "components/Container/container";
 
 // Charts
 export const CHART_LABEL_DESKTOP = "1.2em";
@@ -51,7 +52,6 @@ export const ChartWrapper = styled.div`
     grid-gap: ${COLUMN_GRID_GAP_MOBILE}px;
     height: ${CHART_HEIGHT_MOBILE}px;
   }
-  /* background: red; */
 `;
 
 export const BarOuter = styled.div`
@@ -73,7 +73,7 @@ export const BarOuter = styled.div`
 `;
 
 export const BarInner = styled.div`
-opacity: 0;
+  opacity: 0;
   @media (min-width: ${BREAKPOINT}px) {
     min-height: ${CHART_BAR_HEIGHT_MIN_DESKTOP}px;
     align-items: flex-start;
@@ -118,3 +118,11 @@ export const GraphLegend = styled.div`
   }
   /* background: green;  */
 `;
+
+export const ChartSkeleton = () => (
+  <Container backgroundColor={1}>
+    <ChartSection>
+      <ChartWrapper></ChartWrapper>
+    </ChartSection>
+  </Container>
+) as JSX.Element;

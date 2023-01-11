@@ -1,1 +1,0 @@
-import{r as t}from"./bannerCSS-18d11c47.js";const h=({file:a})=>{const[s,n]=t.useState(null),[o,c]=t.useState(!0),[r,p]=t.useState(null),i={"Content-Type":"application/json",Accept:"application/json"};return t.useEffect(()=>{(async()=>{try{const l=await(await fetch(a,{headers:i})).json();n(l)}catch(e){p(e)}finally{c(!1)}})()},[a]),{data:s,loading:o,error:r}};export{h as F};

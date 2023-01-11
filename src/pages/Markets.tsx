@@ -5,7 +5,6 @@ import BannerText from "components/Banner/bannerText";
 import Spacer from "components/Spacer/spacer";
 import CalloutList from "components/Callout/callOutList";
 import MarketsChart from "components/Chart/Markets/chartMarkets";
-
 const MarketsPage = () => {
   return (
     <>

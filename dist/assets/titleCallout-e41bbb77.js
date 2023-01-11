@@ -1,4 +1,4 @@
-import{s as l,B as o,j as i}from"./bannerCSS-18d11c47.js";import{q as e,v as a,w as r}from"./index-6ddabe69.js";const m=t=>i(c,{children:i(d,{color:t.color,children:t.title})}),c=l.div`
+import{s as l,u as e,B as o,m as i}from"./bannerComponents-b17e5c41.js";import{k as a,l as r}from"./index-24415fcf.js";const s=t=>i(c,{children:i(d,{color:t.color,children:t.title})}),c=l.div`
   text-align: left;
   width: 100%;
   min-height: 50px;
@@ -11,4 +11,4 @@ import{s as l,B as o,j as i}from"./bannerCSS-18d11c47.js";import{q as e,v as a,w
   @media (max-width: ${o}px) {
     ${r}
   }
-`;export{m as T};
+`;export{s as T};

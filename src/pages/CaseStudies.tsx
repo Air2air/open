@@ -23,7 +23,6 @@ const CaseStudiesPage = () => {
       <RowButton buttonTo="/markets" buttonText="Markets" backgroundColor={2} />
       <Spacer height={40} backgroundColor={2} />
       <CalloutList jsonFile="/data/casestudiesContent.json" />
-
       <Spacer height={40} backgroundColor={2} />
       <RowButton buttonTo="/markets" buttonText="Markets" backgroundColor={2} />
       <Spacer height={40} backgroundColor={2} />
