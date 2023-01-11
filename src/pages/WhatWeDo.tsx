@@ -1,4 +1,3 @@
-
 import { COLOR_BASE } from "styles/Constants";
 import RowButton from "components/Button/rowButton";
 import { BannerVideo } from "components/Banner/bannerVideo";
@@ -16,17 +15,14 @@ const WhatWeDoPage = () => {
         overlayColor={COLOR_BASE}
       />
       <BannerText text="whatwedo" />
-<WhatWeDoChart jsonFile="/data/whatwedoChart.json" />
-
+      <WhatWeDoChart jsonFile="/data/whatwedoChart.json" />
       <RowButton
         buttonTo="/casestudies"
         buttonText="Case Studies"
         backgroundColor={3}
       />
       <Spacer height={40} backgroundColor={3} />
-
       <CalloutList jsonFile="/data/whatwedoContent.json" />
-
       <Spacer height={40} backgroundColor={2} />
       <RowButton
         buttonTo="/casestudies"
@@ -39,5 +35,3 @@ const WhatWeDoPage = () => {
 };
 
 export default WhatWeDoPage;
-
-

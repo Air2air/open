@@ -12,7 +12,6 @@ import {
 export const CONTACT_ITEM_HEIGHT = 250;
 
 export const ContactItemWrapper = styled.div`
-
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -29,10 +28,10 @@ export const ContactItemWrapper = styled.div`
     filter: grayscale(100%);
   }
   @media (min-width: ${BREAKPOINT}px) {
-    padding:20px 0;
+    padding: 20px 0;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    padding:0;
+    padding: 0;
   }
   /* background: gold; */
 `;

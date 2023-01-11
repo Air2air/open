@@ -1,21 +1,53 @@
-import { ColumnMarkets } from "./columnMarkets";
 import Container from "components/Container/container";
-import { ChartSection } from "components/Chart/chartComponents";
+import { FetchData } from "fetch/fetch";
+import { BarLabel } from "../barLabel";
+import { ChartSection, ChartWrapper, BarOuter, BarInner, concatPercent, animationEnter, GraphLegend } from "../chartComponents";
 
-export const LoopEndTime = 14000;
+const MarketsChart = ({ jsonFile }) => {
+  const { data, loading, error } = FetchData({
+    file: jsonFile,
+  });
 
-const ChartMarkets = (props: {
-  backgroundColor: any;
-  data: any;
-  columnCount?: number;
-}) => {
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
   return (
-    <Container backgroundColor={props.backgroundColor}>
-      <ChartSection>
-        <ColumnMarkets data={props.data} />
-      </ChartSection>
-    </Container>
+    <>
+      {data && data.length > 0 ? (
+        <Container backgroundColor={1}>
+          <ChartSection>
+            <ChartWrapper>
+              {data.map((item, index) => {
+                return (
+                  <BarOuter key={index}>
+                    <BarInner
+                      style={{
+                        height: concatPercent(item.height),
+                        backgroundColor: item.backgroundColor,
+                        animation: animationEnter(item.id),
+                      }}
+                    />
+                    <BarLabel label={item.label} index={item.id} />
+                  </BarOuter>
+                );
+              })}
+              <GraphLegend>
+                <div>$1.2T</div>
+                <div>$800B</div>
+                <div>$400B</div>
+                <div style={{ height: 10 }}>&nbsp;</div>
+              </GraphLegend>
+            </ChartWrapper>
+          </ChartSection>
+        </Container>
+      ) : (
+        <div style={{ color: "white" }}>Data Fetch error in Page component</div>
+      )}
+    </>
   );
 };
 
-export default ChartMarkets;
+export default MarketsChart;

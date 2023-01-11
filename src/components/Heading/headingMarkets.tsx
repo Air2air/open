@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-import { LoopEndTime } from "components/Chart/Markets/chartMarkets";
+
 import Container from "components/Container/container";
 import {
   Wrapper,
@@ -8,6 +8,8 @@ import {
   TitleHeading,
 } from "./Components/headingComponents";
 import { HeadingSubHead } from "components/Heading/Components/headingSubHead";
+
+const LoopEndTime = 10000;
 
 const HeadingMarkets = (props: { backgroundColor?: any }) => {
   const [textFasterOpacity, setTextFasterOpacity] = useState(0);

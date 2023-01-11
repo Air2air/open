@@ -1,22 +1,47 @@
-import { ColumnVision } from "./columnVision";
 import Container from "components/Container/container";
-import { ChartSection } from "components/Chart/chartComponents";
+import { FetchData } from "fetch/fetch";
+import { BarLabel } from "../barLabel";
+import { ChartSection, ChartWrapper, BarOuter, BarInner, concatPercent, animationEnter } from "../chartComponents";
 
-export const LoopEndTime = 14000;
+const VisionChart = ({ jsonFile }) => {
+  const { data, loading, error } = FetchData({
+    file: jsonFile,
+  });
 
-const ChartVision = (props: {
-  backgroundColor: any;
-  data: any;
-  loopEndTime?: number;
-  columnCount?: number;
-}) => {
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
   return (
-    <Container backgroundColor={props.backgroundColor}>
-      <ChartSection>
-        <ColumnVision data={props.data} />
-      </ChartSection>
-    </Container>
+    <>
+      {data && data.length > 0 ? (
+        <Container backgroundColor={3}>
+          <ChartSection>
+            <ChartWrapper>
+              {data.map((item, index) => {
+                return (
+                  <BarOuter key={index}>
+                    <BarInner
+                      style={{
+                        height: concatPercent(item.height),
+                        backgroundColor: item.backgroundColor,
+                        animation: animationEnter(item.id),
+                      }}
+                    />
+                    <BarLabel label={item.label} index={item.id} />
+                  </BarOuter>
+                );
+              })}
+            </ChartWrapper>
+          </ChartSection>
+        </Container>
+      ) : (
+        <div style={{ color: "white" }}>Data Fetch error in Chart component</div>
+      )}
+    </>
   );
 };
 
-export default ChartVision;
+export default VisionChart;

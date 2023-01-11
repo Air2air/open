@@ -1,4 +1,4 @@
-import{s as i,B as a,C as I,d as v,j as e,b as n,r as u,F as c}from"./bannerCSS-18d11c47.js";import{z as E,D as N,E as O,q as A,G as D,H as B,I as y,J as L,K as $,M as P,a as R,A as S,B as k,S as f}from"./index-4213c5a9.js";import{u as M,B as T}from"./bannerLoading-11f5b030.js";import{p as W}from"./index-be224f05.js";import{T as H}from"./titleCallout-cf478d1d.js";import{R as z}from"./rowButton-25add37e.js";import"./buttonComponents-f575d892.js";const F=i.div`
+import{s as i,B as a,C as I,d as v,j as e,b as n,r as u,F as c}from"./bannerCSS-18d11c47.js";import{z as E,D as N,E as O,q as A,G as D,H as B,I as y,J as L,K as $,M as P,a as R,A as S,B as k,S as f}from"./index-6ddabe69.js";import{u as M}from"./useQuery-61113c0d.js";import{p as W}from"./index-be224f05.js";import{T as H}from"./titleCallout-3e33033a.js";import{R as z}from"./rowButton-5db528ae.js";import{B as T}from"./bannerLoading-a2685889.js";import"./buttonComponents-a90f10df.js";const F=i.div`
   margin: 20px 0;
   position: relative;
   top: 0;
@@ -147,7 +147,7 @@ import{s as i,B as a,C as I,d as v,j as e,b as n,r as u,F as c}from"./bannerCSS-
     ${B}
   }
   /* background-color: blue; */
-`,l=400,p=180,_=t=>e(ee,{children:n("div",{className:"code-wrapper",children:[e("div",{className:"bracket",children:"["}),n("div",{className:"indent",children:[e("span",{className:"brace",children:"{"}),e("span",{className:"key",children:'"prompt"'}),":",n("span",{className:"value",children:['"',t.code,'"']}),e("span",{className:"brace",children:"},"})]}),n("div",{className:"indent",children:[e("span",{className:"brace",children:"{"}),e("span",{className:"key",children:'"model"'}),":",e("span",{className:"value",children:'"text-davinci-003"'}),e("span",{className:"brace",children:"},"})]}),n("div",{className:"indent",children:[e("span",{className:"brace",children:"{"}),e("span",{className:"key",children:'"top_p"'}),":",e("span",{className:"value",children:"1.2"}),e("span",{className:"brace",children:"},"})]}),e("div",{className:"bracket",children:"]"})]})}),ee=i.div`
+`,l=400,h=180,_=t=>e(ee,{children:n("div",{className:"code-wrapper",children:[e("div",{className:"bracket",children:"["}),n("div",{className:"indent",children:[e("span",{className:"brace",children:"{"}),e("span",{className:"key",children:'"prompt"'}),":",n("span",{className:"value",children:['"',t.code,'"']}),e("span",{className:"brace",children:"},"})]}),n("div",{className:"indent",children:[e("span",{className:"brace",children:"{"}),e("span",{className:"key",children:'"model"'}),":",e("span",{className:"value",children:'"text-davinci-003"'}),e("span",{className:"brace",children:"},"})]}),n("div",{className:"indent",children:[e("span",{className:"brace",children:"{"}),e("span",{className:"key",children:'"top_p"'}),":",e("span",{className:"value",children:"1.2"}),e("span",{className:"brace",children:"},"})]}),e("div",{className:"bracket",children:"]"})]})}),ee=i.div`
   display: flex;
   align-items: center;
   box-sizing: border-box;
@@ -161,7 +161,7 @@ import{s as i,B as a,C as I,d as v,j as e,b as n,r as u,F as c}from"./bannerCSS-
     ${L}
     padding: 10px;
     height: 100%;
-    width: ${p}px;
+    width: ${h}px;
   }
 
   .code-wrapper {
@@ -203,16 +203,16 @@ import{s as i,B as a,C as I,d as v,j as e,b as n,r as u,F as c}from"./bannerCSS-
   width: 100%;
   display: flex;
   align-items: center;
-  height: ${p}px;
+  height: ${h}px;
   /* background-color: blue; */
 `,de=i.div`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: ${p}px;
-  width: ${p}px;
+  height: ${h}px;
+  width: ${h}px;
   /* background-color: blue; */
-`,ce=t=>{const[r,d]=u.useState(window.innerWidth);return u.useEffect(()=>{const s=()=>d(window.innerWidth);return window.addEventListener("resize",s),()=>window.removeEventListener("resize",s)},[]),e(c,{children:r>a?e(te,{...t}):e(re,{...t})})},se=t=>{const[r,d]=u.useState(0);function s(h){let o=document.getElementsByClassName("cardContent");for(let x=0;x<o.length;x++)o[x].classList.remove("active");o[h].classList.add("active")}const C=W(t.data[r].text);return n(c,{children:[e(R,{backgroundColor:4,children:e(q,{children:e(Z,{children:t.data.map((h,o)=>n(J,{className:`card ${o===r?"active":""}`,onClick:()=>{d(o),s(o)},children:[e(Q,{style:{backgroundImage:`url(/images/content/${h.image})`}}),e(X,{children:e(V,{children:e(Y,{children:h.title})})})]},o))})})}),e(F,{className:"cardContent",style:{background:t.backgroundColor},children:n(K,{children:[e(H,{title:t.data[r].title}),e(S,{animateIn:"animate__fadeIn",delay:10,offset:100,children:n(j,{children:[e(ce,{image:t.data[r].image,code:t.data[r].code}),C]})})]})})]})};i.div`
+`,ce=t=>{const[r,d]=u.useState(window.innerWidth);return u.useEffect(()=>{const s=()=>d(window.innerWidth);return window.addEventListener("resize",s),()=>window.removeEventListener("resize",s)},[]),e(c,{children:r>a?e(te,{...t}):e(re,{...t})})},se=t=>{const[r,d]=u.useState(0);function s(p){let o=document.getElementsByClassName("cardContent");for(let x=0;x<o.length;x++)o[x].classList.remove("active");o[p].classList.add("active")}const C=W(t.data[r].text);return n(c,{children:[e(R,{backgroundColor:4,children:e(q,{children:e(Z,{children:t.data.map((p,o)=>n(J,{className:`card ${o===r?"active":""}`,onClick:()=>{d(o),s(o)},children:[e(Q,{style:{backgroundImage:`url(/images/content/${p.image})`}}),e(X,{children:e(V,{children:e(Y,{children:p.title})})})]},o))})})}),e(F,{className:"cardContent",style:{background:t.backgroundColor},children:n(K,{children:[e(H,{title:t.data[r].title}),e(S,{animateIn:"animate__fadeIn",delay:10,offset:100,children:n(j,{children:[e(ce,{image:t.data[r].image,code:t.data[r].code}),C]})})]})})]})};i.div`
   display: grid;
   flex: 0 0 100%;
   gap: 2rem;
@@ -230,4 +230,4 @@ import{s as i,B as a,C as I,d as v,j as e,b as n,r as u,F as c}from"./bannerCSS-
   }
 
   background: gold;
-`;const le="/data/dataArticles.json",he="articles",$e=()=>{const t=async()=>(await fetch(le,{headers:{"Content-Type":"application/json",Accept:"application/json"}})).json(),{data:r,status:d}=M(he,t);return n(c,{children:[d==="error"&&n(c,{children:[e(T,{}),e(k,{text:"error"})]}),d==="loading"&&n(c,{children:[e(T,{}),e(k,{text:"articles"})]}),d==="success"&&e(c,{children:e(se,{data:r})}),e(f,{height:40,backgroundColor:2}),e(z,{buttonTo:"/contact",buttonText:"Contact"}),e(f,{height:40,backgroundColor:2})]})};export{$e as default};
+`;const le="/data/dataArticles.json",pe="articles",ke=()=>{const t=async()=>(await fetch(le,{headers:{"Content-Type":"application/json",Accept:"application/json"}})).json(),{data:r,status:d}=M(pe,t);return n(c,{children:[d==="error"&&n(c,{children:[e(T,{}),e(k,{text:"error"})]}),d==="loading"&&n(c,{children:[e(T,{}),e(k,{text:"articles"})]}),d==="success"&&e(c,{children:e(se,{data:r})}),e(f,{height:40,backgroundColor:2}),e(z,{buttonTo:"/contact",buttonText:"Contact"}),e(f,{height:40,backgroundColor:2})]})};export{ke as default};

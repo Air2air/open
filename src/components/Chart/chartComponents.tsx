@@ -1,8 +1,6 @@
 import { BREAKPOINT, COLOR_CAPTION } from "styles/Constants";
 import styled from "styled-components";
 
-
-
 // Charts
 export const CHART_LABEL_DESKTOP = "1.2em";
 export const CHART_LABEL_MOBILE = "1em";
@@ -24,9 +22,7 @@ export const CHART_TEXT_TRANSITION = 400;
 export const CHART_BAR_HEIGHT_MIN_DESKTOP = 30;
 export const CHART_BAR_HEIGHT_MIN_MOBILE = 30;
 
-
 export const ChartSection = styled.div`
-
   @media (min-width: ${BREAKPOINT}px) {
     padding: 40px 0;
     height: ${CHART_HEIGHT_DESKTOP}px;
@@ -35,7 +31,7 @@ export const ChartSection = styled.div`
     padding: 20px 0;
     height: ${CHART_HEIGHT_MOBILE}px;
   }
-    /* background: blue; */
+  /* background: blue; */
 `;
 
 export const ChartWrapper = styled.div`
@@ -77,7 +73,7 @@ export const BarOuter = styled.div`
 `;
 
 export const BarInner = styled.div`
-  /* transition: all ${CHART_COLUMN_TRANSITION}ms; */
+opacity: 0;
   @media (min-width: ${BREAKPOINT}px) {
     min-height: ${CHART_BAR_HEIGHT_MIN_DESKTOP}px;
     align-items: flex-start;
@@ -104,7 +100,6 @@ export const animationExit = (index: number | undefined) =>
 export const concatPercent = (height: number | undefined) => {
   return `${height === 0 ? 0 : height}%`;
 };
-
 
 export const GraphLegend = styled.div`
   display: flex;

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { LoopEndTime } from "components/Chart/Vision/chartVision";
 import Container from "components/Container/container";
 import {
   Wrapper,
@@ -8,6 +7,7 @@ import {
 } from "./Components/headingComponents";
 import { HeadingSubHead } from "components/Heading/Components/headingSubHead";
 
+const LoopEndTime = 10000;
 
 const HeadingCaseStudies = (props: { loopEndTime?: number; backgroundColor: any; }) => {
   const [advisoryOpacity, setAdvisoryOpacity] = useState(0);
