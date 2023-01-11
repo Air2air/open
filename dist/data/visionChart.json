@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "label": "PRE-SEED",
+    "backgroundColor": "hsl(320, 25%, 30%)",
+    "height": 100
+  },
+  {
+    "id": 2,
+    "label": "SEED",
+    "backgroundColor": "hsl(300, 25%, 30%)",
+    "height": 100
+  },
+  {
+    "id": 3,
+    "label": "SERIES A",
+    "backgroundColor": "hsl(280, 25%, 30%)",
+    "height": 100
+  },
+  {
+    "id": 4,
+    "label": "SERIES B",
+    "backgroundColor": "hsl(260, 25%, 30%)",
+    "height": 100
+  },
+  {
+    "id": 5,
+    "label": "SERIES C",
+    "backgroundColor": "hsl(240, 25%, 30%)",
+    "height": 100
+  },
+  {
+    "id": 6,
+    "label": "MEZZANINE",
+    "backgroundColor": "hsl(220, 25%, 30%)",
+    "height": 100
+  },
+  {
+    "id": 7,
+    "label": "PUBLIC",
+    "backgroundColor": "hsl(200, 25%, 30%)",
+    "height": 100
+  }
+]

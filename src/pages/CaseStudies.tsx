@@ -6,7 +6,7 @@ import RowButton from "components/Button/rowButton";
 import { BannerText } from "components/Banner/bannerText";
 import Spacer from "components/Spacer/spacer";
 import BannerLoading from "components/Banner/bannerLoading";
-import { BarLabel } from "components/Callout/Chart/barLabel";
+import { BarLabel } from "components/Chart/barLabel";
 import {
   ChartSection,
   ChartWrapper,
@@ -14,7 +14,7 @@ import {
   BarInner,
   concatPercent,
   animationEnter,
-} from "components/Callout/Chart/chartComponents";
+} from "components/Chart/chartComponents";
 import Container from "components/Container/container";
 
 

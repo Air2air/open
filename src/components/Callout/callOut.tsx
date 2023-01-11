@@ -1,11 +1,10 @@
-import { AnimationOnScroll } from "react-animation-on-scroll";
-import parse from "html-react-parser";
-import { TitleCallout } from "components/Title/titleCallout";
 import Container from "components/Container/container";
-
+import { TitleCallout } from "components/Title/titleCallout";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import { CallOutInner, CalloutParagraph } from "./calloutComponents";
+import parse from "html-react-parser";
 
-export const Callout = (props) => {
+const Callout = (props) => {
   const textParsed = props.text
     ? parse(props.text)
     : "Data fetch error in Text";

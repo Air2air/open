@@ -1,4 +1,3 @@
-
 import { lazy } from "react";
 const AboutPage = lazy(() => import("pages/About"));
 const ArticlesPage = lazy(() => import("pages/Articles"));
@@ -59,6 +58,7 @@ export const dataRoutes = [
     path: "markets",
     section: "Markets",
     element: <MarketsPage />,
+
   },
   {
     id: "WhatWeDo",

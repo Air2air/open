@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { LoopEndTime } from "components/Callout/Chart/Vision/chartVision";
+import { LoopEndTime } from "components/Chart/Vision/chartVision";
 import Container from "components/Container/container";
 import {
   Wrapper,

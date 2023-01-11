@@ -9,6 +9,7 @@ import {
 } from "styles/Constants";
 import styled from "styled-components";
 
+
 export const CallOutInner = styled.div`
   margin: 0 auto;
   z-index: +1;

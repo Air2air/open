@@ -1,6 +1,6 @@
 import { useQuery } from "react-query";
 import OrgsCallout from "components/OrgsCallout/orgsCallOut";
-import ChartHome from "components/Callout/Chart/Home/chartHome";
+import ChartHome from "components/Chart/Home/chartHome";
 import RowButton from "components/Button/rowButton";
 import BannerVideo from "components/Banner/bannerVideo";
 import { COLOR_BASE } from "styles/Constants";

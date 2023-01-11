@@ -8,7 +8,7 @@
     "role": "Head of Engineering",
     "text": "Description here. Description here. Description here. Description here.  Description here. Description here.",
     "showPhoto": true,
-    "photo": "dunning.jpeg"
+    "photo": "dunning.webp"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "category": "Advisor",
     "role": "Advisor",
     "text": "Description here. Description here. Description here. Description here.  Description here. Description here.",
-    "photo": "fine.jpeg",
+    "photo": "fine.webp",
     "showPhoto": true,
     "linkedin": "https://www.linkedin.com/in/benfine"
   },
@@ -28,7 +28,7 @@
     "category": "Advisor",
     "role": "Advisor",
     "text": "Description here. Description here. Description here. Description here.  Description here. Description here.",
-    "photo": "kleck.jpeg",
+    "photo": "kleck.webp",
     "showPhoto": true,
     "linkedin": "https://www.linkedin.com/in/jeff-kleck-a000299/"
   },
@@ -39,7 +39,7 @@
     "category": "Advisor",
     "role": "Advisor",
     "text": "Description here. Description here. Description here. Description here.  Description here. Description here.",
-    "photo": "lungren.jpeg",
+    "photo": "lungren.webp",
     "showPhoto": true,
     "linkedin": "https://www.linkedin.com/in/mattlungrenmd/"
   },
@@ -50,7 +50,7 @@
     "category": "Advisor",
     "role": "Advisor",
     "text": "Description here. Description here. Description here. Description here.  Description here. Description here.",
-    "photo": "singhal.jpeg",
+    "photo": "singhal.webp",
     "showPhoto": true,
     "linkedin": "https://www.linkedin.com/in/anils1/"
   }

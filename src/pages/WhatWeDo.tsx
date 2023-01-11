@@ -1,92 +1,43 @@
-import Callout from "components/Callout/callOut";
+
 import { COLOR_BASE } from "styles/Constants";
 import RowButton from "components/Button/rowButton";
 import { BannerVideo } from "components/Banner/bannerVideo";
-import ChartWhatWeDo from "components/Callout/Chart/WhatWeDo/chartWhatWeDo";
-import { useQuery } from "react-query";
 import BannerText from "components/Banner/bannerText";
 import Spacer from "components/Spacer/spacer";
-import BannerLoading from "components/Banner/bannerLoading";
-
-const dataSource = "/data/dataWhatWeDo.json";
-const queryName = "whatwedo";
+import CalloutList from "components/Callout/callOutList";
+import WhatWeDoChart from "components/Chart/WhatWeDo/chartWhatWeDo";
 
 const WhatWeDoPage = () => {
-  const fetchData = async () => {
-    const res = await fetch(dataSource, {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    });
-    return res.json();
-  };
-  const { data, status } = useQuery(queryName, fetchData);
-
-  const loopEndTime = 14000;
-
   return (
     <>
-      {status === "error" && (
-        <>
-          <BannerLoading />
-          <BannerText text="error" />
-        </>
-      )}
-      {status === "loading" && (
-        <>
-          <BannerLoading />
-          <BannerText text="whatwedo" />
-        </>
-      )}
-      {status === "success" && (
-        <>
-          <BannerVideo
-            pageVideo={776449715}
-            overlayOpacity={0.7}
-            overlayColor={COLOR_BASE}
-          />
-          <BannerText text="whatwedo" />
-          <ChartWhatWeDo
-            loopEndTime={loopEndTime}
-            columnCount={6}
-            data={data}
-            backgroundColor={3}
-          />
+      <BannerVideo
+        pageVideo={776449715}
+        overlayOpacity={0.7}
+        overlayColor={COLOR_BASE}
+      />
+      <BannerText text="whatwedo" />
+<WhatWeDoChart jsonFile="/data/whatwedoChart.json" />
 
-          {/* <Spacer height={40} backgroundColor={2} /> */}
-          <RowButton
-            buttonTo="/casestudies"
-            buttonText="Case Studies"
-            backgroundColor={3}
-          />
-          <Spacer height={40} backgroundColor={3} />
+      <RowButton
+        buttonTo="/casestudies"
+        buttonText="Case Studies"
+        backgroundColor={3}
+      />
+      <Spacer height={40} backgroundColor={3} />
 
-          {/* {data.map((props) => (
-            <Callout {...props} />
-          ))} */}
+      <CalloutList jsonFile="/data/whatwedoContent.json" />
 
-          {data && data.length > 0 ? (
-            data.map((props, index) => {
-              return <Callout key={index} {...props} />;
-            })
-          ) : (
-            <div style={{ color: "white" }}>
-              Data Fetch error in Page component
-            </div>
-          )}
-
-          <Spacer height={40} backgroundColor={2} />
-          <RowButton
-            buttonTo="/casestudies"
-            buttonText="Case Studies"
-            backgroundColor={2}
-          />
-          <Spacer height={40} backgroundColor={2} />
-        </>
-      )}
+      <Spacer height={40} backgroundColor={2} />
+      <RowButton
+        buttonTo="/casestudies"
+        buttonText="Case Studies"
+        backgroundColor={2}
+      />
+      <Spacer height={40} backgroundColor={2} />
     </>
   );
 };
 
 export default WhatWeDoPage;
+
+

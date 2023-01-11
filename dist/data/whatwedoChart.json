@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "label": "Clinical",
+    "backgroundColor": "hsl(180, 20%, 30%)",
+    "height": 100
+  },
+  {
+    "id": 2,
+    "label": "AI/ML",
+    "backgroundColor": "hsl(160, 20%, 35%)",
+    "height": 100
+  },
+  {
+    "id": 3,
+    "label": "Product",
+    "backgroundColor": "hsl(140, 20%, 40%)",
+    "height": 100
+  },
+  {
+    "id": 4,
+    "label": "Marketing",
+    "backgroundColor": "hsl(120, 20%, 45%)",
+    "height": 100
+  },
+  {
+    "id": 5,
+    "label": "Regulatory",
+    "backgroundColor": "hsl(100, 20%, 50%)",
+    "height": 100
+  },
+  {
+    "id": 6,
+    "label": "Strategy",
+    "backgroundColor": "hsl(80, 20%, 55%)",
+    "height": 100
+  }
+]
