@@ -2,16 +2,10 @@ import styled from "styled-components";
 import Container from "components/Container/container";
 import { TitleCallout } from "components/Title/titleCallout";
 import MapImage from "images/world_map.svg";
-
-import "./keyframes.scss";
 import { dataMap } from "./dataMap";
-import {
-  BREAKPOINT,
-  COLOR_RED,
-} from "styles/Constants";
-import ReactTooltip from "react-tooltip";
+import { BREAKPOINT, COLOR_RED } from "styles/Constants";
 import { Key } from "react";
-import { MAP_HEIGHT_DESKTOP, MAP_HEIGHT_MOBILE } from "./mapCSS";
+import { SVGContainer, MapImageDiv, Tooltip, MapInner } from "./mapComponents";
 
 function getRndInteger(min: number, max: number) {
   return Math.floor(Math.random() * (max - min)) + min;
@@ -21,7 +15,7 @@ const Map = (props: { backgroundColor: any; title: string | undefined }) => {
   return (
     <>
       <Container backgroundColor={props.backgroundColor}>
-        <PaddingSection>
+        <MapInner>
           <TitleCallout title={props.title} />
           <SVGContainer>
             <MapImageDiv>
@@ -29,7 +23,7 @@ const Map = (props: { backgroundColor: any; title: string | undefined }) => {
             </MapImageDiv>
             <MapPins data={dataMap} />
           </SVGContainer>
-        </PaddingSection>
+        </MapInner>
       </Container>
     </>
   );
@@ -41,62 +35,6 @@ type Props = {
 export const LMenuItem = ({ children }: Props) => (
   <MapImageDiv>{children}</MapImageDiv>
 );
-
-
-const mapSectionPaddingDesktop = 50;
-const mapSectionPaddingMobile = 20;
-
-const PaddingSection = styled.div`
-  width: "100%";
-  @media (min-width: ${BREAKPOINT}px) {
-    height: auto;
-    padding: ${mapSectionPaddingDesktop}px 0;
-  }
-
-  @media (max-width: ${BREAKPOINT}px) {
-    height: auto;
-    padding: ${mapSectionPaddingMobile}px 0;
-  }
-  /* background: gold; */
-
-`;
-
-const SVGContainer = styled.div`
-  /* display: inline-block; */
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  /* padding-bottom: 44%; */
-  vertical-align: middle;
-  @media (min-width: ${BREAKPOINT}px) {
-    height: ${MAP_HEIGHT_DESKTOP}px;
-  }
-  @media (max-width: ${BREAKPOINT}px) {
-    height: ${MAP_HEIGHT_MOBILE}px;
-  }
-  /* background: ${COLOR_RED}; */
-`;
-
-
-
-const MapImageDiv = styled.div`
-  > svg {
-    z-index: +1;
-    position: "absolute";
-    top: 0;
-    left: 0;
-    /* display: "inline-block"; */
-    width: 100%;
-    @media (min-width: ${BREAKPOINT}px) {
-      height: ${MAP_HEIGHT_DESKTOP}px;
-    }
-    @media (max-width: ${BREAKPOINT}px) {
-      height: ${MAP_HEIGHT_MOBILE}px;
-    }
-  }
-    /* background: blue; */
-`;
 
 const MapPins = ({ data }) =>
   data.map(
@@ -114,10 +52,6 @@ const MapPins = ({ data }) =>
       </MapPin>
     )
   );
-
-const Tooltip = styled(ReactTooltip)`
-  font-size: 2rem;
-`;
 
 const dotSizeDesktop = "20px";
 const dotSizeMobile = "10px";

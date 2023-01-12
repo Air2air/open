@@ -1,1 +1,0 @@
-import{m as r,F as e}from"./bannerComponents-3c2cd0d6.js";import{c as n}from"./buttonComponents-9f4b8032.js";const c=t=>r(e,{children:r("a",{href:t.to,children:r(n,{children:r("span",{children:t.text})})})});export{c as B};

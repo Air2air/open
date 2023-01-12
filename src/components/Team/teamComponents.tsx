@@ -19,18 +19,19 @@ export const TeamContainer = styled(AnimationOnScroll)`
   height: auto;
 `;
 
-const teamPaddingDesktop = 30;
-const teamPaddingMobile = 20;
+
 
 export const PaddingSection = styled.div`
   width: "100%";
   height: auto;
   @media (min-width: ${BREAKPOINT}px) {
-    padding: ${teamPaddingDesktop}px 0;
+    padding-top: 10px;
+    padding-bottom: 80px;
   }
 
   @media (max-width: ${BREAKPOINT}px) {
-    padding: ${teamPaddingMobile}px 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
   /* background: gold; */
 `;
