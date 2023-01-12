@@ -1,3 +1,4 @@
+import { CalloutSkeleton } from "components/Callout/calloutComponents";
 import { FetchData } from "fetch/fetch";
 import ContactItem from "./contactItem";
 
@@ -6,7 +7,7 @@ const ContactList = ({ jsonFile }) => {
     file: jsonFile,
   });
   if (loading) {
-    return <div>Loading...</div>;
+    return <CalloutSkeleton />;
   }
   if (error) {
     return <div>Error: {error.message}</div>;

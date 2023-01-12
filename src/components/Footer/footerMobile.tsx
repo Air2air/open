@@ -32,11 +32,13 @@ export const FooterMobile = (props: IFooterProps) => {
           <FooterLink to="/">Home</FooterLink>
           <FooterLink to="/whatwedo">What We Do</FooterLink>
           <FooterLink to="/markets">Markets</FooterLink>
-          <FooterLink to="/casestudies">Case Studies</FooterLink>
-          <FooterLink to="/vision">Vision</FooterLink>
         </FooterLinkColumn>
         <FooterLinkColumn>
+          <FooterLink to="/casestudies">Case Studies</FooterLink>
+          <FooterLink to="/vision">Vision</FooterLink>
           <FooterLink to="/history">History</FooterLink>
+        </FooterLinkColumn>
+        <FooterLinkColumn>
           <FooterLink to="/about">About</FooterLink>
           <FooterLink to="/contact">Contact</FooterLink>
           <FooterLink to="/articles">Articles</FooterLink>

@@ -24,7 +24,7 @@ export const FooterDesktop = (props: IFooterProps) => {
     >
       <FooterContainer>
         <FooterContentRow>
-          <FooterColumn>
+          <FooterColumn style={{width:'40%'}}>
             <AnimationOnScroll
               animateIn="animate__fadeInLeft"
               delay={0}
@@ -37,16 +37,18 @@ export const FooterDesktop = (props: IFooterProps) => {
               </Link>
             </AnimationOnScroll>
           </FooterColumn>
-          <FooterColumn>
+          <FooterColumn style={{width:'60%'}}>
             <FooterLinkColumn>
               <FooterLink to="/">Home</FooterLink>
               <FooterLink to="/whatwedo">What We Do</FooterLink>
               <FooterLink to="/markets">Markets</FooterLink>
-              <FooterLink to="/casestudies">Case Studies</FooterLink>
-              <FooterLink to="/vision">Vision</FooterLink>
             </FooterLinkColumn>
             <FooterLinkColumn>
+              <FooterLink to="/casestudies">Case Studies</FooterLink>
+              <FooterLink to="/vision">Vision</FooterLink>
               <FooterLink to="/history">History</FooterLink>
+            </FooterLinkColumn>
+            <FooterLinkColumn>
               <FooterLink to="/about">About</FooterLink>
               <FooterLink to="/contact">Contact</FooterLink>
               <FooterLink to="/articles">Articles</FooterLink>

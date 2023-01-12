@@ -61,7 +61,7 @@ export const TeamMemberWrapper = styled.div`
   text-align: center;
   height: ${TEAM_MEMBER_HEIGHT}px;
   min-width: ${TEAM_MEMBER_WIDTH}px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   /* background: gold; */
 `;
 

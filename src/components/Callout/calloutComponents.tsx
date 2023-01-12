@@ -8,7 +8,7 @@ import {
   TEXT_OPACITY,
 } from "styles/Constants";
 import styled from "styled-components";
-
+import Container from "components/Container/container";
 
 export const CallOutInner = styled.div`
   margin: 0 auto;
@@ -39,3 +39,9 @@ export const CalloutParagraph = styled.div`
     ${FONT_DEFAULT_MOBILE};
   }
 `;
+
+export const CalloutSkeleton = (props) => (
+  <Container {...props}>
+    <div style={{ height: 400 }} />
+  </Container>
+);
