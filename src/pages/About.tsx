@@ -2,7 +2,6 @@ import BannerVideo from "components/Banner/bannerVideo";
 import Map from "components/Map/map";
 import { RowButton } from "components/Button/rowButton";
 import Spacer from "components/Spacer/spacer";
-import { useQuery } from "react-query";
 import TeamList from "components/Team/team";
 import Heading from "components/Heading/heading";
 
