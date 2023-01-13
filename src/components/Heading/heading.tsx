@@ -35,7 +35,7 @@ const Heading = ({ jsonFile }) => {
   }, [data]);
 
   if (!data.length) {
-    return "";
+    return <HeadingContainer />;
   }
 
   return (
