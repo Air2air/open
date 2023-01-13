@@ -1,4 +1,4 @@
-import { BannerText } from "components/Banner/bannerText";
+
 import BannerVideo from "components/Banner/bannerVideo";
 import { COLOR_BASE } from "styles/Constants";
 
@@ -11,7 +11,7 @@ const UnderConstructionPage = () => {
         overlayColor={COLOR_BASE}
         typing={true}
       />
-      <BannerText text="underconstruction" />
+      {/* <BannerText text="underconstruction" /> */}
     </>
   );
 };

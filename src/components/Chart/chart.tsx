@@ -7,7 +7,6 @@ import {
   concatPercent,
 } from "components/Chart/chartComponents";
 import { BarLabel } from "components/Chart/barLabel";
-import { IChart } from "interfaces/charts";
 import Container from "../Container/container";
 
 const Chart = (props, index) => {

@@ -1,9 +1,9 @@
 import Callout from "components/Callout/callOut";
 import BannerImage from "components/Banner/bannerImage";
 import { COLOR_BASE } from "styles/Constants";
-import BannerText from "components/Banner/bannerText";
 import RowButton from "components/Button/rowButton";
 import Spacer from "components/Spacer/spacer";
+import Heading from "components/Heading/heading";
 
 const pageImage = "dartmouth.jpeg";
 
@@ -15,7 +15,7 @@ const HistoryPage = () => {
         overlayOpacity={0.7}
         overlayColor={COLOR_BASE}
       />
-      <BannerText text="history" />
+      <Heading jsonFile="/data/historyHeading.json" />
       <Spacer height={40} backgroundColor={2} />
       <RowButton buttonTo="/about" buttonText="About" backgroundColor={2} />
       <Spacer height={40} backgroundColor={2} />

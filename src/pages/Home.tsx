@@ -1,10 +1,11 @@
-import OrgsCallout from "components/OrgsCallout/orgsCallOut";
+
 import RowButton from "components/Button/rowButton";
 import BannerVideo from "components/Banner/bannerVideo";
 import { COLOR_BASE } from "styles/Constants";
-import { BannerText } from "components/Banner/bannerText";
 import Spacer from "components/Spacer/spacer";
 import HomeChart from "components/Chart/Home/chartHome";
+import Heading from "components/Heading/heading";
+import OrgsCallout from "components/OrgsCallout/orgsCallout";
 
 const HomePage = () => {
   return (
@@ -14,7 +15,7 @@ const HomePage = () => {
         overlayOpacity={0.1}
         overlayColor={COLOR_BASE}
       />
-      <BannerText text="home" />
+      <Heading jsonFile="/data/homeHeading.json" />
       <HomeChart jsonFile="/data/homeChart.json" />
       <RowButton
         buttonTo="/whatwedo"
@@ -22,7 +23,7 @@ const HomePage = () => {
         backgroundColor={2}
       />
       <Spacer height={40} backgroundColor={2} />
-      <OrgsCallout backgroundColor={1} />
+      <OrgsCallout jsonFile="/data/orgsContent.json" />
     </>
   );
 };

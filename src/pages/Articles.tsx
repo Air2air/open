@@ -1,5 +1,4 @@
 import { useQuery } from "react-query";
-import { BannerText } from "components/Banner/bannerText";
 import Articles from "components/Articles/articles";
 import RowButton from "components/Button/rowButton";
 import Spacer from "components/Spacer/spacer";
@@ -27,13 +26,12 @@ const ArticlesPage = () => {
       {status === "error" && (
         <>
           <BannerLoading />
-          <BannerText text="error" />
         </>
       )}
       {status === "loading" && (
         <>
           <BannerLoading />
-          <BannerText text="articles" />
+
         </>
       )}
       {status === "success" && (

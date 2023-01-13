@@ -1,10 +1,10 @@
 import RowButton from "components/Button/rowButton";
 import { COLOR_BASE } from "styles/Constants";
 import BannerVideo from "components/Banner/bannerVideo";
-import BannerText from "components/Banner/bannerText";
 import Spacer from "components/Spacer/spacer";
 import CalloutList from "components/Callout/callOutList";
 import MarketsChart from "components/Chart/Markets/chartMarkets";
+import Heading from "components/Heading/heading";
 
 const MarketsPage = () => {
   return (
@@ -14,7 +14,7 @@ const MarketsPage = () => {
         overlayOpacity={0.4}
         overlayColor={COLOR_BASE}
       />
-      <BannerText text="markets" />
+      <Heading jsonFile="/data/marketsHeading.json" />
       <MarketsChart jsonFile="/data/marketsChart.json" />
       <RowButton buttonTo="/vision" buttonText="Vision" backgroundColor={1} />
       <Spacer height={40} backgroundColor={1} />

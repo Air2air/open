@@ -1,7 +1,7 @@
 import { COLOR_BASE } from "styles/Constants";
 import BannerVideo from "components/Banner/bannerVideo";
-import { BannerText } from "components/Banner/bannerText";
 import ContactList from "components/Contact/contact";
+import Heading from "components/Heading/heading";
 
 const ContactPage = () => {
   return (
@@ -11,7 +11,7 @@ const ContactPage = () => {
         overlayOpacity={0.1}
         overlayColor={COLOR_BASE}
       />
-      <BannerText text="contact" />
+      <Heading jsonFile="/data/contactHeading.json" />
       <ContactList jsonFile="/data/contactContent.json"/>
     </>
   );

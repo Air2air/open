@@ -139,7 +139,6 @@ export const FooterLogoRow = styled(AnimationOnScroll)`
   background: green;
 `;
 
-
 export const FooterLogoWrapper = styled.div`
   margin: 0 auto;
   display: flex;

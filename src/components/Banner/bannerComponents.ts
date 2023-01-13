@@ -7,6 +7,23 @@ export const BANNER_HEIGHT_MOBILE = 350;
 export const BANNER_PADDING_TOP_DESKTOP = 210;
 export const BANNER_PADDING_TOP_MOBILE = 160;
 
+
+
+export const BannerVideoWrapper = styled.div`
+  position: relative;
+  top: 0;
+  left:0;
+  width: 100vw;
+  overflow: hidden;
+  background: ${COLOR_BLACK};
+  @media (min-width: ${BREAKPOINT}px) {
+    height: ${BANNER_HEIGHT_DESKTOP}px;
+  }
+  @media (max-width: ${BREAKPOINT}px) {
+    height: ${BANNER_HEIGHT_MOBILE}px;
+  }
+`;
+
 export const BannerImageWrapper = styled.div`
   position: relative;
   top: 0;
@@ -71,19 +88,7 @@ export const BannerLoadingWrapper = styled.div`
   }
 `;
 
-export const BannerVideoWrapper = styled.div`
-  position: relative;
-  top: 0;
-  width: 100vw;
-  overflow: hidden;
-  background: ${COLOR_BLACK};
-  @media (min-width: ${BREAKPOINT}px) {
-    height: ${BANNER_HEIGHT_DESKTOP}px;
-  }
-  @media (max-width: ${BREAKPOINT}px) {
-    height: ${BANNER_HEIGHT_MOBILE}px;
-  }
-`;
+
 
 export const VideoContainer = styled.div`
   position: absolute;

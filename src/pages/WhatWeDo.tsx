@@ -1,10 +1,10 @@
 import { COLOR_BASE } from "styles/Constants";
 import RowButton from "components/Button/rowButton";
 import { BannerVideo } from "components/Banner/bannerVideo";
-import BannerText from "components/Banner/bannerText";
 import Spacer from "components/Spacer/spacer";
 import CalloutList from "components/Callout/callOutList";
 import WhatWeDoChart from "components/Chart/WhatWeDo/chartWhatWeDo";
+import Heading from "components/Heading/heading";
 
 const WhatWeDoPage = () => {
   return (
@@ -14,7 +14,7 @@ const WhatWeDoPage = () => {
         overlayOpacity={0.7}
         overlayColor={COLOR_BASE}
       />
-      <BannerText text="whatwedo" />
+      <Heading jsonFile="/data/whatwedoHeading.json" />
       <WhatWeDoChart jsonFile="/data/whatwedoChart.json" />
       <RowButton
         buttonTo="/casestudies"

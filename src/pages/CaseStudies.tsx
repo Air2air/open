@@ -1,11 +1,9 @@
-
 import BannerVideo from "components/Banner/bannerVideo";
 import { COLOR_BASE } from "styles/Constants";
 import RowButton from "components/Button/rowButton";
-import { BannerText } from "components/Banner/bannerText";
 import Spacer from "components/Spacer/spacer";
 import CalloutList from "components/Callout/callOutList";
-
+import Heading from "components/Heading/heading";
 
 const CaseStudiesPage = () => {
   const loopEndTime = 14000;
@@ -18,7 +16,7 @@ const CaseStudiesPage = () => {
         overlayColor={COLOR_BASE}
         loopEndTime={loopEndTime}
       />
-      <BannerText text="casestudies" />
+      <Heading jsonFile="/data/casestudiesHeading.json" />
       <Spacer height={40} backgroundColor={2} />
       <RowButton buttonTo="/markets" buttonText="Markets" backgroundColor={2} />
       <Spacer height={40} backgroundColor={2} />
