@@ -34,9 +34,9 @@ const Heading = ({ jsonFile }) => {
     return () => clearInterval(interval);
   }, [data]);
 
-  if (!data.length) {
-    return <div>Loading...</div>;
-  }
+  // if (!data.length) {
+  //   return <div>Loading...</div>;
+  // }
 
   return (
     <HeadingContainer key={index}>
