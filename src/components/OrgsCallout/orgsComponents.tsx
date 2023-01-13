@@ -11,7 +11,6 @@ const orgImageHeight = "100px";
 export const OrgsWrapper = styled.div`
   position: relative;
   top: 0;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,7 +23,6 @@ export const OrgsWrapper = styled.div`
 
 export const OrgInnerWrapper = styled.div`
   margin: 0 auto;
-
   z-index: +1;
   height: auto;
   @media (min-width: ${BREAKPOINT}px) {
