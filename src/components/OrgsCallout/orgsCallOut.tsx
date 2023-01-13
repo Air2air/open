@@ -22,10 +22,10 @@ const OrgsCallout = ({ jsonFile }) => {
   const { data, loading, error } = FetchData({
     file: jsonFile,
   });
-
   if (error) {
     return <div>Error: {error.message}</div>;
   }
+
   return data && data.length > 0 ? (
     <>
       <Container backgroundColor={1}>
