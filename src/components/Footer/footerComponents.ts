@@ -136,7 +136,7 @@ export const FooterLogoRow = styled(AnimationOnScroll)`
       opacity: 1;
     }
   }
-  background: green;
+  /* background: green; */
 `;
 
 export const FooterLogoWrapper = styled.div`
