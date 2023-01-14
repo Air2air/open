@@ -3,15 +3,15 @@ export interface IArticleProps {
   id?: number;
   category?: string;
   title?: string;
-  text?: any;
+  text?: string;
   date?: Date;
   image?: string;
   code?: string;
-  backgroundColor?: any;
+  backgroundColor?: number|string;
   buttonText?: string;
   buttonTo?: string;
   buttonColor?: string;
-  data?: any;
-  style?: any;
-  children?: any;
+  data?: Array<string>|undefined;
+  // style?: any;
+  // children?: any;
 }

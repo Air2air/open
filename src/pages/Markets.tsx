@@ -1,5 +1,4 @@
 import RowButton from "components/Button/rowButton";
-import { COLOR_BASE } from "styles/Constants";
 import BannerVideo from "components/Banner/bannerVideo";
 import Spacer from "components/Spacer/spacer";
 import CalloutList from "components/Callout/callOutList";
@@ -12,7 +11,7 @@ const MarketsPage = () => {
       <BannerVideo
         pageVideo={784844948}
         overlayOpacity={0.4}
-        overlayColor={COLOR_BASE}
+        overlayColor={1}
       />
       <Heading jsonFile="/data/marketsHeading.json" />
       <MarketsChart jsonFile="/data/marketsChart.json" />

@@ -7,10 +7,10 @@ import Container from "components/Container/container";
 import { ButtonDesktop, ButtonMobile, BUTTON_HEIGHT } from "./buttonComponents";
 
 export const RowButton = (props: {
-  buttonTo: any;
+  buttonTo: string;
   buttonText: string;
   buttonColor?: string;
-  backgroundColor?: number;
+  backgroundColor: number;
 }) => {
   return (
     <>

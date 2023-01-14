@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Button from "components/Button/button";
 import { CalloutSkeleton } from "components/Callout/calloutComponents";
 import Container from "components/Container/container";
@@ -23,9 +24,9 @@ const TeamList = ({ jsonFile }) => {
     return <div>Error: {error.message}</div>;
   }
 
-  const sortedDataTeam = data.sort((a, b) =>
-    a.nameFirst > b.nameFirst ? 1 : -1
-  );
+  // const sortedDataTeam = data.sort((a, b) =>
+  //   a.nameFirst > b.nameFirst ? 1 : -1
+  // );
 
   return data && data.length > 0 ? (
     <Container backgroundColor={1}>

@@ -5,7 +5,7 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { ButtonDesktop, ButtonMobile } from "./buttonComponents";
 
 export const ButtonCentered = (props: {
-  buttonTo: any;
+  buttonTo: string;
   buttonText: string;
   buttonColor?: string;
 }) => {

@@ -11,7 +11,10 @@ function getRndInteger(min: number, max: number) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
-const Map = (props: { backgroundColor: any; title: string | undefined }) => {
+const Map = (props: {
+  backgroundColor: number;
+  title: string | undefined;
+}) => {
   return (
     <>
       <Container backgroundColor={props.backgroundColor}>
@@ -19,7 +22,9 @@ const Map = (props: { backgroundColor: any; title: string | undefined }) => {
           <TitleCallout title={props.title} />
           <SVGContainer>
             <MapImageDiv>
-              <LMenuItem children={<MapImage />} />
+              <LMenuItem>
+                <MapImage />
+              </LMenuItem>
             </MapImageDiv>
             <MapPins data={dataMap} />
           </SVGContainer>
@@ -39,7 +44,7 @@ export const LMenuItem = ({ children }: Props) => (
 const MapPins = ({ data }) =>
   data.map(
     (
-      item: { location: any; left: any; top: any },
+      item: { location: string; left: number; top: number },
       index: Key | null | undefined
     ) => (
       <MapPin

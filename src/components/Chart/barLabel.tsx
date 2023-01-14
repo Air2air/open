@@ -9,7 +9,7 @@ import { animationEnter, CHART_HEIGHT_MOBILE } from "./chartComponents";
 
 
 export const BarLabel = (props: {
-  index?: any;
+  index?: number;
   label?: string;
   hidden?: boolean;
   rotate?: boolean;

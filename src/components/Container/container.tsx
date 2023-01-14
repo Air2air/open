@@ -8,10 +8,10 @@ import { assignBackgroundColor } from "utils/assignBackgroundColor";
 
 type ContainerProps = {
   children: React.ReactNode;
-  backgroundColor?: number | undefined;
+  backgroundColor: number;
 };
 
-const Container = (props) => {
+const Container = (props:ContainerProps) => {
   return (
     <>
       <ContainerOuter

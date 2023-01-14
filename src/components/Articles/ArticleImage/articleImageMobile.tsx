@@ -1,6 +1,6 @@
-import { BREAKPOINT } from "styles/Constants";
+
 import styled from "styled-components";
-import { IArticleProps } from "../articleInterfaces";
+
 import { ARTICLE_IMAGE_SIZE_MOBILE } from "../articleConstants";
 import ArticleCodeBlock from "./articleCodeBlock";
 

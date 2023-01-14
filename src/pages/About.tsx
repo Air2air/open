@@ -13,7 +13,7 @@ const AboutPage = () => {
       <Map title="Elevens Worldwide" backgroundColor={2} />
       <TeamList jsonFile="/data/teamContent.json" />
       <Spacer height={40} backgroundColor={2} />
-      <RowButton buttonTo="/contact" buttonText="Contact" />
+      <RowButton buttonTo="/contact" buttonText="Contact" backgroundColor={2} />
       <Spacer height={40} backgroundColor={2} />
     </>
   );

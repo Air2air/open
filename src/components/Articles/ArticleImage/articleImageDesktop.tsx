@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { IArticleProps } from "../articleInterfaces";
+
 import { ARTICLE_IMAGE_SIZE_DESKTOP } from "../articleConstants";
 import ArticleCodeBlock from "./articleCodeBlock";
 

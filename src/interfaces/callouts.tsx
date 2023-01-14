@@ -3,42 +3,42 @@ export interface ICalloutProps {
   order?: number;
   title?: string;
   label?: string;
-  text?: any;
+  text?: string;
   side?: string;
   color?: string;
-  backgroundColor?: any;
+  backgroundColor?: number | string;
   buttonText?: string;
   buttonTo?: string;
   buttonColor?: string;
-  // data?: any[];
+  // data?: Array<string>[];
 }
 
 export interface ICalloutBulletProps {
   id: number;
-  title?: any;
+  title?: string;
   text: string;
   side?: string;
   color?: string;
-  backgroundColor?: any;
+  backgroundColor?: number | string;
   buttonText?: string;
   buttonTo?: string;
-  buttonColor?: any;
+  buttonColor?: number|string;
 }
 
 export interface ICalloutImageProps {
   id: number;
-  title?: any;
+  title?: string;
   text: string;
   color?: string;
-  image?:string;
-  backgroundColor?: any;
+  image?: string;
+  backgroundColor?: number | string;
   buttonText?: string;
   buttonTo?: string;
-  buttonColor?: any;
+  buttonColor?: number|string;
 }
 
 export interface IBannerMarketsProps {
-  data: any;
+  data: Array<string>;
   randomHeight: boolean;
   color: string;
   label: string;
@@ -48,7 +48,7 @@ export interface IBannerMarketsProps {
 }
 
 export interface IBannerHomeProps {
-  data: any;
+  data: Array<string>;
   randomHeight: boolean;
   color: string;
   label: string;
@@ -58,11 +58,9 @@ export interface IBannerHomeProps {
 }
 export interface IBarColumnProps {
   id: number;
-  label?: any;
+  label?: string;
   randomHeight: boolean;
   height: number;
   color: string;
-  backgroundColor: any;
+  backgroundColor: number | string;
 }
-
-

@@ -9,7 +9,7 @@ import {
 import { BarLabel } from "components/Chart/barLabel";
 import Container from "../Container/container";
 
-const Chart = (props, index) => {
+const Chart = (props) => {
   console.log("Chart props", props);
 
   // map through the props.chart and render the chart components
@@ -19,9 +19,9 @@ const Chart = (props, index) => {
         <ChartSection>
           <ChartWrapper>
             {props
-              ? props.map((item) => {
+              ? props.map((item, index) => {
                   return (
-                    <BarOuter key={item.chart.id}>
+                    <BarOuter key={index}>
                       <BarInner
                         style={{
                           height: concatPercent(item.height),

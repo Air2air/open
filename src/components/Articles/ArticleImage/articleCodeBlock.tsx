@@ -21,19 +21,19 @@ export const ArticleCodeBlock = (props: {
         <div className="bracket">&#91;</div>
         <div className="indent">
           <span className="brace">&#123;</span>
-          <span className="key">"prompt"</span>:
-          <span className="value">"{props.code}"</span>
+          <span className="key">&quot;prompt&quot;</span>:
+          <span className="value">&quot;{props.code}&quot;</span>
           <span className="brace">&#125;,</span>
         </div>
         <div className="indent">
           <span className="brace">&#123;</span>
-          <span className="key">"model"</span>:
-          <span className="value">"text-davinci-003"</span>
+          <span className="key">&quot;model&quot;</span>:
+          <span className="value">&quot;text-davinci-003&quot;</span>
           <span className="brace">&#125;,</span>
         </div>
         <div className="indent">
           <span className="brace">&#123;</span>
-          <span className="key">"top_p"</span>:
+          <span className="key">&quot;top_p&quot;</span>:
           <span className="value">1.2</span>
           <span className="brace">&#125;,</span>
         </div>

@@ -1,7 +1,6 @@
 
 import RowButton from "components/Button/rowButton";
 import BannerVideo from "components/Banner/bannerVideo";
-import { COLOR_BASE } from "styles/Constants";
 import Spacer from "components/Spacer/spacer";
 import HomeChart from "components/Chart/Home/chartHome";
 import Heading from "components/Heading/heading";
@@ -13,7 +12,7 @@ const HomePage = () => {
       <BannerVideo
         pageVideo={776443340}
         overlayOpacity={0.1}
-        overlayColor={COLOR_BASE}
+        overlayColor={1}
       />
       <Heading jsonFile="/data/homeHeading.json" />
       <HomeChart jsonFile="/data/homeChart.json" />

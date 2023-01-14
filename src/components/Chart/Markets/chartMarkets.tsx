@@ -1,5 +1,4 @@
 
-import { Suspense } from "react";
 import Container from "components/Container/container";
 import { FetchData } from "fetch/fetch";
 import { BarLabel } from "../barLabel";

@@ -1,12 +1,12 @@
-import Heading from "components/Heading/heading";
+
 import { lazy } from "react";
 import { BannerVideoWrapper, Overlay } from "./bannerComponents";
 const VimeoPlayer = lazy(() => import("./vimeoPlayer"));
 
 export const BannerVideo = (props: {
-  pageVideo: any;
-  overlayOpacity: any;
-  overlayColor?: any;
+  pageVideo: number;
+  overlayOpacity: number;
+  overlayColor?: number;
   typing?: boolean;
   loopEndTime?: number;
 }) => {

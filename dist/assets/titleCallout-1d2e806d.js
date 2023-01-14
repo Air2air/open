@@ -1,4 +1,4 @@
-import{s as l,z as e,B as o,m as i}from"./bannerComponents-cd50e550.js";import{f as a,g as r}from"./index-da42b55a.js";const s=t=>i(c,{children:i(d,{color:t.color,children:t.title})}),c=l.div`
+import{s as l,z as e,B as o,m as i}from"./bannerComponents-cd50e550.js";import{f as a,g as r}from"./index-b9c5e089.js";const s=t=>i(c,{children:i(d,{color:t.color,children:t.title})}),c=l.div`
   text-align: left;
   width: 100%;
   min-height: 50px;

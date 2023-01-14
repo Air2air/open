@@ -19,7 +19,7 @@ const OrgsCallout = ({ jsonFile }) => {
     }
   }
 
-  const { data, loading, error } = FetchData({
+  const { data, error } = FetchData({
     file: jsonFile,
   });
   if (error) {

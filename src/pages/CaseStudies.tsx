@@ -1,5 +1,4 @@
 import BannerVideo from "components/Banner/bannerVideo";
-import { COLOR_BASE } from "styles/Constants";
 import RowButton from "components/Button/rowButton";
 import Spacer from "components/Spacer/spacer";
 import CalloutList from "components/Callout/callOutList";
@@ -13,7 +12,7 @@ const CaseStudiesPage = () => {
       <BannerVideo
         pageVideo={776446335}
         overlayOpacity={0.4}
-        overlayColor={COLOR_BASE}
+        overlayColor={1}
         loopEndTime={loopEndTime}
       />
       <Heading jsonFile="/data/casestudiesHeading.json" />

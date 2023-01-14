@@ -1,4 +1,3 @@
-import { COLOR_BASE } from "styles/Constants";
 import RowButton from "components/Button/rowButton";
 import { BannerVideo } from "components/Banner/bannerVideo";
 import Spacer from "components/Spacer/spacer";
@@ -12,7 +11,7 @@ const WhatWeDoPage = () => {
       <BannerVideo
         pageVideo={776449715}
         overlayOpacity={0.7}
-        overlayColor={COLOR_BASE}
+        overlayColor={1}
       />
       <Heading jsonFile="/data/whatwedoHeading.json" />
       <WhatWeDoChart jsonFile="/data/whatwedoChart.json" />

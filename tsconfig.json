@@ -22,5 +22,7 @@
   "exclude": [
     "node_modules",
     "typings"
-  ]
+  ],
+  "types": ["node", "jest", "@testing-library/jest-dom"],
+
 }

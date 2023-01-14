@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 
-interface Props {
-  file: string;
-}
+
 
 export const FetchData = ({ file }) => {
   const [data, setData] = useState<any>(null);

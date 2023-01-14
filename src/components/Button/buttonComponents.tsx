@@ -3,7 +3,7 @@ export const BUTTON_HEIGHT = 40;
 export const BUTTON_WIDTH_DESKTOP = "200px";
 
 const buttonWidthDesktop = "250px";
-const buttonWidthMobile = "250px";
+const buttonWidthMobile = "100%";
 
 export const BUTTON_TEXT_COLOR = "hsl(0, 0%, 90%)";
 export const BUTTON_COLOR = "hsl(0, 86%, 36%)";
@@ -78,7 +78,7 @@ export const ButtonMobile = styled.div`
   justify-content: center;
   transition: all 300ms;
   text-transform: uppercase;
-  width: 100%;
+  width: ${buttonWidthMobile};
   span {
     margin-right: 10px;
   }

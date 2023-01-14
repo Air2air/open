@@ -13,19 +13,19 @@ import {
   CardText,
   CardPositioner,
 } from "./Cards/cardComponents";
-import { IArticleProps } from "./articleInterfaces";
+
 import { useState } from "react";
 import parse from "html-react-parser";
 import { TitleCallout } from "components/Title/titleCallout";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import ArticleImage from "./ArticleImage/articleImage";
-import styled from "styled-components";
 
-export const Articles = (props: IArticleProps) => {
+
+export const Articles = (props) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   function showActiveTab(activeTab: number) {
-    let cardContent = document.getElementsByClassName("cardContent");
+    const cardContent = document.getElementsByClassName("cardContent");
     for (let i = 0; i < cardContent.length; i++) {
       cardContent[i].classList.remove("active");
     }
@@ -90,24 +90,5 @@ export const Articles = (props: IArticleProps) => {
 };
 
 
-const AdvisorsGrid = styled.div`
-  display: grid;
-  flex: 0 0 100%;
-  gap: 2rem;
-  /* padding: 10px 0 0 0; */
-  width: 100%;
-  height: auto;
-  @media (min-width: 701px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  @media (min-width: 501px) and (max-width: 700px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  @media (min-width: 301px) and (max-width: 500px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  background: gold;
-`;
 
 export default Articles;

@@ -1,5 +1,4 @@
 import BannerVideo from "components/Banner/bannerVideo";
-import { COLOR_BASE } from "styles/Constants";
 import RowButton from "components/Button/rowButton";
 import Spacer from "components/Spacer/spacer";
 import CalloutList from "components/Callout/callOutList";
@@ -12,7 +11,7 @@ const VisionPage = () => {
       <BannerVideo
         pageVideo={776451115}
         overlayOpacity={0.1}
-        overlayColor={COLOR_BASE}
+        overlayColor={1}
       />
       <Heading jsonFile="/data/visionHeading.json" />
       <VisionChart jsonFile="/data/visionChart.json" />

@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { BREAKPOINT } from "styles/Constants";
-import { IArticleProps } from "../articleInterfaces";
 import ArticleImageDesktop from "./articleImageDesktop";
 import { ArticleImageMobile } from "./articleImageMobile";
 
