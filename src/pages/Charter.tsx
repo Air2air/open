@@ -1,10 +1,8 @@
-
 import RowButton from "components/Button/rowButton";
 import Spacer from "components/Spacer/spacer";
 import Heading from "components/Heading/heading";
 import CalloutList from "components/Callout/callOutList";
 import BannerVideo from "components/Banner/bannerVideo";
-
 
 const CharterPage = () => {
   return (
