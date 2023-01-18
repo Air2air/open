@@ -1,6 +1,11 @@
 // FAMILY
 
-import { COLOR_HEADING, COLOR_SUBHEAD } from "./Colors";
+import {
+  COLOR_BANNER_HEADING,
+  COLOR_BANNER_SUBHEAD,
+  COLOR_HEADING,
+  COLOR_SUBHEAD,
+} from "./Colors";
 
 export const FONT_FAMILY_HEADING = `"Roboto Condensed Light", sans-serif`;
 export const FONT_FAMILY_DEFAULT = `"Source Sans Pro", sans-serif`;
@@ -53,12 +58,12 @@ export const FONT_WEIGHT_BOLD = 600;
 export const FONT_WEIGHT_CODE = 300;
 
 // BANNER HEADING
-export const FONT_BANNER_HEADING_DESKTOP = `font-weight: ${FONT_WEIGHT_LIGHT}; font-size: ${FONT_SIZE_HEADING_DESKTOP}; font-family: ${FONT_FAMILY_HEADING}; line-height: ${LINE_HEIGHT_HEADING_DESKTOP};  color: ${COLOR_HEADING};`;
-export const FONT_BANNER_HEADING_MOBILE = `font-weight: ${FONT_WEIGHT_LIGHT}; font-size: ${FONT_SIZE_HEADING_MOBILE}; font-family: ${FONT_FAMILY_HEADING}; line-height: ${LINE_HEIGHT_HEADING_MOBILE}; color: ${COLOR_HEADING};`;
+export const FONT_BANNER_HEADING_DESKTOP = `font-weight: ${FONT_WEIGHT_LIGHT}; font-size: ${FONT_SIZE_HEADING_DESKTOP}; font-family: ${FONT_FAMILY_HEADING}; line-height: ${LINE_HEIGHT_HEADING_DESKTOP};  color: ${COLOR_BANNER_HEADING};`;
+export const FONT_BANNER_HEADING_MOBILE = `font-weight: ${FONT_WEIGHT_LIGHT}; font-size: ${FONT_SIZE_HEADING_MOBILE}; font-family: ${FONT_FAMILY_HEADING}; line-height: ${LINE_HEIGHT_HEADING_MOBILE}; color: ${COLOR_BANNER_HEADING};`;
 
 // BANNER SUBHEAD
-export const FONT_BANNER_SUBHEAD_DESKTOP = `font-weight: ${FONT_WEIGHT_DEFAULT}; font-size: ${FONT_SIZE_BANNER_SUBHEAD_DESKTOP}; font-family: ${FONT_FAMILY_DEFAULT}; line-height: ${LINE_HEIGHT_SUBHEAD_DESKTOP} color: ${COLOR_SUBHEAD};`;
-export const FONT_BANNER_SUBHEAD_MOBILE = `font-weight: ${FONT_WEIGHT_DEFAULT}; font-size: ${FONT_SIZE_BANNER_SUBHEAD_MOBILE}; font-family: ${FONT_FAMILY_DEFAULT}; line-height: ${LINE_HEIGHT_SUBHEAD_MOBILE}; color: ${COLOR_SUBHEAD};`;
+export const FONT_BANNER_SUBHEAD_DESKTOP = `font-weight: ${FONT_WEIGHT_DEFAULT}; font-size: ${FONT_SIZE_BANNER_SUBHEAD_DESKTOP}; font-family: ${FONT_FAMILY_DEFAULT}; line-height: ${LINE_HEIGHT_SUBHEAD_DESKTOP} color: ${COLOR_BANNER_SUBHEAD};`;
+export const FONT_BANNER_SUBHEAD_MOBILE = `font-weight: ${FONT_WEIGHT_DEFAULT}; font-size: ${FONT_SIZE_BANNER_SUBHEAD_MOBILE}; font-family: ${FONT_FAMILY_DEFAULT}; line-height: ${LINE_HEIGHT_SUBHEAD_MOBILE}; color: ${COLOR_BANNER_SUBHEAD};`;
 
 // HEADING
 export const FONT_HEADING_DESKTOP = `font-weight: ${FONT_WEIGHT_LIGHT}; font-size: ${FONT_SIZE_HEADING_DESKTOP}; font-family: ${FONT_FAMILY_HEADING}; line-height: ${LINE_HEIGHT_HEADING_DESKTOP};  color: ${COLOR_HEADING};`;

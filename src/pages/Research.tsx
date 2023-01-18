@@ -1,5 +1,4 @@
 import RowButton from "components/Button/rowButton";
-import Spacer from "components/Spacer/spacer";
 import CalloutList from "components/Callout/callOutList";
 import Heading from "components/Heading/heading";
 import { BannerImage } from "components/Banner/Image/bannerImage";
@@ -14,9 +13,9 @@ const ResearchPage = () => {
       />
       <Heading jsonFile="/data/researchHeading.json" />
       {/* <ResearchChart jsonFile="/data/researchChart.json" /> */}
-      <RowButton buttonTo="/education" buttonText="Education" backgroundColor={1} />
-      <Spacer height={40} backgroundColor={1} />
+      <RowButton buttonTo="/education" buttonText="Education" />
       <CalloutList jsonFile="/data/researchContent.json" />
+      <RowButton buttonTo="/education" buttonText="Education" />
     </>
   );
 };

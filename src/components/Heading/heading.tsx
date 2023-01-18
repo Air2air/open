@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import {
   TitleContainer,
@@ -53,6 +52,5 @@ const Heading = ({ jsonFile }) => {
     </HeadingContainer>
   );
 };
-
 
 export default Heading;

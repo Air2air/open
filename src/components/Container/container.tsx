@@ -16,8 +16,6 @@ const Container = (props:ContainerProps) => {
     <>
       <ContainerOuter
         style={{
-          height: "100%",
-          width: "100%",
           backgroundColor: assignBackgroundColor(props.backgroundColor),
         }}
       >

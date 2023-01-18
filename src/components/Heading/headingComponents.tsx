@@ -1,5 +1,7 @@
 import {
   BREAKPOINT,
+  COLOR_BANNER_HEADING,
+  COLOR_BANNER_SUBHEAD,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
   FONT_BANNER_HEADING_DESKTOP,
@@ -46,7 +48,8 @@ export const TitleContainer = styled.div`
 
 export const TitleText = styled.div`
   @media (min-width: ${BREAKPOINT}px) {
-    ${FONT_BANNER_HEADING_DESKTOP}
+    ${FONT_BANNER_HEADING_DESKTOP};
+    color:${COLOR_BANNER_HEADING}
   }
   @media (max-width: ${BREAKPOINT}px) {
     ${FONT_BANNER_HEADING_MOBILE}
@@ -75,6 +78,7 @@ export const SubheadText = styled.div`
   /* background: red; */
   @media (min-width: ${BREAKPOINT}px) {
     ${FONT_BANNER_SUBHEAD_DESKTOP}
+    color:${COLOR_BANNER_SUBHEAD}
   }
   @media (max-width: ${BREAKPOINT}px) {
     ${FONT_BANNER_SUBHEAD_MOBILE}

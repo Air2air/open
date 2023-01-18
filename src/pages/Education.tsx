@@ -12,8 +12,9 @@ const EducationPage = () => {
         overlayColor={1}
       />
       <Heading jsonFile="/data/educationHeading.json" />
+      <RowButton buttonTo="/charter" buttonText="Charter" />
       <CalloutList jsonFile="/data/educationContent.json" />
-      <RowButton buttonTo="/charter" buttonText="Charter" backgroundColor={3} />
+      <RowButton buttonTo="/charter" buttonText="Charter" />
     </>
   );
 };
