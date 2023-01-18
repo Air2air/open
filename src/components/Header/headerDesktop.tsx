@@ -22,8 +22,8 @@ export const HeaderDesktop = () => {
     <HeaderOuter>
       <HeaderInner>
         <HeaderLeft>
-          <LinkName to="/home" />
-          <LinkNameFull to="/home"/>
+          <LogoName to="/home" />
+          <LogoNameFull to="/home"/>
         </HeaderLeft>
         <HeaderRight>
           <HeaderLink to="/connect">Connect</HeaderLink>
@@ -72,12 +72,12 @@ const HeaderLeft = styled.div`
   /* background: brown; */
 `;
 
-const LinkName = styled(Link)`
+const LogoName = styled(Link)`
   height: ${HEADER_HEIGHT_DESKTOP}px;
   width:100px;
   margin-right: 20px;
   padding: 0;
-  opacity: 0.7;
+  opacity: 0.6;
   transform: scale(1);
   transition: all 300ms;
   background-image: ${LOGO_TEXT};
@@ -91,11 +91,11 @@ const LinkName = styled(Link)`
   /* background-color: green; */
 `;
 
-const LinkNameFull = styled(Link)`
+const LogoNameFull = styled(Link)`
   height: ${HEADER_HEIGHT_DESKTOP}px;
   width:110px;
   margin: 4px 0 0 0;
-  opacity: 0.7;
+  opacity: 0.6;
   transform: scale(1);
   transition: all 300ms;
   background-image: ${LOGO_TEXT_FULL};
