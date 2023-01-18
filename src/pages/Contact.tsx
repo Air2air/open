@@ -8,7 +8,7 @@ const ContactPage = () => {
     <>
       <BannerImage
         pageImage="banner_3.webp"
-        overlayOpacity={0.7}
+        overlayOpacity={0.1}
         overlayColor={1}
       />
       <Heading jsonFile="/data/contactHeading.json" />

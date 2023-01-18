@@ -7,8 +7,8 @@ const ResearchPage = () => {
   return (
     <>
       <BannerImage
-        pageImage="banner_3.webp"
-        overlayOpacity={0.7}
+        pageImage="banner_8.webp"
+        overlayOpacity={0.1}
         overlayColor={1}
       />
       <Heading jsonFile="/data/researchHeading.json" />

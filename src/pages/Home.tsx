@@ -8,8 +8,8 @@ const HomePage = () => {
   return (
     <>
       <BannerImage
-        pageImage="banner_1.webp"
-        overlayOpacity={0.7}
+        pageImage="banner_6.webp"
+        overlayOpacity={0.1}
         overlayColor={1}
       />
       <Heading jsonFile="/data/homeHeading.json" />

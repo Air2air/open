@@ -4,8 +4,8 @@ import {
   BREAKPOINT,
   COLOR_BASE,
   COLOR_TEXT,
-  FONT_CONDENSED_DESKTOP,
-  FONT_CONDENSED_MOBILE,
+  FONT_SECONDARY_DESKTOP,
+  FONT_SECONDARY_MOBILE,
 } from "styles/Constants";
 
 // TEAM
@@ -82,10 +82,10 @@ export const TeamMemberName = styled.div`
 
   /* background: red; */
   @media (min-width: ${BREAKPOINT}px) {
-    ${FONT_CONDENSED_DESKTOP};
+    ${FONT_SECONDARY_DESKTOP};
   }
   @media (max-width: ${BREAKPOINT}px) {
-    ${FONT_CONDENSED_MOBILE};
+    ${FONT_SECONDARY_MOBILE};
   }
   /* background: gold; */
 `;

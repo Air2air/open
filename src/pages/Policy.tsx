@@ -9,8 +9,8 @@ const PolicyPage = () => {
   return (
     <>
       <BannerImage
-        pageImage="banner_2.webp"
-        overlayOpacity={0.7}
+        pageImage="banner_7.webp"
+        overlayOpacity={0.1}
         overlayColor={1}
       />
       <Heading jsonFile="/data/policyHeading.json" />

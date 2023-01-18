@@ -15,11 +15,11 @@ import {
   COLOR_BUTTON_TEXT,
   FONT_BUTTON_DESKTOP,
   FONT_BUTTON_MOBILE,
-  FONT_CONDENSED_DESKTOP,
+  FONT_SECONDARY_DESKTOP,
 } from "styles/Constants";
 
 export const ButtonWrapper = styled.div`
-  ${FONT_CONDENSED_DESKTOP};
+  ${FONT_SECONDARY_DESKTOP};
   color: ${COLOR_BUTTON_TEXT};
   padding: 0 16px;
   display: inline-flex;

@@ -7,8 +7,8 @@ const CharterPage = () => {
   return (
     <>
       <BannerImage
-        pageImage="banner_3.webp"
-        overlayOpacity={0.7}
+        pageImage="banner_2.webp"
+        overlayOpacity={0.1}
         overlayColor={1}
       />
       <Heading jsonFile="/data/charterHeading.json" />

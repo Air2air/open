@@ -1,53 +1,24 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import LogoWhite from "images/logo_text_white.svg";
+
 import {
   COLOR_HEADER,
   COLOR_HEADER_HOVER,
   COLOR_LINK_REVERSE,
   COLOR_LINK_REVERSE_HOVER,
+  COLOR_WHITE,
+  CONTENT_WIDTH_DESKTOP,
   FONT_CAPTION_DESKTOP,
 } from "styles/Constants";
-import { useState, useEffect } from "react";
 
 export const HEADER_HEIGHT_DESKTOP = 90;
 
 export const HeaderDesktop = () => {
-  /*------ Scrolling -------*/
-  const [isVisible, setIsVisible] = useState(false);
-  const [height, setHeight] = useState(0);
-
-  const listenToScroll = () => {
-    const heightToHideFrom = 100;
-    const winScroll =
-      document.body.scrollTop || document.documentElement.scrollTop;
-    setHeight(winScroll);
-
-    if (winScroll > heightToHideFrom) {
-      isVisible && setIsVisible(false);
-    } else {
-      setIsVisible(true); //(true);
-      return height;
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", listenToScroll);
-    return () => window.removeEventListener("scroll", listenToScroll);
-  });
-
   return (
     <HeaderOuter>
-      {!isVisible && <HeaderOverlay />}
       <HeaderInner>
         <HeaderLeft>
-          <LogoWrapper>
-            <Link to="/home">
-              <div style={{ width: "140px" }}>
-                <LogoWhite />
-              </div>
-            </Link>
-          </LogoWrapper>
+          <LinkName to="/home">Open Power Energy Network</LinkName>
         </HeaderLeft>
         <HeaderRight>
           <HeaderLink to="/getinvolved">Get Involved</HeaderLink>
@@ -64,36 +35,42 @@ export const HeaderDesktop = () => {
 const HeaderOuter = styled.div`
   z-index: +2;
   position: fixed;
-  top: 0;
+  top: 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
   width: 100%;
   padding: 0;
   height: ${HEADER_HEIGHT_DESKTOP}px;
-`;
-
-const HeaderOverlay = styled.div`
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  opacity: 0.3;
-  height: ${HEADER_HEIGHT_DESKTOP}px;
-  background: ${COLOR_HEADER};
+  background:${COLOR_HEADER};
+  /* background-color: green; */
 `;
 
 const HeaderInner = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 90%;
+  /* justify-content: space-between; */
+  width: ${CONTENT_WIDTH_DESKTOP};
   height: ${HEADER_HEIGHT_DESKTOP}px;
   margin: 0 auto;
   padding: 0;
   /* background-color: blue; */
 `;
 
-const LogoWrapper = styled.div`
+const HeaderLeft = styled.div`
+
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: ${HEADER_HEIGHT_DESKTOP}px;
+  padding: 0;
+  /* background: brown; */
+`;
+
+const LinkName = styled(Link)`
+  ${FONT_CAPTION_DESKTOP};
+  color: ${COLOR_WHITE};
+  font-size:1.4em;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -109,27 +86,19 @@ const LogoWrapper = styled.div`
   /* background-color: blue; */
 `;
 
-const HeaderLeft = styled.div`
+const HeaderRight = styled.div`
+  width: 50%;
   display: flex;
   align-items: center;
-  flex: 1;
-  justify-content: space-between;
   height: ${HEADER_HEIGHT_DESKTOP}px;
   padding: 0;
   /* background: #000; */
 `;
 
-const HeaderRight = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  height: ${HEADER_HEIGHT_DESKTOP}px;
-`;
-
 const HeaderLink = styled(Link)`
   ${FONT_CAPTION_DESKTOP};
   color: ${COLOR_LINK_REVERSE};
-  padding: 0 20px;
+  /* padding: 0 20px; */
   display: flex;
   align-items: center;
   flex-wrap: nowrap;

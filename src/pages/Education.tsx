@@ -1,4 +1,5 @@
-import BannerVideo from "components/Banner/bannerVideo";
+
+import BannerImage from "components/Banner/Image/bannerImage";
 import RowButton from "components/Button/rowButton";
 import CalloutList from "components/Callout/callOutList";
 import Heading from "components/Heading/heading";
@@ -6,8 +7,8 @@ import Heading from "components/Heading/heading";
 const EducationPage = () => {
   return (
     <>
-      <BannerVideo
-        pageVideo={776451115}
+      <BannerImage
+        pageImage="banner_4.webp"
         overlayOpacity={0.1}
         overlayColor={1}
       />

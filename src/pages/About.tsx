@@ -9,8 +9,8 @@ const AboutPage = () => {
   return (
     <>
       <BannerImage
-        pageImage="banner_5.webp"
-        overlayOpacity={0.7}
+        pageImage="banner_1.webp"
+        overlayOpacity={0.1}
         overlayColor={1}
       />
       <Heading jsonFile="/data/aboutHeading.json" />

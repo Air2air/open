@@ -2,7 +2,8 @@ import { createGlobalStyle } from "styled-components";
 import {
   BREAKPOINT,
   COLOR_BASE_2,
-  FONT_CONDENSED_DESKTOP,
+  COLOR_WHITE,
+  FONT_SECONDARY_DESKTOP,
   FONT_DEFAULT_DESKTOP,
   FONT_DEFAULT_MOBILE,
   FONT_WEIGHT_BOLD,
@@ -16,7 +17,7 @@ outline: 0;
 margin: 0;
 padding: 0;
 border: 0;
-background-color: ${COLOR_BASE_2};
+background-color: ${COLOR_WHITE};
 }
 
 blockquote {
@@ -36,7 +37,7 @@ body {
 h1,
 h2,
 h3 {
-  ${FONT_CONDENSED_DESKTOP};
+  ${FONT_SECONDARY_DESKTOP};
   margin-top: 0;
   margin-bottom: 0.4em;
   text-align: left;
@@ -97,11 +98,16 @@ li {
 }
 
 @font-face {
-  font-family: "Roboto Condensed Light";
-  src: url("/fonts/Roboto_Condensed/RobotoCondensed-Light.ttf") format("truetype");
+  font-family: "Sofia Sans Light";
+  src: url("/fonts/Sofia_Sans/static/SofiaSans-Light.ttf") format("truetype");
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Sofia Sans Medium";
+  src: url("/fonts/Sofia_Sans/static/SofiaSans-Medium.ttf") format("truetype");
+  font-display: swap;
+}
 
 @font-face {
   font-family: "Roboto";
@@ -110,8 +116,6 @@ li {
   font-weight: normal;
   font-display: swap;
 }
-
-
 
 @font-face {
   font-family: "Roboto Condensed";

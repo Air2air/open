@@ -7,8 +7,8 @@ const GetInvolvedPage = () => {
   return (
     <>
       <BannerImage
-        pageImage="banner_3.webp"
-        overlayOpacity={0.7}
+        pageImage="banner_5.webp"
+        overlayOpacity={0.1}
         overlayColor={1}
       />
       <Heading jsonFile="/data/getinvolvedHeading.json" />

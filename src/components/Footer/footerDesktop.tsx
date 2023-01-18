@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
-import LogoWhite from "images/logo_white.svg";
-import LogoTextWhite from "images/logo_text_white.svg";
+
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { assignBackgroundColor } from "utils/assignBackgroundColor";
 import { IFooterProps } from "./footer";
@@ -13,7 +11,11 @@ import {
   FooterLink,
   FooterCopyright,
   FooterLogoWrapper,
+  LogoText,
 } from "./footerComponents";
+
+const backgroundImageText = "url(/images/site/logo_text.svg)";
+const backgroundImageBug = "url(/images/site/logo_bug.svg)";
 
 export const FooterDesktop = (props: IFooterProps) => {
   return (
@@ -24,20 +26,23 @@ export const FooterDesktop = (props: IFooterProps) => {
     >
       <FooterContainer>
         <FooterContentRow>
-          <FooterColumn style={{width:'40%'}}>
+          <FooterColumn style={{ width: "40%" }}>
             <AnimationOnScroll
               animateIn="animate__fadeInLeft"
               delay={0}
               offset={0}
             >
-              <Link className="link" to="/home">
-                <div style={{ width: "120px", opacity: 0.6 }}>
-                  <LogoTextWhite />
-                </div>
-              </Link>
+              <LogoText
+                to="/home"
+                style={{
+                  backgroundImage: backgroundImageText,
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "contain",
+                }}
+              />
             </AnimationOnScroll>
           </FooterColumn>
-          <FooterColumn style={{width:'60%'}}>
+          <FooterColumn style={{ width: "60%" }}>
             <FooterLinkColumn>
               <FooterLink to="/">Home</FooterLink>
               <FooterLink to="/getinvolved">Get Involved</FooterLink>
@@ -58,9 +63,13 @@ export const FooterDesktop = (props: IFooterProps) => {
 
         <FooterCopyright>
           <div>&copy; Open of Ten LLP</div>
-          <FooterLogoWrapper>
-            <LogoWhite />
-          </FooterLogoWrapper>
+          <FooterLogoWrapper
+            style={{
+              background: backgroundImageBug,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "contain",
+            }}
+          ></FooterLogoWrapper>
           <div>All rights reserved.</div>
         </FooterCopyright>
       </FooterContainer>

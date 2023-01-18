@@ -13,6 +13,8 @@ import { FONT_CAPTION_DESKTOP, FONT_CAPTION_MOBILE } from "styles/Text";
 // Footer
 export const FOOTER_HEIGHT_DESKTOP = 400;
 export const FOOTER_CONTAINER_HEIGHT_DESKTOP = FOOTER_HEIGHT_DESKTOP * 0.8;
+export const FOOTER_LOGO_HEIGHT_DESKTOP =
+  FOOTER_CONTAINER_HEIGHT_DESKTOP * 0.15;
 export const FOOTER_CONTENT_HEIGHT_DESKTOP =
   FOOTER_CONTAINER_HEIGHT_DESKTOP * 0.8;
 export const FOOTER_COPYRIGHT_HEIGHT_DESKTOP =
@@ -61,6 +63,29 @@ export const FooterContentRow = styled.div`
     height: ${FOOTER_CONTENT_HEIGHT_MOBILE}px;
   }
   /* background-color: gold; */
+`;
+
+export const LogoText = styled(Link)`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 130px;
+  padding: 0;
+  opacity: 0.5;
+  transform: scale(1);
+  transition: all 300ms;
+  background-repeat: no-repeat;
+  &:hover {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+  @media (min-width: ${BREAKPOINT}px) {
+    height: ${FOOTER_LOGO_HEIGHT_DESKTOP}px;
+  }
+  @media (max-width: ${BREAKPOINT}px) {
+    height: ${FOOTER_LOGO_HEIGHT_MOBILE}px;
+  }
+  /* background-color: blue; */
 `;
 
 export const FooterColumn = styled.div`
@@ -155,6 +180,7 @@ export const FooterLogoWrapper = styled.div`
   opacity: 0.5;
   transform: scale(1);
   transition: all 300ms;
+  cursor:pointer;
   &:hover {
     opacity: 1;
     transform: scale(1.03);
