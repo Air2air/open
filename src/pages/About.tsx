@@ -10,7 +10,7 @@ const AboutPage = () => {
     <>
       <BannerVideo pageVideo={776449715} overlayOpacity={0.7} />
       <Heading jsonFile="/data/aboutHeading.json" />
-      <Map title="Elevens Worldwide" backgroundColor={2} />
+      <Map title="Open Worldwide" backgroundColor={2} />
       <TeamList jsonFile="/data/teamContent.json" />
       <Spacer height={40} backgroundColor={2} />
       <RowButton buttonTo="/contact" buttonText="Contact" backgroundColor={2} />

@@ -2,8 +2,8 @@
 import RowButton from "components/Button/rowButton";
 import BannerVideo from "components/Banner/bannerVideo";
 import Spacer from "components/Spacer/spacer";
-import HomeChart from "components/Chart/Home/chartHome";
 import Heading from "components/Heading/heading";
+import CalloutList from "components/Callout/callOutList";
 // import OrgsCallout from "components/OrgsCallout/orgsCallout";
 
 const HomePage = () => {
@@ -15,10 +15,10 @@ const HomePage = () => {
         overlayColor={1}
       />
       <Heading jsonFile="/data/homeHeading.json" />
-      <HomeChart jsonFile="/data/homeChart.json" />
+      <CalloutList jsonFile="/data/homeContent.json" />
       <RowButton
-        buttonTo="/whatwedo"
-        buttonText="What we do"
+        buttonTo="/getinvolved"
+        buttonText="Get Involved"
         backgroundColor={2}
       />
       <Spacer height={40} backgroundColor={2} />

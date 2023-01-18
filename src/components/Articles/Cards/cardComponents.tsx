@@ -36,7 +36,7 @@ export const CardRow = styled.div`
   /* background: gold; */
 `;
 
-export const CardContentWrapper = styled.div`
+export const CardWrapper = styled.div`
   margin: 20px 12px;
   position: relative;
   top: 0;

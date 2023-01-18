@@ -30,18 +30,18 @@ export const FooterMobile = (props: IFooterProps) => {
       <FooterContentRow>
         <FooterLinkColumn>
           <FooterLink to="/">Home</FooterLink>
-          <FooterLink to="/whatwedo">What We Do</FooterLink>
-          <FooterLink to="/markets">Markets</FooterLink>
+          <FooterLink to="/getinvolved">Get Involved</FooterLink>
+          <FooterLink to="/research">Research</FooterLink>
         </FooterLinkColumn>
         <FooterLinkColumn>
-          <FooterLink to="/casestudies">Case Studies</FooterLink>
-          <FooterLink to="/vision">Vision</FooterLink>
-          <FooterLink to="/history">History</FooterLink>
+          <FooterLink to="/policy">Case Studies</FooterLink>
+          <FooterLink to="/education">Education</FooterLink>
+          <FooterLink to="/charter">Charter</FooterLink>
         </FooterLinkColumn>
         <FooterLinkColumn>
           <FooterLink to="/about">About</FooterLink>
           <FooterLink to="/contact">Contact</FooterLink>
-          <FooterLink to="/articles">Articles</FooterLink>
+          {/* <FooterLink to="/articles">Articles</FooterLink> */}
         </FooterLinkColumn>
       </FooterContentRow>
 

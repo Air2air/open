@@ -47,9 +47,9 @@ export const HeaderDesktop = () => {
           </LogoWrapper>
         </HeaderLeft>
         <HeaderRight>
-          <HeaderLink to="/whatwedo">What we do</HeaderLink>
-          <HeaderLink to="/markets">Markets</HeaderLink>
-          <HeaderLink to="/vision">Vision</HeaderLink>
+          <HeaderLink to="/getinvolved">Get Involved</HeaderLink>
+          <HeaderLink to="/research">Research</HeaderLink>
+          <HeaderLink to="/education">Education</HeaderLink>
           <HeaderLink to="/about">About</HeaderLink>
           <HeaderLink to="/contact">Contact</HeaderLink>
         </HeaderRight>

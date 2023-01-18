@@ -37,7 +37,7 @@ export interface ICalloutImageProps {
   buttonColor?: number|string;
 }
 
-export interface IBannerMarketsProps {
+export interface IBannerResearchProps {
   data: Array<string>;
   randomHeight: boolean;
   color: string;

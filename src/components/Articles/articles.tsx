@@ -6,7 +6,7 @@ import {
 } from "./articleComponents";
 import {
   CardRow,
-  CardContentWrapper,
+  CardWrapper,
   CardBackground,
   CardTextSection,
   CardTextBlock,
@@ -20,16 +20,15 @@ import { TitleCallout } from "components/Title/titleCallout";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import ArticleImage from "./ArticleImage/articleImage";
 
-
 export const Articles = (props) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   function showActiveTab(activeTab: number) {
-    const cardContent = document.getElementsByClassName("cardContent");
-    for (let i = 0; i < cardContent.length; i++) {
-      cardContent[i].classList.remove("active");
+    const articleContent = document.getElementsByClassName("articleContent");
+    for (let i = 0; i < articleContent.length; i++) {
+      articleContent[i].classList.remove("active");
     }
-    cardContent[activeTab].classList.add("active");
+    articleContent[activeTab].classList.add("active");
   }
 
   const textParsed = parse(props.data[selectedIndex].text);
@@ -40,7 +39,7 @@ export const Articles = (props) => {
         <CardPositioner>
           <CardRow>
             {props.data.map((card, index) => (
-              <CardContentWrapper
+              <CardWrapper
                 key={index}
                 className={`card ${index === selectedIndex ? "active" : ""}`}
                 onClick={() => {
@@ -58,14 +57,14 @@ export const Articles = (props) => {
                     <CardText>{card.title}</CardText>
                   </CardTextBlock>
                 </CardTextSection>
-              </CardContentWrapper>
+              </CardWrapper>
             ))}
           </CardRow>
         </CardPositioner>
       </Container>
 
       <ArticleBodyContainer
-        className="cardContent"
+        className="articleContent"
         style={{ background: props.backgroundColor }}
       >
         <ArticleInner>

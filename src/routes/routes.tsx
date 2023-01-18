@@ -1,13 +1,13 @@
 import { lazy } from "react";
 const AboutPage = lazy(() => import("pages/About"));
 const ArticlesPage = lazy(() => import("pages/Articles"));
-const CaseStudiesPage = lazy(() => import("pages/CaseStudies"));
+const PolicyPage = lazy(() => import("pages/Policy"));
 const ContactPage = lazy(() => import("pages/Contact"));
-const HistoryPage = lazy(() => import("pages/History"));
+const CharterPage = lazy(() => import("pages/Charter"));
 const HomePage = lazy(() => import("pages/Home"));
-const MarketsPage = lazy(() => import("pages/Markets"));
-const WhatWeDoPage = lazy(() => import("pages/WhatWeDo"));
-const VisionPage = lazy(() => import("pages/Vision"));
+const ResearchPage = lazy(() => import("pages/Research"));
+const GetInvolvedPage = lazy(() => import("pages/GetInvolved"));
+const EducationPage = lazy(() => import("pages/Education"));
 
 export const dataRoutes = [
   {
@@ -23,10 +23,10 @@ export const dataRoutes = [
     element: <ArticlesPage />,
   },
   {
-    id: "CaseStudies",
-    path: "casestudies",
+    id: "Policy",
+    path: "policy",
     section: "Case Studies",
-    element: <CaseStudiesPage />,
+    element: <PolicyPage />,
   },
   {
     id: "Contact",
@@ -36,10 +36,10 @@ export const dataRoutes = [
   },
 
   {
-    id: "History",
-    path: "history",
-    section: "History",
-    element: <HistoryPage />,
+    id: "Charter",
+    path: "charter",
+    section: "Charter",
+    element: <CharterPage />,
   },
   {
     id: "Home",
@@ -54,22 +54,22 @@ export const dataRoutes = [
     element: <HomePage />,
   },
   {
-    id: "Markets",
-    path: "markets",
-    section: "Markets",
-    element: <MarketsPage />,
+    id: "Research",
+    path: "research",
+    section: "Research",
+    element: <ResearchPage />,
 
   },
   {
-    id: "WhatWeDo",
-    path: "whatwedo",
-    section: "WhatWeDo",
-    element: <WhatWeDoPage />,
+    id: "GetInvolved",
+    path: "getinvolved",
+    section: "GetInvolved",
+    element: <GetInvolvedPage />,
   },
   {
-    id: "Vision",
-    path: "vision",
-    section: "Vision",
-    element: <VisionPage />,
+    id: "Education",
+    path: "education",
+    section: "Education",
+    element: <EducationPage />,
   },
 ];
