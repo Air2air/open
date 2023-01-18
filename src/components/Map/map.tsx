@@ -3,7 +3,7 @@ import Container from "components/Container/container";
 import { TitleCallout } from "components/Title/titleCallout";
 import MapImage from "images/world_map.svg";
 import { dataMap } from "./dataMap";
-import { BREAKPOINT, COLOR_RED } from "styles/Constants";
+import { BREAKPOINT, COLOR_LINK } from "styles/Constants";
 import { Key } from "react";
 import { SVGContainer, MapImageDiv, Tooltip, MapInner } from "./mapComponents";
 
@@ -86,7 +86,7 @@ const MapPin = styled.div.attrs((props: { animationTime: string }) => props)`
     border-radius: 50%;
     background: transparent;
     box-sizing: border-box;
-    border: ${COLOR_RED} 2px solid;
+    border: ${COLOR_LINK} 2px solid;
   }
   &:before {
     animation: smallPulse ${(props) => props.animationTime} ease-out infinite;

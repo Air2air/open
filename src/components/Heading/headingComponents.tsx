@@ -1,14 +1,11 @@
 import {
   BREAKPOINT,
-  COLOR_TEXT,
-  COLOR_WHITE,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
+  FONT_BANNER_HEADING_DESKTOP,
+  FONT_BANNER_HEADING_MOBILE,
   FONT_BANNER_SUBHEAD_DESKTOP,
   FONT_BANNER_SUBHEAD_MOBILE,
-  FONT_HEADING_DESKTOP,
-  FONT_HEADING_MOBILE,
-  TEXT_OPACITY,
 } from "styles/Constants";
 import styled from "styled-components";
 import {
@@ -20,7 +17,6 @@ export const HeadingContainer = styled.div`
   position: absolute;
   margin: 0 auto;
   top: 0;
-
   @media (min-width: ${BREAKPOINT}px) {
     height: ${BANNER_HEIGHT_DESKTOP}px;
     width: 100%;
@@ -48,14 +44,12 @@ export const TitleContainer = styled.div`
   /* background: green; */
 `;
 
-export const TitleText = styled.h1`
-  color: ${COLOR_WHITE};
-  text-shadow: 0 0 4px #000;
+export const TitleText = styled.div`
   @media (min-width: ${BREAKPOINT}px) {
-    ${FONT_HEADING_DESKTOP}
+    ${FONT_BANNER_HEADING_DESKTOP}
   }
   @media (max-width: ${BREAKPOINT}px) {
-    ${FONT_HEADING_MOBILE}
+    ${FONT_BANNER_HEADING_MOBILE}
   }
 `;
 
@@ -76,11 +70,8 @@ export const SubheadContainer = styled.div`
 `;
 
 export const SubheadText = styled.div`
-  color: ${COLOR_TEXT};
   height: auto;
   text-align: left;
-  opacity: ${TEXT_OPACITY};
-  text-shadow: 0 0 4px #000;
   /* background: red; */
   @media (min-width: ${BREAKPOINT}px) {
     ${FONT_BANNER_SUBHEAD_DESKTOP}

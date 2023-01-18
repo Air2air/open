@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import "./keyframes.scss";
-import { BREAKPOINT, COLOR_RED } from "styles/Constants";
+import { BREAKPOINT} from "styles/Constants";
 import ReactTooltip from "react-tooltip";
 
 const MAP_SECTION_HEIGHT_DESKTOP = 400;
@@ -43,7 +43,7 @@ export const SVGContainer = styled.div`
   @media (max-width: ${BREAKPOINT}px) {
     height: ${MAP_HEIGHT_MOBILE}px;
   }
-  /* background: ${COLOR_RED}; */
+
 `;
 
 export const MapImageDiv = styled.div`

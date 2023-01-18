@@ -17,11 +17,11 @@ export const RowButton = (props: {
       <Container backgroundColor={props.backgroundColor}>
         <ButtonPositioner>
           <Link to={props.buttonTo}>
-            <ButtonDesktop buttonColor={props.buttonColor}>
+            <ButtonDesktop>
               <span>{props.buttonText} </span>
               <FontAwesomeIcon icon={faChevronRight} size="xs" />
             </ButtonDesktop>
-            <ButtonMobile buttonColor={props.buttonColor}>
+            <ButtonMobile>
               <span>{props.buttonText}</span>
               <FontAwesomeIcon icon={faChevronRight} size="xs" />
             </ButtonMobile>

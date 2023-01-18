@@ -1,8 +1,13 @@
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { COLOR_RED, COLOR_RED_HOVER, COLOR_BASE_LIGHT } from "styles/Colors";
-import { BREAKPOINT, CONTENT_WIDTH_DESKTOP } from "styles/Constants";
+import {
+  BREAKPOINT,
+  COLOR_BASE,
+  COLOR_LINK_REVERSE,
+  COLOR_LINK_REVERSE_HOVER,
+  CONTENT_WIDTH_DESKTOP,
+} from "styles/Constants";
 import { FONT_CAPTION_DESKTOP, FONT_CAPTION_MOBILE } from "styles/Text";
 
 // Footer
@@ -84,10 +89,10 @@ export const FooterLinkColumn = styled.div`
 `;
 
 export const FooterLink = styled(Link)`
-  color: ${COLOR_RED};
+  color: ${COLOR_LINK_REVERSE};
   transition: all 200ms;
   &:hover {
-    color: ${COLOR_RED_HOVER};
+    color: ${COLOR_LINK_REVERSE_HOVER};
   }
   @media (min-width: ${BREAKPOINT}px) {
     ${FONT_CAPTION_DESKTOP}
@@ -104,12 +109,12 @@ export const FooterLink = styled(Link)`
 export const FooterCopyright = styled.div`
   z-index: +1;
   font-size: 0.9em;
-  color: ${COLOR_BASE_LIGHT};
+  color: ${COLOR_BASE};
   display: flex;
   align-items: center;
   text-align: center;
   div {
-    color: ${COLOR_BASE_LIGHT};
+    color: ${COLOR_BASE};
   }
   @media (min-width: ${BREAKPOINT}px) {
     height: ${FOOTER_COPYRIGHT_HEIGHT_DESKTOP}px;

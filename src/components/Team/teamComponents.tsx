@@ -2,8 +2,8 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 import styled from "styled-components";
 import {
   BREAKPOINT,
-  COLOR_BASE_LIGHT,
-  COLOR_BASE_TEXT,
+  COLOR_BASE,
+  COLOR_TEXT,
   FONT_CONDENSED_DESKTOP,
   FONT_CONDENSED_MOBILE,
 } from "styles/Constants";
@@ -70,13 +70,13 @@ export const ImageWrapper = styled.div`
   width: ${TEAM_MEMBER_PHOTO}px;
   height: ${TEAM_MEMBER_PHOTO}px;
   background-size: cover;
-  background-color: ${COLOR_BASE_LIGHT};
+  background-color: ${COLOR_BASE};
   filter: grayscale(100%);
 `;
 
 export const TeamMemberName = styled.div`
   padding: 12px 0;
-  color: ${COLOR_BASE_TEXT};
+  color: ${COLOR_TEXT};
   display: flex;
   align-items: center;
 

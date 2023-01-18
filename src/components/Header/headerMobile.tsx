@@ -2,18 +2,18 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import LogoWhite from "images/logo_text_white.svg";
 import {
+  COLOR_HEADER,
+  COLOR_HEADER_HOVER,
+  COLOR_LINK_REVERSE,
+  COLOR_LINK_REVERSE_HOVER,
   COLOR_TEXT,
+  COLOR_TEXT_REVERSE,
   FONT_CAPTION_MOBILE,
 } from "styles/Constants";
-import {
-  HEADER_HEIGHT_MOBILE,
-  HEADER_COLOR,
-  HEADER_COLOR_HOVER,
-} from "./headerCSS";
+
+export const HEADER_HEIGHT_MOBILE = 120;
 
 export const HeaderMobile = () => {
-
-
   return (
     <>
       <HeaderContainer>
@@ -29,7 +29,7 @@ export const HeaderMobile = () => {
         <HeaderBottom>
           <HeaderLink to="/getinvolved">Work</HeaderLink>
           <HeaderLink to="/research">Research</HeaderLink>
-          <HeaderLink to="/education">Education</HeaderLink>
+          <HeaderLink to="/policy">Policy</HeaderLink>
           <HeaderLink to="/about">About</HeaderLink>
           <HeaderLink to="/contact">Contact</HeaderLink>
         </HeaderBottom>
@@ -61,7 +61,7 @@ const HeaderTop = styled.div`
   width: 100vw;
   padding: 0;
   height: ${headerTopHeightPx};
-  background: ${HEADER_COLOR};
+  background: ${COLOR_HEADER};
 `;
 
 const LogoWrapper = styled.div`
@@ -93,15 +93,16 @@ const HeaderBottom = styled.div`
 const HeaderLink = styled(Link)`
   ${FONT_CAPTION_MOBILE};
   flex-wrap: nowrap;
-  color: ${COLOR_TEXT};
+  color: ${COLOR_LINK_REVERSE};
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   height: ${headerButtonHeightPx};
-  background: ${HEADER_COLOR};
+  background: ${COLOR_HEADER};
   transition: all 300ms;
   &:hover {
-    background: ${HEADER_COLOR_HOVER};
+    color: ${COLOR_LINK_REVERSE_HOVER};
+    background: ${COLOR_HEADER_HOVER};
   }
 `;

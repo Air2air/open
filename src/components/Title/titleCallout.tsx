@@ -1,6 +1,5 @@
 import {
   BREAKPOINT,
-  COLOR_WHITE,
   FONT_SUBHEAD_DESKTOP,
   FONT_SUBHEAD_MOBILE,
 } from "styles/Constants";
@@ -26,8 +25,6 @@ const TitleContainer = styled.div`
 `;
 
 const TitleStyled = styled.h3<TitleProps>`
-  color: ${(props) =>
-    props.color === "" || !props.color ? COLOR_WHITE : props.color};
   @media (min-width: ${BREAKPOINT}px) {
     ${FONT_SUBHEAD_DESKTOP}
   }

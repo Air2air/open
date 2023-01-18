@@ -20,7 +20,7 @@ export const Spacer = (props: SpacerProps) => {
         <SpacerDiv
           style={{
             height: props.height,
-            background: assignBackgroundColor(1),
+            background: assignBackgroundColor(0),
           }}
         />
       )}

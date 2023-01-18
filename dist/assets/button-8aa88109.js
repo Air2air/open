@@ -1,0 +1,1 @@
+import{j as r,F as e}from"./index-b394176e.js";import{c as n}from"./heading-49ecc3d1.js";const c=t=>r(e,{children:r("a",{href:t.to,children:r(n,{children:r("span",{children:t.text})})})});export{c as B};

@@ -1,15 +1,15 @@
 import RowButton from "components/Button/rowButton";
-import BannerVideo from "components/Banner/bannerVideo";
 import Spacer from "components/Spacer/spacer";
 import CalloutList from "components/Callout/callOutList";
 import Heading from "components/Heading/heading";
+import { BannerImage } from "components/Banner/Image/bannerImage";
 
 const ResearchPage = () => {
   return (
     <>
-      <BannerVideo
-        pageVideo={784844948}
-        overlayOpacity={0.4}
+      <BannerImage
+        pageImage="banner_3.webp"
+        overlayOpacity={0.7}
         overlayColor={1}
       />
       <Heading jsonFile="/data/researchHeading.json" />

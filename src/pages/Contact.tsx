@@ -1,13 +1,13 @@
-import BannerVideo from "components/Banner/bannerVideo";
+import { BannerImage } from "components/Banner/Image/bannerImage";
 import ContactList from "components/Contact/contact";
 import Heading from "components/Heading/heading";
 
 const ContactPage = () => {
   return (
     <>
-      <BannerVideo
-        pageVideo={769227014}
-        overlayOpacity={0.1}
+      <BannerImage
+        pageImage="banner_3.webp"
+        overlayOpacity={0.7}
         overlayColor={1}
       />
       <Heading jsonFile="/data/contactHeading.json" />

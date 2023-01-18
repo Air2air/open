@@ -34,7 +34,7 @@ export const FooterMobile = (props: IFooterProps) => {
           <FooterLink to="/research">Research</FooterLink>
         </FooterLinkColumn>
         <FooterLinkColumn>
-          <FooterLink to="/policy">Case Studies</FooterLink>
+          <FooterLink to="/policy">Policy</FooterLink>
           <FooterLink to="/education">Education</FooterLink>
           <FooterLink to="/charter">Charter</FooterLink>
         </FooterLinkColumn>
@@ -46,7 +46,7 @@ export const FooterMobile = (props: IFooterProps) => {
       </FooterContentRow>
 
       <FooterCopyright>
-        <div>&copy; Eleven of Ten LLP</div>
+        <div>&copy; Open of Ten LLP</div>
 
         <FooterLogoWrapper>
           <LogoWhite />

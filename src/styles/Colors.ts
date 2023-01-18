@@ -1,43 +1,36 @@
+const BASEHUE = 21;
+export const COLOR_BASE = `hsl(${BASEHUE}, 100%, 50%)`;
+export const COLOR_BLACK = `hsl(0, 0%, 0%)`;
+export const COLOR_WHITE = `hsl(${BASEHUE}, 70%, 97%)`;
 
-// Colors
-export const COLOR_BIO = "#ff9a0e";
-export const COLOR_HEALTH = "#39b3a5";
-export const COLOR_MED = "#bf3e16";
-export const COLOR_PHARMA = "#5278a3";
-export const COLOR_ELEVENS = "#4371a0";
+// SITEs
+export const COLOR_BACKGROUND = `hsl(${BASEHUE}, 100%, 90%)`;
+export const COLOR_HEADER = `hsl(${BASEHUE},100%, 50%)`;
+export const COLOR_HEADER_HOVER = `hsl(${BASEHUE},100%, 70%)`;
+export const COLOR_FOOTER = `hsl(${BASEHUE},100%, 50%)`;
 
-export const COLOR_TEXT = "#FFF";
-export const COLOR_CAPTION = "hsl(0, 0%, 70%)";
-export const COLOR_RED = "hsl(0, 80%, 50%)";
-export const COLOR_RED_HOVER = "hsl(0, 10%, 70%)";
-export const TEXT_OPACITY = 0.8;
+// BUTTONS
+export const COLOR_BUTTON_TEXT = COLOR_WHITE;
+export const COLOR_BUTTON = `hsl(${BASEHUE}, 100%, 50%)`;
+export const COLOR_BUTTON_HOVER = `hsl(${BASEHUE}, 100%, 70%)`;
 
-// Themes
-export const COLOR_BLACK = "hsl(0, 0%, 0%)";
-export const COLOR_BASE = "hsl(0, 0%, 11%)";
-export const COLOR_BASE_1 = "hsl(0, 0%, 13%)";
-export const COLOR_BASE_2 = "hsl(0, 0%, 15%)";
-export const COLOR_BASE_3 = "hsl(0, 0%, 17%)";
-export const COLOR_BASE_4 = "hsl(0, 0%, 19%)";
-export const COLOR_BASE_5 = "hsl(0, 0%, 21%)";
-export const COLOR_BASE_6 = "hsl(0, 0%, 23%)";
-export const COLOR_BASE_LIGHT = "hsl(0, 0%, 53%)";
-export const COLOR_BASE_TEXT = "hsl(0, 80%, 50%)";
+// TEXT
 
-export const COLOR_BLUE = "hsl(213, 64%, 11%)";
-export const COLOR_BLUE_1 = "hsl(213, 64%, 13%)";
-export const COLOR_BLUE_2 = "hsl(213, 64%, 15%)";
-export const COLOR_BLUE_TEXT = "hsl(213, 64%, 80%)";
+export const COLOR_TEXT = `hsl(${BASEHUE},20%, 40%)`;
+export const COLOR_TEXT_REVERSE = `hsl(${BASEHUE},20%, 90%)`;
+export const COLOR_CAPTION = `hsl(${BASEHUE},0%, 70%)`;
 
-export const COLOR_GREEN = "hsl(174, 64%, 11%)";
-export const COLOR_GREEN_1 = "hsl(174, 64%, 13%)";
-export const COLOR_GREEN_2 = "hsl(174, 64%, 15%)";
-export const COLOR_GREEN_TEXT = "hsl(174, 64%, 80%)";
+export const COLOR_LINK = `hsl(${BASEHUE}, 100%, 50%)`;
+export const COLOR_LINK_HOVER = `hsl(${BASEHUE}, 100%, 50%)`;
+export const COLOR_LINK_REVERSE = `hsl(${BASEHUE}, 100%, 90%)`;
+export const COLOR_LINK_REVERSE_HOVER = `hsl(${BASEHUE}, 100%, 100%)`;
 
-export const COLOR_RED_1 = "hsl(0, 79%, 10%)";
-export const COLOR_RED_2 = "hsl(0, 79%, 12%)";
-export const COLOR_RED_TEXT = "hsl(35, 100%, 80%)";
+export const COLOR_HEADING = `hsl(${BASEHUE}, 100%, 50%)`;
+export const COLOR_SUBHEAD = `hsl(${BASEHUE}, 100%, 50%)`;
 
-export const COLOR_WHITE = "hsl(0, 0%, 90%)";
+// BACKGROUNDS
 
-export const COLOR_CODE_BACKGROUND = "hsl(211, 40%, 12%)"; 
+export const COLOR_BASE_1 = `hsl(${BASEHUE}, 80%, 85%)`;
+export const COLOR_BASE_2 = `hsl(${BASEHUE}, 80%, 88%)`;
+export const COLOR_BASE_3 = `hsl(${BASEHUE}, 100%, 80%)`;
+export const COLOR_BASE_4 = `hsl(${BASEHUE}, 100%, 50%)`;

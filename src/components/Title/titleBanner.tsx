@@ -1,7 +1,6 @@
 
 import {
   BREAKPOINT,
-  COLOR_WHITE,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
   FONT_HEADING_DESKTOP,
@@ -17,7 +16,7 @@ type TitleProps = {
 export const TitleBanner = (props: TitleProps) => {
   return props.title !== "" ? (
     <TitleContainer className="animate__animated animate__fadeInDown animate__delay-0s">
-      <TitleStyled color={props.color}>{props.title}</TitleStyled>
+      <TitleStyled>{props.title}</TitleStyled>
     </TitleContainer>
   ) : null;
 };
@@ -36,10 +35,7 @@ const TitleContainer = styled.div`
   /* background: red; */
 `;
 
-const TitleStyled = styled.h1<TitleProps>`
-  color: ${(props) =>
-    props.color === "" || !props.color ? COLOR_WHITE : props.color};
-  text-shadow: 0 0 4px #000;
+const TitleStyled = styled.div<TitleProps>`
   @media (min-width: ${BREAKPOINT}px) {
     ${FONT_HEADING_DESKTOP}
   }

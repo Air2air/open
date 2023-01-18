@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {
   BREAKPOINT,
-  COLOR_RED,
+  COLOR_LINK,
   COLOR_TEXT,
   FONT_DEFAULT_DESKTOP,
   FONT_DEFAULT_MOBILE,
@@ -65,7 +65,7 @@ export const ContactImageWrapper = styled.div`
 
 export const ContactTitle = styled.h2`
   color: ${(props) =>
-    props.color === "" || !props.color ? COLOR_RED : props.color};
+    props.color === "" || !props.color ? COLOR_LINK : props.color};
   @media (min-width: ${BREAKPOINT}px) {
     ${FONT_SUBHEAD_DESKTOP}
   }

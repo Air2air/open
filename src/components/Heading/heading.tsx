@@ -39,7 +39,7 @@ const Heading = ({ jsonFile }) => {
   }
 
   return (
-    <HeadingContainer key={index}>
+    <HeadingContainer>
       <TitleContainer>
         <TitleText className="animate__animated animate__fadeInDown">
           {data[index].title}

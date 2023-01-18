@@ -1,6 +1,5 @@
 import { lazy } from "react";
 const AboutPage = lazy(() => import("pages/About"));
-const ArticlesPage = lazy(() => import("pages/Articles"));
 const PolicyPage = lazy(() => import("pages/Policy"));
 const ContactPage = lazy(() => import("pages/Contact"));
 const CharterPage = lazy(() => import("pages/Charter"));
@@ -16,16 +15,11 @@ export const dataRoutes = [
     section: "About",
     element: <AboutPage />,
   },
-  {
-    id: "Articles",
-    path: "articles",
-    section: "Articles",
-    element: <ArticlesPage />,
-  },
+
   {
     id: "Policy",
     path: "policy",
-    section: "Case Studies",
+    section: "Policy",
     element: <PolicyPage />,
   },
   {

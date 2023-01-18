@@ -5,34 +5,31 @@ export const BUTTON_WIDTH_DESKTOP = "200px";
 const buttonWidthDesktop = "250px";
 const buttonWidthMobile = "100%";
 
-export const BUTTON_TEXT_COLOR = "hsl(0, 0%, 90%)";
-export const BUTTON_COLOR = "hsl(0, 86%, 36%)";
-export const BUTTON_COLOR_HOVER = "hsl(0, 86%, 46%)";
-export const BUTTON_COLOR_GRAY = "rgba(0, 0, 0, 0.4)";
-export const BUTTON_COLOR_HOVER_GRAY = "rgba(50, 50, 50, 0.4)";
 
 
 import styled from "styled-components";
 import {
   BREAKPOINT,
+  COLOR_BUTTON,
+  COLOR_BUTTON_HOVER,
+  COLOR_BUTTON_TEXT,
   FONT_BUTTON_DESKTOP,
   FONT_BUTTON_MOBILE,
   FONT_CONDENSED_DESKTOP,
 } from "styles/Constants";
 
-
 export const ButtonWrapper = styled.div`
   ${FONT_CONDENSED_DESKTOP};
-  color: ${BUTTON_TEXT_COLOR};
+  color: ${COLOR_BUTTON_TEXT};
   padding: 0 16px;
   display: inline-flex;
   align-items: center;
   height: ${BUTTON_HEIGHT}px;
   transition: all 300ms;
   text-transform: uppercase;
-  background: ${BUTTON_COLOR};
+  background: ${COLOR_BUTTON};
   &:hover {
-    background: ${BUTTON_COLOR_HOVER};
+    background: ${COLOR_BUTTON_HOVER};
   }
   span {
     margin-left: 8px;
@@ -42,10 +39,10 @@ export const ButtonWrapper = styled.div`
   }
 `;
 
-export const ButtonDesktop = styled.div<{ buttonColor?: string }>`
+export const ButtonDesktop = styled.div`
   ${FONT_BUTTON_DESKTOP};
   height: ${BUTTON_HEIGHT}px;
-  color: ${BUTTON_TEXT_COLOR};
+  color: ${COLOR_BUTTON_TEXT};
   align-items: center;
   justify-content: center;
   transition: all 300ms;
@@ -53,13 +50,9 @@ export const ButtonDesktop = styled.div<{ buttonColor?: string }>`
   span {
     margin-right: 10px;
   }
-  background: ${(props: { buttonColor?: string }) =>
-    props.buttonColor === "gray" ? BUTTON_COLOR_GRAY : BUTTON_COLOR};
+  background: ${COLOR_BUTTON};
   &:hover {
-    background: ${(props: { buttonColor?: string }) =>
-      props.buttonColor === "gray"
-        ? BUTTON_COLOR_HOVER_GRAY
-        : BUTTON_COLOR_HOVER};
+    background: ${COLOR_BUTTON_HOVER};
   }
   min-width: ${buttonWidthDesktop};
   @media (min-width: ${BREAKPOINT}px) {
@@ -73,7 +66,7 @@ export const ButtonDesktop = styled.div<{ buttonColor?: string }>`
 export const ButtonMobile = styled.div`
   ${FONT_BUTTON_MOBILE};
   height: ${BUTTON_HEIGHT}px;
-  color: ${BUTTON_TEXT_COLOR};
+  color: ${COLOR_BUTTON_TEXT};
   align-items: center;
   justify-content: center;
   transition: all 300ms;
@@ -82,13 +75,9 @@ export const ButtonMobile = styled.div`
   span {
     margin-right: 10px;
   }
-  background: ${(props: { buttonColor?: string }) =>
-    props.buttonColor === "gray" ? BUTTON_COLOR_GRAY : BUTTON_COLOR};
+  background: ${COLOR_BUTTON};
   &:hover {
-    background: ${(props: { buttonColor?: string }) =>
-      props.buttonColor === "gray"
-        ? BUTTON_COLOR_HOVER_GRAY
-        : BUTTON_COLOR_HOVER};
+    background: ${COLOR_BUTTON_HOVER};
   }
   @media (min-width: ${BREAKPOINT}px) {
     display: none;

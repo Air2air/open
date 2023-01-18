@@ -1,14 +1,19 @@
-import BannerVideo from "components/Banner/bannerVideo";
+
 import Map from "components/Map/map";
 import { RowButton } from "components/Button/rowButton";
 import Spacer from "components/Spacer/spacer";
 import TeamList from "components/Team/team";
 import Heading from "components/Heading/heading";
+import { BannerImage } from "components/Banner/Image/bannerImage";
 
 const AboutPage = () => {
   return (
     <>
-      <BannerVideo pageVideo={776449715} overlayOpacity={0.7} />
+      <BannerImage
+        pageImage="banner_3.webp"
+        overlayOpacity={0.7}
+        overlayColor={1}
+      />
       <Heading jsonFile="/data/aboutHeading.json" />
       <Map title="Open Worldwide" backgroundColor={2} />
       <TeamList jsonFile="/data/teamContent.json" />
