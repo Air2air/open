@@ -2,13 +2,13 @@
   {
     "id": 1,
     "order": 4,
-    "nameLast": "Dunning",
-    "nameFirst": "Todd",
+    "nameLast": "Kleck",
+    "nameFirst": "Capybara",
     "category": "Advisor",
     "role": "Advisor",
     "text": "Description here. Description here. Description here. Description here.  Description here. Description here.",
     "showPhoto": true,
-    "photo": "dunning.webp"
+    "photo": "cappy.webp"
   },
   {
     "id": 3,

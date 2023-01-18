@@ -1,8 +1,13 @@
-import Container from "components/Container/container";
-import { TitleCallout } from "components/Title/titleCallout";
+import { TitleCallout } from "components/Callout/titleCallout";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import { CallOutInner, CalloutParagraph } from "./calloutComponents";
+
 import parse from "html-react-parser";
+import {
+  CalloutContainerInner,
+  CalloutContainerOuter,
+  CalloutParagraph,
+} from "./calloutComponents";
+import { assignCalloutColor } from "utils/assignCalloutColor";
 
 const Callout = (props) => {
   const textParsed = props.text
@@ -11,14 +16,16 @@ const Callout = (props) => {
 
   return (
     <>
-      <Container {...props}>
-        <CallOutInner>
+      <CalloutContainerOuter style={{
+          backgroundColor: assignCalloutColor(props.backgroundColor),
+        }}>
+        <CalloutContainerInner>
           <TitleCallout title={props.title} />
           <AnimationOnScroll animateIn="animate__fadeIn" delay={0} offset={60}>
             <CalloutParagraph>{textParsed}</CalloutParagraph>
           </AnimationOnScroll>
-        </CallOutInner>
-      </Container>
+        </CalloutContainerInner>
+      </CalloutContainerOuter>
     </>
   );
 };

@@ -5,7 +5,7 @@ const ContactPage = lazy(() => import("pages/Contact"));
 const CharterPage = lazy(() => import("pages/Charter"));
 const HomePage = lazy(() => import("pages/Home"));
 const ResearchPage = lazy(() => import("pages/Research"));
-const GetInvolvedPage = lazy(() => import("pages/GetInvolved"));
+const ConnectPage = lazy(() => import("pages/Connect"));
 const EducationPage = lazy(() => import("pages/Education"));
 
 export const dataRoutes = [
@@ -55,10 +55,10 @@ export const dataRoutes = [
 
   },
   {
-    id: "GetInvolved",
-    path: "getinvolved",
-    section: "GetInvolved",
-    element: <GetInvolvedPage />,
+    id: "Connect",
+    path: "connect",
+    section: "Connect",
+    element: <ConnectPage />,
   },
   {
     id: "Education",

@@ -2,7 +2,7 @@
 import Button from "components/Button/button";
 import { CalloutSkeleton } from "components/Callout/calloutComponents";
 import Container from "components/Container/container";
-import { TitleCallout } from "components/Title/titleCallout";
+import { TitleCallout } from "components/Callout/titleCallout";
 import { FetchData } from "fetch/fetch";
 import {
   PaddingSection,

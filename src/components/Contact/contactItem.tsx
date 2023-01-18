@@ -1,8 +1,9 @@
 import Button from "components/Button/button";
-import Container from "components/Container/container";
+
 import Spacer from "components/Spacer/spacer";
+import { assignCalloutColor } from "utils/assignCalloutColor";
 import {
-  ContactItemWrapper,
+  ContactItemContainer,
   ContactContent,
   ContactTitle,
   ContactItemDesc,
@@ -10,40 +11,38 @@ import {
   ContactImageWrapper,
 } from "./contactComponents";
 
-const ContactItem = (props, index) => {
-
+const ContactItem = (props) => {
   const backgroundImageString = (photo) => "url(/images/content/" + photo + ")";
 
   return (
     <>
-            <Container key={index} backgroundColor={props.backgroundColor}>
-              <ContactItemWrapper>
-                <ContactContent>
-                  <ContactTitle>{props.shortName}</ContactTitle>
-                  <ContactItemDesc>{props.address}</ContactItemDesc>
-                  <Spacer height={15} backgroundColor={props.backgroundColor} />
-                  <Button
-                    to="https://www.linkedin.com/company/eleven-health"
-                    text="LinkedIn"
-                  />
-                  <Spacer height={15} backgroundColor={props.backgroundColor} />
-                  <ContactItemLink href={`mailto:${props.email}`}>
-                    {props.email}
-                  </ContactItemLink>
-                </ContactContent>
-                <ContactImageWrapper
-                  className="bgImage"
-                  style={{
-                    backgroundImage: backgroundImageString(props.photo),
-                  }}
-                />
-              </ContactItemWrapper>
-            </Container>
-          </> 
+      <ContactItemContainer
+        style={{
+          backgroundColor: assignCalloutColor(props.backgroundColor),
+        }}
+      >
+        <ContactContent>
+          <ContactTitle>{props.shortName}</ContactTitle>
+          <ContactItemDesc>{props.address}</ContactItemDesc>
+          <Spacer height={15} backgroundColor={props.backgroundColor} />
+          <Button
+            to="https://www.linkedin.com/company/eleven-health"
+            text="LinkedIn"
+          />
+          <Spacer height={15} backgroundColor={props.backgroundColor} />
+          <ContactItemLink href={`mailto:${props.email}`}>
+            {props.email}
+          </ContactItemLink>
+        </ContactContent>
+        <ContactImageWrapper
+          className="bgImage"
+          style={{
+            backgroundImage: backgroundImageString(props.photo),
+          }}
+        />
+      </ContactItemContainer>
+    </>
   );
 };
 
-export default ContactItem
-
-
-
+export default ContactItem;

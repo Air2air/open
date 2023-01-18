@@ -13,9 +13,9 @@ const HomePage = () => {
         overlayColor={1}
       />
       <Heading jsonFile="/data/homeHeading.json" />
-      <RowButton buttonTo="/getinvolved" buttonText="Get Involved" />
+      <RowButton buttonTo="/connect" buttonText="Connect" />
       <CalloutList jsonFile="/data/homeContent.json" />
-      <RowButton buttonTo="/getinvolved" buttonText="Get Involved" />
+      <RowButton buttonTo="/connect" buttonText="Connect" />
       {/* <OrgsCallout jsonFile="/data/orgsContent.json" /> */}
     </>
   );

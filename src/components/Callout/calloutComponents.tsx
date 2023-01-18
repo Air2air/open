@@ -9,6 +9,27 @@ import {
 import styled from "styled-components";
 import Container from "components/Container/container";
 
+export const CalloutContainerOuter = styled.div`
+  height: 100%;
+  width: 100%;
+  /* background-color: gold; */
+`;
+
+export const CalloutContainerInner = styled.div`
+  margin: 0 auto;
+  height: auto;
+  min-height:200px;
+  padding:40px 0;
+  @media (min-width: ${BREAKPOINT}px) {
+    width: ${CONTENT_WIDTH_DESKTOP};
+  }
+  @media (max-width: ${BREAKPOINT}px) {
+    width: ${CONTENT_WIDTH_MOBILE};
+  }
+  /* background: red; */
+`;
+
+
 export const CallOutInner = styled.div`
   margin: 0 auto;
   z-index: +1;

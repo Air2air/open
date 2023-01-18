@@ -3,6 +3,8 @@ import {
   BREAKPOINT,
   COLOR_LINK,
   COLOR_TEXT,
+  CONTENT_WIDTH_DESKTOP,
+  CONTENT_WIDTH_MOBILE,
   FONT_DEFAULT_DESKTOP,
   FONT_DEFAULT_MOBILE,
   FONT_SUBHEAD_DESKTOP,
@@ -11,7 +13,7 @@ import {
 
 export const CONTACT_ITEM_HEIGHT = 250;
 
-export const ContactItemWrapper = styled.div`
+export const ContactItemContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -35,6 +37,24 @@ export const ContactItemWrapper = styled.div`
   }
   /* background: gold; */
 `;
+
+
+
+export const ContactContainerInner = styled.div`
+  margin: 0 auto;
+  height: auto;
+  min-height:200px;
+  padding:40px 0;
+  @media (min-width: ${BREAKPOINT}px) {
+    width: ${CONTENT_WIDTH_DESKTOP};
+  }
+  @media (max-width: ${BREAKPOINT}px) {
+    width: ${CONTENT_WIDTH_MOBILE};
+  }
+  /* background: red; */
+`;
+
+
 
 export const ContactContent = styled.div`
   height: ${CONTACT_ITEM_HEIGHT}px;

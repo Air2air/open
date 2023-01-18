@@ -19,7 +19,7 @@ const CalloutList = ({ jsonFile }) => {
           return <Callout {...props} key={index} />;
         })
       ) : (
-        <div style={{ color: "white" }}>Data Fetch error in Page component</div>
+        <div>Data Fetch error in Callout component</div>
       )}
     </>
   );

@@ -45,7 +45,7 @@ export const FooterDesktop = (props: IFooterProps) => {
           <FooterColumn style={{ width: "60%" }}>
             <FooterLinkColumn>
               <FooterLink to="/">Home</FooterLink>
-              <FooterLink to="/getinvolved">Get Involved</FooterLink>
+              <FooterLink to="/connect">Connect</FooterLink>
               <FooterLink to="/research">Research</FooterLink>
             </FooterLinkColumn>
             <FooterLinkColumn>

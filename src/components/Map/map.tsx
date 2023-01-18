@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Container from "components/Container/container";
-import { TitleCallout } from "components/Title/titleCallout";
+import { TitleCallout } from "components/Callout/titleCallout";
 import MapImage from "images/world_map.svg";
 import { dataMap } from "./dataMap";
 import { BREAKPOINT, COLOR_LINK } from "styles/Constants";

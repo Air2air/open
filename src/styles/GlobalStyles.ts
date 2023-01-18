@@ -1,7 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import {
   BREAKPOINT,
-  COLOR_BASE_2,
   COLOR_WHITE,
   FONT_SECONDARY_DESKTOP,
   FONT_DEFAULT_DESKTOP,

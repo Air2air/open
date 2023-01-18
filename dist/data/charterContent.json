@@ -1,26 +1,20 @@
 [
   {
     "id": 1,
-    "title": "Charter",
-    "text": "OPEN is a comprehensive scientific data resource for the study of energy generation and the energy grid. We strive to promote the advancement of sustainable and efficient energy systems through the collection, analysis, and dissemination of accurate and reliable data.",
-    "backgroundColor": "hsl(218, 40%, 64%)"
+    "title": "Introduction to the organization and its mission",
+    "text": "Introduction to the organization and its mission. Introduction to the organization and its mission. Introduction to the organization and its mission. Introduction to the organization and its mission. Introduction to the organization and its mission. Introduction to the organization and its mission. ",
+    "backgroundColor": 1
   },
   {
     "id": 2,
-    "title": "Objectives",
-    "text": "<ul><li>To collect and maintain a database of scientific data related to energy generation and the energy grid.</li><li>To analyze and interpret the data to identify trends, patterns, and opportunities for improvement in energy systems.</li><li>To disseminate the data and analysis to researchers, policymakers, and the general public in a transparent and accessible manner.</li><li>To collaborate with other organizations and experts in the field to further the understanding and development of sustainable energy systems.</li><li>To provide educational resources and opportunities for individuals and organizations to learn about energy generation and the energy grid.</li></ul>",
-    "backgroundColor": "hsl(216, 42%, 52%)"
+    "title": "Summary of the latest research and findings on energy and power generation",
+    "text": "Introduction to the organization and its mission. Introduction to the organization and its mission. Introduction to the organization and its mission. Introduction to the organization and its mission. Introduction to the organization and its mission. Introduction to the organization and its mission. ",
+    "backgroundColor": 2
   },
   {
     "id": 3,
-    "title": "Values",
-    "text": "<ul><li>Integrity: We will conduct ourselves with honesty and transparency in all aspects of our work.</li><li>Reliability: We will strive to provide accurate and reliable data and analysis.</li><li>Inclusivity: We will work to be inclusive and responsive to the needs and perspectives of all stakeholders.</li><li>Collaboration: We will work with others to further the understanding and development of sustainable energy systems.</li></ul>",
-    "backgroundColor": "hsl(216, 44%, 48%)"
-  },
-  {
-    "id": 4,
-    "title": "Operations",
-    "text": "<ul><li>Our organization will be governed by a Board of Directors, who will be responsible for setting policy and providing oversight.</li><li>A small staff will be responsible for the day-to-day operations of the organization, including data collection and analysis, dissemination, and educational outreach.</li><li>We will rely on funding from grants, donations, and partnerships with other organizations to support our operations.</li></ul>",
-    "backgroundColor": "hsl(216, 44%, 48%)"
+    "title": "Links to the main sections of the website",
+    "text": "Introduction to the organization and its mission. Introduction to the organization and its mission. Introduction to the organization and its mission. Introduction to the organization and its mission. Introduction to the organization and its mission. Introduction to the organization and its mission. ",
+    "backgroundColor": 3
   }
 ]
