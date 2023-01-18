@@ -1,14 +1,16 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import LogoWhite from "images/logo_text_white.svg";
-import { COLOR_HEADER, COLOR_HEADER_HOVER, COLOR_LINK_REVERSE, COLOR_LINK_REVERSE_HOVER, COLOR_TEXT, COLOR_TEXT_REVERSE, FONT_CAPTION_DESKTOP } from "styles/Constants";
+import {
+  COLOR_HEADER,
+  COLOR_HEADER_HOVER,
+  COLOR_LINK_REVERSE,
+  COLOR_LINK_REVERSE_HOVER,
+  FONT_CAPTION_DESKTOP,
+} from "styles/Constants";
 import { useState, useEffect } from "react";
 
-
-
 export const HEADER_HEIGHT_DESKTOP = 90;
-
-
 
 export const HeaderDesktop = () => {
   /*------ Scrolling -------*/
@@ -75,7 +77,7 @@ const HeaderOverlay = styled.div`
   z-index: -1;
   position: absolute;
   width: 100%;
-  opacity: .3;
+  opacity: 0.3;
   height: ${HEADER_HEIGHT_DESKTOP}px;
   background: ${COLOR_HEADER};
 `;

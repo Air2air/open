@@ -5,7 +5,6 @@ import { Footer } from "./components/Footer/footer";
 import { Header } from "./components/Header/header";
 import { dataRoutes } from "./routes/routes";
 import { usePageTracking } from "./components/Analytics/gaTracking";
-import { ChartSkeleton } from "components/Chart/chartComponents";
 import { BannerImageWrapper } from "components/Banner/bannerComponents";
 
 const queryClient = new QueryClient();
@@ -16,7 +15,6 @@ const App = () => {
   const LoadingSkeleton = () => (
     <>
       <BannerImageWrapper />
-      <ChartSkeleton />
     </>
   );
 
