@@ -1,7 +1,5 @@
 import {
   BREAKPOINT,
-  COLOR_BASE,
-  COLOR_BLACK,
   COLOR_BUTTON,
   COLOR_BUTTON_HOVER,
   COLOR_CONTRAST,
@@ -12,7 +10,7 @@ import {
   CONTENT_WIDTH_MOBILE,
   FONT_BUTTON_DESKTOP,
   FONT_BUTTON_MOBILE,
-  FONT_SUBHEAD_DESKTOP,
+
 } from "styles/Constants";
 import styled from "styled-components";
 import { Link } from "react-router-dom";

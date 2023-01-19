@@ -39,6 +39,9 @@ export const COLOR_BANNER_SUBHEAD = `hsl(${BASEHUE}, ${SATURATION}%, 100%)`;
 export const COLOR_HEADING = `hsl(${BASEHUE}, ${SATURATION}%, 50%)`;
 export const COLOR_SUBHEAD = `hsl(${BASEHUE}, 40%, 30%)`;
 
+// HEADING BLOCK BACKGROUNDS
+export const COLOR_HEADING_BLOCK_BACKGROUND = "hsla(0, 0%, 0%, 0.7)";
+
 
 
 // CALLOUTS 
