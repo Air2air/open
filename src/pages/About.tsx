@@ -1,9 +1,11 @@
 
 import Map from "components/Map/map";
-import { RowButton } from "components/Button/rowButton";
+import { RowButton } from "components/RowButton/rowButton";
 import TeamList from "components/Team/team";
 import Heading from "components/Heading/heading";
 import { BannerImage } from "components/Banner/Image/bannerImage";
+
+const pageTitle="About Open";
 
 const AboutPage = () => {
   return (
@@ -14,10 +16,10 @@ const AboutPage = () => {
         overlayColor={1}
       />
       <Heading jsonFile="/data/aboutHeading.json" />
-      <RowButton buttonTo="/contact" buttonText="Contact"/>
+      <RowButton currentPage={pageTitle} buttonTo="/contact" buttonText="Contact"/>
       <Map title="Open Worldwide" backgroundColor={2} />
       <TeamList jsonFile="/data/teamContent.json" />
-      <RowButton buttonTo="/contact" buttonText="Contact"/>
+      <RowButton currentPage={pageTitle} buttonTo="/contact" buttonText="Contact"/>
     </>
   );
 };

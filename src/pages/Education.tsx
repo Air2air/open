@@ -1,8 +1,11 @@
 
 import BannerImage from "components/Banner/Image/bannerImage";
-import RowButton from "components/Button/rowButton";
+import RowButton from "components/RowButton/rowButton";
 import CalloutList from "components/Callout/callOutList";
 import Heading from "components/Heading/heading";
+
+const pageTitle="Education and Outreach";
+
 
 const EducationPage = () => {
   return (
@@ -13,9 +16,9 @@ const EducationPage = () => {
         overlayColor={1}
       />
       <Heading jsonFile="/data/educationHeading.json" />
-      <RowButton buttonTo="/charter" buttonText="Charter" />
+      <RowButton currentPage={pageTitle} buttonTo="/charter" buttonText="Charter" />
       <CalloutList jsonFile="/data/educationContent.json" />
-      <RowButton buttonTo="/charter" buttonText="Charter" />
+      <RowButton currentPage={pageTitle} buttonTo="/charter" buttonText="Charter" />
     </>
   );
 };

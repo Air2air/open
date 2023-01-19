@@ -1,7 +1,9 @@
 import { BannerImage } from "components/Banner/Image/bannerImage";
-import RowButton from "components/Button/rowButton";
+import RowButton from "components/RowButton/rowButton";
 import ContactList from "components/Contact/contact";
 import Heading from "components/Heading/heading";
+
+const pageTitle="Contact Open";
 
 const ContactPage = () => {
   return (
@@ -12,9 +14,9 @@ const ContactPage = () => {
         overlayColor={1}
       />
       <Heading jsonFile="/data/contactHeading.json" />
-      <RowButton buttonTo="/home" buttonText="Home"/>
+      <RowButton currentPage={pageTitle} buttonTo="/home" buttonText="Home"/>
       <ContactList jsonFile="/data/contactContent.json"/>
-      <RowButton buttonTo="/home" buttonText="Home"/>
+      <RowButton currentPage={pageTitle} buttonTo="/home" buttonText="Home"/>
     </>
   );
 };

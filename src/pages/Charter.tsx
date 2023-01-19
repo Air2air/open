@@ -1,7 +1,9 @@
-import RowButton from "components/Button/rowButton";
+import RowButton from "components/RowButton/rowButton";
 import Heading from "components/Heading/heading";
 import CalloutList from "components/Callout/callOutList";
 import BannerImage from "components/Banner/Image/bannerImage";
+
+const pageTitle="The Open Charter";
 
 const CharterPage = () => {
   return (
@@ -12,9 +14,9 @@ const CharterPage = () => {
         overlayColor={1}
       />
       <Heading jsonFile="/data/charterHeading.json" />
-      <RowButton buttonTo="/about" buttonText="About" />
+      <RowButton currentPage={pageTitle} buttonTo="/about" buttonText="About" />
       <CalloutList jsonFile="/data/charterContent.json" />
-      <RowButton buttonTo="/about" buttonText="About" />
+      <RowButton currentPage={pageTitle} buttonTo="/about" buttonText="About" />
     </>
   );
 };

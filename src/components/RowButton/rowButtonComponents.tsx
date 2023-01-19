@@ -1,41 +1,27 @@
 import {
   BREAKPOINT,
+  COLOR_BASE,
+  COLOR_BLACK,
   COLOR_BUTTON,
   COLOR_BUTTON_HOVER,
   COLOR_CONTRAST,
+  COLOR_CONTRAST_DARK,
   COLOR_LINK_REVERSE,
   COLOR_LINK_REVERSE_HOVER,
+  CONTENT_WIDTH_DESKTOP,
+  CONTENT_WIDTH_MOBILE,
   FONT_BUTTON_DESKTOP,
   FONT_BUTTON_MOBILE,
+  FONT_SUBHEAD_DESKTOP,
 } from "styles/Constants";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
-
-
 
 const ROW_BUTTON_HEIGHT_DESKTOP = 70;
 const ROW_BUTTON_HEIGHT_MOBILE = 70;
 
-export const RowButton = (props: { buttonTo: string; buttonText: string }) => {
-  return (
-    <>
-      <RowButtonOuter>
-        <RowButtonInner to={props.buttonTo}>
-          <span>{props.buttonText} </span>
-          <FontAwesomeIcon icon={faChevronRight} size="sm" />
-        </RowButtonInner>
-      </RowButtonOuter>
-    </>
-  );
-};
-
-const RowButtonOuter = styled.div`
+export const RowButtonContainer = styled.div`
   width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
   background: ${COLOR_CONTRAST};
   @media (min-width: ${BREAKPOINT}px) {
     height: ${ROW_BUTTON_HEIGHT_DESKTOP}px;
@@ -46,7 +32,45 @@ const RowButtonOuter = styled.div`
   /* background-color: blue; */
 `;
 
-const RowButtonInner = styled(Link)`
+export const RowButtonInner = styled.div`
+  margin: 0 auto;
+  display: flex;
+  /* justify-content: flex-end; */
+
+  @media (min-width: ${BREAKPOINT}px) {
+    height: ${ROW_BUTTON_HEIGHT_DESKTOP}px;
+    width: ${CONTENT_WIDTH_DESKTOP};
+  }
+  @media (max-width: ${BREAKPOINT}px) {
+    height: ${ROW_BUTTON_HEIGHT_MOBILE}px;
+    width: ${CONTENT_WIDTH_MOBILE};
+  }
+  /* background-color: blue; */
+`;
+
+export const RowButtonLeft = styled.div`
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  color: ${COLOR_CONTRAST_DARK};
+  span {
+    margin-left: 10px;
+  }
+  @media (min-width: ${BREAKPOINT}px) {
+    ${FONT_BUTTON_DESKTOP};
+    height: ${ROW_BUTTON_HEIGHT_DESKTOP}px;
+  }
+  @media (max-width: ${BREAKPOINT}px) {
+    ${FONT_BUTTON_MOBILE};
+    height: ${ROW_BUTTON_HEIGHT_MOBILE}px;
+  }
+  /* background: red; */
+`;
+
+export const RowButtonRight = styled(Link)`
   text-transform: uppercase;
   display: flex;
   justify-content: center;
@@ -73,5 +97,3 @@ const RowButtonInner = styled(Link)`
   }
   /* background: red; */
 `;
-
-export default RowButton;

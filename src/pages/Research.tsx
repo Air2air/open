@@ -1,7 +1,9 @@
-import RowButton from "components/Button/rowButton";
+import RowButton from "components/RowButton/rowButton";
 import CalloutList from "components/Callout/callOutList";
 import Heading from "components/Heading/heading";
 import { BannerImage } from "components/Banner/Image/bannerImage";
+
+const pageTitle="Research Programs";
 
 const ResearchPage = () => {
   return (
@@ -13,9 +15,9 @@ const ResearchPage = () => {
       />
       <Heading jsonFile="/data/researchHeading.json" />
       {/* <ResearchChart jsonFile="/data/researchChart.json" /> */}
-      <RowButton buttonTo="/policy" buttonText="Policy" />
+      <RowButton currentPage={pageTitle} buttonTo="/policy" buttonText="Policy" />
       <CalloutList jsonFile="/data/researchContent.json" />
-      <RowButton buttonTo="/policy" buttonText="Policy" />
+      <RowButton currentPage={pageTitle} buttonTo="/policy" buttonText="Policy" />
     </>
   );
 };

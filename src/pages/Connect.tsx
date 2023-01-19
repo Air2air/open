@@ -1,7 +1,9 @@
-import RowButton from "components/Button/rowButton";
+import RowButton from "components/RowButton/rowButton";
 import CalloutList from "components/Callout/callOutList";
 import Heading from "components/Heading/heading";
 import BannerImage from "components/Banner/Image/bannerImage";
+
+const pageTitle="Connect With Open";
 
 const ConnectPage = () => {
   return (
@@ -12,9 +14,9 @@ const ConnectPage = () => {
         overlayColor={1}
       />
       <Heading jsonFile="/data/connectHeading.json" />
-      <RowButton buttonTo="/research" buttonText="Research" />
+      <RowButton currentPage={pageTitle} buttonTo="/research" buttonText="Research" />
       <CalloutList jsonFile="/data/connectContent.json" />
-      <RowButton buttonTo="/research" buttonText="Research" />
+      <RowButton currentPage={pageTitle} buttonTo="/research" buttonText="Research" />
     </>
   );
 };

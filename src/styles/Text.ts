@@ -104,22 +104,35 @@ color: ${COLOR_HEADING};`;
 export const FONT_SUBHEAD_DESKTOP = `
 font-size: ${FONT_SIZE_SUBHEAD_DESKTOP}; 
 font-family: ${FONT_FAMILY_SUBHEAD}; 
-line-height: ${LINE_HEIGHT_SUBHEAD_DESKTOP}; text-transform: uppercase; opacity: 0.5; margin-top:10px; margin-bottom:40px; 
+line-height: ${LINE_HEIGHT_SUBHEAD_DESKTOP}; 
+text-transform: uppercase;
+opacity: 0.5;
+margin-top:10px;
+margin-bottom:40px; 
 color: ${COLOR_SUBHEAD};`;
 
 export const FONT_SUBHEAD_MOBILE = `
 font-size: ${FONT_SIZE_SUBHEAD_MOBILE}; 
 font-family: ${FONT_FAMILY_SUBHEAD}; 
-line-height: ${LINE_HEIGHT_SUBHEAD_MOBILE}; text-transform: uppercase;  opacity: 0.7; margin-top:10px; margin-bottom:20px; 
+line-height: ${LINE_HEIGHT_SUBHEAD_MOBILE}; 
+text-transform: uppercase;  opacity: 0.7;
+margin-top:10px;
+margin-bottom:20px; 
 color: ${COLOR_SUBHEAD};`;
 
 // CAPTION
-export const FONT_CAPTION_DESKTOP = `font: ${FONT_WEIGHT_SEMIBOLD} ${FONT_SIZE_CAPTION_DESKTOP} ${FONT_FAMILY_SECONDARY}; text-transform: uppercase;`;
-export const FONT_CAPTION_MOBILE = `font: ${FONT_WEIGHT_SEMIBOLD} ${FONT_SIZE_CAPTION_MOBILE} ${FONT_FAMILY_SECONDARY}; text-transform: uppercase; `;
+export const FONT_CAPTION_DESKTOP = `
+font: ${FONT_WEIGHT_SEMIBOLD} ${FONT_SIZE_CAPTION_DESKTOP} ${FONT_FAMILY_SECONDARY}; 
+text-transform: uppercase;`;
+export const FONT_CAPTION_MOBILE = `
+font: ${FONT_WEIGHT_SEMIBOLD} ${FONT_SIZE_CAPTION_MOBILE} ${FONT_FAMILY_SECONDARY}; 
+text-transform: uppercase; `;
 
 // SECONDARY
-export const FONT_SECONDARY_DESKTOP = `font: ${FONT_WEIGHT_SEMIBOLD} ${FONT_SIZE_DEFAULT_DESKTOP} ${FONT_FAMILY_SECONDARY};`;
-export const FONT_SECONDARY_MOBILE = `font: ${FONT_WEIGHT_SEMIBOLD} ${FONT_SIZE_DEFAULT_MOBILE} ${FONT_FAMILY_SECONDARY};`;
+export const FONT_SECONDARY_DESKTOP = `
+font: ${FONT_WEIGHT_SEMIBOLD} ${FONT_SIZE_DEFAULT_DESKTOP} ${FONT_FAMILY_SECONDARY};`;
+export const FONT_SECONDARY_MOBILE = `
+font: ${FONT_WEIGHT_SEMIBOLD} ${FONT_SIZE_DEFAULT_MOBILE} ${FONT_FAMILY_SECONDARY};`;
 
 // DEFAULT
 export const FONT_DEFAULT_DESKTOP = `
