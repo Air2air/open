@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import LogoWhite from "images/logo_text_white.svg";
+
 import {
   COLOR_HEADER,
   COLOR_HEADER_HOVER,
@@ -10,6 +10,8 @@ import {
 } from "styles/Constants";
 
 export const HEADER_HEIGHT_MOBILE = 120;
+const LOGO_TEXT = "url(/images/site/logo_text.svg)";
+const LOGO_TEXT_FULL = "url(/images/site/logo_text_full.svg)";
 
 export const HeaderMobile = () => {
   return (
@@ -17,11 +19,8 @@ export const HeaderMobile = () => {
       <HeaderContainer>
         <HeaderTop>
           <LogoWrapper>
-            <Link to="/home">
-              <div style={{ width: "140px" }}>
-                <LogoWhite />
-              </div>
-            </Link>
+          <LogoName to="/home" />
+          <LogoNameFull to="/home"/>
           </LogoWrapper>
         </HeaderTop>
         <HeaderBottom>
@@ -71,6 +70,43 @@ const LogoWrapper = styled.div`
   opacity: 0.7;
   transform: scale(1);
   transition: all 300ms;
+  &:hover {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+  /* background-color: blue; */
+`;
+
+const LogoName = styled(Link)`
+  height: ${HEADER_HEIGHT_MOBILE}px;
+  width:100px;
+  margin-right: 20px;
+  padding: 0;
+  opacity: 0.6;
+  transform: scale(1);
+  transition: all 300ms;
+  background-image: ${LOGO_TEXT};
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  &:hover {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+  /* background-color: green; */
+`;
+
+const LogoNameFull = styled(Link)`
+  height: ${HEADER_HEIGHT_MOBILE}px;
+  width:110px;
+  margin: 4px 0 0 0;
+  opacity: 0.6;
+  transform: scale(1);
+  transition: all 300ms;
+  background-image: ${LOGO_TEXT_FULL};
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   &:hover {
     opacity: 1;
     transform: scale(1.03);

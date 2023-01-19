@@ -1,7 +1,3 @@
-import { Link } from "react-router-dom";
-
-import LogoWhite from "images/logo_white.svg";
-import LogoTextWhite from "images/logo_text_white.svg";
 
 import { IFooterProps } from "./footer";
 import Container from "components/Container/container";
@@ -13,18 +9,25 @@ import {
   FooterCopyright,
   FooterLogoRow,
   FooterLogoWrapper,
+  LogoText,
 } from "./footerComponents";
+
+const backgroundImageText = "url(/images/site/logo_text.svg)";
+const backgroundImageBug = "url(/images/site/logo_bug.svg)";
 
 export const FooterMobile = (props: IFooterProps) => {
   return (
     <Container backgroundColor={props.backgroundColor}>
       <Spacer height={30} backgroundColor={props.backgroundColor} />
       <FooterLogoRow animateIn="animate__fadeInUp" delay={0} offset={0}>
-        <Link className="link" to="/home">
-          <div style={{ width: "130px", opacity: 0.6 }}>
-            <LogoTextWhite />
-          </div>
-        </Link>
+        <LogoText
+          to="/home"
+          style={{
+            backgroundImage: backgroundImageText,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "contain",
+          }}
+        />
       </FooterLogoRow>
 
       <FooterContentRow>
@@ -48,9 +51,13 @@ export const FooterMobile = (props: IFooterProps) => {
       <FooterCopyright>
         <div>&copy; Open of Ten LLP</div>
 
-        <FooterLogoWrapper>
-          <LogoWhite />
-        </FooterLogoWrapper>
+        <FooterLogoWrapper
+          style={{
+            background: backgroundImageBug,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "contain",
+          }}
+        ></FooterLogoWrapper>
 
         <div>All rights reserved.</div>
       </FooterCopyright>
