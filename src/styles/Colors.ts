@@ -3,6 +3,7 @@ const SATURATION = 100;
 
 export const COLOR_BASE = `hsl(${BASEHUE}, ${SATURATION}%, 50%)`;
 export const COLOR_BLACK = `hsl(0, 0%, 0%)`;
+export const COLOR_CONTRAST = `hsl(${BASEHUE}, 2%, 85%)`;
 export const COLOR_WHITE = `hsl(${BASEHUE}, 70%, 97%)`;
 export const COLOR_BASE_1 = `hsl(${BASEHUE}, ${SATURATION}%, 85%)`;
 export const COLOR_BASE_2 = `hsl(${BASEHUE}, ${SATURATION}%, 88%)`;

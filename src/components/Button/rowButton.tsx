@@ -2,6 +2,7 @@ import {
   BREAKPOINT,
   COLOR_BUTTON,
   COLOR_BUTTON_HOVER,
+  COLOR_CONTRAST,
   COLOR_LINK_REVERSE,
   COLOR_LINK_REVERSE_HOVER,
   FONT_BUTTON_DESKTOP,
@@ -11,6 +12,11 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+
+
+
+const ROW_BUTTON_HEIGHT_DESKTOP = 70;
+const ROW_BUTTON_HEIGHT_MOBILE = 70;
 
 export const RowButton = (props: { buttonTo: string; buttonText: string }) => {
   return (
@@ -30,12 +36,12 @@ const RowButtonOuter = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background: ${COLOR_BUTTON};
+  background: ${COLOR_CONTRAST};
   @media (min-width: ${BREAKPOINT}px) {
-    height: 100px;
+    height: ${ROW_BUTTON_HEIGHT_DESKTOP}px;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    height: 100px;
+    height: ${ROW_BUTTON_HEIGHT_MOBILE}px;
   }
   /* background-color: blue; */
 `;
@@ -58,11 +64,11 @@ const RowButtonInner = styled(Link)`
     background: ${COLOR_BUTTON_HOVER};
   }
   @media (min-width: ${BREAKPOINT}px) {
-    height: 100px;
+    height: ${ROW_BUTTON_HEIGHT_DESKTOP}px;
     ${FONT_BUTTON_DESKTOP};
   }
   @media (max-width: ${BREAKPOINT}px) {
-    height: 100px;
+    height: ${ROW_BUTTON_HEIGHT_MOBILE}px;
     ${FONT_BUTTON_MOBILE};
   }
   /* background: red; */
