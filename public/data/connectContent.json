@@ -1,24 +1,19 @@
 [
+
   {
     "id": 1,
-    "title": "Research similar nonprofits",
-    "text": "Research and find a nonprofit organization that aligns with your values and goals for energy solutions. There are many organizations that specialize in advocating for efficient energy solutions, such as the American Council for an Energy-Efficient Economy (ACEEE) and the Alliance to Save Energy.",
-    "backgroundColor": 0
-  },
-  {
-    "id": 2,
     "title": "Volunteer with us",
     "text": "Get involved by volunteering or interning with the organization. This will give you an opportunity to learn more about the organization's goals and strategies, and also provide valuable support to their efforts.",
     "backgroundColor": 1
   },
   {
-    "id": 3,
+    "id": 2,
     "title": "Network with peers",
     "text": "Network with other scientists and experts in the field. Joining professional organizations such as the American Association for the Advancement of Science and the American Physical Society, can provide opportunities to connect with other scientists and experts who are also involved in energy solutions advocacy.",
     "backgroundColor": 2
   },
   {
-    "id": 4,
+    "id": 3,
     "title": "Get out the word",
     "text": "Use social media and other communication platforms to share your research and raise awareness about energy solutions. Many advocacy organizations use social media and other digital platforms to disseminate information and engage with supporters.",
     "backgroundColor": 3
