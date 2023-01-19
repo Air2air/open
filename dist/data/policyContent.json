@@ -1,38 +1,44 @@
 [
   {
     "id": 1,
-    "title": "{x} = CLINICAL",
-    "text": "The world's foremost clinical talent guides Open's digital health ventures to the best possible outcomes. Your Chief Medical AI Officer offers deep technical and clinical support for broader consumer health sector landscape (e.g., patient engagement, wearables, digital health and wellness).",
+    "title": "Increasing Renewable Energy",
+    "text": "Promoting policies that support the development and deployment of renewable energy sources such as solar, wind, and geothermal power.",
     "backgroundColor": 0
   },
   {
     "id": 2,
-    "title": "{x} = AI/ML",
-    "text": "Experts from the preeminent academic and commercial AI/ML programs accelerate Open's digital health ventures.",
+    "title": "Energy Efficiency",
+    "text": "Advocating for policies that increase energy efficiency, such as building codes and appliance standards, to reduce energy consumption and associated greenhouse gas emissions.",
     "backgroundColor": 1
   },
   {
     "id": 3,
-    "title": "{x} = PRODUCT",
-    "text": "Commercial product specialists from leading commercial enterprises help sculpt Open's digital health ventures, including: <p><ul><li>Go-to-market and product positioning.</li><li>Pricing methodology for clinical machine learning and digital health solutions.</li><li>Segment landscape, needs, and priorities to drive adoption.</li></ul></p>",
+    "title": "Carbon Pricing",
+    "text": "Supporting policies that put a price on carbon, such as a carbon tax or cap-and-trade system, to provide a financial incentive for reducing carbon emissions and transitioning to cleaner energy sources.",
     "backgroundColor": 2
   },
   {
     "id": 4,
-    "title": "{x} = MARKETING",
-    "text": "Professionals shaping some of the most storied companies in modern healthcare position Open's digital health ventures.  This can also include support for early adoption academic initiatives and activities including grants, publications, and collaborations.",
+    "title": "Electric Transportation",
+    "text": "Advocating for policies that promote the adoption of electric vehicles and charging infrastructure to reduce dependence on fossil fuels.",
     "backgroundColor": 3
   },
   {
     "id": 5,
-    "title": "{x} = REGULATORY",
-    "text": "Authorities in FDA regulation and practice provide support for Open's digital health ventures.",
+    "title": "Grid modernization and Energy storage",
+    "text": "Promoting policies that modernize the electric grid and promote the development of energy storage technologies to better integrate renewable energy sources and improve reliability and resiliency of the grid.",
     "backgroundColor": 0
   },
   {
     "id": 6,
-    "title": "{x} = STRATEGY",
-    "text": "Strategists responsible for inventing and innovating new market segments over two decades fabricate direction for Open's digital health ventures. These can include:<p><ul><li>Strategic investments and structuring corporate vehicles (e.g., corporate venture capital, or CVC).</li><li>Growth guidance including market segment, therapeutic area or disease category from competitive, partnering or investment perspectives.</li><li>Multidisciplinary fundraising, positioning education, strategy and business model for digital health and digital medicine.</li><li> M & A commercial due diligence including market assessment, evaluation of the competitive landscape, and analysis of the target's value proposition and post-acquisition growth strategy.</ul></p>",
+    "title": "Research and Development",
+    "text": "Advocating for increased funding for research and development of new energy technologies, to accelerate the transition to a cleaner, more sustainable energy system.",
     "backgroundColor": 1
+  },
+  {
+    "id": 7,
+    "title": "Environmental Justice",
+    "text": "Advocating for policies that ensure that disadvantaged communities are not disproportionately affected by the negative impacts of pollution and environmental degradation.",
+    "backgroundColor": 2
   }
 ]

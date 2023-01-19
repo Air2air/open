@@ -1,23 +1,56 @@
 [
   {
     "id": 1,
-    "backgroundColor": 1,
-    "title": "1. PRODUCT-MARKET FIT",
-    "label": "PRODUCT-MARKET FIT",
-    "text": "<p>Technical founders develop novel clinical AI application but struggle to find product market fit.</p><p>Open provided a fractional CXAIO that:</p><ul><li>Connected to key opinion leaders at 10 United States hospital systems</li><li>Led product discovery cycles with payors, providers to define ideal customer profile</li><li>Helped develop MVP concept</li><li>Mapped out data integrations with health information systems</li><li>Designed scientific evaluation metrics and communication strategy</li><li>Tested marketing materials for first market segment first early adopters </li><li>Defined pricing model for value based and FFS providers</li><li>Made qualified introductions to help land first paid customer</li></ul>"
+    "title": "Energy Engineering",
+    "text": "This interdisciplinary program combines engineering, physics, and math to study the generation, distribution, and use of energy. It includes courses on renewable energy, energy storage, energy efficiency, and carbon capture and storage.",
+    "backgroundColor": 0
   },
   {
     "id": 2,
-    "backgroundColor": 2,
-    "title": "2. EARLY STAGE GO-TO-MARKET PLAN",
-    "label": "EARLY GO-TO-MARKET",
-    "text": "<p>Pre-seed studio / hospital spin out company with early novel AI model and technical lead but struggling to define go to market plan.</p><p>Open provided a fractional CXAIO that:</p><ul><li>Led product management discovery and MVP design, transitioning to full time PM hire</li><li>Validated business model with payors and reimbursement consultant</li><li>Developed data science and engineering team recruiting roadmaps</li><li>Provided real world evaluation framework / measures for presenting results to clinicians / administrators</li><li>Connected company to digital health investors</li><li>Developed health information system integration plan for full cycle MLOps</li><li>Recruited top trained data science lead</li><li>Contacted world leading AI regulatory consultant</li></ul>"
+    "title": "Sustainable Energy",
+    "text": "This program focuses on the development of sustainable energy systems, including renewable energy, energy efficiency, and energy management. It may include courses on energy policy, environmental impact, and sustainable design.",
+    "backgroundColor": 1
   },
   {
     "id": 3,
-    "backgroundColor": 3,
-    "title": "3. STRATEGIC OPTIONS",
-    "label": "STRATEGIC OPTIONS",
-    "text": "<p>Point solution AI startup with market traction at growth inflection point exploring next venture financing round or strategic acquisition</p><p>Open provided a fractional CXAIO that:</p><ul><li>Leverage expert AI market network to determine company position in market</li><li>Use data and relationships with venture and strategic acquirers to generate real world options for strategic fit</li><li>Create double consent ''good fit'' meeting opportunities between venture and aligned / interested investors</li><li>Recruited top AI executive and board member to prepare for next round</li><li>Provided market perspective and experience to guide CEO / board through diligence and closing process</li></ul>"
+    "title": "Environmental Engineering",
+    "text": "Design, development, and management of systems and technologies to protect and improve the environment. It includes courses on renewable energy, energy efficiency, and environmental impact assessment.",
+    "backgroundColor": 2
+  },
+  {
+    "id": 4,
+    "title": "Mechanical Engineering with a focus on Energy",
+    "text": "This program is focused on the study of energy systems, including renewable energy, energy storage, and energy efficiency. It includes courses on thermodynamics, heat transfer, and energy systems analysis.",
+    "backgroundColor": 3
+  },
+  {
+    "id": 5,
+    "title": "Electrical Engineering with a focus on Energy",
+    "text": "The study of electrical systems and devices for energy generation, conversion, and distribution, including renewable energy, energy storage, and energy efficiency.",
+    "backgroundColor": 0
+  },
+  {
+    "id": 6,
+    "title": "Energy Management",
+    "text": "This program focuses on the business and management aspects of energy systems, including energy policy, market analysis, and energy finance.",
+    "backgroundColor": 1
+  },
+  {
+    "id": 7,
+    "title": "Energy and Environmental Policy",
+    "text": "The policy, economic and social aspects of energy systems, including energy efficiency, renewable energy, and sustainable energy. It includes courses on energy policy, environmental impact, and sustainable design.",
+    "backgroundColor": 2
+  },
+  {
+    "id": 8,
+    "title": "Building Science and Energy Efficiency",
+    "text": "Design, construction and operation of energy-efficient buildings and building systems, such as heating, ventilation, and air-conditioning systems, insulation, and lighting.",
+    "backgroundColor": 3
+  },
+  {
+    "id": 9,
+    "title": "Environmental Impact",
+    "text": "Research on the environmental impact of energy systems, including the study of air and water pollution, land use, and biodiversity, and the development of sustainable energy solutions.",
+    "backgroundColor": 4
   }
 ]

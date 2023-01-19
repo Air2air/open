@@ -1,20 +1,38 @@
 [
   {
     "id": 1,
-    "title": "Introduction to the organization and its mission",
-    "text": "Introduction to the organization and its mission",
-    "backgroundColor": 1
+    "title": "Efficient energy policy discussions and events",
+    "text": "OPEN works to create panel discussions, roundtable meetings, and conferences, to share their research and expertise with policymakers and other stakeholders. This can provide valuable input for the advocacy organization and also give scientists an opportunity to learn about the policymaking process and how their work can be applied to real-world issues.",
+    "backgroundColor": 0
   },
   {
     "id": 2,
-    "title": "Summary of the latest research and findings on energy and power generation",
-    "text": "Introduction to the organization and its mission",
+    "title": "Partnering with scientists on research and analysis",
+    "text": "We work with scientists to conduct research and analysis on energy solutions and their impact. This can include studies on the technical and economic feasibility of different energy solutions, as well as research on the environmental and social impacts of different energy policies.",
+    "backgroundColor": 1
+  },
+  {
+    "id": 3,
+    "title": "Resources and support to communicate science research",
+    "text": "We support for scientists to communicate their research to policymakers, the media, and the public. This can include providing training on how to effectively communicate with policymakers and the media, as well as assistance with creating policy briefs, fact sheets, and other materials that explain complex scientific research in a clear and accessible manner.",
     "backgroundColor": 2
   },
   {
     "id": 3,
-    "title": "Links to the main sections of the website",
-    "text": "Introduction to the organization and its mission",
+    "title": "engaging with policy-makers",
+    "text": "We support scientists to engage with policy-makers directly and provide them with information and resources that can be used to support their efforts in the policy-making process.",
     "backgroundColor": 3
+  },
+  {
+    "id": 3,
+    "title": "advocacy campaigns",
+    "text": "We encourage scientists to participate in advocacy campaigns, such as letter-writing campaigns and petitions, to raise awareness about energy solutions and to support specific policy proposals.",
+    "backgroundColor": 0
+  },
+  {
+    "id": 3,
+    "title": "network of scientists",
+    "text": "We provide a platform for scientists to share their expertise and collaborate on research and advocacy efforts.",
+    "backgroundColor": 1
   }
 ]

@@ -1,5 +1,4 @@
 
-import Map from "components/Map/map";
 import { RowButton } from "components/RowButton/rowButton";
 import TeamList from "components/Team/team";
 import Heading from "components/Heading/heading";
@@ -18,7 +17,7 @@ const AboutPage = () => {
       <Heading jsonFile="/data/aboutHeading.json" />
       <RowButton currentPage={pageTitle} buttonTo="/contact" buttonText="Contact"/>
       {/* <Map title="Open Worldwide" backgroundColor={2} /> */}
-      <TeamList jsonFile="/data/teamContent.json" backgroundColor={2}/>
+      <TeamList jsonFile="/data/teamContent.json" />
       <RowButton currentPage={pageTitle} buttonTo="/contact" buttonText="Contact"/>
     </>
   );

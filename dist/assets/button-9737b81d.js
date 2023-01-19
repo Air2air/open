@@ -1,4 +1,4 @@
-import{s as i,e as d,J as e,g as a,k as r,l as p,B as n,m as l,j as t,F as c}from"./index-5c6e6edb.js";const s=40,h="250px",m="100%",x=i.div`
+import{s as i,F as d,G as e,n as a,p as r,k as p,B as n,l,j as t,e as c}from"./index-de9958dc.js";const s=40,h="250px",m="100%",x=i.div`
   ${d};
   color: ${e};
   padding: 0 16px;
@@ -61,4 +61,4 @@ import{s as i,e as d,J as e,g as a,k as r,l as p,B as n,m as l,j as t,F as c}fro
   @media (max-width: ${n}px) {
     display: inline-flex;
   }
-`;const O=o=>t(c,{children:t("a",{href:o.to,children:t(x,{children:t("span",{children:o.text})})})});export{O as B};
+`;const T=o=>t(c,{children:t("a",{href:o.to,children:t(x,{children:t("span",{children:o.text})})})});export{T as B};
