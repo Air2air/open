@@ -14,9 +14,9 @@ const PolicyPage = () => {
         overlayColor={1}
       />
       <Heading jsonFile="/data/policyHeading.json" />
-      <RowButton buttonTo="/research" buttonText="Research" />
+      <RowButton buttonTo="/education" buttonText="Education" />
       <CalloutList jsonFile="/data/policyContent.json" />
-      <RowButton buttonTo="/research" buttonText="Research" />
+      <RowButton buttonTo="/education" buttonText="Education" />
     </>
   );
 };

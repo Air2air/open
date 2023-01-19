@@ -109,6 +109,12 @@ li {
 }
 
 @font-face {
+  font-family: "Sofia Sans Bold";
+  src: url("/fonts/Sofia_Sans/static/SofiaSans-SemiBold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Roboto";
   src: url("/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
   font-style: normal;

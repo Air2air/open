@@ -29,7 +29,7 @@ const App = () => {
             ))}
           </Routes>
         </Suspense>
-        <Footer backgroundColor={5} />
+        <Footer backgroundColor={4} />
       </QueryClientProvider>
     </>
   );

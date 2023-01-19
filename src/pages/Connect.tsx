@@ -12,9 +12,9 @@ const ConnectPage = () => {
         overlayColor={1}
       />
       <Heading jsonFile="/data/connectHeading.json" />
-      <RowButton buttonTo="/policy" buttonText="Policy" />
+      <RowButton buttonTo="/research" buttonText="Research" />
       <CalloutList jsonFile="/data/connectContent.json" />
-      <RowButton buttonTo="/policy" buttonText="Policy" />
+      <RowButton buttonTo="/research" buttonText="Research" />
     </>
   );
 };

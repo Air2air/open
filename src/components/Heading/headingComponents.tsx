@@ -78,7 +78,6 @@ export const SubheadText = styled.div`
   /* background: red; */
   @media (min-width: ${BREAKPOINT}px) {
     ${FONT_BANNER_SUBHEAD_DESKTOP}
-    color:${COLOR_BANNER_SUBHEAD}
   }
   @media (max-width: ${BREAKPOINT}px) {
     ${FONT_BANNER_SUBHEAD_MOBILE}

@@ -18,7 +18,7 @@ export const CalloutContainerOuter = styled.div`
 export const CalloutContainerInner = styled.div`
   margin: 0 auto;
   height: auto;
-  min-height:200px;
+  min-height:120px;
   padding:40px 0;
   @media (min-width: ${BREAKPOINT}px) {
     width: ${CONTENT_WIDTH_DESKTOP};

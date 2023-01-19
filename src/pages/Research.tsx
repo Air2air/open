@@ -8,14 +8,14 @@ const ResearchPage = () => {
     <>
       <BannerImage
         pageImage="banner_8.webp"
-        overlayOpacity={0.1}
+        overlayOpacity={0.5}
         overlayColor={1}
       />
       <Heading jsonFile="/data/researchHeading.json" />
       {/* <ResearchChart jsonFile="/data/researchChart.json" /> */}
-      <RowButton buttonTo="/education" buttonText="Education" />
+      <RowButton buttonTo="/policy" buttonText="Policy" />
       <CalloutList jsonFile="/data/researchContent.json" />
-      <RowButton buttonTo="/education" buttonText="Education" />
+      <RowButton buttonTo="/policy" buttonText="Policy" />
     </>
   );
 };
