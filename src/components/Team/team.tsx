@@ -29,7 +29,7 @@ const TeamList = ({ jsonFile }) => {
   // );
 
   return data && data.length > 0 ? (
-    <Container backgroundColor={1}>
+    <Container backgroundColor={0}>
       <PaddingSection>
         <TitleCallout title="Team" />
         <TeamContainer animateIn="animate__fadeIn" delay={0} offset={30}>

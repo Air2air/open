@@ -17,8 +17,8 @@ const AboutPage = () => {
       />
       <Heading jsonFile="/data/aboutHeading.json" />
       <RowButton currentPage={pageTitle} buttonTo="/contact" buttonText="Contact"/>
-      <Map title="Open Worldwide" backgroundColor={2} />
-      <TeamList jsonFile="/data/teamContent.json" />
+      {/* <Map title="Open Worldwide" backgroundColor={2} /> */}
+      <TeamList jsonFile="/data/teamContent.json" backgroundColor={2}/>
       <RowButton currentPage={pageTitle} buttonTo="/contact" buttonText="Contact"/>
     </>
   );
