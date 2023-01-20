@@ -1,31 +1,33 @@
-import { TitleCallout } from "components/Callout/titleCallout";
-import { AnimationOnScroll } from "react-animation-on-scroll";
-
 import parse from "html-react-parser";
-import {
-  CalloutContainerInner,
-  CalloutContainerOuter,
-  CalloutParagraph,
-} from "./calloutComponents";
-import { assignCalloutColor } from "utils/assignCalloutColor";
+import { ParallaxBanner } from "react-scroll-parallax";
+import { Circle } from "./calloutComponents";
 
-const Callout = (props) => {
+type CalloutProps = {
+  id: number;
+  title: string;
+  text: string;
+  image: string;
+  height: number;
+  variant: string;
+};
+
+// create types for props
+
+const Callout = (props: CalloutProps) => {
   const textParsed = props.text
     ? parse(props.text)
     : "Data fetch error in Text";
 
   return (
     <>
-      <CalloutContainerOuter style={{
-          backgroundColor: assignCalloutColor(props.backgroundColor),
-        }}>
-        <CalloutContainerInner>
-          <TitleCallout title={props.title} />
-          <AnimationOnScroll animateIn="animate__fadeIn" delay={0} offset={60}>
-            <CalloutParagraph>{textParsed}</CalloutParagraph>
-          </AnimationOnScroll>
-        </CalloutContainerInner>
-      </CalloutContainerOuter>
+      <ParallaxBanner
+        layers={[{ image:props.image, speed: -15 }]}
+      >
+        <div style={{ height: `${props.height}px` }}>
+          {props.title}
+          {textParsed}
+        </div>
+      </ParallaxBanner>
     </>
   );
 };

@@ -15,6 +15,30 @@ export const CalloutContainerOuter = styled.div`
   /* background-color: gold; */
 `;
 
+
+
+export const Circle = (props) => {
+  return (
+    <div>
+      <div
+        style={{
+          position: "absolute",
+          background: `rgba(255, 125, 0, ${props.percentage * 1})`,
+          left: `${props.percentage * 4}%`,
+          top: "50%",
+          borderRadius: "50%",
+          transform: `translate( 50%, -50%)`,
+          width: props.percentage * 500,
+          height: props.percentage * 500,
+        }}
+      />
+    </div>
+  );
+};
+
+
+
+
 export const CalloutContainerInner = styled.div`
   margin: 0 auto;
   height: auto;

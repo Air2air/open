@@ -2,37 +2,49 @@
   {
     "id": 1,
     "title": "Efficient energy policy discussions and events",
-    "text": "OPEN works to create panel discussions, roundtable meetings, and conferences, to share their research and expertise with policymakers and other stakeholders. This can provide valuable input for the advocacy organization and also give scientists an opportunity to learn about the policymaking process and how their work can be applied to real-world issues.",
-    "backgroundColor": 0
+    "text": "OPEN works to create panel discussions, roundtable meetings, and conferences, to share their research and expertise with policymakers and other stakeholders.",
+    "variant:": 1,
+    "image": "/images/site/banner_1.webp",
+    "height": 800
   },
   {
     "id": 2,
     "title": "Partnering with scientists on research and analysis",
-    "text": "We work with scientists to conduct research and analysis on energy solutions and their impact. This can include studies on the technical and economic feasibility of different energy solutions, as well as research on the environmental and social impacts of different energy policies.",
-    "backgroundColor": 1
+    "text": "We work with scientists to conduct research and analysis on energy solutions and their impact.",
+    "variant:": 2,
+    "image": "/images/site/banner_2.webp",
+    "height": 600
   },
   {
     "id": 3,
     "title": "Resources and support to communicate science research",
-    "text": "We support for scientists to communicate their research to policymakers, the media, and the public. This can include providing training on how to effectively communicate with policymakers and the media, as well as assistance with creating policy briefs, fact sheets, and other materials that explain complex scientific research in a clear and accessible manner.",
-    "backgroundColor": 2
+    "text": "We support for scientists to communicate their research to policymakers, the media, and the public. .",
+    "variant:": 3,
+    "image": "/images/site/banner_3.webp",
+    "height": 900
   },
   {
-    "id": 3,
-    "title": "engaging with policy-makers",
+    "id": 4,
+    "title": "Engaging with policy-makers",
     "text": "We support scientists to engage with policy-makers directly and provide them with information and resources that can be used to support their efforts in the policy-making process.",
-    "backgroundColor": 3
+    "variant:": 4,
+    "image": "/images/site/banner_5.webp",
+    "height": 600
   },
   {
-    "id": 3,
-    "title": "advocacy campaigns",
+    "id": 5,
+    "title": "Advocacy campaigns",
     "text": "We encourage scientists to participate in advocacy campaigns, such as letter-writing campaigns and petitions, to raise awareness about energy solutions and to support specific policy proposals.",
-    "backgroundColor": 0
+    "variant:": 5,
+    "image": "/images/site/banner_6.webp",
+    "height": 600
   },
   {
-    "id": 3,
-    "title": "network of scientists",
+    "id": 6,
+    "title": "Network of scientists",
     "text": "We provide a platform for scientists to share their expertise and collaborate on research and advocacy efforts.",
-    "backgroundColor": 1
+    "variant:": 6,
+    "image": "/images/site/banner_2.webp",
+    "height": 600
   }
 ]
