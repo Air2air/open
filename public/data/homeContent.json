@@ -2,7 +2,7 @@
   {
     "id": 0,
     "title": "The following is a content layout",
-    "text": "Each section below has a message and graphics exactly like https://one.ai/.  ",
+    "text": "Each section below has a message and graphics exactly like https://one.ai/.  You're okaying these before fleshing them out more.  They are interchangeable.",
     "variant": "windmill",
     "imageBackground": "/images/site/banner_2.webp",
     "imageForeground": "",
@@ -12,7 +12,7 @@
   {
     "id": 1,
     "title": "1. We express the problem here.",
-    "text": "Describe energy grid challenges now and in the future.",
+    "text": "Describe energy grid challenges now and in the future.  Graphics too.",
     "variant": "mountains",
     "imageBackground": "/images/site/banner_1.webp",
     "imageForeground": "",
@@ -22,7 +22,7 @@
   {
     "id": 2,
     "title": "2. Describe our solution",
-    "text": "How we provide resources for scientist and organizations to develop energy solutions.",
+    "text": "How we provide resources for scientist and organizations to develop energy solutions.  Graphics too.",
     "variant": "windmill",
     "imageBackground": "/images/site/banner_2.webp",
     "imageForeground": "",
@@ -52,7 +52,7 @@
   {
     "id": 5,
     "title": "5. Supporting our assertions above",
-    "text": "How OPEN does the things we are promisong above",
+    "text": "How OPEN does the things we are promisong above.  Graphics too.",
     "variant": "mountains",
     "imageBackground": "/images/site/banner_1.webp",
     "imageForeground": "",
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "title": "6. Statistical supprt data",
-    "text": "Data that shows the imapct your involvement with OPEN will have on the world.",
+    "text": "Shows the impact your involvement with OPEN will have on the world.",
     "variant": "windmill",
     "imageBackground": "/images/site/banner_2.webp",
     "imageForeground": "",
