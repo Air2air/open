@@ -16,6 +16,10 @@ import {
 
 export const HeadingContainer = styled.div`
   /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   top: 0;
   @media (min-width: ${BREAKPOINT}px) {
@@ -35,11 +39,11 @@ export const TitleContainer = styled.div`
   text-align: left;
   margin: 0 auto 20px auto;
   @media (min-width: ${BREAKPOINT}px) {
-    height: 60%;
+    /* height: 60%; */
     width: ${CONTENT_WIDTH_DESKTOP};
   }
   @media (max-width: ${BREAKPOINT}px) {
-    height: 60%;
+    /* height: 60%; */
     width: ${CONTENT_WIDTH_MOBILE};
   }
   /* background: green; */
@@ -61,11 +65,11 @@ export const SubheadContainer = styled.div`
   text-align: left;
   margin: 0 auto;
   @media (min-width: ${BREAKPOINT}px) {
-    height: 40%;
+    /* height: 40%; */
     width: ${CONTENT_WIDTH_DESKTOP};
   }
   @media (max-width: ${BREAKPOINT}px) {
-    height: 40%;
+    /* height: 40%; */
     width: ${CONTENT_WIDTH_MOBILE};
   }
   /* background: red; */
@@ -81,4 +85,21 @@ export const SubheadText = styled.div`
   @media (max-width: ${BREAKPOINT}px) {
     ${FONT_BANNER_SUBHEAD_MOBILE}
   }
+`;
+
+
+export const DescContainer = styled.div`
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  margin: 30px auto;
+  @media (min-width: ${BREAKPOINT}px) {
+    /* height: 40%; */
+    width: ${CONTENT_WIDTH_DESKTOP};
+  }
+  @media (max-width: ${BREAKPOINT}px) {
+    /* height: 40%; */
+    width: ${CONTENT_WIDTH_MOBILE};
+  }
+  /* background: red; */
 `;

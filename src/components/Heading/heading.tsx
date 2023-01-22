@@ -5,16 +5,18 @@ import {
   SubheadContainer,
   SubheadText,
   HeadingContainer,
+  DescContainer,
 } from "./headingComponents";
 
-interface Data {
+interface IHeading {
   id: number;
   title: string;
   subhead?: string;
   text?: string;
+  description?: string;
 }
 
-const Heading = (props) => {
+const Heading = (props:IHeading) => {
   return (
     <HeadingContainer>
       <TitleContainer>
@@ -23,6 +25,9 @@ const Heading = (props) => {
       <SubheadContainer>
         <SubheadText>{props.text}</SubheadText>
       </SubheadContainer>
+      <DescContainer>
+      Graphics: {props.description}
+      </DescContainer>
     </HeadingContainer>
   );
 };

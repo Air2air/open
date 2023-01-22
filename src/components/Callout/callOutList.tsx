@@ -20,7 +20,6 @@ const CalloutList = ({ jsonFile }) => {
           style={{ height: 500, background: props.backgroundColor }}
         >
           <Heading {...props} />
-          <div style={{ padding: "1rem" }}>{props.variant}</div>
         </div>
       ))}
     </>
