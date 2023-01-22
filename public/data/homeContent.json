@@ -3,80 +3,61 @@
     "id": 0,
     "title": "The following is a content layout",
     "text": "Each section below has a message and graphics exactly like https://one.ai/.  You're okaying these before fleshing them out more.  Edit anything.  They are interchangeable.",
-    "variant": "windmill",
+    "variant": "These descriptions are for the graphics that go into each section.  Section dimensions and the # of sections are flexible.",
     "imageBackground": "/images/site/banner_2.webp",
     "imageForeground": "",
-    "height": 400,
+    "height": 600,
     "backgroundColor": "#EEE"
   },
   {
     "id": 1,
     "title": "1. We express the problem here.",
     "text": "Describe energy grid challenges now and in the future.  Graphics too.",
-    "variant": "mountains",
+    "variant": "Various power generation, transmission and storage systems, large costs and unknowns. ",
     "imageBackground": "/images/site/banner_1.webp",
     "imageForeground": "",
-    "height": 400,
+    "height": 600,
     "backgroundColor": "#ddd"
   },
   {
     "id": 2,
     "title": "2. Describe our solution",
     "text": "How we provide resources for scientists and organizations to develop energy solutions.  Graphics too.",
-    "variant": "windmill",
+    "variant": "Integrated knowledge and expertise from a wide range of scientific disciplines, including electrical engineering, physics, materials science, and computer science, to effectively design and implement a complex and advanced energy grid.",
     "imageBackground": "/images/site/banner_2.webp",
     "imageForeground": "",
-    "height": 400,
+    "height": 600,
     "backgroundColor": "#EEE"
   },
   {
     "id": 3,
     "title": "3. How your participation is key",
     "text": "You can immediately join and get the benefits listed.",
-    "variant": "mountains",
+    "variant": "Scientists using tools to collaborate and share. Scientists platformed and popular vs. unknown ",
     "imageBackground": "/images/site/banner_1.webp",
     "imageForeground": "",
-    "height": 400,
+    "height": 600,
     "backgroundColor": "#ddd"
   },
   {
     "id": 4,
     "title": "4. The benefits of our solution",
     "text": "How OPEN supports any country's endeavor to develop a sustainable energy grid.",
-    "variant": "windmill",
+    "variant": "Countries being powered by scientists contributions. Balanced competing interests and priorities among stakeholders, including government agencies, utilities, and private sector companies.",
     "imageBackground": "/images/site/banner_2.webp",
     "imageForeground": "",
-    "height": 400,
+    "height": 600,
     "backgroundColor": "#EEE"
   },
+
   {
     "id": 5,
-    "title": "5. Supporting our assertions above",
-    "text": "How OPEN does the things we are promising above.  Graphics too.",
-    "variant": "mountains",
-    "imageBackground": "/images/site/banner_1.webp",
-    "imageForeground": "",
-    "height": 400,
-    "backgroundColor": "#ddd"
-  },
-  {
-    "id": 6,
-    "title": "6. Statistical supprt data",
-    "text": "Shows the impact your involvement with OPEN will have.",
-    "variant": "windmill",
-    "imageBackground": "/images/site/banner_2.webp",
-    "imageForeground": "",
-    "height": 400,
-    "backgroundColor": "#EEE"
-  },
-  {
-    "id": 7,
     "title": "7. Calls to action and resources",
     "text": "Everything that is here in the site available to you now.",
     "variant": "mountains",
     "imageBackground": "/images/site/banner_1.webp",
     "imageForeground": "",
-    "height": 400,
+    "height": 600,
     "backgroundColor": "#ddd"
   }
 ]
