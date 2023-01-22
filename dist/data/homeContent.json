@@ -1,38 +1,82 @@
 [
   {
+    "id": 0,
+    "title": "The following is a content layout",
+    "text": "Each section below has a message and graphics exactly like https://one.ai/.  ",
+    "variant": "windmill",
+    "imageBackground": "/images/site/banner_2.webp",
+    "imageForeground": "",
+    "height": 400,
+    "backgroundColor": "#EEE"
+  },
+  {
     "id": 1,
-    "title": "Efficient energy policy discussions and events",
-    "text": "OPEN works to create panel discussions, roundtable meetings, and conferences, to share their research and expertise with policymakers and other stakeholders. This can provide valuable input for the advocacy organization and also give scientists an opportunity to learn about the policymaking process and how their work can be applied to real-world issues.",
-    "backgroundColor": 0
+    "title": "1. We express the problem here.",
+    "text": "Describe energy grid challenges now and in the future.",
+    "variant": "mountains",
+    "imageBackground": "/images/site/banner_1.webp",
+    "imageForeground": "",
+    "height": 400,
+    "backgroundColor": "#ddd"
   },
   {
     "id": 2,
-    "title": "Partnering with scientists on research and analysis",
-    "text": "We work with scientists to conduct research and analysis on energy solutions and their impact. This can include studies on the technical and economic feasibility of different energy solutions, as well as research on the environmental and social impacts of different energy policies.",
-    "backgroundColor": 1
+    "title": "2. Describe our solution",
+    "text": "How we provide resources for scientist and organizations to develop energy solutions.",
+    "variant": "windmill",
+    "imageBackground": "/images/site/banner_2.webp",
+    "imageForeground": "",
+    "height": 400,
+    "backgroundColor": "#EEE"
   },
   {
     "id": 3,
-    "title": "Resources and support to communicate science research",
-    "text": "We support for scientists to communicate their research to policymakers, the media, and the public. This can include providing training on how to effectively communicate with policymakers and the media, as well as assistance with creating policy briefs, fact sheets, and other materials that explain complex scientific research in a clear and accessible manner.",
-    "backgroundColor": 2
+    "title": "3. How your participation is key",
+    "text": "You can immediately join and get the benefits listed.",
+    "variant": "mountains",
+    "imageBackground": "/images/site/banner_1.webp",
+    "imageForeground": "",
+    "height": 400,
+    "backgroundColor": "#ddd"
   },
   {
-    "id": 3,
-    "title": "engaging with policy-makers",
-    "text": "We support scientists to engage with policy-makers directly and provide them with information and resources that can be used to support their efforts in the policy-making process.",
-    "backgroundColor": 3
+    "id": 4,
+    "title": "4. The benefits of our solution",
+    "text": "How OPEN supports any country's endeavor to develop a sustainable energy grid.",
+    "variant": "windmill",
+    "imageBackground": "/images/site/banner_2.webp",
+    "imageForeground": "",
+    "height": 400,
+    "backgroundColor": "#EEE"
   },
   {
-    "id": 3,
-    "title": "advocacy campaigns",
-    "text": "We encourage scientists to participate in advocacy campaigns, such as letter-writing campaigns and petitions, to raise awareness about energy solutions and to support specific policy proposals.",
-    "backgroundColor": 0
+    "id": 5,
+    "title": "5. Supporting our assertions above",
+    "text": "How OPEN does the things we are promisong above",
+    "variant": "mountains",
+    "imageBackground": "/images/site/banner_1.webp",
+    "imageForeground": "",
+    "height": 400,
+    "backgroundColor": "#ddd"
   },
   {
-    "id": 3,
-    "title": "network of scientists",
-    "text": "We provide a platform for scientists to share their expertise and collaborate on research and advocacy efforts.",
-    "backgroundColor": 1
+    "id": 6,
+    "title": "6. Statistical supprt data",
+    "text": "Data that shows the imapct your involvement with OPEN will have on the world.",
+    "variant": "windmill",
+    "imageBackground": "/images/site/banner_2.webp",
+    "imageForeground": "",
+    "height": 400,
+    "backgroundColor": "#EEE"
+  },
+  {
+    "id": 7,
+    "title": "7. Calls to action and resources",
+    "text": "Everything that is here in the site available to you now.",
+    "variant": "mountains",
+    "imageBackground": "/images/site/banner_1.webp",
+    "imageForeground": "",
+    "height": 400,
+    "backgroundColor": "#ddd"
   }
 ]

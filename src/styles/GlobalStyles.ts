@@ -1,7 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import {
   BREAKPOINT,
-  COLOR_WHITE,
   FONT_SECONDARY_DESKTOP,
   FONT_DEFAULT_DESKTOP,
   FONT_DEFAULT_MOBILE,
@@ -16,7 +15,7 @@ outline: 0;
 margin: 0;
 padding: 0;
 border: 0;
-background-color: ${COLOR_WHITE};
+background-color: #666;
 }
 
 blockquote {

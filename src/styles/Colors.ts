@@ -1,5 +1,5 @@
 const BASEHUE = 21;
-const SATURATION = 100;
+const SATURATION = 30;
 
 export const COLOR_BASE = `hsl(${BASEHUE}, ${SATURATION}%, 50%)`;
 export const COLOR_BLACK = `hsl(0, 0%, 0%)`;
@@ -34,7 +34,7 @@ export const COLOR_LINK_REVERSE = `hsl(${BASEHUE}, ${SATURATION}%, 90%)`;
 export const COLOR_LINK_REVERSE_HOVER = `hsl(${BASEHUE}, ${SATURATION}%, 100%)`;
 
 export const COLOR_BANNER_HEADING = `hsl(${BASEHUE}, ${SATURATION}%, 50%)`;
-export const COLOR_BANNER_SUBHEAD = `hsl(${BASEHUE}, ${SATURATION}%, 100%)`;
+export const COLOR_BANNER_SUBHEAD = `hsl(${BASEHUE}, ${SATURATION}%, 20%)`;
 
 export const COLOR_HEADING = `hsl(${BASEHUE}, ${SATURATION}%, 50%)`;
 export const COLOR_SUBHEAD = `hsl(${BASEHUE}, 40%, 30%)`;

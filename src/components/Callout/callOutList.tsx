@@ -1,30 +1,31 @@
-import  Callout  from "./callOut";
+import Heading from "components/Heading/heading";
 import { FetchData } from "fetch/fetch";
-import { CalloutSkeleton } from "./calloutComponents";
 
 const CalloutList = ({ jsonFile }) => {
   const { data, loading, error } = FetchData({
     file: jsonFile,
   });
   if (loading) {
-    return <CalloutSkeleton />;
+    return null;
   }
   if (error) {
     return <div>Error: {error.message}</div>;
   }
+
+
+
   return (
     <>
-      {data && data.length > 0 ? (
-        data.map((props, index) => {
-          return <Callout {...props} key={index} />;
-        })
-      ) : (
-        <div>Data Fetch error in Callout component</div>
-      )}
+      {data.map((props, index) => (
+        <div
+          key={index}
+          style={{ height: 500, background: props.backgroundColor }}
+        >
+          <Heading {...props} />
+        </div>
+      ))}
     </>
   );
 };
 
 export default CalloutList;
-
-

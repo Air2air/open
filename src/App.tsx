@@ -6,7 +6,7 @@ import { Header } from "./components/Header/header";
 import { dataRoutes } from "./routes/routes";
 import { usePageTracking } from "./components/Analytics/gaTracking";
 import { BannerImageWrapper } from "components/Banner/bannerComponents";
-import { ParallaxProvider } from "react-scroll-parallax";
+
 
 const queryClient = new QueryClient();
 
@@ -21,9 +21,9 @@ const App = () => {
 
   return (
     <>
-      <ParallaxProvider>
+
         <QueryClientProvider client={queryClient}>
-          <Header />
+          {/* <Header /> */}
           <Suspense fallback={<LoadingSkeleton />}>
             <Routes>
               {dataRoutes.map(({ path, element }) => (
@@ -31,9 +31,9 @@ const App = () => {
               ))}
             </Routes>
           </Suspense>
-          <Footer backgroundColor={4} />
+          {/* <Footer backgroundColor={4} /> */}
         </QueryClientProvider>
-      </ParallaxProvider>
+
     </>
   );
 };

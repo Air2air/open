@@ -14,8 +14,8 @@ export const HEADER_HEIGHT_DESKTOP = 70;
 
 
 export const HEADER_LOGO_HEIGHT_DESKTOP = HEADER_HEIGHT_DESKTOP * .5;
-const LOGO_TEXT = "url(/images/site/logo_text.svg)";
-const LOGO_TEXT_FULL = "url(/images/site/logo_text_full.svg)";
+const LOGO_TEXT = "url(/images/site/logo_text_white.svg)";
+const LOGO_TEXT_FULL = "url(/images/site/logo_text_full_white.svg)";
 
 export const HeaderDesktop = () => {
   return (
@@ -46,7 +46,7 @@ const HeaderOuter = styled.div`
   width: 100%;
   padding: 0;
   height: ${HEADER_HEIGHT_DESKTOP}px;
-  background:${COLOR_HEADER};
+  /* background:${COLOR_HEADER}; */
   /* background-color: green; */
 `;
 
