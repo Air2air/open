@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+
 import {
   TitleContainer,
   TitleText,
@@ -14,6 +14,7 @@ interface IHeading {
   subhead?: string;
   text?: string;
   description?: string;
+  height: number;
 }
 
 const Heading = (props:IHeading) => {
@@ -31,5 +32,7 @@ const Heading = (props:IHeading) => {
     </HeadingContainer>
   );
 };
+
+
 
 export default Heading;

@@ -1,22 +1,13 @@
 [
   {
-    "id": 0,
-    "title": "The following is a content layout",
-    "text": "Each section below has a message and graphics exactly like https://one.ai/.  You're okaying these before fleshing them out more.  Edit anything.  They are interchangeable.",
-    "description": "These descriptions are for the graphics that go into each section.  Section dimensions and the # of sections are flexible.",
-    "imageBackground": "/images/site/banner_2.webp",
-    "imageForeground": "",
-    "height": 600,
-    "backgroundColor": "#EEE"
-  },
-  {
     "id": 1,
     "title": "1. We express the problem here.",
     "text": "Describe energy grid challenges now and in the future.",
     "description": "Various power generation, transmission and storage systems, large costs and unknowns. ",
-    "imageBackground": "/images/site/banner_1.webp",
+    "imageBackground": "/images/content/banner_1.webp",
     "imageForeground": "",
-    "height": 600,
+    "height": 700,
+    "direction": "up",
     "backgroundColor": "#ddd"
   },
   {
@@ -24,9 +15,10 @@
     "title": "2. Describe our solution",
     "text": "How we provide resources for scientists and organizations to develop energy solutions. ",
     "description": "Integrated knowledge and expertise from a wide range of scientific disciplines, including electrical engineering, physics, materials science, and computer science, to effectively design and implement a complex and advanced energy grid.",
-    "imageBackground": "/images/site/banner_2.webp",
+    "imageBackground": "/images/content/banner_11.webp",
     "imageForeground": "",
-    "height": 600,
+    "height": 700,
+    "direction": "down",
     "backgroundColor": "#EEE"
   },
   {
@@ -34,9 +26,10 @@
     "title": "3. How your participation is key",
     "text": "You can immediately join and get the benefits listed.",
     "description": "Scientists using tools to collaborate and share. Scientists platformed and popular vs. unknown ",
-    "imageBackground": "/images/site/banner_1.webp",
+    "imageBackground": "/images/content/banner_3.webp",
     "imageForeground": "",
-    "height": 600,
+    "height": 700,
+    "direction": "up",
     "backgroundColor": "#ddd"
   },
   {
@@ -44,9 +37,10 @@
     "title": "4. The benefits of our solution",
     "text": "How OPEN supports any country's endeavor to develop a sustainable energy grid.",
     "description": "Countries being powered by scientists contributions. Balanced competing interests and priorities among stakeholders, including government agencies, utilities, and private sector companies.",
-    "imageBackground": "/images/site/banner_2.webp",
+    "imageBackground": "/images/content/banner_4.webp",
     "imageForeground": "",
-    "height": 600,
+    "height": 700,
+    "direction": "down",
     "backgroundColor": "#EEE"
   },
   {
@@ -54,9 +48,10 @@
     "title": "7. Calls to action and resources",
     "text": "Everything that is here in the site available to you now.",
     "description": "TBD",
-    "imageBackground": "/images/site/banner_1.webp",
+    "imageBackground": "/images/content/banner_5.webp",
     "imageForeground": "",
-    "height": 600,
+    "height": 700,
+    "direction": "up",
     "backgroundColor": "#ddd"
   }
 ]

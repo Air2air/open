@@ -22,8 +22,8 @@ const App = () => {
   return (
     <>
 
-        <QueryClientProvider client={queryClient}>
-          {/* <Header /> */}
+        {/* <QueryClientProvider client={queryClient}> */}
+          <Header />
           <Suspense fallback={<LoadingSkeleton />}>
             <Routes>
               {dataRoutes.map(({ path, element }) => (
@@ -31,8 +31,8 @@ const App = () => {
               ))}
             </Routes>
           </Suspense>
-          {/* <Footer backgroundColor={4} /> */}
-        </QueryClientProvider>
+          <Footer backgroundColor={4} />
+        {/* </QueryClientProvider> */}
 
     </>
   );

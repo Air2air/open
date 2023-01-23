@@ -1,9 +1,9 @@
-import Calloutlist from "components/Callout/callOutList";
+import CalloutList from "components/Callout/callOutList";
 
 const HomePage = () => {
   return (
     <>
-      <Calloutlist jsonFile="/data/homeContent.json" />
+      <CalloutList jsonFile="/data/homeContent.json" />
     </>
   );
 };

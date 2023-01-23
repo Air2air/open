@@ -1,5 +1,7 @@
 import Heading from "components/Heading/heading";
 import { FetchData } from "fetch/fetch";
+import { Parallax } from "react-parallax";
+import { Circle, FillerDiv, LogoBug } from "./callOutComponents";
 
 const CalloutList = ({ jsonFile }) => {
   const { data, loading, error } = FetchData({
@@ -15,12 +17,22 @@ const CalloutList = ({ jsonFile }) => {
   return (
     <>
       {data.map((props, index) => (
-        <div
+        <Parallax
           key={index}
-          style={{ height: 500, background: props.backgroundColor }}
+          bgImage={props.imageBackground}
+          strength={props.direction === "up" ? `-${props.height}` : props.height }
+          bgImageStyle={{ backgroundSize: "cover" }}
+          renderLayer={(percentage) => (
+            <>
+              <Circle percentage={percentage} />
+              <LogoBug percentage={percentage} />
+            </>
+          )}
         >
-          <Heading {...props} />
-        </div>
+          <FillerDiv style={{ height: props.height }}>
+            <Heading {...props} />
+          </FillerDiv>
+        </Parallax>
       ))}
     </>
   );

@@ -10,7 +10,6 @@ import {
 } from "styles/Constants";
 import styled from "styled-components";
 import {
-  BANNER_HEIGHT_DESKTOP,
   BANNER_HEIGHT_MOBILE,
 } from "components/Banner/bannerComponents";
 
@@ -23,11 +22,11 @@ export const HeadingContainer = styled.div`
   margin: 0 auto;
   top: 0;
   @media (min-width: ${BREAKPOINT}px) {
-    height: ${BANNER_HEIGHT_DESKTOP}px;
+    height: 600px;
     width: 100%;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    height: ${BANNER_HEIGHT_MOBILE}px;
+    /* height: ${BANNER_HEIGHT_MOBILE}px; */
     width: 100%;
   }
   /* background: blue; */
