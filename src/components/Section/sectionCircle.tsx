@@ -1,4 +1,4 @@
-export const CallOutCircle = (props) => {
+export const SectionCircle = (props) => {
   return (
     <>
       <div

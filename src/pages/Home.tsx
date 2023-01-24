@@ -1,9 +1,11 @@
-import CallOutList from "components/CallOut/callOutList";
+
+import SectionList from "components/Section/sectionList";
 
 const HomePage = () => {
   return (
     <>
-      <CallOutList jsonFile="/data/homeContent.json" />
+          <SectionList jsonFile="/data/homeContent.json" />
+
     </>
   );
 };

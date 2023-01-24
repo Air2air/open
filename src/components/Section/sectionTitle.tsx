@@ -1,15 +1,17 @@
 import styled from "styled-components";
+import { COLOR_BANNER_HEADING } from "styles/Colors";
 import {
   BREAKPOINT,
-  COLOR_BANNER_SUBHEAD,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
-  FONT_BANNER_SUBHEAD_DESKTOP,
-  FONT_BANNER_SUBHEAD_MOBILE,
 } from "styles/Constants";
+import {
+  FONT_BANNER_HEADING_DESKTOP,
+  FONT_BANNER_HEADING_MOBILE,
+} from "styles/Text";
 import { setOpacity } from "./setOpacity";
 
-export const CallOutSubhead = (props) => {
+export const SectionTitle = (props) => {
   function roundPercentage(percentage) {
     return Math.round(percentage * 1000) / 600;
   }
@@ -22,8 +24,8 @@ export const CallOutSubhead = (props) => {
 
   function plusOrMinusY(from) {
     if (from === "top") {
-      return `${roundPercentage(props.percentage) * props.translateY}%`;
-    } else return `-${roundPercentage(props.percentage) * props.translateY}%`;
+      return `${(roundPercentage(props.percentage) * props.translateY)}%`;
+    } else return `-${(roundPercentage(props.percentage) * props.translateY)}%`;
   }
 
   return (
@@ -37,25 +39,27 @@ export const CallOutSubhead = (props) => {
           minWidth: "80%",
         }}
       >
-        <SubheadContainer>{props.text}</SubheadContainer>
+        <TitleContainer>
+          {props.text} 
+        </TitleContainer>
       </div>
     </>
   );
 };
 
-const SubheadContainer = styled.div`
+const TitleContainer = styled.div`
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   text-align: left;
   background-color: hsla(0, 0%, 10%, 0.7);
-  color: ${COLOR_BANNER_SUBHEAD};
+  color: ${COLOR_BANNER_HEADING};
   @media (min-width: ${BREAKPOINT}px) {
-    ${FONT_BANNER_SUBHEAD_DESKTOP}
     width: auto; //${CONTENT_WIDTH_DESKTOP};
+    ${FONT_BANNER_HEADING_DESKTOP};
   }
   @media (max-width: ${BREAKPOINT}px) {
-    ${FONT_BANNER_SUBHEAD_MOBILE}
     width: auto; //${CONTENT_WIDTH_MOBILE};
+    ${FONT_BANNER_HEADING_MOBILE};
   }
-  /* background: red; */
+  /* background: green; */
 `;
