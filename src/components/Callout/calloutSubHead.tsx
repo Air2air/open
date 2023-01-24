@@ -9,7 +9,7 @@ import {
 } from "styles/Constants";
 import { setOpacity } from "./setOpacity";
 
-export const CalloutSubhead = (props) => {
+export const CallOutSubhead = (props) => {
   function roundPercentage(percentage) {
     return Math.round(percentage * 1000) / 600;
   }

@@ -1,6 +1,6 @@
 import { ImageWrapper, Overlay } from "../bannerComponents";
 
-const ImageCallout = ({ pageImage, overlayOpacity, overlayColor }) => {
+const ImageCallOut = ({ pageImage, overlayOpacity, overlayColor }) => {
   const backgroundImage = "url(/images/site/" + pageImage + ")";
 
   return (
@@ -29,4 +29,4 @@ const BannerImageOpacityOverlay = ({ overlayOpacity, overlayColor }) => {
   );
 };
 
-export default ImageCallout;
+export default ImageCallOut;

@@ -8,7 +8,7 @@ import {
 } from "./orgsComponents";
 import { FetchData } from "fetch/fetch";
 
-const OrgsCallout = ({ jsonFile }) => {
+const OrgsCallOut = ({ jsonFile }) => {
   const isMobile = window.innerWidth < BREAKPOINT;
 
   function resizeImage(width, isMobile) {
@@ -49,4 +49,4 @@ const OrgsCallout = ({ jsonFile }) => {
   );
 };
 
-export default OrgsCallout;
+export default OrgsCallOut;

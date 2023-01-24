@@ -5,7 +5,7 @@ import {
   COLOR_CALLOUT_3,
 } from "styles/Constants";
 
-export const assignCalloutColor = (backgroundColor: string | number) => {
+export const assignCallOutColor = (backgroundColor: string | number) => {
   // If the background color is assigned as a string and it contains the string 'hsl'
   // then return the string as is
   if (typeof backgroundColor === "string" && backgroundColor.includes("hsl")) {

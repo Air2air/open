@@ -1,4 +1,4 @@
-export interface ICalloutProps {
+export interface ICallOutProps {
   id?: number;
   title?: string;
   text?: string;

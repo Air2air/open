@@ -11,7 +11,7 @@ import {
 } from "styles/Text";
 import { setOpacity } from "./setOpacity";
 
-export const CalloutTitle = (props) => {
+export const CallOutTitle = (props) => {
   function roundPercentage(percentage) {
     return Math.round(percentage * 1000) / 600;
   }

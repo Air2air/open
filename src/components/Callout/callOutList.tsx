@@ -1,10 +1,10 @@
 import { FetchData } from "fetch/fetch";
 import { Parallax } from "react-parallax";
-import { FillerDiv } from "./calloutComponents";
-import { CalloutSubhead } from "./calloutSubHead";
-import { CalloutTitle } from "./calloutTitle";
+import { FillerDiv } from "./callOutComponents";
+import { CallOutSubhead } from "./callOutSubHead";
+import { CallOutTitle } from "./callOutTitle";
 
-const CalloutList = ({ jsonFile }) => {
+const CallOutList = ({ jsonFile }) => {
   const { data, loading, error } = FetchData({
     file: jsonFile,
   });
@@ -29,7 +29,7 @@ const CalloutList = ({ jsonFile }) => {
               <>
                 {props.title &&
                   props.title.map((props, index) => (
-                    <CalloutTitle
+                    <CallOutTitle
                       key={index}
                       {...props}
                       percentage={percentage}
@@ -38,7 +38,7 @@ const CalloutList = ({ jsonFile }) => {
 
                 {props.subhead &&
                   props.subhead.map((props, index) => (
-                    <CalloutSubhead
+                    <CallOutSubhead
                       key={index}
                       {...props}
                       percentage={percentage}
@@ -55,4 +55,4 @@ const CalloutList = ({ jsonFile }) => {
   );
 };
 
-export default CalloutList;
+export default CallOutList;
