@@ -1,82 +1,182 @@
 [
   {
-    "id": 0,
-    "title": "The following is a content layout",
-    "text": "Each section below has a message and graphics exactly like https://one.ai/.  ",
-    "variant": "windmill",
-    "imageBackground": "/images/site/banner_2.webp",
-    "imageForeground": "",
-    "height": 400,
-    "backgroundColor": "#EEE"
-  },
-  {
     "id": 1,
-    "title": "1. We express the problem here.",
-    "text": "Describe energy grid challenges now and in the future.",
-    "variant": "mountains",
-    "imageBackground": "/images/site/banner_1.webp",
+    "title": [
+      {
+        "text": "We express the problem here.",
+        "fromX": "right",
+        "translateX": 10,
+        "fromY": "top",
+        "translateY": 30
+      }
+    ],
+    "subhead": [
+      {
+        "text": "Describe energy grid challenges now and in the future.",
+        "fromX": "right",
+        "translateX": 10,
+        "fromY": "top",
+        "translateY": 35
+      }
+    ],
+    "circle": [
+      {
+        "hasCircle": true,
+        "backgroundColor": "orange",
+        "translateX": 10,
+        "translateY": 20,
+        "radius": 300
+      }
+    ],
+    "description": "Various power generation, transmission and storage systems, large costs and unknowns. ",
+    "imageBackground": "/images/content/banner_1.webp",
     "imageForeground": "",
-    "height": 400,
+    "strength": -200,
+    "height": 800,
     "backgroundColor": "#ddd"
   },
   {
     "id": 2,
-    "title": "2. Describe our solution",
-    "text": "How we provide resources for scientist and organizations to develop energy solutions.",
-    "variant": "windmill",
-    "imageBackground": "/images/site/banner_2.webp",
+    "title": [
+      {
+        "text": "Describe our solution we bring",
+        "fromX": "right",
+        "translateX": 10,
+        "fromY": "top",
+        "translateY": 30
+      }
+    ],
+    "subhead": [
+      {
+        "text": "How we provide resources for scientists and organizations to develop energy solutions. ",
+        "fromX": "right",
+        "translateX": 10,
+        "fromY": "top",
+        "translateY": 35
+      }
+    ],
+    "circle": [
+      {
+        "hasCircle": true,
+        "backgroundColor": "blue",
+        "translateX": 20,
+        "translateY": 40,
+        "radius": 300
+      }
+    ],
+    "description": "Integrated knowledge and expertise from a wide range of scientific disciplines, including electrical engineering, physics, materials science, and computer science, to effectively design and implement a complex and advanced energy grid.",
+    "imageBackground": "/images/content/banner_11.webp",
     "imageForeground": "",
-    "height": 400,
+    "strength": 400,
+    "height": 800,
     "backgroundColor": "#EEE"
   },
   {
     "id": 3,
-    "title": "3. How your participation is key",
-    "text": "You can immediately join and get the benefits listed.",
-    "variant": "mountains",
-    "imageBackground": "/images/site/banner_1.webp",
+    "title": [
+      {
+        "text": "How your participation is key",
+        "fromX": "right",
+        "translateX": 10,
+        "fromY": "top",
+        "translateY": 30
+      }
+    ],
+    "subhead": [
+      {
+        "text": "You can immediately join and get the benefits listed.",
+        "fromX": "right",
+        "translateX": 10,
+        "fromY": "top",
+        "translateY": 35
+      }
+    ],
+    "circle": [
+      {
+        "hasCircle": true,
+        "backgroundColor": "indigo",
+        "translateX": 20,
+        "translateY": 40,
+        "radius": 300
+      }
+    ],
+    "description": "Scientists using tools to collaborate and share. Scientists platformed and popular vs. unknown ",
+    "imageBackground": "/images/content/banner_3.webp",
     "imageForeground": "",
-    "height": 400,
+    "strength": -400,
+    "height": 800,
     "backgroundColor": "#ddd"
   },
   {
     "id": 4,
-    "title": "4. The benefits of our solution",
-    "text": "How OPEN supports any country's endeavor to develop a sustainable energy grid.",
-    "variant": "windmill",
-    "imageBackground": "/images/site/banner_2.webp",
+    "title": [
+      {
+        "text": "The benefits of our solution",
+        "fromX": "right",
+        "translateX": 10,
+        "fromY": "top",
+        "translateY": 30
+      }
+    ],
+    "subhead": [
+      {
+        "text": "How OPEN supports any country's endeavor to develop a sustainable energy grid.",
+        "fromX": "right",
+        "translateX": 10,
+        "fromY": "top",
+        "translateY": 35
+      }
+    ],
+    "circle": [
+      {
+        "hasCircle": true,
+        "backgroundColor": "lightblue",
+        "translateX": 20,
+        "translateY": 40,
+        "radius": 300
+      }
+    ],
+    "description": "Countries being powered by scientists contributions. Balanced competing interests and priorities among stakeholders, including government agencies, utilities, and private sector companies.",
+    "imageBackground": "/images/content/banner_4.webp",
     "imageForeground": "",
-    "height": 400,
+    "strength": 400,
+    "height": 800,
     "backgroundColor": "#EEE"
   },
   {
     "id": 5,
-    "title": "5. Supporting our assertions above",
-    "text": "How OPEN does the things we are promisong above",
-    "variant": "mountains",
-    "imageBackground": "/images/site/banner_1.webp",
+    "title": [
+      {
+        "text": "Calls to action and resources",
+        "fromX": "right",
+        "translateX": 10,
+        "fromY": "top",
+        "translateY": 30
+      }
+    ],
+    "subhead": [
+      {
+        "text": "Everything that is here in the site available to you now.",
+        "fromX": "right",
+        "translateX": 10,
+        "fromY": "top",
+        "translateY": 35
+      }
+    ],
+    "circle": [
+      {
+        "hasCircle": true,
+        "backgroundColor": "gold",
+        "translateX": 20,
+        "translateY": 40,
+        "radius": 300
+      }
+    ],
+    "description": "TBD",
+    "imageBackground": "/images/content/banner_5.webp",
     "imageForeground": "",
-    "height": 400,
-    "backgroundColor": "#ddd"
-  },
-  {
-    "id": 6,
-    "title": "6. Statistical supprt data",
-    "text": "Data that shows the imapct your involvement with OPEN will have on the world.",
-    "variant": "windmill",
-    "imageBackground": "/images/site/banner_2.webp",
-    "imageForeground": "",
-    "height": 400,
-    "backgroundColor": "#EEE"
-  },
-  {
-    "id": 7,
-    "title": "7. Calls to action and resources",
-    "text": "Everything that is here in the site available to you now.",
-    "variant": "mountains",
-    "imageBackground": "/images/site/banner_1.webp",
-    "imageForeground": "",
-    "height": 400,
+    "strength": -400,
+    "height": 800,
     "backgroundColor": "#ddd"
   }
 ]
