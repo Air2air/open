@@ -9,9 +9,7 @@ import {
   FONT_BANNER_SUBHEAD_MOBILE,
 } from "styles/Constants";
 import styled from "styled-components";
-import {
-  BANNER_HEIGHT_MOBILE,
-} from "components/Banner/bannerComponents";
+import { BANNER_HEIGHT_MOBILE } from "components/Banner/bannerComponents";
 
 export const HeadingContainer = styled.div`
   /* position: absolute; */
@@ -33,6 +31,7 @@ export const HeadingContainer = styled.div`
 `;
 
 export const TitleContainer = styled.div`
+  position: absolute;
   display: flex;
   align-items: flex-end;
   text-align: left;
@@ -59,6 +58,7 @@ export const TitleText = styled.div`
 `;
 
 export const SubheadContainer = styled.div`
+  position: absolute;
   display: flex;
   align-items: flex-start;
   text-align: left;
@@ -85,7 +85,6 @@ export const SubheadText = styled.div`
     ${FONT_BANNER_SUBHEAD_MOBILE}
   }
 `;
-
 
 export const DescContainer = styled.div`
   display: flex;
