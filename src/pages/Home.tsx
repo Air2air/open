@@ -1,6 +1,5 @@
 import CalloutList from "components/Callout/calloutList";
 
-
 const HomePage = () => {
   return (
     <>

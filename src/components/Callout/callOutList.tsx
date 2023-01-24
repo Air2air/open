@@ -29,16 +29,6 @@ const CalloutList = ({ jsonFile }) => {
             bgImageStyle={{ backgroundSize: "cover" }}
             renderLayer={(percentage) => (
               <>
-                {/* <LogoBug percentage={percentage} /> */}
-                {/* {props.circle &&
-                  props.circle.map((props, index) => (
-                    <CalloutCircle
-                      key={index}
-                      {...props}
-                      percentage={percentage}
-                    />
-                  ))} */}
-
                 {props.title &&
                   props.title.map((props, index) => (
                     <CalloutTitle
@@ -60,7 +50,6 @@ const CalloutList = ({ jsonFile }) => {
             )}
           >
             <FillerDiv style={{ height: props.height }} />
-            {/* <Debugger {...props} /> */}
           </Parallax>
         </div>
       ))}
