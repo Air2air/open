@@ -3,16 +3,20 @@
     "id": 1,
     "title": [
       {
-        "text": "1. We express the problem here.",
+        "text": "We express the problem here.",
+        "fromX": "right",
         "translateX": 10,
-        "translateY": 10
+        "fromY": "top",
+        "translateY": 30
       }
     ],
-    "text": [
+    "subhead": [
       {
         "text": "Describe energy grid challenges now and in the future.",
+        "fromX": "right",
         "translateX": 10,
-        "translateY": 10
+        "fromY": "top",
+        "translateY": 35
       }
     ],
     "circle": [
@@ -34,21 +38,29 @@
   {
     "id": 2,
     "title": [
-      { "text": "2. Describe our solution", "translateX": 10, "translateY": 10 }
+      {
+        "text": "Describe our solution we bring",
+        "fromX": "right",
+        "translateX": 10,
+        "fromY": "top",
+        "translateY": 30
+      }
     ],
-    "text": [
+    "subhead": [
       {
         "text": "How we provide resources for scientists and organizations to develop energy solutions. ",
+        "fromX": "right",
         "translateX": 10,
-        "translateY": 10
+        "fromY": "top",
+        "translateY": 35
       }
     ],
     "circle": [
       {
         "hasCircle": true,
         "backgroundColor": "blue",
-        "translateX": 10,
-        "translateY": 10,
+        "translateX": 20,
+        "translateY": 40,
         "radius": 300
       }
     ],
@@ -61,27 +73,30 @@
   },
   {
     "id": 3,
-
     "title": [
       {
-        "text": "3. How your participation is key",
+        "text": "How your participation is key",
+        "fromX": "right",
         "translateX": 10,
-        "translateY": 10
+        "fromY": "top",
+        "translateY": 30
       }
     ],
-    "text": [
+    "subhead": [
       {
         "text": "You can immediately join and get the benefits listed.",
+        "fromX": "right",
         "translateX": 10,
-        "translateY": 10
+        "fromY": "top",
+        "translateY": 35
       }
     ],
     "circle": [
       {
         "hasCircle": true,
         "backgroundColor": "indigo",
-        "translateX": 10,
-        "translateY": 10,
+        "translateX": 20,
+        "translateY": 40,
         "radius": 300
       }
     ],
@@ -94,27 +109,30 @@
   },
   {
     "id": 4,
-
     "title": [
       {
-        "text": "4. The benefits of our solution",
+        "text": "The benefits of our solution",
+        "fromX": "right",
         "translateX": 10,
-        "translateY": 10
+        "fromY": "top",
+        "translateY": 30
       }
     ],
-    "text": [
+    "subhead": [
       {
         "text": "How OPEN supports any country's endeavor to develop a sustainable energy grid.",
+        "fromX": "right",
         "translateX": 10,
-        "translateY": 10
+        "fromY": "top",
+        "translateY": 35
       }
     ],
     "circle": [
       {
         "hasCircle": true,
         "backgroundColor": "lightblue",
-        "translateX": 10,
-        "translateY": 10,
+        "translateX": 20,
+        "translateY": 40,
         "radius": 300
       }
     ],
@@ -127,27 +145,30 @@
   },
   {
     "id": 5,
-
     "title": [
       {
-        "text": "7. Calls to action and resources",
+        "text": "Calls to action and resources",
+        "fromX": "right",
         "translateX": 10,
-        "translateY": 10
+        "fromY": "top",
+        "translateY": 30
       }
     ],
-    "text": [
+    "subhead": [
       {
         "text": "Everything that is here in the site available to you now.",
+        "fromX": "right",
         "translateX": 10,
-        "translateY": 10
+        "fromY": "top",
+        "translateY": 35
       }
     ],
     "circle": [
       {
         "hasCircle": true,
         "backgroundColor": "gold",
-        "translateX": 10,
-        "translateY": 10,
+        "translateX": 20,
+        "translateY": 40,
         "radius": 300
       }
     ],

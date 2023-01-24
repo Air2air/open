@@ -1,4 +1,4 @@
-import CalloutList from "components/Callout/callOutList";
+import CalloutList from "components/Callout/calloutList";
 
 const HomePage = () => {
   return (

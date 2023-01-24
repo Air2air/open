@@ -1,14 +1,12 @@
-
-
-export const Circle = (props) => {
+export const CalloutCircle = (props) => {
   return (
     <>
       <div
         style={{
           position: "absolute",
+          borderRadius: "50%",
           right: `${props.percentage * props.translateX}%`,
           top: `${props.percentage * props.translateY}%`,
-          borderRadius: "50%",
           width: `${props.percentage * props.radius}px`,
           height: `${props.percentage * props.radius}px`,
           background: props.backgroundColor,

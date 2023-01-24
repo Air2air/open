@@ -26,11 +26,11 @@ export const HeaderDesktop = () => {
           <LogoNameFull to="/home"/>
         </HeaderLeft>
         <HeaderRight>
-          <HeaderLink to="/connect">Connect</HeaderLink>
+          {/* <HeaderLink to="/connect">Connect</HeaderLink>
           <HeaderLink to="/research">Research</HeaderLink>
           <HeaderLink to="/policy">Policy</HeaderLink>
           <HeaderLink to="/about">About</HeaderLink>
-          <HeaderLink to="/contact">Contact</HeaderLink>
+          <HeaderLink to="/contact">Contact</HeaderLink> */}
         </HeaderRight>
       </HeaderInner>
     </HeaderOuter>
@@ -77,7 +77,7 @@ const LogoName = styled(Link)`
   width:100px;
   margin-right: 20px;
   padding: 0;
-  opacity: 0.6;
+  /* opacity: 0.6; */
   transform: scale(1);
   transition: all 300ms;
   background-image: ${LOGO_TEXT};
@@ -95,7 +95,7 @@ const LogoNameFull = styled(Link)`
   height: ${HEADER_HEIGHT_DESKTOP}px;
   width:110px;
   margin: 4px 0 0 0;
-  opacity: 0.6;
+  opacity: 0.8;
   transform: scale(1);
   transition: all 300ms;
   background-image: ${LOGO_TEXT_FULL};
@@ -118,18 +118,18 @@ const HeaderRight = styled.div`
   /* background: #000; */
 `;
 
-const HeaderLink = styled(Link)`
-  ${FONT_CAPTION_DESKTOP};
-  color: ${COLOR_LINK_REVERSE};
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-  height: ${HEADER_HEIGHT_DESKTOP}px;
-  /* background: ${COLOR_HEADER}; */
-  transition: all 300ms;
-  &:hover {
-    color: ${COLOR_LINK_REVERSE_HOVER};
-    background: ${COLOR_HEADER_HOVER};
-  }
-`;
+// const HeaderLink = styled(Link)`
+//   ${FONT_CAPTION_DESKTOP};
+//   color: ${COLOR_LINK_REVERSE};
+//   padding: 0 20px;
+//   display: flex;
+//   align-items: center;
+//   flex-wrap: nowrap;
+//   height: ${HEADER_HEIGHT_DESKTOP}px;
+//   /* background: ${COLOR_HEADER}; */
+//   transition: all 300ms;
+//   &:hover {
+//     color: ${COLOR_LINK_REVERSE_HOVER};
+//     background: ${COLOR_HEADER_HOVER};
+//   }
+// `;
