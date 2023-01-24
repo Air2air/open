@@ -1,8 +1,6 @@
 import { FetchData } from "fetch/fetch";
 import { Parallax } from "react-parallax";
-// import { CalloutCircle } from "./calloutCircle";
-import { FillerDiv} from "./calloutComponents";
-// import { Debugger } from "./calloutDebugger";
+import { FillerDiv } from "./calloutComponents";
 import { CalloutSubhead } from "./calloutSubHead";
 import { CalloutTitle } from "./calloutTitle";
 

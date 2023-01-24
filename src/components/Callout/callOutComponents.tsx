@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const FillerDiv = styled.div`
   position: "absolute";
   width: 100%;
