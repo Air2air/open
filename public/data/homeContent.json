@@ -3,7 +3,7 @@
     "id": 1,
     "title": [
       {
-        "text": "We express the problem here.",
+        "text": "Ensure a reliable, sustainable, and resilient energy grid.",
         "fromX": "right",
         "translateX": 10,
         "fromY": "top",
@@ -12,11 +12,11 @@
     ],
     "subhead": [
       {
-        "text": "Describe energy grid challenges now and in the future.",
+        "text": "A system that meets the needs of all stakeholders.",
         "fromX": "right",
         "translateX": 10,
         "fromY": "top",
-        "translateY": 35
+        "translateY": 40
       }
     ],
     "circle": [
@@ -38,7 +38,7 @@
     "id": 2,
     "title": [
       {
-        "text": "Describe our solution we bring",
+        "text": "Engage with all energy stakeholders",
         "fromX": "right",
         "translateX": 10,
         "fromY": "top",
@@ -47,11 +47,11 @@
     ],
     "subhead": [
       {
-        "text": "How we provide resources for scientists and organizations to develop energy solutions. ",
+        "text": "Develop and implement energy policies and strategies with government, industry, and communities.",
         "fromX": "right",
         "translateX": 10,
         "fromY": "top",
-        "translateY": 35
+        "translateY": 40
       }
     ],
     "circle": [
@@ -86,7 +86,7 @@
         "fromX": "right",
         "translateX": 10,
         "fromY": "top",
-        "translateY": 35
+        "translateY": 40
       }
     ],
     "circle": [
@@ -121,7 +121,7 @@
         "fromX": "right",
         "translateX": 10,
         "fromY": "top",
-        "translateY": 35
+        "translateY": 40
       }
     ],
     "circle": [
@@ -156,7 +156,7 @@
         "fromX": "right",
         "translateX": 10,
         "fromY": "top",
-        "translateY": 35
+        "translateY": 40
       }
     ],
     "circle": [
