@@ -23,7 +23,7 @@ const SectionList = ({ jsonFile }) => {
             key={index}
             bgImage={props.imageBackground}
             strength={props.strength}
-            blur={{ min: 25, max: -25 }}
+            // blur={{ min: 25, max: -25 }}
             bgImageStyle={{ backgroundSize: "cover" }}
             renderLayer={(percentage) => (
               <>

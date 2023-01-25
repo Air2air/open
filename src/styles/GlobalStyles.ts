@@ -15,7 +15,7 @@ outline: 0;
 margin: 0;
 padding: 0;
 border: 0;
-background-color: #666;
+background-color: #fff;
 }
 
 blockquote {

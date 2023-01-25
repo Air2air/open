@@ -34,7 +34,6 @@ export const SectionSubhead = (props) => {
           left: plusOrMinusX(props.fromX),
           top: plusOrMinusY(props.fromY),
           opacity: setOpacity(props.percentage),
-          minWidth: "80%",
         }}
       >
         <SubheadContainer>{props.text}</SubheadContainer>

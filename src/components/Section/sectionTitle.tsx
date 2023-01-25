@@ -36,7 +36,7 @@ export const SectionTitle = (props) => {
           left: plusOrMinusX(props.fromX),
           top: plusOrMinusY(props.fromY),
           opacity: setOpacity(props.percentage),
-          minWidth: "80%",
+
         }}
       >
         <TitleContainer>
