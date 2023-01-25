@@ -1,4 +1,5 @@
-
+import { HEADER_LOGO_HEIGHT_DESKTOP } from "components/Header/headerDesktop";
+import { LogoText } from "components/Logo/logoText";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { assignBackgroundColor } from "utils/assignBackgroundColor";
 import { IFooterProps } from "./footer";
@@ -11,10 +12,8 @@ import {
   FooterLink,
   FooterCopyright,
   FooterLogoWrapper,
-  LogoText,
 } from "./footerComponents";
 
-const backgroundImageText = "url(/images/site/logo_text.svg)";
 const backgroundImageBug = "url(/images/site/logo_bug.svg)";
 
 export const FooterDesktop = (props: IFooterProps) => {
@@ -32,14 +31,7 @@ export const FooterDesktop = (props: IFooterProps) => {
               delay={0}
               offset={0}
             >
-              <LogoText
-                to="/home"
-                style={{
-                  backgroundImage: backgroundImageText,
-                  backgroundRepeat: "no-repeat",
-                  backgroundSize: "contain",
-                }}
-              />
+              <LogoText size={HEADER_LOGO_HEIGHT_DESKTOP} />
             </AnimationOnScroll>
           </FooterColumn>
           <FooterColumn style={{ width: "60%" }}>

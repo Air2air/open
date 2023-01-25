@@ -1,27 +1,36 @@
-import { LogoBug } from "components/Logo/logoBug";
 import { LogoText } from "components/Logo/logoText";
-import { HamburgerButton } from "components/Header/hamburger";
+
 import styled from "styled-components";
 
-import { CONTENT_WIDTH_DESKTOP } from "styles/Constants";
+import {CONTENT_WIDTH_DESKTOP } from "styles/Constants";
+import { useState } from "react";
+import { HamburgerButton } from "./hamburger";
 
 export const HEADER_HEIGHT_DESKTOP = 70;
 export const HEADER_LOGO_HEIGHT_DESKTOP = HEADER_HEIGHT_DESKTOP * 0.6;
 
 export const HeaderDesktop = () => {
+  const [show, setShow] = useState(false);
+  const handleClick = () => setShow(!show);
+  // toggle the NavPanel show state with a click handler
+
   return (
-    <HeaderOuter>
-      <HeaderInner>
-        <HeaderLeft>
-          <LogoBug size={HEADER_LOGO_HEIGHT_DESKTOP} />
-          &nbsp;&nbsp;
-          <LogoText size={HEADER_LOGO_HEIGHT_DESKTOP} />
-        </HeaderLeft>
-        <HeaderRight>
-          <HamburgerButton size={HEADER_LOGO_HEIGHT_DESKTOP} />
-        </HeaderRight>
-      </HeaderInner>
-    </HeaderOuter>
+    <>
+      <HeaderOuter>
+        <HeaderInner>
+          <HeaderLeft>
+            <LogoText size={HEADER_LOGO_HEIGHT_DESKTOP} />
+          </HeaderLeft>
+          <HeaderRight onClick={handleClick}>
+            <HamburgerButton size={HEADER_LOGO_HEIGHT_DESKTOP} />
+          </HeaderRight>
+        </HeaderInner>
+      </HeaderOuter>
+      <NavPanelOuter style={{ height: show ? "300px" : "0" }}>
+        {/* <NavPanelOuter> */}
+        <NavPanelInner>Doodle pants</NavPanelInner>
+      </NavPanelOuter>
+    </>
   );
 };
 
@@ -66,5 +75,26 @@ const HeaderRight = styled.div`
   /* background: #000; */
 `;
 
-// const HAMBURGER_HEIGHT = 50;
-// const HAMBURGER_WIDTH = 60;
+const NavPanelOuter = styled.div`
+  transition: height 300ms;
+  z-index: +1;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  padding: 0;
+  background-color: #181818;
+`;
+
+const NavPanelInner = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: ${CONTENT_WIDTH_DESKTOP}px;
+`;

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import styled from "styled-components";
 import { COLOR_WHITE } from "styles/Colors";
 
@@ -7,7 +7,7 @@ export const HamburgerButton = (props) => {
   const burgerWidth = props.size * 1.2 + "px";
 
   return (
-    <Hamburger to="/" style={{ height: burgerHeight, width: burgerWidth }}>
+    <Hamburger style={{ height: burgerHeight, width: burgerWidth }}>
       <div style={{ width: burgerWidth }} />
       <div style={{ width: burgerWidth }} />
       <div style={{ width: burgerWidth }} />
@@ -15,7 +15,7 @@ export const HamburgerButton = (props) => {
   );
 };
 
-const Hamburger = styled(Link)`
+const Hamburger = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
