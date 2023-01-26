@@ -3,12 +3,9 @@ import { useState, useEffect } from "react";
 import { FooterDesktop } from "./footerDesktop";
 import { FooterMobile } from "./footerMobile";
 
-export interface IFooterProps {
-  children?: React.ReactNode;
-  backgroundColor: number;
-}
 
-export const Footer = (props: IFooterProps) => {
+
+export const Footer = (props) => {
   const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
