@@ -23,9 +23,9 @@ export const Footer = (props: IFooterProps) => {
   return (
     <>
       {width > BREAKPOINT ? (
-        <FooterDesktop backgroundColor={props.backgroundColor} />
+        <FooterDesktop />
       ) : (
-        <FooterMobile backgroundColor={props.backgroundColor} />
+        <FooterMobile />
       )}
     </>
   );

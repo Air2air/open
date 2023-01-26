@@ -1,4 +1,4 @@
-import { LogoText } from "components/Logo/logoText";
+
 
 import styled from "styled-components";
 import { COLOR_HEADER, CONTENT_WIDTH_DESKTOP } from "styles/Constants";

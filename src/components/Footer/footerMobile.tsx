@@ -1,5 +1,4 @@
 import { IFooterProps } from "./footer";
-import Container from "components/Container/container";
 import { Spacer } from "components/Spacer/spacer";
 import {
   FooterContentRow,
@@ -8,15 +7,21 @@ import {
   FooterCopyright,
   FooterLogoRow,
   FooterLogoWrapper,
+  FooterWrapper,
 } from "./footerComponents";
 import { LogoTextOnly } from "components/Logo/logoTextOnly";
+import { COLOR_FOOTER } from "styles/Colors";
 
 const backgroundImageBug = "url(/images/site/logo_bug.svg)";
 
 export const FooterMobile = (props: IFooterProps) => {
   return (
-    <Container backgroundColor={props.backgroundColor}>
-      <Spacer height={30} backgroundColor={props.backgroundColor} />
+    <FooterWrapper
+      style={{
+        backgroundColor: COLOR_FOOTER
+      }}
+    >
+      <Spacer height={30} />
       <FooterLogoRow animateIn="animate__fadeInUp" delay={0} offset={0}>
         <LogoTextOnly />
       </FooterLogoRow>
@@ -51,7 +56,7 @@ export const FooterMobile = (props: IFooterProps) => {
         <div>All rights reserved.</div>
       </FooterCopyright>
       <Spacer height={20} backgroundColor={props.backgroundColor} />
-    </Container>
+    </FooterWrapper>
   );
 };
 
