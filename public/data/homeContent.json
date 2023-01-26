@@ -3,7 +3,7 @@
     "id": 1,
     "title": [
       {
-        "text": "Ensure a reliable, sustainable, and resilient energy grid.",
+        "text": "Powering the planet",
         "fromX": "right",
         "translateX": 15,
         "fromY": "top",
@@ -30,18 +30,17 @@
         "radius": 300
       }
     ],
-
-    "description": "Various power generation, transmission and storage systems, large costs and unknowns. ",
-    "imageBackground": "/images/content/banner_1.webp",
+    "color": "#FFF",
+    "imageBackground": "/images/content/banner_12.webp",
     "strength": -200,
-    "height": 700,
+    "height": 800,
     "backgroundColor": "#ddd"
   },
   {
     "id": 2,
     "title": [
       {
-        "text": "Engage with all energy stakeholders",
+        "text": "Powering the planet",
         "fromX": "right",
         "translateX": 10,
         "fromY": "top",
@@ -68,17 +67,17 @@
         "radius": 300
       }
     ],
-    "description": "Integrated knowledge and expertise from a wide range of scientific disciplines, including electrical engineering, physics, materials science, and computer science, to effectively design and implement a complex and advanced energy grid.",
+    "color": "#FFF",
     "imageBackground": "",
     "strength": 400,
-    "height": 700,
+    "height": 500,
     "backgroundColor": "#FFF"
   },
   {
     "id": 3,
     "title": [
       {
-        "text": "How your participation is key",
+        "text": "Powering the planet",
         "fromX": "right",
         "translateX": 10,
         "fromY": "top",
@@ -106,8 +105,7 @@
       }
     ],
     "color": "#FFF",
-    "description": "Scientists using tools to collaborate and share. Scientists platformed and popular vs. unknown ",
-    "imageBackground": "/images/content/banner_3.webp",
+    "imageBackground": "/images/content/banner_13.webp",
     "strength": -400,
     "height": 700,
     "backgroundColor": "#ddd"
@@ -116,7 +114,7 @@
     "id": 4,
     "title": [
       {
-        "text": "The benefits of our solution",
+        "text": "Powering the planet",
         "fromX": "right",
         "translateX": 10,
         "fromY": "top",
@@ -144,7 +142,6 @@
       }
     ],
     "color": "#FFF",
-    "description": "Countries being powered by scientists contributions. Balanced competing interests and priorities among stakeholders, including government agencies, utilities, and private sector companies.",
     "imageBackground": "/images/content/banner_4.webp",
     "strength": 400,
     "height": 700,
@@ -154,7 +151,7 @@
     "id": 5,
     "title": [
       {
-        "text": "Calls to action and resources",
+        "text": "Powering the planet",
         "fromX": "right",
         "translateX": 10,
         "fromY": "top",
@@ -182,7 +179,6 @@
       }
     ],
     "color": "#FFF",
-    "description": "TBD",
     "imageBackground": "/images/content/banner_5.webp",
     "strength": -400,
     "height": 700,

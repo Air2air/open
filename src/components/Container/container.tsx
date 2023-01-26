@@ -4,21 +4,16 @@ import {
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
 } from "styles/Constants";
-import { assignBackgroundColor } from "utils/assignBackgroundColor";
 
 type ContainerProps = {
-  children: React.ReactNode;
-  backgroundColor: number;
+  children?: React.ReactNode;
+  backgroundColor?: number;
 };
 
-const Container = (props:ContainerProps) => {
+const Container = (props: ContainerProps) => {
   return (
     <>
-      <ContainerOuter
-        style={{
-          backgroundColor: assignBackgroundColor(props.backgroundColor),
-        }}
-      >
+      <ContainerOuter>
         {props ? null : "No props passed"}
         <ContainerInner>{props.children}</ContainerInner>
       </ContainerOuter>

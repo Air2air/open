@@ -49,6 +49,7 @@ export const NavLinkColumn = styled.div`
   flex-direction: column;
   text-align: left;
   justify-content: center;
+  padding: 0 0 40px 0;
   @media (min-width: ${BREAKPOINT}px) {
     height: ${NAV_COLUMN_HEIGHT_DESKTOP}px;
   }

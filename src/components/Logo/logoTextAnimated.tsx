@@ -4,7 +4,7 @@ const backgroundImageText = "url(/images/site/logo_text.svg)";
 const TRANSITION_SPEED = "0.25s";
 const CHARACTER_PADDING = "0 0 4px 0";
 
-export const LogoText = (props) => {
+export const LogoTextAnimated = (props) => {
   const minWidthO = props.size * 0.95;
   const maxWidthO = props.size * 3.3;
 
