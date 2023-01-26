@@ -20,7 +20,7 @@ export const HeaderDesktop = () => {
             <LogoTextAnimated size={HEADER_LOGO_HEIGHT_DESKTOP} />
           </HeaderLeft>
           <HeaderRight onClick={handleClick}>
-            <HamburgerButton size={HEADER_LOGO_HEIGHT_DESKTOP} />
+            <HamburgerButton size={36} />
           </HeaderRight>
         </HeaderInner>
       </HeaderOuter>
