@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { CONTENT_WIDTH_DESKTOP } from "styles/Constants";
 import { useState } from "react";
 import { HamburgerButton } from "./hamburger";
-import { LogoText } from "components/Logo/logoText";
+import { LogoTextAnimated } from "components/Logo/logoTextAnimated";
 import { NavPanel } from "./navPanel";
 
 export const HEADER_HEIGHT_DESKTOP = 70;
@@ -17,7 +17,7 @@ export const HeaderDesktop = () => {
       <HeaderOuter>
         <HeaderInner>
           <HeaderLeft>
-            <LogoText size={HEADER_LOGO_HEIGHT_DESKTOP} />
+            <LogoTextAnimated size={HEADER_LOGO_HEIGHT_DESKTOP} />
           </HeaderLeft>
           <HeaderRight onClick={handleClick}>
             <HamburgerButton size={HEADER_LOGO_HEIGHT_DESKTOP} />
