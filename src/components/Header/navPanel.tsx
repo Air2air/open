@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { COLOR_HEADER } from "styles/Colors";
 
 export const NavPanel = () => {
   return <Panel>Doddle Pants</Panel>;
@@ -13,7 +14,7 @@ const Panel = styled.div`
   padding: 20px;
   overflow: hidden;
   box-sizing: border-box;
-  background: "#333";
+  background: ${COLOR_HEADER}
   /* background: red; */
 `;
 

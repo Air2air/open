@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import {
   BREAKPOINT,
-  COLOR_BANNER_SUBHEAD,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
   FONT_BANNER_SUBHEAD_DESKTOP,
@@ -36,7 +35,9 @@ export const SectionSubhead = (props) => {
           opacity: setOpacity(props.percentage),
         }}
       >
-        <SubheadContainer>{props.text}</SubheadContainer>
+        <SubheadContainer style={{ color: props.color }}>
+          {props.text}
+        </SubheadContainer>
       </div>
     </>
   );
@@ -46,8 +47,6 @@ const SubheadContainer = styled.div`
   display: flex;
   align-items: flex-start;
   text-align: left;
-  background-color: hsla(0, 0%, 10%, 0.7);
-  color: ${COLOR_BANNER_SUBHEAD};
   @media (min-width: ${BREAKPOINT}px) {
     ${FONT_BANNER_SUBHEAD_DESKTOP}
     width: auto; //${CONTENT_WIDTH_DESKTOP};

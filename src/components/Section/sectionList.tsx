@@ -1,7 +1,7 @@
 import { FetchData } from "fetch/fetch";
 import { Parallax } from "react-parallax";
 import { FillerDiv } from "./sectionComponents";
-import { SectionSubhead } from "./sectionSubHead";
+// import { SectionSubhead } from "./sectionSubHead";
 import { SectionTitle } from "./sectionTitle";
 
 const SectionList = ({ jsonFile }) => {
@@ -36,14 +36,14 @@ const SectionList = ({ jsonFile }) => {
                     />
                   ))}
 
-                {props.subhead &&
+                {/* {props.subhead &&
                   props.subhead.map((props, index) => (
                     <SectionSubhead
                       key={index}
                       {...props}
                       percentage={percentage}
                     />
-                  ))}
+                  ))} */}
               </>
             )}
           >

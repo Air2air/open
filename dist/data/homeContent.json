@@ -3,20 +3,22 @@
     "id": 1,
     "title": [
       {
-        "text": "We express the problem here.",
+        "text": "Ensure a reliable, sustainable, and resilient energy grid.",
         "fromX": "right",
-        "translateX": 10,
+        "translateX": 15,
         "fromY": "top",
-        "translateY": 30
+        "translateY": 30,
+        "color": "#FFF"
       }
     ],
     "subhead": [
       {
-        "text": "Describe energy grid challenges now and in the future.",
+        "text": "A system that meets the needs of all stakeholders.",
         "fromX": "right",
-        "translateX": 10,
+        "translateX": 15,
         "fromY": "top",
-        "translateY": 35
+        "translateY": 40,
+        "color": "#FFF"
       }
     ],
     "circle": [
@@ -28,6 +30,7 @@
         "radius": 300
       }
     ],
+
     "description": "Various power generation, transmission and storage systems, large costs and unknowns. ",
     "imageBackground": "/images/content/banner_1.webp",
     "strength": -200,
@@ -38,20 +41,22 @@
     "id": 2,
     "title": [
       {
-        "text": "Describe our solution we bring",
+        "text": "Engage with all energy stakeholders",
         "fromX": "right",
         "translateX": 10,
         "fromY": "top",
-        "translateY": 30
+        "translateY": 30,
+        "color": "#000"
       }
     ],
     "subhead": [
       {
-        "text": "How we provide resources for scientists and organizations to develop energy solutions. ",
+        "text": "Develop and implement energy policies and strategies with government, industry, and communities.",
         "fromX": "right",
         "translateX": 10,
         "fromY": "top",
-        "translateY": 35
+        "translateY": 40,
+        "color": "#000"
       }
     ],
     "circle": [
@@ -77,7 +82,8 @@
         "fromX": "right",
         "translateX": 10,
         "fromY": "top",
-        "translateY": 30
+        "translateY": 30,
+        "color": "#FFF"
       }
     ],
     "subhead": [
@@ -86,7 +92,8 @@
         "fromX": "right",
         "translateX": 10,
         "fromY": "top",
-        "translateY": 35
+        "translateY": 40,
+        "color": "#FFF"
       }
     ],
     "circle": [
@@ -98,6 +105,7 @@
         "radius": 300
       }
     ],
+    "color": "#FFF",
     "description": "Scientists using tools to collaborate and share. Scientists platformed and popular vs. unknown ",
     "imageBackground": "/images/content/banner_3.webp",
     "strength": -400,
@@ -112,7 +120,8 @@
         "fromX": "right",
         "translateX": 10,
         "fromY": "top",
-        "translateY": 30
+        "translateY": 30,
+        "color": "#FFF"
       }
     ],
     "subhead": [
@@ -121,7 +130,8 @@
         "fromX": "right",
         "translateX": 10,
         "fromY": "top",
-        "translateY": 35
+        "translateY": 40,
+        "color": "#FFF"
       }
     ],
     "circle": [
@@ -133,6 +143,7 @@
         "radius": 300
       }
     ],
+    "color": "#FFF",
     "description": "Countries being powered by scientists contributions. Balanced competing interests and priorities among stakeholders, including government agencies, utilities, and private sector companies.",
     "imageBackground": "/images/content/banner_4.webp",
     "strength": 400,
@@ -147,7 +158,8 @@
         "fromX": "right",
         "translateX": 10,
         "fromY": "top",
-        "translateY": 30
+        "translateY": 30,
+        "color": "#FFF"
       }
     ],
     "subhead": [
@@ -156,7 +168,8 @@
         "fromX": "right",
         "translateX": 10,
         "fromY": "top",
-        "translateY": 35
+        "translateY": 40,
+        "color": "#FFF"
       }
     ],
     "circle": [
@@ -168,6 +181,7 @@
         "radius": 300
       }
     ],
+    "color": "#FFF",
     "description": "TBD",
     "imageBackground": "/images/content/banner_5.webp",
     "strength": -400,

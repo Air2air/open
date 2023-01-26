@@ -2,7 +2,7 @@ import { LogoText } from "components/Logo/logoText";
 
 import styled from "styled-components";
 
-import {CONTENT_WIDTH_DESKTOP } from "styles/Constants";
+import {COLOR_HEADER, CONTENT_WIDTH_DESKTOP } from "styles/Constants";
 import { useState } from "react";
 import { HamburgerButton } from "./hamburger";
 
@@ -27,8 +27,7 @@ export const HeaderDesktop = () => {
         </HeaderInner>
       </HeaderOuter>
       <NavPanelOuter style={{ height: show ? "300px" : "0" }}>
-        {/* <NavPanelOuter> */}
-        <NavPanelInner>Doodle pants</NavPanelInner>
+        <NavPanelInner>Nav panel</NavPanelInner>
       </NavPanelOuter>
     </>
   );
@@ -85,7 +84,7 @@ const NavPanelOuter = styled.div`
   width: 100%;
   height: 300px;
   padding: 0;
-  background-color: #181818;
+  background: ${COLOR_HEADER}
 `;
 
 const NavPanelInner = styled.div`

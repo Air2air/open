@@ -1,5 +1,5 @@
-const BASEHUE = 21;
-const SATURATION = 30;
+const BASEHUE = 130;
+const SATURATION = 60;
 
 export const COLOR_BASE = `hsl(${BASEHUE}, ${SATURATION}%, 50%)`;
 export const COLOR_BLACK = `hsl(0, 0%, 0%)`;
@@ -13,9 +13,9 @@ export const COLOR_BASE_4 = `hsl(${BASEHUE}, ${SATURATION}%, 50%)`;
 
 // SITE
 export const COLOR_BACKGROUND = `hsl(${BASEHUE}, ${SATURATION}%, 90%)`;
-export const COLOR_HEADER = `hsl(${BASEHUE}, ${SATURATION}%, 50%)`;
+export const COLOR_HEADER = `hsl(${BASEHUE}, ${SATURATION}%, 30%)`;
 export const COLOR_HEADER_HOVER = `hsl(${BASEHUE}, ${SATURATION}%, 60%)`;
-export const COLOR_FOOTER = `hsl(${BASEHUE}, ${SATURATION}%, 50%)`;
+export const COLOR_FOOTER = `hsl(${BASEHUE}, ${SATURATION}%, 30%)`;
 
 // BUTTONS
 export const COLOR_BUTTON_TEXT = COLOR_WHITE;

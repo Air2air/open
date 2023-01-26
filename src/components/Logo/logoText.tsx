@@ -30,11 +30,18 @@ export const LogoText = (props) => {
     window.clearTimeout;
   }
 
+
   /* eslint-disable */
   const handleMouseEnterAll = (
     e: React.MouseEvent<HTMLDivElement, MouseEvent>
   ) => {
     elementO ? (elementO.style.width = maxWidthO + "px") : null;
+
+    // elementP
+    //   ? sleep(500).then(() => {
+    //       elementP ? (elementP.style.width = maxWidthP + "px") : null;
+    //     })
+    //   : null;
 
     setTimeout(() => {
       elementP ? (elementP.style.width = maxWidthP + "px") : null;
@@ -47,7 +54,6 @@ export const LogoText = (props) => {
     setTimeout(() => {
       elementN ? (elementN.style.width = maxWidthN + "px") : null;
     }, 1500);
-
   };
   /* eslint-enable */
 

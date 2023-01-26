@@ -39,7 +39,7 @@ export const SectionTitle = (props) => {
 
         }}
       >
-        <TitleContainer>
+        <TitleContainer style={{color: props.color}}>
           {props.text} 
         </TitleContainer>
       </div>
@@ -51,8 +51,8 @@ const TitleContainer = styled.div`
   display: flex;
   align-items: flex-end;
   text-align: left;
-  background-color: hsla(0, 0%, 10%, 0.7);
-  color: ${COLOR_BANNER_HEADING};
+  /* background-color: hsla(0, 0%, 10%, 0.7); */
+  /* color: ${COLOR_BANNER_HEADING}; */
   @media (min-width: ${BREAKPOINT}px) {
     width: auto; //${CONTENT_WIDTH_DESKTOP};
     ${FONT_BANNER_HEADING_DESKTOP};
