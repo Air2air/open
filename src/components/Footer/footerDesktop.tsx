@@ -54,7 +54,7 @@ export const FooterDesktop = () => {
         </FooterContentRow>
 
         <FooterCopyright>
-          <div>&copy; Open</div>
+          <div>&copy; Open Power & Energy Network</div>
           <FooterLogoWrapper
             style={{
               background: logo_bug,
