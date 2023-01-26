@@ -45,7 +45,7 @@ const SectionList = ({ jsonFile }) => {
           <Parallax
             key={index}
             strength={props.strength}
-            style={{ height:calculatedHeight(props) }}
+            style={{ background: "red" }}
             renderLayer={(percentage) => (
               <>
                 {props.title &&
@@ -66,7 +66,7 @@ const SectionList = ({ jsonFile }) => {
                   <BackgroundImage
                     height= {calculatedHeight(props)}
                     src={props.imageBackground}
-                    alt={props.title}
+                    alt="fill murray"
                   />
                 </Background>
                 <FillerDiv style={{ height: props.height }} />
@@ -83,8 +83,8 @@ const FillerDiv = styled.div`
   width: ${window.innerWidth}px;
 `;
 const BackgroundImage = styled.img`
-  /* min-width: ${window.innerWidth}px;
-  height: ${(props) => props.height}px; */
+  min-width: ${window.innerWidth}px;
+  height: ${(props) => props.height}px;
   object-fit: cover;
 `;
 

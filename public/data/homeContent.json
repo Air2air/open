@@ -105,7 +105,7 @@
       }
     ],
     "color": "#FFF",
-    "imageBackground": "/images/content/banner_13.webp",
+    "imageBackground": "/images/content/banner_15.webp",
     "strength": -400,
     "height": 700,
     "backgroundColor": "#ddd"
@@ -142,7 +142,7 @@
       }
     ],
     "color": "#FFF",
-    "imageBackground": "/images/content/banner_4.webp",
+    "imageBackground": "/images/content/banner_14.webp",
     "strength": 400,
     "height": 700,
     "backgroundColor": "#EEE"
@@ -179,7 +179,7 @@
       }
     ],
     "color": "#FFF",
-    "imageBackground": "/images/content/banner_5.webp",
+    "imageBackground": "/images/content/banner_15.webp",
     "strength": -400,
     "height": 700,
     "backgroundColor": "#ddd"
