@@ -69,4 +69,3 @@ const HeaderRight = styled.div`
   padding: 0;
   /* background: #000; */
 `;
-

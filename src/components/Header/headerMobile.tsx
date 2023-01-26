@@ -17,7 +17,7 @@ export const HeaderMobile = () => {
     <>
       <HeaderContainer>
         <HeaderTop>
-          <LogoTextOnly />
+          <LogoTextOnly size={24}/>
         </HeaderTop>
         <HeaderBottom>
           <HeaderLink to="/connect">Work</HeaderLink>
@@ -49,7 +49,7 @@ const HeaderContainer = styled.div`
 
 const HeaderTop = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   width: 100vw;
   padding: 0;

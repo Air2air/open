@@ -1,4 +1,3 @@
-
 import { LogoTextOnly } from "components/Logo/logoTextOnly";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { COLOR_FOOTER } from "styles/Colors";
@@ -6,64 +5,37 @@ import { COLOR_FOOTER } from "styles/Colors";
 import {
   FooterWrapper,
   FooterContainer,
-  FooterContentRow,
+  FooterColumnRow,
   FooterColumn,
-  FooterLinkColumn,
-  FooterLink,
-  FooterCopyright,
-  FooterLogoWrapper,
+  FOOTER_HEIGHT_DESKTOP,
 } from "./footerComponents";
-
-const logo_bug = "url(/images/site/logo_bug.svg)";
+import { FooterCopyright } from "./footerCopyright";
+import { FooterLinks } from "./footerLinks";
 
 export const FooterDesktop = () => {
   return (
     <FooterWrapper
       style={{
-        backgroundColor: COLOR_FOOTER
+        backgroundColor: COLOR_FOOTER,
+        height: `${FOOTER_HEIGHT_DESKTOP}px`
       }}
     >
       <FooterContainer>
-        <FooterContentRow>
+        <FooterColumnRow>
           <FooterColumn style={{ width: "40%" }}>
             <AnimationOnScroll
               animateIn="animate__fadeInLeft"
               delay={0}
               offset={0}
             >
-               <LogoTextOnly /> 
+              <LogoTextOnly size={30} />
             </AnimationOnScroll>
           </FooterColumn>
           <FooterColumn style={{ width: "60%" }}>
-            <FooterLinkColumn>
-              <FooterLink to="/">Home</FooterLink>
-              <FooterLink to="/connect">Connect</FooterLink>
-              <FooterLink to="/research">Research</FooterLink>
-            </FooterLinkColumn>
-            <FooterLinkColumn>
-              <FooterLink to="/policy">Policy</FooterLink>
-              <FooterLink to="/education">Education</FooterLink>
-              <FooterLink to="/charter">Charter</FooterLink>
-            </FooterLinkColumn>
-            <FooterLinkColumn>
-              <FooterLink to="/about">About</FooterLink>
-              <FooterLink to="/contact">Contact</FooterLink>
-              {/* <FooterLink to="/articles">Articles</FooterLink> */}
-            </FooterLinkColumn>
+            <FooterLinks />
           </FooterColumn>
-        </FooterContentRow>
-
-        <FooterCopyright>
-          <div>&copy; Open Power & Energy Network</div>
-          <FooterLogoWrapper
-            style={{
-              background: logo_bug,
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "contain",
-            }}
-          ></FooterLogoWrapper>
-          <div>All rights reserved.</div>
-        </FooterCopyright>
+        </FooterColumnRow>
+        <FooterCopyright />
       </FooterContainer>
     </FooterWrapper>
   );

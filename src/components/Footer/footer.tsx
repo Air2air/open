@@ -3,27 +3,14 @@ import { useState, useEffect } from "react";
 import { FooterDesktop } from "./footerDesktop";
 import { FooterMobile } from "./footerMobile";
 
-
-
-export const Footer = (props) => {
+export const Footer = () => {
   const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const handleWindowResize = () => setWidth(window.innerWidth);
     window.addEventListener("resize", handleWindowResize);
-
     return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
 
-  console.log("backgroundColor: ", props.backgroundColor);
-
-  return (
-    <>
-      {width > BREAKPOINT ? (
-        <FooterDesktop />
-      ) : (
-        <FooterMobile />
-      )}
-    </>
-  );
+  return <>{width > BREAKPOINT ? <FooterDesktop /> : <FooterMobile />}</>;
 };

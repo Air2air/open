@@ -1,63 +1,53 @@
-
-import { Spacer } from "components/Spacer/spacer";
 import {
-  FooterContentRow,
-  FooterLinkColumn,
-  FooterLink,
-  FooterCopyright,
-  FooterLogoRow,
-  FooterLogoWrapper,
+  FooterColumnRow,
+  FooterContainer,
   FooterWrapper,
+  FOOTER_HEIGHT_MOBILE,
+  FOOTER_LOGO_HEIGHT_MOBILE,
 } from "./footerComponents";
 import { LogoTextOnly } from "components/Logo/logoTextOnly";
 import { COLOR_FOOTER } from "styles/Colors";
+import { FooterCopyright } from "./footerCopyright";
+import { FooterLinks } from "./footerLinks";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import styled from "styled-components";
 
-const backgroundImageBug = "url(/images/site/logo_bug.svg)";
-
-export const FooterMobile = (props) => {
+export const FooterMobile = () => {
   return (
     <FooterWrapper
       style={{
-        backgroundColor: COLOR_FOOTER
+        backgroundColor: COLOR_FOOTER,
+        height: `${FOOTER_HEIGHT_MOBILE}px`,
       }}
     >
-      <Spacer height={30} />
-      <FooterLogoRow animateIn="animate__fadeInUp" delay={0} offset={0}>
-        <LogoTextOnly />
-      </FooterLogoRow>
-
-      <FooterContentRow>
-        <FooterLinkColumn>
-          <FooterLink to="/">Home</FooterLink>
-          <FooterLink to="/connect">Connect</FooterLink>
-          <FooterLink to="/research">Research</FooterLink>
-        </FooterLinkColumn>
-        <FooterLinkColumn>
-          <FooterLink to="/policy">Policy</FooterLink>
-          <FooterLink to="/education">Education</FooterLink>
-          <FooterLink to="/charter">Charter</FooterLink>
-        </FooterLinkColumn>
-        <FooterLinkColumn>
-          <FooterLink to="/about">About</FooterLink>
-          <FooterLink to="/contact">Contact</FooterLink>
-          {/* <FooterLink to="/articles">Articles</FooterLink> */}
-        </FooterLinkColumn>
-      </FooterContentRow>
-
-      <FooterCopyright>
-        <div>&copy; Open</div>
-        <FooterLogoWrapper
-          style={{
-            background: backgroundImageBug,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "contain",
-          }}
-        ></FooterLogoWrapper>
-        <div>All rights reserved.</div>
-      </FooterCopyright>
-      <Spacer height={20} backgroundColor={props.backgroundColor} />
+      <FooterContainer>
+        <FooterLogoRow animateIn="animate__fadeInUp" delay={0} offset={0}>
+          <LogoTextOnly size={24} />
+        </FooterLogoRow>
+        <FooterColumnRow>
+          <FooterLinks />
+        </FooterColumnRow>
+        <FooterCopyright />
+      </FooterContainer>
     </FooterWrapper>
   );
 };
 
-//Mobile
+export const FooterLogoRow = styled(AnimationOnScroll)`
+  display: flex;
+  /* z-index: +1; */
+  align-items: flex-end;
+  justify-content: center;
+
+  width: 100%;
+  height: ${FOOTER_LOGO_HEIGHT_MOBILE}px;
+  a.link {
+    opacity: 0.4;
+  }
+  &:hover {
+    a.link {
+      opacity: 1;
+    }
+  }
+  /* background: gold; */
+`;
