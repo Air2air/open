@@ -32,7 +32,6 @@ const SectionList = ({ jsonFile }) => {
   const calculatedHeight = (props) => {
     const heightCalc = props.height * width / 1000;
     if (props.height) {
-      console.log(heightCalc);
       return heightCalc;
     }
 
