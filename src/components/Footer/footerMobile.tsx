@@ -1,4 +1,4 @@
-import { IFooterProps } from "./footer";
+
 import { Spacer } from "components/Spacer/spacer";
 import {
   FooterContentRow,
@@ -14,7 +14,7 @@ import { COLOR_FOOTER } from "styles/Colors";
 
 const backgroundImageBug = "url(/images/site/logo_bug.svg)";
 
-export const FooterMobile = (props: IFooterProps) => {
+export const FooterMobile = (props) => {
   return (
     <FooterWrapper
       style={{
