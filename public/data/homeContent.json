@@ -28,6 +28,7 @@
         "radius": 300
       }
     ],
+    "style": "reverse",
     "description": "Various power generation, transmission and storage systems, large costs and unknowns. ",
     "imageBackground": "/images/content/banner_1.webp",
     "strength": -200,
@@ -63,6 +64,7 @@
         "radius": 300
       }
     ],
+    "style": "positive",
     "description": "Integrated knowledge and expertise from a wide range of scientific disciplines, including electrical engineering, physics, materials science, and computer science, to effectively design and implement a complex and advanced energy grid.",
     "imageBackground": "",
     "strength": 400,
@@ -98,6 +100,7 @@
         "radius": 300
       }
     ],
+    "style": "reverse",
     "description": "Scientists using tools to collaborate and share. Scientists platformed and popular vs. unknown ",
     "imageBackground": "/images/content/banner_3.webp",
     "strength": -400,
@@ -133,6 +136,7 @@
         "radius": 300
       }
     ],
+    "style": "reverse",
     "description": "Countries being powered by scientists contributions. Balanced competing interests and priorities among stakeholders, including government agencies, utilities, and private sector companies.",
     "imageBackground": "/images/content/banner_4.webp",
     "strength": 400,
@@ -168,6 +172,7 @@
         "radius": 300
       }
     ],
+    "style": "reverse",
     "description": "TBD",
     "imageBackground": "/images/content/banner_5.webp",
     "strength": -400,

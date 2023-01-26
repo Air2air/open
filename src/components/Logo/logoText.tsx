@@ -17,13 +17,51 @@ export const LogoText = (props) => {
   const minWidthN = props.size * 0.67;
   const maxWidthN = props.size * 4.9;
 
+  const elementO = document.getElementById("O");
+  const elementP = document.getElementById("P");
+  const elementE = document.getElementById("E");
+  const elementN = document.getElementById("N");
+
+  function resetAll() {
+    elementO ? (elementO.style.width = minWidthO + "px") : null;
+    elementP ? (elementP.style.width = minWidthP + "px") : null;
+    elementE ? (elementE.style.width = minWidthE + "px") : null;
+    elementN ? (elementN.style.width = minWidthN + "px") : null;
+    window.clearTimeout;
+  }
+
+  /* eslint-disable */
+  const handleMouseEnterAll = (
+    e: React.MouseEvent<HTMLDivElement, MouseEvent>
+  ) => {
+    elementO ? (elementO.style.width = maxWidthO + "px") : null;
+
+    setTimeout(() => {
+      elementP ? (elementP.style.width = maxWidthP + "px") : null;
+    }, 500);
+
+    setTimeout(() => {
+      elementE ? (elementE.style.width = maxWidthE + "px") : null;
+    }, 1000);
+
+    setTimeout(() => {
+      elementN ? (elementN.style.width = maxWidthN + "px") : null;
+    }, 1500);
+
+  };
+  /* eslint-enable */
+
+  /* eslint-disable */
+  const handleMouseLeaveAll = (
+    e: React.MouseEvent<HTMLDivElement, MouseEvent>
+  ) => {
+    resetAll();
+  };
+  /* eslint-enable */
+
   const handleMouseEnter = (
     e: React.MouseEvent<HTMLDivElement, MouseEvent>
   ) => {
-    if (e.currentTarget.id === "O") {
-      e.currentTarget.style.width = maxWidthO + "px";
-    }
-
     if (e.currentTarget.id === "P") {
       e.currentTarget.style.width = maxWidthP + "px";
     }
@@ -40,10 +78,6 @@ export const LogoText = (props) => {
   const handleMouseLeave = (
     e: React.MouseEvent<HTMLDivElement, MouseEvent>
   ) => {
-    if (e.currentTarget.id === "O") {
-      e.currentTarget.style.width = minWidthO + "px";
-    }
-
     if (e.currentTarget.id === "P") {
       e.currentTarget.style.width = minWidthP + "px";
     }
@@ -65,8 +99,8 @@ export const LogoText = (props) => {
     >
       <O
         id="O"
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
+        onMouseEnter={handleMouseEnterAll}
+        onMouseLeave={handleMouseLeaveAll}
         style={{
           height: props.size + "px",
           minWidth: minWidthO + "px",
