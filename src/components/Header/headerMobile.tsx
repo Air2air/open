@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-
 import {
   COLOR_HEADER,
   COLOR_HEADER_HOVER,
@@ -8,20 +7,17 @@ import {
   COLOR_LINK_REVERSE_HOVER,
   FONT_CAPTION_MOBILE,
 } from "styles/Constants";
+import { LogoTextOnly } from "components/Logo/logoTextOnly";
 
 export const HEADER_HEIGHT_MOBILE = 120;
-const LOGO_TEXT = "url(/images/site/logo_text.svg)";
-const LOGO_TEXT_FULL = "url(/images/site/logo_text_full.svg)";
+
 
 export const HeaderMobile = () => {
   return (
     <>
       <HeaderContainer>
         <HeaderTop>
-          <LogoWrapper>
-          <LogoName to="/home" />
-          <LogoNameFull to="/home"/>
-          </LogoWrapper>
+          <LogoTextOnly />
         </HeaderTop>
         <HeaderBottom>
           <HeaderLink to="/connect">Work</HeaderLink>
@@ -59,59 +55,6 @@ const HeaderTop = styled.div`
   padding: 0;
   height: ${headerTopHeightPx};
   background: ${COLOR_HEADER};
-`;
-
-const LogoWrapper = styled.div`
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  height: ${headerTopHeightPx};
-  padding: 4px 0 0 0;
-  opacity: 0.7;
-  transform: scale(1);
-  transition: all 300ms;
-  &:hover {
-    opacity: 1;
-    transform: scale(1.03);
-  }
-  /* background-color: blue; */
-`;
-
-const LogoName = styled(Link)`
-  height: ${HEADER_HEIGHT_MOBILE}px;
-  width:100px;
-  margin-right: 20px;
-  padding: 0;
-  opacity: 0.6;
-  transform: scale(1);
-  transition: all 300ms;
-  background-image: ${LOGO_TEXT};
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  &:hover {
-    opacity: 1;
-    transform: scale(1.03);
-  }
-  /* background-color: green; */
-`;
-
-const LogoNameFull = styled(Link)`
-  height: ${HEADER_HEIGHT_MOBILE}px;
-  width:110px;
-  margin: 4px 0 0 0;
-  opacity: 0.6;
-  transform: scale(1);
-  transition: all 300ms;
-  background-image: ${LOGO_TEXT_FULL};
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  &:hover {
-    opacity: 1;
-    transform: scale(1.03);
-  }
-  /* background-color: blue; */
 `;
 
 const HeaderBottom = styled.div`

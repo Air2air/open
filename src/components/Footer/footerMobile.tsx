@@ -1,4 +1,3 @@
-
 import { IFooterProps } from "./footer";
 import Container from "components/Container/container";
 import { Spacer } from "components/Spacer/spacer";
@@ -9,10 +8,9 @@ import {
   FooterCopyright,
   FooterLogoRow,
   FooterLogoWrapper,
-  LogoText,
 } from "./footerComponents";
+import { LogoTextOnly } from "components/Logo/logoTextOnly";
 
-const backgroundImageText = "url(/images/site/logo_text.svg)";
 const backgroundImageBug = "url(/images/site/logo_bug.svg)";
 
 export const FooterMobile = (props: IFooterProps) => {
@@ -20,14 +18,7 @@ export const FooterMobile = (props: IFooterProps) => {
     <Container backgroundColor={props.backgroundColor}>
       <Spacer height={30} backgroundColor={props.backgroundColor} />
       <FooterLogoRow animateIn="animate__fadeInUp" delay={0} offset={0}>
-        <LogoText
-          to="/home"
-          style={{
-            backgroundImage: backgroundImageText,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "contain",
-          }}
-        />
+        <LogoTextOnly />
       </FooterLogoRow>
 
       <FooterContentRow>
@@ -49,8 +40,7 @@ export const FooterMobile = (props: IFooterProps) => {
       </FooterContentRow>
 
       <FooterCopyright>
-        <div>&copy; Open of Ten LLP</div>
-
+        <div>&copy; Open</div>
         <FooterLogoWrapper
           style={{
             background: backgroundImageBug,
@@ -58,7 +48,6 @@ export const FooterMobile = (props: IFooterProps) => {
             backgroundSize: "contain",
           }}
         ></FooterLogoWrapper>
-
         <div>All rights reserved.</div>
       </FooterCopyright>
       <Spacer height={20} backgroundColor={props.backgroundColor} />

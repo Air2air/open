@@ -1,20 +1,39 @@
-import styled from "styled-components";
-import { COLOR_HEADER } from "styles/Colors";
+import { LogoText } from "components/Logo/logoText";
 
-export const NavPanel = () => {
-  return <Panel>Doddle Pants</Panel>;
+import styled from "styled-components";
+import { COLOR_HEADER, CONTENT_WIDTH_DESKTOP } from "styles/Constants";
+
+
+export const NavPanel = (props) => {
+  return (
+    <>
+      <NavPanelOuter style={{ height: props.show ? "300px" : "0" }}>
+        <NavPanelInner>Nav panel</NavPanelInner>
+      </NavPanelOuter>
+    </>
+  );
 };
 
-const Panel = styled.div`
-  color: #fff;
-  position: absolute;
-  top: -250px;
-  left: 0;
+const NavPanelOuter = styled.div`
+  transition: height 300ms;
+  z-index: +1;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
   width: 100%;
-  padding: 20px;
-  overflow: hidden;
-  box-sizing: border-box;
-  background: ${COLOR_HEADER}
-  /* background: red; */
+  height: 300px;
+  padding: 0;
+  background: ${COLOR_HEADER};
 `;
 
+const NavPanelInner = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: ${CONTENT_WIDTH_DESKTOP}px;
+`;

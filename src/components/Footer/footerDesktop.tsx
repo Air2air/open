@@ -1,4 +1,5 @@
 
+import { LogoTextOnly } from "components/Logo/logoTextOnly";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { COLOR_FOOTER } from "styles/Colors";
 
@@ -13,7 +14,7 @@ import {
   FooterLogoWrapper,
 } from "./footerComponents";
 
-const backgroundImageBug = "url(/images/site/logo_bug.svg)";
+const logo_bug = "url(/images/site/logo_bug.svg)";
 
 export const FooterDesktop = () => {
   return (
@@ -30,7 +31,7 @@ export const FooterDesktop = () => {
               delay={0}
               offset={0}
             >
-              {/* <LogoText size={HEADER_LOGO_HEIGHT_DESKTOP} /> */}
+               <LogoTextOnly /> 
             </AnimationOnScroll>
           </FooterColumn>
           <FooterColumn style={{ width: "60%" }}>
@@ -53,10 +54,10 @@ export const FooterDesktop = () => {
         </FooterContentRow>
 
         <FooterCopyright>
-          <div>&copy; Open of Ten LLP</div>
+          <div>&copy; Open</div>
           <FooterLogoWrapper
             style={{
-              background: backgroundImageBug,
+              background: logo_bug,
               backgroundRepeat: "no-repeat",
               backgroundSize: "contain",
             }}

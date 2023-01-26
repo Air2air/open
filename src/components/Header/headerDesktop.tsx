@@ -1,10 +1,9 @@
-import { LogoText } from "components/Logo/logoText";
-
 import styled from "styled-components";
-
-import {COLOR_HEADER, CONTENT_WIDTH_DESKTOP } from "styles/Constants";
+import { CONTENT_WIDTH_DESKTOP } from "styles/Constants";
 import { useState } from "react";
 import { HamburgerButton } from "./hamburger";
+import { LogoText } from "components/Logo/logoText";
+import { NavPanel } from "./navPanel";
 
 export const HEADER_HEIGHT_DESKTOP = 70;
 export const HEADER_LOGO_HEIGHT_DESKTOP = HEADER_HEIGHT_DESKTOP * 0.6;
@@ -12,7 +11,6 @@ export const HEADER_LOGO_HEIGHT_DESKTOP = HEADER_HEIGHT_DESKTOP * 0.6;
 export const HeaderDesktop = () => {
   const [show, setShow] = useState(false);
   const handleClick = () => setShow(!show);
-  // toggle the NavPanel show state with a click handler
 
   return (
     <>
@@ -26,9 +24,7 @@ export const HeaderDesktop = () => {
           </HeaderRight>
         </HeaderInner>
       </HeaderOuter>
-      <NavPanelOuter style={{ height: show ? "300px" : "0" }}>
-        <NavPanelInner>Nav panel</NavPanelInner>
-      </NavPanelOuter>
+      <NavPanel show={show} />
     </>
   );
 };
@@ -74,26 +70,3 @@ const HeaderRight = styled.div`
   /* background: #000; */
 `;
 
-const NavPanelOuter = styled.div`
-  transition: height 300ms;
-  z-index: +1;
-  position: fixed;
-  top: 0;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 300px;
-  padding: 0;
-  background: ${COLOR_HEADER}
-`;
-
-const NavPanelInner = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  max-width: ${CONTENT_WIDTH_DESKTOP}px;
-`;
