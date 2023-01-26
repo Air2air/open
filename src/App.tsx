@@ -20,7 +20,7 @@ const App = () => {
           ))}
         </Routes>
       </Suspense>
-      <Footer backgroundColor={1} />
+      <Footer />
     </>
   );
 };

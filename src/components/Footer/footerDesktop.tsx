@@ -17,7 +17,7 @@ export const FooterDesktop = () => {
     <FooterWrapper
       style={{
         backgroundColor: COLOR_FOOTER,
-        height: `${FOOTER_HEIGHT_DESKTOP}px`
+        height: `${FOOTER_HEIGHT_DESKTOP}px`,
       }}
     >
       <FooterContainer>
