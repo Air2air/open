@@ -45,9 +45,9 @@ const SectionList = ({ jsonFile }) => {
     const heightCalc = width * 0.7;
     if (props.height) {
       if (width > BREAKPOINT_WIDESCREEN) {
-        return IMAGE_MAX_HEIGHT + "px";
+        return IMAGE_MAX_HEIGHT;
       } else {
-        return heightCalc + "px";
+        return heightCalc;
       }
     }
   };
@@ -57,52 +57,33 @@ const SectionList = ({ jsonFile }) => {
   return (
     <>
       {data.map((props, index) => (
-        <>
-          <Parallax
-            key={index}
-            strength={props.strength}
-            style={{
-              height: calculatedContainerHeight(props.height),
-              overflow: "hidden",
-            }}
-            renderLayer={(percentage) => (
-              <>
-                {props.title &&
-                  props.title.map((props, index) => (
-                    <>
-                      <SectionTitle
-                        key={index}
-                        {...props}
-                        percentage={percentage}
-                      />
-                    </>
-                  ))}
-              </>
-            )}
-          >
-            {props.imageBackground && props.imageBackground !== "" && (
-              <>
-                <Background>
-                  <BackgroundImage
-                    height={calculatedImageHeight(props)}
-                    style={{ objectFit: "contain" }}
-                    src={props.imageBackground}
-                    alt={props.title}
+        <Parallax
+          key={index}
+          bgImage={props.imageBackground}
+          bgImageStyle={{ backgroundSize: "contain" }}
+          strength={props.strength}
+          style={{
+            overflow: "hidden"
+          }}
+          renderLayer={(percentage) => (
+            <>
+              {props.title &&
+                props.title.map((props, index) => (
+                  <SectionTitle
+                    key={index}
+                    {...props}
+                    percentage={percentage}
                   />
-                  {/* <FillerDiv
-                    style={{ height: calculatedContainerHeight(props.height) }}
-                  /> */}
-                </Background>
-
-                {console.log(
-                  "Container height: " + calculatedContainerHeight(props)
-                )}
-                {console.log("Image height: " + calculatedImageHeight(props))}
-                {console.log("props.height: " + props.height)}
-              </>
-            )}
-          </Parallax>
-        </>
+                ))}
+            </>
+          )}
+        >
+          <div
+            style={{
+              height: props.height
+            }}
+          />
+        </Parallax>
       ))}
     </>
   );

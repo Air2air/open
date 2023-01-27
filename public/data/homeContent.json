@@ -4,20 +4,8 @@
     "title": [
       {
         "text": "Powering the planet",
-        "fromX": "right",
-        "translateX": 15,
-        "fromY": "top",
-        "translateY": 30,
-        "color": "#FFF"
-      }
-    ],
-    "subhead": [
-      {
-        "text": "A system that meets the needs of all stakeholders.",
-        "fromX": "right",
-        "translateX": 15,
-        "fromY": "top",
-        "translateY": 40,
+        "direction": "top",
+        "initialY": 10,
         "color": "#FFF"
       }
     ],
@@ -26,14 +14,14 @@
         "hasCircle": true,
         "backgroundColor": "orange",
         "translateX": 10,
-        "translateY": 20,
+        "initialY": 20,
         "radius": 300
       }
     ],
     "color": "#FFF",
     "imageBackground": "/images/content/banner_16.webp",
     "strength": -200,
-    "height": 800,
+    "height": 600,
     "backgroundColor": "#ddd"
   },
   {
@@ -41,20 +29,8 @@
     "title": [
       {
         "text": "Powering the planet",
-        "fromX": "right",
-        "translateX": 10,
-        "fromY": "top",
-        "translateY": 30,
-        "color": "#000"
-      }
-    ],
-    "subhead": [
-      {
-        "text": "Develop and implement energy policies and strategies with government, industry, and communities.",
-        "fromX": "right",
-        "translateX": 10,
-        "fromY": "top",
-        "translateY": 40,
+        "direction": "up",
+        "initialY": 20,
         "color": "#000"
       }
     ],
@@ -63,14 +39,14 @@
         "hasCircle": true,
         "backgroundColor": "blue",
         "translateX": 20,
-        "translateY": 40,
+        "initialY": 40,
         "radius": 300
       }
     ],
-    "color": "#FFF",
+    "color": "#000",
     "imageBackground": "",
     "strength": 400,
-    "height": 800,
+    "height": 400,
     "backgroundColor": "#FFF"
   },
   {
@@ -78,20 +54,8 @@
     "title": [
       {
         "text": "Powering the planet",
-        "fromX": "right",
-        "translateX": 10,
-        "fromY": "top",
-        "translateY": 30,
-        "color": "#FFF"
-      }
-    ],
-    "subhead": [
-      {
-        "text": "You can immediately join and get the benefits listed.",
-        "fromX": "right",
-        "translateX": 10,
-        "fromY": "top",
-        "translateY": 40,
+        "direction": "top",
+        "initialY": 30,
         "color": "#FFF"
       }
     ],
@@ -100,14 +64,14 @@
         "hasCircle": true,
         "backgroundColor": "indigo",
         "translateX": 20,
-        "translateY": 40,
+        "initialY": 40,
         "radius": 300
       }
     ],
     "color": "#FFF",
     "imageBackground": "/images/content/banner_15.webp",
     "strength": -400,
-    "height": 800,
+    "height": 600,
     "backgroundColor": "#ddd"
   },
   {
@@ -115,20 +79,8 @@
     "title": [
       {
         "text": "Powering the planet",
-        "fromX": "right",
-        "translateX": 10,
-        "fromY": "top",
-        "translateY": 30,
-        "color": "#FFF"
-      }
-    ],
-    "subhead": [
-      {
-        "text": "How OPEN supports any country's endeavor to develop a sustainable energy grid.",
-        "fromX": "right",
-        "translateX": 10,
-        "fromY": "top",
-        "translateY": 40,
+        "direction": "top",
+        "initialY": 30,
         "color": "#FFF"
       }
     ],
@@ -137,14 +89,14 @@
         "hasCircle": true,
         "backgroundColor": "lightblue",
         "translateX": 20,
-        "translateY": 40,
+        "initialY": 40,
         "radius": 300
       }
     ],
     "color": "#FFF",
     "imageBackground": "/images/content/banner_14.webp",
     "strength": 400,
-    "height": 800,
+    "height": 600,
     "backgroundColor": "#EEE"
   },
   {
@@ -152,20 +104,8 @@
     "title": [
       {
         "text": "Powering the planet",
-        "fromX": "right",
-        "translateX": 10,
-        "fromY": "top",
-        "translateY": 30,
-        "color": "#FFF"
-      }
-    ],
-    "subhead": [
-      {
-        "text": "Everything that is here in the site available to you now.",
-        "fromX": "right",
-        "translateX": 10,
-        "fromY": "top",
-        "translateY": 40,
+        "direction": "top",
+        "initialY": 30,
         "color": "#FFF"
       }
     ],
@@ -174,12 +114,12 @@
         "hasCircle": true,
         "backgroundColor": "gold",
         "translateX": 20,
-        "translateY": 40,
+        "initialY": 40,
         "radius": 300
       }
     ],
     "color": "#FFF",
-    "imageBackground": "/images/content/banner_15.webp",
+    "imageBackground": "/images/content/banner_17.webp",
     "strength": -400,
     "height": 700,
     "backgroundColor": "#ddd"

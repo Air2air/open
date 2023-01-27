@@ -13,19 +13,13 @@ import { setOpacity } from "./setOpacity";
 
 export const SectionTitle = (props) => {
   function roundPercentage(percentage) {
-    return Math.round(percentage * 1000) / 600;
+    return Math.round(percentage * 1000) / 10;
   }
 
-  function plusOrMinusX(from) {
-    if (from === "left") {
-      return `-${roundPercentage(props.percentage) * props.translateX}%`;
-    } else return `${roundPercentage(props.percentage) * props.translateX}%`;
-  }
-
-  function plusOrMinusY(from) {
-    if (from === "top") {
-      return `${roundPercentage(props.percentage) * props.translateY}%`;
-    } else return `-${roundPercentage(props.percentage) * props.translateY}%`;
+  function upOrDown(direction) {
+    if (direction !== "down") {
+      return `top: ${roundPercentage(props.percentage)}%`;
+    } else return `top: -${roundPercentage(props.percentage)}%`;
   }
 
   return (
@@ -33,14 +27,14 @@ export const SectionTitle = (props) => {
       <div
         style={{
           position: "absolute",
-          left: plusOrMinusX(props.fromX),
-          top: plusOrMinusY(props.fromY),
+          top: upOrDown(props.direction),
           opacity: setOpacity(props.percentage),
           zIndex: 1,
         }}
       >
         <TitleContainer style={{ color: props.color }}>
-          {props.text}
+          {props.text} {roundPercentage(props.percentage)}{" "}
+          {upOrDown(props.direction)}
         </TitleContainer>
       </div>
     </>

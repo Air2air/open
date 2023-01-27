@@ -3,8 +3,6 @@ import styled from "styled-components";
 import { COLOR_HEADER, CONTENT_WIDTH_DESKTOP } from "styles/Constants";
 import { NavLinks } from "./navLinks";
 
-
-
 const NAV_PANEL_HEIGHT = 270;
 
 export const NavPanel = (props) => {
@@ -12,7 +10,9 @@ export const NavPanel = (props) => {
     <>
       <NavPanelOuter>
         <Container>
-          <NavPanelInner style={{ height: props.show ? NAV_PANEL_HEIGHT : "0" }}>
+          <NavPanelInner
+            style={{ height: props.show ? NAV_PANEL_HEIGHT : "0" }}
+          >
             <NavLinks />
           </NavPanelInner>
         </Container>
