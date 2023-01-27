@@ -90,5 +90,4 @@ const SectionList = ({ jsonFile }) => {
 };
 
 
-
 export default SectionList;

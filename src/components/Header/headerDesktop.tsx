@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { CONTENT_WIDTH_DESKTOP } from "styles/Constants";
 import { useState } from "react";
 import { HamburgerButton } from "./hamburger";
-import { LogoWords} from "components/Logo/logoWords";
+import { LogoWords } from "components/Logo/logoWords";
 import { NavPanel } from "./navPanel";
 
 export const HEADER_HEIGHT_DESKTOP = 70;
