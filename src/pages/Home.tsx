@@ -1,10 +1,10 @@
 import OrgsCallout from "components/OrgsCallout/orgsCallOut";
-import SectionList from "components/Section/sectionList";
+import Section from "components/Section/section";
 
 const HomePage = () => {
   return (
     <>
-      <SectionList jsonFile="/data/homeContent.json" />
+      <Section jsonFile="/data/homeContent.json" />
       <OrgsCallout jsonFile="/data/orgsContent.json" />
     </>
   );
