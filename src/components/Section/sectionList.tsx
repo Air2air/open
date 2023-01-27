@@ -1,9 +1,7 @@
-
 import { FetchData } from "fetch/fetch";
 import { useEffect, useState } from "react";
 import { Background, Parallax } from "react-parallax";
 import styled from "styled-components";
-
 
 // import { SectionSubhead } from "./sectionSubHead";
 import { SectionTitle } from "./sectionTitle";
@@ -18,7 +16,6 @@ const SectionList = ({ jsonFile }) => {
     return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
 
-
   const { data, loading, error } = FetchData({
     file: jsonFile,
   });
@@ -29,62 +26,92 @@ const SectionList = ({ jsonFile }) => {
     return <div>Error: {error.message}</div>;
   }
 
-  const calculatedHeight = (props) => {
-    const heightCalc = props.height * width / 1000;
-    if (props.height) {
-      return heightCalc;
-    }
+  const BREAKPOINT_WIDESCREEN = 1100;
+  const IMAGE_MAX_HEIGHT = 1100;
 
+  const calculatedContainerHeight = (props) => {
+    const heightCalc = width * 0.7;
+    if (props.height) {
+      if (width > BREAKPOINT_WIDESCREEN) {
+        // if screen width is over 1100px
+        return props.height + "px"; // do not exceed hardcoded height value
+      } else {
+        return heightCalc + "px"; // else, calculate height based on screen width
+      }
+    }
   };
+
+  const calculatedImageHeight = (props) => {
+    const heightCalc = width * 0.7;
+    if (props.height) {
+      if (width > BREAKPOINT_WIDESCREEN) {
+        return IMAGE_MAX_HEIGHT + "px";
+      } else {
+        return heightCalc + "px";
+      }
+    }
+  };
+
+  // if window width is over X, limit the height to Y
 
   return (
     <>
       {data.map((props, index) => (
-        <div key={index} style={{ position: "relative" }}>
+        <>
           <Parallax
             key={index}
             strength={props.strength}
-            style={{ height:calculatedHeight(props) }}
+            style={{
+              height: calculatedContainerHeight(props.height),
+              overflow: "hidden",
+            }}
             renderLayer={(percentage) => (
               <>
                 {props.title &&
                   props.title.map((props, index) => (
-                    <SectionTitle
-                      key={index}
-                      {...props}
-                      percentage={percentage}
-                    />
+                    <>
+                      <SectionTitle
+                        key={index}
+                        {...props}
+                        percentage={percentage}
+                      />
+                    </>
                   ))}
               </>
             )}
           >
-           
             {props.imageBackground && props.imageBackground !== "" && (
               <>
                 <Background>
                   <BackgroundImage
-                    height= {calculatedHeight(props)}
+                    height={calculatedImageHeight(props)}
+                    style={{ objectFit: "contain" }}
                     src={props.imageBackground}
                     alt={props.title}
                   />
+                  {/* <FillerDiv
+                    style={{ height: calculatedContainerHeight(props.height) }}
+                  /> */}
                 </Background>
-                <FillerDiv style={{ height: props.height }} />
+
+                {console.log(
+                  "Container height: " + calculatedContainerHeight(props)
+                )}
+                {console.log("Image height: " + calculatedImageHeight(props))}
+                {console.log("props.height: " + props.height)}
               </>
             )}
           </Parallax>
-        </div>
+        </>
       ))}
     </>
   );
 };
 
-const FillerDiv = styled.div`
-  width: ${window.innerWidth}px;
-`;
 const BackgroundImage = styled.img`
-  /* min-width: ${window.innerWidth}px;
-  height: ${(props) => props.height}px; */
-  object-fit: cover;
+  // height: ${(props) => props.height}px;
+  /* object-fit: contain; */
+  /* {calculatedHeight(props)} */
 `;
 
 export default SectionList;

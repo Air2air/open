@@ -70,7 +70,7 @@
     "color": "#FFF",
     "imageBackground": "",
     "strength": 400,
-    "height": 500,
+    "height": 800,
     "backgroundColor": "#FFF"
   },
   {
@@ -107,7 +107,7 @@
     "color": "#FFF",
     "imageBackground": "/images/content/banner_15.webp",
     "strength": -400,
-    "height": 700,
+    "height": 800,
     "backgroundColor": "#ddd"
   },
   {
@@ -144,7 +144,7 @@
     "color": "#FFF",
     "imageBackground": "/images/content/banner_14.webp",
     "strength": 400,
-    "height": 700,
+    "height": 800,
     "backgroundColor": "#EEE"
   },
   {

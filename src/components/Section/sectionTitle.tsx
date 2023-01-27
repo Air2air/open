@@ -24,8 +24,8 @@ export const SectionTitle = (props) => {
 
   function plusOrMinusY(from) {
     if (from === "top") {
-      return `${(roundPercentage(props.percentage) * props.translateY)}%`;
-    } else return `-${(roundPercentage(props.percentage) * props.translateY)}%`;
+      return `${roundPercentage(props.percentage) * props.translateY}%`;
+    } else return `-${roundPercentage(props.percentage) * props.translateY}%`;
   }
 
   return (
@@ -36,11 +36,11 @@ export const SectionTitle = (props) => {
           left: plusOrMinusX(props.fromX),
           top: plusOrMinusY(props.fromY),
           opacity: setOpacity(props.percentage),
-
+          zIndex: 1,
         }}
       >
-        <TitleContainer style={{color: props.color}}>
-          {props.text} 
+        <TitleContainer style={{ color: props.color }}>
+          {props.text}
         </TitleContainer>
       </div>
     </>
@@ -51,7 +51,7 @@ const TitleContainer = styled.div`
   display: flex;
   align-items: flex-end;
   text-align: left;
-  /* background-color: hsla(0, 0%, 10%, 0.7); */
+
   /* color: ${COLOR_BANNER_HEADING}; */
   @media (min-width: ${BREAKPOINT}px) {
     width: auto; //${CONTENT_WIDTH_DESKTOP};
