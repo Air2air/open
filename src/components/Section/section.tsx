@@ -20,9 +20,8 @@ const Section = ({ jsonFile }) => {
       {data.map((props, index) => (
         <ParallaxBanner
           key={index}
-
           layers={[
-            { image: props.imageBackground, speed: -20 },
+            { image: props.imageBackground, speed: -40 },
             {
               speed: -15,
               children: (
