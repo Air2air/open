@@ -17,9 +17,9 @@ export const SectionTitle = (props) => {
   }
 
   function upOrDown(direction) {
-    if (direction !== "down") {
-      return `top: ${roundPercentage(props.percentage)}%`;
-    } else return `top: -${roundPercentage(props.percentage)}%`;
+    if (direction === "up") {
+      return `${roundPercentage(props.percentage) - 30}%`;
+    } else return `${roundPercentage(props.percentage - 30)}%`;
   }
 
   return (
@@ -28,8 +28,9 @@ export const SectionTitle = (props) => {
         style={{
           position: "absolute",
           top: upOrDown(props.direction),
-          opacity: setOpacity(props.percentage),
+          opacity: setOpacity(props.percentage / 2),
           zIndex: 1,
+          background: "red",
         }}
       >
         <TitleContainer style={{ color: props.color }}>

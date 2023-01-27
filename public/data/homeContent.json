@@ -4,7 +4,7 @@
     "title": [
       {
         "text": "Powering the planet",
-        "direction": "top",
+        "direction": "down",
         "initialY": 10,
         "color": "#FFF"
       }
@@ -30,7 +30,7 @@
       {
         "text": "Powering the planet",
         "direction": "up",
-        "initialY": 20,
+        "initialY": 10,
         "color": "#000"
       }
     ],
@@ -54,7 +54,7 @@
     "title": [
       {
         "text": "Powering the planet",
-        "direction": "top",
+        "direction": "down",
         "initialY": 30,
         "color": "#FFF"
       }
@@ -79,7 +79,7 @@
     "title": [
       {
         "text": "Powering the planet",
-        "direction": "top",
+        "direction": "down",
         "initialY": 30,
         "color": "#FFF"
       }
@@ -104,7 +104,7 @@
     "title": [
       {
         "text": "Powering the planet",
-        "direction": "top",
+        "direction": "down",
         "initialY": 30,
         "color": "#FFF"
       }

@@ -1,3 +1,4 @@
+import Container from "components/Container/container";
 import { FetchData } from "fetch/fetch";
 import { useEffect, useState } from "react";
 import { Background, Parallax } from "react-parallax";
@@ -63,10 +64,10 @@ const SectionList = ({ jsonFile }) => {
           bgImageStyle={{ backgroundSize: "contain" }}
           strength={props.strength}
           style={{
-            overflow: "hidden"
+            overflow: "hidden",
           }}
           renderLayer={(percentage) => (
-            <>
+            <Container>
               {props.title &&
                 props.title.map((props, index) => (
                   <SectionTitle
@@ -75,12 +76,12 @@ const SectionList = ({ jsonFile }) => {
                     percentage={percentage}
                   />
                 ))}
-            </>
+            </Container>
           )}
         >
           <div
             style={{
-              height: props.height
+              height: props.height,
             }}
           />
         </Parallax>
