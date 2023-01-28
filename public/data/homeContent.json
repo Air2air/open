@@ -5,7 +5,7 @@
     "speedTitle": 30,
     "imageBackground": "/images/content/banner_16.webp",
     "speedBackground": -20,
-    "height": 500,
+    "height": 700,
     "colorTitle": "#000",
     "backgroundColor": "#ddd"
   },
@@ -15,7 +15,7 @@
     "speedTitle": 30,
     "imageBackground": "",
     "speedBackground": 20,
-    "height": 400,
+    "height": 300,
     "colorTitle": "#000",
     "backgroundColor": "#FFF"
   },

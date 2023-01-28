@@ -1,4 +1,4 @@
-import Container from "components/Container/container";
+
 import { FetchData } from "fetch/fetch";
 import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax";
 import styled from "styled-components";
@@ -31,36 +31,42 @@ const Section = ({ jsonFile }) => {
           <ParallaxBanner
             key={index}
             style={{
-              height: props.height + "px",
-              position: "relative",
+              height: props.height,
+              width: "100%",
+              background: props.colorBackground,
             }}
           >
-            <ParallaxBannerLayer>
-              <ImageDiv
-                src={props.imageBackground}
-                style={{
-                  // objectFit: "contain",
-                  position: 'absolute',
-                  width: "100%",
-                  height: "auto",
-                  top: "50%",
-                  left: "50%",
-                  transform: 'translate(-50%, -50%)'
-                }}
-              />
-            </ParallaxBannerLayer>
+            <ImageDiv
+              src={props.imageBackground}
+              style={{
+                position: "absolute",
+                width: "100%",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+              }}
+            />
+
             <ParallaxBannerLayer
               speed={props.speedTitle}
               style={{
-                position: "absolute",
-                height: props.height + "px",
+                zIndex: "top",
+                // position: "absolute",
+                // height: props.height + "px",
               }}
             >
-              <Container>
-                <TitleContainer style={{ color: props.colorTitle }}>
-                  {props.title}
-                </TitleContainer>
-              </Container>
+              <TitleContainer
+                style={{
+                  color: props.colorTitle,
+                  position: "absolute",
+                  width: "100%",
+                  top: "50%",
+                  left: "50%",
+                  transform: "translate(-50%, -50%)",
+                }}
+              >
+                {props.title}
+              </TitleContainer>
             </ParallaxBannerLayer>
           </ParallaxBanner>
         </>
