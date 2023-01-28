@@ -6,7 +6,7 @@
     "imageBackground": "/images/content/banner_16.webp",
     "speedBackground": -20,
     "height": 700,
-    "colorTitle": "#000",
+    "colorTitle": "#fff",
     "backgroundColor": "#ddd"
   },
   {
@@ -26,7 +26,7 @@
     "imageBackground": "/images/content/banner_15.webp",
     "speedBackground": -20,
     "height": 500,
-    "colorTitle": "#000",
+    "colorTitle": "#FFF",
     "backgroundColor": "#ddd"
   },
   {
@@ -36,7 +36,7 @@
     "imageBackground": "/images/content/banner_14.webp",
     "speedBackground": 20,
     "height": 600,
-    "colorTitle": "#000",
+    "colorTitle": "#FFF",
     "backgroundColor": "#EEE"
   },
   {
@@ -46,7 +46,7 @@
     "imageBackground": "/images/content/banner_17.webp",
     "speedBackground": -20,
     "height": 600,
-    "colorTitle": "#000",
+    "colorTitle": "#FFF",
     "backgroundColor": "#ddd"
   }
 ]

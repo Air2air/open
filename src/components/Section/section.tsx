@@ -1,8 +1,6 @@
-
 import { FetchData } from "fetch/fetch";
 import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax";
 import styled from "styled-components";
-import { COLOR_BANNER_HEADING } from "styles/Colors";
 import {
   BREAKPOINT,
   CONTENT_WIDTH_DESKTOP,
@@ -36,30 +34,13 @@ const Section = ({ jsonFile }) => {
               background: props.colorBackground,
             }}
           >
-            <ImageDiv
-              src={props.imageBackground}
-              style={{
-                position: "absolute",
-                width: "100%",
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-              }}
-            />
+            <ImageDiv src={props.imageBackground} />
 
-            <ParallaxBannerLayer
-              speed={props.speedTitle}
-              style={{
-                zIndex: "top",
-                // position: "absolute",
-                // height: props.height + "px",
-              }}
-            >
+            <ParallaxBannerLayer speed={props.speedTitle}>
               <TitleContainer
                 style={{
                   color: props.colorTitle,
                   position: "absolute",
-                  width: "100%",
                   top: "50%",
                   left: "50%",
                   transform: "translate(-50%, -50%)",
@@ -78,23 +59,22 @@ const Section = ({ jsonFile }) => {
 export default Section;
 
 const ImageDiv = styled.img`
-  /* background-position: center center;
-  background-size: "cover"; */
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `;
 
 const TitleContainer = styled.div`
-  display: flex;
-  align-items: flex-end;
-  text-align: left;
-  z-index: +2;
-  /* color: ${COLOR_BANNER_HEADING}; */
   @media (min-width: ${BREAKPOINT}px) {
-    width: auto; //${CONTENT_WIDTH_DESKTOP};
-    ${FONT_BANNER_HEADING_DESKTOP};
+    width: ${CONTENT_WIDTH_DESKTOP};
+    font-size: ${FONT_BANNER_HEADING_DESKTOP};
   }
+
   @media (max-width: ${BREAKPOINT}px) {
-    width: auto; //${CONTENT_WIDTH_MOBILE};
-    ${FONT_BANNER_HEADING_MOBILE};
+    width: ${CONTENT_WIDTH_MOBILE};
+    font-size: ${FONT_BANNER_HEADING_MOBILE};
   }
-  background: green;
+  /* background: green; */
 `;
