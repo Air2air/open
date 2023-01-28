@@ -13,7 +13,7 @@
     "speedTitle": 30,
     "imageBackground": "",
     "speedBackground": 20,
-    "height": 300,
+    "height": 500,
     "colorTitle": "#000",
     "backgroundColor": "#FFF"
   },
@@ -31,7 +31,7 @@
     "speedTitle": 30,
     "imageBackground": "",
     "speedBackground": 20,
-    "height": 300,
+    "height": 500,
     "colorTitle": "#000",
     "backgroundColor": "#EEE"
   },
@@ -51,7 +51,7 @@
     "speedTitle": 30,
     "imageBackground": "",
     "speedBackground": 20,
-    "height": 300,
+    "height": 500,
     "colorTitle": "#000",
     "backgroundColor": "#EEE"
   },
@@ -69,7 +69,7 @@
     "speedTitle": -40,
     "imageBackground": "",
     "speedBackground": -20,
-    "height": 300,
+    "height": 500,
     "colorTitle": "#000",
     "backgroundColor": "#EEE"
   },
@@ -87,7 +87,7 @@
     "speedTitle": -40,
     "imageBackground": "",
     "speedBackground": -20,
-    "height": 300,
+    "height": 500,
     "colorTitle": "#000",
     "backgroundColor": "#EEE"
   },
@@ -105,7 +105,7 @@
     "speedTitle": -40,
     "imageBackground": "",
     "speedBackground": -20,
-    "height": 300,
+    "height": 500,
     "colorTitle": "#000",
     "backgroundColor": "#EEE"
   }
