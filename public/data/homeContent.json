@@ -1,127 +1,52 @@
 [
   {
     "id": 1,
-    "title": [
-      {
-        "text": "Powering the planet",
-        "direction": "up",
-        "initialY": 10,
-        "color": "#FFF"
-      }
-    ],
-    "circle": [
-      {
-        "hasCircle": true,
-        "backgroundColor": "orange",
-        "translateX": 10,
-        "initialY": 20,
-        "radius": 300
-      }
-    ],
-    "color": "#FFF",
+    "title": "Powering the planet",
+    "speedTitle": 30,
     "imageBackground": "/images/content/banner_16.webp",
-    "strength": -200,
-    "height": 600,
+    "speedBackground": -20,
+    "height": 500,
+    "colorTitle": "#000",
     "backgroundColor": "#ddd"
   },
   {
     "id": 2,
-    "title": [
-      {
-        "text": "Powering the planet",
-        "direction": "up",
-        "initialY": 10,
-        "color": "#000"
-      }
-    ],
-    "circle": [
-      {
-        "hasCircle": true,
-        "backgroundColor": "blue",
-        "translateX": 20,
-        "initialY": 40,
-        "radius": 300
-      }
-    ],
-    "color": "#000",
+    "title": "Powering the planet",
+    "speedTitle": 30,
     "imageBackground": "",
-    "strength": 400,
+    "speedBackground": 20,
     "height": 400,
+    "colorTitle": "#000",
     "backgroundColor": "#FFF"
   },
   {
     "id": 3,
-    "title": [
-      {
-        "text": "Powering the planet",
-        "direction": "up",
-        "initialY": 30,
-        "color": "#FFF"
-      }
-    ],
-    "circle": [
-      {
-        "hasCircle": true,
-        "backgroundColor": "indigo",
-        "translateX": 20,
-        "initialY": 40,
-        "radius": 300
-      }
-    ],
-    "color": "#FFF",
+    "title": "Powering the planet",
+    "speedTitle": 30,
     "imageBackground": "/images/content/banner_15.webp",
-    "strength": -400,
-    "height": 600,
+    "speedBackground": -20,
+    "height": 500,
+    "colorTitle": "#000",
     "backgroundColor": "#ddd"
   },
   {
     "id": 4,
-    "title": [
-      {
-        "text": "Powering the planet",
-        "direction": "up",
-        "initialY": 30,
-        "color": "#FFF"
-      }
-    ],
-    "circle": [
-      {
-        "hasCircle": true,
-        "backgroundColor": "lightblue",
-        "translateX": 20,
-        "initialY": 40,
-        "radius": 300
-      }
-    ],
-    "color": "#FFF",
+    "title": "Powering the planet",
+    "speedTitle": 30,
     "imageBackground": "/images/content/banner_14.webp",
-    "strength": 400,
+    "speedBackground": 20,
     "height": 600,
+    "colorTitle": "#000",
     "backgroundColor": "#EEE"
   },
   {
     "id": 5,
-    "title": [
-      {
-        "text": "Powering the planet",
-        "direction": "up",
-        "initialY": 30,
-        "color": "#FFF"
-      }
-    ],
-    "circle": [
-      {
-        "hasCircle": true,
-        "backgroundColor": "gold",
-        "translateX": 20,
-        "initialY": 40,
-        "radius": 300
-      }
-    ],
-    "color": "#FFF",
+    "title": "Powering the planet",
+    "speedTitle": 30,
     "imageBackground": "/images/content/banner_17.webp",
-    "strength": -400,
-    "height": 700,
+    "speedBackground": -20,
+    "height": 600,
+    "colorTitle": "#000",
     "backgroundColor": "#ddd"
   }
 ]
