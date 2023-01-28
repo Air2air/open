@@ -1,16 +1,14 @@
 [
   {
-    "id": 1,
     "title": "Powering the planet",
     "speedTitle": 30,
     "imageBackground": "/images/content/banner_16.webp",
     "speedBackground": -20,
     "height": 700,
-    "colorTitle": "#fff",
+    "colorTitle": "#FFF",
     "backgroundColor": "#ddd"
   },
   {
-    "id": 2,
     "title": "Powering the planet",
     "speedTitle": 30,
     "imageBackground": "",
@@ -20,27 +18,24 @@
     "backgroundColor": "#FFF"
   },
   {
-    "id": 3,
     "title": "Powering the planet",
     "speedTitle": 30,
     "imageBackground": "/images/content/banner_15.webp",
     "speedBackground": -20,
     "height": 500,
     "colorTitle": "#FFF",
-    "backgroundColor": "#ddd"
+    "backgroundColor": "#DDD"
   },
   {
-    "id": 4,
     "title": "Powering the planet",
     "speedTitle": 30,
-    "imageBackground": "/images/content/banner_14.webp",
+    "imageBackground": "",
     "speedBackground": 20,
-    "height": 600,
-    "colorTitle": "#FFF",
+    "height": 300,
+    "colorTitle": "#000",
     "backgroundColor": "#EEE"
   },
   {
-    "id": 5,
     "title": "Powering the planet",
     "speedTitle": 30,
     "imageBackground": "/images/content/banner_17.webp",
@@ -48,5 +43,23 @@
     "height": 600,
     "colorTitle": "#FFF",
     "backgroundColor": "#ddd"
+  },
+  {
+    "title": "Powering the planet",
+    "speedTitle": -40,
+    "imageBackground": "",
+    "speedBackground": -20,
+    "height": 300,
+    "colorTitle": "#000",
+    "backgroundColor": "#EEE"
+  },
+  {
+    "title": "Powering the planet",
+    "speedTitle": 30,
+    "imageBackground": "/images/content/banner_14.webp",
+    "speedBackground": 20,
+    "height": 600,
+    "colorTitle": "#FFF",
+    "backgroundColor": "#EEE"
   }
 ]
