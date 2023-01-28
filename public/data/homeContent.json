@@ -1,6 +1,6 @@
 [
   {
-    "title": "Powering the planet",
+    "title": "Powering the cities",
     "speedTitle": 30,
     "imageBackground": "/images/content/banner_16.webp",
     "speedBackground": -20,
@@ -18,7 +18,7 @@
     "backgroundColor": "#FFF"
   },
   {
-    "title": "Powering the planet",
+    "title": "Powering the rails",
     "speedTitle": 30,
     "imageBackground": "/images/content/banner_15.webp",
     "speedBackground": -20,
@@ -36,7 +36,7 @@
     "backgroundColor": "#EEE"
   },
   {
-    "title": "Powering the planet",
+    "title": "Powering the oceans",
     "speedTitle": 30,
     "imageBackground": "/images/content/banner_17.webp",
     "speedBackground": -20,
@@ -54,7 +54,7 @@
     "backgroundColor": "#EEE"
   },
   {
-    "title": "Powering the planet",
+    "title": "Powering the skies",
     "speedTitle": 30,
     "imageBackground": "/images/content/banner_14.webp",
     "speedBackground": 20,
