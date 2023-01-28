@@ -10,7 +10,7 @@
   },
   {
     "title": "Implementing open-source technology in the energy sector, such as distributed energy systems and smart grid systems, can help make cities more energy efficient.",
-    "speedTitle": 30,
+    "speedTitle": -40,
     "imageBackground": "",
     "speedBackground": 20,
     "height": 500,
@@ -28,7 +28,7 @@
   },
   {
     "title": "Using open-source technology to develop and implement alternative fuel vehicles and electric vehicles, as well as to improve public transportation systems, can help create more sustainable and efficient transportation.",
-    "speedTitle": 30,
+    "speedTitle": -40,
     "imageBackground": "",
     "speedBackground": 20,
     "height": 500,
@@ -48,7 +48,7 @@
   },
   {
     "title": "Adopting open-source technology and methods in manufacturing process, like implementing IoT, automation, and data analytics, can help improve energy efficiency and reduce the environmental impact of industrial processes.",
-    "speedTitle": 30,
+    "speedTitle": -40,
     "imageBackground": "",
     "speedBackground": 20,
     "height": 500,

@@ -60,7 +60,7 @@ const HeaderOuter = styled.div`
   width: 100%;
   padding: 0;
   height: ${HEADER_HEIGHT_DESKTOP}px;
-  background-color: green;
+  /* background-color: green; */
 `;
 
 const HeaderInner = styled.div`
