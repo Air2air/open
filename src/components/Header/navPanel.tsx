@@ -5,7 +5,9 @@ import { NavLinks } from "./navLinks";
 
 const NAV_PANEL_HEIGHT = 270;
 
-export const NavPanel = (props) => {
+export const NavPanel = (props, handleClick) => {
+  // hide the actual nav panel when the user clicks on a link
+
   return (
     <>
       <NavPanelOuter>
@@ -13,7 +15,7 @@ export const NavPanel = (props) => {
           <NavPanelInner
             style={{ height: props.show ? NAV_PANEL_HEIGHT : "0" }}
           >
-            <NavLinks />
+            <NavLinks {...props} handleClick={handleClick} />
           </NavPanelInner>
         </Container>
       </NavPanelOuter>

@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { COLOR_LINK_REVERSE, COLOR_LINK_REVERSE_HOVER } from "styles/Colors";
 import { BREAKPOINT } from "styles/Constants";
 import { FONT_CAPTION_DESKTOP, FONT_CAPTION_MOBILE } from "styles/Text";
-
 import { dataRoutes } from "routes/routes";
 
 // map over dataroutes and create a link for each one
@@ -12,26 +11,28 @@ const sliceOne = dataRoutes.slice(0, 3);
 const sliceTwo = dataRoutes.slice(3, 6);
 const sliceThree = dataRoutes.slice(6, 9);
 
-export const NavLinks = () => {
+
+
+export const NavLinks = ({handleClick}) => {
   return (
     <>
       <NavLinkColumn>
         {sliceOne.map((route, index) => (
-          <NavLink key={index} to={route.path}>
+          <NavLink key={index} to={route.path} onClick={handleClick}>
             {route.section}
           </NavLink>
         ))}
       </NavLinkColumn>
       <NavLinkColumn>
         {sliceTwo.map((route, index) => (
-          <NavLink key={index} to={route.path}>
+          <NavLink key={index} to={route.path} onClick={handleClick}>
             {route.section}
           </NavLink>
         ))}
       </NavLinkColumn>
       <NavLinkColumn>
         {sliceThree.map((route, index) => (
-          <NavLink key={index} to={route.path}>
+          <NavLink key={index} to={route.path} onClick={handleClick}>
             {route.section}
           </NavLink>
         ))}
@@ -41,7 +42,7 @@ export const NavLinks = () => {
 };
 
 const NAV_COLUMN_HEIGHT_DESKTOP = 100;
-const NAV_COLUMN_HEIGHT_MOBILE = 50
+const NAV_COLUMN_HEIGHT_MOBILE = 50;
 
 export const NavLinkColumn = styled.div`
   display: flex;

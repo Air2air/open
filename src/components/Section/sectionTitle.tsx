@@ -9,33 +9,19 @@ import {
   FONT_BANNER_HEADING_DESKTOP,
   FONT_BANNER_HEADING_MOBILE,
 } from "styles/Text";
-import { setOpacity } from "./setOpacity";
 
 export const SectionTitle = (props) => {
-  function roundPercentage(percentage) {
-    return Math.round(percentage * 1000) / 10;
-  }
-
-  function upOrDown(direction) {
-    if (direction === "up") {
-      return `${roundPercentage(props.percentage) - 30}%`;
-    } else return `${roundPercentage(props.percentage - 30)}%`;
-  }
-
   return (
     <>
       <div
         style={{
           position: "absolute",
-          top: upOrDown(props.direction),
-          opacity: setOpacity(props.percentage / 2),
           zIndex: 1,
           background: "red",
         }}
       >
         <TitleContainer style={{ color: props.color }}>
-          {props.text} {roundPercentage(props.percentage)}{" "}
-          {upOrDown(props.direction)}
+          {props.text}
         </TitleContainer>
       </div>
     </>

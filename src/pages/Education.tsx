@@ -1,9 +1,9 @@
-import SectionList from "components/Section/sectionList";
+import Section from "components/Section/section";
 
 const EducationPage = () => {
   return (
     <>
-      <SectionList jsonFile="/data/homeContent.json" />
+      <Section jsonFile="/data/homeContent.json" />
     </>
   );
 };

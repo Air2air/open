@@ -2,14 +2,14 @@
   {
     "title": "Powering the cities",
     "speedTitle": 30,
-    "imageBackground": "/images/content/banner_16.webp",
+    "imageBackground": "/images/content/banner_city.webp",
     "speedBackground": -20,
     "height": 700,
     "colorTitle": "#FFF",
     "backgroundColor": "#ddd"
   },
   {
-    "title": "Powering the planet",
+    "title": "Implementing open-source technology in the energy sector, such as distributed energy systems and smart grid systems, can help make cities more energy efficient.",
     "speedTitle": 30,
     "imageBackground": "",
     "speedBackground": 20,
@@ -18,16 +18,36 @@
     "backgroundColor": "#FFF"
   },
   {
-    "title": "Powering the rails",
+    "title": "Powering open transport",
     "speedTitle": 30,
-    "imageBackground": "/images/content/banner_15.webp",
+    "imageBackground": "/images/content/banner_train.webp",
     "speedBackground": -20,
     "height": 500,
-    "colorTitle": "#FFF",
+    "colorTitle": "#000",
     "backgroundColor": "#DDD"
   },
   {
-    "title": "Powering the planet",
+    "title": "Using open-source technology to develop and implement alternative fuel vehicles and electric vehicles, as well as to improve public transportation systems, can help create more sustainable and efficient transportation.",
+    "speedTitle": 30,
+    "imageBackground": "",
+    "speedBackground": 20,
+    "height": 300,
+    "colorTitle": "#000",
+    "backgroundColor": "#EEE"
+  },
+
+
+  {
+    "title": "Powering open manufacturing",
+    "speedTitle": 30,
+    "imageBackground": "/images/content/banner_factory.webp",
+    "speedBackground": -20,
+    "height": 500,
+    "colorTitle": "#000",
+    "backgroundColor": "#DDD"
+  },
+  {
+    "title": "Adopting open-source technology and methods in manufacturing process, like implementing IoT, automation, and data analytics, can help improve energy efficiency and reduce the environmental impact of industrial processes.",
     "speedTitle": 30,
     "imageBackground": "",
     "speedBackground": 20,
@@ -36,16 +56,16 @@
     "backgroundColor": "#EEE"
   },
   {
-    "title": "Powering the oceans",
+    "title": "Powering open energy",
     "speedTitle": 30,
-    "imageBackground": "/images/content/banner_17.webp",
+    "imageBackground": "/images/content/banner_ship.webp",
     "speedBackground": -20,
     "height": 600,
     "colorTitle": "#FFF",
     "backgroundColor": "#ddd"
   },
   {
-    "title": "Powering the planet",
+    "title": "Using open-source technology and techniques to develop and implement new energy sources and storage solutions can help improve energy security and increase access to sustainable energy for all.",
     "speedTitle": -40,
     "imageBackground": "",
     "speedBackground": -20,
@@ -54,12 +74,41 @@
     "backgroundColor": "#EEE"
   },
   {
-    "title": "Powering the skies",
+    "title": "Powering open travel",
     "speedTitle": 30,
-    "imageBackground": "/images/content/banner_14.webp",
+    "imageBackground": "/images/content/banner_plane.webp",
     "speedBackground": 20,
     "height": 600,
     "colorTitle": "#FFF",
     "backgroundColor": "#EEE"
+  },
+  {
+    "title": "Adopting open-source technology and methods in the travel industry, such as electric and alternative fuel vehicles, smart grid management, and energy-efficient infrastructure, can help reduce the environmental impact of transportation and improve the overall sustainability of travel.",
+    "speedTitle": -40,
+    "imageBackground": "",
+    "speedBackground": -20,
+    "height": 300,
+    "colorTitle": "#000",
+    "backgroundColor": "#EEE"
+  },
+  {
+    "title": "Powering open countries",
+    "speedTitle": 30,
+    "imageBackground": "/images/content/banner_palace.webp",
+    "speedBackground": 20,
+    "height": 600,
+    "colorTitle": "#FFF",
+    "backgroundColor": "#EEE"
+  },
+  {
+    "title": "Utilizing open-source technology and techniques in the field of energy and power can improve national security by reducing dependence on foreign energy sources, increasing resilience to power disruptions and cyber attacks, and promoting the use of sustainable energy sources.",
+    "speedTitle": -40,
+    "imageBackground": "",
+    "speedBackground": -20,
+    "height": 300,
+    "colorTitle": "#000",
+    "backgroundColor": "#EEE"
   }
+
+
 ]

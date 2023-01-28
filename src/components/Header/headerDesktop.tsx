@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { CONTENT_WIDTH_DESKTOP } from "styles/Constants";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { HamburgerButton } from "./hamburger";
 import { LogoWords } from "components/Logo/logoWords";
 import { NavPanel } from "./navPanel";
@@ -9,12 +9,33 @@ export const HEADER_HEIGHT_DESKTOP = 70;
 export const HEADER_LOGO_HEIGHT_DESKTOP = HEADER_HEIGHT_DESKTOP * 0.6;
 
 export const HeaderDesktop = () => {
+  const [isVisible, setIsVisible] = useState(true);
+  const [height, setHeight] = useState(0);
+
+  useEffect(() => {
+    window.addEventListener("scroll", listenToScroll);
+    return () => window.removeEventListener("scroll", listenToScroll);
+  }, []);
+
+  const listenToScroll = () => {
+    const heightToHideFrom = 200;
+    const winScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
+    setHeight(winScroll);
+
+    if (winScroll > heightToHideFrom) {
+      isVisible && setIsVisible(false);
+    } else {
+      setIsVisible(true);
+    }
+  };
+
   const [show, setShow] = useState(false);
   const handleClick = () => setShow(!show);
 
   return (
     <>
-      <HeaderOuter>
+      <HeaderOuter style={{ display: isVisible ? "block" : "none" }}>
         <HeaderInner>
           <HeaderLeft>
             <LogoWords size={HEADER_LOGO_HEIGHT_DESKTOP} />
@@ -24,10 +45,11 @@ export const HeaderDesktop = () => {
           </HeaderRight>
         </HeaderInner>
       </HeaderOuter>
-      <NavPanel show={show} />
+      <NavPanel height={height} show={show} style={{ display: isVisible ? "block" : "none" }} handleClick={handleClick} />
     </>
   );
 };
+
 
 const HeaderOuter = styled.div`
   z-index: +2;
@@ -38,7 +60,7 @@ const HeaderOuter = styled.div`
   width: 100%;
   padding: 0;
   height: ${HEADER_HEIGHT_DESKTOP}px;
-  /* background-color: green; */
+  background-color: green;
 `;
 
 const HeaderInner = styled.div`
