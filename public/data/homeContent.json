@@ -1,6 +1,6 @@
 [
   {
-    "text": "Powering the cities",
+    "text": "Powering open cities",
     "subtitle": false,
     "speedTitle": -20,
     "imageBackground": "/images/content/banner_city.webp",
@@ -76,7 +76,7 @@
     "subtitle": true,
     "speedTitle": 0,
     "imageBackground": "",
-    "speedBackground": 20,
+    "speedBackground": 0,
     "height": 500,
     "colorTitle": "#000",
     "backgroundColor": "#EEE"
