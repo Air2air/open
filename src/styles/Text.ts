@@ -14,7 +14,7 @@ export const FONT_FAMILY_DEFAULT = `"Roboto", sans-serif`;
 export const FONT_FAMILY_SECONDARY = `"Sofia Sans Medium", sans-serif`;
 
 // SIZES
-export const FONT_SIZE_HEADING_DESKTOP = "5rem";
+export const FONT_SIZE_HEADING_DESKTOP = "4rem";
 export const FONT_SIZE_HEADING_MOBILE = "3rem";
 
 export const FONT_SIZE_BANNER_SUBHEAD_DESKTOP = "2.5rem";
@@ -60,6 +60,7 @@ font-size: ${FONT_SIZE_HEADING_DESKTOP};
 font-family: ${FONT_FAMILY_HEADING}; 
 line-height: ${LINE_HEIGHT_HEADING_DESKTOP}; 
 color: ${COLOR_BANNER_HEADING};
+
 // background: ${COLOR_HEADING_BLOCK_BACKGROUND}`;
 
 export const FONT_BANNER_HEADING_MOBILE = `

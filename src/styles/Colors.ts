@@ -33,7 +33,7 @@ export const COLOR_LINK_HOVER = `hsl(${BASEHUE}, ${SATURATION}%, 50%)`;
 export const COLOR_LINK_REVERSE = `hsl(${BASEHUE}, ${SATURATION}%, 90%)`;
 export const COLOR_LINK_REVERSE_HOVER = `hsl(${BASEHUE}, ${SATURATION}%, 100%)`;
 
-export const COLOR_BANNER_HEADING = `hsl(${BASEHUE}, ${SATURATION}%, 10%)`;
+export const COLOR_BANNER_HEADING = `hsl(${BASEHUE}, ${SATURATION}%, 100%)`;
 export const COLOR_BANNER_SUBHEAD = `hsl(${BASEHUE}, ${SATURATION}%, 40%)`;
 
 export const COLOR_HEADING = `hsl(${BASEHUE}, ${SATURATION}%, 50%)`;

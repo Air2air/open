@@ -105,6 +105,7 @@ const VariantHeading = styled.div`
     font-family: ${FONT_FAMILY_HEADING};
     line-height: ${LINE_HEIGHT_HEADING_DESKTOP};
     color: ${COLOR_BANNER_HEADING};
+    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.9);
   }
   @media (max-width: ${BREAKPOINT}px) {
     padding: 0 8px;
