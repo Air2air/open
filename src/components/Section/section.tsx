@@ -1,4 +1,4 @@
-import Container from "components/Container/container";
+
 import Spacer from "components/Spacer/spacer";
 import { FetchData } from "fetch/fetch";
 import { useEffect, useState } from "react";

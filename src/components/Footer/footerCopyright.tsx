@@ -1,7 +1,7 @@
 import { LogoBug } from "components/Logo/logoBug";
 import { useState, useEffect } from "react";
 import styled from "styled-components";
-import { COLOR_BASE, COLOR_WHITE } from "styles/Colors";
+import { COLOR_WHITE } from "styles/Colors";
 import { BREAKPOINT } from "styles/Constants";
 import {
   FOOTER_COPYRIGHT_HEIGHT_DESKTOP,
