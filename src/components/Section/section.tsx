@@ -1,4 +1,6 @@
+import Spacer from "components/Spacer/spacer";
 import { FetchData } from "fetch/fetch";
+import { useEffect, useState } from "react";
 import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax";
 import styled from "styled-components";
 import {
@@ -26,6 +28,14 @@ import {
 } from "styles/Text";
 
 const Section = ({ jsonFile }) => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleWindowResize);
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
+
   const { data, loading, error } = FetchData({
     file: jsonFile,
   });
@@ -36,45 +46,93 @@ const Section = ({ jsonFile }) => {
     return <div>Error: {error.message}</div>;
   }
 
+  // return <>{width > BREAKPOINT ? <FooterDesktop /> : <FooterMobile />}</>;
+
   return (
     <>
-      {data.map((props, index) => (
-        <>
-          <ParallaxBanner
-            key={index}
-            style={{
-              height: props.height,
-              width: "100%",
-              background: props.colorBackground,
-            }}
-          >
-            <ImageDiv src={props.imageBackground} />
+      {width > BREAKPOINT ? null : <Spacer height={70} />}
 
-            <ParallaxBannerLayer speed={props.speedTitle}>
-              <TitleContainer
-                style={{
-                  color: props.colorTitle,
-                  position: "absolute",
-                  top: "50%",
-                  left: "50%",
-                  transform: "translate(-50%, -50%)",
-                }}
-              >
-                {props.subtitle !== true ? (
-                  <VariantHeading>{props.text}</VariantHeading>
-                ) : (
-                  <VariantSubhead>{props.text}</VariantSubhead>
-                )}
-              </TitleContainer>
-            </ParallaxBannerLayer>
-          </ParallaxBanner>
-        </>
+
+      {data.map((props, index) => (
+        <div key={index}>
+          {width > BREAKPOINT ? (
+            <SectionDesktop key={index} index={index} {...props} />
+          ) : (
+            <SectionMobile key={index} index={index} {...props} />
+          )}
+        </div>
       ))}
     </>
   );
 };
 
 export default Section;
+
+const SectionDesktop = (props, index) => {
+  return (
+    <ParallaxBanner
+      key={index}
+      style={{
+        height: props.height,
+        width: "100%",
+        background: props.colorBackground,
+      }}
+    >
+      <ImageDiv src={props.imageBackground} />
+      <ParallaxBannerLayer speed={props.speedTitle}>
+        <TitleContainer
+          style={{
+            color: props.colorTitle,
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+          }}
+        >
+          {props.subtitle !== true ? (
+            <VariantHeading>{props.text}</VariantHeading>
+          ) : (
+            <VariantSubhead>{props.text}</VariantSubhead>
+          )}
+        </TitleContainer>
+      </ParallaxBannerLayer>
+    </ParallaxBanner>
+  );
+};
+
+const SectionMobile = (props, index) => {
+  return (
+    <>
+      <ParallaxBanner
+        key={index}
+        style={{
+          height: props.height / 2,
+          width: "100%",
+          background: props.colorBackground,
+        }}
+      >
+        <ImageDiv src={props.imageBackground} />
+        <ParallaxBannerLayer speed={props.speedTitle}>
+          <TitleContainer
+            style={{
+              color: props.colorTitle,
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+            }}
+          >
+            {props.subtitle !== true ? (
+              <VariantHeading>{props.text}</VariantHeading>
+            ) : (
+              <VariantSubhead>{props.text}</VariantSubhead>
+            )}
+          </TitleContainer>
+        </ParallaxBannerLayer>
+      </ParallaxBanner>
+    </>
+  );
+};
 
 const ImageDiv = styled.img`
   position: absolute;
