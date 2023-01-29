@@ -1,5 +1,5 @@
 const BASEHUE = 220;
-const SATURATION = 100;
+const SATURATION = 10;
 
 export const COLOR_BASE = `hsl(${BASEHUE}, ${SATURATION}%, 30%)`;
 export const COLOR_BLACK = `hsl(0, 0%, 0%)`;
