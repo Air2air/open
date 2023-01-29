@@ -40,7 +40,6 @@
     "backgroundColor": "#EEE"
   },
 
-
   {
     "text": "Powering open manufacturing",
     "subtitle": false,
@@ -54,9 +53,9 @@
   {
     "text": "Adopting open-source technology and methods in manufacturing process, like implementing IoT, automation, and data analytics, can help improve energy efficiency and reduce the environmental impact of industrial processes.",
     "subtitle": true,
-    "speedTitle": 20,
+    "speedTitle": 0,
     "imageBackground": "",
-    "speedBackground": 0,
+    "speedBackground": 20,
     "height": 500,
     "colorTitle": "#000",
     "backgroundColor": "#EEE"
@@ -76,7 +75,7 @@
     "subtitle": true,
     "speedTitle": 0,
     "imageBackground": "",
-    "speedBackground": 0,
+    "speedBackground": 20,
     "height": 500,
     "colorTitle": "#000",
     "backgroundColor": "#EEE"
@@ -94,9 +93,9 @@
   {
     "text": "Adopting open-source technology and methods in the travel industry, such as electric and alternative fuel vehicles, smart grid management, and energy-efficient infrastructure, can help reduce the environmental impact of transportation and improve the overall sustainability of travel.",
     "subtitle": true,
-    "speedTitle": 20,
+    "speedTitle": 0,
     "imageBackground": "",
-    "speedBackground": 0,
+    "speedBackground": 20,
     "height": 500,
     "colorTitle": "#000",
     "backgroundColor": "#EEE"
