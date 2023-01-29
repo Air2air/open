@@ -18,7 +18,7 @@ export const FONT_SIZE_HEADING_DESKTOP = "4rem";
 export const FONT_SIZE_HEADING_MOBILE = "3rem";
 
 export const FONT_SIZE_BANNER_SUBHEAD_DESKTOP = "2.5rem";
-export const FONT_SIZE_BANNER_SUBHEAD_MOBILE = "1.5em";
+export const FONT_SIZE_BANNER_SUBHEAD_MOBILE = "1.5rem";
 
 export const FONT_SIZE_SUBHEAD_DESKTOP = "1.4em";
 export const FONT_SIZE_SUBHEAD_MOBILE = "1.3em";
