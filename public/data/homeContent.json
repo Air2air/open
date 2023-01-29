@@ -12,7 +12,7 @@
   {
     "text": "Implementing open-source technology in the energy sector, such as distributed energy systems and smart grid systems, can help make cities more energy efficient.",
     "subtitle": true,
-    "speedTitle": 20,
+    "speedTitle": 0,
     "imageBackground": "",
     "speedBackground": 20,
     "height": 400,
@@ -32,7 +32,7 @@
   {
     "text": "Using open-source technology to develop and implement alternative fuel vehicles and electric vehicles, as well as to improve public transportation systems, can help create more sustainable and efficient transportation.",
     "subtitle": true,
-    "speedTitle": 20,
+    "speedTitle": 0,
     "imageBackground": "",
     "speedBackground": 20,
     "height": 500,
@@ -56,7 +56,7 @@
     "subtitle": true,
     "speedTitle": 20,
     "imageBackground": "",
-    "speedBackground": 20,
+    "speedBackground": 0,
     "height": 500,
     "colorTitle": "#000",
     "backgroundColor": "#EEE"
@@ -74,7 +74,7 @@
   {
     "text": "Using open-source technology and techniques to develop and implement new energy sources and storage solutions can help improve energy security and increase access to sustainable energy for all.",
     "subtitle": true,
-    "speedTitle": 20,
+    "speedTitle": 0,
     "imageBackground": "",
     "speedBackground": 20,
     "height": 500,
@@ -96,7 +96,7 @@
     "subtitle": true,
     "speedTitle": 20,
     "imageBackground": "",
-    "speedBackground": 20,
+    "speedBackground": 0,
     "height": 500,
     "colorTitle": "#000",
     "backgroundColor": "#EEE"
@@ -114,9 +114,9 @@
   {
     "text": "Utilizing open-source technology and techniques in the field of energy and power can improve national security by reducing dependence on foreign energy sources, increasing resilience to power disruptions and cyber attacks, and promoting the use of sustainable energy sources.",
     "subtitle": true,
-    "speedTitle": 20,
+    "speedTitle": 0,
     "imageBackground": "",
-    "speedBackground": 20,
+    "speedBackground": 0,
     "height": 600,
     "colorTitle": "#000",
     "backgroundColor": "#EEE"

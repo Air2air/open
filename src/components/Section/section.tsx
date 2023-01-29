@@ -80,7 +80,6 @@ const SectionDesktop = (props, index) => {
       }}
     >
       <ImageDiv src={props.imageBackground} />
-
       <ParallaxBannerLayer speed={props.speedTitle}>
         <TitleContainer
           style={{
@@ -158,7 +157,7 @@ const ImageDiv = styled.img`
 
 const ContrastContainer = styled.div`
 padding:10px 0;
-  background: ${COLOR_BASE};
+  background: none;//;
   width: 100vw;
   height: auto;
 `;
@@ -218,14 +217,14 @@ const VariantSubhead = styled.div`
     font-size: ${FONT_SIZE_BANNER_SUBHEAD_DESKTOP};
     font-family: ${FONT_FAMILY_SUBHEAD};
     line-height: ${LINE_HEIGHT_SUBHEAD_DESKTOP};
-    color: ${COLOR_BANNER_SUBHEAD};
+    color: #888;//${COLOR_BANNER_SUBHEAD};
   }
   @media (max-width: ${BREAKPOINT}px) {
     padding: 0 8px;
     font-size: ${FONT_SIZE_BANNER_SUBHEAD_MOBILE};
     font-family: ${FONT_FAMILY_SUBHEAD};
     line-height: ${LINE_HEIGHT_SUBHEAD_MOBILE};
-    color: ${COLOR_BANNER_SUBHEAD};
+    color: #888;//${COLOR_BANNER_SUBHEAD};
   }
   /* background: green; */
 `;
