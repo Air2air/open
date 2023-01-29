@@ -1,6 +1,7 @@
 [
   {
-    "title": "Powering the cities",
+    "text": "Powering the cities",
+    "subtitle": false,
     "speedTitle": 30,
     "imageBackground": "/images/content/banner_city.webp",
     "speedBackground": -20,
@@ -9,7 +10,8 @@
     "backgroundColor": "#ddd"
   },
   {
-    "title": "Implementing open-source technology in the energy sector, such as distributed energy systems and smart grid systems, can help make cities more energy efficient.",
+    "text": "Implementing open-source technology in the energy sector, such as distributed energy systems and smart grid systems, can help make cities more energy efficient.",
+    "subtitle": true,
     "speedTitle": -40,
     "imageBackground": "",
     "speedBackground": 20,
@@ -18,7 +20,8 @@
     "backgroundColor": "#FFF"
   },
   {
-    "title": "Powering open transport",
+    "text": "Powering open transport",
+    "subtitle": false,
     "speedTitle": 30,
     "imageBackground": "/images/content/banner_train.webp",
     "speedBackground": -20,
@@ -27,7 +30,8 @@
     "backgroundColor": "#DDD"
   },
   {
-    "title": "Using open-source technology to develop and implement alternative fuel vehicles and electric vehicles, as well as to improve public transportation systems, can help create more sustainable and efficient transportation.",
+    "text": "Using open-source technology to develop and implement alternative fuel vehicles and electric vehicles, as well as to improve public transportation systems, can help create more sustainable and efficient transportation.",
+    "subtitle": true,
     "speedTitle": -40,
     "imageBackground": "",
     "speedBackground": 20,
@@ -38,7 +42,8 @@
 
 
   {
-    "title": "Powering open manufacturing",
+    "text": "Powering open manufacturing",
+    "subtitle": false,
     "speedTitle": 30,
     "imageBackground": "/images/content/banner_factory.webp",
     "speedBackground": -20,
@@ -47,7 +52,8 @@
     "backgroundColor": "#DDD"
   },
   {
-    "title": "Adopting open-source technology and methods in manufacturing process, like implementing IoT, automation, and data analytics, can help improve energy efficiency and reduce the environmental impact of industrial processes.",
+    "text": "Adopting open-source technology and methods in manufacturing process, like implementing IoT, automation, and data analytics, can help improve energy efficiency and reduce the environmental impact of industrial processes.",
+    "subtitle": true,
     "speedTitle": -40,
     "imageBackground": "",
     "speedBackground": 20,
@@ -56,7 +62,8 @@
     "backgroundColor": "#EEE"
   },
   {
-    "title": "Powering open energy",
+    "text": "Powering open energy",
+    "subtitle": false,
     "speedTitle": 30,
     "imageBackground": "/images/content/banner_ship.webp",
     "speedBackground": -20,
@@ -65,7 +72,8 @@
     "backgroundColor": "#ddd"
   },
   {
-    "title": "Using open-source technology and techniques to develop and implement new energy sources and storage solutions can help improve energy security and increase access to sustainable energy for all.",
+    "text": "Using open-source technology and techniques to develop and implement new energy sources and storage solutions can help improve energy security and increase access to sustainable energy for all.",
+    "subtitle": true,
     "speedTitle": -40,
     "imageBackground": "",
     "speedBackground": -20,
@@ -74,7 +82,8 @@
     "backgroundColor": "#EEE"
   },
   {
-    "title": "Powering open travel",
+    "text": "Powering open travel",
+    "subtitle": false,
     "speedTitle": 30,
     "imageBackground": "/images/content/banner_plane.webp",
     "speedBackground": 20,
@@ -83,7 +92,8 @@
     "backgroundColor": "#EEE"
   },
   {
-    "title": "Adopting open-source technology and methods in the travel industry, such as electric and alternative fuel vehicles, smart grid management, and energy-efficient infrastructure, can help reduce the environmental impact of transportation and improve the overall sustainability of travel.",
+    "text": "Adopting open-source technology and methods in the travel industry, such as electric and alternative fuel vehicles, smart grid management, and energy-efficient infrastructure, can help reduce the environmental impact of transportation and improve the overall sustainability of travel.",
+    "subtitle": true,
     "speedTitle": -40,
     "imageBackground": "",
     "speedBackground": -20,
@@ -92,7 +102,8 @@
     "backgroundColor": "#EEE"
   },
   {
-    "title": "Powering open countries",
+    "text": "Powering open countries",
+    "subtitle": false,
     "speedTitle": 30,
     "imageBackground": "/images/content/banner_palace.webp",
     "speedBackground": 20,
@@ -101,7 +112,8 @@
     "backgroundColor": "#EEE"
   },
   {
-    "title": "Utilizing open-source technology and techniques in the field of energy and power can improve national security by reducing dependence on foreign energy sources, increasing resilience to power disruptions and cyber attacks, and promoting the use of sustainable energy sources.",
+    "text": "Utilizing open-source technology and techniques in the field of energy and power can improve national security by reducing dependence on foreign energy sources, increasing resilience to power disruptions and cyber attacks, and promoting the use of sustainable energy sources.",
+    "subtitle": true,
     "speedTitle": -40,
     "imageBackground": "",
     "speedBackground": -20,
