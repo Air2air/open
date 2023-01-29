@@ -85,7 +85,7 @@ const Pen = styled.div`
   position: absolute;
   width: 0;
   background: ${backgroundImagePen} no-repeat;
-  transition: width ${TRANSITION_SPEED} ease-in-out;
+  /* transition: width ${TRANSITION_SPEED} ease-in-out; */
   transition-delay: 200ms, 100ms;
   cursor: pointer;
 `;
