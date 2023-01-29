@@ -1,7 +1,7 @@
 const BASEHUE = 220;
 const SATURATION = 100;
 
-export const COLOR_BASE = `hsl(${BASEHUE}, ${SATURATION}%, 50%)`;
+export const COLOR_BASE = `hsl(${BASEHUE}, ${SATURATION}%, 30%)`;
 export const COLOR_BLACK = `hsl(0, 0%, 0%)`;
 export const COLOR_CONTRAST = `hsl(${BASEHUE}, 2%, 85%)`;
 export const COLOR_CONTRAST_DARK = `hsl(${BASEHUE}, 2%, 65%)`;
@@ -13,9 +13,9 @@ export const COLOR_BASE_4 = `hsl(${BASEHUE}, ${SATURATION}%, 50%)`;
 
 // SITE
 export const COLOR_BACKGROUND = `hsl(${BASEHUE}, ${SATURATION}%, 90%)`;
-export const COLOR_HEADER = `hsl(${BASEHUE}, ${SATURATION}%, 30%)`;
+export const COLOR_HEADER = COLOR_BASE;
 export const COLOR_HEADER_HOVER = `hsl(${BASEHUE}, ${SATURATION}%, 60%)`;
-export const COLOR_FOOTER = `hsl(${BASEHUE}, ${SATURATION}%, 30%)`;
+export const COLOR_FOOTER = COLOR_BASE;
 
 // BUTTONS
 export const COLOR_BUTTON_TEXT = COLOR_WHITE;

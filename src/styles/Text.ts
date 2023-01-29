@@ -14,8 +14,8 @@ export const FONT_FAMILY_DEFAULT = `"Roboto", sans-serif`;
 export const FONT_FAMILY_SECONDARY = `"Sofia Sans Medium", sans-serif`;
 
 // SIZES
-export const FONT_SIZE_HEADING_DESKTOP = "4rem";
-export const FONT_SIZE_HEADING_MOBILE = "3rem";
+export const FONT_SIZE_HEADING_DESKTOP = "3.6rem";
+export const FONT_SIZE_HEADING_MOBILE = "2rem";
 
 export const FONT_SIZE_BANNER_SUBHEAD_DESKTOP = "2.2rem";
 export const FONT_SIZE_BANNER_SUBHEAD_MOBILE = "1.2rem";

@@ -15,7 +15,7 @@
     "speedTitle": 20,
     "imageBackground": "",
     "speedBackground": 20,
-    "height": 500,
+    "height": 400,
     "colorTitle": "#000",
     "backgroundColor": "#FFF"
   },
@@ -117,7 +117,7 @@
     "speedTitle": 20,
     "imageBackground": "",
     "speedBackground": 20,
-    "height": 500,
+    "height": 600,
     "colorTitle": "#000",
     "backgroundColor": "#EEE"
   }

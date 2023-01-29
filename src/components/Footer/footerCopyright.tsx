@@ -1,7 +1,7 @@
 import { LogoBug } from "components/Logo/logoBug";
 import { useState, useEffect } from "react";
 import styled from "styled-components";
-import { COLOR_BASE } from "styles/Colors";
+import { COLOR_BASE, COLOR_WHITE } from "styles/Colors";
 import { BREAKPOINT } from "styles/Constants";
 import {
   FOOTER_COPYRIGHT_HEIGHT_DESKTOP,
@@ -28,13 +28,13 @@ export const FooterCopyright = () => {
 
 export const FooterCopyrightWrapper = styled.div`
   z-index: +1;
-  color: ${COLOR_BASE};
   display: grid;
   grid-template-columns: auto auto auto;
   align-items: flex-start;
   width: 100%;
   div {
-    color: ${COLOR_BASE};
+    color: ${COLOR_WHITE};
+    opacity: 0.5;
   }
   @media (min-width: ${BREAKPOINT}px) {
     height: ${FOOTER_COPYRIGHT_HEIGHT_DESKTOP}px;

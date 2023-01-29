@@ -1,3 +1,4 @@
+import Container from "components/Container/container";
 import Spacer from "components/Spacer/spacer";
 import { FetchData } from "fetch/fetch";
 import { useEffect, useState } from "react";
@@ -7,6 +8,7 @@ import {
   BREAKPOINT,
   COLOR_BANNER_HEADING,
   COLOR_BANNER_SUBHEAD,
+  COLOR_BASE,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
 } from "styles/Constants";
@@ -52,7 +54,6 @@ const Section = ({ jsonFile }) => {
     <>
       {width > BREAKPOINT ? null : <Spacer height={70} />}
 
-
       {data.map((props, index) => (
         <div key={index}>
           {width > BREAKPOINT ? (
@@ -79,6 +80,7 @@ const SectionDesktop = (props, index) => {
       }}
     >
       <ImageDiv src={props.imageBackground} />
+
       <ParallaxBannerLayer speed={props.speedTitle}>
         <TitleContainer
           style={{
@@ -90,9 +92,15 @@ const SectionDesktop = (props, index) => {
           }}
         >
           {props.subtitle !== true ? (
-            <VariantHeading>{props.text}</VariantHeading>
+            <VariantHeading>
+              <ContrastContainer>
+                <ResponsiveWrapper>{props.text}</ResponsiveWrapper>
+              </ContrastContainer>
+            </VariantHeading>
           ) : (
-            <VariantSubhead>{props.text}</VariantSubhead>
+            <VariantSubhead>
+              <ResponsiveWrapper>{props.text}</ResponsiveWrapper>
+            </VariantSubhead>
           )}
         </TitleContainer>
       </ParallaxBannerLayer>
@@ -100,13 +108,15 @@ const SectionDesktop = (props, index) => {
   );
 };
 
+const mobileReduction = 0.55;
+
 const SectionMobile = (props, index) => {
   return (
     <>
       <ParallaxBanner
         key={index}
         style={{
-          height: props.height / 2,
+          height: props.height * mobileReduction,
           width: "100%",
           background: props.colorBackground,
         }}
@@ -123,9 +133,13 @@ const SectionMobile = (props, index) => {
             }}
           >
             {props.subtitle !== true ? (
-              <VariantHeading>{props.text}</VariantHeading>
+              <VariantHeading>
+                <ResponsiveWrapper>{props.text}</ResponsiveWrapper>
+              </VariantHeading>
             ) : (
-              <VariantSubhead>{props.text}</VariantSubhead>
+              <VariantSubhead>
+                <ResponsiveWrapper>{props.text}</ResponsiveWrapper>
+              </VariantSubhead>
             )}
           </TitleContainer>
         </ParallaxBannerLayer>
@@ -142,28 +156,50 @@ const ImageDiv = styled.img`
   transform: translate(-50%, -50%);
 `;
 
+const ContrastContainer = styled.div`
+padding:10px 0;
+  background: ${COLOR_BASE};
+  width: 100vw;
+  height: auto;
+`;
+
+const ResponsiveWrapper = styled.div`
+  @media (min-width: ${BREAKPOINT}px) {
+    margin:0 auto;
+    width: ${CONTENT_WIDTH_DESKTOP};
+  }
+  @media (max-width: ${BREAKPOINT}px) {
+    margin:0 auto;
+    width: ${CONTENT_WIDTH_MOBILE};
+  }
+  /* background: green; */
+`;
+
+
+
 const TitleContainer = styled.div`
   @media (min-width: ${BREAKPOINT}px) {
     ${(subtitle) =>
       subtitle ? FONT_BANNER_HEADING_DESKTOP : FONT_BANNER_SUBHEAD_DESKTOP};
-    width: ${CONTENT_WIDTH_DESKTOP};
+    width: 100%;
   }
   @media (max-width: ${BREAKPOINT}px) {
     ${(subtitle) =>
       subtitle ? FONT_BANNER_HEADING_MOBILE : FONT_BANNER_SUBHEAD_MOBILE};
-    width: ${CONTENT_WIDTH_MOBILE};
+    width: 100%;
   }
   /* background: green; */
 `;
 
 const VariantHeading = styled.div`
   @media (min-width: ${BREAKPOINT}px) {
-    padding: 0 8px;
+    padding: 12px 0;
     font-size: ${FONT_SIZE_HEADING_DESKTOP};
     font-family: ${FONT_FAMILY_HEADING};
     line-height: ${LINE_HEIGHT_HEADING_DESKTOP};
     color: ${COLOR_BANNER_HEADING};
-    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.9);
+    width: ${CONTENT_WIDTH_DESKTOP};
+    /* text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.9); */
   }
   @media (max-width: ${BREAKPOINT}px) {
     padding: 0 8px;
@@ -171,6 +207,7 @@ const VariantHeading = styled.div`
     font-family: ${FONT_FAMILY_HEADING};
     line-height: ${LINE_HEIGHT_HEADING_MOBILE};
     color: ${COLOR_BANNER_HEADING};
+    width: ${CONTENT_WIDTH_MOBILE};
   }
   /* background: green; */
 `;
