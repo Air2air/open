@@ -4,7 +4,7 @@ const BASE_BRIGHTNESS = 50;
 
 export const COLOR_BASE = `hsl(${BASE_HUE}, ${BASE_SATURATION}%, ${BASE_BRIGHTNESS}%)`;
 export const COLOR_BLACK = `hsl(0, 0%, 0%)`;
-export const COLOR_CONTRAST = `hsl(${BASE_HUE}, 2%, 85%)`;
+export const COLOR_CONTRAST = `hsl(156,100%, 40%)`;
 export const COLOR_CONTRAST_DARK = `hsl(${BASE_HUE}, 2%, 65%)`;
 export const COLOR_WHITE = `hsl(${BASE_HUE}, 70%, 97%)`;
 
@@ -39,9 +39,7 @@ export const COLOR_SUBHEAD = `hsl(${BASE_HUE}, 40%, 30%)`;
 // HEADING BLOCK BACKGROUNDS
 export const COLOR_HEADING_BLOCK_BACKGROUND = "hsla(0, 0%, 0%, 0.7)";
 
-
-
-// CALLOUTS 
+// CALLOUTS
 export const COLOR_CALLOUT_0 = `hsl(${BASE_HUE}, 10%, 90%)`;
 export const COLOR_CALLOUT_1 = `hsl(${BASE_HUE}, 10%, 93%)`;
 export const COLOR_CALLOUT_2 = `hsl(${BASE_HUE}, 10%, 97%)`;

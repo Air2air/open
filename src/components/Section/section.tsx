@@ -1,4 +1,4 @@
-import Spacer from "components/Spacer/spacer";
+
 import { FetchData } from "fetch/fetch";
 import { useEffect, useState } from "react";
 import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax";
@@ -46,7 +46,7 @@ const Section = ({ jsonFile }) => {
 
   return (
     <>
-      {width > BREAKPOINT ? null : <Spacer height={70} />}
+
 
       {data.map((props, index) => (
         <div key={index}>
@@ -159,7 +159,7 @@ const Banner = styled.div`
   width: 100%;
   height: auto;
 
-  /* background: blue; */
+  /* background: #009e5f; */
   @media (min-width: ${BREAKPOINT}px) {
     padding: 4rem 0;
   }

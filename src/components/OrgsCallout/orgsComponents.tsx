@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { COLOR_BASE_3 } from "styles/Colors";
+import { COLOR_BASE } from "styles/Colors";
 import {
   BREAKPOINT,
   CONTENT_WIDTH_DESKTOP,
@@ -18,7 +18,7 @@ export const OrgsWrapper = styled.div`
   overflow: hidden;
   align-items: center;
   height: auto;
-  background: ${COLOR_BASE_3};
+  background: ${COLOR_BASE};
 `;
 
 export const OrgInnerWrapper = styled.div`
