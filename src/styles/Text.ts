@@ -17,33 +17,33 @@ export const FONT_FAMILY_SECONDARY = `"Sofia Sans Medium", sans-serif`;
 export const FONT_SIZE_HEADING_DESKTOP = "3.6rem";
 export const FONT_SIZE_HEADING_MOBILE = "2rem";
 
-export const FONT_SIZE_BANNER_SUBHEAD_DESKTOP = "2.2rem";
-export const FONT_SIZE_BANNER_SUBHEAD_MOBILE = "1.2rem";
+export const FONT_SIZE_SUBHEAD_DESKTOP = "1.8rem";
+export const FONT_SIZE_SUBHEAD_MOBILE = "1.2rem";
 
-export const FONT_SIZE_SUBHEAD_DESKTOP = "1.4em";
-export const FONT_SIZE_SUBHEAD_MOBILE = "1.3em";
 
-export const FONT_SIZE_CAPTION_DESKTOP = "1.05em";
-export const FONT_SIZE_CAPTION_MOBILE = ".9em";
+export const FONT_SIZE_CAPTION_DESKTOP = "1.05rem";
+export const FONT_SIZE_CAPTION_MOBILE = ".9rem";
 
-export const FONT_SIZE_DEFAULT_DESKTOP = "1.05em";
-export const FONT_SIZE_DEFAULT_MOBILE = ".95em";
+export const FONT_SIZE_DEFAULT_DESKTOP = "1.05rem";
+export const FONT_SIZE_DEFAULT_MOBILE = ".95rem";
 
-export const FONT_SIZE_BUTTON_DESKTOP = "1.1em";
-export const FONT_SIZE_BUTTON_MOBILE = "1.1em";
+export const FONT_SIZE_BUTTON_DESKTOP = "1.1rem";
+export const FONT_SIZE_BUTTON_MOBILE = "1.1rem";
 
 // LINE-HEIGHT
-export const LINE_HEIGHT_DEFAULT_DESKTOP = "1.8em";
-export const LINE_HEIGHT_DEFAULT_MOBILE = "1.6em";
 
-export const LINE_HEIGHT_HEADING_DESKTOP = "1.1em";
-export const LINE_HEIGHT_HEADING_MOBILE = "1.2em";
 
-export const LINE_HEIGHT_SUBHEAD_DESKTOP = "1.2em";
-export const LINE_HEIGHT_SUBHEAD_MOBILE = "1.2em";
+export const LINE_HEIGHT_HEADING_DESKTOP = "3rem";
+export const LINE_HEIGHT_HEADING_MOBILE = "2rem";
 
-export const LINE_HEIGHT_BUTTON_DESKTOP = "1.5em";
-export const LINE_HEIGHT_BUTTON_MOBILE = "1.3em";
+export const LINE_HEIGHT_SUBHEAD_DESKTOP = "3rem";
+export const LINE_HEIGHT_SUBHEAD_MOBILE = "2rem";
+
+export const LINE_HEIGHT_DEFAULT_DESKTOP = "2rem";
+export const LINE_HEIGHT_DEFAULT_MOBILE = "1.6rem";
+
+export const LINE_HEIGHT_BUTTON_DESKTOP = "1.5rem";
+export const LINE_HEIGHT_BUTTON_MOBILE = "1.3rem";
 
 // WEIGHTS
 export const FONT_WEIGHT_LIGHT = 100; //Roboto: 100;300;400;500;700
@@ -74,7 +74,7 @@ color: ${COLOR_BANNER_HEADING};
 // BANNER SUBHEAD
 export const FONT_BANNER_SUBHEAD_DESKTOP = `
 padding: 0 8px;
-font-size: ${FONT_SIZE_BANNER_SUBHEAD_DESKTOP}; 
+font-size: ${FONT_SIZE_SUBHEAD_DESKTOP}; 
 font-family: ${FONT_FAMILY_SUBHEAD}; 
 line-height: ${LINE_HEIGHT_SUBHEAD_DESKTOP}; 
 color: ${COLOR_BANNER_SUBHEAD};
@@ -82,7 +82,7 @@ color: ${COLOR_BANNER_SUBHEAD};
 
 export const FONT_BANNER_SUBHEAD_MOBILE = `
 padding: 0 8px;
-font-size: ${FONT_SIZE_BANNER_SUBHEAD_MOBILE}; 
+font-size: ${FONT_SIZE_SUBHEAD_MOBILE}; 
 font-family: ${FONT_FAMILY_SUBHEAD}; 
 line-height: ${LINE_HEIGHT_SUBHEAD_MOBILE}; 
 color: ${COLOR_BANNER_SUBHEAD};

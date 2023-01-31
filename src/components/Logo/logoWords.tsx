@@ -5,12 +5,10 @@ const backgroundImageText = "url(/images/site/logo_text.svg)";
 const backgroundImagePen = "url(/images/site/logo_pen.svg)";
 const backgroundImageWords = "url(/images/site/logo_words.svg)";
 
-const TRANSITION_SPEED = "200ms";
+const TRANSITION_SPEED = "0";
 
 export const LogoWords = (props) => {
   const [showWords, setShowWords] = useState(false);
-
-  //function wih a handler using onMouseEnter and onMouseLeave to change the logo from Pen to Words.
 
   const handleMouseEnter = () => {
     setShowWords(true);
@@ -85,8 +83,8 @@ const Pen = styled.div`
   position: absolute;
   width: 0;
   background: ${backgroundImagePen} no-repeat;
-  /* transition: width ${TRANSITION_SPEED} ease-in-out; */
-  transition-delay: 200ms, 100ms;
+  transition: width ${TRANSITION_SPEED} ease-in-out;
+
   cursor: pointer;
 `;
 
@@ -95,7 +93,6 @@ const Words = styled.div`
   width: 0;
   background: ${backgroundImageWords} no-repeat;
   transition: width ${TRANSITION_SPEED} ease-in-out;
-  transition-delay: 200ms, 100ms;
   overflow: visible;
   cursor: pointer;
 `;

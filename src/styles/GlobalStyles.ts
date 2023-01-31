@@ -9,6 +9,15 @@ import {
 
 const GlobalStyles = createGlobalStyle`
 
+:root {
+  @media (min-width: ${BREAKPOINT}px) {
+    ${FONT_DEFAULT_DESKTOP}
+  }
+  @media (max-width: ${BREAKPOINT}px) {
+    ${FONT_DEFAULT_MOBILE}
+  }
+}
+
 body {
 box-sizing: border-box;
 outline: 0;
@@ -53,14 +62,7 @@ h3 {
 
 // TEXT
 
-p {
-  @media (min-width: ${BREAKPOINT}px) {
-    ${FONT_DEFAULT_DESKTOP}
-  }
-  @media (max-width: ${BREAKPOINT}px) {
-    ${FONT_DEFAULT_MOBILE}
-  }
-}
+
 
 
 b {
