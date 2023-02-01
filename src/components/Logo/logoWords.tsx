@@ -8,14 +8,14 @@ const backgroundImageWords = "url(/images/site/logo_words.svg)";
 const TRANSITION_SPEED = "0";
 
 export const LogoWords = (props) => {
-  const [showWords, setShowWords] = useState(false);
+  const [showWords, setShowWords] = useState(true);
 
   const handleMouseEnter = () => {
-    setShowWords(true);
+    setShowWords(false);
   };
 
   const handleMouseLeave = () => {
-    setShowWords(false);
+    setShowWords(true);
   };
 
   const divWidthO = props.size * 0.91;

@@ -21,6 +21,7 @@ import {
   LINE_HEIGHT_SUBHEAD_DESKTOP,
   LINE_HEIGHT_SUBHEAD_MOBILE,
 } from "styles/Text";
+import LazyImage from "./ImageDiv";
 
 const Section = ({ jsonFile }) => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -70,7 +71,7 @@ const SectionDesktop = (props, index) => {
             background: props.colorBackground,
           }}
         >
-          <ImageDiv src={props.imageBackground} />
+          <LazyImage src={props.imageBackground} alt={props} />
           <ParallaxBannerLayer speed={props.speedTitle}>
             <ParallaxHeadingContainer>
               <VariantHeading>
@@ -117,7 +118,7 @@ const SectionMobile = (props, index) => {
             background: props.colorBackground,
           }}
         >
-          <ImageDiv src={props.imageBackground} />
+          <LazyImage src={props.imageBackground} alt={props} />
           <ParallaxBannerLayer speed={props.speedTitle}>
             <ParallaxHeadingContainer>
               <VariantHeading>
@@ -163,14 +164,7 @@ const Banner = styled.div`
   }
 `;
 
-const ImageDiv = styled.img`
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* filter: brightness(0.5); */
-`;
+
 
 const ParallaxHeadingContainer = styled.div`
   position: relative;
