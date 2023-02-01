@@ -3,19 +3,17 @@ import styled from "styled-components";
 import { COLOR_HEADER, CONTENT_WIDTH_DESKTOP } from "styles/Constants";
 import { NavLinks } from "./navLinks";
 
-const NAV_PANEL_HEIGHT = 270;
+const NAV_PANEL_HEIGHT = "15rem";
 
-export const NavPanel = (props, handleClick) => {
-  // hide the actual nav panel when the user clicks on a link
+export const NavPanel = (height) => {
+  // hide or show the NavPanelOuter based on the value of visible
 
   return (
     <>
-      <NavPanelOuter>
+      <NavPanelOuter style={{ height: height }}>
         <Container>
-          <NavPanelInner
-            style={{ height: props.show ? NAV_PANEL_HEIGHT : "0" }}
-          >
-            <NavLinks {...props} handleClick={handleClick} />
+          <NavPanelInner style={{ height: NAV_PANEL_HEIGHT }}>
+            <NavLinks />
           </NavPanelInner>
         </Container>
       </NavPanelOuter>
@@ -24,12 +22,11 @@ export const NavPanel = (props, handleClick) => {
 };
 
 const NavPanelOuter = styled.div`
-  z-index: +1;
-  position: fixed;
-  top: 0;
+  /* z-index: +1; */
+  /* position: fixed; */
   display: flex;
   width: 100%;
-  overflow: hidden;
+  /* height: ${NAV_PANEL_HEIGHT}; */
   background: ${COLOR_HEADER};
 `;
 

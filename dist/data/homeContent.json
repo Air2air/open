@@ -1,191 +1,99 @@
 [
   {
-    "id": 1,
-    "title": [
-      {
-        "text": "Ensure a reliable, sustainable, and resilient energy grid.",
-        "fromX": "right",
-        "translateX": 15,
-        "fromY": "top",
-        "translateY": 30,
-        "color": "#FFF"
-      }
-    ],
-    "subhead": [
-      {
-        "text": "A system that meets the needs of all stakeholders.",
-        "fromX": "right",
-        "translateX": 15,
-        "fromY": "top",
-        "translateY": 40,
-        "color": "#FFF"
-      }
-    ],
-    "circle": [
-      {
-        "hasCircle": true,
-        "backgroundColor": "orange",
-        "translateX": 10,
-        "translateY": 20,
-        "radius": 300
-      }
-    ],
+    "text": "Powering open cities",
+    "hasParallax": true,
+    "speedTitle": -20,
+    "imageBackground": "/images/content/banner_city.webp",
+    "speedBackground": 20,
+    "height": 700
+  },
+  {
+    "text": "Implementing open-source technology in the energy sector, such as distributed energy systems and smart grid systems, can help make cities more energy efficient.",
+    "hasParallax": false,
+    "speedTitle": null,
+    "imageBackground": null,
+    "speedBackground": null,
+    "height": null
+  },
+  {
+    "text": "Powering open transport",
+    "hasParallax": true,
+    "speedTitle": -20,
+    "imageBackground": "/images/content/banner_train.webp",
+    "speedBackground": 20,
+    "height": 500
+  },
+  {
+    "text": "Using open-source technology to develop and implement alternative fuel vehicles and electric vehicles, as well as to improve public transportation systems, can help create more sustainable and efficient transportation.",
+    "hasParallax": false,
+    "speedTitle": null,
+    "imageBackground": null,
+    "speedBackground": null,
+    "height": null
+  },
 
-    "description": "Various power generation, transmission and storage systems, large costs and unknowns. ",
-    "imageBackground": "/images/content/banner_1.webp",
-    "strength": -200,
-    "height": 700,
-    "backgroundColor": "#ddd"
+  {
+    "text": "Powering open manufacturing",
+    "hasParallax": true,
+    "speedTitle": -20,
+    "imageBackground": "/images/content/banner_factory.webp",
+    "speedBackground": 20,
+    "height": 500
   },
   {
-    "id": 2,
-    "title": [
-      {
-        "text": "Engage with all energy stakeholders",
-        "fromX": "right",
-        "translateX": 10,
-        "fromY": "top",
-        "translateY": 30,
-        "color": "#000"
-      }
-    ],
-    "subhead": [
-      {
-        "text": "Develop and implement energy policies and strategies with government, industry, and communities.",
-        "fromX": "right",
-        "translateX": 10,
-        "fromY": "top",
-        "translateY": 40,
-        "color": "#000"
-      }
-    ],
-    "circle": [
-      {
-        "hasCircle": true,
-        "backgroundColor": "blue",
-        "translateX": 20,
-        "translateY": 40,
-        "radius": 300
-      }
-    ],
-    "description": "Integrated knowledge and expertise from a wide range of scientific disciplines, including electrical engineering, physics, materials science, and computer science, to effectively design and implement a complex and advanced energy grid.",
-    "imageBackground": "",
-    "strength": 400,
-    "height": 700,
-    "backgroundColor": "#FFF"
+    "text": "Adopting open-source technology and methods in manufacturing process, like implementing IoT, automation, and data analytics, can help improve energy efficiency and reduce the environmental impact of industrial processes.",
+    "hasParallax": false,
+    "speedTitle": null,
+    "imageBackground": null,
+    "speedBackground": null,
+    "height": null
   },
   {
-    "id": 3,
-    "title": [
-      {
-        "text": "How your participation is key",
-        "fromX": "right",
-        "translateX": 10,
-        "fromY": "top",
-        "translateY": 30,
-        "color": "#FFF"
-      }
-    ],
-    "subhead": [
-      {
-        "text": "You can immediately join and get the benefits listed.",
-        "fromX": "right",
-        "translateX": 10,
-        "fromY": "top",
-        "translateY": 40,
-        "color": "#FFF"
-      }
-    ],
-    "circle": [
-      {
-        "hasCircle": true,
-        "backgroundColor": "indigo",
-        "translateX": 20,
-        "translateY": 40,
-        "radius": 300
-      }
-    ],
-    "color": "#FFF",
-    "description": "Scientists using tools to collaborate and share. Scientists platformed and popular vs. unknown ",
-    "imageBackground": "/images/content/banner_3.webp",
-    "strength": -400,
-    "height": 700,
-    "backgroundColor": "#ddd"
+    "text": "Powering open energy",
+    "hasParallax": true,
+    "speedTitle": -20,
+    "imageBackground": "/images/content/banner_ship.webp",
+    "speedBackground": 20,
+    "height": 600
   },
   {
-    "id": 4,
-    "title": [
-      {
-        "text": "The benefits of our solution",
-        "fromX": "right",
-        "translateX": 10,
-        "fromY": "top",
-        "translateY": 30,
-        "color": "#FFF"
-      }
-    ],
-    "subhead": [
-      {
-        "text": "How OPEN supports any country's endeavor to develop a sustainable energy grid.",
-        "fromX": "right",
-        "translateX": 10,
-        "fromY": "top",
-        "translateY": 40,
-        "color": "#FFF"
-      }
-    ],
-    "circle": [
-      {
-        "hasCircle": true,
-        "backgroundColor": "lightblue",
-        "translateX": 20,
-        "translateY": 40,
-        "radius": 300
-      }
-    ],
-    "color": "#FFF",
-    "description": "Countries being powered by scientists contributions. Balanced competing interests and priorities among stakeholders, including government agencies, utilities, and private sector companies.",
-    "imageBackground": "/images/content/banner_4.webp",
-    "strength": 400,
-    "height": 700,
-    "backgroundColor": "#EEE"
+    "text": "Using open-source technology and techniques to develop and implement new energy sources and storage solutions can help improve energy security and increase access to sustainable energy for all.",
+    "hasParallax": false,
+    "speedTitle": null,
+    "imageBackground": null,
+    "speedBackground": null,
+    "height": null
   },
   {
-    "id": 5,
-    "title": [
-      {
-        "text": "Calls to action and resources",
-        "fromX": "right",
-        "translateX": 10,
-        "fromY": "top",
-        "translateY": 30,
-        "color": "#FFF"
-      }
-    ],
-    "subhead": [
-      {
-        "text": "Everything that is here in the site available to you now.",
-        "fromX": "right",
-        "translateX": 10,
-        "fromY": "top",
-        "translateY": 40,
-        "color": "#FFF"
-      }
-    ],
-    "circle": [
-      {
-        "hasCircle": true,
-        "backgroundColor": "gold",
-        "translateX": 20,
-        "translateY": 40,
-        "radius": 300
-      }
-    ],
-    "color": "#FFF",
-    "description": "TBD",
-    "imageBackground": "/images/content/banner_5.webp",
-    "strength": -400,
-    "height": 700,
-    "backgroundColor": "#ddd"
+    "text": "Powering open travel",
+    "hasParallax": true,
+    "speedTitle": -20,
+    "imageBackground": "/images/content/banner_plane.webp",
+    "speedBackground": 20,
+    "height": 600
+  },
+  {
+    "text": "Adopting open-source technology and methods in the travel industry, such as electric and alternative fuel vehicles, smart grid management, and energy-efficient infrastructure, can help reduce the environmental impact of transportation and improve the overall sustainability of travel.",
+    "hasParallax": false,
+    "speedTitle": null,
+    "imageBackground": null,
+    "speedBackground": null,
+    "height": null
+  },
+  {
+    "text": "Powering open countries",
+    "hasParallax": true,
+    "speedTitle": -20,
+    "imageBackground": "/images/content/banner_palace.webp",
+    "speedBackground": 20,
+    "height": 600
+  },
+  {
+    "text": "Utilizing open-source technology and techniques in the field of energy and power can improve national security by reducing dependence on foreign energy sources, increasing resilience to power disruptions and cyber attacks, and promoting the use of sustainable energy sources.",
+    "hasParallax": false,
+    "speedTitle": null,
+    "imageBackground": null,
+    "speedBackground": null,
+    "height": null
   }
 ]

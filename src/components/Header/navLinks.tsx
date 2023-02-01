@@ -11,28 +11,26 @@ const sliceOne = dataRoutes.slice(0, 3);
 const sliceTwo = dataRoutes.slice(3, 6);
 const sliceThree = dataRoutes.slice(6, 9);
 
-
-
-export const NavLinks = ({handleClick}) => {
+export const NavLinks = () => {
   return (
     <>
       <NavLinkColumn>
         {sliceOne.map((route, index) => (
-          <NavLink key={index} to={route.path} onClick={handleClick}>
+          <NavLink key={index} to={route.path}>
             {route.section}
           </NavLink>
         ))}
       </NavLinkColumn>
       <NavLinkColumn>
         {sliceTwo.map((route, index) => (
-          <NavLink key={index} to={route.path} onClick={handleClick}>
+          <NavLink key={index} to={route.path}>
             {route.section}
           </NavLink>
         ))}
       </NavLinkColumn>
       <NavLinkColumn>
         {sliceThree.map((route, index) => (
-          <NavLink key={index} to={route.path} onClick={handleClick}>
+          <NavLink key={index} to={route.path}>
             {route.section}
           </NavLink>
         ))}

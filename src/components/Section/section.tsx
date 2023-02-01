@@ -1,4 +1,3 @@
-
 import { FetchData } from "fetch/fetch";
 import { useEffect, useState } from "react";
 import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax";
@@ -42,12 +41,8 @@ const Section = ({ jsonFile }) => {
     return <div>Error: {error.message}</div>;
   }
 
-  // return <>{width > BREAKPOINT ? <FooterDesktop /> : <FooterMobile />}</>;
-
   return (
     <>
-
-
       {data.map((props, index) => (
         <div key={index}>
           {width > BREAKPOINT ? (

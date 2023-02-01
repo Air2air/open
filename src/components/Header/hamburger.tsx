@@ -4,10 +4,16 @@ import { COLOR_WHITE } from "styles/Colors";
 export const HamburgerButton = (props) => {
   const burgerHeight = props.size + "px";
   const burgerWidth = props.size * 1.2 + "px";
-  const sliceHeight = (props.size / 7) + "px";
+  const sliceHeight = props.size / 7 + "px";
+
+
+
+
 
   return (
-    <Hamburger style={{ height: burgerHeight, width: burgerWidth }}>
+    <Hamburger
+      style={{ height: burgerHeight, width: burgerWidth }}
+    >
       <div style={{ width: burgerWidth, height: sliceHeight }} />
       <div style={{ width: burgerWidth, height: sliceHeight }} />
       <div style={{ width: burgerWidth, height: sliceHeight }} />

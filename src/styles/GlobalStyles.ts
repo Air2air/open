@@ -27,12 +27,6 @@ border: 0;
 background-color: #fff;
 }
 
-blockquote {
-  margin:0;
-  padding: 8px 0 8px 10px;
-  border-left: 5px solid red;
-}
-
 body {
   ${FONT_DEFAULT_DESKTOP}
   -webkit-font-smoothing: antialiased;
@@ -62,9 +56,6 @@ h3 {
 
 // TEXT
 
-
-
-
 b {
   font-weight: ${FONT_WEIGHT_BOLD};
   // color: gold;
@@ -74,20 +65,8 @@ a {
   text-decoration: none;
 }
 
-ul {
-  margin-left: 0;
-  padding-left: 0px;
-  list-style: square inside;
-}
 
-li {
-  @media (min-width: ${BREAKPOINT}px) {
-    padding: 8px 0;
-  }
-  @media (max-width: ${BREAKPOINT}px) {
-    padding: 5px 0;
-  }
-}
+
 
 @font-face {
   font-family: "Roboto Condensed";
