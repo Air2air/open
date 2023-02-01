@@ -29,7 +29,7 @@ export const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (
-        window.pageYOffset > 100 &&
+        window.pageYOffset > NAV_PANEL_HEIGHT &&
         navRef.current &&
         !navRef.current.contains(document.activeElement)
       ) {
@@ -49,19 +49,21 @@ export const Header = () => {
   return (
     <>
       <HeaderOuter>
-        <HeaderInner>
+        <HeaderInner         onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}>
           <HeaderLeft>
             <LogoWords size={HEADER_LOGO_HEIGHT_DESKTOP} />
           </HeaderLeft>
-          <HeaderRight
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
+          <HeaderRight>
             <HamburgerButton size={HEADER_LOGO_HEIGHT_DESKTOP} />
           </HeaderRight>
-        </HeaderInner>
+        </HeaderInner >
       </HeaderOuter>
-      <PanelCloser style={{ height: showNav ? "250px" : "0" }} ref={navRef}>
+      <PanelCloser
+        style={{ height: showNav ? NAV_PANEL_HEIGHT : HEADER_HEIGHT_DESKTOP }}
+        ref={navRef}
+
+      >
         <NavPanel height={showNav} />
       </PanelCloser>
     </>
