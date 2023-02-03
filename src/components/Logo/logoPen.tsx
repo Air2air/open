@@ -1,11 +1,11 @@
 import styled from "styled-components";
 const logo_text_only = "url(/images/site/logo_text_only.svg)";
 
-type LogoTextOnlyProps = {
+type LogoPenProps = {
   size?: number;
 };
 
-export const LogoTextOnly = (props: LogoTextOnlyProps) => {
+export const LogoPen = (props: LogoPenProps) => {
   return (
     <LogoWrapper
       style={{ height: props.size ? props.size + "px" : 30 + "px" }}

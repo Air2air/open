@@ -1,12 +1,18 @@
 import styled from "styled-components";
-import { COLOR_HEADER, CONTENT_WIDTH_DESKTOP } from "styles/Constants";
+import {
+  BREAKPOINT,
+  COLOR_HEADER,
+  CONTENT_WIDTH_DESKTOP,
+  CONTENT_WIDTH_MOBILE,
+} from "styles/Constants";
 import { useEffect, useRef, useState } from "react";
 import { HamburgerButton } from "./hamburger";
 import { LogoWords } from "components/Logo/logoWords";
 import { NavLinks } from "./navLinks";
 
 export const HEADER_HEIGHT_CLOSED = 70;
-export const HEADER_LOGO_HEIGHT_DESKTOP = HEADER_HEIGHT_CLOSED * 0.4;
+export const HEADER_LOGO_HEIGHT_DESKTOP = HEADER_HEIGHT_CLOSED * 0.32;
+export const HEADER_LOGO_HEIGHT_MOBILE = HEADER_HEIGHT_CLOSED * 0.23;
 export const NAV_PANEL_HEIGHT = 80;
 export const NAV_PANEL_TOP = HEADER_HEIGHT_CLOSED;
 export const HEADER_HEIGHT_OPEN = NAV_PANEL_HEIGHT + NAV_PANEL_TOP;
@@ -17,6 +23,8 @@ using react typescript, code a website horizontal navigation panel that opens wh
 
 export const Header = () => {
   const [showNav, setShowNav] = useState(false);
+  const [width, setWidth] = useState(window.innerWidth);
+
   const navRef = useRef<HTMLDivElement>(null);
 
   const handleMouseEnter = () => {
@@ -45,6 +53,12 @@ export const Header = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleWindowResize);
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
+
   return (
     <>
       <HeaderOuter
@@ -52,9 +66,18 @@ export const Header = () => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <HeaderInner>
+        <HeaderInner
+          style={{
+            width:
+              width > BREAKPOINT ? CONTENT_WIDTH_DESKTOP : CONTENT_WIDTH_MOBILE,
+          }}
+        >
           <HeaderLeft>
-            <LogoWords size={HEADER_LOGO_HEIGHT_DESKTOP} />
+            {width > BREAKPOINT ? (
+              <LogoWords size={HEADER_LOGO_HEIGHT_DESKTOP} />
+            ) : (
+              <LogoWords size={HEADER_LOGO_HEIGHT_MOBILE} />
+            )}
           </HeaderLeft>
           <HeaderRight>
             <HamburgerButton size={HEADER_LOGO_HEIGHT_DESKTOP} />
@@ -88,14 +111,14 @@ const HeaderOuter = styled.div`
 `;
 
 const HeaderInner = styled.div`
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: ${CONTENT_WIDTH_DESKTOP};
   height: ${HEADER_HEIGHT_CLOSED}px;
   margin: 0 auto;
   padding: 0;
-  /* background-color: blue; */
+
 `;
 
 const HeaderLeft = styled.div`

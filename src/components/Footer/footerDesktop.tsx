@@ -1,4 +1,4 @@
-import { LogoTextOnly } from "components/Logo/logoTextOnly";
+import { LogoPen } from "components/Logo/logoPen";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { COLOR_FOOTER } from "styles/Colors";
 
@@ -28,7 +28,7 @@ export const FooterDesktop = () => {
               delay={0}
               offset={0}
             >
-              <LogoTextOnly size={30} />
+              <LogoPen size={30} />
             </AnimationOnScroll>
           </FooterColumn>
           <FooterColumn style={{ width: "60%" }}>
