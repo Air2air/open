@@ -13,8 +13,7 @@ const App = () => {
   return (
     <>
       <Header />
-
-      <Suspense fallback={<LoadingSkeleton />}>     
+      <Suspense fallback={<LoadingSkeleton />}>
         <Routes>
           {dataRoutes.map(({ path, element }) => (
             <Route key={path} path={path} element={element} />

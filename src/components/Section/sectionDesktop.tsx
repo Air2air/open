@@ -22,6 +22,7 @@ const SectionDesktop = (props, index) => {
         <ParallaxBanner
           key={index}
           style={{
+            padding:0,
             height: props.height,
             width: "100%",
             background: props.colorBackground,

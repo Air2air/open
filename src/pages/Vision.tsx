@@ -1,6 +1,6 @@
 import Section from "components/Section/section";
 
-const ResearchPage = () => {
+const VisionPage = () => {
   return (
     <>
       <Section jsonFile="/data/homeContent.json" />
@@ -8,4 +8,4 @@ const ResearchPage = () => {
   );
 };
 
-export default ResearchPage;
+export default VisionPage;

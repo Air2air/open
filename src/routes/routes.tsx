@@ -1,13 +1,9 @@
-import AboutPage from "pages/About";
-import CharterPage from "pages/Charter";
-import ConnectPage from "pages/Connect";
-import ContactPage from "pages/Contact";
-import EducationPage from "pages/Education";
-import PolicyPage from "pages/Policy";
-import ResearchPage from "pages/Research";
 import { lazy } from "react";
 
 const HomePage = lazy(() => import("pages/Home"));
+const VisionPage = lazy(() => import("pages/Vision"));
+const AboutPage = lazy(() => import("pages/About"));
+const ContactPage = lazy(() => import("pages/Contact"));
 
 export const dataRoutes = [
   {
@@ -17,34 +13,10 @@ export const dataRoutes = [
     element: <HomePage />,
   },
   {
-    id: "Connect",
-    path: "/connect",
-    section: "Connect",
-    element: <ConnectPage />,
-  },
-  {
-    id: "Research",
-    path: "/research",
-    section: "Research",
-    element: <ResearchPage />,
-  },
-  {
-    id: "Policy",
-    path: "/policy",
-    section: "Policy",
-    element: <PolicyPage />,
-  },
-  {
-    id: "Education",
-    path: "/education",
-    section: "Education",
-    element: <EducationPage />,
-  },
-  {
-    id: "Charter",
-    path: "/charter",
-    section: "Charter",
-    element: <CharterPage />,
+    id: "Vision",
+    path: "/vision",
+    section: "Vision",
+    element: <VisionPage />,
   },
   {
     id: "About",

@@ -11,9 +11,10 @@ import { dataRoutes } from "routes/routes";
 
 // map over dataroutes and create a link for each one
 
-const sliceOne = dataRoutes.slice(0, 3);
-const sliceTwo = dataRoutes.slice(3, 6);
-const sliceThree = dataRoutes.slice(6, 9);
+const sliceOne = dataRoutes.slice(0, 1);
+const sliceTwo = dataRoutes.slice(1, 2);
+const sliceThree = dataRoutes.slice(2, 3);
+const sliceFour = dataRoutes.slice(3, 4);
 
 export const FooterLinks = () => {
   return (
@@ -34,6 +35,13 @@ export const FooterLinks = () => {
       </FooterLinkColumn>
       <FooterLinkColumn>
         {sliceThree.map((route, index) => (
+          <FooterLink key={index} to={route.path}>
+            {route.section}
+          </FooterLink>
+        ))}
+      </FooterLinkColumn>
+      <FooterLinkColumn>
+        {sliceFour.map((route, index) => (
           <FooterLink key={index} to={route.path}>
             {route.section}
           </FooterLink>

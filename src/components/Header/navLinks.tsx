@@ -7,9 +7,10 @@ import { dataRoutes } from "routes/routes";
 
 // map over dataroutes and create a link for each one
 
-const sliceOne = dataRoutes.slice(0, 3);
-const sliceTwo = dataRoutes.slice(3, 6);
-const sliceThree = dataRoutes.slice(6, 9);
+const sliceOne = dataRoutes.slice(0, 1);
+const sliceTwo = dataRoutes.slice(1, 2);
+const sliceThree = dataRoutes.slice(2, 3);
+const sliceFour = dataRoutes.slice(3, 4);
 
 export const NavLinks = () => {
   return (
@@ -35,6 +36,13 @@ export const NavLinks = () => {
           </NavLink>
         ))}
       </NavLinkColumn>
+      <NavLinkColumn>
+        {sliceFour.map((route, index) => (
+          <NavLink key={index} to={route.path}>
+            {route.section}
+          </NavLink>
+        ))}
+      </NavLinkColumn>
     </>
   );
 };
@@ -47,8 +55,8 @@ export const NavLinkColumn = styled.div`
   flex: 1;
   flex-direction: column;
   text-align: left;
+  align-items: center;
   justify-content: center;
-  padding: 0 0 40px 0;
   @media (min-width: ${BREAKPOINT}px) {
     height: ${NAV_COLUMN_HEIGHT_DESKTOP}px;
   }
