@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { COLOR_LINK_REVERSE, COLOR_LINK_REVERSE_HOVER } from "styles/Colors";
+import {
+  COLOR_HEADER,
+  COLOR_LINK_REVERSE,
+  COLOR_LINK_REVERSE_HOVER,
+} from "styles/Colors";
 import { BREAKPOINT } from "styles/Constants";
 import { FONT_CAPTION_DESKTOP, FONT_CAPTION_MOBILE } from "styles/Text";
 import { dataRoutes } from "routes/routes";
@@ -47,30 +51,29 @@ export const NavLinks = () => {
   );
 };
 
-const NAV_COLUMN_HEIGHT_DESKTOP = 100;
-const NAV_COLUMN_HEIGHT_MOBILE = 50;
-
 export const NavLinkColumn = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
-  text-align: left;
   align-items: center;
   justify-content: center;
-  @media (min-width: ${BREAKPOINT}px) {
-    height: ${NAV_COLUMN_HEIGHT_DESKTOP}px;
-  }
-  @media (max-width: ${BREAKPOINT}px) {
-    height: ${NAV_COLUMN_HEIGHT_MOBILE}px;
-  }
+  height: 100%;
   /* background: gold; */
 `;
 
 export const NavLink = styled(Link)`
+  height: 1.5rem;
+  width: 100%;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   color: ${COLOR_LINK_REVERSE};
   transition: all 200ms;
   &:hover {
     color: ${COLOR_LINK_REVERSE_HOVER};
+    background: ${COLOR_HEADER};
   }
   @media (min-width: ${BREAKPOINT}px) {
     ${FONT_CAPTION_DESKTOP}

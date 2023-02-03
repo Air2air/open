@@ -20,12 +20,11 @@ export const FONT_SIZE_HEADING_MOBILE = "2rem";
 export const FONT_SIZE_SUBHEAD_DESKTOP = "1.8rem";
 export const FONT_SIZE_SUBHEAD_MOBILE = "1.2rem";
 
-
 export const FONT_SIZE_CAPTION_DESKTOP = "1.05rem";
-export const FONT_SIZE_CAPTION_MOBILE = ".9rem";
+export const FONT_SIZE_CAPTION_MOBILE = "1.05rem";
 
 export const FONT_SIZE_DEFAULT_DESKTOP = "1.05rem";
-export const FONT_SIZE_DEFAULT_MOBILE = ".95rem";
+export const FONT_SIZE_DEFAULT_MOBILE = "1.05rem";
 
 export const FONT_SIZE_BUTTON_DESKTOP = "1.1rem";
 export const FONT_SIZE_BUTTON_MOBILE = "1.1rem";

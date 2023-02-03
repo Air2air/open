@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { COLOR_LINK_REVERSE, COLOR_LINK_REVERSE_HOVER } from "styles/Colors";
+import {
+  COLOR_HEADER,
+  COLOR_HEADER_CONTRAST,
+  COLOR_LINK_REVERSE,
+  COLOR_LINK_REVERSE_HOVER,
+} from "styles/Colors";
 import { BREAKPOINT } from "styles/Constants";
 import { FONT_CAPTION_DESKTOP, FONT_CAPTION_MOBILE } from "styles/Text";
 import {
@@ -67,10 +72,18 @@ export const FooterLinkColumn = styled.div`
 `;
 
 export const FooterLink = styled(Link)`
+  height: 1.8rem;
+  width: 100%;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   color: ${COLOR_LINK_REVERSE};
   transition: all 200ms;
   &:hover {
     color: ${COLOR_LINK_REVERSE_HOVER};
+    background: ${COLOR_HEADER_CONTRAST};
   }
   @media (min-width: ${BREAKPOINT}px) {
     ${FONT_CAPTION_DESKTOP}

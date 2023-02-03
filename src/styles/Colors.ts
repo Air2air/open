@@ -11,7 +11,7 @@ export const COLOR_WHITE = `hsl(${BASE_HUE}, 70%, 97%)`;
 // SITE
 export const COLOR_BACKGROUND = COLOR_WHITE;
 export const COLOR_HEADER = COLOR_BASE;
-export const COLOR_HEADER_HOVER = `hsl(${BASE_HUE}, ${BASE_SATURATION}%, 60%)`;
+export const COLOR_HEADER_CONTRAST = `hsl(${BASE_HUE}, ${BASE_SATURATION}%, 60%)`;
 export const COLOR_FOOTER = COLOR_BASE;
 
 // BUTTONS

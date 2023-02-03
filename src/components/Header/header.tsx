@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {
   BREAKPOINT,
   COLOR_HEADER,
+  COLOR_HEADER_CONTRAST,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
 } from "styles/Constants";
@@ -12,8 +13,8 @@ import { NavLinks } from "./navLinks";
 
 export const HEADER_HEIGHT_CLOSED = 70;
 export const HEADER_LOGO_HEIGHT_DESKTOP = HEADER_HEIGHT_CLOSED * 0.32;
-export const HEADER_LOGO_HEIGHT_MOBILE = HEADER_HEIGHT_CLOSED * 0.23;
-export const NAV_PANEL_HEIGHT = 80;
+export const HEADER_LOGO_HEIGHT_MOBILE = HEADER_HEIGHT_CLOSED * 0.28;
+export const NAV_PANEL_HEIGHT = 70;
 export const NAV_PANEL_TOP = HEADER_HEIGHT_CLOSED;
 export const HEADER_HEIGHT_OPEN = NAV_PANEL_HEIGHT + NAV_PANEL_TOP;
 
@@ -66,30 +67,43 @@ export const Header = () => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <HeaderInner
-          style={{
-            width:
-              width > BREAKPOINT ? CONTENT_WIDTH_DESKTOP : CONTENT_WIDTH_MOBILE,
-          }}
-        >
-          <HeaderLeft>
-            {width > BREAKPOINT ? (
-              <LogoWords size={HEADER_LOGO_HEIGHT_DESKTOP} />
-            ) : (
-              <LogoWords size={HEADER_LOGO_HEIGHT_MOBILE} />
-            )}
-          </HeaderLeft>
-          <HeaderRight>
-            <HamburgerButton size={HEADER_LOGO_HEIGHT_DESKTOP} />
-          </HeaderRight>
-        </HeaderInner>
+        <HeaderTopBackground>
+          <HeaderInner
+            style={{
+              width:
+                width > BREAKPOINT
+                  ? CONTENT_WIDTH_DESKTOP
+                  : CONTENT_WIDTH_MOBILE,
+            }}
+          >
+            <HeaderLeft>
+              {width > BREAKPOINT ? (
+                <LogoWords size={HEADER_LOGO_HEIGHT_DESKTOP} />
+              ) : (
+                <LogoWords size={HEADER_LOGO_HEIGHT_MOBILE} />
+              )}
+            </HeaderLeft>
+            <HeaderRight>
+              <HamburgerButton size={HEADER_LOGO_HEIGHT_DESKTOP} />
+            </HeaderRight>
+          </HeaderInner>
+        </HeaderTopBackground>
         <NavPanel
           style={{ height: showNav ? NAV_PANEL_HEIGHT : HEADER_HEIGHT_CLOSED }}
           ref={navRef}
         >
-          <PanelContainer>
-            <NavLinks />
-          </PanelContainer>
+          <HeaderBottomBackground>
+            <PanelContainer
+              style={{
+                width:
+                  width > BREAKPOINT
+                    ? CONTENT_WIDTH_DESKTOP
+                    : CONTENT_WIDTH_MOBILE,
+              }}
+            >
+              <NavLinks />
+            </PanelContainer>
+          </HeaderBottomBackground>
         </NavPanel>
       </HeaderOuter>
     </>
@@ -106,6 +120,11 @@ const HeaderOuter = styled.div`
   padding: 0;
   transition: all 300ms;
   min-height: ${HEADER_HEIGHT_CLOSED}px;
+  /* background-color: green; */
+`;
+
+const HeaderTopBackground = styled.div`
+  width: 100%;
   background: ${COLOR_HEADER};
   /* background-color: green; */
 `;
@@ -118,7 +137,6 @@ const HeaderInner = styled.div`
   height: ${HEADER_HEIGHT_CLOSED}px;
   margin: 0 auto;
   padding: 0;
-
 `;
 
 const HeaderLeft = styled.div`
@@ -139,6 +157,12 @@ const HeaderRight = styled.div`
   /* background: #000; */
 `;
 
+const HeaderBottomBackground = styled.div`
+  width: 100%;
+  background: ${COLOR_HEADER_CONTRAST};
+  /* background-color: green; */
+`;
+
 const NavPanel = styled.div`
   width: 100%;
   transition: all 0.5s;
@@ -148,10 +172,10 @@ const NavPanel = styled.div`
 `;
 
 const PanelContainer = styled.div`
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: ${CONTENT_WIDTH_DESKTOP};
   height: ${NAV_PANEL_HEIGHT}px;
   margin: 0 auto;
   padding: 0;
