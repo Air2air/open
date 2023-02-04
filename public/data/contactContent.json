@@ -1,0 +1,18 @@
+[
+  {
+    "text": "Contact OPEN",
+    "hasParallax": true,
+    "speedTitle": -20,
+    "imageBackground": "/images/content/banner_dam.webp",
+    "speedBackground": 20,
+    "height": 500
+  },
+  {
+    "text": "Contact OPEN at info@openpowerenergy.net",
+    "hasParallax": false,
+    "speedTitle": null,
+    "imageBackground": null,
+    "speedBackground": null,
+    "height": null
+  }
+]

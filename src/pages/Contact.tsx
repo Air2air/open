@@ -3,7 +3,7 @@ import Section from "components/Section/section";
 const ContactPage = () => {
   return (
     <>
-      <Section jsonFile="/data/homeContent.json" />
+      <Section jsonFile="/data/contactContent.json" />
     </>
   );
 };
