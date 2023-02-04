@@ -1,9 +1,7 @@
-import { lazy } from "react";
-
-const HomePage = lazy(() => import("pages/Home"));
-const VisionPage = lazy(() => import("pages/Vision"));
-const AboutPage = lazy(() => import("pages/About"));
-const ContactPage = lazy(() => import("pages/Contact"));
+import HomePage from "pages/Home";
+import AboutPage from "pages/About";
+import VisionPage from "pages/Vision";
+import ContactPage from "pages/Contact";
 
 export const dataRoutes = [
   {
