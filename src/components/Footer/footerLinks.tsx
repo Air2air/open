@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import {
-  COLOR_HEADER,
   COLOR_HEADER_CONTRAST,
   COLOR_LINK_REVERSE,
   COLOR_LINK_REVERSE_HOVER,

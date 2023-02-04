@@ -1,50 +1,63 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
+
+
+
+// In React typescript, create a lazy image loader component that takes in an image src and an image alt description as Props. The loader should use IntersectionObserver to load the image when it is in the viewport. The loader should show a loading skeleton while the image is loading. 
 
 interface Props {
   src: string;
-  alt?: string;
+  alt: string;
 }
 
-const LazyImage: React.FC<Props> = ({ src, alt = "" }) => {
-  const [imageSrc, setImageSrc] = useState<string | null>(null);
+const LazyImage: React.FC<Props> = ({ src, alt }) => {
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+  const imageRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
-    let observer: IntersectionObserver | null = null;
-
-    const imageRef = new Image();
-    imageRef.src = src;
-
-    imageRef.onload = () => {
-      if (observer) {
-        observer.disconnect();
-      }
-
-      setImageSrc(src);
-    };
-
-    if (!imageSrc) {
-      observer = new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-          setImageSrc(src);
-
-          if (observer) {
-            observer.disconnect();
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.unobserve(entry.target);
           }
-        }
-      });
+        });
+      },
+      { rootMargin: "50px 0px" }
+    );
 
-      observer.observe(imageRef);
+    if (imageRef.current) {
+      observer.observe(imageRef.current);
     }
 
     return () => {
-      if (observer) {
-        observer.disconnect();
-      }
+      observer.disconnect();
     };
-  }, [src, imageSrc]);
+  }, [imageRef]);
 
-  return <ImageDiv src={imageSrc || ""} alt={alt} />;
+  return (
+    <>
+      {!isLoaded && (
+        <div
+          style={{
+            width: "100%",
+            paddingTop: "75%",
+            backgroundColor: "lightgray",
+            borderRadius: "5px",
+          }}
+        />
+      )}
+      <ImageDiv
+        ref={imageRef}
+        src={isVisible ? src : ""}
+        alt={alt}
+        onLoad={() => setIsLoaded(true)}
+        style={{ display: isLoaded || !isVisible ? "block" : "none" }}
+      />
+    </>
+  );
 };
 
 export default LazyImage;
