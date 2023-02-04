@@ -4,6 +4,7 @@ import { Footer } from "./components/Footer/footer";
 import { Header } from "./components/Header/header";
 import { dataRoutes } from "./routes/routes";
 import { usePageTracking } from "./components/Analytics/gaTracking";
+import FadeTransition from "utils/FadeTransition";
 
 const App = () => {
   usePageTracking();
@@ -14,11 +15,13 @@ const App = () => {
     <>
       <Header />
       <Suspense fallback={<LoadingSkeleton />}>
-        <Routes>
-          {dataRoutes.map(({ path, element }) => (
-            <Route key={path} path={path} element={element} />
-          ))}
-        </Routes>
+        <FadeTransition>
+          <Routes>
+            {dataRoutes.map(({ path, element }) => (
+              <Route key={path} path={path} element={element} />
+            ))}
+          </Routes>
+        </FadeTransition>
       </Suspense>
       <Footer />
     </>
