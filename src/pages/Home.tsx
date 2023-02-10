@@ -1,9 +1,12 @@
-import Section from "components/Section/section";
+
+import CarouselHome from 'components/Carousel/carousel';
+
+
 
 const HomePage = () => {
   return (
     <>
-      <Section jsonFile="/data/homeContent.json" />
+        <CarouselHome jsonFile="/data/homeContent.json" />
     </>
   );
 };

@@ -15,6 +15,8 @@ const sliceOne = dataRoutes.slice(0, 1);
 const sliceTwo = dataRoutes.slice(1, 2);
 const sliceThree = dataRoutes.slice(2, 3);
 const sliceFour = dataRoutes.slice(3, 4);
+const sliceFive = dataRoutes.slice(4, 5);
+
 
 export const NavLinks = () => {
   return (
@@ -42,6 +44,13 @@ export const NavLinks = () => {
       </NavLinkColumn>
       <NavLinkColumn>
         {sliceFour.map((route, index) => (
+          <NavLink key={index} to={route.path}>
+            {route.section}
+          </NavLink>
+        ))}
+      </NavLinkColumn>
+      <NavLinkColumn>
+        {sliceFive.map((route, index) => (
           <NavLink key={index} to={route.path}>
             {route.section}
           </NavLink>

@@ -19,6 +19,7 @@ const sliceOne = dataRoutes.slice(0, 1);
 const sliceTwo = dataRoutes.slice(1, 2);
 const sliceThree = dataRoutes.slice(2, 3);
 const sliceFour = dataRoutes.slice(3, 4);
+const sliceFive = dataRoutes.slice(4, 5);
 
 export const FooterLinks = () => {
   return (
@@ -46,6 +47,13 @@ export const FooterLinks = () => {
       </FooterLinkColumn>
       <FooterLinkColumn>
         {sliceFour.map((route, index) => (
+          <FooterLink key={index} to={route.path}>
+            {route.section}
+          </FooterLink>
+        ))}
+      </FooterLinkColumn>
+      <FooterLinkColumn>
+        {sliceFive.map((route, index) => (
           <FooterLink key={index} to={route.path}>
             {route.section}
           </FooterLink>

@@ -2,6 +2,7 @@ import HomePage from "pages/Home";
 import AboutPage from "pages/About";
 import VisionPage from "pages/Vision";
 import ContactPage from "pages/Contact";
+// import DataPage from "pages/Data";
 
 export const dataRoutes = [
   {
@@ -28,4 +29,10 @@ export const dataRoutes = [
     section: "Contact",
     element: <ContactPage />,
   },
+  // {
+  //   id: "Data",
+  //   path: "/data",
+  //   section: "Data",
+  //   element: <DataPage />,
+  // },
 ];

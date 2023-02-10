@@ -6,7 +6,7 @@ import {
 } from "styles/Constants";
 
 // Desktop
-export const FOOTER_HEIGHT_DESKTOP = 400;
+export const FOOTER_HEIGHT_DESKTOP = 240;
 export const FOOTER_CONTAINER_HEIGHT_DESKTOP = FOOTER_HEIGHT_DESKTOP * 0.8;
 // export const FOOTER_LOGO_HEIGHT_DESKTOP =
 //   FOOTER_CONTAINER_HEIGHT_DESKTOP * 0.15;

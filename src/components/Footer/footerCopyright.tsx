@@ -1,5 +1,4 @@
-import { LogoBug } from "components/Logo/logoBug";
-import { useState, useEffect } from "react";
+
 import styled from "styled-components";
 import { COLOR_WHITE } from "styles/Colors";
 import { BREAKPOINT } from "styles/Constants";
@@ -9,18 +8,18 @@ import {
 } from "./footerComponents";
 
 export const FooterCopyright = () => {
-  const [width, setWidth] = useState(window.innerWidth);
+  // const [width, setWidth] = useState(window.innerWidth);
 
-  useEffect(() => {
-    const handleWindowResize = () => setWidth(window.innerWidth);
-    window.addEventListener("resize", handleWindowResize);
-    return () => window.removeEventListener("resize", handleWindowResize);
-  }, []);
+  // useEffect(() => {
+  //   const handleWindowResize = () => setWidth(window.innerWidth);
+  //   window.addEventListener("resize", handleWindowResize);
+  //   return () => window.removeEventListener("resize", handleWindowResize);
+  // }, []);
 
   return (
     <FooterCopyrightWrapper>
       <div>&copy; Open Power & Energy Network</div>
-      {width > BREAKPOINT ? <LogoBug size={20} />  : null}
+      {/* {width > BREAKPOINT ? <LogoBug size={20} />  : null} */}
       <div style={{ textAlign: "right"}}>All rights reserved.</div>
     </FooterCopyrightWrapper>
   );
@@ -29,7 +28,7 @@ export const FooterCopyright = () => {
 export const FooterCopyrightWrapper = styled.div`
   z-index: +1;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
   align-items: flex-start;
   width: 100%;
   div {

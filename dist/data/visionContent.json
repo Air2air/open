@@ -1,0 +1,18 @@
+[
+  {
+    "text": "OPEN Vision",
+    "hasParallax": true,
+    "speedTitle": -20,
+    "imageBackground": "/images/content/banner_space.webp",
+    "speedBackground": 20,
+    "height": 500
+  },
+  {
+    "text": "Using open-source technology and techniques in the energy and power sectors will advance the world by promoting access to sustainable energy, reducing dependence on fossil fuels, and protecting the planet by reducing greenhouse gas emissions and promoting environmental sustainability.",
+    "hasParallax": false,
+    "speedTitle": null,
+    "imageBackground": null,
+    "speedBackground": null,
+    "height": null
+  }
+]
