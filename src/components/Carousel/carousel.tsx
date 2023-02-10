@@ -31,6 +31,7 @@ const CarouselHome = ({ jsonFile }) => {
         infiniteLoop
         interval={3000}
         stopOnHover={false}
+        showThumbs={false}
         thumbWidth={120}
         transitionTime={1000}
       >
@@ -54,13 +55,16 @@ const OuterWrapper = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
+  /* button.control-arrow.control-next {
+    width:80px;
+  } */
 `;
 
 const TitleWrapper = styled.div`
   position: absolute;
   /* bottom: 40px; */
   text-align: center;
-  background: blue;
+  /* background: blue; */
 `;
 
 const VariantHeading = styled.div`
