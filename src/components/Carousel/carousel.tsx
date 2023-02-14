@@ -45,13 +45,11 @@ const CarouselComponent = ({ jsonFile }) => {
       >
         {data.map((props, index) => (
           <OuterPositioner key={index}>
-
             <img alt={props.title} src={props.image} />
             <TextWrapper>
               <VariantTitle>{props.title}</VariantTitle>
               <VariantText>{props.text}</VariantText>
             </TextWrapper>
-
           </OuterPositioner>
         ))}
       </Carousel>

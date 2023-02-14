@@ -16,11 +16,13 @@ const App = () => {
       <Header />
       <Suspense fallback={<LoadingSkeleton />}>
         <FadeTransition>
-          <Routes>
-            {dataRoutes.map(({ path, element }) => (
-              <Route key={path} path={path} element={element} />
-            ))}
-          </Routes>
+          <div className="content">
+            <Routes>
+              {dataRoutes.map(({ path, element }) => (
+                <Route key={path} path={path} element={element} />
+              ))}
+            </Routes>
+          </div>
         </FadeTransition>
       </Suspense>
       <Footer />

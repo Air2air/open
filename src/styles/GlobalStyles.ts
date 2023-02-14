@@ -10,6 +10,9 @@ import {
 const GlobalStyles = createGlobalStyle`
 
 :root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   @media (min-width: ${BREAKPOINT}px) {
     ${FONT_DEFAULT_DESKTOP}
   }
@@ -19,18 +22,30 @@ const GlobalStyles = createGlobalStyle`
 }
 
 body {
+  height: 100%;
 box-sizing: border-box;
 outline: 0;
 margin: 0;
 padding: 0;
 border: 0;
-background-color: #fff;
-}
 
-body {
   ${FONT_DEFAULT_DESKTOP}
   -webkit-font-smoothing: antialiased;
-  text-align: left;
+
+  background-color: #fff;
+}
+
+
+.content {
+  flex: 1 0 auto;
+
+}
+
+.footer {
+  flex-shrink: 0;
+  text-align: center;
+  background-color: tomato;
+  color: white;
 }
 
 // HEADINGS

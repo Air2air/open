@@ -12,5 +12,7 @@ export const Footer = () => {
     return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
 
+// return ""
+
   return <>{width > BREAKPOINT ? <FooterDesktop /> : <FooterMobile />}</>;
 };

@@ -112,7 +112,7 @@ export const Header = () => {
 
 const HeaderOuter = styled.div`
   /* z-index: +2; */
-  position: relative;
+  /* position: relative; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -179,5 +179,5 @@ const PanelContainer = styled.div`
   height: ${NAV_PANEL_HEIGHT}px;
   margin: 0 auto;
   padding: 0;
-  background-color: blue;
+  /* background-color: blue; */
 `;

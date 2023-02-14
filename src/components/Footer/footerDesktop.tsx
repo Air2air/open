@@ -15,6 +15,7 @@ import { FooterLinks } from "./footerLinks";
 export const FooterDesktop = () => {
   return (
     <FooterWrapper
+    className="footer"
       style={{
         backgroundColor: COLOR_FOOTER,
         height: `${FOOTER_HEIGHT_DESKTOP}px`,
