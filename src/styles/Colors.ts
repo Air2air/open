@@ -31,7 +31,7 @@ export const COLOR_LINK_REVERSE = `hsl(${BASE_HUE}, ${BASE_SATURATION}%, 90%)`;
 export const COLOR_LINK_REVERSE_HOVER = `hsl(${BASE_HUE}, ${BASE_SATURATION}%, 100%)`;
 
 export const COLOR_BANNER_HEADING = `hsl(${BASE_HUE}, ${BASE_SATURATION}%, 100%)`;
-export const COLOR_BANNER_SUBHEAD = `hsl(${BASE_HUE}, ${BASE_SATURATION}%, 40%)`;
+export const COLOR_BANNER_SUBHEAD = `hsl(${BASE_HUE}, ${BASE_SATURATION}%, 100%)`;
 
 export const COLOR_HEADING = `hsl(${BASE_HUE}, ${BASE_SATURATION}%, 50%)`;
 export const COLOR_SUBHEAD = `hsl(${BASE_HUE}, 40%, 30%)`;

@@ -1,11 +1,12 @@
-import Section from "components/Section/section";
+import CarouselComponent from "components/Carousel/carousel";
 
-const VisionPage = () => {
+
+const HomePage = () => {
   return (
     <>
-      <Section jsonFile="/data/visionContent.json" />
+      <CarouselComponent jsonFile="/data/visionContent.json" />
     </>
   );
 };
 
-export default VisionPage;
+export default HomePage;

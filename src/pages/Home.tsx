@@ -1,12 +1,10 @@
-
-import CarouselHome from 'components/Carousel/carousel';
-
+import CarouselComponent from "components/Carousel/carousel";
 
 
 const HomePage = () => {
   return (
     <>
-        <CarouselHome jsonFile="/data/homeContent.json" />
+      <CarouselComponent jsonFile="/data/homeContent.json" />
     </>
   );
 };

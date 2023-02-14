@@ -1,0 +1,29 @@
+$image-min-height: 400px;
+$image-min-width: 100%;
+
+.carousel {
+  ul > li.slide {
+    min-height: $image-min-height;
+    min-width: $image-min-width;
+    img {
+      min-height: $image-min-height;
+      min-width: $image-min-width;
+    }
+  }
+
+  .control-dots .dot {
+    height: 16px;
+    width: 16px;
+    box-shadow: none;
+  }
+
+  .control-arrow {
+    width: 40px;
+    //   background-color: red;
+  }
+
+  &.carousel-slider .control-arrow {
+    font-size: 36px;
+    opacity: 0.8;
+  }
+}

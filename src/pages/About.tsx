@@ -1,9 +1,10 @@
-import Section from "components/Section/section";
+import CarouselComponent from "components/Carousel/carousel";
+
 
 const AboutPage = () => {
   return (
     <>
-      <Section jsonFile="/data/aboutContent.json" />
+      <CarouselComponent jsonFile="/data/aboutContent.json" />
     </>
   );
 };

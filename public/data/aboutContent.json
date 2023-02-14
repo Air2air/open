@@ -1,18 +1,13 @@
 [
   {
-    "text": "About OPEN",
-    "hasParallax": true,
-    "speedTitle": -20,
-    "imageBackground": "/images/content/banner_tokamak.webp",
-    "speedBackground": 20,
-    "height": 500
+    "title": "About OPEN",
+    "image": "/images/content/banner_tokamak.webp",
+    "text": "The brightest minds in the fields of energy and power are leveraging open-source technology and techniques to create access to more sustainable and efficient energy systems, ultimately improving lives and protecting the planet for future generations."
   },
   {
-    "text": "The brightest minds in the fields of energy and power are leveraging open-source technology and techniques to create access to more sustainable and efficient energy systems, ultimately improving lives and protecting the planet for future generations.",
-    "hasParallax": false,
-    "speedTitle": null,
-    "imageBackground": null,
-    "speedBackground": null,
-    "height": null
+    "title": "Powering open transport",
+    "image": "/images/content/banner_train.webp",
+    "text": "Using open-source technology to develop and implement alternative fuel vehicles and electric vehicles, as well as to improve public transportation systems, can help create more sustainable and efficient transportation."
+
   }
 ]

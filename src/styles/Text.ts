@@ -14,11 +14,11 @@ export const FONT_FAMILY_DEFAULT = `"Roboto", sans-serif`;
 export const FONT_FAMILY_SECONDARY = `"Sofia Sans Medium", sans-serif`;
 
 // SIZES
-export const FONT_SIZE_HEADING_DESKTOP = "3.6rem";
+export const FONT_SIZE_HEADING_DESKTOP = "3.4rem";
 export const FONT_SIZE_HEADING_MOBILE = "2rem";
 
 export const FONT_SIZE_SUBHEAD_DESKTOP = "1.8rem";
-export const FONT_SIZE_SUBHEAD_MOBILE = "1.2rem";
+export const FONT_SIZE_SUBHEAD_MOBILE = "1rem";
 
 export const FONT_SIZE_CAPTION_DESKTOP = "1.05rem";
 export const FONT_SIZE_CAPTION_MOBILE = "1.05rem";
@@ -35,8 +35,8 @@ export const FONT_SIZE_BUTTON_MOBILE = "1.1rem";
 export const LINE_HEIGHT_HEADING_DESKTOP = "3rem";
 export const LINE_HEIGHT_HEADING_MOBILE = "2rem";
 
-export const LINE_HEIGHT_SUBHEAD_DESKTOP = "3rem";
-export const LINE_HEIGHT_SUBHEAD_MOBILE = "2rem";
+export const LINE_HEIGHT_SUBHEAD_DESKTOP = "2.5rem";
+export const LINE_HEIGHT_SUBHEAD_MOBILE = "1.8rem";
 
 export const LINE_HEIGHT_DEFAULT_DESKTOP = "2rem";
 export const LINE_HEIGHT_DEFAULT_MOBILE = "1.6rem";

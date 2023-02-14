@@ -1,9 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 
-
-
-// In React typescript, create a lazy image loader component that takes in an image src and an image alt description as Props. The loader should use IntersectionObserver to load the image when it is in the viewport. The loader should show a loading skeleton while the image is loading. 
+// In React typescript, create a lazy image loader component that takes in an image src and an image alt description as Props. The loader should use IntersectionObserver to load the image when it is in the viewport. The loader should show a loading skeleton while the image is loading.
 
 interface Props {
   src: string;
@@ -61,7 +59,6 @@ const LazyImage: React.FC<Props> = ({ src, alt }) => {
 };
 
 export default LazyImage;
-
 
 const ImageDiv = styled.img`
   position: absolute;
