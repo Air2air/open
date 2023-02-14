@@ -23,7 +23,7 @@ export const COLOR_BUTTON_HOVER = `hsl(${BASE_HUE}, ${BASE_SATURATION}%, 58%)`;
 
 export const COLOR_TEXT = `hsl(${BASE_HUE},10%, 40%)`;
 export const COLOR_TEXT_REVERSE = `hsl(${BASE_HUE},20%, 90%)`;
-export const COLOR_CAPTION = `hsl(${BASE_HUE},0%, 70%)`;
+export const COLOR_NAVLINK = `hsl(${BASE_HUE},0%, 70%)`;
 
 export const COLOR_LINK = `hsl(${BASE_HUE}, ${BASE_SATURATION}%, 50%)`;
 export const COLOR_LINK_HOVER = `hsl(${BASE_HUE}, ${BASE_SATURATION}%, 50%)`;

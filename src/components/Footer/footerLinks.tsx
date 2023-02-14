@@ -6,7 +6,7 @@ import {
   COLOR_LINK_REVERSE_HOVER,
 } from "styles/Colors";
 import { BREAKPOINT } from "styles/Constants";
-import { FONT_CAPTION_DESKTOP, FONT_CAPTION_MOBILE } from "styles/Text";
+import { FONT_NAVLINK_DESKTOP, FONT_NAVLINK_MOBILE } from "styles/Text";
 import {
   FOOTER_COLUMN_HEIGHT_DESKTOP,
   FOOTER_COLUMN_HEIGHT_MOBILE,
@@ -19,7 +19,7 @@ const sliceOne = dataRoutes.slice(0, 1);
 const sliceTwo = dataRoutes.slice(1, 2);
 const sliceThree = dataRoutes.slice(2, 3);
 const sliceFour = dataRoutes.slice(3, 4);
-const sliceFive = dataRoutes.slice(4, 5);
+// const sliceFive = dataRoutes.slice(4, 5);
 
 export const FooterLinks = () => {
   return (
@@ -52,13 +52,13 @@ export const FooterLinks = () => {
           </FooterLink>
         ))}
       </FooterLinkColumn>
-      <FooterLinkColumn>
+      {/* <FooterLinkColumn>
         {sliceFive.map((route, index) => (
           <FooterLink key={index} to={route.path}>
             {route.section}
           </FooterLink>
         ))}
-      </FooterLinkColumn>
+      </FooterLinkColumn> */}
     </>
   );
 };
@@ -93,12 +93,12 @@ export const FooterLink = styled(Link)`
     background: ${COLOR_HEADER_CONTRAST};
   }
   @media (min-width: ${BREAKPOINT}px) {
-    ${FONT_CAPTION_DESKTOP}
+    ${FONT_NAVLINK_DESKTOP}
     padding: 8px 0;
     text-align: left;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    ${FONT_CAPTION_MOBILE}
+    ${FONT_NAVLINK_MOBILE}
     padding: 6px 0;
     text-align: center;
   }

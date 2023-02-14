@@ -6,7 +6,7 @@ import {
   COLOR_LINK_REVERSE_HOVER,
 } from "styles/Colors";
 import { BREAKPOINT } from "styles/Constants";
-import { FONT_CAPTION_DESKTOP, FONT_CAPTION_MOBILE } from "styles/Text";
+import { FONT_NAVLINK_DESKTOP, FONT_NAVLINK_MOBILE } from "styles/Text";
 import { dataRoutes } from "routes/routes";
 
 // map over dataroutes and create a link for each one
@@ -49,13 +49,13 @@ export const NavLinks = () => {
           </NavLink>
         ))}
       </NavLinkColumn>
-      <NavLinkColumn>
+      {/* <NavLinkColumn>
         {sliceFive.map((route, index) => (
           <NavLink key={index} to={route.path}>
             {route.section}
           </NavLink>
         ))}
-      </NavLinkColumn>
+      </NavLinkColumn> */}
     </>
   );
 };
@@ -85,12 +85,12 @@ export const NavLink = styled(Link)`
     background: ${COLOR_HEADER};
   }
   @media (min-width: ${BREAKPOINT}px) {
-    ${FONT_CAPTION_DESKTOP}
+    ${FONT_NAVLINK_DESKTOP}
     padding: 8px 0;
     text-align: left;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    ${FONT_CAPTION_MOBILE}
+    ${FONT_NAVLINK_MOBILE}
     padding: 6px 0;
     text-align: center;
   }

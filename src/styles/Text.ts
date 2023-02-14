@@ -20,8 +20,8 @@ export const FONT_SIZE_HEADING_MOBILE = "2rem";
 export const FONT_SIZE_SUBHEAD_DESKTOP = "1.8rem";
 export const FONT_SIZE_SUBHEAD_MOBILE = "1rem";
 
-export const FONT_SIZE_CAPTION_DESKTOP = "1.05rem";
-export const FONT_SIZE_CAPTION_MOBILE = "1.05rem";
+export const FONT_SIZE_NAVLINK_DESKTOP = "1.05rem";
+export const FONT_SIZE_NAVLINK_MOBILE = ".9rem";
 
 export const FONT_SIZE_DEFAULT_DESKTOP = "1.05rem";
 export const FONT_SIZE_DEFAULT_MOBILE = "1.05rem";
@@ -120,12 +120,12 @@ margin-top:10px;
 margin-bottom:20px; 
 color: ${COLOR_SUBHEAD};`;
 
-// CAPTION
-export const FONT_CAPTION_DESKTOP = `
-font: ${FONT_WEIGHT_SEMIBOLD} ${FONT_SIZE_CAPTION_DESKTOP} ${FONT_FAMILY_SECONDARY}; 
+// NAVLINK
+export const FONT_NAVLINK_DESKTOP = `
+font: ${FONT_WEIGHT_SEMIBOLD} ${FONT_SIZE_NAVLINK_DESKTOP} ${FONT_FAMILY_SECONDARY}; 
 text-transform: uppercase;`;
-export const FONT_CAPTION_MOBILE = `
-font: ${FONT_WEIGHT_SEMIBOLD} ${FONT_SIZE_CAPTION_MOBILE} ${FONT_FAMILY_SECONDARY}; 
+export const FONT_NAVLINK_MOBILE = `
+font: ${FONT_WEIGHT_SEMIBOLD} ${FONT_SIZE_NAVLINK_MOBILE} ${FONT_FAMILY_SECONDARY}; 
 text-transform: uppercase; `;
 
 // SECONDARY

@@ -44,13 +44,15 @@ const CarouselComponent = ({ jsonFile }) => {
         transitionTime={1000}
       >
         {data.map((props, index) => (
-          <OuterWrapper key={index}>
+          <OuterPositioner key={index}>
+
             <img alt={props.title} src={props.image} />
             <TextWrapper>
               <VariantTitle>{props.title}</VariantTitle>
               <VariantText>{props.text}</VariantText>
             </TextWrapper>
-          </OuterWrapper>
+
+          </OuterPositioner>
         ))}
       </Carousel>
     </>
@@ -59,19 +61,25 @@ const CarouselComponent = ({ jsonFile }) => {
 
 export default CarouselComponent;
 
-const OuterWrapper = styled.div`
+const OuterPositioner = styled.div`
+  position: relative;
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  /* button.control-arrow.control-next {
-    width:80px;
-  } */
+  /* background: red; */
 `;
 
 const TextWrapper = styled.div`
   position: absolute;
-  text-align: center;
+  /* top:0; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* align-items: center; */
+  /* text-align: center; */
   @media (min-width: ${BREAKPOINT}px) {
     width: ${CONTENT_WIDTH_DESKTOP};
   }
@@ -83,6 +91,7 @@ const TextWrapper = styled.div`
 
 const VariantTitle = styled.div`
   text-align: center;
+  height: auto;
   @media (min-width: ${BREAKPOINT}px) {
     ${FONT_BANNER_HEADING_DESKTOP}
   }
@@ -93,6 +102,7 @@ const VariantTitle = styled.div`
 `;
 
 const VariantText = styled.div`
+  height: auto;
   @media (min-width: ${BREAKPOINT}px) {
     ${FONT_BANNER_SUBHEAD_DESKTOP}
   }

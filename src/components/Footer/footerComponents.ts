@@ -1,3 +1,4 @@
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import styled from "styled-components";
 import {
   BREAKPOINT,
@@ -11,7 +12,7 @@ export const FOOTER_CONTAINER_HEIGHT_DESKTOP = FOOTER_HEIGHT_DESKTOP * 0.8;
 // export const FOOTER_LOGO_HEIGHT_DESKTOP =
 //   FOOTER_CONTAINER_HEIGHT_DESKTOP * 0.15;
 export const FOOTER_COLUMN_HEIGHT_DESKTOP =
-  FOOTER_CONTAINER_HEIGHT_DESKTOP * 0.8;
+  FOOTER_CONTAINER_HEIGHT_DESKTOP * 0.6;
 export const FOOTER_COPYRIGHT_HEIGHT_DESKTOP =
   FOOTER_CONTAINER_HEIGHT_DESKTOP * 0.2;
 
@@ -20,7 +21,7 @@ export const FOOTER_HEIGHT_MOBILE = 240;
 export const FOOTER_CONTAINER_HEIGHT_MOBILE = FOOTER_HEIGHT_MOBILE + 0.8;
 export const FOOTER_LOGO_HEIGHT_MOBILE = FOOTER_CONTAINER_HEIGHT_MOBILE * 0.2;
 export const FOOTER_COPYRIGHT_HEIGHT_MOBILE =
-  FOOTER_CONTAINER_HEIGHT_MOBILE * 0.2;
+  FOOTER_CONTAINER_HEIGHT_MOBILE * 0.4;
 export const FOOTER_COLUMN_HEIGHT_MOBILE =
   FOOTER_CONTAINER_HEIGHT_MOBILE -
   (FOOTER_COPYRIGHT_HEIGHT_MOBILE + FOOTER_LOGO_HEIGHT_MOBILE);
@@ -33,7 +34,7 @@ export const FooterWrapper = styled.div`
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  width: 100%;
+  /* width: 100%; */
 `;
 
 export const FooterContainer = styled.div`
@@ -75,6 +76,26 @@ export const FooterColumn = styled.div`
   }
   @media (max-width: ${BREAKPOINT}px) {
     height: ${FOOTER_COLUMN_HEIGHT_MOBILE}px;
+  }
+  /* background: gold; */
+`;
+
+
+export const FooterLogoRow = styled(AnimationOnScroll)`
+  display: flex;
+  /* z-index: +1; */
+  align-items: flex-end;
+  justify-content: center;
+
+  width: 100%;
+  height: ${FOOTER_LOGO_HEIGHT_MOBILE}px;
+  a.link {
+    opacity: 0.4;
+  }
+  &:hover {
+    a.link {
+      opacity: 1;
+    }
   }
   /* background: gold; */
 `;
