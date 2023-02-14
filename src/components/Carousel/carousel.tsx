@@ -3,15 +3,9 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import styled from "styled-components";
 import { BREAKPOINT, CONTENT_WIDTH_MOBILE } from "styles/Constants";
-import { COLOR_BANNER_HEADING, COLOR_BANNER_SUBHEAD } from "styles/Colors";
 import { CONTENT_WIDTH_DESKTOP } from "styles/Constants";
 import {
-  FONT_FAMILY_HEADING,
-  FONT_SIZE_HEADING_DESKTOP,
-  LINE_HEIGHT_HEADING_DESKTOP,
-  FONT_FAMILY_SUBHEAD,
-  FONT_SIZE_SUBHEAD_DESKTOP,
-  LINE_HEIGHT_SUBHEAD_DESKTOP,
+
   FONT_BANNER_HEADING_DESKTOP,
   FONT_BANNER_HEADING_MOBILE,
   FONT_BANNER_SUBHEAD_DESKTOP,

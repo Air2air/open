@@ -12,7 +12,7 @@ const GlobalStyles = createGlobalStyle`
 :root {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  /* height: 100%; */
   @media (min-width: ${BREAKPOINT}px) {
     ${FONT_DEFAULT_DESKTOP}
   }
@@ -22,30 +22,28 @@ const GlobalStyles = createGlobalStyle`
 }
 
 body {
-  height: 100%;
+height: 100%;
 box-sizing: border-box;
 outline: 0;
 margin: 0;
 padding: 0;
 border: 0;
-
-  ${FONT_DEFAULT_DESKTOP}
-  -webkit-font-smoothing: antialiased;
-
-  background-color: #fff;
+${FONT_DEFAULT_DESKTOP};
+-webkit-font-smoothing: antialiased;
+background-color: #fff;
 }
-
 
 .content {
   flex: 1 0 auto;
-
+  min-height: calc(100vh - 240px);
 }
 
 .footer {
   flex-shrink: 0;
-  text-align: center;
-  background-color: tomato;
-  color: white;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 // HEADINGS
