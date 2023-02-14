@@ -1,10 +1,10 @@
-import CarouselComponent from "components/Carousel/carousel";
+import CalloutList from "components/Callout/callOutList";
 
 
 const AboutPage = () => {
   return (
     <>
-      <CarouselComponent jsonFile="/data/aboutContent.json" />
+      <CalloutList jsonFile="/data/aboutContent.json" />
     </>
   );
 };

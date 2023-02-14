@@ -1,10 +1,10 @@
-import CarouselComponent from "components/Carousel/carousel";
+import CalloutList from "components/Callout/callOutList";
 
 
 const HomePage = () => {
   return (
     <>
-      <CarouselComponent jsonFile="/data/visionContent.json" />
+      <CalloutList jsonFile="/data/visionContent.json" />
     </>
   );
 };

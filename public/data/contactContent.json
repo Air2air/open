@@ -1,18 +1,8 @@
 [
   {
-    "text": "Contact OPEN",
-    "hasParallax": true,
-    "speedTitle": -20,
-    "imageBackground": "/images/content/banner_dam.webp",
-    "speedBackground": 20,
-    "height": 500
-  },
-  {
+    "title": "Contact OPEN",
+    "image": "/images/content/banner_dam.webp",
     "text": "Contact OPEN at hello@openpowerenergy.net",
-    "hasParallax": false,
-    "speedTitle": null,
-    "imageBackground": null,
-    "speedBackground": null,
-    "height": null
+    "backgroundColor": "hsl(210, 100%, 50%)"
   }
 ]

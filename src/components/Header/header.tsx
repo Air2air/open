@@ -5,13 +5,14 @@ import {
   COLOR_HEADER_CONTRAST,
   CONTENT_WIDTH_DESKTOP,
   CONTENT_WIDTH_MOBILE,
+  HEADER_HEIGHT,
 } from "styles/Constants";
 import { useEffect, useRef, useState } from "react";
 import { HamburgerButton } from "./hamburger";
 import { LogoWords } from "components/Logo/logoWords";
 import { NavLinks } from "./navLinks";
 
-export const HEADER_HEIGHT_CLOSED = 70;
+export const HEADER_HEIGHT_CLOSED = HEADER_HEIGHT;
 export const HEADER_LOGO_HEIGHT_DESKTOP = HEADER_HEIGHT_CLOSED * 0.32;
 export const HEADER_LOGO_HEIGHT_MOBILE = HEADER_HEIGHT_CLOSED * 0.28;
 export const NAV_PANEL_HEIGHT = 70;
@@ -63,6 +64,7 @@ export const Header = () => {
   return (
     <>
       <HeaderOuter
+        className="header"
         style={{ height: showNav ? HEADER_HEIGHT_OPEN : HEADER_HEIGHT_CLOSED }}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -111,8 +113,6 @@ export const Header = () => {
 };
 
 const HeaderOuter = styled.div`
-  /* z-index: +2; */
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   align-items: center;

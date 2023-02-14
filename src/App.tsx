@@ -14,17 +14,17 @@ const App = () => {
   return (
     <>
       <Header />
-      <Suspense fallback={<LoadingSkeleton />}>
-        <FadeTransition>
-          <div className="content">
+      <main className="content">
+        <Suspense fallback={<LoadingSkeleton />} >
+          <FadeTransition>
             <Routes>
               {dataRoutes.map(({ path, element }) => (
                 <Route key={path} path={path} element={element} />
               ))}
             </Routes>
-          </div>
-        </FadeTransition>
-      </Suspense>
+          </FadeTransition>
+        </Suspense>
+      </main>
       <Footer />
     </>
   );

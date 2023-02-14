@@ -1,16 +1,8 @@
 import { FetchData } from "fetch/fetch";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import styled from "styled-components";
-import { BREAKPOINT, CONTENT_WIDTH_MOBILE } from "styles/Constants";
-import { CONTENT_WIDTH_DESKTOP } from "styles/Constants";
-import {
 
-  FONT_BANNER_HEADING_DESKTOP,
-  FONT_BANNER_HEADING_MOBILE,
-  FONT_BANNER_SUBHEAD_DESKTOP,
-  FONT_BANNER_SUBHEAD_MOBILE,
-} from "styles/Text";
+import { OuterPositioner, TextWrapper, VariantTitle, VariantText } from "./carouselComponents";
 import "./overrides.scss";
 
 const CarouselComponent = ({ jsonFile }) => {
@@ -53,53 +45,3 @@ const CarouselComponent = ({ jsonFile }) => {
 
 export default CarouselComponent;
 
-const OuterPositioner = styled.div`
-  position: relative;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background: red; */
-`;
-
-const TextWrapper = styled.div`
-  position: absolute;
-  /* top:0; */
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  /* align-items: center; */
-  /* text-align: center; */
-  @media (min-width: ${BREAKPOINT}px) {
-    width: ${CONTENT_WIDTH_DESKTOP};
-  }
-  @media (max-width: ${BREAKPOINT}px) {
-    width: ${CONTENT_WIDTH_MOBILE};
-  }
-  /* background: blue; */
-`;
-
-const VariantTitle = styled.div`
-  text-align: center;
-  height: auto;
-  @media (min-width: ${BREAKPOINT}px) {
-    ${FONT_BANNER_HEADING_DESKTOP}
-  }
-  @media (max-width: ${BREAKPOINT}px) {
-    ${FONT_BANNER_HEADING_MOBILE}
-  }
-  /* background: green; */
-`;
-
-const VariantText = styled.div`
-  height: auto;
-  @media (min-width: ${BREAKPOINT}px) {
-    ${FONT_BANNER_SUBHEAD_DESKTOP}
-  }
-  @media (max-width: ${BREAKPOINT}px) {
-    ${FONT_BANNER_SUBHEAD_MOBILE}
-  }
-  /* background: red; */
-`;
