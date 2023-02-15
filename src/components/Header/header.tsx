@@ -143,17 +143,18 @@ const HeaderInner = styled.div`
 `;
 
 const HeaderLeft = styled.div`
+  /* width: 30%; */
   display: flex;
+  flex: 1;
   justify-content: flex-start;
   align-items: center;
   height: ${HEADER_HEIGHT_CLOSED}px;
   padding: 0;
-  width: auto;
   /* background: brown; */
 `;
 
 const HeaderRight = styled.div`
-width:30%;
+  flex: 1;
   display: flex;
   justify-content: flex-end;
   align-items: center;

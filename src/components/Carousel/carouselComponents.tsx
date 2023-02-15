@@ -19,7 +19,7 @@ export const CarouselWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   height: auto;
-  background: blue;
+  /* background: blue; */
 `;
 
 export const OuterPositionerImage = styled.div`
@@ -62,7 +62,7 @@ export const InnerPositioner = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: gold;
+  /* background: gold; */
 `;
 
 export const TextWrapper = styled.div`
