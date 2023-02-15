@@ -66,7 +66,8 @@ export const VariantTitle = styled.div`
 
 export const VariantText = styled.div`
   height: auto;
-
+  justify-content: center;
+  align-items: center;
   @media (min-width: ${BREAKPOINT}px) {
     ${FONT_BANNER_SUBHEAD_DESKTOP}
   }

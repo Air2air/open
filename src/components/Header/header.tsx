@@ -23,7 +23,7 @@ export const HEADER_HEIGHT_OPEN = NAV_PANEL_HEIGHT + NAV_PANEL_TOP;
 using react typescript, code a website horizontal navigation panel that opens when an icon is hovered by the user.  The navigation panel closes when document scroll exceeds 100px.Animate the navigation panel open and closed.   The navigation panel should be a fixed position element.  The navigation panel should be positioned at the top of the screen.  The navigation panel should be positioned at the top of the screen. Also ensure that the panel does not close if the user's mouse is hovering over it.
 */
 
-export const Header = () => {
+const Header = () => {
   const [showNav, setShowNav] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
 
@@ -111,6 +111,8 @@ export const Header = () => {
     </>
   );
 };
+
+export default Header;
 
 const HeaderOuter = styled.div`
   display: flex;

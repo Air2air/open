@@ -1,19 +1,19 @@
 $image-min-height: 400px;
 $image-min-width: 100%;
 
+$dot-size: 13px;
+
 .carousel {
   ul > li.slide {
-    // min-height: $image-min-height;
     min-width: $image-min-width;
     img {
-      // min-height: $image-min-height;
       min-width: $image-min-width;
+
     }
   }
-
   .control-dots .dot {
-    height: 16px;
-    width: 16px;
+    height: $dot-size;
+    width: $dot-size;
     box-shadow: none;
   }
 

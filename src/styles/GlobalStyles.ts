@@ -5,10 +5,7 @@ import {
   FONT_DEFAULT_DESKTOP,
   FONT_DEFAULT_MOBILE,
   FONT_WEIGHT_BOLD,
-
 } from "./Constants";
-
-
 
 const GlobalStyles = createGlobalStyle`
 
