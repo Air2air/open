@@ -16,11 +16,7 @@ const CalloutList = ({ jsonFile }) => {
     <>
       {data && data.length > 0 ? (
         data.map((props, index) => {
-          return (
- 
-              <Callout {...props} key={index} />
-   
-          );
+          return <Callout {...props} key={index} />;
         })
       ) : (
         <div style={{ color: "white" }}>Data Fetch error in Page component</div>

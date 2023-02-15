@@ -1,0 +1,57 @@
+$translate-left-pen: -70px;
+$translate-right-pen: 70px;
+$translate-left-words: -340px;
+$translate-right-words: 340px;
+$transition-speed: 200ms;
+
+@keyframes penSlideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX($translate-left-pen);
+  }
+}
+
+@keyframes penSlideRight {
+  0% {
+    transform: translateX($translate-left-pen);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes wordsSlideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX($translate-left-words);
+  }
+}
+
+@keyframes wordsSlideRight {
+  0% {
+    transform: translateX($translate-left-words);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.penEnter {
+  animation: penSlideRight $transition-speed forwards;
+}
+
+.penExit {
+  animation: penSlideLeft $transition-speed forwards;
+}
+
+.wordsEnter {
+  animation: wordsSlideRight $transition-speed forwards;
+}
+
+.wordsExit {
+  animation: wordsSlideLeft $transition-speed forwards;
+}

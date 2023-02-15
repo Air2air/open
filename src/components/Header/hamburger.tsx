@@ -7,9 +7,6 @@ export const HamburgerButton = (props) => {
   const sliceHeight = props.size / 7 + "px";
 
 
-
-
-
   return (
     <Hamburger
       style={{ height: burgerHeight, width: burgerWidth }}
