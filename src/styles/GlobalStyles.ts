@@ -5,11 +5,10 @@ import {
   FONT_DEFAULT_DESKTOP,
   FONT_DEFAULT_MOBILE,
   FONT_WEIGHT_BOLD,
-  HEADER_HEIGHT,
-  FOOTER_HEIGHT,
+
 } from "./Constants";
 
-const HEADER_FOOTER_HEIGHT = HEADER_HEIGHT + FOOTER_HEIGHT;
+
 
 const GlobalStyles = createGlobalStyle`
 
@@ -37,12 +36,7 @@ ${FONT_DEFAULT_DESKTOP};
 /* background-color: red */
 }
 
-.content {
-  min-height: calc(100vh - ${HEADER_FOOTER_HEIGHT}px);
-  > div {
-    min-height: calc(100vh - ${HEADER_FOOTER_HEIGHT}px);
-  }
-}
+
 
 .footer {
   position: sticky;

@@ -3,12 +3,12 @@ import {
   FooterContainer,
   FooterLogoRow,
   FooterWrapper,
-  FOOTER_HEIGHT_MOBILE,
 } from "./footerComponents";
 import { LogoPen } from "components/Logo/logoPen";
 import { COLOR_FOOTER } from "styles/Colors";
 import { FooterCopyright } from "./footerCopyright";
 import { FooterLinks } from "./footerLinks";
+import { FOOTER_HEIGHT_MOBILE } from "styles/Constants";
 
 export const FooterMobile = () => {
   return (

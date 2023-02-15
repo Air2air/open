@@ -1,13 +1,13 @@
 import { LogoPen } from "components/Logo/logoPen";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { COLOR_FOOTER } from "styles/Colors";
+import { FOOTER_HEIGHT_DESKTOP } from "styles/Constants";
 
 import {
   FooterWrapper,
   FooterContainer,
   FooterColumnRow,
   FooterColumn,
-  FOOTER_HEIGHT_DESKTOP,
 } from "./footerComponents";
 import { FooterCopyright } from "./footerCopyright";
 import { FooterLinks } from "./footerLinks";

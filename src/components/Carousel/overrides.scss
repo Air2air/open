@@ -3,10 +3,10 @@ $image-min-width: 100%;
 
 .carousel {
   ul > li.slide {
-    min-height: $image-min-height;
+    // min-height: $image-min-height;
     min-width: $image-min-width;
     img {
-      min-height: $image-min-height;
+      // min-height: $image-min-height;
       min-width: $image-min-width;
     }
   }
