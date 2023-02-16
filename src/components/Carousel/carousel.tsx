@@ -13,6 +13,8 @@ import {
 } from "./carouselComponents";
 import "./overrides.scss";
 
+const transparentPng = "/images/site/transparent.png"
+
 const CarouselComponent = ({ jsonFile }) => {
   const { data, loading, error } = FetchData({
     file: jsonFile,
@@ -65,12 +67,15 @@ const CarouselComponent = ({ jsonFile }) => {
           >
             {data.map((props, index) => (
               <InnerPositioner key={index}>
+                    <div style={{height:"100%", width:"100%", backgroundColor:"blue"}} > </div>
+                              <img alt={props.title} src={transparentPng} />
                 <TextWrapper>
-                  <VariantText>{props.text}Doodle</VariantText>
+                  <VariantText>{props.text}</VariantText>
                 </TextWrapper>
               </InnerPositioner>
             ))}
-          </Carousel>
+
+          </Carousel>           
         </OuterPositionerText>
       </CarouselWrapper>
     </>
