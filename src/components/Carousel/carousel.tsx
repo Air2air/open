@@ -13,7 +13,8 @@ import {
 } from "./carouselComponents";
 import "./overrides.scss";
 
-const transparentPng = "/images/site/transparent.png"
+const transitionInterval = 3000;
+const transparentPng = "/images/site/transparent.png";
 
 const CarouselComponent = ({ jsonFile }) => {
   const { data, loading, error } = FetchData({
@@ -36,7 +37,7 @@ const CarouselComponent = ({ jsonFile }) => {
             autoPlay
             infiniteLoop={false}
             axis="horizontal"
-            interval={3000}
+            interval={transitionInterval}
             stopOnHover={false}
             showThumbs={false}
             thumbWidth={120}
@@ -59,23 +60,22 @@ const CarouselComponent = ({ jsonFile }) => {
             autoPlay
             infiniteLoop={false}
             axis="vertical"
-            interval={3000}
+            interval={transitionInterval}
             stopOnHover={false}
             showThumbs={false}
             thumbWidth={120}
             transitionTime={1000}
+            showIndicators={false}
           >
             {data.map((props, index) => (
               <InnerPositioner key={index}>
-                    <div style={{height:"100%", width:"100%", backgroundColor:"blue"}} > </div>
-                              <img alt={props.title} src={transparentPng} />
+                <img height={700} alt={props.title} src={transparentPng} />
                 <TextWrapper>
                   <VariantText>{props.text}</VariantText>
                 </TextWrapper>
               </InnerPositioner>
             ))}
-
-          </Carousel>           
+          </Carousel>
         </OuterPositionerText>
       </CarouselWrapper>
     </>

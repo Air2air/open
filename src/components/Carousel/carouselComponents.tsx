@@ -17,9 +17,10 @@ export const CarouselWrapper = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   height: auto;
-  /* background: blue; */
+  background: lightblue;
 `;
 
 export const OuterPositionerImage = styled.div`
@@ -30,10 +31,10 @@ export const OuterPositionerImage = styled.div`
   justify-content: flex-start;
   align-items: center;
   @media (min-width: ${BREAKPOINT}px) {
-    min-height: calc(100vh - ${CALLOUT_HEIGHT_DESKTOP}px);
+    /* min-height: calc(100vh - ${CALLOUT_HEIGHT_DESKTOP}px); */
   }
   @media (max-width: ${BREAKPOINT}px) {
-    min-height: calc(100vh - ${CALLOUT_HEIGHT_MOBILE}px);
+    /* min-height: calc(100vh - ${CALLOUT_HEIGHT_MOBILE}px); */
   }
   /* background: red; */
 `;
@@ -46,23 +47,22 @@ export const OuterPositionerText = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   @media (min-width: ${BREAKPOINT}px) {
-    min-height: calc(70vh - ${CALLOUT_HEIGHT_DESKTOP}px);
+    height: 400px;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    min-height: calc(70vh - ${CALLOUT_HEIGHT_MOBILE}px);
+    height: 400px;
   }
-  /* background: gold; */
+  background: gold;
 `;
 
 export const InnerPositioner = styled.div`
-  /* position: relative; */
-  min-height: 100%;
+margin:0 auto;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  /* background: gold; */
+  background: green;
 `;
 
 export const TextWrapper = styled.div`
