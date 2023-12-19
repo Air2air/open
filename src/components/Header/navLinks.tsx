@@ -9,56 +9,26 @@ import { BREAKPOINT } from "styles/Constants";
 import { FONT_NAVLINK_DESKTOP, FONT_NAVLINK_MOBILE } from "styles/Text";
 import { dataRoutes } from "routes/routes";
 
-// map over dataroutes and create a link for each one
-
-const sliceOne = dataRoutes.slice(0, 1);
-const sliceTwo = dataRoutes.slice(1, 2);
-const sliceThree = dataRoutes.slice(2, 3);
-const sliceFour = dataRoutes.slice(3, 4);
-// const sliceFive = dataRoutes.slice(4, 5);
-
-
 export const NavLinks = () => {
   return (
-    <>
-      <NavLinkColumn>
-        {sliceOne.map((route, index) => (
-          <NavLink key={index} to={route.path}>
+    <NavLinkContainer>
+      {dataRoutes.map((route, index) => (
+        <NavLinkColumn key={index}>
+          <NavLink to={route.path}>
             {route.section}
           </NavLink>
-        ))}
-      </NavLinkColumn>
-      <NavLinkColumn>
-        {sliceTwo.map((route, index) => (
-          <NavLink key={index} to={route.path}>
-            {route.section}
-          </NavLink>
-        ))}
-      </NavLinkColumn>
-      <NavLinkColumn>
-        {sliceThree.map((route, index) => (
-          <NavLink key={index} to={route.path}>
-            {route.section}
-          </NavLink>
-        ))}
-      </NavLinkColumn>
-      <NavLinkColumn>
-        {sliceFour.map((route, index) => (
-          <NavLink key={index} to={route.path}>
-            {route.section}
-          </NavLink>
-        ))}
-      </NavLinkColumn>
-      {/* <NavLinkColumn>
-        {sliceFive.map((route, index) => (
-          <NavLink key={index} to={route.path}>
-            {route.section}
-          </NavLink>
-        ))}
-      </NavLinkColumn> */}
-    </>
+        </NavLinkColumn>
+      ))}
+    </NavLinkContainer>
   );
 };
+
+export const NavLinkContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+`;
 
 export const NavLinkColumn = styled.div`
   display: flex;
