@@ -34,7 +34,8 @@ const Header = () => {
   };
 
   const handleMouseLeave = () => {
-    setShowNav(false);
+    //setShowNav(false);
+    setShowNav(true);
   };
 
   useEffect(() => {

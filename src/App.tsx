@@ -14,7 +14,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <main className="content">
+      <main className="container mx-auto px-4">
         <Suspense fallback={<LoadingSkeleton />} >
           <FadeTransition>
             <Routes>
