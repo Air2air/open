@@ -112,6 +112,5 @@ a {
 }
 
 
-
 `;
 export default GlobalStyles;

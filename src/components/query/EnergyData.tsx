@@ -3,8 +3,6 @@ import axios from "axios";
 import { DataPoint } from "./interfaces/energy"; // Import the interfaces
 
 
-
-
 const EnergyData = () => {
   const [error, setError] = useState<string | null>(null);
   const [seriesData, setSeriesData] = useState<DataPoint[]>([]);
@@ -80,10 +78,10 @@ const EnergyData = () => {
   return (
     <div>
       {seriesData.map((dataPoint, index) => (
-        <div key={index}>
-          <h2>
+        <div key={index} className="flex flex-row justify-between items-center">
+          <h4>
             {dataPoint.stateDescription} ({dataPoint.date})
-          </h2>
+          </h4>
           <p>{dataPoint.sectorName}</p>
           <p>
             Sales: {dataPoint.value} {dataPoint.salesUnits}

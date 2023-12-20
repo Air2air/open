@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "animate.css/animate.css";
 import GlobalStyles from "styles/GlobalStyles";
+import "styles/globals.css";
 import { QueryClient, QueryClientProvider } from "react-query";
 
 const queryClient = new QueryClient();
